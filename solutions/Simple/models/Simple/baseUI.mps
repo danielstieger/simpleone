@@ -447,6 +447,12 @@
             </node>
           </node>
         </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4927985361893393655" nodeInfo="ng">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4927985361893393714" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
       </node>
       <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="6936270693726615607" nodeInfo="ng">
         <property name="delegateType" nameId="sgb.5005516259701333684" value="IntegerDelegate" />
@@ -549,6 +555,25 @@
             <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="6936270693726615660" nodeInfo="nn">
               <link role="property" roleId="tpee.1201385237847" targetNodeId="dtxg.6936270693721065154" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="4927985361892402577" nodeInfo="ng">
+        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
+        <property name="name" nameId="tpck.1169194664001" value="d0" />
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4927985361892402948" nodeInfo="ng">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4927985361892403025" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="4927985361892402971" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4927985361892422855" nodeInfo="nn">
+              <link role="property" roleId="tpee.1201385237847" targetNodeId="dtxg.4927985361892404426" resolveInfo="refPos" />
+            </node>
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4927985361892736103" nodeInfo="ng">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4927985361892736182" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="id,bezeichnung" />
           </node>
         </node>
       </node>
