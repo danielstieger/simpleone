@@ -9,7 +9,7 @@
   <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" implicit="yes" />
@@ -106,6 +106,11 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6936270693723051628" resolveInfo="id" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="un0u.LockStatement" typeId="un0u.6067283156584345767" id="6067283156587599522" nodeInfo="ng">
+            <node role="expression" roleId="un0u.6067283156584363772" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="6067283156587599649" nodeInfo="ng">
+              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="6936270693721438165" resolveInfo="kopf" />
             </node>
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4927985361892405926" nodeInfo="nn">

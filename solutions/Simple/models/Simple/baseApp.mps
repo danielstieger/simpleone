@@ -12,7 +12,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="6936270693721729592" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SimpleApplication" />
     <property name="versionInformation" nameId="sgb.293796121013651477" value="Version1 " />
@@ -49,6 +49,11 @@
     <property name="password" nameId="un0u.8537348545916385361" value="test" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="6067283156590480729" nodeInfo="ng">
+      <property name="packageName" nameId="un0u.830334255848344170" value="org.modellwerkstatt" />
+      <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
+    </node>
   </root>
 </model>
 
