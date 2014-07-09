@@ -20,6 +20,7 @@
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6936270693721729593" nodeInfo="nn" />
     <node role="appStartupFunction" roleId="sgb.1472214787652645424" type="sgb.AppStartupFunction" typeId="sgb.1472214787652645413" id="6936270693721729594" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6936270693721729595" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6067283156623814434" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6936270693721776679" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6936270693721776678" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580123138" value="true" />
@@ -49,7 +50,7 @@
     <property name="password" nameId="un0u.8537348545916385361" value="test" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
-    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" localhost" />
     <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="6067283156590480729" nodeInfo="ng">
       <property name="packageName" nameId="un0u.830334255848344170" value="org.modellwerkstatt" />
       <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
