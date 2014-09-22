@@ -357,10 +357,14 @@
       </node>
       <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="6936270693726619867" nodeInfo="ng">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6936270693726619868" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6889269470417665242" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6889269470417665240" nodeInfo="ng">
-              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="6067283156611075026" resolveInfo="xxxService" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6067283156611075103" resolveInfo="testException" />
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4008561637795816958" nodeInfo="nn">
+            <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="4008561637795816959" nodeInfo="nn">
+              <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6889269470417665242" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6889269470417665240" nodeInfo="ng">
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="6067283156611075026" resolveInfo="xxxService" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6067283156611075103" resolveInfo="testException" />
+                </node>
+              </node>
             </node>
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6889269470417662314" nodeInfo="nn">
