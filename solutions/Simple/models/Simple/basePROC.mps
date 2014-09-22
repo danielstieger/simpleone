@@ -9,8 +9,8 @@
   <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
@@ -48,6 +48,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="6936270693721444619" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Koepfe suchen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="6936270693721438164" resolveInfo="Prozess am Kopf" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="6936270693721444799" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Standard" />
@@ -104,7 +105,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="6936270693722976471" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Kopf anzeigen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="6936270693721438164" resolveInfo="Prozess am Kopf" />
     <node role="parameter" roleId="un0u.7192042020164640429" type="un0u.ContainerParameter" typeId="un0u.7192042020164640431" id="6936270693723051628" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="id" />
@@ -297,6 +298,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="6936270693722976627" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Kopf bearbeiten" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_EDIT" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="6936270693721438164" resolveInfo="Prozess am Kopf" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="1954041579060146432" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="i" />
@@ -464,6 +466,7 @@
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="6936270693722976794" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Position bearbeiten" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="6936270693721438164" resolveInfo="Prozess am Kopf" />
   </root>
   <root type="un0u.Service" typeId="un0u.4517030675489743647" id="6067283156611075026" nodeInfo="ig">

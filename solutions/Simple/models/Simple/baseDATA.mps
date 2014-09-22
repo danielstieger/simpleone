@@ -11,11 +11,11 @@
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="epq1" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" version="-1" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
-  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
+  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="41" implicit="yes" />
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="6936270693720785848" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Kopf" />
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="6936270693721065244" nodeInfo="ng">
@@ -41,7 +41,6 @@
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6936270693720818799" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="id" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="6936270693720829183" nodeInfo="ng" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6936270693720818801" nodeInfo="nn" />
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="6936270693720818802" nodeInfo="ng">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="6936270693720818803" nodeInfo="ng" />
@@ -56,6 +55,7 @@
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4927985361889790859" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="id" />
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="2326685532393182651" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6936270693720829190" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="intValue" />
@@ -344,10 +344,10 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6936270693721079992" nodeInfo="in" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="6936270693721080002" nodeInfo="ng" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="2326685532393182649" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6936270693721080008" nodeInfo="ig">
-      <property name="propertyName" nameId="tpee.1201371481316" value="value" />
+      <property name="propertyName" nameId="tpee.1201371481316" value="val" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6936270693721080010" nodeInfo="nn" />
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="6936270693721080011" nodeInfo="ng">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="6936270693721080012" nodeInfo="ng" />
