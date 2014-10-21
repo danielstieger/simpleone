@@ -5,7 +5,6 @@
   <language namespace="0f69ff68-7ed4-4ee4-8dc6-1619facda18d(org.modellwerkstatt.forms)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
-  <language-engaged-on-generation namespace="502d5f4c-1dec-4049-be64-04512b4ce66d(org.modellwerkstatt.fxforms)" />
   <import index="1y8i" modelUID="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(Simple.basePROC)" version="-1" />
   <import index="knfg" modelUID="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(Simple.baseUI)" version="-1" />
   <import index="dtxg" modelUID="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)" version="-1" />
@@ -16,7 +15,7 @@
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="6936270693721729592" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SimpleApplication" />
     <property name="versionInformation" nameId="sgb.293796121013651477" value="Version1 " />
-    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="1811740595335623686" resolveInfo="TestConfigurationForFX" />
+    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="1811740595335623686" resolveInfo="TestConfigurationForFX8" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6936270693721729593" nodeInfo="nn" />
     <node role="appStartupFunction" roleId="sgb.1472214787652645424" type="sgb.AppStartupFunction" typeId="sgb.1472214787652645413" id="6936270693721729594" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6936270693721729595" nodeInfo="sn">
@@ -41,8 +40,8 @@
     </node>
   </root>
   <root type="un0u.OFXConfig" typeId="un0u.478945708906770773" id="1811740595335623686" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="TestConfigurationForFX" />
-    <property name="lastUpdated" nameId="un0u.3526396426252206723" value="2014-09-23T09:59:10.701+01:00" />
+    <property name="name" nameId="tpck.1169194664001" value="TestConfigurationForFX8" />
+    <property name="lastUpdated" nameId="un0u.3526396426252206723" value="2014-10-21T11:13:32.751+01:00" />
     <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015948617" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="basicConfigDummy" />
       <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015948619" nodeInfo="nn">
@@ -289,54 +288,48 @@
       <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigEmpty" typeId="un0u.478945708912703702" id="1811740595335627434" nodeInfo="ng" />
       <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigEmpty" typeId="un0u.478945708912703702" id="1811740595335627445" nodeInfo="ng" />
     </node>
-    <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="1811740595335627470" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="ofxAppFactory" />
-      <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1811740595335627472" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="org.modellwerkstatt.fxforms.runtime.windows.FxBondGlueAppFactory" />
-      </node>
-    </node>
     <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="1811740595356834029" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="fxUiFactory" />
       <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1811740595356834030" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="org.modellwerkstatt.fxforms.runtime.windows.FxUiFactory" />
+        <property name="value" nameId="tpee.1070475926801" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
     </node>
     <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigEmpty" typeId="un0u.478945708912703702" id="1811740595335627237" nodeInfo="ng" />
     <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigSection" typeId="un0u.478945708906907667" id="1811740595353992678" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="AUTO_CALC" />
-      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015300899" nodeInfo="ng">
+      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="5025216550959810432" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Simple.baseDATA.MapKopf" />
-        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300900" nodeInfo="nn">
+        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550959810433" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="Simple.baseDATA.MapKopf" />
         </node>
       </node>
-      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015300901" nodeInfo="ng">
+      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="5025216550959810434" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Simple.baseDATA.MapPosition" />
-        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300902" nodeInfo="nn">
+        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550959810435" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="Simple.baseDATA.MapPosition" />
         </node>
       </node>
-      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015300903" nodeInfo="ng">
+      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="5025216550959810436" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__prozess_am_Kopf" />
-        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300904" nodeInfo="nn">
+        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550959810437" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="Simple.basePROC.Prozess_am_Kopf" />
         </node>
       </node>
-      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015300905" nodeInfo="ng">
+      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="5025216550959810438" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__xxxService" />
-        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300906" nodeInfo="nn">
+        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550959810439" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="Simple.basePROC.xxxService" />
         </node>
       </node>
-      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015300907" nodeInfo="ng">
+      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="5025216550959810440" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__testData" />
-        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300908" nodeInfo="nn">
+        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550959810441" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="Simple.baseDATA.TestData" />
         </node>
       </node>
-      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="2721129073015300909" nodeInfo="ng">
+      <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="5025216550959810442" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__kopfPosRepo" />
-        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300910" nodeInfo="nn">
+        <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550959810443" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="Simple.baseDATA.KopfPosRepo" />
         </node>
       </node>

@@ -53,6 +53,18 @@
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="6936270693721444799" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Standard" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="dtxg.6936270693720785848" resolveInfo="Kopf" />
+      <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="5025216550960122122" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Flag test" />
+        <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="5025216550960123850" nodeInfo="ng">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5025216550960123851" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="un0u.FlagCommand" typeId="un0u.1881524139085549729" id="5025216550960128262" nodeInfo="ng">
+              <node role="msgExpression" roleId="un0u.1881524139085549730" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550960128284" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="Flag text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="6936270693721444800" nodeInfo="ng">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6936270693721444801" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6889269470413796945" nodeInfo="nn">
@@ -114,6 +126,18 @@
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="6936270693723012748" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Standard" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="dtxg.6936270693720785848" resolveInfo="Kopf" />
+      <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="5025216550960132180" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Flag test" />
+        <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="5025216550960132609" nodeInfo="ng">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5025216550960132610" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="un0u.FlagCommand" typeId="un0u.1881524139085549729" id="5025216550960132623" nodeInfo="ng">
+              <node role="msgExpression" roleId="un0u.1881524139085549730" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025216550960132637" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="Flag text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="6936270693723051453" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="NOSAVE_CONCLUSION" />
