@@ -12,6 +12,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
+  <import index="w7gk" modelUID="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" version="-1" implicit="yes" />
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="6936270693721729592" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SimpleApplication" />
     <property name="versionInformation" nameId="sgb.293796121013651477" value="Version1 " />
@@ -19,7 +20,29 @@
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6936270693721729593" nodeInfo="nn" />
     <node role="appStartupFunction" roleId="sgb.1472214787652645424" type="sgb.AppStartupFunction" typeId="sgb.1472214787652645413" id="6936270693721729594" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6936270693721729595" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6067283156623814434" nodeInfo="nn" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1673750139879284537" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1673750139879284749" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="un0u.UserEnvironmentParameter" typeId="un0u.4779674245164262437" id="1673750139879284535" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1673750139879285401" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="w7gk.3020531402734336846" resolveInfo="setUserName" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1673750139879286582" nodeInfo="nn">
+                <property name="value" nameId="tpee.1070475926801" value="daniels" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1673750139879286597" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1673750139879286598" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="un0u.UserEnvironmentParameter" typeId="un0u.4779674245164262437" id="1673750139879286599" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="1673750139879286600" nodeInfo="nn">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="w7gk.3020531402734270882" resolveInfo="setUserId" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1673750139879287172" nodeInfo="nn">
+                <property name="value" nameId="tpee.1068580320021" value="10" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="1673750139879286586" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6936270693721776679" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6936270693721776678" nodeInfo="nn">
             <property name="value" nameId="tpee.1068580123138" value="true" />
@@ -28,13 +51,17 @@
       </node>
     </node>
     <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="6936270693721777337" nodeInfo="ng">
+      <property name="hotkey" nameId="sgb.943115150038430512" value="A_65" />
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="6936270693721777338" nodeInfo="ng">
         <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1y8i.6936270693721438164" resolveInfo="Prozess am Kopf" />
         <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1y8i.6936270693721444619" resolveInfo="Koepfe suchen" />
-        <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6936270693721790305" nodeInfo="nn" />
         <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="6936270693721777680" nodeInfo="ng">
           <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1y8i.6936270693721444799" resolveInfo="Standard" />
           <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="knfg.6936270693721782811" resolveInfo="KopfListeForm" />
+        </node>
+        <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3902147690765364361" nodeInfo="nn" />
+        <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedList" typeId="sgb.116370668401845264" id="3902147690765360695" nodeInfo="ng">
+          <link role="classConcept" roleId="sgb.116370668401845265" targetNodeId="dtxg.6936270693720785848" resolveInfo="Kopf" />
         </node>
       </node>
     </node>
@@ -89,7 +116,7 @@
         </node>
         <node role="elements" roleId="un0u.478945708907022272" type="un0u.OFXConfigConstructorArg" typeId="un0u.478945708907003617" id="2721129073015291158" nodeInfo="ng">
           <node role="value" roleId="un0u.478945708935709196" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015291159" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="10.1.22.16" />
+            <property name="value" nameId="tpee.1070475926801" value="10.1.22.16:2128" />
           </node>
           <node role="type" roleId="un0u.478945708935709194" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2721129073015300608" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="String" />
@@ -287,6 +314,12 @@
       <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigEmpty" typeId="un0u.478945708912703702" id="2326685532393324084" nodeInfo="ng" />
       <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigEmpty" typeId="un0u.478945708912703702" id="1811740595335627434" nodeInfo="ng" />
       <node role="elements" roleId="un0u.478945708906994221" type="un0u.OFXConfigEmpty" typeId="un0u.478945708912703702" id="1811740595335627445" nodeInfo="ng" />
+    </node>
+    <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="1200842884332660155" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="hotkeyTranslator" />
+      <node role="className" roleId="un0u.478945708907003567" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1200842884332660157" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="org.modellwerkstatt.fx8forms.windows.FX8AppleMacKeyBoard" />
+      </node>
     </node>
     <node role="elements" roleId="un0u.478945708906902061" type="un0u.OFXConfigInstance" typeId="un0u.478945708907003466" id="1811740595356834029" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="fxUiFactory" />
