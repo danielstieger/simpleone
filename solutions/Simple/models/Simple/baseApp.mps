@@ -151,22 +151,22 @@
     <node concept="2Ux5dv" id="612_n8HfiiT" role="2ftCBk">
       <property role="1xgIOb" value="A_65" />
       <node concept="2Ux5d2" id="612_n8HfiiU" role="2UzG4t">
-        <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Prozess am Kopf" />
-        <ref role="2Ux5d0" to="1y8i:612_n8He14b" resolve="Koepfe suchen" />
+        <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
+        <ref role="2Ux5d0" to="1y8i:612_n8He14b" resolve="Rechnungen suchen" />
         <node concept="xYMNj" id="612_n8Hfiog" role="2sIhOb">
           <ref role="xYMNi" to="1y8i:612_n8He16Z" resolve="Standard" />
-          <ref role="xYMNI" to="knfg:612_n8HfjCr" resolve="KopfListeForm" />
+          <ref role="xYMNI" to="knfg:612_n8HfjCr" resolve="RechnungListeForm" />
         </node>
         <node concept="10Nm6u" id="3oBdEpTbyM9" role="2Ux5cx" />
         <node concept="2xK8Eh" id="3oBdEpTbxSR" role="2Ux5cx">
-          <ref role="2xK8Eg" to="dtxg:612_n8HbweS" resolve="Kopf" />
+          <ref role="2xK8Eg" to="dtxg:612_n8HbweS" resolve="Rechnung" />
         </node>
       </node>
     </node>
   </node>
   <node concept="2CG7Z0" id="1$$A7zM8Bg6">
     <property role="TrG5h" value="TestConfigurationForFX8" />
-    <property role="2320hu" value="2014-10-21T11:13:32.751+01:00" />
+    <property role="2320hu" value="2015-07-06T18:14:31.032+01:00" />
     <node concept="2CJf3v" id="2n3p7A96Cl9" role="2CGBMS">
       <property role="TrG5h" value="basicConfigDummy" />
       <node concept="Xl_RD" id="2n3p7A96Clb" role="2CJf0U">
@@ -205,7 +205,7 @@
     <node concept="2CPvp3" id="2n3p7A96_Rw" role="2CGBMS" />
     <node concept="2CPvp3" id="2n3p7A96_T2" role="2CGBMS" />
     <node concept="2CJoq6" id="21a32Cmm3RN" role="2CGBMS">
-      <property role="TrG5h" value="MPREIS_Winter2014_FatClient_TestConfig" />
+      <property role="TrG5h" value="Winter2014_FatClient_TestConfig" />
       <node concept="2CPvp3" id="2n3p7A96_QM" role="2CJdiS" />
       <node concept="2CJf3v" id="1$$A7zM8BZM" role="2CJdiS">
         <property role="TrG5h" value="lockService" />
@@ -428,40 +428,40 @@
     <node concept="2CPvp3" id="1$$A7zM8C7_" role="2CGBMS" />
     <node concept="2CJoq6" id="1$$A7zNeFRA" role="2CGBMS">
       <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="4mX9XgfnSu0" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapKopf" />
-        <node concept="Xl_RD" id="4mX9XgfnSu1" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapKopf" />
+      <node concept="2CJf3v" id="2iL5MyJTPyP" role="2CJdiS">
+        <property role="TrG5h" value="Simple.baseDATA.MapRechnung" />
+        <node concept="Xl_RD" id="2iL5MyJTPyQ" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.MapRechnung" />
         </node>
       </node>
-      <node concept="2CJf3v" id="4mX9XgfnSu2" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapPosition" />
-        <node concept="Xl_RD" id="4mX9XgfnSu3" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapPosition" />
+      <node concept="2CJf3v" id="2iL5MyJTPyR" role="2CJdiS">
+        <property role="TrG5h" value="Simple.baseDATA.MapRechnungsPosition" />
+        <node concept="Xl_RD" id="2iL5MyJTPyS" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.MapRechnungsPosition" />
         </node>
       </node>
-      <node concept="2CJf3v" id="4mX9XgfnSu4" role="2CJdiS">
-        <property role="TrG5h" value="__prozess_am_Kopf" />
-        <node concept="Xl_RD" id="4mX9XgfnSu5" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Prozess_am_Kopf" />
+      <node concept="2CJf3v" id="2iL5MyJTPyT" role="2CJdiS">
+        <property role="TrG5h" value="__rechnungsprozess" />
+        <node concept="Xl_RD" id="2iL5MyJTPyU" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.basePROC.Rechnungsprozess" />
         </node>
       </node>
-      <node concept="2CJf3v" id="4mX9XgfnSu6" role="2CJdiS">
+      <node concept="2CJf3v" id="2iL5MyJTPyV" role="2CJdiS">
         <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="4mX9XgfnSu7" role="2CJf0U">
+        <node concept="Xl_RD" id="2iL5MyJTPyW" role="2CJf0U">
           <property role="Xl_RC" value="Simple.basePROC.xxxService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="4mX9XgfnSu8" role="2CJdiS">
-        <property role="TrG5h" value="__testData" />
-        <node concept="Xl_RD" id="4mX9XgfnSu9" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestData" />
+      <node concept="2CJf3v" id="2iL5MyJTPyX" role="2CJdiS">
+        <property role="TrG5h" value="__rechnungsTestDaten" />
+        <node concept="Xl_RD" id="2iL5MyJTPyY" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.RechnungsTestDaten" />
         </node>
       </node>
-      <node concept="2CJf3v" id="4mX9XgfnSua" role="2CJdiS">
-        <property role="TrG5h" value="__kopfPosRepo" />
-        <node concept="Xl_RD" id="4mX9XgfnSub" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.KopfPosRepo" />
+      <node concept="2CJf3v" id="2iL5MyJTPyZ" role="2CJdiS">
+        <property role="TrG5h" value="__rechnungsRepository" />
+        <node concept="Xl_RD" id="2iL5MyJTPz0" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.RechnungsRepository" />
         </node>
       </node>
     </node>

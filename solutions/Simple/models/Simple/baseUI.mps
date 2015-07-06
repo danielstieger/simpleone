@@ -120,22 +120,22 @@
   <node concept="2G$zOF" id="612_n8HfjCr">
     <property role="1mNjcY" value="1" />
     <property role="1nxMek" value="false" />
-    <property role="TrG5h" value="KopfListeForm" />
+    <property role="TrG5h" value="RechnungListeForm" />
     <node concept="2G$WZb" id="612_n8HfjFh" role="2G$zO_">
       <property role="1mNjcY" value="1" />
       <property role="1nxMek" value="false" />
-      <property role="TrG5h" value="KopfListeTable" />
+      <property role="TrG5h" value="RechnungListeTable" />
       <node concept="1J3Sl6" id="3oBdEpT4gw$" role="1memAO">
         <property role="1J3Sl5" value=" " />
         <node concept="2Ux5dv" id="3oBdEpT4gw_" role="1J3Sl2">
           <property role="1xgIOb" value="ENTER_10" />
           <node concept="2Ux5d2" id="3oBdEpT4gwA" role="2UzG4t">
-            <ref role="2Ux5d0" to="1y8i:612_n8HjR3n" resolve="Kopf anzeigen" />
-            <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Prozess am Kopf" />
+            <ref role="2Ux5d0" to="1y8i:612_n8HjR3n" resolve="Rechnung anzeigen" />
+            <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
             <node concept="10Nm6u" id="3oBdEpT4gwB" role="2Ux5cx" />
             <node concept="2OqwBi" id="3oBdEpT4gwC" role="2Ux5cx">
               <node concept="2xMDEs" id="3oBdEpT4gwD" role="2Oq$k0">
-                <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Kopf" />
+                <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Rechnung" />
               </node>
               <node concept="2S8uIT" id="3oBdEpT4gwE" role="2OqNvi">
                 <ref role="2S8YL0" to="dtxg:612_n8HbChJ" resolve="id" />
@@ -143,7 +143,7 @@
             </node>
             <node concept="xYMNj" id="3oBdEpT4gwF" role="2sIhOb">
               <ref role="xYMNi" to="1y8i:612_n8HjZUc" resolve="Standard" />
-              <ref role="xYMNI" node="612_n8Hk3$W" resolve="KopfDetailForm" />
+              <ref role="xYMNI" node="612_n8Hk3$W" resolve="RechnungDetailForm" />
             </node>
           </node>
         </node>
@@ -227,7 +227,7 @@
       </node>
       <node concept="_YKpA" id="612_n8HfjFU" role="qi9ce">
         <node concept="3uibUv" id="612_n8HfjGi" role="_ZDj9">
-          <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+          <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
         </node>
       </node>
     </node>
@@ -243,26 +243,26 @@
     </node>
     <node concept="_YKpA" id="612_n8HfjDP" role="qi9ce">
       <node concept="3uibUv" id="612_n8HfjDX" role="_ZDj9">
-        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       </node>
     </node>
   </node>
   <node concept="2G$zOF" id="612_n8Hk3$W">
     <property role="1mNjcY" value="1" />
     <property role="1nxMek" value="false" />
-    <property role="TrG5h" value="KopfDetailForm" />
+    <property role="TrG5h" value="RechnungDetailForm" />
     <node concept="1J3Sl6" id="612_n8HxLej" role="dvBuy">
       <property role="1J3Sl5" value=" " />
       <node concept="2Ux5dv" id="612_n8HxLgQ" role="1J3Sl2">
         <node concept="2Ux5d2" id="612_n8HxLgS" role="2UzG4t">
-          <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Prozess am Kopf" />
-          <ref role="2Ux5d0" to="1y8i:612_n8HjR5N" resolve="Kopf bearbeiten" />
+          <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
+          <ref role="2Ux5d0" to="1y8i:612_n8HjR5N" resolve="Rechnung bearbeiten" />
           <node concept="2xMDEs" id="612_n8HxLhC" role="2Ux5cx">
-            <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Kopf" />
+            <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Rechnung" />
           </node>
           <node concept="xYMNj" id="612_n8HxLiN" role="2sIhOb">
             <ref role="xYMNi" to="1y8i:612_n8HxKzq" resolve="Standard" />
-            <ref role="xYMNI" node="612_n8HxJwI" resolve="KopfEditorForm" />
+            <ref role="xYMNI" node="612_n8HxJwI" resolve="RechnungditorForm" />
           </node>
         </node>
       </node>
@@ -270,8 +270,8 @@
     <node concept="1vxE2n" id="612_n8Hk3_V" role="2G$zO_">
       <property role="1mNjcY" value="1" />
       <property role="1nxMek" value="false" />
-      <property role="TrG5h" value="DelegateFormDetail" />
-      <ref role="qGGBj" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <property role="TrG5h" value="DelegateRechnungDetail" />
+      <ref role="qGGBj" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       <node concept="1vx_$y" id="612_n8Hk3D0" role="1vx_$z">
         <property role="3lxVgK" value="IntegerDelegate" />
         <property role="TrG5h" value="d1" />
@@ -452,15 +452,15 @@
         </node>
       </node>
       <node concept="3uibUv" id="612_n8Hk3Be" role="qi9ce">
-        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       </node>
     </node>
     <node concept="2G$WZb" id="612_n8Hk46f" role="2G$zO_">
       <property role="1mNjcY" value="1" />
       <property role="1nxMek" value="true" />
-      <property role="TrG5h" value="TableFormPositionen" />
+      <property role="TrG5h" value="TableRechnungsPositionen" />
       <property role="3YucLt" value="true" />
-      <ref role="qGGBj" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <ref role="qGGBj" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       <ref role="2GBLiD" to="dtxg:612_n8Hc$wy" resolve="positionen" />
       <node concept="2GDez7" id="612_n8Hk46h" role="2GDezF">
         <property role="2GDez6" value="100" />
@@ -508,7 +508,7 @@
       </node>
       <node concept="_YKpA" id="612_n8Hk4aE" role="qi9ce">
         <node concept="3uibUv" id="612_n8Hk4aW" role="_ZDj9">
-          <ref role="3uigEE" to="dtxg:612_n8HbChx" resolve="Position" />
+          <ref role="3uigEE" to="dtxg:612_n8HbChx" resolve="RechnungsPosition" />
         </node>
       </node>
     </node>
@@ -526,18 +526,18 @@
       </node>
     </node>
     <node concept="3uibUv" id="612_n8Hk3_d" role="qi9ce">
-      <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
     </node>
   </node>
   <node concept="2G$zOF" id="612_n8HxJwI">
     <property role="1mNjcY" value="1" />
     <property role="1nxMek" value="false" />
-    <property role="TrG5h" value="KopfEditorForm" />
+    <property role="TrG5h" value="RechnungditorForm" />
     <node concept="1vxE2n" id="612_n8HxJwJ" role="2G$zO_">
       <property role="1mNjcY" value="1" />
       <property role="1nxMek" value="false" />
-      <property role="TrG5h" value="DelegateKopfEditor" />
-      <ref role="qGGBj" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <property role="TrG5h" value="DelegateRechnungEditor" />
+      <ref role="qGGBj" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       <node concept="1vx_$y" id="612_n8HxJwK" role="1vx_$z">
         <property role="3lxVgK" value="IntegerDelegate" />
         <property role="TrG5h" value="d1" />
@@ -692,7 +692,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="612_n8HxJxM" role="qi9ce">
-        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       </node>
     </node>
     <node concept="1THgkH" id="612_n8HxJy6" role="1THgkV">
@@ -706,7 +706,7 @@
       </node>
     </node>
     <node concept="3uibUv" id="612_n8HxJyb" role="qi9ce">
-      <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
     </node>
   </node>
 </model>

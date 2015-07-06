@@ -246,7 +246,7 @@
     </language>
   </registry>
   <node concept="34Athd" id="612_n8HbweS">
-    <property role="TrG5h" value="Kopf" />
+    <property role="TrG5h" value="Rechnung" />
     <node concept="2XvgOf" id="612_n8Hc$ss" role="2XvChp">
       <property role="TrG5h" value="KopfStatus" />
       <node concept="2XvgOc" id="612_n8Hc$sv" role="2XvgO2">
@@ -456,7 +456,7 @@
       </node>
       <node concept="_YKpA" id="612_n8Hc$y3" role="2RkE6I">
         <node concept="3uibUv" id="612_n8Hc$yh" role="_ZDj9">
-          <ref role="3uigEE" node="612_n8HbChx" resolve="Position" />
+          <ref role="3uigEE" node="612_n8HbChx" resolve="RechnungsPosition" />
         </node>
       </node>
     </node>
@@ -470,7 +470,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="4hzI9eTUZ2s" role="2RkE6I">
-        <ref role="3uigEE" node="612_n8HbChx" resolve="Position" />
+        <ref role="3uigEE" node="612_n8HbChx" resolve="RechnungsPosition" />
       </node>
       <node concept="Xl_RD" id="4hzI9eTUZ2Y" role="2CNmdP">
         <property role="Xl_RC" value="Ref" />
@@ -562,7 +562,7 @@
     </node>
   </node>
   <node concept="34Athd" id="612_n8HbChx">
-    <property role="TrG5h" value="Position" />
+    <property role="TrG5h" value="RechnungsPosition" />
     <node concept="1bOX9e" id="612_n8HcBYv" role="TxmiU">
       <property role="2RkwnN" value="id" />
       <node concept="3Tm1VV" id="612_n8HcBYx" role="1B3o_S" />
@@ -638,10 +638,10 @@
     </node>
   </node>
   <node concept="PU5sW" id="612_n8Hdpxg">
-    <property role="TrG5h" value="TestData" />
+    <property role="TrG5h" value="RechnungsTestDaten" />
     <node concept="GOFnM" id="612_n8Hdpxh" role="34v4n$">
       <node concept="3uibUv" id="612_n8Hdpxr" role="115eGp">
-        <ref role="3uigEE" node="612_n8HbweS" resolve="Kopf" />
+        <ref role="3uigEE" node="612_n8HbweS" resolve="Rechnung" />
       </node>
       <node concept="GOFnK" id="612_n8HdpEs" role="GOFnN">
         <ref role="1bDdzG" node="612_n8HbChJ" resolve="id" />
@@ -711,7 +711,7 @@
         <ref role="1bDdzG" node="612_n8Hc$wy" resolve="positionen" />
         <node concept="GOFnM" id="612_n8HdpCy" role="1bDdzI">
           <node concept="3uibUv" id="612_n8HdpCz" role="115eGp">
-            <ref role="3uigEE" node="612_n8HbChx" resolve="Position" />
+            <ref role="3uigEE" node="612_n8HbChx" resolve="RechnungsPosition" />
           </node>
           <node concept="GOFnK" id="612_n8HdpD7" role="GOFnN">
             <ref role="1bDdzG" node="612_n8HcBYv" resolve="id" />
@@ -746,7 +746,7 @@
         <ref role="1bDdzG" node="612_n8Hc$wy" resolve="positionen" />
         <node concept="GOFnM" id="612_n8HdvdV" role="1bDdzI">
           <node concept="3uibUv" id="612_n8HdvdW" role="115eGp">
-            <ref role="3uigEE" node="612_n8HbChx" resolve="Position" />
+            <ref role="3uigEE" node="612_n8HbChx" resolve="RechnungsPosition" />
           </node>
           <node concept="GOFnK" id="612_n8HdvdX" role="GOFnN">
             <ref role="1bDdzG" node="612_n8HcBYv" resolve="id" />
@@ -781,7 +781,7 @@
         <ref role="1bDdzG" node="612_n8Hc$wy" resolve="positionen" />
         <node concept="GOFnM" id="612_n8Hdvgw" role="1bDdzI">
           <node concept="3uibUv" id="612_n8Hdvgx" role="115eGp">
-            <ref role="3uigEE" node="612_n8HbChx" resolve="Position" />
+            <ref role="3uigEE" node="612_n8HbChx" resolve="RechnungsPosition" />
           </node>
           <node concept="GOFnK" id="612_n8Hdvgy" role="GOFnN">
             <ref role="1bDdzG" node="612_n8HcBYv" resolve="id" />
@@ -815,12 +815,12 @@
     </node>
   </node>
   <node concept="wbJL_" id="612_n8He1aF">
-    <property role="TrG5h" value="KopfPosRepo" />
+    <property role="TrG5h" value="RechnungsRepository" />
     <node concept="wbJLE" id="612_n8He1aX" role="jymVt">
-      <property role="TrG5h" value="findAllKoepfe" />
+      <property role="TrG5h" value="findAlleRechnungen" />
       <node concept="_YKpA" id="612_n8He1bx" role="3clF45">
         <node concept="3uibUv" id="612_n8He1bB" role="_ZDj9">
-          <ref role="3uigEE" node="612_n8HbweS" resolve="Kopf" />
+          <ref role="3uigEE" node="612_n8HbweS" resolve="Rechnung" />
         </node>
       </node>
       <node concept="3Tm1VV" id="612_n8He1aZ" role="1B3o_S" />
@@ -829,7 +829,7 @@
           <node concept="3clFbS" id="612_n8Hflw4" role="30JsjZ">
             <node concept="3cpWs6" id="612_n8Hflxt" role="3cqZAp">
               <node concept="1vxr2t" id="612_n8HflQq" role="3cqZAk">
-                <ref role="1vn1lH" node="612_n8Hdpxg" resolve="TestData" />
+                <ref role="1vn1lH" node="612_n8Hdpxg" resolve="RechnungsTestDaten" />
               </node>
             </node>
           </node>
@@ -840,20 +840,20 @@
         <node concept="3clFbF" id="612_n8HeAwk" role="3cqZAp">
           <node concept="jybIQ" id="612_n8HeAwj" role="3clFbG">
             <property role="HScZ5" value="true" />
-            <ref role="P14SV" node="612_n8He1bX" resolve="MapKopf" />
+            <ref role="P14SV" node="612_n8He1bX" resolve="MapRechnung" />
           </node>
         </node>
       </node>
     </node>
     <node concept="wbJLE" id="612_n8HjR9I" role="jymVt">
       <property role="wbJLN" value="CHECKOUT" />
-      <property role="TrG5h" value="checkoutKopf" />
+      <property role="TrG5h" value="checkoutRechnung" />
       <node concept="37vLTG" id="612_n8HjRd2" role="3clF46">
         <property role="TrG5h" value="idToCheckout" />
         <node concept="10Oyi0" id="612_n8HjRdr" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="612_n8HjRa$" role="3clF45">
-        <ref role="3uigEE" node="612_n8HbweS" resolve="Kopf" />
+        <ref role="3uigEE" node="612_n8HbweS" resolve="Rechnung" />
       </node>
       <node concept="3Tm1VV" id="612_n8HjR9K" role="1B3o_S" />
       <node concept="3clFbS" id="612_n8HjR9L" role="3clF47">
@@ -862,7 +862,7 @@
             <node concept="3cpWs6" id="612_n8HjRe6" role="3cqZAp">
               <node concept="2OqwBi" id="612_n8HjRP7" role="3cqZAk">
                 <node concept="1vxr2t" id="612_n8HjReC" role="2Oq$k0">
-                  <ref role="1vn1lH" node="612_n8Hdpxg" resolve="TestData" />
+                  <ref role="1vn1lH" node="612_n8Hdpxg" resolve="RechnungsTestDaten" />
                 </node>
                 <node concept="1z4cxt" id="612_n8HjXax" role="2OqNvi">
                   <node concept="1bVj0M" id="612_n8HjXaz" role="23t8la">
@@ -899,7 +899,7 @@
         <node concept="3clFbF" id="612_n8HjXkb" role="3cqZAp">
           <node concept="jybIQ" id="612_n8HjXka" role="3clFbG">
             <property role="HScZ5" value="false" />
-            <ref role="P14SV" node="612_n8He1bX" resolve="MapKopf" />
+            <ref role="P14SV" node="612_n8He1bX" resolve="MapRechnung" />
             <node concept="TUlRj" id="612_n8HjZSA" role="jxX7b">
               <node concept="37vLTw" id="612_n8HjZTe" role="TUlRy">
                 <ref role="3cqZAo" node="612_n8HjRd2" resolve="idToCheckout" />
@@ -913,14 +913,14 @@
   </node>
   <node concept="12nvSr" id="612_n8He1bT">
     <node concept="12nEzK" id="612_n8He1bV" role="12nEwB">
-      <ref role="12nEzL" node="612_n8HbweS" resolve="Kopf" />
+      <ref role="12nEzL" node="612_n8HbweS" resolve="Rechnung" />
     </node>
     <node concept="12nEzK" id="612_n8He1oS" role="12nEwB">
-      <ref role="12nEzL" node="612_n8HbChx" resolve="Position" />
+      <ref role="12nEzL" node="612_n8HbChx" resolve="RechnungsPosition" />
     </node>
     <node concept="12nEzA" id="612_n8He1bX" role="12nEwW">
-      <property role="TrG5h" value="MapKopf" />
-      <ref role="12nOxz" node="612_n8HbweS" resolve="Kopf" />
+      <property role="TrG5h" value="MapRechnung" />
+      <ref role="12nOxz" node="612_n8HbweS" resolve="Rechnung" />
       <node concept="Xl_RD" id="612_n8He1bY" role="12gAQd">
         <property role="Xl_RC" value="TEST_KOPF" />
       </node>
@@ -986,8 +986,8 @@
       </node>
     </node>
     <node concept="12nEzA" id="612_n8He1oV" role="12nEwW">
-      <property role="TrG5h" value="MapPosition" />
-      <ref role="12nOxz" node="612_n8HbChx" resolve="Position" />
+      <property role="TrG5h" value="MapRechnungsPosition" />
+      <ref role="12nOxz" node="612_n8HbChx" resolve="RechnungsPosition" />
       <node concept="Xl_RD" id="612_n8He1oW" role="12gAQd">
         <property role="Xl_RC" value="TEST_POS" />
       </node>

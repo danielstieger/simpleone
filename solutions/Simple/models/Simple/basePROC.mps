@@ -199,21 +199,21 @@
     </language>
   </registry>
   <node concept="3ugp7d" id="612_n8HdZvk">
-    <property role="TrG5h" value="Prozess am Kopf" />
+    <property role="TrG5h" value="Rechnungsprozess" />
     <ref role="10I5Op" to="dtxg:612_n8Hc$r2" resolve="kopfStatus" />
     <node concept="3ulXEN" id="612_n8HdZvl" role="3ulXEL">
-      <property role="TrG5h" value="kopf" />
+      <property role="TrG5h" value="rechnung" />
       <node concept="3uibUv" id="612_n8He13j" role="1tU5fm">
-        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+        <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       </node>
     </node>
     <node concept="10xgET" id="612_n8He13T" role="10xgEU">
       <ref role="10xgEu" to="dtxg:612_n8Hc$sv" resolve="default" />
       <node concept="10xUwW" id="612_n8HjR5I" role="10x$tn">
-        <ref role="10x$tN" node="612_n8HjR5N" resolve="Kopf bearbeiten" />
+        <ref role="10x$tN" node="612_n8HjR5N" resolve="Rechnung bearbeiten" />
       </node>
       <node concept="10xUwW" id="612_n8HjR8k" role="10x$tn">
-        <ref role="10x$tN" node="612_n8HjR8q" resolve="Position bearbeiten" />
+        <ref role="10x$tN" node="612_n8HjR8q" resolve="RechnungsPosition bearbeiten" />
       </node>
     </node>
     <node concept="10xgET" id="612_n8He13X" role="10xgEU">
@@ -222,35 +222,35 @@
     <node concept="10xgET" id="612_n8He142" role="10xgEU">
       <ref role="10xgEu" to="dtxg:612_n8Hc$s$" resolve="stat2" />
       <node concept="10xUwW" id="6Ag5kTzCgF8" role="10x$tn">
-        <ref role="10x$tN" node="612_n8HjR5N" resolve="Kopf bearbeiten" />
+        <ref role="10x$tN" node="612_n8HjR5N" resolve="Rechnung bearbeiten" />
       </node>
       <node concept="10xUwW" id="6Ag5kTzCgF9" role="10x$tn">
-        <ref role="10x$tN" node="612_n8HjR8q" resolve="Position bearbeiten" />
+        <ref role="10x$tN" node="612_n8HjR8q" resolve="RechnungsPosition bearbeiten" />
       </node>
     </node>
     <node concept="10xUwW" id="612_n8He16r" role="10HVpa">
-      <ref role="10x$tN" node="612_n8He14b" resolve="Koepfe suchen" />
+      <ref role="10x$tN" node="612_n8He14b" resolve="Rechnungen suchen" />
     </node>
     <node concept="10xUwW" id="612_n8HjR3i" role="10HVpa">
-      <ref role="10x$tN" node="612_n8HjR3n" resolve="Kopf anzeigen" />
+      <ref role="10x$tN" node="612_n8HjR3n" resolve="Rechnung anzeigen" />
     </node>
   </node>
   <node concept="3ugp7m" id="612_n8He14b">
-    <property role="TrG5h" value="Koepfe suchen" />
+    <property role="TrG5h" value="Rechnungen suchen" />
     <property role="1xmH21" value="GRAPH_OWNER" />
     <property role="19I623" value="SEARCH_CMD" />
-    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Prozess am Kopf" />
+    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Rechnungsprozess" />
     <node concept="3ulXEN" id="3oBdEpTbzPw" role="3ulXEL">
       <property role="TrG5h" value="koepfe" />
       <node concept="_YKpA" id="3oBdEpTbzQ7" role="1tU5fm">
         <node concept="3uibUv" id="3oBdEpTbzRC" role="_ZDj9">
-          <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Kopf" />
+          <ref role="3uigEE" to="dtxg:612_n8HbweS" resolve="Rechnung" />
         </node>
       </node>
     </node>
     <node concept="3ugp7q" id="612_n8He16Z" role="3ug97V">
       <property role="TrG5h" value="Standard" />
-      <ref role="3gcvY6" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <ref role="3gcvY6" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       <node concept="10qiFn" id="4Ucpg8zUhqx" role="10qiF9">
         <property role="TrG5h" value="Cancel" />
         <property role="10BtBF" value="SAVE_CONCLUSION" />
@@ -321,8 +321,8 @@
           </node>
           <node concept="3clFbF" id="612_n8Hf6o5" role="3cqZAp">
             <node concept="1odsa" id="612_n8Hf6o4" role="3clFbG">
-              <ref role="1ods_" to="dtxg:612_n8He1aF" resolve="KopfPosRepo" />
-              <ref role="37wK5l" to="dtxg:612_n8He1aX" resolve="findAllKoepfe" />
+              <ref role="1ods_" to="dtxg:612_n8He1aF" resolve="RechnungsRepository" />
+              <ref role="37wK5l" to="dtxg:612_n8He1aX" resolve="findAlleRechnungen" />
             </node>
           </node>
         </node>
@@ -351,24 +351,24 @@
     </node>
   </node>
   <node concept="3ugp7m" id="612_n8HjR3n">
-    <property role="TrG5h" value="Kopf anzeigen" />
+    <property role="TrG5h" value="Rechnung anzeigen" />
     <property role="1xmH21" value="GRAPH_OWNER" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Prozess am Kopf" />
+    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Rechnungsprozess" />
     <node concept="3ulXEN" id="612_n8Hk9pG" role="3ulXEL">
       <property role="TrG5h" value="id" />
       <node concept="10Oyi0" id="612_n8Hk9qE" role="1tU5fm" />
     </node>
     <node concept="3ugp7q" id="612_n8HjZUc" role="3ug97V">
       <property role="TrG5h" value="Standard" />
-      <ref role="3gcvY6" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <ref role="3gcvY6" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       <node concept="10qiFn" id="4mX9Xgfp71k" role="10qiF9">
-        <property role="TrG5h" value="Flag test" />
+        <property role="TrG5h" value="Fehlermeldung" />
         <node concept="20qIzx" id="4mX9Xgfp781" role="10ot2L">
           <node concept="3clFbS" id="4mX9Xgfp782" role="2VODD2">
             <node concept="10Adit" id="4mX9Xgfp78f" role="3cqZAp">
               <node concept="Xl_RD" id="4mX9Xgfp78t" role="10Adiu">
-                <property role="Xl_RC" value="Flag text" />
+                <property role="Xl_RC" value="Sie haben auf Fehlermeldung geclickt." />
               </node>
             </node>
           </node>
@@ -400,11 +400,11 @@
           <node concept="3clFbF" id="612_n8Hk02U" role="3cqZAp">
             <node concept="37vLTI" id="612_n8Hk04F" role="3clFbG">
               <node concept="10EhbA" id="612_n8Hk02T" role="37vLTJ">
-                <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
               </node>
               <node concept="1odsa" id="612_n8HjZXc" role="37vLTx">
-                <ref role="1ods_" to="dtxg:612_n8He1aF" resolve="KopfPosRepo" />
-                <ref role="37wK5l" to="dtxg:612_n8HjR9I" resolve="checkoutKopf" />
+                <ref role="1ods_" to="dtxg:612_n8He1aF" resolve="RechnungsRepository" />
+                <ref role="37wK5l" to="dtxg:612_n8HjR9I" resolve="checkoutRechnung" />
                 <node concept="3urNQE" id="612_n8Hk9qS" role="37wK5m">
                   <ref role="3cqZAo" node="612_n8Hk9pG" resolve="id" />
                 </node>
@@ -419,7 +419,7 @@
               </node>
               <node concept="2OqwBi" id="2n3p7A8f_Ov" role="37vLTJ">
                 <node concept="10EhbA" id="2n3p7A8f_MY" role="2Oq$k0">
-                  <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                  <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                 </node>
                 <node concept="2S8uIT" id="2n3p7A8fBkZ" role="2OqNvi">
                   <ref role="2S8YL0" to="dtxg:612_n8HbEYW" resolve="st1" />
@@ -434,7 +434,7 @@
               </node>
               <node concept="2OqwBi" id="2n3p7A8fByO" role="37vLTJ">
                 <node concept="10EhbA" id="2n3p7A8fBxp" role="2Oq$k0">
-                  <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                  <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                 </node>
                 <node concept="2S8uIT" id="2n3p7A8fBDk" role="2OqNvi">
                   <ref role="2S8YL0" to="dtxg:612_n8HbF0u" resolve="st2" />
@@ -494,7 +494,7 @@
               <node concept="2OqwBi" id="4hzI9eTV0ip" role="37vLTx">
                 <node concept="2OqwBi" id="4hzI9eTUZww" role="2Oq$k0">
                   <node concept="10EhbA" id="4hzI9eTUZtA" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2S8uIT" id="4hzI9eTUZAu" role="2OqNvi">
                     <ref role="2S8YL0" to="dtxg:612_n8Hc$wy" resolve="positionen" />
@@ -504,7 +504,7 @@
               </node>
               <node concept="2OqwBi" id="4hzI9eTUZcz" role="37vLTJ">
                 <node concept="10EhbA" id="4hzI9eTUZa_" role="2Oq$k0">
-                  <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                  <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                 </node>
                 <node concept="2S8uIT" id="4hzI9eTUZkW" role="2OqNvi">
                   <ref role="2S8YL0" to="dtxg:4hzI9eTUYNa" resolve="refPos" />
@@ -514,17 +514,22 @@
           </node>
           <node concept="3clFbF" id="4hzI9eTV0Fa" role="3cqZAp">
             <node concept="10EhbA" id="4hzI9eTV0F9" role="3clFbG">
-              <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+              <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="2OqwBi" id="612_n8Hk0b4" role="1K0AWC">
-        <node concept="10EhbA" id="612_n8Hk096" role="2Oq$k0">
-          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+      <node concept="3cpWs3" id="2iL5MyJTrrx" role="1K0AWC">
+        <node concept="Xl_RD" id="2iL5MyJTrl_" role="3uHU7B">
+          <property role="Xl_RC" value="Rechnung: ID " />
         </node>
-        <node concept="liA8E" id="612_n8Hk0k3" role="2OqNvi">
-          <ref role="37wK5l" to="dtxg:612_n8Hk0xl" resolve="toString" />
+        <node concept="2OqwBi" id="2iL5MyJTrwR" role="3uHU7w">
+          <node concept="10EhbA" id="2iL5MyJTrtN" role="2Oq$k0">
+            <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
+          </node>
+          <node concept="2S8uIT" id="2iL5MyJTr_r" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:612_n8HbChJ" resolve="id" />
+          </node>
         </node>
       </node>
       <node concept="JX2Gw" id="4hzI9eTV0S1" role="JX2Go">
@@ -543,7 +548,7 @@
             <node concept="2OqwBi" id="4hzI9eTV17l" role="3clFbG">
               <node concept="2OqwBi" id="4hzI9eTV0Vw" role="2Oq$k0">
                 <node concept="10EhbA" id="4hzI9eTV0V3" role="2Oq$k0">
-                  <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                  <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                 </node>
                 <node concept="2dcwcJ" id="4hzI9eTV1tP" role="2OqNvi">
                   <ref role="2dcwcH" to="dtxg:4hzI9eTUYNa" resolve="refPos" />
@@ -553,7 +558,7 @@
                 <ref role="37wK5l" to="28jr:3_EaJyvi4d8" resolve="setScope" />
                 <node concept="2OqwBi" id="4hzI9eTV2kP" role="37wK5m">
                   <node concept="10EhbA" id="4hzI9eTV1Y0" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2S8uIT" id="4hzI9eTV2r4" role="2OqNvi">
                     <ref role="2S8YL0" to="dtxg:612_n8Hc$wy" resolve="positionen" />
@@ -591,18 +596,18 @@
       </node>
     </node>
     <node concept="10EhbA" id="4mX9XggmC5O" role="3vkzKj">
-      <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+      <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
     </node>
   </node>
   <node concept="3ugp7m" id="612_n8HjR5N">
-    <property role="TrG5h" value="Kopf bearbeiten" />
+    <property role="TrG5h" value="Rechnung bearbeiten" />
     <property role="1xmH21" value="GRAPH_EDIT" />
     <property role="19I623" value="GRAPH_EDIT_CMD" />
-    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Prozess am Kopf" />
+    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Rechnungsprozess" />
     <node concept="3cpWs3" id="1sUmI9yhW2F" role="19I_$n">
       <node concept="2OqwBi" id="1sUmI9$kkoV" role="3uHU7w">
         <node concept="10EhbA" id="1sUmI9$kklG" role="2Oq$k0">
-          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
         </node>
         <node concept="2S8uIT" id="1sUmI9$kksY" role="2OqNvi">
           <ref role="2S8YL0" to="dtxg:612_n8HbChJ" resolve="id" />
@@ -618,7 +623,7 @@
     </node>
     <node concept="3ugp7q" id="612_n8HxKzq" role="3ug97V">
       <property role="TrG5h" value="Standard" />
-      <ref role="3gcvY6" to="dtxg:612_n8HbweS" resolve="Kopf" />
+      <ref role="3gcvY6" to="dtxg:612_n8HbweS" resolve="Rechnung" />
       <node concept="10qiFn" id="1Gu9BqkofI$" role="10qiF9">
         <property role="TrG5h" value="Flag" />
         <property role="3GM7Xb" value="INSERT" />
@@ -657,7 +662,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdIu$" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdI96" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdHBT" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdLbg" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8HbChJ" resolve="id" />
@@ -669,7 +674,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdK0N" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdK0O" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdK0P" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdLt6" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8HbChJ" resolve="id" />
@@ -693,7 +698,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdKZ4" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdKZ5" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdKZ6" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdKZ7" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8HbEO6" resolve="intValue" />
@@ -705,7 +710,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdKZa" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdKZb" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdKZc" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdKZd" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8HbEO6" resolve="intValue" />
@@ -723,7 +728,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdK19" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdK1a" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdK1b" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdK8I" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8HbESD" resolve="bigDeci1" />
@@ -735,7 +740,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdK1f" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdK1g" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdK1h" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdKfJ" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8HbESD" resolve="bigDeci1" />
@@ -753,7 +758,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdKo1" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdKo2" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdKo3" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdKzK" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8HbEYW" resolve="st1" />
@@ -765,7 +770,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdKo7" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdKo8" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdKo9" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdKEe" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8HbEYW" resolve="st1" />
@@ -783,7 +788,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdM5_" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdM5A" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdM5B" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdMt2" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8HbF1u" resolve="localDate" />
@@ -795,7 +800,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdM5F" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdM5G" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdM5H" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdMyz" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8HbF1u" resolve="localDate" />
@@ -813,7 +818,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdM6P" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdM6Q" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdM6R" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdMCa" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8Hc$n$" resolve="dateTime" />
@@ -825,7 +830,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdM6V" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdM6W" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdM6X" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdMHF" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8Hc$n$" resolve="dateTime" />
@@ -843,7 +848,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdMN1" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdMN2" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdMN3" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdNg4" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8Hc$r2" resolve="kopfStatus" />
@@ -855,7 +860,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdMN7" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdMN8" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdMN9" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdNlz" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:612_n8Hc$r2" resolve="kopfStatus" />
@@ -873,7 +878,7 @@
               <node concept="2OqwBi" id="6Ag5kTzdMOD" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTzdMOE" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzdMOF" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="6Ag5kTzdNqg" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:4hzI9eTUYNa" resolve="refPos" />
@@ -885,7 +890,7 @@
                     <node concept="2OqwBi" id="6Ag5kTzdMOJ" role="3fr31v">
                       <node concept="2OqwBi" id="6Ag5kTzdMOK" role="2Oq$k0">
                         <node concept="10EhbA" id="6Ag5kTzdMOL" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2dcwcJ" id="6Ag5kTzdNwr" role="2OqNvi">
                           <ref role="2dcwcH" to="dtxg:4hzI9eTUYNa" resolve="refPos" />
@@ -903,7 +908,7 @@
               <node concept="2OqwBi" id="6Ag5kTze$Na" role="3clFbG">
                 <node concept="2OqwBi" id="6Ag5kTze$6E" role="2Oq$k0">
                   <node concept="10EhbA" id="6Ag5kTzezKu" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2dcwcJ" id="4Ucpg8y9Bxf" role="2OqNvi">
                     <ref role="2dcwcH" to="dtxg:612_n8HbEYW" resolve="st1" />
@@ -934,7 +939,7 @@
               <node concept="2OqwBi" id="2n3p7A92UeT" role="3clFbG">
                 <node concept="2OqwBi" id="2n3p7A92U2V" role="2Oq$k0">
                   <node concept="10EhbA" id="2n3p7A92U2t" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2Tkd$M" id="2n3p7A92UaG" role="2OqNvi" />
                 </node>
@@ -944,7 +949,7 @@
                     <node concept="2OqwBi" id="2n3p7A92UzI" role="3fr31v">
                       <node concept="2OqwBi" id="2n3p7A92UlU" role="2Oq$k0">
                         <node concept="10EhbA" id="2n3p7A92Ul4" role="2Oq$k0">
-                          <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                          <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                         </node>
                         <node concept="2Tkd$M" id="2n3p7A92UuF" role="2OqNvi" />
                       </node>
@@ -1047,7 +1052,7 @@
                 </node>
                 <node concept="2OqwBi" id="4hzI9eTKHV3" role="3uHU7B">
                   <node concept="10EhbA" id="4hzI9eTKHSU" role="2Oq$k0">
-                    <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                    <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                   </node>
                   <node concept="2S8uIT" id="4hzI9eTKI49" role="2OqNvi">
                     <ref role="2S8YL0" to="dtxg:612_n8HbEO6" resolve="intValue" />
@@ -1056,7 +1061,7 @@
               </node>
               <node concept="2OqwBi" id="4hzI9eTKHpJ" role="37vLTJ">
                 <node concept="10EhbA" id="4hzI9eTKHoh" role="2Oq$k0">
-                  <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                  <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                 </node>
                 <node concept="2S8uIT" id="4hzI9eTKHyi" role="2OqNvi">
                   <ref role="2S8YL0" to="dtxg:612_n8HbEO6" resolve="intValue" />
@@ -1070,7 +1075,7 @@
                 <node concept="2OqwBi" id="6Ag5kTztN53" role="3clFbG">
                   <node concept="2OqwBi" id="6Ag5kTztMQU" role="2Oq$k0">
                     <node concept="10EhbA" id="6Ag5kTztMEJ" role="2Oq$k0">
-                      <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                      <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                     </node>
                     <node concept="2dcwcJ" id="6Ag5kTztMZt" role="2OqNvi">
                       <ref role="2dcwcH" to="dtxg:612_n8HbEO6" resolve="intValue" />
@@ -1091,17 +1096,22 @@
           </node>
           <node concept="3clFbF" id="612_n8HxK$b" role="3cqZAp">
             <node concept="10EhbA" id="612_n8HxK$a" role="3clFbG">
-              <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+              <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3cpWs3" id="4hzI9eTL07I" role="1K0AWC">
-        <node concept="3urNR4" id="4hzI9eTL0mv" role="3uHU7w">
-          <ref role="3cqZAo" node="1Gu9Bqkej40" resolve="i" />
+      <node concept="3cpWs3" id="2iL5MyJTt64" role="1K0AWC">
+        <node concept="Xl_RD" id="2iL5MyJTteS" role="3uHU7w">
+          <property role="Xl_RC" value=" mal geladen" />
         </node>
-        <node concept="Xl_RD" id="4hzI9eTKZM1" role="3uHU7B">
-          <property role="Xl_RC" value="Page Title here " />
+        <node concept="3cpWs3" id="4hzI9eTL07I" role="3uHU7B">
+          <node concept="Xl_RD" id="4hzI9eTKZM1" role="3uHU7B">
+            <property role="Xl_RC" value="Diese Seite wurde bereits " />
+          </node>
+          <node concept="3urNR4" id="4hzI9eTL0mv" role="3uHU7w">
+            <ref role="3cqZAo" node="1Gu9Bqkej40" resolve="i" />
+          </node>
         </node>
       </node>
     </node>
@@ -1145,7 +1155,7 @@
                   </node>
                   <node concept="2OqwBi" id="6Ag5kTz$9bf" role="3uHU7w">
                     <node concept="10EhbA" id="6Ag5kTz$97M" role="2Oq$k0">
-                      <ref role="10EhbB" node="612_n8HdZvl" resolve="kopf" />
+                      <ref role="10EhbB" node="612_n8HdZvl" resolve="rechnung" />
                     </node>
                     <node concept="2S8uIT" id="4Ucpg8yaqOW" role="2OqNvi">
                       <ref role="2S8YL0" to="dtxg:612_n8HbEYW" resolve="st1" />
@@ -1160,9 +1170,9 @@
     </node>
   </node>
   <node concept="3ugp7m" id="612_n8HjR8q">
-    <property role="TrG5h" value="Position bearbeiten" />
+    <property role="TrG5h" value="RechnungsPosition bearbeiten" />
     <property role="19I623" value="GRAPH_EDIT_CMD" />
-    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Prozess am Kopf" />
+    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Rechnungsprozess" />
   </node>
   <node concept="2EH5hC" id="5gNkualwSJi">
     <property role="TrG5h" value="xxxService" />
