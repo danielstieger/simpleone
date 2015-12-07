@@ -238,7 +238,7 @@
         <node concept="2Ux5dv" id="3oBdEpT4gw_" role="1J3Sl2">
           <property role="1xgIOb" value="ENTER_10" />
           <node concept="2Ux5d2" id="3oBdEpT4gwA" role="2UzG4t">
-            <ref role="2Ux5d0" to="1y8i:612_n8HjR3n" resolve="Rechnung anzeigen" />
+            <ref role="2Ux5d0" to="1y8i:612_n8HjR3n" resolve="Rechnung bearbeiten" />
             <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
             <node concept="10Nm6u" id="3oBdEpT4gwB" role="2Ux5cx" />
             <node concept="2OqwBi" id="3oBdEpT4gwC" role="2Ux5cx">
@@ -253,6 +253,13 @@
               <ref role="xYMNi" to="1y8i:612_n8HjZUc" resolve="Standard" />
               <ref role="xYMNI" node="612_n8Hk3$W" resolve="RechnungDetailForm" />
             </node>
+          </node>
+        </node>
+        <node concept="2Ux5dv" id="5LL59WQKRMo" role="1J3Sl2">
+          <node concept="2Ux5d2" id="5LL59WQKRMq" role="2UzG4t">
+            <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
+            <ref role="2Ux5d0" to="1y8i:5LL59WQKjoU" resolve="Rechnung drucken" />
+            <node concept="10Nm6u" id="5LL59WQKRNv" role="2Ux5cx" />
           </node>
         </node>
       </node>
@@ -724,7 +731,7 @@
           <node concept="1J3Sl6" id="5LL59WQxWFC" role="1memAO">
             <property role="1J3Sl5" value=" " />
             <node concept="2Ux5dv" id="5LL59WQxWFD" role="1J3Sl2">
-              <property role="1xgIOb" value="ENTER_10" />
+              <property role="1xgIOb" value="X_88" />
               <node concept="2Ux5d2" id="5LL59WQxWFE" role="2UzG4t">
                 <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
                 <ref role="2Ux5d0" to="1y8i:2a_rc81hps7" resolve="Position bearbeiten" />

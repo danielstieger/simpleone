@@ -58,6 +58,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -75,7 +76,6 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -175,7 +175,6 @@
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <property id="943115150037896890" name="commandType" index="1xmH21" />
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
-        <child id="6525155817177860576" name="enabledWhen" index="20uWH4" />
         <child id="6185198504743118463" name="icon" index="2DETGV" />
         <child id="3748648354049763742" name="titleAddOn" index="IYfpf" />
         <child id="7912134052599551255" name="locks" index="19I_$n" />
@@ -219,7 +218,6 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
@@ -267,6 +265,9 @@
     </node>
     <node concept="10xUwW" id="612_n8HjR3i" role="10HVpa">
       <ref role="10x$tN" node="612_n8HjR3n" resolve="Rechnung bearbeiten" />
+    </node>
+    <node concept="10xUwW" id="5LL59WQKjsA" role="10HVpa">
+      <ref role="10x$tN" node="5LL59WQKjoU" resolve="Rechnung drucken" />
     </node>
   </node>
   <node concept="3ugp7m" id="612_n8He14b">
@@ -397,17 +398,6 @@
     <node concept="10M0yZ" id="612_n8Hjb0O" role="2DETGV">
       <ref role="1PxDUh" to="mma5:$arjoT88Li" resolve="HafinaDefaults" />
       <ref role="3cqZAo" to="mma5:1cSMVgYAa7U" resolve="ICON_SEARCH" />
-    </node>
-    <node concept="3clFbC" id="3oBdEpTp6U1" role="20uWH4">
-      <node concept="3cmrfG" id="3oBdEpTp6Wd" role="3uHU7w">
-        <property role="3cmrfH" value="0" />
-      </node>
-      <node concept="2OqwBi" id="3oBdEpTp6ge" role="3uHU7B">
-        <node concept="3urNQE" id="3oBdEpTp65O" role="2Oq$k0">
-          <ref role="3cqZAo" node="3oBdEpTbzPw" resolve="koepfe" />
-        </node>
-        <node concept="34oBXx" id="3oBdEpTp6v$" role="2OqNvi" />
-      </node>
     </node>
     <node concept="20qIzx" id="4Ucpg8zRU2E" role="3umfm7">
       <node concept="3clFbS" id="4Ucpg8zRU2F" role="2VODD2">
@@ -1460,6 +1450,47 @@
     <node concept="10M0yZ" id="7UeBQrPIEcX" role="2DETGV">
       <ref role="1PxDUh" to="mma5:$arjoT88Li" resolve="HafinaDefaults" />
       <ref role="3cqZAo" to="mma5:4HlXVUYdTP$" resolve="ICON_EDIT" />
+    </node>
+  </node>
+  <node concept="3ugp7m" id="5LL59WQKjoU">
+    <property role="TrG5h" value="Rechnung drucken" />
+    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <ref role="3lhHOO" node="612_n8HdZvk" resolve="Rechnungsprozess" />
+    <node concept="10M0yZ" id="5LL59WQKju3" role="2DETGV">
+      <ref role="1PxDUh" to="mma5:$arjoT88Li" resolve="HafinaDefaults" />
+      <ref role="3cqZAo" to="mma5:5gNkuakOZ92" resolve="ICON_PRINT" />
+    </node>
+    <node concept="20qIzx" id="5LL59WQKjvW" role="3umfm7">
+      <node concept="3clFbS" id="5LL59WQKjvX" role="2VODD2">
+        <node concept="3clFbF" id="5LL59WQKjwJ" role="3cqZAp">
+          <node concept="2OqwBi" id="5LL59WQKjKN" role="3clFbG">
+            <node concept="2OqwBi" id="5LL59WQKjDj" role="2Oq$k0">
+              <node concept="2OqwBi" id="5LL59WQKjxf" role="2Oq$k0">
+                <node concept="3y28L$" id="5LL59WQKjwI" role="2Oq$k0" />
+                <node concept="liA8E" id="5LL59WQKjC7" role="2OqNvi">
+                  <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5LL59WQKjJN" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:2vHEu_N_sTu" resolve="getUserPrintService" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5LL59WQKjTe" role="2OqNvi">
+              <ref role="37wK5l" to="28jr:2vHEu_N_4Dh" resolve="print" />
+              <node concept="Xl_RD" id="5LL59WQKjWj" role="37wK5m">
+                <property role="Xl_RC" value="test.txt" />
+              </node>
+              <node concept="Xl_RD" id="5LL59WQKk4D" role="37wK5m">
+                <property role="Xl_RC" value="nop" />
+              </node>
+              <node concept="Xl_RD" id="5LL59WQKk9a" role="37wK5m">
+                <property role="Xl_RC" value="Hallo Vaadin Druck-Lösung!" />
+              </node>
+              <node concept="10Nm6u" id="5LL59WQKkcF" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

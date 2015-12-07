@@ -223,6 +223,20 @@
         </node>
       </node>
     </node>
+    <node concept="2Ux5dv" id="5LL59WQDCWs" role="2ftCBk">
+      <node concept="2Ux5d2" id="5LL59WQDCWu" role="2UzG4t">
+        <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
+        <ref role="2Ux5d0" to="1y8i:612_n8HjR3n" resolve="Rechnung bearbeiten" />
+        <node concept="10Nm6u" id="5LL59WQDCYR" role="2Ux5cx" />
+        <node concept="3cmrfG" id="5LL59WQDD0y" role="2Ux5cx">
+          <property role="3cmrfH" value="0" />
+        </node>
+        <node concept="xYMNj" id="5LL59WQDD10" role="2sIhOb">
+          <ref role="xYMNi" to="1y8i:612_n8HjZUc" resolve="Standard" />
+          <ref role="xYMNI" to="knfg:612_n8Hk3$W" resolve="RechnungDetailForm" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2CG7Z0" id="1$$A7zM8Bg6">
     <property role="TrG5h" value="TestConfigurationForFX8" />
