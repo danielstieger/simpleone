@@ -738,7 +738,7 @@
         </node>
         <node concept="2CJf1O" id="4d3Pnf3Y3xG" role="2CJ4_l">
           <node concept="Xl_RD" id="4d3Pnf3Y3xH" role="2DqwMp">
-            <property role="Xl_RC" value="/Users/danielstieger/stuff/apache-tomcat-8.0.8/webapps/ROOT/printTMP" />
+            <property role="Xl_RC" value="/home/daniels/apache-tomcat-8.0.8/webapps/ROOT/printTMP" />
           </node>
           <node concept="Xl_RD" id="4d3Pnf3Y3xI" role="2DqwMv">
             <property role="Xl_RC" value="1" />
