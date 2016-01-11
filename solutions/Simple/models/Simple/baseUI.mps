@@ -60,8 +60,11 @@
       </concept>
       <concept id="4419932786254844460" name="org.modellwerkstatt.forms.structure.CommandTrigger" flags="ng" index="2Ux5dv">
         <property id="943115150038430512" name="hotkey" index="1xgIOb" />
+        <property id="2320685766692143367" name="text" index="3AMjDJ" />
         <child id="4419932786255200366" name="runCommand" index="2UzG4t" />
       </concept>
+      <concept id="940368958464182848" name="org.modellwerkstatt.forms.structure.boundObjectConceptFuncParam" flags="ng" index="3i0Lrl" />
+      <concept id="940368958464182890" name="org.modellwerkstatt.forms.structure.OnLoadDelegateForm" flags="ig" index="3i0LrZ" />
       <concept id="5005516259701333694" name="org.modellwerkstatt.forms.structure.InputDelegateParameter2" flags="ng" index="3lxVgU">
         <reference id="5005516259701333696" name="methodDeclaration" index="3lxVh4" />
         <child id="5005516259701333695" name="expression" index="3lxVgV" />
@@ -73,8 +76,12 @@
         <child id="5005516259701333683" name="parameter2" index="3lxVgR" />
       </concept>
       <concept id="7105808579467823062" name="org.modellwerkstatt.forms.structure.DelegateForm" flags="ng" index="1vxE2n">
+        <child id="940368958464182898" name="onLoad" index="3i0LrB" />
         <child id="7105808579467853410" name="delegate" index="1vx_$z" />
         <child id="8264937784151109663" name="colWeight" index="1THgkZ" />
+      </concept>
+      <concept id="7105808579468277458" name="org.modellwerkstatt.forms.structure.LocalInputDelegateReference" flags="ng" index="1vJt6j">
+        <reference id="7105808579468277459" name="container" index="1vJt6i" />
       </concept>
       <concept id="7968457660428854080" name="org.modellwerkstatt.forms.structure.ActionLinkContainer" flags="ng" index="1J3Sl6">
         <property id="7968457660428854083" name="title" index="1J3Sl5" />
@@ -85,6 +92,9 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -93,6 +103,9 @@
       </concept>
       <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
         <reference id="1201385237847" name="property" index="2S8YL0" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -104,8 +117,14 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -1239,6 +1258,634 @@
     </node>
     <node concept="3uibUv" id="2a_rc81jPUe" role="qi9ce">
       <ref role="3uigEE" to="dtxg:612_n8HbChx" resolve="RechnungsPosition" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="4u029Jv8x6c">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="BestellungSuchErgebnisFC" />
+    <node concept="_YKpA" id="AN_117fj5i" role="qi9ce">
+      <node concept="3uibUv" id="AN_117fj5J" role="_ZDj9">
+        <ref role="3uigEE" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="4u029Jv8x6e" role="2lwzia">
+      <node concept="Xl_RD" id="4u029Jv8y6C" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="4u029Jv8x6f" role="1THgkV">
+      <node concept="Xl_RD" id="4u029Jv8y68" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="2G$WZb" id="AN_117fj5T" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BestellungSuchErgebnisTF" />
+      <property role="3YucLt" value="true" />
+      <node concept="2Ux5dv" id="AN_117fjzr" role="1memAO">
+        <property role="1xgIOb" value="ENTER_10" />
+        <node concept="2Ux5d2" id="AN_117fjzt" role="2UzG4t">
+          <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
+          <ref role="2Ux5d0" to="1y8i:AN_117c3Kl" resolve="Bestellung bearbeiten" />
+          <node concept="xYMNj" id="AN_117hgHL" role="2sIhOb">
+            <ref role="xYMNi" to="1y8i:AN_117h9tB" resolve="Standard" />
+            <ref role="xYMNI" node="AN_117haiU" resolve="BestellungBearbeitenFC" />
+          </node>
+          <node concept="2xMDEs" id="AN_117fj_e" role="2Ux5cx">
+            <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="AN_117fj7J" role="qi9ce">
+        <node concept="3uibUv" id="AN_117fj7Y" role="_ZDj9">
+          <ref role="3uigEE" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117fj5V" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117fj9b" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117fj8R" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117fjdE" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:AN_117bqyN" resolve="bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117fje8" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117fje9" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117fjea" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117fjmj" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117fjf4" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117fjf5" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117fjf6" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117fjrA" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:4u029Jv8vHX" resolve="bestellDatum" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117fjgm" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117fjgn" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117fjgo" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117fjwV" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:4u029Jv8vG8" resolve="gesamtMenge" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2G$zOF" id="AN_117fjMy">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="BestellungSucheFC" />
+    <node concept="3uibUv" id="AN_117fjMJ" role="qi9ce">
+      <ref role="3uigEE" to="dtxg:AN_117f5lp" resolve="BestellungSearchView" />
+    </node>
+    <node concept="1THgkH" id="AN_117fjM$" role="2lwzia">
+      <node concept="Xl_RD" id="AN_117fjN0" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="AN_117fjM_" role="1THgkV">
+      <node concept="Xl_RD" id="AN_117fjMP" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="AN_117fjNb" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BestellungSucheDF" />
+      <ref role="qGGBj" to="dtxg:AN_117f5lp" resolve="BestellungSearchView" />
+      <node concept="1vx_$y" id="AN_117fjO3" role="1vx_$z">
+        <property role="3lxVgK" value="LocalDateDelegate" />
+        <property role="TrG5h" value="vonDatum" />
+        <node concept="3lxVgU" id="AN_117fjPw" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117fjQa" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117fjPK" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117fjUG" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117f5mG" resolve="von" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117fjVf" role="1vx_$z">
+        <property role="3lxVgK" value="LocalDateDelegate" />
+        <property role="TrG5h" value="bisDatum" />
+        <node concept="3lxVgU" id="AN_117fjVg" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117fjVh" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117fjVi" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117fk4j" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117f5nv" resolve="bis" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117fk55" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="statusDelegate" />
+        <node concept="3lxVgU" id="AN_117fk6a" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117fk6M" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117fk6l" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117fkbj" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117f5oM" resolve="status" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117fke9" role="1vx_$z">
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="TrG5h" value="geschaefteDelegate" />
+        <node concept="3lxVgU" id="AN_117fkfV" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117fkgx" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117fkg6" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117fkl2" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117f5lU" resolve="geschaeft" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117fklA" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="AN_117fkmD" role="3lxVgV">
+            <property role="Xl_RC" value="id, bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="AN_117fjNd" role="1THgkZ">
+        <node concept="Xl_RD" id="AN_117fjNC" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="AN_117fjNv" role="qi9ce">
+        <ref role="3uigEE" to="dtxg:AN_117f5lp" resolve="BestellungSearchView" />
+      </node>
+    </node>
+  </node>
+  <node concept="2G$zOF" id="AN_117haiU">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="BestellungBearbeitenFC" />
+    <node concept="2Ux5dv" id="AN_117lfvs" role="dvBuy">
+      <property role="1xgIOb" value="UNDEFINED_0" />
+      <property role="3AMjDJ" value="Scannen" />
+      <node concept="2Ux5d2" id="AN_117lfvu" role="2UzG4t">
+        <ref role="2Ux5d0" to="1y8i:AN_117c3LL" resolve="Bestellposition scanen" />
+        <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
+        <node concept="2xMDEs" id="AN_117lfxZ" role="2Ux5cx">
+          <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+        </node>
+        <node concept="xYMNj" id="AN_117lfyM" role="2sIhOb">
+          <ref role="xYMNi" to="1y8i:AN_117ldD7" resolve="Standard" />
+          <ref role="xYMNI" node="AN_117ldJU" resolve="BestellPosErfassenFC" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Ux5dv" id="AN_117im3G" role="dvBuy">
+      <property role="3AMjDJ" value="Freigeben" />
+      <node concept="2Ux5d2" id="AN_117im3I" role="2UzG4t">
+        <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
+        <ref role="2Ux5d0" to="1y8i:AN_117c3Qk" resolve="Bestellung freigeben" />
+        <node concept="2xMDEs" id="AN_117im7x" role="2Ux5cx">
+          <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="AN_117hajR" role="qi9ce">
+      <ref role="3uigEE" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+    </node>
+    <node concept="1THgkH" id="AN_117haiW" role="2lwzia">
+      <node concept="Xl_RD" id="AN_117hakP" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="AN_117hal7" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="AN_117haiX" role="1THgkV">
+      <node concept="Xl_RD" id="AN_117hakb" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="AN_117hamg" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BestellungKopfDF" />
+      <ref role="qGGBj" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+      <node concept="1vx_$y" id="AN_117hapl" role="1vx_$z">
+        <property role="TrG5h" value="d1" />
+        <property role="3lxVgK" value="IntegerDelegate" />
+        <node concept="3lxVgU" id="AN_117hapU" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117harj" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117haqQ" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117hawg" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117hg8z" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117hg8$" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117haAO" role="1vx_$z">
+        <property role="TrG5h" value="d2" />
+        <node concept="3lxVgU" id="AN_117haAP" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117haAQ" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117haAR" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117hb7p" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117bqyN" resolve="bezeichnung" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117hg6O" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117hg6P" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117haHe" role="1vx_$z">
+        <property role="TrG5h" value="d3" />
+        <property role="3lxVgK" value="LocalDateDelegate" />
+        <node concept="3lxVgU" id="AN_117haHf" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117haHg" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117haHh" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117hbih" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:4u029Jv8vHX" resolve="bestellDatum" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117hg4K" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117hg4L" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117haO3" role="1vx_$z">
+        <property role="TrG5h" value="d4" />
+        <property role="3lxVgK" value="DecimalDelegate" />
+        <node concept="3lxVgU" id="AN_117haO4" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117haO5" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117haO6" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117hbyg" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:4u029Jv8vG8" resolve="gesamtMenge" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117hg2U" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117hg2V" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117im8Y" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="d4A" />
+        <node concept="3lxVgU" id="AN_117imcu" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117imdp" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117imcY" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117imi1" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117c2L7" resolve="status" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117imiF" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117imjN" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117haVj" role="1vx_$z">
+        <property role="TrG5h" value="d5" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="AN_117haVk" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117haVl" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117haVm" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117hbOZ" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117bq$J" resolve="geschaeft" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117hfYZ" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117hg2a" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117i3eA" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="AN_117i3hT" role="3lxVgV">
+            <property role="Xl_RC" value="id, bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="AN_117hami" role="1THgkZ">
+        <node concept="Xl_RD" id="AN_117haoW" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="AN_117haoc" role="qi9ce">
+        <ref role="3uigEE" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+      </node>
+    </node>
+    <node concept="2G$WZb" id="AN_117hamT" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BestellungPosTf" />
+      <property role="3YucLt" value="true" />
+      <ref role="qGGBj" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+      <ref role="2GBLiD" to="dtxg:AN_117bqBd" resolve="positionen" />
+      <node concept="2Ux5dv" id="4XOQNRZgs6j" role="1memAO">
+        <property role="1xgIOb" value="ENTER_10" />
+        <node concept="2Ux5d2" id="4XOQNRZgs6l" role="2UzG4t">
+          <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
+          <ref role="2Ux5d0" to="1y8i:4XOQNRZgrKt" resolve="Position bearbeiten" />
+          <node concept="2xMDEs" id="4XOQNRZgs8W" role="2Ux5cx">
+            <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+          </node>
+          <node concept="2xMDEs" id="4XOQNRZgsa3" role="2Ux5cx">
+            <ref role="2xLxPX" to="dtxg:AN_117bbd$" resolve="BestellPosition" />
+          </node>
+          <node concept="xYMNj" id="4XOQNRZgsaS" role="2sIhOb">
+            <ref role="xYMNi" to="1y8i:4XOQNRZgrOq" resolve="Standard" />
+            <ref role="xYMNI" node="4XOQNRZgsbZ" resolve="BestellPosBearbeitenFC" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="AN_117hgbj" role="qi9ce">
+        <node concept="3uibUv" id="AN_117hgbv" role="_ZDj9">
+          <ref role="3uigEE" to="dtxg:AN_117bbd$" resolve="BestellPosition" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117hamX" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117hggw" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117hgga" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117hgl8" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:AN_117bbdT" resolve="bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117hgnL" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117hgnM" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117hgnN" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117hg_r" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:AN_117bbdK" resolve="ean" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="AN_117hgpv" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="AN_117hgpw" role="2GDD_P">
+          <node concept="2EM3W" id="AN_117hgpx" role="2Oq$k0" />
+          <node concept="2S8uIT" id="AN_117hgFc" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:AN_117bbe2" resolve="menge" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2G$zOF" id="AN_117ldJU">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="BestellPosErfassenFC" />
+    <node concept="3uibUv" id="AN_117ldLe" role="qi9ce">
+      <ref role="3uigEE" to="dtxg:AN_117ld6l" resolve="BestellPosHelper" />
+    </node>
+    <node concept="1THgkH" id="AN_117ldJW" role="2lwzia">
+      <node concept="Xl_RD" id="AN_117ldM2" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="AN_117ldJX" role="1THgkV">
+      <node concept="Xl_RD" id="AN_117ldLy" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="AN_117ldMU" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BestellPosErfassenDF" />
+      <ref role="qGGBj" to="dtxg:AN_117ld6l" resolve="BestellPosHelper" />
+      <node concept="1vx_$y" id="AN_117ldPa" role="1vx_$z">
+        <property role="TrG5h" value="d1" />
+        <node concept="3lxVgU" id="AN_117ldPP" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117ldQ$" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117ldQ7" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117ldVq" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117ld9W" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117leka" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="AN_117leml" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117ldW_" role="1vx_$z">
+        <property role="TrG5h" value="d2" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="AN_117ldWA" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117ldWB" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117ldWC" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117lebQ" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117ldb_" resolve="ean" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="AN_117lemA" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:3yfWYM0Rd0a" resolve="setScanable" />
+          <node concept="3clFbT" id="AN_117leoQ" role="3lxVgV">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="AN_117ldY2" role="1vx_$z">
+        <property role="TrG5h" value="d3" />
+        <property role="3lxVgK" value="DecimalDelegate" />
+        <node concept="3lxVgU" id="AN_117ldY3" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="AN_117ldY4" role="3lxVgV">
+            <node concept="2EM3W" id="AN_117ldY5" role="2Oq$k0" />
+            <node concept="2S8uIT" id="AN_117le45" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117ldcO" resolve="menge" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="AN_117ldMW" role="1THgkZ">
+        <node concept="Xl_RD" id="AN_117ldOI" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="AN_117ldO8" role="qi9ce">
+        <ref role="3uigEE" to="dtxg:AN_117ld6l" resolve="BestellPosHelper" />
+      </node>
+      <node concept="3i0LrZ" id="AN_117lepl" role="3i0LrB">
+        <node concept="3clFbS" id="AN_117lepm" role="2VODD2">
+          <node concept="3clFbJ" id="AN_117leqI" role="3cqZAp">
+            <node concept="3clFbS" id="AN_117leqJ" role="3clFbx">
+              <node concept="3clFbF" id="AN_117leQG" role="3cqZAp">
+                <node concept="2OqwBi" id="AN_117leSB" role="3clFbG">
+                  <node concept="1vJt6j" id="AN_117leR8" role="2Oq$k0">
+                    <ref role="1vJt6i" node="AN_117ldW_" resolve="d2" />
+                  </node>
+                  <node concept="liA8E" id="AN_117lf0_" role="2OqNvi">
+                    <ref role="37wK5l" to="c9yi:4o3conyKuLM" resolve="requestFocus" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="AN_117leNk" role="3clFbw">
+              <node concept="3cmrfG" id="AN_117leO1" role="3uHU7w">
+                <property role="3cmrfH" value="2" />
+              </node>
+              <node concept="2OqwBi" id="AN_117lers" role="3uHU7B">
+                <node concept="3i0Lrl" id="AN_117ler1" role="2Oq$k0" />
+                <node concept="2S8uIT" id="AN_117levU" role="2OqNvi">
+                  <ref role="2S8YL0" to="dtxg:AN_117ld7Z" resolve="focusField" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="AN_117lf1y" role="9aQIa">
+              <node concept="3clFbS" id="AN_117lf1z" role="9aQI4">
+                <node concept="3clFbF" id="AN_117lf2C" role="3cqZAp">
+                  <node concept="2OqwBi" id="AN_117lf3o" role="3clFbG">
+                    <node concept="1vJt6j" id="AN_117lf2B" role="2Oq$k0">
+                      <ref role="1vJt6i" node="AN_117ldY2" resolve="d3" />
+                    </node>
+                    <node concept="liA8E" id="AN_117lfib" role="2OqNvi">
+                      <ref role="37wK5l" to="c9yi:4o3conyKuLM" resolve="requestFocus" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2G$zOF" id="4XOQNRZgsbZ">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="BestellPosBearbeitenFC" />
+    <node concept="3uibUv" id="4XOQNRZhmdu" role="qi9ce">
+      <ref role="3uigEE" to="dtxg:AN_117bbd$" resolve="BestellPosition" />
+    </node>
+    <node concept="1THgkH" id="4XOQNRZgsc1" role="2lwzia">
+      <node concept="Xl_RD" id="4XOQNRZgsc2" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="4XOQNRZgsc3" role="1THgkV">
+      <node concept="Xl_RD" id="4XOQNRZgsc4" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="4XOQNRZgsc5" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BestellPosBearbeitenDF" />
+      <ref role="qGGBj" to="dtxg:AN_117bbd$" resolve="BestellPosition" />
+      <node concept="1vx_$y" id="4XOQNRZgsc6" role="1vx_$z">
+        <property role="TrG5h" value="d1" />
+        <node concept="3lxVgU" id="4XOQNRZgsc7" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4XOQNRZgsc8" role="3lxVgV">
+            <node concept="2EM3W" id="4XOQNRZgsc9" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4XOQNRZhn2v" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117bbdT" resolve="bezeichnung" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4XOQNRZgscb" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4XOQNRZgscc" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="4XOQNRZgscd" role="1vx_$z">
+        <property role="TrG5h" value="d2" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="4XOQNRZgsce" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4XOQNRZgscf" role="3lxVgV">
+            <node concept="2EM3W" id="4XOQNRZgscg" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4XOQNRZhn7$" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117bbdK" resolve="ean" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4XOQNRZgssj" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4XOQNRZgsue" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="4XOQNRZgsck" role="1vx_$z">
+        <property role="TrG5h" value="d3" />
+        <property role="3lxVgK" value="DecimalDelegate" />
+        <node concept="3lxVgU" id="4XOQNRZgscl" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4XOQNRZgscm" role="3lxVgV">
+            <node concept="2EM3W" id="4XOQNRZgscn" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4XOQNRZhncD" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117bbe2" resolve="menge" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="4XOQNRZgscp" role="1THgkZ">
+        <node concept="Xl_RD" id="4XOQNRZgscq" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="4XOQNRZhmei" role="qi9ce">
+        <ref role="3uigEE" to="dtxg:AN_117bbd$" resolve="BestellPosition" />
+      </node>
     </node>
   </node>
 </model>
