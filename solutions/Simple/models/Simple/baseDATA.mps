@@ -2402,6 +2402,23 @@
         <property role="Xl_RC" value="Bestellstatus" />
       </node>
     </node>
+    <node concept="1bOX9e" id="2wfjZb3of49" role="TxmiU">
+      <property role="2RkwnN" value="testSTring" />
+      <node concept="3Tm1VV" id="2wfjZb3of4f" role="1B3o_S" />
+      <node concept="2RoN1w" id="2wfjZb3of4g" role="2RnVtd">
+        <node concept="3wEZqW" id="2wfjZb3of4h" role="3wFrgM" />
+        <node concept="3xqBd$" id="2wfjZb3of4i" role="3xrYvX">
+          <node concept="3Tm1VV" id="2wfjZb3of4k" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="2wfjZb3of5p" role="2RkE6I" />
+      <node concept="Xl_RD" id="2wfjZb3ofia" role="2CNmdP">
+        <property role="Xl_RC" value="Test" />
+      </node>
+      <node concept="Xl_RD" id="2wfjZb3ofi_" role="2CNmdL">
+        <property role="Xl_RC" value="Test" />
+      </node>
+    </node>
     <node concept="3clFbW" id="AN_117f5o$" role="jymVt">
       <node concept="3cqZAl" id="AN_117f5o_" role="3clF45" />
       <node concept="3Tm1VV" id="AN_117f5oA" role="1B3o_S" />
@@ -2438,10 +2455,10 @@
       </node>
       <node concept="17QB3L" id="AN_117ldaW" role="2RkE6I" />
       <node concept="Xl_RD" id="AN_117ldwR" role="2CNmdP">
-        <property role="Xl_RC" value="Txt" />
+        <property role="Xl_RC" value="Berbng" />
       </node>
       <node concept="Xl_RD" id="AN_117ldxz" role="2CNmdL">
-        <property role="Xl_RC" value="Text" />
+        <property role="Xl_RC" value="Beschreibung" />
       </node>
     </node>
     <node concept="1bOX9e" id="AN_117ldb_" role="TxmiU">

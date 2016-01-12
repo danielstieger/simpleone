@@ -300,13 +300,13 @@
         <ref role="10x$tN" node="612_n8HjR8q" resolve="RechnungsPosition bearbeiten" />
       </node>
       <node concept="10xUwW" id="2a_rc81iJUv" role="10x$tn">
-        <ref role="10x$tN" node="2a_rc81hps7" resolve="Position bearbeiten" />
+        <ref role="10x$tN" node="2a_rc81hps7" resolve="Rechnungspos bearbeiten" />
       </node>
     </node>
     <node concept="10xgET" id="612_n8He13X" role="10xgEU">
       <ref role="10xgEu" to="dtxg:612_n8Hc$sx" resolve="stat1" />
       <node concept="10xUwW" id="2a_rc81iJVc" role="10x$tn">
-        <ref role="10x$tN" node="2a_rc81hps7" resolve="Position bearbeiten" />
+        <ref role="10x$tN" node="2a_rc81hps7" resolve="Rechnungspos bearbeiten" />
       </node>
     </node>
     <node concept="10xgET" id="612_n8He142" role="10xgEU">
@@ -318,7 +318,7 @@
         <ref role="10x$tN" node="612_n8HjR8q" resolve="RechnungsPosition bearbeiten" />
       </node>
       <node concept="10xUwW" id="2a_rc81iJV_" role="10x$tn">
-        <ref role="10x$tN" node="2a_rc81hps7" resolve="Position bearbeiten" />
+        <ref role="10x$tN" node="2a_rc81hps7" resolve="Rechnungspos bearbeiten" />
       </node>
     </node>
     <node concept="10xUwW" id="612_n8He16r" role="10HVpa">
@@ -1435,7 +1435,7 @@
     </node>
   </node>
   <node concept="3ugp7m" id="2a_rc81hps7">
-    <property role="TrG5h" value="Position bearbeiten" />
+    <property role="TrG5h" value="Rechnungspos bearbeiten" />
     <property role="19I623" value="GRAPH_EDIT_CMD" />
     <property role="3GE5qa" value="Rechnungsprozess" />
     <ref role="3lhHOO" node="612_n8HdZvk" resolve="Rechnungsprozess" />
@@ -1602,26 +1602,21 @@
         </node>
       </node>
       <node concept="3cpWs3" id="AN_117fdEC" role="1K0AWC">
-        <node concept="2OqwBi" id="AN_117felI" role="3uHU7w">
-          <node concept="2OqwBi" id="AN_117fdYj" role="2Oq$k0">
-            <node concept="2OqwBi" id="AN_117fdLZ" role="2Oq$k0">
-              <node concept="3urNR4" id="AN_117fdIZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="AN_117f5tz" resolve="searchViewObject" />
-              </node>
-              <node concept="2S8uIT" id="AN_117fdQR" role="2OqNvi">
-                <ref role="2S8YL0" to="dtxg:AN_117f5lU" resolve="geschaeft" />
-              </node>
+        <node concept="2OqwBi" id="AN_117fdYj" role="3uHU7w">
+          <node concept="2OqwBi" id="AN_117fdLZ" role="2Oq$k0">
+            <node concept="3urNR4" id="AN_117fdIZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="AN_117f5tz" resolve="searchViewObject" />
             </node>
-            <node concept="2S8uIT" id="AN_117fe7g" role="2OqNvi">
-              <ref role="2S8YL0" to="dtxg:AN_117bqvn" resolve="bezeichnung" />
+            <node concept="2S8uIT" id="AN_117fdQR" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:AN_117f5lU" resolve="geschaeft" />
             </node>
           </node>
-          <node concept="liA8E" id="AN_117fi6H" role="2OqNvi">
-            <ref role="37wK5l" to="e2lb:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+          <node concept="2S8uIT" id="AN_117fe7g" role="2OqNvi">
+            <ref role="2S8YL0" to="dtxg:AN_117bqvn" resolve="bezeichnung" />
           </node>
         </node>
         <node concept="Xl_RD" id="AN_117fdy9" role="3uHU7B">
-          <property role="Xl_RC" value="GESCHAEFT " />
+          <property role="Xl_RC" value="ERGEBNIS: Bestellungen " />
         </node>
       </node>
     </node>
@@ -1656,7 +1651,7 @@
           <property role="1$4sGX" value="true" />
         </node>
         <node concept="Xl_RD" id="AN_117fi_s" role="3uHU7B">
-          <property role="Xl_RC" value="SUCHE " />
+          <property role="Xl_RC" value="SUCHE: " />
         </node>
       </node>
       <node concept="JX2Gw" id="AN_117fkqb" role="JX2Go">
@@ -1819,7 +1814,7 @@
     <node concept="10xgET" id="AN_117c2XP" role="10xgEU">
       <ref role="10xgEu" to="dtxg:AN_117c2KY" resolve="erzeugt" />
       <node concept="10xUwW" id="AN_117c3Q3" role="10x$tn">
-        <ref role="10x$tN" node="AN_117c3LL" resolve="Bestellposition scanen" />
+        <ref role="10x$tN" node="AN_117c3LL" resolve="Bestellpositionen scannen" />
       </node>
       <node concept="10xUwW" id="4XOQNRZgrNK" role="10x$tn">
         <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Position bearbeiten" />
@@ -1941,12 +1936,12 @@
         </node>
       </node>
       <node concept="Xl_RD" id="4XOQNRZfwIt" role="3uHU7B">
-        <property role="Xl_RC" value=" - " />
+        <property role="Xl_RC" value=": " />
       </node>
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3LL">
-    <property role="TrG5h" value="Bestellposition scanen" />
+    <property role="TrG5h" value="Bestellpositionen scannen" />
     <property role="3GE5qa" value="Bestellprozess" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Bestellprozess" />
     <node concept="3ugp7q" id="AN_117ldD7" role="3ug97V">
@@ -1996,6 +1991,32 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbF" id="5LYBc7lAudW" role="3cqZAp">
+                      <node concept="37vLTI" id="5LYBc7lAudX" role="3clFbG">
+                        <node concept="3cpWs3" id="5LYBc7lAudY" role="37vLTx">
+                          <node concept="2OqwBi" id="5LYBc7lAudZ" role="3uHU7w">
+                            <node concept="3urNR4" id="5LYBc7lAue0" role="2Oq$k0">
+                              <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                            </node>
+                            <node concept="2S8uIT" id="5LYBc7lAue1" role="2OqNvi">
+                              <ref role="2S8YL0" to="dtxg:AN_117ldb_" resolve="ean" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="5LYBc7lAue2" role="3uHU7B">
+                            <property role="Xl_RC" value="Artikel Name " />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="5LYBc7lAue3" role="37vLTJ">
+                          <node concept="3urNR4" id="5LYBc7lAue4" role="2Oq$k0">
+                            <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                          </node>
+                          <node concept="2S8uIT" id="5LYBc7lAue5" role="2OqNvi">
+                            <ref role="2S8YL0" to="dtxg:AN_117ld9W" resolve="text" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="5LYBc7lAucy" role="3cqZAp" />
                     <node concept="3clFbF" id="AN_117nSy7" role="3cqZAp">
                       <node concept="37vLTI" id="AN_117nTaw" role="3clFbG">
                         <node concept="3cmrfG" id="AN_117nTba" role="37vLTx">
@@ -2310,6 +2331,32 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="5LYBc7lAu2P" role="3cqZAp">
+                  <node concept="37vLTI" id="5LYBc7lAu2Q" role="3clFbG">
+                    <node concept="3cpWs3" id="5LYBc7lAu2R" role="37vLTx">
+                      <node concept="2OqwBi" id="5LYBc7lAu2S" role="3uHU7w">
+                        <node concept="3urNR4" id="5LYBc7lAu2T" role="2Oq$k0">
+                          <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                        </node>
+                        <node concept="2S8uIT" id="5LYBc7lAu2U" role="2OqNvi">
+                          <ref role="2S8YL0" to="dtxg:AN_117ldb_" resolve="ean" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="5LYBc7lAu2V" role="3uHU7B">
+                        <property role="Xl_RC" value="Artikel Name " />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5LYBc7lAu2W" role="37vLTJ">
+                      <node concept="3urNR4" id="5LYBc7lAu2X" role="2Oq$k0">
+                        <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                      </node>
+                      <node concept="2S8uIT" id="5LYBc7lAu2Y" role="2OqNvi">
+                        <ref role="2S8YL0" to="dtxg:AN_117ld9W" resolve="text" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="5LYBc7lAtZ9" role="3cqZAp" />
                 <node concept="3clFbF" id="AN_117oaGJ" role="3cqZAp">
                   <node concept="37vLTI" id="AN_117oaJP" role="3clFbG">
                     <node concept="37vLTw" id="AN_117oaKA" role="37vLTx">
@@ -2378,9 +2425,34 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbF" id="5LYBc7lAnbs" role="3cqZAp">
+                    <node concept="37vLTI" id="5LYBc7lAo43" role="3clFbG">
+                      <node concept="3cpWs3" id="5LYBc7lAocA" role="37vLTx">
+                        <node concept="2OqwBi" id="5LYBc7lAoiY" role="3uHU7w">
+                          <node concept="3urNR4" id="5LYBc7lAofM" role="2Oq$k0">
+                            <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                          </node>
+                          <node concept="2S8uIT" id="5LYBc7lAost" role="2OqNvi">
+                            <ref role="2S8YL0" to="dtxg:AN_117ldb_" resolve="ean" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="5LYBc7lAo4W" role="3uHU7B">
+                          <property role="Xl_RC" value="Artikel Name " />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="5LYBc7lAnVm" role="37vLTJ">
+                        <node concept="3urNR4" id="5LYBc7lAnbq" role="2Oq$k0">
+                          <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                        </node>
+                        <node concept="2S8uIT" id="5LYBc7lAo0J" role="2OqNvi">
+                          <ref role="2S8YL0" to="dtxg:AN_117ld9W" resolve="text" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="10Adit" id="4XOQNRZbRC0" role="3cqZAp">
                     <node concept="Xl_RD" id="4XOQNRZbRJy" role="10Adiu">
-                      <property role="Xl_RC" value="Artikel bereits forhanden" />
+                      <property role="Xl_RC" value="Artikel bereits vorhanden" />
                     </node>
                   </node>
                   <node concept="3clFbH" id="4XOQNRZbScF" role="3cqZAp" />

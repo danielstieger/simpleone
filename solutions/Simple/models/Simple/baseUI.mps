@@ -722,7 +722,7 @@
               <property role="1xgIOb" value="ENTER_10" />
               <node concept="2Ux5d2" id="2a_rc81hne6" role="2UzG4t">
                 <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
-                <ref role="2Ux5d0" to="1y8i:2a_rc81hps7" resolve="Position bearbeiten" />
+                <ref role="2Ux5d0" to="1y8i:2a_rc81hps7" resolve="Rechnungspos bearbeiten" />
                 <node concept="2xMDEs" id="2a_rc81hvpI" role="2Ux5cx">
                   <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Rechnung" />
                 </node>
@@ -753,7 +753,7 @@
               <property role="1xgIOb" value="X_88" />
               <node concept="2Ux5d2" id="5LL59WQxWFE" role="2UzG4t">
                 <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
-                <ref role="2Ux5d0" to="1y8i:2a_rc81hps7" resolve="Position bearbeiten" />
+                <ref role="2Ux5d0" to="1y8i:2a_rc81hps7" resolve="Rechnungspos bearbeiten" />
                 <node concept="2xMDEs" id="5LL59WQxWFF" role="2Ux5cx">
                   <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Rechnung" />
                 </node>
@@ -1429,6 +1429,18 @@
           </node>
         </node>
       </node>
+      <node concept="1vx_$y" id="2wfjZb3ofm7" role="1vx_$z">
+        <property role="TrG5h" value="d10" />
+        <node concept="3lxVgU" id="2wfjZb3ofyg" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="2wfjZb3ofzv" role="3lxVgV">
+            <node concept="2EM3W" id="2wfjZb3ofz2" role="2Oq$k0" />
+            <node concept="2S8uIT" id="2wfjZb3ofC7" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:2wfjZb3of49" resolve="testSTring" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1THgkH" id="AN_117fjNd" role="1THgkZ">
         <node concept="Xl_RD" id="AN_117fjNC" role="1THgkI">
           <property role="Xl_RC" value="1*" />
@@ -1447,7 +1459,7 @@
       <property role="1xgIOb" value="UNDEFINED_0" />
       <property role="3AMjDJ" value="Scannen" />
       <node concept="2Ux5d2" id="AN_117lfvu" role="2UzG4t">
-        <ref role="2Ux5d0" to="1y8i:AN_117c3LL" resolve="Bestellposition scanen" />
+        <ref role="2Ux5d0" to="1y8i:AN_117c3LL" resolve="Bestellpositionen scannen" />
         <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
         <node concept="2xMDEs" id="AN_117lfxZ" role="2Ux5cx">
           <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
