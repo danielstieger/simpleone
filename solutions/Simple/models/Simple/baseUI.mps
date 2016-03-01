@@ -422,21 +422,21 @@
     <property role="TrG5h" value="RechnungDetailForm" />
     <node concept="1J3Sl6" id="612_n8HxLej" role="dvBuy">
       <property role="1J3Sl5" value=" " />
-      <node concept="2Ux5dv" id="612_n8HxLgQ" role="1J3Sl2">
+      <node concept="2Ux5dv" id="B5H4bbTQJ3" role="1J3Sl2">
         <property role="1xgIOb" value="E_69" />
-        <node concept="2Ux5d2" id="612_n8HxLgS" role="2UzG4t">
-          <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
+        <node concept="2Ux5d2" id="B5H4bbTQJ4" role="2UzG4t">
           <ref role="2Ux5d0" to="1y8i:612_n8HjR5N" resolve="Rechnungskopf bearbeiten" />
-          <node concept="2xMDEs" id="612_n8HxLhC" role="2Ux5cx">
+          <ref role="2Ux5d1" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
+          <node concept="2xMDEs" id="B5H4bbTQJ5" role="2Ux5cx">
             <ref role="2xLxPX" to="dtxg:612_n8HbweS" resolve="Rechnung" />
           </node>
-          <node concept="xYMNj" id="77jtz2zKhWl" role="2sIhOb">
+          <node concept="xYMNj" id="B5H4bbTQJ6" role="2sIhOb">
             <ref role="xYMNI" node="77jtz2zKfKW" resolve="RechnungditorForm3" />
             <ref role="xYMNi" to="1y8i:612_n8HxKzq" resolve="Standard" />
           </node>
-          <node concept="xYMNj" id="77jtz2zRQ31" role="2sIhOb">
-            <ref role="xYMNI" node="77jtz2zH6Cv" resolve="RechnungditorForm2" />
+          <node concept="xYMNj" id="B5H4bbTQJ7" role="2sIhOb">
             <ref role="xYMNi" to="1y8i:69pKJ3FDo5_" resolve="Edit2" />
+            <ref role="xYMNI" node="77jtz2zH6Cv" resolve="RechnungditorForm2" />
           </node>
         </node>
       </node>
@@ -1455,6 +1455,16 @@
     <property role="1mNjcY" value="1" />
     <property role="1nxMek" value="false" />
     <property role="TrG5h" value="BestellungBearbeitenFC" />
+    <node concept="2Ux5dv" id="AN_117im3G" role="dvBuy">
+      <property role="3AMjDJ" value="Freigeben" />
+      <node concept="2Ux5d2" id="AN_117im3I" role="2UzG4t">
+        <ref role="2Ux5d0" to="1y8i:AN_117c3Qk" resolve="Bestellung freigeben" />
+        <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
+        <node concept="2xMDEs" id="AN_117im7x" role="2Ux5cx">
+          <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
+        </node>
+      </node>
+    </node>
     <node concept="2Ux5dv" id="AN_117lfvs" role="dvBuy">
       <property role="1xgIOb" value="UNDEFINED_0" />
       <property role="3AMjDJ" value="Scannen" />
@@ -1467,16 +1477,6 @@
         <node concept="xYMNj" id="AN_117lfyM" role="2sIhOb">
           <ref role="xYMNi" to="1y8i:AN_117ldD7" resolve="Standard" />
           <ref role="xYMNI" node="AN_117ldJU" resolve="BestellPosErfassenFC" />
-        </node>
-      </node>
-    </node>
-    <node concept="2Ux5dv" id="AN_117im3G" role="dvBuy">
-      <property role="3AMjDJ" value="Freigeben" />
-      <node concept="2Ux5d2" id="AN_117im3I" role="2UzG4t">
-        <ref role="2Ux5d1" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
-        <ref role="2Ux5d0" to="1y8i:AN_117c3Qk" resolve="Bestellung freigeben" />
-        <node concept="2xMDEs" id="AN_117im7x" role="2Ux5cx">
-          <ref role="2xLxPX" to="dtxg:4u029Jv8vvH" resolve="Bestellung" />
         </node>
       </node>
     </node>
