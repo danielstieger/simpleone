@@ -1739,28 +1739,6 @@
           </node>
         </node>
       </node>
-      <node concept="2GDez7" id="3EfIVvtQJTH" role="2GDezF">
-        <property role="2GDez6" value="100" />
-        <property role="2GDezT" value="-" />
-        <property role="1TGbMe" value="-" />
-        <node concept="2OqwBi" id="3EfIVvtQJWe" role="2GDD_P">
-          <node concept="2EM3W" id="3EfIVvtQJVS" role="2Oq$k0" />
-          <node concept="2S8uIT" id="3EfIVvtQK5q" role="2OqNvi">
-            <ref role="2S8YL0" to="dtxg:AN_117bbdT" resolve="bezeichnung" />
-          </node>
-        </node>
-      </node>
-      <node concept="2GDez7" id="3EfIVvtR35R" role="2GDezF">
-        <property role="2GDez6" value="100" />
-        <property role="2GDezT" value="-" />
-        <property role="1TGbMe" value="-" />
-        <node concept="2OqwBi" id="3EfIVvtR35S" role="2GDD_P">
-          <node concept="2EM3W" id="3EfIVvtR35T" role="2Oq$k0" />
-          <node concept="2S8uIT" id="3EfIVvtR35U" role="2OqNvi">
-            <ref role="2S8YL0" to="dtxg:AN_117bbdT" resolve="bezeichnung" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2G$zOF" id="AN_117ldJU">
