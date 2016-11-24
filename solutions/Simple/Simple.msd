@@ -13,6 +13,7 @@
     <dependency reexport="false">37fdf88a-1025-4d01-864a-0bf987f72e6f(org.modellwerkstatt.manmap.solution)</dependency>
     <dependency reexport="false">5a857198-951d-4874-b213-66fc66e0ee10(org.modellwerkstatt.sandbox)</dependency>
     <dependency reexport="false">994b0fbe-124d-4b44-9098-e2d97dd86f2a(org.modellwerkstatt.fatflow.runtime)</dependency>
+    <dependency reexport="false">bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
@@ -32,6 +33,7 @@
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="f6ea4529-b826-49cb-a717-2ac43f8ba5f5(Simple)" version="0" />
+    <module reference="bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)" version="0" />
     <module reference="994b0fbe-124d-4b44-9098-e2d97dd86f2a(org.modellwerkstatt.fatflow.runtime)" version="0" />
     <module reference="3ffa979d-a559-4372-8a77-69ebb3d02788(org.modellwerkstatt.forms.sandbox)" version="0" />
     <module reference="86b5ca77-71d4-452d-8c64-76f13a80aab6(org.modellwerkstatt.fx8forms)" version="0" />
