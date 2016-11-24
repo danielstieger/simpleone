@@ -195,7 +195,6 @@
         <child id="4079546759073522236" name="configuredComponents" index="23Ghgl" />
         <child id="7784207101902285973" name="options" index="2MWAe8" />
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
-        <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
@@ -215,7 +214,7 @@
   </registry>
   <node concept="2CG7Z0" id="1$$A7zM8Bg6">
     <property role="TrG5h" value="TestConfigurationForFX8" />
-    <property role="2320hu" value="2016-01-11T11:22:33.247Z" />
+    <property role="2320hu" value="2016-11-24T14:00:06.308+01:00" />
     <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
@@ -516,52 +515,34 @@
     <node concept="2CPvp3" id="1$$A7zM8C7_" role="2CGBMS" />
     <node concept="2CJoq6" id="1$$A7zNeFRA" role="2CGBMS">
       <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="AN_117go1o" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapRechnung" />
-        <node concept="Xl_RD" id="AN_117go1p" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapRechnung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="AN_117go1q" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapRechnungsPosition" />
-        <node concept="Xl_RD" id="AN_117go1r" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapRechnungsPosition" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="AN_117go1s" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsprozess" />
-        <node concept="Xl_RD" id="AN_117go1t" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Rechnungsprozess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="AN_117go1u" role="2CJdiS">
+      <node concept="2CJf3v" id="3cAl6M4qtZf" role="2CJdiS">
         <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="AN_117go1v" role="2CJf0U">
+        <node concept="Xl_RD" id="3cAl6M4qtZg" role="2CJf0U">
           <property role="Xl_RC" value="Simple.basePROC.xxxService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117go1w" role="2CJdiS">
-        <property role="TrG5h" value="__bestellprozess" />
-        <node concept="Xl_RD" id="AN_117go1x" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Bestellprozess" />
+      <node concept="2CJf3v" id="3cAl6M4qtZh" role="2CJdiS">
+        <property role="TrG5h" value="__orderprocess" />
+        <node concept="Xl_RD" id="3cAl6M4qtZi" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117go1y" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsTestDaten" />
-        <node concept="Xl_RD" id="AN_117go1z" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.RechnungsTestDaten" />
+      <node concept="2CJf3v" id="3cAl6M4qtZj" role="2CJdiS">
+        <property role="TrG5h" value="__testDataOrder" />
+        <node concept="Xl_RD" id="3cAl6M4qtZk" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117go1$" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsRepository" />
-        <node concept="Xl_RD" id="AN_117go1_" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.RechnungsRepository" />
+      <node concept="2CJf3v" id="3cAl6M4qtZl" role="2CJdiS">
+        <property role="TrG5h" value="__dataManager" />
+        <node concept="Xl_RD" id="3cAl6M4qtZm" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117go1A" role="2CJdiS">
-        <property role="TrG5h" value="__bestellungTestData" />
-        <node concept="Xl_RD" id="AN_117go1B" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.BestellungTestData" />
+      <node concept="2CJf3v" id="3cAl6M4qtZn" role="2CJdiS">
+        <property role="TrG5h" value="__testDataStore" />
+        <node concept="Xl_RD" id="3cAl6M4qtZo" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
         </node>
       </node>
     </node>
@@ -1031,8 +1012,8 @@
     </node>
   </node>
   <node concept="3JDCTW" id="5E5qL$GrDMr">
-    <property role="TrG5h" value="FoplandDocument" />
-    <ref role="3CH1sl" to="dtxg:612_n8HbweS" resolve="Rechnung" />
+    <property role="TrG5h" value="OrderDocument" />
+    <ref role="3CH1sl" to="dtxg:4u029Jv8vvH" resolve="Order" />
     <node concept="2VKfIP" id="5E5qL$GtK2R" role="3JDCS8">
       <node concept="jmJYg" id="5E5qL$Gv9ew" role="2VKfJ8">
         <node concept="3keLz3" id="5E5qL$Gv9f3" role="jmJYj">
@@ -1041,8 +1022,8 @@
           <property role="2E8syY" value="2.5" />
           <node concept="3CHDbd" id="5E5qL$Gv9g0" role="8rgix">
             <property role="3evbFY" value="#,00;-##,00" />
-            <node concept="3CH8xW" id="NaP_iXrguf" role="3CHDb3">
-              <ref role="3CH4VF" to="dtxg:612_n8HbEO6" resolve="intValue" />
+            <node concept="3CH8xW" id="3cAl6M4pvA8" role="3CHDb3">
+              <ref role="3CH4VF" to="dtxg:4u029Jv8vCO" resolve="id" />
             </node>
           </node>
         </node>
@@ -1353,8 +1334,14 @@
     </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
-    <property role="TrG5h" value="SimpleApplication" />
+    <property role="TrG5h" value="App Desktop Order" />
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
+    <node concept="33WYYh" id="5XruxTJPWFb" role="2N77jT">
+      <property role="1Ue4ES" value="UNDEFINED_0" />
+      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search for Orders" />
+      <node concept="10Nm6u" id="5XruxTJPWFc" role="2_HrWp" />
+    </node>
     <node concept="3ulXEM" id="1SuqpWQMcXw" role="3ulXEG">
       <property role="TrG5h" value="thisIsAVeryLongVarName" />
       <node concept="17QB3L" id="1SuqpWQMcYs" role="1tU5fm" />
@@ -1497,31 +1484,9 @@
         </node>
       </node>
     </node>
-    <node concept="33WYYh" id="5XruxTJPWF4" role="2N77jT">
-      <property role="1Ue4ES" value="A_65" />
-      <ref role="2_Hrwf" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
-      <ref role="2_Hrw8" to="1y8i:612_n8He14b" resolve="Rechnungen suchen" />
-      <node concept="10Nm6u" id="5XruxTJPWF5" role="2_HrWp" />
-      <node concept="10Nm6u" id="1SuqpWR1Zt7" role="2_HrWp" />
-    </node>
-    <node concept="33WYYh" id="5XruxTJPWF8" role="2N77jT">
-      <property role="1Ue4ES" value="UNDEFINED_0" />
-      <ref role="2_Hrwf" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
-      <ref role="2_Hrw8" to="1y8i:612_n8HjR3n" resolve="Rechnung bearbeiten" />
-      <node concept="10Nm6u" id="5XruxTJPWF9" role="2_HrWp" />
-      <node concept="3cmrfG" id="5XruxTJPWFa" role="2_HrWp">
-        <property role="3cmrfH" value="0" />
-      </node>
-    </node>
-    <node concept="33WYYh" id="5XruxTJPWFb" role="2N77jL">
-      <property role="1Ue4ES" value="UNDEFINED_0" />
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
-      <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Bestellungen anzeigen" />
-      <node concept="10Nm6u" id="5XruxTJPWFc" role="2_HrWp" />
-    </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
-    <property role="TrG5h" value="SimpleApplicationMDE" />
+    <property role="TrG5h" value="App MDE Order" />
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
       <node concept="3clFbS" id="5XruxTJPWFg" role="2VODD2">
@@ -1559,42 +1524,30 @@
     </node>
     <node concept="2MWAvL" id="5XruxTJPWFf" role="2MWAe8">
       <node concept="Xl_RD" id="6XdB5k66OaZ" role="2MWAvM">
-        <property role="Xl_RC" value="Die Version" />
+        <property role="Xl_RC" value="VERSION 0.0.0" />
       </node>
     </node>
     <node concept="2MZaQk" id="6XdB5k6b0WN" role="2MWAe8">
       <node concept="Xl_RD" id="6XdB5k6b0X5" role="2MZaQn">
-        <property role="Xl_RC" value="The Smartest eFWWS" />
+        <property role="Xl_RC" value="Order App" />
       </node>
     </node>
     <node concept="33WYYh" id="5XruxTJPWFw" role="2N77jT">
       <property role="1Ue4ES" value="UNDEFINED_0" />
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Bestellprozess" />
-      <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Bestellungen anzeigen" />
+      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search for Orders" />
       <node concept="10Nm6u" id="5XruxTJPWFx" role="2_HrWp" />
     </node>
     <node concept="33WYYh" id="5XruxTJPWFy" role="2N77jT">
       <property role="1Ue4ES" value="UNDEFINED_0" />
-      <ref role="2_Hrwf" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
-      <ref role="2_Hrw8" to="1y8i:612_n8HjR3n" resolve="Rechnung bearbeiten" />
+      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
       <node concept="Xl_RD" id="5XruxTJPWFz" role="1Ue4F6">
-        <property role="Xl_RC" value="Rächnung 1 bearbeiten" />
+        <property role="Xl_RC" value="Edit Order 1" />
       </node>
-      <node concept="10Nm6u" id="5XruxTJPWF$" role="2_HrWp" />
+      <node concept="10Nm6u" id="3cAl6M4qbKI" role="2_HrWp" />
       <node concept="3cmrfG" id="5XruxTJPWF_" role="2_HrWp">
         <property role="3cmrfH" value="1" />
-      </node>
-    </node>
-    <node concept="33WYYh" id="5XruxTJPWFA" role="2N77jT">
-      <property role="1Ue4ES" value="UNDEFINED_0" />
-      <ref role="2_Hrwf" to="1y8i:612_n8HdZvk" resolve="Rechnungsprozess" />
-      <ref role="2_Hrw8" to="1y8i:612_n8HjR3n" resolve="Rechnung bearbeiten" />
-      <node concept="Xl_RD" id="5XruxTJPWFB" role="1Ue4F6">
-        <property role="Xl_RC" value="Rächnung 2 bearbeiten" />
-      </node>
-      <node concept="10Nm6u" id="5XruxTJPWFC" role="2_HrWp" />
-      <node concept="3cmrfG" id="5XruxTJPWFD" role="2_HrWp">
-        <property role="3cmrfH" value="2" />
       </node>
     </node>
   </node>
@@ -1606,7 +1559,7 @@
       <node concept="17QB3L" id="1SuqpWQMcha" role="1tU5fm" />
       <node concept="3Tm1VV" id="1SuqpWQMcAX" role="1B3o_S" />
       <node concept="Xl_RD" id="1SuqpWQMchR" role="33vP2m">
-        <property role="Xl_RC" value="Version from setting" />
+        <property role="Xl_RC" value="VERSION 0.0.0" />
       </node>
     </node>
     <node concept="2tJIrI" id="1SuqpWQMciX" role="jymVt" />
@@ -1617,7 +1570,7 @@
       <node concept="3clFbS" id="1SuqpWQMcjS" role="3clF47">
         <node concept="3cpWs6" id="1SuqpWQMcAe" role="3cqZAp">
           <node concept="Xl_RD" id="1SuqpWQMcAf" role="3cqZAk">
-            <property role="Xl_RC" value="getAppName()" />
+            <property role="Xl_RC" value="ORDER Demo Application" />
           </node>
         </node>
       </node>
