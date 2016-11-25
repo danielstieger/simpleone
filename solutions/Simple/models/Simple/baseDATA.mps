@@ -60,6 +60,12 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1201398722958" name="jetbrains.mps.baseLanguage.structure.CustomPropertyImplementation" flags="ng" index="2SWr2p">
+        <child id="1201402259264" name="getAccessor" index="2T9Upn" />
+      </concept>
+      <concept id="1201402044357" name="jetbrains.mps.baseLanguage.structure.GetAccessor" flags="ng" index="2T95Vi">
+        <child id="1202593363480" name="statementList" index="09Bs0" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -493,6 +499,29 @@
         <property role="WfFEv" value="9.0d" />
         <property role="WfFEu" value="1000.0d" />
         <property role="1BDm0K" value="1" />
+      </node>
+    </node>
+    <node concept="1bOX9e" id="7RzRXa3Ibjg" role="TxmiU">
+      <property role="2RkwnN" value="totalValuePlus10Percent" />
+      <node concept="3Tm1VV" id="7RzRXa3Ibjm" role="1B3o_S" />
+      <node concept="2SWr2p" id="7RzRXa3Ibt5" role="2RnVtd">
+        <node concept="2T95Vi" id="7RzRXa3Ibta" role="2T9Upn">
+          <node concept="3clFbS" id="7RzRXa3Ibtf" role="09Bs0">
+            <node concept="3clFbF" id="7RzRXa3Ibus" role="3cqZAp">
+              <node concept="17qRlL" id="7RzRXa3IbvW" role="3clFbG">
+                <node concept="1mgVXT" id="7RzRXa3IbAK" role="3uHU7w">
+                  <property role="1mgVXS" value="2.0d" />
+                </node>
+                <node concept="338YkY" id="7RzRXa3Ibur" role="3uHU7B">
+                  <ref role="338YkT" node="4u029Jv8vG8" resolve="totalValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="7RzRXa3IbqY" role="2RkE6I">
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
     </node>
     <node concept="1bOX9e" id="4u029Jv8vHX" role="TxmiU">
