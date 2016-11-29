@@ -173,10 +173,12 @@
       <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085549729" name="org.modellwerkstatt.objectflow.structure.FlagCommand" flags="ng" index="10Adit">
         <child id="1881524139085549730" name="msgExpression" index="10Adiu" />
+        <child id="1881524139085549731" name="conditionExpression" index="10Adiv" />
       </concept>
       <concept id="1881524139085552758" name="org.modellwerkstatt.objectflow.structure.PageCommand" flags="ng" index="10Adxa">
         <reference id="1881524139085552759" name="page" index="10Adxb" />
       </concept>
+      <concept id="1881524139085552749" name="org.modellwerkstatt.objectflow.structure.CancelCommand" flags="ng" index="10Adxh" />
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
       <concept id="1881524139088778970" name="org.modellwerkstatt.objectflow.structure.ProcessDocumentReference" flags="ng" index="10EhbA">
         <reference id="1881524139088778971" name="processDocument" index="10EhbB" />
@@ -676,6 +678,9 @@
         <ref role="10x$tI" node="AN_117c2XU" />
         <ref role="10x$tN" node="AN_117c3Qk" resolve="Complete Order" />
       </node>
+      <node concept="10xUwW" id="1ReQ$xd3Kgz" role="10x$tn">
+        <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
+      </node>
     </node>
     <node concept="10xgET" id="AN_117c2XR" role="10xgEU">
       <ref role="10xgEu" to="dtxg:AN_117c2L0" resolve="ordered" />
@@ -687,12 +692,18 @@
         <ref role="10x$tI" node="AN_117c2XU" />
         <ref role="10x$tN" node="AN_117c3Qk" resolve="Complete Order" />
       </node>
+      <node concept="10xUwW" id="1ReQ$xd3Np7" role="10x$tn">
+        <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
+      </node>
     </node>
     <node concept="10xgET" id="AN_117c2XU" role="10xgEU">
       <ref role="10xgEu" to="dtxg:AN_117c2L3" resolve="completed" />
       <node concept="10xUwW" id="3cAl6M4vgiP" role="10x$tn">
         <ref role="10x$tN" node="3cAl6M4vge_" resolve="Reset Order" />
         <ref role="10x$tI" node="AN_117c2XP" />
+      </node>
+      <node concept="10xUwW" id="1ReQ$xd3Npu" role="10x$tn">
+        <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
       </node>
     </node>
     <node concept="10xUwW" id="AN_117c2XY" role="10HVpa">
@@ -773,7 +784,7 @@
         </node>
       </node>
       <node concept="3063JU" id="5XruxTJPWFJ" role="3063Jp">
-        <ref role="3063JT" to="knfg:5XruxTJPW_h" resolve="Single Order Main Pane" />
+        <ref role="3063JT" to="knfg:5XruxTJPW_h" resolve="Single Order Main AppTab Pane" />
       </node>
     </node>
     <node concept="20qIzx" id="AN_117h9vz" role="3umfm7">
@@ -867,7 +878,6 @@
             <property role="3SKdUp" value="check in order here! " />
           </node>
         </node>
-        <node concept="3clFbH" id="3cAl6M4p9gm" role="3cqZAp" />
       </node>
     </node>
     <node concept="3ulXEN" id="3cAl6M4p83C" role="3ulXEL">
@@ -2161,8 +2171,8 @@
           </node>
         </node>
       </node>
-      <node concept="3063JU" id="3cAl6M4xBrp" role="3063Jp">
-        <ref role="3063JT" to="knfg:3cAl6M4x_h1" resolve="Order Head Edit" />
+      <node concept="3063JU" id="1ReQ$xd3ObR" role="3063Jp">
+        <ref role="3063JT" to="knfg:1ReQ$xd3NYv" resolve="Order Head Edit (a hotkey)" />
       </node>
     </node>
     <node concept="3ugp7q" id="3cAl6M4xARG" role="3ug97V">
@@ -2374,7 +2384,7 @@
         </node>
       </node>
       <node concept="3063JU" id="3cAl6M4xBsV" role="3063Jp">
-        <ref role="3063JT" to="knfg:3cAl6M4x_h1" resolve="Order Head Edit" />
+        <ref role="3063JT" to="knfg:3cAl6M4x_h1" resolve="Order Head Edit (b hotkey)" />
       </node>
     </node>
     <node concept="3ugp7q" id="3cAl6M4xAWT" role="3ug97V">
@@ -2447,7 +2457,7 @@
         </node>
       </node>
       <node concept="3063JU" id="3cAl6M4xBup" role="3063Jp">
-        <ref role="3063JT" to="knfg:3cAl6M4x_h1" resolve="Order Head Edit" />
+        <ref role="3063JT" to="knfg:3cAl6M4x_h1" resolve="Order Head Edit (b hotkey)" />
       </node>
     </node>
     <node concept="10M0yZ" id="3cAl6M4xAgh" role="2DETGV">
@@ -2535,6 +2545,35 @@
     <node concept="10M0yZ" id="7RzRXa3H9gO" role="2DETGV">
       <ref role="1PxDUh" to="ache:$arjoT88Li" resolve="HafinaDefaults" />
       <ref role="3cqZAo" to="ache:4HlXVUYdTP$" resolve="ICON_EDIT" />
+    </node>
+  </node>
+  <node concept="3ugp7m" id="1ReQ$xd3KdU">
+    <property role="TrG5h" value="Message Command" />
+    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
+    <node concept="3ulXEN" id="1ReQ$xd3Nqj" role="3ulXEL">
+      <property role="TrG5h" value="msg" />
+      <node concept="17QB3L" id="1ReQ$xd3NqG" role="1tU5fm" />
+    </node>
+    <node concept="3ulXEN" id="1ReQ$xd3Nr1" role="3ulXEL">
+      <property role="TrG5h" value="doCancel" />
+      <node concept="10P_77" id="1ReQ$xd3NrJ" role="1tU5fm" />
+    </node>
+    <node concept="20qIzx" id="1ReQ$xd3NsA" role="3umfm7">
+      <node concept="3clFbS" id="1ReQ$xd3NsB" role="2VODD2">
+        <node concept="10Adxh" id="1ReQ$xd3NuO" role="3cqZAp">
+          <node concept="3cpWs3" id="1ReQ$xd3NxJ" role="10Adiu">
+            <node concept="3urNQE" id="1ReQ$xd3N_a" role="3uHU7w">
+              <ref role="3cqZAo" node="1ReQ$xd3Nqj" resolve="msg" />
+            </node>
+            <node concept="Xl_RD" id="1ReQ$xd3Nvb" role="3uHU7B">
+              <property role="Xl_RC" value="Command canceld: " />
+            </node>
+          </node>
+          <node concept="3urNQE" id="1ReQ$xd3Nzq" role="10Adiv">
+            <ref role="3cqZAo" node="1ReQ$xd3Nr1" resolve="doCancel" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

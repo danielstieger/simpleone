@@ -409,7 +409,7 @@
   </node>
   <node concept="2mKXYI" id="5XruxTJPW_h">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="Single Order Main Pane" />
+    <property role="TrG5h" value="Single Order Main AppTab Pane" />
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
     <node concept="2U5qGN" id="5XruxTJPW_i" role="21u2x1">
       <property role="1Nb$_v" value="false" />
@@ -529,6 +529,23 @@
       <node concept="2U5nhG" id="5XruxTJPWA6" role="2U5niL" />
     </node>
     <node concept="fOGPe" id="3cAl6M4s8TF" role="fOGQ8">
+      <node concept="33WYYh" id="1ReQ$xd3OqE" role="fOGQ8">
+        <property role="1Ue4ES" value="A_65" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:1ReQ$xd3KdU" resolve="Message Command" />
+        <node concept="2IFXgM" id="1ReQ$xd3Os_" role="2_HrWp">
+          <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+        </node>
+        <node concept="Xl_RD" id="1ReQ$xd3OtK" role="2_HrWp">
+          <property role="Xl_RC" value="A Hotkey in Main AppTab Pane" />
+        </node>
+        <node concept="3clFbT" id="1ReQ$xd3Oxo" role="2_HrWp">
+          <property role="3clFbU" value="true" />
+        </node>
+        <node concept="Xl_RD" id="1ReQ$xd3OyH" role="1Ue4F6">
+          <property role="Xl_RC" value="A Hotkey" />
+        </node>
+      </node>
       <node concept="33WYYh" id="3cAl6M4sAgE" role="fOGQ8">
         <property role="1Ue4ES" value="E_69" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
@@ -1825,7 +1842,7 @@
   </node>
   <node concept="2mKXYI" id="3cAl6M4x_h1">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="Order Head Edit" />
+    <property role="TrG5h" value="Order Head Edit (b hotkey)" />
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
     <node concept="2U5qGO" id="3cAl6M4x_i9" role="21u2x1">
       <property role="1Nb$_v" value="false" />
@@ -1869,6 +1886,25 @@
       <node concept="2TG9WX" id="3cAl6M4x_iZ" role="3OfFNq">
         <node concept="3Oe$u_" id="3cAl6M4x_j0" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
+        </node>
+      </node>
+    </node>
+    <node concept="fOGPe" id="1ReQ$xd3O2v" role="fOGQ8">
+      <node concept="33WYYh" id="1ReQ$xd3O2Y" role="fOGQ8">
+        <property role="1Ue4ES" value="B_66" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:1ReQ$xd3KdU" resolve="Message Command" />
+        <node concept="2IFXgM" id="1ReQ$xd3O49" role="2_HrWp">
+          <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+        </node>
+        <node concept="Xl_RD" id="1ReQ$xd3O4X" role="2_HrWp">
+          <property role="Xl_RC" value="Hotkey B in Wizzard" />
+        </node>
+        <node concept="3clFbT" id="1ReQ$xd3O7n" role="2_HrWp">
+          <property role="3clFbU" value="true" />
+        </node>
+        <node concept="Xl_RD" id="1ReQ$xd3OAy" role="1Ue4F6">
+          <property role="Xl_RC" value="B Hotkey" />
         </node>
       </node>
     </node>
@@ -1928,6 +1964,75 @@
       </node>
       <node concept="2TG9WX" id="7RzRXa3Ha7k" role="3OfFNq">
         <node concept="3Oe$u_" id="7RzRXa3Ha7l" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="1ReQ$xd3NYv">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="Order Head Edit (a hotkey)" />
+    <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+    <node concept="fOGPe" id="1ReQ$xd3O8k" role="fOGQ8">
+      <node concept="33WYYh" id="1ReQ$xd3O8l" role="fOGQ8">
+        <property role="1Ue4ES" value="A_65" />
+        <ref role="2_Hrw8" to="1y8i:1ReQ$xd3KdU" resolve="Message Command" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <node concept="2IFXgM" id="1ReQ$xd3O8m" role="2_HrWp">
+          <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+        </node>
+        <node concept="Xl_RD" id="1ReQ$xd3O8n" role="2_HrWp">
+          <property role="Xl_RC" value="Hotkey A in Wizzard" />
+        </node>
+        <node concept="3clFbT" id="1ReQ$xd3O8o" role="2_HrWp">
+          <property role="3clFbU" value="true" />
+        </node>
+        <node concept="Xl_RD" id="1ReQ$xd3ODm" role="1Ue4F6">
+          <property role="Xl_RC" value="A Hotkey" />
+        </node>
+      </node>
+    </node>
+    <node concept="2U5qGO" id="1ReQ$xd3NYw" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+      <node concept="2U5nhG" id="1ReQ$xd3NYx" role="2TFpq_" />
+      <node concept="3Oe2IN" id="1ReQ$xd3NYy" role="3OfFNq">
+        <node concept="Pevqn" id="1ReQ$xd3NYz" role="PoUSh" />
+        <node concept="3Oe$u_" id="1ReQ$xd3NY$" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:4u029Jv8vCO" resolve="id" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="1ReQ$xd3NY_" role="3OfFNq">
+        <node concept="3Oe$u_" id="1ReQ$xd3NYA" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bqyN" resolve="name" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="1ReQ$xd3NYB" role="3OfFNq">
+        <node concept="3Oe$u_" id="1ReQ$xd3NYC" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
+        </node>
+      </node>
+      <node concept="2TG9WU" id="1ReQ$xd3NYD" role="3OfFNq">
+        <node concept="3Oe$u_" id="1ReQ$xd3NYE" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:4u029Jv8vHX" resolve="orderDat" />
+        </node>
+      </node>
+      <node concept="2TG9WW" id="1ReQ$xd3NYF" role="3OfFNq">
+        <node concept="3Oe$u_" id="1ReQ$xd3NYG" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bq$J" resolve="store" />
+        </node>
+        <node concept="P8lqc" id="1ReQ$xd3NYH" role="P8nnQ">
+          <node concept="3Oe$u_" id="1ReQ$xd3NYI" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bpzX" resolve="id" />
+          </node>
+          <node concept="3Oe$u_" id="1ReQ$xd3NYJ" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bqvn" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2TG9WX" id="1ReQ$xd3NYK" role="3OfFNq">
+        <node concept="3Oe$u_" id="1ReQ$xd3NYL" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
         </node>
       </node>
