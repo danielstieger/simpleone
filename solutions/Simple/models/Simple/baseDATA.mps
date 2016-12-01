@@ -681,6 +681,27 @@
   </node>
   <node concept="34Athd" id="AN_117bbd$">
     <property role="TrG5h" value="OrderPosition" />
+    <node concept="2XvgOf" id="2IUGN4P8gvE" role="2XvChp">
+      <property role="TrG5h" value="PositionStatus" />
+      <node concept="2XvgOc" id="2IUGN4P8gxl" role="2XvgO2">
+        <property role="TrG5h" value="accepted" />
+        <property role="2XvgOS" value="A" />
+        <property role="1YKsg0" value="Acpt" />
+        <property role="1YKsg1" value="Accepted" />
+      </node>
+      <node concept="2XvgOc" id="2IUGN4P8gzi" role="2XvgO2">
+        <property role="TrG5h" value="rejected" />
+        <property role="2XvgOS" value="R" />
+        <property role="1YKsg0" value="Rcjt" />
+        <property role="1YKsg1" value="Rejected" />
+      </node>
+      <node concept="2XvgOc" id="2IUGN4P9es0" role="2XvgO2">
+        <property role="TrG5h" value="unknown" />
+        <property role="2XvgOS" value="U" />
+        <property role="1YKsg0" value="?" />
+        <property role="1YKsg1" value="Unknown" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="AN_117bbd_" role="1B3o_S" />
     <node concept="1bOX9e" id="AN_117bbdA" role="TxmiU">
       <property role="2RkwnN" value="id" />
@@ -815,6 +836,25 @@
       </node>
       <node concept="Xl_RD" id="3cAl6M4nZz6" role="2CNmdL">
         <property role="Xl_RC" value="Hisotry of Positions" />
+      </node>
+    </node>
+    <node concept="1bOX9e" id="2IUGN4P8g$C" role="TxmiU">
+      <property role="2RkwnN" value="status" />
+      <node concept="3Tm1VV" id="2IUGN4P8g$I" role="1B3o_S" />
+      <node concept="2RoN1w" id="2IUGN4P8g$J" role="2RnVtd">
+        <node concept="3wEZqW" id="2IUGN4P8g$K" role="3wFrgM" />
+        <node concept="3xqBd$" id="2IUGN4P8g$L" role="3xrYvX">
+          <node concept="3Tm1VV" id="2IUGN4P8g$N" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="2XvVpB" id="2IUGN4P8gAN" role="2RkE6I">
+        <ref role="3$lB4D" node="2IUGN4P8gvE" resolve="PositionStatus" />
+      </node>
+      <node concept="Xl_RD" id="2IUGN4P8gBy" role="2CNmdP">
+        <property role="Xl_RC" value="Stat" />
+      </node>
+      <node concept="Xl_RD" id="2IUGN4P8gCm" role="2CNmdL">
+        <property role="Xl_RC" value="Status" />
       </node>
     </node>
     <node concept="3clFbW" id="AN_117bbeu" role="jymVt">

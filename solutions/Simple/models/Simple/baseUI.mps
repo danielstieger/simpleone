@@ -365,6 +365,12 @@
             </node>
           </node>
         </node>
+        <node concept="33WYYh" id="2IUGN4P7e8Q" role="fOGQ8">
+          <property role="1Ue4ES" value="I_73" />
+          <ref role="2_Hrw8" to="1y8i:2IUGN4P78gB" resolve="New Order" />
+          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <node concept="10Nm6u" id="2IUGN4P7eay" role="2_HrWp" />
+        </node>
       </node>
     </node>
   </node>
@@ -1191,7 +1197,7 @@
   </node>
   <node concept="2mKXYI" id="3cAl6M4sALi">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="Order Pos Edit Table" />
+    <property role="TrG5h" value="Order Pos Value Edit Table" />
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
     <node concept="2U5qGQ" id="3cAl6M4sAMc" role="21u2x1">
       <property role="1Nb$_v" value="false" />
@@ -1222,6 +1228,14 @@
         <node concept="Pk5ow" id="3cAl6M4sAQ4" role="PoUSh" />
         <node concept="3Oe$u_" id="3cAl6M4sAMp" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117bbe2" resolve="posValue" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="2IUGN4P8gIQ" role="3OfFNq">
+        <node concept="PnLzW" id="2IUGN4P8gIR" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="2IUGN4P8gIS" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:2IUGN4P8g$C" resolve="status" />
         </node>
       </node>
       <node concept="2TG9WT" id="3cAl6M4sAMq" role="3OfFNq">
@@ -1794,6 +1808,46 @@
             </node>
           </node>
         </node>
+        <node concept="21u2wK" id="2IUGN4P4uS6" role="21udTs">
+          <node concept="Xl_RD" id="2IUGN4P4uS7" role="21u2wP">
+            <property role="Xl_RC" value="Store" />
+          </node>
+          <node concept="2U5qGN" id="2IUGN4P4uS8" role="21u2wL">
+            <property role="1Nb$_v" value="false" />
+            <property role="TrG5h" value="#" />
+            <node concept="2U5nhT" id="2IUGN4P4uSa" role="2U5niL" />
+            <node concept="2U5nhG" id="2IUGN4P4uSb" role="2U5niJ" />
+            <node concept="2U5qGO" id="2IUGN4P4uSv" role="21u2wS">
+              <property role="1Nb$_v" value="false" />
+              <property role="TrG5h" value="#" />
+              <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              <ref role="1Tjo6F" to="dtxg:AN_117bq$J" resolve="store" />
+              <node concept="2U5nhG" id="2IUGN4P4uSw" role="2TFpq_" />
+              <node concept="2U5nhG" id="2IUGN4P4uSx" role="2TFpq_" />
+              <node concept="PoUSf" id="2IUGN4P4uSy" role="PoUSn">
+                <node concept="Xl_RD" id="2IUGN4P4uSz" role="PoUSc">
+                  <property role="Xl_RC" value="Store of order - disabled" />
+                </node>
+              </node>
+              <node concept="PoU6y" id="2IUGN4P4uS$" role="PoUSn" />
+              <node concept="3Oe2IN" id="2IUGN4P4v29" role="3OfFNq">
+                <node concept="3Oe$u_" id="2IUGN4P4v2a" role="3$nDjG">
+                  <ref role="3O0p26" to="dtxg:AN_117bpzX" resolve="id" />
+                </node>
+              </node>
+              <node concept="3Oe2Ik" id="2IUGN4P4v2b" role="3OfFNq">
+                <node concept="3Oe$u_" id="2IUGN4P4v2c" role="3$nDjG">
+                  <ref role="3O0p26" to="dtxg:AN_117bqvn" resolve="name" />
+                </node>
+              </node>
+              <node concept="3Oe2Ik" id="2IUGN4P4v2d" role="3OfFNq">
+                <node concept="3Oe$u_" id="2IUGN4P4v2e" role="3$nDjG">
+                  <ref role="3O0p26" to="dtxg:3cAl6M4nWRa" resolve="address" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2U5nhG" id="3cAl6M4wpe6" role="2U5niJ" />
       <node concept="2U5nhT" id="3cAl6M4wpe7" role="2U5niL" />
@@ -2034,6 +2088,59 @@
       <node concept="2TG9WX" id="1ReQ$xd3NYK" role="3OfFNq">
         <node concept="3Oe$u_" id="1ReQ$xd3NYL" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="2IUGN4P8gbB">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="Order Pos Status Edit Table" />
+    <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+    <node concept="2U5qGQ" id="2IUGN4P8gbC" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+      <ref role="1Tjo6F" to="dtxg:AN_117bqBd" resolve="pos" />
+      <node concept="PoWA$" id="2IUGN4P8gbD" role="PoUSn" />
+      <node concept="3Oe2Ik" id="2IUGN4P8gbE" role="3OfFNq">
+        <node concept="PnLzW" id="2IUGN4P8gbF" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="2IUGN4P8gbG" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bbdK" resolve="ean" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="2IUGN4P8gbH" role="3OfFNq">
+        <node concept="PnLzW" id="2IUGN4P8gbI" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="2IUGN4P8gbJ" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bbdT" resolve="name" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="2IUGN4P8gbK" role="3OfFNq">
+        <node concept="PnLzW" id="2IUGN4P8gbL" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="2IUGN4P8gbN" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bbe2" resolve="posValue" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="2IUGN4P8gGq" role="3OfFNq">
+        <node concept="PnLzW" id="2IUGN4P8gGr" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="2IUGN4P8gGs" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:2IUGN4P8g$C" resolve="status" />
+        </node>
+        <node concept="Pk5ow" id="2IUGN4P8ECY" role="PoUSh" />
+      </node>
+      <node concept="2TG9WT" id="2IUGN4P8gbO" role="3OfFNq">
+        <node concept="PnLzW" id="2IUGN4P8gbP" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="2IUGN4P8gbQ" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bbec" resolve="timestamp" />
         </node>
       </node>
     </node>
