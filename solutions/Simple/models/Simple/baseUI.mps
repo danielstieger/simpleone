@@ -2145,5 +2145,117 @@
       </node>
     </node>
   </node>
+  <node concept="2mKXYI" id="53acIw4VoA3">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="MDE List of Orders" />
+    <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+    <node concept="2U5qGQ" id="53acIw4VoA4" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+      <node concept="PoWA$" id="53acIw4VoA5" role="PoUSn" />
+      <node concept="3Oe2Ik" id="53acIw4VoA9" role="3OfFNq">
+        <node concept="PnLzW" id="53acIw4VoAa" role="PoUSh">
+          <property role="PiFy3" value="50" />
+        </node>
+        <node concept="3Oe$u_" id="53acIw4VoAb" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bqyN" resolve="name" />
+        </node>
+      </node>
+      <node concept="2TG9WU" id="53acIw4VoAc" role="3OfFNq">
+        <node concept="PnLzW" id="53acIw4VoAd" role="PoUSh">
+          <property role="PiFy3" value="30" />
+        </node>
+        <node concept="3Oe$u_" id="53acIw4VoAe" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:4u029Jv8vHX" resolve="orderDat" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="53acIw4VoAf" role="3OfFNq">
+        <node concept="PnLzW" id="53acIw4VoAg" role="PoUSh">
+          <property role="PiFy3" value="20" />
+        </node>
+        <node concept="3Oe$u_" id="53acIw4VoAh" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
+        </node>
+      </node>
+      <node concept="fOGPe" id="53acIw4VoAi" role="fOGQ8">
+        <node concept="33WYYh" id="53acIw4VoAj" role="fOGQ8">
+          <property role="1Ue4ES" value="ENTER_10" />
+          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+          <node concept="2IFXgM" id="53acIw4VoAk" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+          </node>
+          <node concept="2OqwBi" id="53acIw4VoAl" role="2_HrWp">
+            <node concept="2IFXgM" id="53acIw4VoAm" role="2Oq$k0">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="2S8uIT" id="53acIw4VoAn" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
+            </node>
+          </node>
+          <node concept="3clFbT" id="53acIw4VoAo" role="2_HrWp">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="33WYYh" id="53acIw4VoAp" role="fOGQ8">
+          <property role="1Ue4ES" value="UNDEFINED_0" />
+          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+          <node concept="2IFXgM" id="53acIw4VoAq" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+          </node>
+          <node concept="2OqwBi" id="53acIw4VoAr" role="2_HrWp">
+            <node concept="2IFXgM" id="53acIw4VoAs" role="2Oq$k0">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="2S8uIT" id="53acIw4VoAt" role="2OqNvi">
+              <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
+            </node>
+          </node>
+          <node concept="3clFbT" id="53acIw4VoAu" role="2_HrWp">
+            <property role="3clFbU" value="true" />
+          </node>
+          <node concept="Xl_RD" id="53acIw4VoAv" role="1Ue4F6">
+            <property role="Xl_RC" value="Editr Order (RO)" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="53acIw4Vpvb">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="MDE Search Order Pane" />
+    <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
+    <node concept="2U5qGO" id="53acIw4Vpvc" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
+      <node concept="2TG9WU" id="53acIw4Vpvf" role="3OfFNq">
+        <node concept="3Oe$u_" id="53acIw4Vpvg" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5nv" resolve="to" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="53acIw4Vpvh" role="3OfFNq">
+        <node concept="3Oe$u_" id="53acIw4Vpvi" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5oM" resolve="status" />
+        </node>
+      </node>
+      <node concept="2TG9WW" id="53acIw4Vpvj" role="3OfFNq">
+        <node concept="3Oe$u_" id="53acIw4Vpvk" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5lU" resolve="store" />
+        </node>
+        <node concept="P8lqc" id="53acIw4Vpvl" role="P8nnQ">
+          <node concept="3Oe$u_" id="53acIw4Vpvm" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bpzX" resolve="id" />
+          </node>
+          <node concept="3Oe$u_" id="53acIw4Vpvn" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bqvn" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2U5nhG" id="53acIw4Vpvo" role="2TFpq_" />
+    </node>
+  </node>
 </model>
 

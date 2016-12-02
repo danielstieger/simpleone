@@ -205,6 +205,7 @@
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
+      <concept id="5821521440415834576" name="org.modellwerkstatt.dataux.structure.UseSecondPagePanes" flags="ng" index="1kx5cS" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1490,8 +1491,6 @@
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
       <node concept="3clFbS" id="5XruxTJPWFg" role="2VODD2">
-        <node concept="3clFbH" id="5XruxTJPWFh" role="3cqZAp" />
-        <node concept="3clFbH" id="5XruxTJPWFi" role="3cqZAp" />
         <node concept="3clFbH" id="5XruxTJPWFj" role="3cqZAp" />
         <node concept="3clFbF" id="5XruxTJPWFk" role="3cqZAp">
           <node concept="2OqwBi" id="5XruxTJPWFl" role="3clFbG">
@@ -1522,16 +1521,6 @@
         </node>
       </node>
     </node>
-    <node concept="2MWAvL" id="5XruxTJPWFf" role="2MWAe8">
-      <node concept="Xl_RD" id="6XdB5k66OaZ" role="2MWAvM">
-        <property role="Xl_RC" value="VERSION 0.0.0" />
-      </node>
-    </node>
-    <node concept="2MZaQk" id="6XdB5k6b0WN" role="2MWAe8">
-      <node concept="Xl_RD" id="6XdB5k6b0X5" role="2MZaQn">
-        <property role="Xl_RC" value="Order App" />
-      </node>
-    </node>
     <node concept="33WYYh" id="5XruxTJPWFw" role="2N77jT">
       <property role="1Ue4ES" value="UNDEFINED_0" />
       <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
@@ -1549,7 +1538,16 @@
       <node concept="3cmrfG" id="5XruxTJPWF_" role="2_HrWp">
         <property role="3cmrfH" value="1" />
       </node>
+      <node concept="3clFbT" id="2WdiRyr8tLJ" role="2_HrWp">
+        <property role="3clFbU" value="false" />
+      </node>
     </node>
+    <node concept="2MWAvL" id="2WdiRyr8sLg" role="2MWAe8">
+      <node concept="Xl_RD" id="2WdiRyr8tK4" role="2MWAvM">
+        <property role="Xl_RC" value="Dan" />
+      </node>
+    </node>
+    <node concept="1kx5cS" id="53acIw4Wi8K" role="2MWAe8" />
   </node>
   <node concept="312cEu" id="1SuqpWQMcfd">
     <property role="TrG5h" value="TestSetting" />

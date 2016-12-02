@@ -383,6 +383,9 @@
       <node concept="3063JU" id="5XruxTJPWFG" role="3063Jp">
         <ref role="3063JT" to="knfg:5XruxTJPW$P" resolve="Search Order Pane" />
       </node>
+      <node concept="3063JU" id="53acIw4Wi0r" role="3063Jp">
+        <ref role="3063JT" to="knfg:53acIw4Vpvb" resolve="MDE Search Order Pane" />
+      </node>
     </node>
     <node concept="3ugp7q" id="AN_117fcIc" role="3ug97V">
       <property role="TrG5h" value="ResultPage" />
@@ -519,6 +522,9 @@
       </node>
       <node concept="3063JU" id="5XruxTJPWFF" role="3063Jp">
         <ref role="3063JT" to="knfg:5XruxTJPW$x" resolve="List of Orders" />
+      </node>
+      <node concept="3063JU" id="53acIw4Vp9$" role="3063Jp">
+        <ref role="3063JT" to="knfg:53acIw4VoA3" resolve="MDE List of Orders" />
       </node>
     </node>
     <node concept="3ulXEM" id="AN_117f5tz" role="3ulXEG">
