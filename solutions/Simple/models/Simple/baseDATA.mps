@@ -523,6 +523,9 @@
       <node concept="3uibUv" id="7RzRXa3IbqY" role="2RkE6I">
         <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
+      <node concept="Xl_RD" id="3zmXKO4roDA" role="2CNmdL">
+        <property role="Xl_RC" value="+ 10%" />
+      </node>
     </node>
     <node concept="1bOX9e" id="4u029Jv8vHX" role="TxmiU">
       <property role="2RkwnN" value="orderDat" />

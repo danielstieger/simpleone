@@ -782,7 +782,7 @@
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
     <property role="TrG5h" value="MdeConfig" />
-    <property role="2320hu" value="2016-01-11T12:55:28.471Z" />
+    <property role="2320hu" value="2016-12-05T15:10:26.048+01:00" />
     <node concept="2CJoq6" id="49EzYiePzDi" role="2CGBMS">
       <property role="TrG5h" value="MdeConfig" />
       <node concept="2CJf3v" id="49EzYiePzDj" role="2CJdiS">
@@ -962,52 +962,34 @@
     </node>
     <node concept="2CJoq6" id="49EzYiePzEq" role="2CGBMS">
       <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="AN_117ikgf" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapRechnung" />
-        <node concept="Xl_RD" id="AN_117ikgg" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapRechnung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="AN_117ikgh" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapRechnungsPosition" />
-        <node concept="Xl_RD" id="AN_117ikgi" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapRechnungsPosition" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="AN_117ikgj" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsprozess" />
-        <node concept="Xl_RD" id="AN_117ikgk" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Rechnungsprozess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="AN_117ikgl" role="2CJdiS">
+      <node concept="2CJf3v" id="5RGNApEnut_" role="2CJdiS">
         <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="AN_117ikgm" role="2CJf0U">
+        <node concept="Xl_RD" id="5RGNApEnutA" role="2CJf0U">
           <property role="Xl_RC" value="Simple.basePROC.xxxService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117ikgn" role="2CJdiS">
-        <property role="TrG5h" value="__bestellprozess" />
-        <node concept="Xl_RD" id="AN_117ikgo" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Bestellprozess" />
+      <node concept="2CJf3v" id="5RGNApEnutB" role="2CJdiS">
+        <property role="TrG5h" value="__orderprocess" />
+        <node concept="Xl_RD" id="5RGNApEnutC" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117ikgp" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsTestDaten" />
-        <node concept="Xl_RD" id="AN_117ikgq" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.RechnungsTestDaten" />
+      <node concept="2CJf3v" id="5RGNApEnutD" role="2CJdiS">
+        <property role="TrG5h" value="__testDataOrder" />
+        <node concept="Xl_RD" id="5RGNApEnutE" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117ikgr" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsRepository" />
-        <node concept="Xl_RD" id="AN_117ikgs" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.RechnungsRepository" />
+      <node concept="2CJf3v" id="5RGNApEnutF" role="2CJdiS">
+        <property role="TrG5h" value="__dataManager" />
+        <node concept="Xl_RD" id="5RGNApEnutG" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
         </node>
       </node>
-      <node concept="2CJf3v" id="AN_117ikgt" role="2CJdiS">
-        <property role="TrG5h" value="__bestellungTestData" />
-        <node concept="Xl_RD" id="AN_117ikgu" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.BestellungTestData" />
+      <node concept="2CJf3v" id="5RGNApEnutH" role="2CJdiS">
+        <property role="TrG5h" value="__testDataStore" />
+        <node concept="Xl_RD" id="5RGNApEnutI" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
         </node>
       </node>
     </node>
@@ -1491,7 +1473,6 @@
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
       <node concept="3clFbS" id="5XruxTJPWFg" role="2VODD2">
-        <node concept="3clFbH" id="5XruxTJPWFj" role="3cqZAp" />
         <node concept="3clFbF" id="5XruxTJPWFk" role="3cqZAp">
           <node concept="2OqwBi" id="5XruxTJPWFl" role="3clFbG">
             <node concept="2Rjrh3" id="5XruxTJPWFm" role="2Oq$k0" />
