@@ -550,7 +550,13 @@
   </node>
   <node concept="2CG7Z0" id="vsIEjNpDA8">
     <property role="TrG5h" value="VaadinConfig" />
-    <property role="2320hu" value="2016-03-10T08:21:44.743Z" />
+    <property role="2320hu" value="2016-12-12T14:52:41.271+01:00" />
+    <node concept="2CJf3v" id="5cpEwAg87NE" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="5cpEwAg87NF" role="2CJf0U">
+        <property role="Xl_RC" value="Simple.baseApp.TestSetting" />
+      </node>
+    </node>
     <node concept="2CJoq6" id="6rifQjUyq6q" role="2CGBMS">
       <property role="TrG5h" value="VaadinConfig" />
       <node concept="2CJf3v" id="de4UglS7aP" role="2CJdiS">
@@ -730,52 +736,34 @@
     </node>
     <node concept="2CJoq6" id="vsIEjNpHLa" role="2CGBMS">
       <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="NaP_iXw0ww" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapRechnung" />
-        <node concept="Xl_RD" id="NaP_iXw0wx" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapRechnung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="NaP_iXw0wy" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapRechnungsPosition" />
-        <node concept="Xl_RD" id="NaP_iXw0wz" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapRechnungsPosition" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="NaP_iXw0w$" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsprozess" />
-        <node concept="Xl_RD" id="NaP_iXw0w_" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Rechnungsprozess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="NaP_iXw0wA" role="2CJdiS">
+      <node concept="2CJf3v" id="5cpEwAg7FLK" role="2CJdiS">
         <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="NaP_iXw0wB" role="2CJf0U">
+        <node concept="Xl_RD" id="5cpEwAg7FLL" role="2CJf0U">
           <property role="Xl_RC" value="Simple.basePROC.xxxService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="NaP_iXw0wC" role="2CJdiS">
-        <property role="TrG5h" value="__bestellprozess" />
-        <node concept="Xl_RD" id="NaP_iXw0wD" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Bestellprozess" />
+      <node concept="2CJf3v" id="5cpEwAg7FLM" role="2CJdiS">
+        <property role="TrG5h" value="__orderprocess" />
+        <node concept="Xl_RD" id="5cpEwAg7FLN" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
         </node>
       </node>
-      <node concept="2CJf3v" id="NaP_iXw0wE" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsTestDaten" />
-        <node concept="Xl_RD" id="NaP_iXw0wF" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.RechnungsTestDaten" />
+      <node concept="2CJf3v" id="5cpEwAg7FLO" role="2CJdiS">
+        <property role="TrG5h" value="__testDataOrder" />
+        <node concept="Xl_RD" id="5cpEwAg7FLP" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
         </node>
       </node>
-      <node concept="2CJf3v" id="NaP_iXw0wG" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungsRepository" />
-        <node concept="Xl_RD" id="NaP_iXw0wH" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.RechnungsRepository" />
+      <node concept="2CJf3v" id="5cpEwAg7FLQ" role="2CJdiS">
+        <property role="TrG5h" value="__dataManager" />
+        <node concept="Xl_RD" id="5cpEwAg7FLR" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
         </node>
       </node>
-      <node concept="2CJf3v" id="NaP_iXw0wI" role="2CJdiS">
-        <property role="TrG5h" value="__bestellungTestData" />
-        <node concept="Xl_RD" id="NaP_iXw0wJ" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.BestellungTestData" />
+      <node concept="2CJf3v" id="5cpEwAg7FLS" role="2CJdiS">
+        <property role="TrG5h" value="__testDataStore" />
+        <node concept="Xl_RD" id="5cpEwAg7FLT" role="2CJf0U">
+          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
         </node>
       </node>
     </node>
