@@ -189,7 +189,6 @@
       <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ng" index="PoUSo">
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
-      <concept id="465568541573490182" name="org.modellwerkstatt.dataux.structure.IDOption" flags="ng" index="PoUSp" />
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
       <concept id="3899779351686566802" name="org.modellwerkstatt.dataux.structure.LocalDateDelegate" flags="ng" index="2TG9WU" />
@@ -2109,42 +2108,48 @@
         </node>
       </node>
     </node>
-    <node concept="2U5qGQ" id="6HA5kZtTP7p" role="21u2x1">
+    <node concept="2U5qGO" id="1fYc781DWS7" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
-      <node concept="PoWA$" id="6HA5kZtTP7r" role="PoUSn" />
-      <node concept="3Oe2IN" id="6HA5kZtTP7G" role="3OfFNq">
-        <node concept="PnLzW" id="6HA5kZtTP7H" role="PoUSh">
-          <property role="PiFy3" value="16" />
-        </node>
-        <node concept="3Oe$u_" id="6HA5kZtTP7I" role="3$nDjG">
+      <node concept="2U5nhG" id="1fYc781DWS8" role="2TFpq_" />
+      <node concept="3Oe2IN" id="1fYc781DWS9" role="3OfFNq">
+        <node concept="Pevqn" id="1fYc781DWSa" role="PoUSh" />
+        <node concept="3Oe$u_" id="1fYc781DWSb" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:4u029Jv8vCO" resolve="id" />
         </node>
       </node>
-      <node concept="3Oe2Ik" id="6HA5kZtTP7J" role="3OfFNq">
-        <node concept="PnLzW" id="6HA5kZtTP7K" role="PoUSh">
-          <property role="PiFy3" value="16" />
-        </node>
-        <node concept="3Oe$u_" id="6HA5kZtTP7L" role="3$nDjG">
+      <node concept="3Oe2Ik" id="1fYc781DWSc" role="3OfFNq">
+        <node concept="3Oe$u_" id="1fYc781DWSd" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117bqyN" resolve="name" />
         </node>
       </node>
-      <node concept="3Oe2In" id="6HA5kZtTP7M" role="3OfFNq">
-        <node concept="PnLzW" id="6HA5kZtTP7N" role="PoUSh">
-          <property role="PiFy3" value="16" />
-        </node>
-        <node concept="3Oe$u_" id="6HA5kZtTP7O" role="3$nDjG">
+      <node concept="3Oe2In" id="1fYc781DWSe" role="3OfFNq">
+        <node concept="3Oe$u_" id="1fYc781DWSf" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
         </node>
       </node>
-      <node concept="3Oe2In" id="6HA5kZtTP7P" role="3OfFNq">
-        <node concept="PnLzW" id="6HA5kZtTP7Q" role="PoUSh">
-          <property role="PiFy3" value="16" />
+      <node concept="2TG9WU" id="1fYc781DWSg" role="3OfFNq">
+        <node concept="3Oe$u_" id="1fYc781DWSh" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:4u029Jv8vHX" resolve="orderDat" />
         </node>
-        <node concept="PoUSp" id="6HA5kZtTP9z" role="PoUSh" />
-        <node concept="3Oe$u_" id="6HA5kZtTP7R" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:7RzRXa3Ibjg" resolve="totalValuePlus10Percent" />
+      </node>
+      <node concept="2TG9WW" id="1fYc781DWSi" role="3OfFNq">
+        <node concept="3Oe$u_" id="1fYc781DWSj" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117bq$J" resolve="store" />
+        </node>
+        <node concept="P8lqc" id="1fYc781DWSk" role="P8nnQ">
+          <node concept="3Oe$u_" id="1fYc781DWSl" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bpzX" resolve="id" />
+          </node>
+          <node concept="3Oe$u_" id="1fYc781DWSm" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bqvn" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2TG9WX" id="1fYc781DWSn" role="3OfFNq">
+        <node concept="3Oe$u_" id="1fYc781DWSo" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
         </node>
       </node>
     </node>
