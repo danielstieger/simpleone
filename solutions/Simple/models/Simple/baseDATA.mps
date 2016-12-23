@@ -166,6 +166,16 @@
         <property id="8614254524338490551" name="max" index="8tbpI" />
         <property id="8614254524338490550" name="min" index="8tbpJ" />
       </concept>
+      <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
+        <child id="3146313690717155086" name="labels" index="2kzhMJ" />
+      </concept>
+      <concept id="1440642197017487635" name="org.modellwerkstatt.objectflow.structure.Label" flags="ng" index="il5_x">
+        <child id="3146313690717155575" name="specification" index="2kzgdm" />
+      </concept>
+      <concept id="3146313690717155301" name="org.modellwerkstatt.objectflow.structure.LabelSpecification" flags="ng" index="2kzhL4">
+        <property id="1440642197017487963" name="hotkey" index="il5CD" />
+        <child id="1440642197017487671" name="text" index="il5_5" />
+      </concept>
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
       </concept>
@@ -2439,6 +2449,122 @@
         <ref role="1bDdzG" node="3cAl6M4nWRa" resolve="address" />
         <node concept="Xl_RD" id="3cAl6M4p49v" role="1bDdzI">
           <property role="Xl_RC" value="10 Rue Adolphe Thiers" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="il5tC" id="3Rw9V4pLpzc">
+    <property role="TrG5h" value="SimpleRes" />
+    <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
+      <property role="TrG5h" value="Search" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
+        <property role="il5CD" value="F4_115" />
+        <node concept="Xl_RD" id="3Rw9V4pLpzM" role="il5_5">
+          <property role="Xl_RC" value="Search" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzN" role="2kzhMJ">
+      <property role="TrG5h" value="Ok" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzO" role="2kzgdm">
+        <property role="il5CD" value="F2_113" />
+        <node concept="Xl_RD" id="3Rw9V4pLpzP" role="il5_5">
+          <property role="Xl_RC" value="Ok" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzQ" role="2kzhMJ">
+      <property role="TrG5h" value="SCAN" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzR" role="2kzgdm">
+        <node concept="Xl_RD" id="3Rw9V4pLpzS" role="il5_5">
+          <property role="Xl_RC" value="SCAN" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzT" role="2kzhMJ">
+      <property role="TrG5h" value="StatusEdit" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzU" role="2kzgdm">
+        <property role="il5CD" value="F4_115" />
+        <node concept="Xl_RD" id="3Rw9V4pLpzV" role="il5_5">
+          <property role="Xl_RC" value="Status Edit" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzW" role="2kzhMJ">
+      <property role="TrG5h" value="ValueEdit" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzX" role="2kzgdm">
+        <property role="il5CD" value="F3_114" />
+        <node concept="Xl_RD" id="3Rw9V4pLpzY" role="il5_5">
+          <property role="Xl_RC" value="Value Edit" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzZ" role="2kzhMJ">
+      <property role="TrG5h" value="Reload" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$0" role="2kzgdm">
+        <property role="il5CD" value="F3_114" />
+        <node concept="Xl_RD" id="3Rw9V4pLp$1" role="il5_5">
+          <property role="Xl_RC" value="Reload" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$2" role="2kzhMJ">
+      <property role="TrG5h" value="Next" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$3" role="2kzgdm">
+        <property role="il5CD" value="F4_115" />
+        <node concept="Xl_RD" id="3Rw9V4pLp$4" role="il5_5">
+          <property role="Xl_RC" value="Next" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$5" role="2kzhMJ">
+      <property role="TrG5h" value="EN-A" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$6" role="2kzgdm">
+        <node concept="Xl_RD" id="3Rw9V4pLp$7" role="il5_5">
+          <property role="Xl_RC" value="EN-A" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$8" role="2kzhMJ">
+      <property role="TrG5h" value="DIS-A" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$9" role="2kzgdm">
+        <node concept="Xl_RD" id="3Rw9V4pLp$a" role="il5_5">
+          <property role="Xl_RC" value="DIS-A" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$b" role="2kzhMJ">
+      <property role="TrG5h" value="DIS-S" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$c" role="2kzgdm">
+        <node concept="Xl_RD" id="3Rw9V4pLp$d" role="il5_5">
+          <property role="Xl_RC" value="DIS-S" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$e" role="2kzhMJ">
+      <property role="TrG5h" value="Back" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$f" role="2kzgdm">
+        <property role="il5CD" value="F3_114" />
+        <node concept="Xl_RD" id="3Rw9V4pLp$g" role="il5_5">
+          <property role="Xl_RC" value="Back" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$h" role="2kzhMJ">
+      <property role="TrG5h" value="OK" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$i" role="2kzgdm">
+        <property role="il5CD" value="F4_115" />
+        <node concept="Xl_RD" id="3Rw9V4pLp$j" role="il5_5">
+          <property role="Xl_RC" value="OK" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLp$k" role="2kzhMJ">
+      <property role="TrG5h" value="Create" />
+      <node concept="2kzhL4" id="3Rw9V4pLp$l" role="2kzgdm">
+        <property role="il5CD" value="INSERT_FFF" />
+        <node concept="Xl_RD" id="3Rw9V4pLp$m" role="il5_5">
+          <property role="Xl_RC" value="Create" />
         </node>
       </node>
     </node>
