@@ -5,7 +5,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
     <use id="1e645434-f066-4246-95c3-c768bd8f6bee" name="org.modellwerkstatt.FopLand" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <generationPart ref="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
   </languages>
   <imports>
@@ -147,6 +146,9 @@
         <reference id="3526396426289727551" name="property" index="26L8Vy" />
         <child id="3526396426289727549" name="value" index="26L8Vw" />
       </concept>
+      <concept id="4678401045862675371" name="org.modellwerkstatt.objectflow.structure.CommandCreationInfo" flags="ng" index="27Aftt">
+        <child id="4678401045862675827" name="msg" index="27Af65" />
+      </concept>
       <concept id="385689203887259518" name="org.modellwerkstatt.objectflow.structure.InstanceNumberParameter" flags="ng" index="2ifg4R" />
       <concept id="385689203887128308" name="org.modellwerkstatt.objectflow.structure.BatchTaskConceptFunction" flags="ig" index="2ifK2X" />
       <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.OFXConfig" flags="ng" index="2CG7Z0">
@@ -214,6 +216,7 @@
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
+        <child id="4678401045862677843" name="commandCreationInformation" index="27AfA_" />
         <child id="6424689520746483726" name="tecDocumentation" index="Xrskq" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
@@ -667,6 +670,11 @@
     <property role="TrG5h" value="Print Invoice" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <ref role="3lhHOO" node="4dpCiRYDYMA" resolve="InvoiceDemoProc" />
+    <node concept="27Aftt" id="7MWNCzX1CxQ" role="27AfA_">
+      <node concept="Xl_RD" id="7MWNCzX1CVq" role="27Af65">
+        <property role="Xl_RC" value="dan" />
+      </node>
+    </node>
     <node concept="20qIzx" id="5E5qL$Gsrkg" role="3umfm7">
       <node concept="3clFbS" id="5E5qL$Gsrkh" role="2VODD2">
         <node concept="3clFbF" id="5E5qL$GrxCh" role="3cqZAp">

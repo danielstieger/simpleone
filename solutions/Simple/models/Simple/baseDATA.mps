@@ -7,12 +7,10 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <generationPart ref="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
   </languages>
   <imports>
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
-    <import index="1y8i" ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(Simple.basePROC)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -168,13 +166,19 @@
       </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
+        <child id="3146313690715522546" name="platforms" index="2kDvpj" />
       </concept>
       <concept id="1440642197017487635" name="org.modellwerkstatt.objectflow.structure.Label" flags="ng" index="il5_x">
         <child id="3146313690717155575" name="specification" index="2kzgdm" />
       </concept>
       <concept id="3146313690717155301" name="org.modellwerkstatt.objectflow.structure.LabelSpecification" flags="ng" index="2kzhL4">
         <property id="1440642197017487963" name="hotkey" index="il5CD" />
+        <reference id="8554054623629703239" name="platform" index="2C2Acs" />
+        <child id="1440642197017487722" name="icon" index="il5$o" />
         <child id="1440642197017487671" name="text" index="il5_5" />
+      </concept>
+      <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.Platform" flags="ng" index="2kDv1q">
+        <child id="7604036740764640824" name="variantDeclarations" index="3hNl4o" />
       </concept>
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
@@ -224,6 +228,9 @@
         <child id="6057399400731215414" name="numberFormat" index="3bVav" />
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
+      </concept>
+      <concept id="7604036740764640594" name="org.modellwerkstatt.objectflow.structure.VariantDeclaration" flags="ng" index="3hNl9M">
+        <property id="7604036740764640651" name="variant" index="3hNlaF" />
       </concept>
       <concept id="836579671456120410" name="org.modellwerkstatt.objectflow.structure.EqualPropertyReference" flags="ng" index="1kU5Ut">
         <reference id="836579671456120411" name="property" index="1kU5Us" />
@@ -2455,6 +2462,17 @@
   </node>
   <node concept="il5tC" id="3Rw9V4pLpzc">
     <property role="TrG5h" value="SimpleRes" />
+    <node concept="2kDv1q" id="6A6XM2SxGWC" role="2kDvpj">
+      <property role="TrG5h" value="RICH" />
+      <node concept="3hNl9M" id="6A6XM2SxGWD" role="3hNl4o" />
+      <node concept="3hNl9M" id="5fkhsROwCK6" role="3hNl4o">
+        <property role="3hNlaF" value="BABY" />
+      </node>
+    </node>
+    <node concept="2kDv1q" id="6BKPvpCRbDr" role="2kDvpj">
+      <property role="TrG5h" value="MDE" />
+      <node concept="3hNl9M" id="6BKPvpCRbDs" role="3hNl4o" />
+    </node>
     <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
       <property role="TrG5h" value="Search" />
       <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
@@ -2463,13 +2481,22 @@
           <property role="Xl_RC" value="Search" />
         </node>
       </node>
+      <node concept="2kzhL4" id="7MWNCzYw_M6" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="7MWNCzYwAgF" role="il5_5">
+          <property role="Xl_RC" value="MDE SEARCH" />
+        </node>
+      </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLpzN" role="2kzhMJ">
       <property role="TrG5h" value="Ok" />
       <node concept="2kzhL4" id="3Rw9V4pLpzO" role="2kzgdm">
         <property role="il5CD" value="F2_113" />
         <node concept="Xl_RD" id="3Rw9V4pLpzP" role="il5_5">
-          <property role="Xl_RC" value="Ok" />
+          <property role="Xl_RC" value="Okay" />
+        </node>
+        <node concept="Xl_RD" id="7MWNCzYYLYN" role="il5$o">
+          <property role="Xl_RC" value="ok_white" />
         </node>
       </node>
     </node>
@@ -2518,7 +2545,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLp$5" role="2kzhMJ">
-      <property role="TrG5h" value="EN-A" />
+      <property role="TrG5h" value="EN_A" />
       <node concept="2kzhL4" id="3Rw9V4pLp$6" role="2kzgdm">
         <node concept="Xl_RD" id="3Rw9V4pLp$7" role="il5_5">
           <property role="Xl_RC" value="EN-A" />
@@ -2526,7 +2553,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLp$8" role="2kzhMJ">
-      <property role="TrG5h" value="DIS-A" />
+      <property role="TrG5h" value="DIS_A" />
       <node concept="2kzhL4" id="3Rw9V4pLp$9" role="2kzgdm">
         <node concept="Xl_RD" id="3Rw9V4pLp$a" role="il5_5">
           <property role="Xl_RC" value="DIS-A" />
@@ -2534,7 +2561,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLp$b" role="2kzhMJ">
-      <property role="TrG5h" value="DIS-S" />
+      <property role="TrG5h" value="DIS_S" />
       <node concept="2kzhL4" id="3Rw9V4pLp$c" role="2kzgdm">
         <node concept="Xl_RD" id="3Rw9V4pLp$d" role="il5_5">
           <property role="Xl_RC" value="DIS-S" />
@@ -2551,7 +2578,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLp$h" role="2kzhMJ">
-      <property role="TrG5h" value="OK" />
+      <property role="TrG5h" value="OK2" />
       <node concept="2kzhL4" id="3Rw9V4pLp$i" role="2kzgdm">
         <property role="il5CD" value="F4_115" />
         <node concept="Xl_RD" id="3Rw9V4pLp$j" role="il5_5">

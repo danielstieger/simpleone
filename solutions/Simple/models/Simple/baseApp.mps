@@ -10,12 +10,7 @@
   </languages>
   <imports>
     <import index="1y8i" ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(Simple.basePROC)" />
-    <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(Simple.baseUI)" />
     <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="mz1c" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.naming(JDK/)" />
-    <import index="zenp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.naming.ldap(JDK/)" />
-    <import index="h6fz" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.naming.directory(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" implicit="true" />
@@ -42,11 +37,15 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -56,6 +55,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -63,6 +63,7 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
@@ -92,6 +93,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -204,7 +206,6 @@
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
-      <concept id="5821521440415834576" name="org.modellwerkstatt.dataux.structure.UseSecondPagePanes" flags="ng" index="1kx5cS" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -219,6 +220,20 @@
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
         <property role="Xl_RC" value="Simple.baseApp.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="7MWNCzYDeqS" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="2CJf1O" id="6BKPvpElkqs" role="2CJ4_l">
+        <node concept="Xl_RD" id="6BKPvpElkqu" role="2DqwMp">
+          <property role="Xl_RC" value="SUGAR" />
+        </node>
+        <node concept="Xl_RD" id="6BKPvpElkq_" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="7MWNCzYDeqU" role="2CJf0U">
+        <property role="Xl_RC" value="Simple.baseDATA.SimpleRes_MDE" />
       </node>
     </node>
     <node concept="2CJoq6" id="2n3p7A96F5O" role="2CGBMS">
@@ -478,22 +493,6 @@
         <property role="TrG5h" value="userEnviormentInformation" />
         <node concept="Xl_RD" id="21a32Cmm3SH" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.UserEnvironmentInformation" />
-        </node>
-        <node concept="2CJf1O" id="21a32Cmm3SI" role="2CJ4_l">
-          <node concept="Xl_RD" id="21a32Cmm3SJ" role="2DqwMv">
-            <property role="Xl_RC" value="0" />
-          </node>
-          <node concept="Xl_RD" id="21a32Cmm3SK" role="2DqwMp">
-            <property role="Xl_RC" value="Some compile information" />
-          </node>
-        </node>
-        <node concept="2CJf1O" id="21a32Cmm3SL" role="2CJ4_l">
-          <node concept="Xl_RD" id="21a32Cmm3SM" role="2DqwMv">
-            <property role="Xl_RC" value="1" />
-          </node>
-          <node concept="Xl_RD" id="21a32Cmm3SN" role="2DqwMp">
-            <property role="Xl_RC" value="SUGAR" />
-          </node>
         </node>
       </node>
       <node concept="2CPvp3" id="21a32Cmm3SO" role="2CJdiS" />
@@ -1515,7 +1514,6 @@
         <property role="Xl_RC" value="Dan" />
       </node>
     </node>
-    <node concept="1kx5cS" id="53acIw4Wi8K" role="2MWAe8" />
   </node>
   <node concept="312cEu" id="1SuqpWQMcfd">
     <property role="TrG5h" value="TestSetting" />
@@ -1541,7 +1539,70 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1SuqpWQMcgk" role="jymVt" />
+    <node concept="2YIFZL" id="7MWNCzYu4nn" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="7MWNCzYu4no" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="7MWNCzYu4np" role="1tU5fm">
+          <node concept="17QB3L" id="7MWNCzYu4nq" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7MWNCzYu4nr" role="3clF45" />
+      <node concept="3Tm1VV" id="7MWNCzYu4ns" role="1B3o_S" />
+      <node concept="3clFbS" id="7MWNCzYu4nt" role="3clF47">
+        <node concept="3cpWs8" id="7MWNCzYu4pR" role="3cqZAp">
+          <node concept="3cpWsn" id="7MWNCzYu4pU" role="3cpWs9">
+            <property role="TrG5h" value="st" />
+            <node concept="17QB3L" id="7MWNCzYu4pQ" role="1tU5fm" />
+            <node concept="Xl_RD" id="7MWNCzYu4rf" role="33vP2m">
+              <property role="Xl_RC" value="dan" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7MWNCzYu4sY" role="3cqZAp" />
+        <node concept="3clFbF" id="7MWNCzYu4tT" role="3cqZAp">
+          <node concept="2OqwBi" id="7MWNCzYu4tQ" role="3clFbG">
+            <node concept="10M0yZ" id="7MWNCzYu4tR" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="7MWNCzYu4tS" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="7MWNCzYu4$p" role="37wK5m">
+                <node concept="2OqwBi" id="7MWNCzYu4Cq" role="3uHU7w">
+                  <node concept="37vLTw" id="7MWNCzYu4Ae" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7MWNCzYu4pU" resolve="st" />
+                  </node>
+                  <node concept="liA8E" id="7MWNCzYu4G8" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                    <node concept="3cpWs3" id="7MWNCzYu6_6" role="37wK5m">
+                      <node concept="3cmrfG" id="7MWNCzYu6_m" role="3uHU7w">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                      <node concept="2OqwBi" id="7MWNCzYu4L0" role="3uHU7B">
+                        <node concept="37vLTw" id="7MWNCzYu4I5" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7MWNCzYu4pU" resolve="st" />
+                        </node>
+                        <node concept="liA8E" id="7MWNCzYu4Si" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
+                          <node concept="Xl_RD" id="7MWNCzYu4Uy" role="37wK5m">
+                            <property role="Xl_RC" value="." />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="7MWNCzYu4v1" role="3uHU7B">
+                  <property role="Xl_RC" value="&gt; " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7MWNCzYu4n3" role="jymVt" />
     <node concept="3Tm1VV" id="1SuqpWQMcfe" role="1B3o_S" />
   </node>
 </model>
