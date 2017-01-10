@@ -2226,6 +2226,7 @@
         <node concept="33WYYh" id="53acIw4VoAp" role="fOGQ8">
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+          <ref role="3uz5Vf" to="dtxg:3XmXsOjql2x" resolve="A_EditOrderReadOnly" />
           <node concept="2IFXgM" id="53acIw4VoAq" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>
@@ -2562,6 +2563,7 @@
       <node concept="33WYYh" id="5fkhsRNzdHn" role="fOGQ8">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3LL" resolve="Scan OrderPosition" />
+        <ref role="3uz5Vf" to="dtxg:2w5UnVouMBt" resolve="A_Scan" />
         <node concept="2IFXgM" id="5fkhsRNzdHo" role="2_HrWp">
           <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
         </node>
@@ -2570,6 +2572,7 @@
         <node concept="33WYYh" id="5fkhsRNzdHv" role="fOGQ8">
           <ref role="2_Hrw8" to="1y8i:3cAl6M4vge_" resolve="Reset Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="3uz5Vf" to="dtxg:2w5UnVouMup" resolve="A_Reset" />
           <node concept="2IFXgM" id="5fkhsRNzdHw" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>
@@ -2577,6 +2580,7 @@
         <node concept="33WYYh" id="5fkhsRNzdHx" role="fOGQ8">
           <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="3uz5Vf" to="dtxg:2w5UnVouMvR" resolve="A_Complete" />
           <node concept="2IFXgM" id="5fkhsRNzdHz" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>

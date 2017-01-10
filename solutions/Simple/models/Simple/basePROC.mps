@@ -1840,6 +1840,7 @@
   <node concept="3ugp7m" id="4XOQNRZgrKt">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="Edit Order Position" />
+    <property role="3uBtrS" value="ENTER_10" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="4XOQNRZgrPU" role="3ulXEL">
       <property role="TrG5h" value="pos" />

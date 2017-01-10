@@ -2638,6 +2638,60 @@
           <property role="Xl_RC" value="edit" />
         </node>
       </node>
+      <node concept="2kzhL4" id="2w5UnVouM9R" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="2w5UnVouM9S" role="il5_5">
+          <property role="Xl_RC" value="Edit" />
+        </node>
+        <node concept="Xl_RD" id="2w5UnVouMaX" role="il5$o">
+          <property role="Xl_RC" value="mode_edit" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2w5UnVouMup" role="2kzhMJ">
+      <property role="TrG5h" value="A_Reset" />
+      <node concept="2kzhL4" id="2w5UnVouMuq" role="2kzgdm">
+        <node concept="Xl_RD" id="2w5UnVouMur" role="il5_5">
+          <property role="Xl_RC" value="Reset" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="2w5UnVouMxZ" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="2w5UnVouMy0" role="il5_5" />
+        <node concept="Xl_RD" id="2w5UnVouMzO" role="il5$o">
+          <property role="Xl_RC" value="restore" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2w5UnVouMvR" role="2kzhMJ">
+      <property role="TrG5h" value="A_Complete" />
+      <node concept="2kzhL4" id="2w5UnVouMvS" role="2kzgdm">
+        <node concept="Xl_RD" id="2w5UnVouMvT" role="il5_5">
+          <property role="Xl_RC" value="Complete" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="2w5UnVouMz7" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="2w5UnVouMz8" role="il5_5" />
+        <node concept="Xl_RD" id="2w5UnVouMz_" role="il5$o">
+          <property role="Xl_RC" value="done" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2w5UnVouMBt" role="2kzhMJ">
+      <property role="TrG5h" value="A_Scan" />
+      <node concept="2kzhL4" id="2w5UnVouMBu" role="2kzgdm">
+        <node concept="Xl_RD" id="2w5UnVouMBv" role="il5_5">
+          <property role="Xl_RC" value="Scan" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="2w5UnVouMBw" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="2w5UnVouMBx" role="il5_5" />
+        <node concept="Xl_RD" id="2w5UnVouMBy" role="il5$o">
+          <property role="Xl_RC" value="scanner" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5ol$NvDtID">
