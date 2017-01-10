@@ -149,9 +149,6 @@
       <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
         <property id="6525155817177697682" name="text" index="20vkWQ" />
       </concept>
-      <concept id="7633836622691813894" name="org.modellwerkstatt.objectflow.structure.IsVariant" flags="ng" index="16hZK">
-        <property id="7633836622692572865" name="variant" index="11oGR" />
-      </concept>
       <concept id="7633836622691047726" name="org.modellwerkstatt.objectflow.structure.IsPlatform" flags="ng" index="1bGNo">
         <reference id="7633836622691047972" name="platform" index="1bGZi" />
       </concept>
@@ -214,10 +211,11 @@
       </concept>
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
+        <property id="96922280160231604" name="defaultHotkey" index="3uBtrS" />
         <property id="8569227807555216336" name="overWriteWindowTitle" index="1UlA2q" />
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
         <child id="4678401045862677843" name="commandCreationInformation" index="27AfA_" />
-        <child id="6185198504743118463" name="icon" index="2DETGV" />
+        <child id="6185198504743118463" name="defaultIcon" index="2DETGV" />
         <child id="1135314546594241995" name="maxInitCmdDescription" index="2HP2Xr" />
         <child id="3748648354049763742" name="titleAddOn" index="IYfpf" />
         <child id="6424689520746483726" name="tecDocumentation" index="Xrskq" />
@@ -359,6 +357,7 @@
     <property role="TrG5h" value="Search for Orders" />
     <property role="19I623" value="SEARCH_CMD" />
     <property role="3GE5qa" value="" />
+    <property role="3uBtrS" value="S_83" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ugp7q" id="AN_117fcM0" role="3ug97V">
       <property role="TrG5h" value="SearchPage" />
@@ -422,11 +421,14 @@
           </node>
         </node>
       </node>
-      <node concept="3063JU" id="5XruxTJPWFG" role="3063Jp">
-        <ref role="3063JT" to="knfg:5XruxTJPW$P" resolve="Search Order Pane" />
-      </node>
       <node concept="3063JU" id="53acIw4Wi0r" role="3063Jp">
         <ref role="3063JT" to="knfg:53acIw4Vpvb" resolve="MDE Search Order Pane" />
+        <node concept="1bGNo" id="4FeXrhEDy4X" role="2CtmLH">
+          <ref role="1bGZi" to="dtxg:6BKPvpCRbDr" resolve="MDE" />
+        </node>
+      </node>
+      <node concept="3063JU" id="5XruxTJPWFG" role="3063Jp">
+        <ref role="3063JT" to="knfg:5XruxTJPW$P" resolve="Search Order Pane" />
       </node>
     </node>
     <node concept="3ugp7q" id="AN_117fcIc" role="3ug97V">
@@ -579,11 +581,14 @@
           <property role="Xl_RC" value="RESULT for store " />
         </node>
       </node>
-      <node concept="3063JU" id="5XruxTJPWFF" role="3063Jp">
-        <ref role="3063JT" to="knfg:5XruxTJPW$x" resolve="List of Orders" />
-      </node>
       <node concept="3063JU" id="53acIw4Vp9$" role="3063Jp">
         <ref role="3063JT" to="knfg:53acIw4VoA3" resolve="MDE List of Orders" />
+        <node concept="1bGNo" id="4FeXrhEDy4B" role="2CtmLH">
+          <ref role="1bGZi" to="dtxg:6BKPvpCRbDr" resolve="MDE" />
+        </node>
+      </node>
+      <node concept="3063JU" id="5XruxTJPWFF" role="3063Jp">
+        <ref role="3063JT" to="knfg:5XruxTJPW$x" resolve="List of Orders" />
       </node>
     </node>
     <node concept="3ulXEM" id="AN_117f5tz" role="3ulXEG">
@@ -788,6 +793,7 @@
     <property role="TrG5h" value="Edit Order" />
     <property role="3GE5qa" value="" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="ENTER_10" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="27Aftt" id="3cAl6M4qcUd" role="27AfA_">
       <property role="27oQjk" value="orderId" />
@@ -820,16 +826,24 @@
     <node concept="3ugp7q" id="AN_117h9tB" role="3ug97V">
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="dtxg:4u029Jv8vvH" resolve="Order" />
-      <node concept="3063JU" id="5fkhsRNzegj" role="3063Jp">
-        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="MDE Simple Order Editor" />
-        <node concept="16hZK" id="5fkhsRNzheu" role="2CtmLH">
-          <property role="11oGR" value="BABY" />
-        </node>
-      </node>
       <node concept="3063JU" id="5fkhsROu6Ee" role="3063Jp">
         <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="MDE Simple Order Editor" />
         <node concept="1bGNo" id="5fkhsROu6HV" role="2CtmLH">
           <ref role="1bGZi" to="dtxg:6BKPvpCRbDr" resolve="MDE" />
+        </node>
+      </node>
+      <node concept="10qiFn" id="5ol$NvKd4$" role="10qiF9">
+        <property role="TrG5h" value="Cancel" />
+        <property role="10BtBF" value="NOSAVE_CONCLUSION" />
+        <ref role="2DFCCC" to="dtxg:5ol$NvKd7x" resolve="Abbrechen" />
+        <node concept="20qIzx" id="5ol$NvKdd4" role="10ot2L">
+          <node concept="3clFbS" id="5ol$NvKdd5" role="2VODD2">
+            <node concept="10Adxh" id="5ol$NvKddL" role="3cqZAp">
+              <node concept="Xl_RD" id="5ol$NvKdec" role="10Adiu">
+                <property role="Xl_RC" value="Das Kommando wurde fachlich abgebrochen." />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="10qiFn" id="AN_117h9Yg" role="10qiF9">
@@ -1799,6 +1813,7 @@
   <node concept="3ugp7m" id="AN_117c3Qk">
     <property role="TrG5h" value="Complete Order" />
     <property role="3GE5qa" value="" />
+    <property role="3uBtrS" value="C_67" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="20qIzx" id="3cAl6M4p9tC" role="10_T4l">
       <node concept="3clFbS" id="3cAl6M4p9tD" role="2VODD2">
@@ -1879,6 +1894,7 @@
   <node concept="3ugp7m" id="6OyHsl_7imr">
     <property role="TrG5h" value="Edit all OrderPositions" />
     <property role="1UlA2q" value="true" />
+    <property role="3uBtrS" value="E_69" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="10EhbA" id="3cAl6M4pjK4" role="19Ho0k">
       <ref role="10EhbB" node="AN_117c0Wn" resolve="order" />
@@ -2049,6 +2065,7 @@
   <node concept="3ugp7m" id="3cAl6M4vge_">
     <property role="TrG5h" value="Reset Order" />
     <property role="3GE5qa" value="" />
+    <property role="3uBtrS" value="R_82" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEM" id="70cXy5$OPBL" role="3ulXEG">
       <property role="TrG5h" value="dan" />
@@ -2274,7 +2291,7 @@
     </node>
     <node concept="10M0yZ" id="3cAl6M4wnQS" role="2DETGV">
       <ref role="1PxDUh" to="ache:$arjoT88Li" resolve="OldHafinaDefaults" />
-      <ref role="3cqZAo" to="ache:4HlXVUYdTP$" resolve="ICON_EDIT" />
+      <ref role="3cqZAo" to="ache:5Tid4pjgA72" resolve="ICON_DETAIL" />
     </node>
     <node concept="20qIzx" id="6UVqlHNAgfV" role="10_T4m">
       <node concept="3clFbS" id="6UVqlHNAgfW" role="2VODD2">
@@ -2315,6 +2332,7 @@
   </node>
   <node concept="3ugp7m" id="3cAl6M4xA3w">
     <property role="TrG5h" value="Edit Order Head Wizzard" />
+    <property role="3uBtrS" value="H_72" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEM" id="3cAl6M4xAlJ" role="3ulXEG">
       <property role="TrG5h" value="reloaded" />
@@ -2891,6 +2909,7 @@
   </node>
   <node concept="3ugp7m" id="1ReQ$xd3KdU">
     <property role="TrG5h" value="Message Command" />
+    <property role="3uBtrS" value="M_77" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="1ReQ$xd3Nqj" role="3ulXEL">
       <property role="TrG5h" value="msg" />
@@ -2917,10 +2936,15 @@
         </node>
       </node>
     </node>
+    <node concept="10M0yZ" id="3XmXsOjqUv5" role="2DETGV">
+      <ref role="1PxDUh" to="ache:$arjoT88Li" resolve="OldHafinaDefaults" />
+      <ref role="3cqZAo" to="ache:$arjoT88Lu" resolve="ICON_REFRESH" />
+    </node>
   </node>
   <node concept="3ugp7m" id="2IUGN4P78gB">
     <property role="TrG5h" value="New Order" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="N_78" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="27Aftt" id="2IUGN4P7cuB" role="27AfA_">
       <property role="27oQjk" value="orderId" />

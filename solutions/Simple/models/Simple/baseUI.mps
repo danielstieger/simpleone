@@ -143,8 +143,7 @@
         <reference id="8086154250676616105" name="object" index="2IFZ7r" />
       </concept>
       <concept id="3887124829263120988" name="org.modellwerkstatt.objectflow.structure.Action" flags="ng" index="309pON">
-        <property id="2497433976991440960" name="hotkey" index="1Ue4ES" />
-        <child id="2497433976991440958" name="label" index="1Ue4F6" />
+        <reference id="96922280161183875" name="customLabel" index="3uz5Vf" />
       </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
@@ -317,7 +316,6 @@
       </node>
       <node concept="fOGPe" id="3cAl6M4s8Ma" role="fOGQ8">
         <node concept="33WYYh" id="5XruxTJPWDX" role="fOGQ8">
-          <property role="1Ue4ES" value="ENTER_10" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
           <node concept="2IFXgM" id="5XruxTJPWDZ" role="2_HrWp">
@@ -336,9 +334,9 @@
           </node>
         </node>
         <node concept="33WYYh" id="7RzRXa3Ukkb" role="fOGQ8">
-          <property role="1Ue4ES" value="UNDEFINED_0" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+          <ref role="3uz5Vf" to="dtxg:3XmXsOjql2x" resolve="A_EditOrderReadOnly" />
           <node concept="2IFXgM" id="7RzRXa3Ukkc" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>
@@ -352,9 +350,6 @@
           </node>
           <node concept="3clFbT" id="7RzRXa3Ukp_" role="2_HrWp">
             <property role="3clFbU" value="true" />
-          </node>
-          <node concept="Xl_RD" id="7RzRXa3Uklj" role="1Ue4F6">
-            <property role="Xl_RC" value="Editr Order (RO)" />
           </node>
         </node>
         <node concept="33WYYh" id="3cAl6M4wqwA" role="fOGQ8">
@@ -373,7 +368,6 @@
           </node>
         </node>
         <node concept="33WYYh" id="2IUGN4P7e8Q" role="fOGQ8">
-          <property role="1Ue4ES" value="I_73" />
           <ref role="2_Hrw8" to="1y8i:2IUGN4P78gB" resolve="New Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <node concept="10Nm6u" id="2IUGN4P7eay" role="2_HrWp" />
@@ -582,7 +576,6 @@
         </node>
         <node concept="fOGPe" id="3cAl6M4vvE8" role="fOGQ8">
           <node concept="33WYYh" id="5XruxTJPWE8" role="fOGQ8">
-            <property role="1Ue4ES" value="ENTER_10" />
             <ref role="2_Hrw8" to="1y8i:4XOQNRZgrKt" resolve="Edit Order Position" />
             <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
             <node concept="2IFXgM" id="5XruxTJPWEa" role="2_HrWp">
@@ -600,7 +593,6 @@
     </node>
     <node concept="fOGPe" id="3cAl6M4s8TF" role="fOGQ8">
       <node concept="33WYYh" id="1ReQ$xd3OqE" role="fOGQ8">
-        <property role="1Ue4ES" value="A_65" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:1ReQ$xd3KdU" resolve="Message Command" />
         <node concept="2IFXgM" id="1ReQ$xd3Os_" role="2_HrWp">
@@ -612,12 +604,8 @@
         <node concept="3clFbT" id="1ReQ$xd3Oxo" role="2_HrWp">
           <property role="3clFbU" value="true" />
         </node>
-        <node concept="Xl_RD" id="1ReQ$xd3OyH" role="1Ue4F6">
-          <property role="Xl_RC" value="A Hotkey" />
-        </node>
       </node>
       <node concept="33WYYh" id="3cAl6M4sAgE" role="fOGQ8">
-        <property role="1Ue4ES" value="E_69" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:6OyHsl_7imr" resolve="Edit all OrderPositions" />
         <node concept="2IFXgM" id="3cAl6M4sAhy" role="2_HrWp">
@@ -625,14 +613,10 @@
         </node>
       </node>
       <node concept="33WYYh" id="5XruxTJPWE4" role="fOGQ8">
-        <property role="1Ue4ES" value="S_83" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3LL" resolve="Scan OrderPosition" />
         <node concept="2IFXgM" id="5XruxTJPWE7" role="2_HrWp">
           <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-        </node>
-        <node concept="Xl_RD" id="21Qe5t2fgtV" role="1Ue4F6">
-          <property role="Xl_RC" value="Scan" />
         </node>
       </node>
       <node concept="33WYYh" id="3cAl6M4xWp0" role="fOGQ8">
@@ -651,7 +635,6 @@
       </node>
       <node concept="fOGPe" id="3cAl6M4xWkz" role="fOGQ8">
         <node concept="33WYYh" id="3cAl6M4vvG0" role="fOGQ8">
-          <property role="1Ue4ES" value="R_82" />
           <ref role="2_Hrw8" to="1y8i:3cAl6M4vge_" resolve="Reset Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <node concept="2IFXgM" id="3cAl6M4vvGU" role="2_HrWp">
@@ -659,12 +642,8 @@
           </node>
         </node>
         <node concept="33WYYh" id="5XruxTJPWE0" role="fOGQ8">
-          <property role="1Ue4ES" value="C_67" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-          <node concept="Xl_RD" id="5XruxTJPWE1" role="1Ue4F6">
-            <property role="Xl_RC" value="Complete" />
-          </node>
           <node concept="2IFXgM" id="5XruxTJPWE3" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>
@@ -1424,7 +1403,6 @@
             </node>
             <node concept="fOGPe" id="3cAl6M4wpe2" role="fOGQ8">
               <node concept="33WYYh" id="3cAl6M4wpe3" role="fOGQ8">
-                <property role="1Ue4ES" value="ENTER_10" />
                 <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
                 <ref role="2_Hrw8" to="1y8i:4XOQNRZgrKt" resolve="Edit Order Position" />
                 <node concept="2IFXgM" id="3cAl6M4wpe4" role="2_HrWp">
@@ -1919,29 +1897,21 @@
     </node>
     <node concept="fOGPe" id="3cAl6M4wpe9" role="fOGQ8">
       <node concept="33WYYh" id="3cAl6M4wpea" role="fOGQ8">
-        <property role="1Ue4ES" value="C_67" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <node concept="Xl_RD" id="3cAl6M4wpeb" role="1Ue4F6">
-          <property role="Xl_RC" value="Complete" />
-        </node>
+        <ref role="3uz5Vf" to="dtxg:3Rw9V4pLp$k" resolve="Create" />
         <node concept="2IFXgM" id="3cAl6M4wpec" role="2_HrWp">
           <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
         </node>
       </node>
       <node concept="33WYYh" id="3cAl6M4wped" role="fOGQ8">
-        <property role="1Ue4ES" value="UNDEFINED_0" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3LL" resolve="Scan OrderPosition" />
         <node concept="2IFXgM" id="3cAl6M4wpee" role="2_HrWp">
           <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
         </node>
-        <node concept="Xl_RD" id="3cAl6M4wpef" role="1Ue4F6">
-          <property role="Xl_RC" value="Scan" />
-        </node>
       </node>
       <node concept="33WYYh" id="3cAl6M4wpeg" role="fOGQ8">
-        <property role="1Ue4ES" value="E_69" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:6OyHsl_7imr" resolve="Edit all OrderPositions" />
         <node concept="2IFXgM" id="3cAl6M4wpeh" role="2_HrWp">
@@ -1949,7 +1919,6 @@
         </node>
       </node>
       <node concept="33WYYh" id="3cAl6M4wpei" role="fOGQ8">
-        <property role="1Ue4ES" value="R_82" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:3cAl6M4vge_" resolve="Reset Order" />
         <node concept="2IFXgM" id="3cAl6M4wpej" role="2_HrWp">
@@ -2009,7 +1978,6 @@
     </node>
     <node concept="fOGPe" id="1ReQ$xd3O2v" role="fOGQ8">
       <node concept="33WYYh" id="1ReQ$xd3O2Y" role="fOGQ8">
-        <property role="1Ue4ES" value="B_66" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:1ReQ$xd3KdU" resolve="Message Command" />
         <node concept="2IFXgM" id="1ReQ$xd3O49" role="2_HrWp">
@@ -2020,9 +1988,6 @@
         </node>
         <node concept="3clFbT" id="1ReQ$xd3O7n" role="2_HrWp">
           <property role="3clFbU" value="true" />
-        </node>
-        <node concept="Xl_RD" id="1ReQ$xd3OAy" role="1Ue4F6">
-          <property role="Xl_RC" value="B Hotkey" />
         </node>
       </node>
     </node>
@@ -2093,7 +2058,6 @@
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
     <node concept="fOGPe" id="1ReQ$xd3O8k" role="fOGQ8">
       <node concept="33WYYh" id="1ReQ$xd3O8l" role="fOGQ8">
-        <property role="1Ue4ES" value="A_65" />
         <ref role="2_Hrw8" to="1y8i:1ReQ$xd3KdU" resolve="Message Command" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <node concept="2IFXgM" id="1ReQ$xd3O8m" role="2_HrWp">
@@ -2104,9 +2068,6 @@
         </node>
         <node concept="3clFbT" id="1ReQ$xd3O8o" role="2_HrWp">
           <property role="3clFbU" value="true" />
-        </node>
-        <node concept="Xl_RD" id="1ReQ$xd3ODm" role="1Ue4F6">
-          <property role="Xl_RC" value="A Hotkey" />
         </node>
       </node>
     </node>
@@ -2245,7 +2206,6 @@
       </node>
       <node concept="fOGPe" id="53acIw4VoAi" role="fOGQ8">
         <node concept="33WYYh" id="53acIw4VoAj" role="fOGQ8">
-          <property role="1Ue4ES" value="ENTER_10" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
           <node concept="2IFXgM" id="53acIw4VoAk" role="2_HrWp">
@@ -2264,7 +2224,6 @@
           </node>
         </node>
         <node concept="33WYYh" id="53acIw4VoAp" role="fOGQ8">
-          <property role="1Ue4ES" value="UNDEFINED_0" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
           <node concept="2IFXgM" id="53acIw4VoAq" role="2_HrWp">
@@ -2280,9 +2239,6 @@
           </node>
           <node concept="3clFbT" id="53acIw4VoAu" role="2_HrWp">
             <property role="3clFbU" value="true" />
-          </node>
-          <node concept="Xl_RD" id="53acIw4VoAv" role="1Ue4F6">
-            <property role="Xl_RC" value="Editr Order (RO)" />
           </node>
         </node>
       </node>
@@ -2587,7 +2543,6 @@
         </node>
         <node concept="fOGPe" id="5fkhsRNzdH8" role="fOGQ8">
           <node concept="33WYYh" id="5fkhsRNzdH9" role="fOGQ8">
-            <property role="1Ue4ES" value="ENTER_10" />
             <ref role="2_Hrw8" to="1y8i:4XOQNRZgrKt" resolve="Edit Order Position" />
             <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
             <node concept="2IFXgM" id="5fkhsRNzdHa" role="2_HrWp">
@@ -2605,19 +2560,14 @@
     </node>
     <node concept="fOGPe" id="5fkhsRNzdHf" role="fOGQ8">
       <node concept="33WYYh" id="5fkhsRNzdHn" role="fOGQ8">
-        <property role="1Ue4ES" value="S_83" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3LL" resolve="Scan OrderPosition" />
         <node concept="2IFXgM" id="5fkhsRNzdHo" role="2_HrWp">
           <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
         </node>
-        <node concept="Xl_RD" id="5fkhsRNzdHp" role="1Ue4F6">
-          <property role="Xl_RC" value="Scan" />
-        </node>
       </node>
       <node concept="fOGPe" id="5fkhsRNzdHu" role="fOGQ8">
         <node concept="33WYYh" id="5fkhsRNzdHv" role="fOGQ8">
-          <property role="1Ue4ES" value="R_82" />
           <ref role="2_Hrw8" to="1y8i:3cAl6M4vge_" resolve="Reset Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <node concept="2IFXgM" id="5fkhsRNzdHw" role="2_HrWp">
@@ -2625,12 +2575,8 @@
           </node>
         </node>
         <node concept="33WYYh" id="5fkhsRNzdHx" role="fOGQ8">
-          <property role="1Ue4ES" value="C_67" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-          <node concept="Xl_RD" id="5fkhsRNzdHy" role="1Ue4F6">
-            <property role="Xl_RC" value="Complete" />
-          </node>
           <node concept="2IFXgM" id="5fkhsRNzdHz" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>

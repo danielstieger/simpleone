@@ -146,10 +146,6 @@
       </concept>
       <concept id="7784207101902368231" name="org.modellwerkstatt.objectflow.structure.UserNameParameter" flags="ng" index="2MWqbU" />
       <concept id="4779674245164262437" name="org.modellwerkstatt.objectflow.structure.UserEnvironmentParameter" flags="ng" index="2Rjrh3" />
-      <concept id="3887124829263120988" name="org.modellwerkstatt.objectflow.structure.Action" flags="ng" index="309pON">
-        <property id="2497433976991440960" name="hotkey" index="1Ue4ES" />
-        <child id="2497433976991440958" name="label" index="1Ue4F6" />
-      </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640426" name="org.modellwerkstatt.objectflow.structure.Container" flags="ng" index="3ulXEQ">
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
@@ -233,7 +229,7 @@
         </node>
       </node>
       <node concept="Xl_RD" id="7MWNCzYDeqU" role="2CJf0U">
-        <property role="Xl_RC" value="Simple.baseDATA.SimpleRes_MDE" />
+        <property role="Xl_RC" value="Simple.baseDATA.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJoq6" id="2n3p7A96F5O" role="2CGBMS">
@@ -768,7 +764,27 @@
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
     <property role="TrG5h" value="MdeConfig" />
-    <property role="2320hu" value="2016-12-05T15:10:26.048+01:00" />
+    <property role="2320hu" value="2017-01-05T10:55:59.254+01:00" />
+    <node concept="2CJf3v" id="4FeXrhEE7Av" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="4FeXrhEE7Aw" role="2CJf0U">
+        <property role="Xl_RC" value="Simple.baseApp.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4FeXrhENtJ1" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="2CJf1O" id="4FeXrhENtJ2" role="2CJ4_l">
+        <node concept="Xl_RD" id="4FeXrhENtJ3" role="2DqwMp">
+          <property role="Xl_RC" value="SUGAR" />
+        </node>
+        <node concept="Xl_RD" id="4FeXrhENtJ4" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4FeXrhENtJ5" role="2CJf0U">
+        <property role="Xl_RC" value="Simple.baseDATA.SimpleRes_MDE" />
+      </node>
+    </node>
     <node concept="2CJoq6" id="49EzYiePzDi" role="2CGBMS">
       <property role="TrG5h" value="MdeConfig" />
       <node concept="2CJf3v" id="49EzYiePzDj" role="2CJdiS">
@@ -783,7 +799,6 @@
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.OFXFakePrintFactory" />
         </node>
       </node>
-      <node concept="2CPvp3" id="49EzYiePzDo" role="2CJdiS" />
       <node concept="2CJf3v" id="49EzYiePzDp" role="2CJdiS">
         <property role="TrG5h" value="transactionDefinition" />
         <node concept="2CJ4$C" id="49EzYiePzDq" role="2CJ4_l">
@@ -927,14 +942,6 @@
         <node concept="Xl_RD" id="49EzYiePzEa" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.h1forms.mde.H1MDEAppFactory" />
         </node>
-        <node concept="2CJf1O" id="49EzYiePzEb" role="2CJ4_l">
-          <node concept="Xl_RD" id="49EzYiePzEc" role="2DqwMp">
-            <property role="Xl_RC" value="SUGAR" />
-          </node>
-          <node concept="Xl_RD" id="49EzYiePzEd" role="2DqwMv">
-            <property role="Xl_RC" value="0" />
-          </node>
-        </node>
       </node>
       <node concept="2CJf3v" id="1BZ9wCagmUK" role="2CJdiS">
         <property role="TrG5h" value="stringFormatter" />
@@ -948,33 +955,33 @@
     </node>
     <node concept="2CJoq6" id="49EzYiePzEq" role="2CGBMS">
       <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="5RGNApEnut_" role="2CJdiS">
+      <node concept="2CJf3v" id="4FeXrhECT9l" role="2CJdiS">
         <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="5RGNApEnutA" role="2CJf0U">
+        <node concept="Xl_RD" id="4FeXrhECT9m" role="2CJf0U">
           <property role="Xl_RC" value="Simple.basePROC.xxxService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="5RGNApEnutB" role="2CJdiS">
+      <node concept="2CJf3v" id="4FeXrhECT9n" role="2CJdiS">
         <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="5RGNApEnutC" role="2CJf0U">
+        <node concept="Xl_RD" id="4FeXrhECT9o" role="2CJf0U">
           <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
         </node>
       </node>
-      <node concept="2CJf3v" id="5RGNApEnutD" role="2CJdiS">
+      <node concept="2CJf3v" id="4FeXrhECT9p" role="2CJdiS">
         <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="5RGNApEnutE" role="2CJf0U">
+        <node concept="Xl_RD" id="4FeXrhECT9q" role="2CJf0U">
           <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
         </node>
       </node>
-      <node concept="2CJf3v" id="5RGNApEnutF" role="2CJdiS">
+      <node concept="2CJf3v" id="4FeXrhECT9r" role="2CJdiS">
         <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="5RGNApEnutG" role="2CJf0U">
+        <node concept="Xl_RD" id="4FeXrhECT9s" role="2CJf0U">
           <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
         </node>
       </node>
-      <node concept="2CJf3v" id="5RGNApEnutH" role="2CJdiS">
+      <node concept="2CJf3v" id="4FeXrhECT9t" role="2CJdiS">
         <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="5RGNApEnutI" role="2CJf0U">
+        <node concept="Xl_RD" id="4FeXrhECT9u" role="2CJf0U">
           <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
         </node>
       </node>
@@ -1306,7 +1313,6 @@
     <property role="TrG5h" value="App Desktop Order" />
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
     <node concept="33WYYh" id="5XruxTJPWFb" role="2N77jT">
-      <property role="1Ue4ES" value="S_83" />
       <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search for Orders" />
       <node concept="10Nm6u" id="5XruxTJPWFc" role="2_HrWp" />
@@ -1489,18 +1495,13 @@
       </node>
     </node>
     <node concept="33WYYh" id="5XruxTJPWFw" role="2N77jT">
-      <property role="1Ue4ES" value="UNDEFINED_0" />
       <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search for Orders" />
       <node concept="10Nm6u" id="5XruxTJPWFx" role="2_HrWp" />
     </node>
     <node concept="33WYYh" id="5XruxTJPWFy" role="2N77jT">
-      <property role="1Ue4ES" value="UNDEFINED_0" />
       <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
-      <node concept="Xl_RD" id="5XruxTJPWFz" role="1Ue4F6">
-        <property role="Xl_RC" value="Edit Order 1" />
-      </node>
       <node concept="10Nm6u" id="3cAl6M4qbKI" role="2_HrWp" />
       <node concept="3cmrfG" id="5XruxTJPWF_" role="2_HrWp">
         <property role="3cmrfH" value="1" />
@@ -1555,7 +1556,7 @@
             <property role="TrG5h" value="st" />
             <node concept="17QB3L" id="7MWNCzYu4pQ" role="1tU5fm" />
             <node concept="Xl_RD" id="7MWNCzYu4rf" role="33vP2m">
-              <property role="Xl_RC" value="dan" />
+              <property role="Xl_RC" value="SCAN ME" />
             </node>
           </node>
         </node>
@@ -1574,20 +1575,18 @@
                     <ref role="3cqZAo" node="7MWNCzYu4pU" resolve="st" />
                   </node>
                   <node concept="liA8E" id="7MWNCzYu4G8" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
-                    <node concept="3cpWs3" id="7MWNCzYu6_6" role="37wK5m">
-                      <node concept="3cmrfG" id="7MWNCzYu6_m" role="3uHU7w">
-                        <property role="3cmrfH" value="1" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <node concept="3cmrfG" id="5ol$NvL1yB" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="7MWNCzYu4L0" role="37wK5m">
+                      <node concept="37vLTw" id="7MWNCzYu4I5" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7MWNCzYu4pU" resolve="st" />
                       </node>
-                      <node concept="2OqwBi" id="7MWNCzYu4L0" role="3uHU7B">
-                        <node concept="37vLTw" id="7MWNCzYu4I5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7MWNCzYu4pU" resolve="st" />
-                        </node>
-                        <node concept="liA8E" id="7MWNCzYu4Si" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
-                          <node concept="Xl_RD" id="7MWNCzYu4Uy" role="37wK5m">
-                            <property role="Xl_RC" value="." />
-                          </node>
+                      <node concept="liA8E" id="7MWNCzYu4Si" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
+                        <node concept="Xl_RD" id="7MWNCzYu4Uy" role="37wK5m">
+                          <property role="Xl_RC" value="(" />
                         </node>
                       </node>
                     </node>
