@@ -168,6 +168,7 @@
       </concept>
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
+        <child id="186921216802513051" name="options" index="UTRd0" />
       </concept>
       <concept id="465568541577797267" name="org.modellwerkstatt.dataux.structure.RefDelegateScopeProps" flags="ng" index="P8lqc">
         <child id="465568541577695010" name="paths" index="P8WsX" />
@@ -214,6 +215,12 @@
         <child id="2954183761501585446" name="tabs" index="21udTs" />
       </concept>
       <concept id="7834248083556629545" name="org.modellwerkstatt.dataux.structure.Table" flags="ng" index="2U5qGQ" />
+      <concept id="186921216803063368" name="org.modellwerkstatt.dataux.structure.StatusColorPpFOption" flags="ng" index="U7Xmj">
+        <child id="186921216803063502" name="path" index="U7Xkl" />
+      </concept>
+      <concept id="186921216802513445" name="org.modellwerkstatt.dataux.structure.ColorPpOption" flags="ng" index="UTR7Y">
+        <property id="186921216802513670" name="value" index="UTR3t" />
+      </concept>
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
       <concept id="7421151876966077536" name="org.modellwerkstatt.dataux.structure.TableSummaryLineFOption" flags="ng" index="1cd6SK">
         <child id="7421151876966077756" name="expression" index="1cd6XG" />
@@ -276,6 +283,9 @@
     <property role="1Nb$_v" value="true" />
     <property role="TrG5h" value="List of Orders" />
     <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
+    <node concept="UTR7Y" id="ao4XGSWFSc" role="UTRd0">
+      <property role="UTR3t" value="00FF00" />
+    </node>
     <node concept="2U5qGQ" id="5XruxTJPW$y" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
@@ -312,6 +322,14 @@
         </node>
         <node concept="3Oe$u_" id="5XruxTJPW$N" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="ao4XGTidsT" role="3OfFNq">
+        <node concept="PnLzW" id="ao4XGTidsU" role="PoUSh">
+          <property role="PiFy3" value="15" />
+        </node>
+        <node concept="3Oe$u_" id="ao4XGTidsV" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
         </node>
       </node>
       <node concept="fOGPe" id="3cAl6M4s8Ma" role="fOGQ8">
@@ -2192,9 +2210,14 @@
       <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
       <ref role="1Tjo6F" to="dtxg:7i4jsoimSH0" resolve="orders" />
       <node concept="PoWA$" id="53acIw4VoA5" role="PoUSn" />
+      <node concept="U7Xmj" id="yYLpwAgwtg" role="PoUSn">
+        <node concept="3Oe$u_" id="yYLpwAhtM0" role="U7Xkl">
+          <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
+        </node>
+      </node>
       <node concept="3Oe2Ik" id="53acIw4VoA9" role="3OfFNq">
         <node concept="PnLzW" id="53acIw4VoAa" role="PoUSh">
-          <property role="PiFy3" value="50" />
+          <property role="PiFy3" value="40" />
         </node>
         <node concept="3Oe$u_" id="53acIw4VoAb" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117bqyN" resolve="name" />
@@ -2215,6 +2238,14 @@
         <node concept="PoUSp" id="5QVOqh41rqs" role="PoUSh" />
         <node concept="3Oe$u_" id="53acIw4VoAh" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="yYLpwAvnNB" role="3OfFNq">
+        <node concept="PnLzW" id="yYLpwAvnND" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="yYLpwAvnOj" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
         </node>
       </node>
       <node concept="fOGPe" id="53acIw4VoAi" role="fOGQ8">
@@ -2428,6 +2459,11 @@
     <property role="1Nb$_v" value="true" />
     <property role="TrG5h" value="MDE Simple Order Editor" />
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
+    <node concept="U7Xmj" id="ao4XGT1Vj8" role="UTRd0">
+      <node concept="3Oe$u_" id="ao4XGT1Vjs" role="U7Xkl">
+        <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
+      </node>
+    </node>
     <node concept="2U5qGN" id="5fkhsRNzdG8" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />

@@ -166,6 +166,12 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
+        <child id="6525155817177697693" name="lines" index="20vkWT" />
+      </concept>
+      <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
+        <property id="6525155817177697682" name="text" index="20vkWQ" />
+      </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
       <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
         <property id="8614254524338490551" name="max" index="8tbpI" />
@@ -209,6 +215,7 @@
         <property id="4533072425307715682" name="value" index="2XvgOS" />
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
+        <child id="3140039561980674369" name="doc" index="1V6Uwp" />
       </concept>
       <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.Status" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
@@ -446,18 +453,33 @@
         <property role="2XvgOS" value="C" />
         <property role="1YKsg0" value="created" />
         <property role="1YKsg1" value="created" />
+        <node concept="20vkWO" id="ao4XGT1UZ7" role="1V6Uwp">
+          <node concept="20vkWP" id="ao4XGT1UZ8" role="20vkWT">
+            <property role="20vkWQ" value="#FF530D" />
+          </node>
+        </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L0" role="2XvgO2">
         <property role="TrG5h" value="ordered" />
         <property role="2XvgOS" value="O" />
         <property role="1YKsg0" value="ordered" />
         <property role="1YKsg1" value="ordered" />
+        <node concept="20vkWO" id="ao4XGT1UZb" role="1V6Uwp">
+          <node concept="20vkWP" id="ao4XGT1UZc" role="20vkWT">
+            <property role="20vkWQ" value="#00B576" />
+          </node>
+        </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L3" role="2XvgO2">
         <property role="TrG5h" value="completed" />
         <property role="2XvgOS" value="CO" />
         <property role="1YKsg0" value="completed" />
         <property role="1YKsg1" value="completed" />
+        <node concept="20vkWO" id="ao4XGT1UZf" role="1V6Uwp">
+          <node concept="20vkWP" id="ao4XGT1UZg" role="20vkWT">
+            <property role="20vkWQ" value="#00FF00" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4u029Jv8vvJ" role="1B3o_S" />

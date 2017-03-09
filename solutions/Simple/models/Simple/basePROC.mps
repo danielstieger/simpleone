@@ -28,7 +28,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1153422105332" name="jetbrains.mps.baseLanguage.structure.RemExpression" flags="nn" index="2dk9JS" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -1109,19 +1108,6 @@
     <node concept="10M0yZ" id="3cAl6M4tXob" role="2DETGV">
       <ref role="1PxDUh" to="ache:$arjoT88Li" resolve="Fx8IconDefaults" />
       <ref role="3cqZAo" to="ache:4HlXVUYdTP$" resolve="ICON_EDIT" />
-    </node>
-    <node concept="3clFbC" id="4ysbFF_P9d0" role="20uWH4">
-      <node concept="3cmrfG" id="4ysbFF_P9je" role="3uHU7w">
-        <property role="3cmrfH" value="0" />
-      </node>
-      <node concept="2dk9JS" id="4ysbFF_P94k" role="3uHU7B">
-        <node concept="3urNQE" id="4ysbFF_P8Wo" role="3uHU7B">
-          <ref role="3cqZAo" node="3cAl6M4p83C" resolve="id" />
-        </node>
-        <node concept="3cmrfG" id="4ysbFF_P94q" role="3uHU7w">
-          <property role="3cmrfH" value="2" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3LL">

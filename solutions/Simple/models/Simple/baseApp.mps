@@ -1327,7 +1327,7 @@
             <property role="TrG5h" value="login" />
             <node concept="10P_77" id="5XruxTJPWEn" role="1tU5fm" />
             <node concept="3clFbT" id="7r26jiO5ydX" role="33vP2m">
-              <property role="3clFbU" value="false" />
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
