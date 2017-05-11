@@ -2896,7 +2896,6 @@
     <node concept="il5_x" id="50l$rcpGTQh" role="2kzhMJ">
       <property role="TrG5h" value="CMP_EditPos" />
       <node concept="2kzhL4" id="50l$rcpGTQi" role="2kzgdm">
-        <property role="il5CD" value="D_68" />
         <node concept="Xl_RD" id="50l$rcpGTQj" role="il5_5">
           <property role="Xl_RC" value="Compound - Edit Position" />
         </node>
@@ -2905,34 +2904,78 @@
     <node concept="il5_x" id="7dlwzTfDuFa" role="2kzhMJ">
       <property role="TrG5h" value="CMP_EditPos_Cancel" />
       <node concept="2kzhL4" id="7dlwzTfDuFb" role="2kzgdm">
-        <property role="il5CD" value="D_68" />
         <node concept="Xl_RD" id="7dlwzTfDuFc" role="il5_5">
           <property role="Xl_RC" value="Compound - Edit Position (cancel)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfMcBt" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_EditPos_Flag" />
+      <node concept="2kzhL4" id="7dlwzTfMcBu" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfMcBv" role="il5_5">
+          <property role="Xl_RC" value="Compound - Edit Position (flag)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfMcDN" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_EditPos_Cancel_GO" />
+      <node concept="2kzhL4" id="7dlwzTfMcDO" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfMcDP" role="il5_5">
+          <property role="Xl_RC" value="Compound - Edit Position (cancel GO)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfMcGc" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_EditPos_Flag_GO" />
+      <node concept="2kzhL4" id="7dlwzTfMcGd" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfMcGe" role="il5_5">
+          <property role="Xl_RC" value="Compound - Edit Position (flag GO)" />
         </node>
       </node>
     </node>
     <node concept="il5_x" id="3kFdJs8jYW" role="2kzhMJ">
       <property role="TrG5h" value="CMP_EditPosFullUi" />
       <node concept="2kzhL4" id="3kFdJs8jYX" role="2kzgdm">
-        <property role="il5CD" value="D_68" />
         <node concept="Xl_RD" id="3kFdJs8jYY" role="il5_5">
           <property role="Xl_RC" value="Compound - Edit Position (Full UI)" />
         </node>
       </node>
     </node>
     <node concept="il5_x" id="7dlwzTfDuDj" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditPosFullUi_Canel" />
+      <property role="TrG5h" value="CMP_EditPosFullUi_Cancel" />
       <node concept="2kzhL4" id="7dlwzTfDuDk" role="2kzgdm">
-        <property role="il5CD" value="D_68" />
         <node concept="Xl_RD" id="7dlwzTfDuDl" role="il5_5">
           <property role="Xl_RC" value="Compound - Edit Position (Full UI cancel)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfNWvE" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_EditPosFullUi_Flag" />
+      <node concept="2kzhL4" id="7dlwzTfNWvF" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfNWvG" role="il5_5">
+          <property role="Xl_RC" value="Compound - Edit Position (Full UI flag)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfNWy2" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_EditPosFullUi_CancelGO" />
+      <node concept="2kzhL4" id="7dlwzTfNWy3" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfNWy4" role="il5_5">
+          <property role="Xl_RC" value="Compound - Edit Position (Full UI cancel GO )" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfNW$$" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_EditPosFullUi_FlagGO" />
+      <node concept="2kzhL4" id="7dlwzTfNW$_" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfNW$A" role="il5_5">
+          <property role="Xl_RC" value="Compound - Edit Position (Full UI flag GO)" />
         </node>
       </node>
     </node>
     <node concept="il5_x" id="298IG9dBCW6" role="2kzhMJ">
       <property role="TrG5h" value="CMP_CompleteOrder" />
       <node concept="2kzhL4" id="298IG9dBCW7" role="2kzgdm">
-        <property role="il5CD" value="C_67" />
         <node concept="Xl_RD" id="298IG9dBCW8" role="il5_5">
           <property role="Xl_RC" value="Compound - Complete Order" />
         </node>
@@ -2941,7 +2984,6 @@
     <node concept="il5_x" id="7dlwzTfDuzx" role="2kzhMJ">
       <property role="TrG5h" value="CMP_CompleteOrder_Cancel" />
       <node concept="2kzhL4" id="7dlwzTfDuzy" role="2kzgdm">
-        <property role="il5CD" value="C_67" />
         <node concept="Xl_RD" id="7dlwzTfDuzz" role="il5_5">
           <property role="Xl_RC" value="Compound - Complete Order (cancel)" />
         </node>
@@ -2950,7 +2992,6 @@
     <node concept="il5_x" id="7dlwzTfDxg0" role="2kzhMJ">
       <property role="TrG5h" value="CMP_CompleteOrder_Flag" />
       <node concept="2kzhL4" id="7dlwzTfDxg1" role="2kzgdm">
-        <property role="il5CD" value="C_67" />
         <node concept="Xl_RD" id="7dlwzTfDxg2" role="il5_5">
           <property role="Xl_RC" value="Compound - Complete Order (flag)" />
         </node>
@@ -2959,18 +3000,24 @@
     <node concept="il5_x" id="7dlwzTfDxj9" role="2kzhMJ">
       <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO" />
       <node concept="2kzhL4" id="7dlwzTfDxja" role="2kzgdm">
-        <property role="il5CD" value="C_67" />
         <node concept="Xl_RD" id="7dlwzTfDxjb" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel_GO)" />
+          <property role="Xl_RC" value="Compound - Complete Order (cancel GO)" />
         </node>
       </node>
     </node>
     <node concept="il5_x" id="7dlwzTfDApp" role="2kzhMJ">
       <property role="TrG5h" value="CMP_CompleteOrder_Flag_GO" />
       <node concept="2kzhL4" id="7dlwzTfDApq" role="2kzgdm">
-        <property role="il5CD" value="C_67" />
         <node concept="Xl_RD" id="7dlwzTfDApr" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (flag_GO)" />
+          <property role="Xl_RC" value="Compound - Complete Order (flag GO)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7dlwzTfL4wp" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Flag" />
+      <node concept="2kzhL4" id="7dlwzTfL4wq" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfL4wr" role="il5_5">
+          <property role="Xl_RC" value="Compound - Complete Order (cancel, flag GO)" />
         </node>
       </node>
     </node>
