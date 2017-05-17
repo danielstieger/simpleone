@@ -293,7 +293,7 @@
   </registry>
   <node concept="2mKXYI" id="5XruxTJPW$x">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="List of Orders" />
+    <property role="TrG5h" value="THE List of Orders" />
     <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
     <node concept="21t1Pg" id="5T7F9S8Iisd" role="21u2x1">
       <property role="1Nb$_v" value="false" />
@@ -366,6 +366,13 @@
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:2IUGN4P78gB" resolve="New Order" />
           <node concept="10Nm6u" id="2IUGN4P7eay" role="2_HrWp" />
+        </node>
+        <node concept="33WYYh" id="6bl3$WOFBc_" role="fOGQ8">
+          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="2_Hrw8" to="1y8i:2N_nDunL3de" resolve="TaskHandler" />
+          <node concept="2IFXgM" id="6bl3$WOFBgM" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+          </node>
         </node>
         <node concept="fOGPe" id="7dlwzTfFMgo" role="fOGQ8">
           <node concept="33WYYh" id="206uhc7iLnw" role="fOGQ8">
