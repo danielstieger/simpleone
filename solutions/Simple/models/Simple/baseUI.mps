@@ -370,9 +370,22 @@
         <node concept="33WYYh" id="6bl3$WOFBc_" role="fOGQ8">
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:2N_nDunL3de" resolve="TaskHandler" />
+          <ref role="3uz5Vf" to="dtxg:58zkQdG8_Kj" resolve="SUC_NEW_ORDER" />
           <node concept="2IFXgM" id="6bl3$WOFBgM" role="2_HrWp">
             <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
           </node>
+          <node concept="3clFbT" id="58zkQdG8_CB" role="2_HrWp">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+        <node concept="33WYYh" id="58zkQdG8_D4" role="fOGQ8">
+          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="2_Hrw8" to="1y8i:2N_nDunL3de" resolve="TaskHandler" />
+          <ref role="3uz5Vf" to="dtxg:58zkQdG8_OB" resolve="SUC_EXISTING_ORDER" />
+          <node concept="2IFXgM" id="58zkQdG8_D5" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+          </node>
+          <node concept="3clFbT" id="58zkQdG8_D6" role="2_HrWp" />
         </node>
         <node concept="fOGPe" id="7dlwzTfFMgo" role="fOGQ8">
           <node concept="33WYYh" id="206uhc7iLnw" role="fOGQ8">

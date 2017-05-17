@@ -3021,6 +3021,22 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="58zkQdG8_Kj" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_NEW_ORDER" />
+      <node concept="2kzhL4" id="58zkQdG8_Kk" role="2kzgdm">
+        <node concept="Xl_RD" id="58zkQdG8_Kl" role="il5_5">
+          <property role="Xl_RC" value="Task Handling (new Order)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="58zkQdG8_OB" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_EXISTING_ORDER" />
+      <node concept="2kzhL4" id="58zkQdG8_OC" role="2kzgdm">
+        <node concept="Xl_RD" id="58zkQdG8_OD" role="il5_5">
+          <property role="Xl_RC" value="Task Handling (existing Order)" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5ol$NvDtID">
     <property role="TrG5h" value="ICON_DEFINITON" />
