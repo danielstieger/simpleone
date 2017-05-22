@@ -1026,7 +1026,7 @@
           </node>
           <node concept="fOGP0" id="7dlwzTfNWla" role="fOGQ8" />
           <node concept="Xl_RD" id="7dlwzTfNWlb" role="33Ov9O">
-            <property role="Xl_RC" value="Edit Order (no UI) + Edit Order Pos" />
+            <property role="Xl_RC" value="Edit Order (Full UI) + Edit Order Pos" />
           </node>
         </node>
       </node>
