@@ -377,71 +377,47 @@
         </node>
       </node>
       <node concept="2CPvp3" id="21a32Cmm3S1" role="2CJdiS" />
-      <node concept="2CJf3v" id="21a32Cmm3S2" role="2CJdiS">
+      <node concept="2CJf3v" id="3drXVOoNMEM" role="2CJdiS">
         <property role="TrG5h" value="dataSource" />
-        <node concept="2DlbD8" id="21a32Cmm3S3" role="2DlbIj">
-          <node concept="Xl_RD" id="21a32Cmm3S4" role="2DlbDb">
+        <node concept="Xl_RD" id="3drXVOoNMEO" role="2CJf0U">
+          <property role="Xl_RC" value="oracle.jdbc.pool.OracleDataSource" />
+        </node>
+        <node concept="2DlbD8" id="3drXVOoNMXi" role="2DlbIj">
+          <node concept="Xl_RD" id="3drXVOoNMXj" role="2DlbDb">
             <property role="Xl_RC" value="destroy-method" />
           </node>
-          <node concept="Xl_RD" id="21a32Cmm3S5" role="2DlbDP">
+          <node concept="Xl_RD" id="3drXVOoNMXk" role="2DlbDP">
             <property role="Xl_RC" value="close" />
           </node>
         </node>
-        <node concept="Xl_RD" id="21a32Cmm3S6" role="2CJf0U">
-          <property role="Xl_RC" value="com.mchange.v2.c3p0.ComboPooledDataSource" />
-        </node>
-        <node concept="2CJ4$C" id="21a32Cmm3S7" role="2CJ4_l">
-          <property role="TrG5h" value="numHelperThreads" />
-          <node concept="Xl_RD" id="21a32Cmm3S8" role="2CaGCA">
-            <property role="Xl_RC" value="1" />
-          </node>
-        </node>
-        <node concept="2CJ4$C" id="21a32Cmm3S9" role="2CJ4_l">
-          <property role="TrG5h" value="maxIdleTime" />
-          <node concept="Xl_RD" id="21a32Cmm3Sa" role="2CaGCA">
-            <property role="Xl_RC" value="1800" />
-          </node>
-        </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sb" role="2CJ4_l">
-          <property role="TrG5h" value="acquireRetryDelay" />
-          <node concept="Xl_RD" id="21a32Cmm3Sc" role="2CaGCA">
-            <property role="Xl_RC" value="0" />
-          </node>
-        </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sd" role="2CJ4_l">
-          <property role="TrG5h" value="acquireRetryAttempts" />
-          <node concept="Xl_RD" id="21a32Cmm3Se" role="2CaGCA">
-            <property role="Xl_RC" value="30" />
-          </node>
-        </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sf" role="2CJ4_l">
-          <property role="TrG5h" value="driverClass" />
-          <node concept="Xl_RD" id="21a32Cmm3Sg" role="2CaGCA">
+        <node concept="2CJ4$C" id="3drXVOoNMYe" role="2CJ4_l">
+          <property role="TrG5h" value="driverType" />
+          <node concept="Xl_RD" id="3drXVOoNMYi" role="2CaGCA">
             <property role="Xl_RC" value="oracle.jdbc.driver.OracleDriver" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sh" role="2CJ4_l">
-          <property role="TrG5h" value="jdbcUrl" />
-          <node concept="Xl_RD" id="21a32Cmm3Si" role="2CaGCA">
+        <node concept="2CJ4$C" id="3drXVOoNMYp" role="2CJ4_l">
+          <property role="TrG5h" value="URL" />
+          <node concept="Xl_RD" id="3drXVOoNMYx" role="2CaGCA">
             <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sj" role="2CJ4_l">
-          <property role="TrG5h" value="maxPoolSize" />
-          <node concept="Xl_RD" id="21a32Cmm3Sk" role="2CaGCA">
-            <property role="Xl_RC" value="1" />
-          </node>
-        </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sl" role="2CJ4_l">
+        <node concept="2CJ4$C" id="3drXVOoNMYE" role="2CJ4_l">
           <property role="TrG5h" value="user" />
-          <node concept="Xl_RD" id="21a32Cmm3Sm" role="2CaGCA">
+          <node concept="Xl_RD" id="3drXVOoNNI3" role="2CaGCA">
             <property role="Xl_RC" value="reko" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="21a32Cmm3Sn" role="2CJ4_l">
+        <node concept="2CJ4$C" id="3drXVOoNMYW" role="2CJ4_l">
           <property role="TrG5h" value="password" />
-          <node concept="Xl_RD" id="21a32Cmm3So" role="2CaGCA">
+          <node concept="Xl_RD" id="3drXVOoNNuu" role="2CaGCA">
             <property role="Xl_RC" value="test" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="3drXVOoNMZi" role="2CJ4_l">
+          <property role="TrG5h" value="connectionCachingEnabled" />
+          <node concept="Xl_RD" id="3drXVOoNMZw" role="2CaGCA">
+            <property role="Xl_RC" value="true" />
           </node>
         </node>
       </node>
@@ -2310,6 +2286,83 @@
         <property role="TrG5h" value="__testDataStore" />
         <node concept="Xl_RD" id="15Ng79oa4C$" role="2CJf0U">
           <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="4zRKoOKIHTo">
+    <property role="TrG5h" value="DEP_CONFIG_STUFF" />
+    <node concept="2CJf3v" id="21a32Cmm3S2" role="2CGBMS">
+      <property role="TrG5h" value="dataSource" />
+      <node concept="2DlbD8" id="21a32Cmm3S3" role="2DlbIj">
+        <node concept="Xl_RD" id="21a32Cmm3S4" role="2DlbDb">
+          <property role="Xl_RC" value="destroy-method" />
+        </node>
+        <node concept="Xl_RD" id="21a32Cmm3S5" role="2DlbDP">
+          <property role="Xl_RC" value="close" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="21a32Cmm3S6" role="2CJf0U">
+        <property role="Xl_RC" value="com.mchange.v2.c3p0.ComboPooledDataSource" />
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3S7" role="2CJ4_l">
+        <property role="TrG5h" value="numHelperThreads" />
+        <node concept="Xl_RD" id="21a32Cmm3S8" role="2CaGCA">
+          <property role="Xl_RC" value="2" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sb" role="2CJ4_l">
+        <property role="TrG5h" value="acquireRetryDelay" />
+        <node concept="Xl_RD" id="21a32Cmm3Sc" role="2CaGCA">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sd" role="2CJ4_l">
+        <property role="TrG5h" value="acquireRetryAttempts" />
+        <node concept="Xl_RD" id="21a32Cmm3Se" role="2CaGCA">
+          <property role="Xl_RC" value="30" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sf" role="2CJ4_l">
+        <property role="TrG5h" value="driverClass" />
+        <node concept="Xl_RD" id="21a32Cmm3Sg" role="2CaGCA">
+          <property role="Xl_RC" value="oracle.jdbc.driver.OracleDriver" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sh" role="2CJ4_l">
+        <property role="TrG5h" value="jdbcUrl" />
+        <node concept="Xl_RD" id="21a32Cmm3Si" role="2CaGCA">
+          <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sj" role="2CJ4_l">
+        <property role="TrG5h" value="maxPoolSize" />
+        <node concept="Xl_RD" id="21a32Cmm3Sk" role="2CaGCA">
+          <property role="Xl_RC" value="2" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2tF6Zswg5LU" role="2CJ4_l">
+        <property role="TrG5h" value="minPoolSize" />
+        <node concept="Xl_RD" id="2tF6Zswg5MB" role="2CaGCA">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2tF6ZswlZW7" role="2CJ4_l">
+        <property role="TrG5h" value="initialPoolSize" />
+        <node concept="Xl_RD" id="2tF6ZswlZW8" role="2CaGCA">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sl" role="2CJ4_l">
+        <property role="TrG5h" value="user" />
+        <node concept="Xl_RD" id="21a32Cmm3Sm" role="2CaGCA">
+          <property role="Xl_RC" value="reko" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="21a32Cmm3Sn" role="2CJ4_l">
+        <property role="TrG5h" value="password" />
+        <node concept="Xl_RD" id="21a32Cmm3So" role="2CaGCA">
+          <property role="Xl_RC" value="test" />
         </node>
       </node>
     </node>

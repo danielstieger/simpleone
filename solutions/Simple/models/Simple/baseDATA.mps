@@ -2600,7 +2600,9 @@
     </node>
     <node concept="2kDv1q" id="6BKPvpCRbDr" role="2kDvpj">
       <property role="TrG5h" value="MDE" />
-      <node concept="3hNl9M" id="6BKPvpCRbDs" role="3hNl4o" />
+      <node concept="3hNl9M" id="6BKPvpCRbDs" role="3hNl4o">
+        <property role="21hoB1" value="SILENT_LOG" />
+      </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
       <property role="TrG5h" value="Search" />
@@ -3037,11 +3039,35 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="3cZhE1VQBXi" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_NEW_ORDER_FLAG" />
+      <node concept="2kzhL4" id="3cZhE1VQBXj" role="2kzgdm">
+        <node concept="Xl_RD" id="3cZhE1VQBXk" role="il5_5">
+          <property role="Xl_RC" value="Task Handling (new Order, flag)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3cZhE1VQBZZ" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_NEW_ORDER_CANCEL" />
+      <node concept="2kzhL4" id="3cZhE1VQC00" role="2kzgdm">
+        <node concept="Xl_RD" id="3cZhE1VQC01" role="il5_5">
+          <property role="Xl_RC" value="Task Handling (new Order, cancel)" />
+        </node>
+      </node>
+    </node>
     <node concept="il5_x" id="58zkQdG8_OB" role="2kzhMJ">
       <property role="TrG5h" value="SUC_EXISTING_ORDER" />
       <node concept="2kzhL4" id="58zkQdG8_OC" role="2kzgdm">
         <node concept="Xl_RD" id="58zkQdG8_OD" role="il5_5">
           <property role="Xl_RC" value="Task Handling (existing Order)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2Uji7vlCwwi" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_DOC_CREATOR" />
+      <node concept="2kzhL4" id="2Uji7vlCwwj" role="2kzgdm">
+        <node concept="Xl_RD" id="2Uji7vlCwwk" role="il5_5">
+          <property role="Xl_RC" value="Doc Creator" />
         </node>
       </node>
     </node>
@@ -3080,6 +3106,21 @@
   </node>
   <node concept="34Athd" id="3kFdJs03WW">
     <property role="TrG5h" value="Task" />
+    <node concept="2XvgOf" id="2Uji7vlCu6i" role="2XvChp">
+      <property role="TrG5h" value="UseExisting" />
+      <node concept="2XvgOc" id="2Uji7vlCu7b" role="2XvgO2">
+        <property role="TrG5h" value="existing" />
+        <property role="2XvgOS" value="E" />
+        <property role="1YKsg0" value="existing" />
+        <property role="1YKsg1" value="existing" />
+      </node>
+      <node concept="2XvgOc" id="2Uji7vlCu8G" role="2XvgO2">
+        <property role="TrG5h" value="new" />
+        <property role="2XvgOS" value="N" />
+        <property role="1YKsg0" value="new" />
+        <property role="1YKsg1" value="new" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="3kFdJs03WY" role="1B3o_S" />
     <node concept="1bOX9e" id="3kFdJs03XV" role="TxmiU">
       <property role="2RkwnN" value="id" />
@@ -3117,7 +3158,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="3kFdJs06U8" role="TxmiU">
-      <property role="2RkwnN" value="aufgabeId" />
+      <property role="2RkwnN" value="taskId" />
       <node concept="3Tm1VV" id="3kFdJs06Ue" role="1B3o_S" />
       <node concept="2RoN1w" id="3kFdJs06Uf" role="2RnVtd">
         <node concept="3wEZqW" id="3kFdJs06Ug" role="3wFrgM" />
@@ -3127,10 +3168,29 @@
       </node>
       <node concept="10Oyi0" id="3kFdJs06Va" role="2RkE6I" />
       <node concept="Xl_RD" id="6bl3$WOGpHx" role="2CNmdP">
-        <property role="Xl_RC" value="AufgabeId" />
+        <property role="Xl_RC" value="TaskId" />
       </node>
       <node concept="Xl_RD" id="6bl3$WOGpIq" role="2CNmdL">
-        <property role="Xl_RC" value="AufgabeId" />
+        <property role="Xl_RC" value="TaskId" />
+      </node>
+    </node>
+    <node concept="1bOX9e" id="2Uji7vlCu9w" role="TxmiU">
+      <property role="2RkwnN" value="existing" />
+      <node concept="3Tm1VV" id="2Uji7vlCu9A" role="1B3o_S" />
+      <node concept="2RoN1w" id="2Uji7vlCu9B" role="2RnVtd">
+        <node concept="3wEZqW" id="2Uji7vlCu9C" role="3wFrgM" />
+        <node concept="3xqBd$" id="2Uji7vlCu9D" role="3xrYvX">
+          <node concept="3Tm1VV" id="2Uji7vlCu9F" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="2XvVpB" id="2Uji7vlCuaB" role="2RkE6I">
+        <ref role="3$lB4D" node="2Uji7vlCu6i" resolve="UseExisting" />
+      </node>
+      <node concept="Xl_RD" id="2Uji7vlCub7" role="2CNmdP">
+        <property role="Xl_RC" value="Exist." />
+      </node>
+      <node concept="Xl_RD" id="2Uji7vlCucA" role="2CNmdL">
+        <property role="Xl_RC" value="Existing" />
       </node>
     </node>
     <node concept="3clFbW" id="3kFdJs06W0" role="jymVt">
