@@ -3307,7 +3307,15 @@
       <property role="TrG5h" value="SUC_DOC_CREATOR" />
       <node concept="2kzhL4" id="2Uji7vlCwwj" role="2kzgdm">
         <node concept="Xl_RD" id="2Uji7vlCwwk" role="il5_5">
-          <property role="Xl_RC" value="Doc Creator" />
+          <property role="Xl_RC" value="Doc Creator (existing Order)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7TgG1qSrmPS" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_DOC_CREATOR_NEW" />
+      <node concept="2kzhL4" id="7TgG1qSrmPT" role="2kzgdm">
+        <node concept="Xl_RD" id="7TgG1qSrmPU" role="il5_5">
+          <property role="Xl_RC" value="Doc Creator (new Order)" />
         </node>
       </node>
     </node>
