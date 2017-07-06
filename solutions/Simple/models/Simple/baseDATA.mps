@@ -3121,6 +3121,14 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="1w38SCBtbSt" role="2kzhMJ">
+      <property role="TrG5h" value="MLT_Complete_EX" />
+      <node concept="2kzhL4" id="1w38SCBtbSu" role="2kzgdm">
+        <node concept="Xl_RD" id="1w38SCBtbSv" role="il5_5">
+          <property role="Xl_RC" value="Complete Order (Multi GO EX)" />
+        </node>
+      </node>
+    </node>
     <node concept="il5_x" id="50l$rcpGTQh" role="2kzhMJ">
       <property role="TrG5h" value="CMP_EditPos" />
       <node concept="2kzhL4" id="50l$rcpGTQi" role="2kzgdm">
@@ -3262,6 +3270,22 @@
       <node concept="2kzhL4" id="7dlwzTfL4wq" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfL4wr" role="il5_5">
           <property role="Xl_RC" value="Compound - Complete Order (cancel, flag GO)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="5qtEEIGAo1_" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Exception" />
+      <node concept="2kzhL4" id="5qtEEIGAo1A" role="2kzgdm">
+        <node concept="Xl_RD" id="5qtEEIGAo1B" role="il5_5">
+          <property role="Xl_RC" value="Compound - Complete Order (EX in GE)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="5qtEEIGAo6b" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Exception_GO" />
+      <node concept="2kzhL4" id="5qtEEIGAo6c" role="2kzgdm">
+        <node concept="Xl_RD" id="5qtEEIGAo6d" role="il5_5">
+          <property role="Xl_RC" value="Compound - Complete Order (EX in GO)" />
         </node>
       </node>
     </node>

@@ -509,6 +509,18 @@
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
             </node>
           </node>
+          <node concept="33WYYh" id="1w38SCBtbMa" role="fOGQ8">
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="2_Hrw8" to="1y8i:206uhc7i3fr" resolve="Complete Order (Multi GO)" />
+            <ref role="3uz5Vf" to="dtxg:1w38SCBtbSt" resolve="MLT_Complete_EX" />
+            <node concept="2IFXgM" id="1w38SCBtbMb" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="Rm8GO" id="1w38SCBtbNj" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:5qtEEIGAnmt" resolve="EXCEPTION" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+          </node>
           <node concept="Xl_RD" id="7dlwzTfFMqV" role="33Ov9O">
             <property role="Xl_RC" value="Complete Order (Multi GO)" />
           </node>
@@ -720,6 +732,76 @@
               </node>
               <node concept="Rm8GO" id="7dlwzTfLPOM" role="2_HrWp">
                 <ref role="Rm8GQ" to="1y8i:7dlwzTfDyn_" resolve="CANCEL" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+          </node>
+          <node concept="2TlDos" id="5qtEEIGAnjE" role="fOGQ8">
+            <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="3Umo0L" to="1y8i:AN_117h9Yg" resolve="Ok" />
+            <ref role="3uz5Vf" to="dtxg:5qtEEIGAo1_" resolve="CMP_CompleteOrder_Cancel_Exception" />
+            <node concept="2IFXgM" id="5qtEEIGAnjF" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="2OqwBi" id="5qtEEIGAnjG" role="2_HrWp">
+              <node concept="2IFXgM" id="5qtEEIGAnjH" role="2Oq$k0">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="2S8uIT" id="5qtEEIGAnjI" role="2OqNvi">
+                <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="5qtEEIGAnjJ" role="2_HrWp">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="Rm8GO" id="5qtEEIGAnBO" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="2TlDos" id="5qtEEIGAnjL" role="2TlDj4">
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <node concept="2IFXgM" id="5qtEEIGAnjM" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5qtEEIGAoco" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:5qtEEIGAnmt" resolve="EXCEPTION" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+          </node>
+          <node concept="2TlDos" id="5qtEEIGAnJL" role="fOGQ8">
+            <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="3Umo0L" to="1y8i:AN_117h9Yg" resolve="Ok" />
+            <ref role="3uz5Vf" to="dtxg:5qtEEIGAo6b" resolve="CMP_CompleteOrder_Cancel_Exception_GO" />
+            <node concept="2IFXgM" id="5qtEEIGAnJM" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="2OqwBi" id="5qtEEIGAnJN" role="2_HrWp">
+              <node concept="2IFXgM" id="5qtEEIGAnJO" role="2Oq$k0">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="2S8uIT" id="5qtEEIGAnJP" role="2OqNvi">
+                <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="5qtEEIGAnJQ" role="2_HrWp">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="Rm8GO" id="5qtEEIGAnOO" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:5qtEEIGAnmt" resolve="EXCEPTION" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="2TlDos" id="5qtEEIGAnJS" role="2TlDj4">
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <node concept="2IFXgM" id="5qtEEIGAnJT" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5qtEEIGAnMC" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
                 <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
               </node>
             </node>

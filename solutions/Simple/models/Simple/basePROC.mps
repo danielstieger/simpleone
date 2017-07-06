@@ -1109,6 +1109,53 @@
           <ref role="1bGZi" to="dtxg:6BKPvpCRbDr" resolve="MDE" />
         </node>
       </node>
+      <node concept="10qiFn" id="5qtEEIGyhj8" role="10qiF9">
+        <property role="TrG5h" value="Reload" />
+        <ref role="2DFCCC" to="dtxg:3Rw9V4pLpzZ" resolve="Reload" />
+        <node concept="20qIzx" id="5qtEEIGyhIw" role="10ot2L">
+          <node concept="3clFbS" id="5qtEEIGyhIx" role="2VODD2">
+            <node concept="3clFbH" id="5qtEEIGyhXA" role="3cqZAp" />
+            <node concept="3clFbF" id="5qtEEIGyhJi" role="3cqZAp">
+              <node concept="2OqwBi" id="5qtEEIGyhJf" role="3clFbG">
+                <node concept="10M0yZ" id="5qtEEIGyhJg" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="5qtEEIGyhJh" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="5qtEEIGyhTj" role="37wK5m">
+                    <node concept="2IFXgM" id="5qtEEIGyhUQ" role="3uHU7w">
+                      <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+                    </node>
+                    <node concept="Xl_RD" id="5qtEEIGyhKd" role="3uHU7B">
+                      <property role="Xl_RC" value=" getSelected(Order) " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5qtEEIGyhYX" role="3cqZAp">
+              <node concept="2OqwBi" id="5qtEEIGyhYY" role="3clFbG">
+                <node concept="10M0yZ" id="5qtEEIGyhYZ" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="5qtEEIGyhZ0" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="5qtEEIGyhZ1" role="37wK5m">
+                    <node concept="2IFXgM" id="5qtEEIGyhZ2" role="3uHU7w">
+                      <ref role="2IFZ7r" to="dtxg:AN_117bbd$" resolve="OrderPosition" />
+                    </node>
+                    <node concept="Xl_RD" id="5qtEEIGyhZ3" role="3uHU7B">
+                      <property role="Xl_RC" value=" getSelected(OrderPosition) " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="10qiFn" id="5ol$NvKd4$" role="10qiF9">
         <property role="TrG5h" value="Msg" />
         <property role="10BtBF" value="NOSAVE_CONCLUSION" />
@@ -1185,6 +1232,43 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="5qtEEIGy_qy" role="3cqZAp">
+            <node concept="2OqwBi" id="5qtEEIGy_qv" role="3clFbG">
+              <node concept="10M0yZ" id="5qtEEIGy_qw" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              </node>
+              <node concept="liA8E" id="5qtEEIGy_qx" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="5qtEEIGy_rY" role="37wK5m">
+                  <property role="Xl_RC" value="Page load() for Edit Order" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5qtEEIGAoT3" role="3cqZAp">
+            <node concept="3clFbS" id="5qtEEIGAoT5" role="3clFbx">
+              <node concept="YS8fn" id="5qtEEIGAppb" role="3cqZAp">
+                <node concept="2ShNRf" id="5qtEEIGApsb" role="YScLw">
+                  <node concept="1pGfFk" id="5qtEEIGAqAO" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="5qtEEIGAqEf" role="37wK5m">
+                      <property role="Xl_RC" value="Exception in Edit Order" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="5qtEEIGApeA" role="3clFbw">
+              <node concept="Rm8GO" id="5qtEEIGAplB" role="3uHU7w">
+                <ref role="Rm8GQ" node="5qtEEIGAnmt" resolve="EXCEPTION" />
+                <ref role="1Px2BO" node="7dlwzTfDykH" resolve="Do" />
+              </node>
+              <node concept="3urNQE" id="5qtEEIGAoWr" role="3uHU7B">
+                <ref role="3cqZAo" node="7dlwzTfDyAZ" resolve="spec" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="AN_117h9Tb" role="3cqZAp">
             <node concept="10EhbA" id="AN_117h9Ta" role="3clFbG">
               <ref role="10EhbB" node="AN_117c0Wn" resolve="order" />
@@ -1209,25 +1293,7 @@
         <ref role="3063JT" to="knfg:5XruxTJPW_h" resolve="Single Order Main AppTab Pane" />
       </node>
       <node concept="3Yq87T" id="7dYuT2dChhH" role="3YpOId">
-        <node concept="3clFbS" id="7dYuT2dChhI" role="2VODD2">
-          <node concept="3clFbF" id="7TgG1qSivUu" role="3cqZAp">
-            <node concept="2OqwBi" id="7TgG1qSivUr" role="3clFbG">
-              <node concept="10M0yZ" id="7TgG1qSivUs" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="7TgG1qSivUt" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="7TgG1qSiw6N" role="37wK5m">
-                  <node concept="3YpPPs" id="7TgG1qSiw8L" role="3uHU7w" />
-                  <node concept="Xl_RD" id="7TgG1qSivVe" role="3uHU7B">
-                    <property role="Xl_RC" value="Edit_Order() child terminated " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbS" id="7dYuT2dChhI" role="2VODD2" />
       </node>
     </node>
     <node concept="20qIzx" id="AN_117h9vz" role="3umfm7">
@@ -2379,6 +2445,30 @@
               <ref role="1Px2BO" node="7dlwzTfDykH" resolve="Do" />
             </node>
             <node concept="3urNQE" id="7dlwzTfD_ZZ" role="3uHU7B">
+              <ref role="3cqZAo" node="7dlwzTfD$Vc" resolve="spec" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5qtEEIGAreA" role="3cqZAp" />
+        <node concept="3clFbJ" id="5qtEEIGArfe" role="3cqZAp">
+          <node concept="3clFbS" id="5qtEEIGArff" role="3clFbx">
+            <node concept="YS8fn" id="5qtEEIGArfg" role="3cqZAp">
+              <node concept="2ShNRf" id="5qtEEIGArfh" role="YScLw">
+                <node concept="1pGfFk" id="5qtEEIGArfi" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="5qtEEIGArfj" role="37wK5m">
+                    <property role="Xl_RC" value="Exception in Complete Order" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5qtEEIGArfk" role="3clFbw">
+            <node concept="Rm8GO" id="5qtEEIGArfl" role="3uHU7w">
+              <ref role="Rm8GQ" node="5qtEEIGAnmt" resolve="EXCEPTION" />
+              <ref role="1Px2BO" node="7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="3urNQE" id="5qtEEIGArfm" role="3uHU7B">
               <ref role="3cqZAo" node="7dlwzTfD$Vc" resolve="spec" />
             </node>
           </node>
@@ -4489,6 +4579,30 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1w38SCBt9qR" role="3cqZAp" />
+        <node concept="3clFbJ" id="1w38SCBt9t0" role="3cqZAp">
+          <node concept="3clFbS" id="1w38SCBt9t2" role="3clFbx">
+            <node concept="YS8fn" id="1w38SCBt9zy" role="3cqZAp">
+              <node concept="2ShNRf" id="1w38SCBt9zR" role="YScLw">
+                <node concept="1pGfFk" id="1w38SCBtbEJ" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="1w38SCBtbFi" role="37wK5m">
+                    <property role="Xl_RC" value="Exception according to spec :) " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="1w38SCBt9x7" role="3clFbw">
+            <node concept="Rm8GO" id="1w38SCBt9yT" role="3uHU7w">
+              <ref role="Rm8GQ" node="5qtEEIGAnmt" resolve="EXCEPTION" />
+              <ref role="1Px2BO" node="7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="3urNQE" id="1w38SCBt9ud" role="3uHU7B">
+              <ref role="3cqZAo" node="7dlwzTfFKwK" resolve="spec" />
+            </node>
+          </node>
+        </node>
         <node concept="10Adxh" id="3nYsKhv0JsN" role="3cqZAp">
           <node concept="Xl_RD" id="3nYsKhv0JtV" role="10Adiu">
             <property role="Xl_RC" value="Complete Order (Multi GO) canceled." />
@@ -4521,6 +4635,24 @@
     </node>
     <node concept="10EhbA" id="206uhc7i3p7" role="3vkzKj">
       <ref role="10EhbB" node="AN_117c0Wn" resolve="order" />
+    </node>
+    <node concept="20qIzx" id="1w38SCBpZY2" role="10_K5X">
+      <node concept="3clFbS" id="1w38SCBpZY3" role="2VODD2">
+        <node concept="3clFbF" id="1w38SCBq36i" role="3cqZAp">
+          <node concept="2OqwBi" id="1w38SCBq36f" role="3clFbG">
+            <node concept="10M0yZ" id="1w38SCBq36g" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="1w38SCBq36h" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="1w38SCBq36P" role="37wK5m">
+                <property role="Xl_RC" value="This is the final ex conclusion of Complete ORDER." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="7T8c0sxUCBG">
@@ -4714,6 +4846,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3Yq87T" id="6PK_6HyVmkw" role="3YpOId">
+        <node concept="3clFbS" id="6PK_6HyVmkx" role="2VODD2" />
       </node>
     </node>
     <node concept="20qIzx" id="2N_nDunL3gL" role="3umfm7">
@@ -5026,6 +5161,10 @@
       <property role="TrG5h" value="CANCEL_IN_CONCLUSION" />
       <ref role="37wK5l" node="7dlwzTfDyoo" resolve="Do" />
     </node>
+    <node concept="QsSxf" id="5qtEEIGAnmt" role="Qtgdg">
+      <property role="TrG5h" value="EXCEPTION" />
+      <ref role="37wK5l" node="7dlwzTfDyoo" resolve="Do" />
+    </node>
     <node concept="3Tm1VV" id="7dlwzTfDykI" role="1B3o_S" />
     <node concept="3clFbW" id="7dlwzTfDyoo" role="jymVt">
       <node concept="3cqZAl" id="7dlwzTfDyop" role="3clF45" />
@@ -5218,8 +5357,16 @@
             </node>
             <node concept="liA8E" id="U8r3Yq8PYw" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="U8r3Yq8Q1$" role="37wK5m">
-                <property role="Xl_RC" value="Order Main Doc GE.commandInit()" />
+              <node concept="3cpWs3" id="1w38SCBuPZ8" role="37wK5m">
+                <node concept="2OqwBi" id="1w38SCBuQ6o" role="3uHU7w">
+                  <node concept="3y28L$" id="1w38SCBuQ2X" role="2Oq$k0" />
+                  <node concept="liA8E" id="1w38SCBuQa$" role="2OqNvi">
+                    <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="isShared" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="U8r3Yq8Q1$" role="3uHU7B">
+                  <property role="Xl_RC" value="Order Main Doc GE.commandInit() Shared session? -&gt; " />
+                </node>
               </node>
             </node>
           </node>
