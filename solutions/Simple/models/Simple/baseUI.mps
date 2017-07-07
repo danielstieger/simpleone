@@ -306,6 +306,31 @@
       <ref role="1VC5xY" node="5T7F9S8Hdqn" resolve="SearchOrderResultTable" />
       <ref role="1Tjo6F" to="dtxg:7i4jsoimSH0" resolve="orders" />
       <node concept="fOGPe" id="3cAl6M4s8Ma" role="fOGQ8">
+        <node concept="2TlDos" id="64deLZBmP9r" role="fOGQ8">
+          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+          <ref role="3Umo0L" to="1y8i:U8r3Yq8LN8" resolve="Ok" />
+          <ref role="2_Hrw8" to="1y8i:2Uji7vlCo15" resolve="PD TaskHandler" />
+          <ref role="3uz5Vf" to="dtxg:2w5UnVouMup" resolve="A_Reset" />
+          <node concept="2IFXgM" id="64deLZBmQhS" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+          </node>
+          <node concept="3clFbT" id="3py0KkyNQ7C" role="2_HrWp" />
+          <node concept="Rm8GO" id="64deLZBmS3_" role="2_HrWp">
+            <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+            <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+          </node>
+          <node concept="2TlDos" id="64deLZBmQ_E" role="2TlDj4">
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+            <node concept="2IFXgM" id="64deLZBmQWC" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="Rm8GO" id="64deLZBmQYM" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+          </node>
+        </node>
         <node concept="33WYYh" id="5XruxTJPWDX" role="fOGQ8">
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
@@ -1246,7 +1271,6 @@
               </node>
             </node>
           </node>
-          <node concept="fOGP0" id="7dlwzTfDx0d" role="fOGQ8" />
           <node concept="Xl_RD" id="7dlwzTfFMMT" role="33Ov9O">
             <property role="Xl_RC" value="Edit Order (+ UI) + Edit Order Pos" />
           </node>
@@ -3904,6 +3928,7 @@
           </node>
         </node>
         <node concept="Pk6Vc" id="5DoeGbgSNAH" role="PoUSh" />
+        <node concept="P9Rn5" id="64deLZAXSFl" role="PoUSh" />
         <node concept="Pl0HC" id="12GNNnCCTki" role="PoUSh">
           <node concept="Xl_RD" id="12GNNnCCTkk" role="Pl0H_">
             <property role="Xl_RC" value="Order1.totalValue" />
@@ -3920,6 +3945,7 @@
           </node>
         </node>
         <node concept="Pk6Vc" id="5DoeGbgSNBL" role="PoUSh" />
+        <node concept="P9Rn5" id="64deLZAXSG8" role="PoUSh" />
         <node concept="Pevqn" id="5DoeGbgSNEg" role="PoUSh" />
         <node concept="Pl0HC" id="12GNNnCCTm9" role="PoUSh">
           <node concept="Xl_RD" id="12GNNnCCTmb" role="Pl0H_">
