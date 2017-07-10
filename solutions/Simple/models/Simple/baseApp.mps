@@ -506,6 +506,14 @@
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
+      <node concept="2CJf1O" id="5Ld38uCs109" role="2CJ4_l">
+        <node concept="Xl_RD" id="5Ld38uCs10a" role="2DqwMp">
+          <property role="Xl_RC" value="true" />
+        </node>
+        <node concept="Xl_RD" id="5Ld38uCs111" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
     </node>
     <node concept="2CPvp3" id="1$$A7zM8C7_" role="2CGBMS" />
     <node concept="2CJoq6" id="1$$A7zNeFRA" role="2CGBMS">

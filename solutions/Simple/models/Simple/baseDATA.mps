@@ -3343,6 +3343,30 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="5Ld38uCUaBr" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_COMP_Complete" />
+      <node concept="2kzhL4" id="5Ld38uCUaBs" role="2kzgdm">
+        <node concept="Xl_RD" id="5Ld38uCUaBt" role="il5_5">
+          <property role="Xl_RC" value="Complete with Successor/GE (existing)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="5Ld38uCUcf5" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_COMP_Complete_NEW" />
+      <node concept="2kzhL4" id="5Ld38uCUcf6" role="2kzgdm">
+        <node concept="Xl_RD" id="5Ld38uCUcf7" role="il5_5">
+          <property role="Xl_RC" value="Complete with Successor/GE (new)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="5Ld38uCVpf5" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_COMP_Complete_CANCEL" />
+      <node concept="2kzhL4" id="5Ld38uCVpf6" role="2kzgdm">
+        <node concept="Xl_RD" id="5Ld38uCVpf7" role="il5_5">
+          <property role="Xl_RC" value="Complete with Successor/GE (cancel GE / existing)" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5ol$NvDtID">
     <property role="TrG5h" value="ICON_DEFINITON" />

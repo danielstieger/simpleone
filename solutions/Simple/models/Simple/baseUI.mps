@@ -163,7 +163,6 @@
         <child id="2954183761501582923" name="uxChild" index="21u2wL" />
         <child id="2954183761501582927" name="label" index="21u2wP" />
       </concept>
-      <concept id="1750699687529771351" name="org.modellwerkstatt.dataux.structure.IMenuItem" flags="ng" index="fOGP0" />
       <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe">
         <child id="3887124829268092187" name="label" index="33Ov9O" />
       </concept>
@@ -203,8 +202,10 @@
       <concept id="465568541573490182" name="org.modellwerkstatt.dataux.structure.IDOption" flags="ng" index="PoUSp" />
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
       <concept id="2019652483308169511" name="org.modellwerkstatt.dataux.structure.MenuCompoundAction" flags="ng" index="2TlDos">
+        <reference id="6650986001475221548" name="forSuccessorCommandPageConclusion" index="3OiViF" />
         <reference id="7763903944092773809" name="pageConclusion" index="3Umo0L" />
-        <child id="2019652483308170239" name="innerAction" index="2TlDj4" />
+        <reference id="6650986001466059007" name="forSuccessorCommand" index="3VdYhS" />
+        <child id="2019652483308170239" name="innerActions" index="2TlDj4" />
       </concept>
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
       <concept id="3899779351686566802" name="org.modellwerkstatt.dataux.structure.LocalDateDelegate" flags="ng" index="2TG9WU" />
@@ -306,31 +307,6 @@
       <ref role="1VC5xY" node="5T7F9S8Hdqn" resolve="SearchOrderResultTable" />
       <ref role="1Tjo6F" to="dtxg:7i4jsoimSH0" resolve="orders" />
       <node concept="fOGPe" id="3cAl6M4s8Ma" role="fOGQ8">
-        <node concept="2TlDos" id="64deLZBmP9r" role="fOGQ8">
-          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-          <ref role="3Umo0L" to="1y8i:U8r3Yq8LN8" resolve="Ok" />
-          <ref role="2_Hrw8" to="1y8i:2Uji7vlCo15" resolve="PD TaskHandler" />
-          <ref role="3uz5Vf" to="dtxg:2w5UnVouMup" resolve="A_Reset" />
-          <node concept="2IFXgM" id="64deLZBmQhS" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-          </node>
-          <node concept="3clFbT" id="3py0KkyNQ7C" role="2_HrWp" />
-          <node concept="Rm8GO" id="64deLZBmS3_" role="2_HrWp">
-            <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-            <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-          </node>
-          <node concept="2TlDos" id="64deLZBmQ_E" role="2TlDj4">
-            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-            <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
-            <node concept="2IFXgM" id="64deLZBmQWC" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-            </node>
-            <node concept="Rm8GO" id="64deLZBmQYM" role="2_HrWp">
-              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-            </node>
-          </node>
-        </node>
         <node concept="33WYYh" id="5XruxTJPWDX" role="fOGQ8">
           <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
           <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
@@ -493,9 +469,134 @@
               <property role="3clFbU" value="true" />
             </node>
           </node>
-          <node concept="fOGP0" id="7TgG1qSrjtz" role="fOGQ8" />
           <node concept="Xl_RD" id="2Uji7vlCwbl" role="33Ov9O">
             <property role="Xl_RC" value="SuccessorPatterns" />
+          </node>
+        </node>
+        <node concept="fOGPe" id="5Ld38uCUak6" role="fOGQ8">
+          <node concept="2TlDos" id="64deLZBmP9r" role="fOGQ8">
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="2_Hrw8" to="1y8i:2Uji7vlCo15" resolve="PD TaskHandler" />
+            <ref role="3uz5Vf" to="dtxg:5Ld38uCUaBr" resolve="SUC_COMP_Complete" />
+            <node concept="2IFXgM" id="64deLZBmQhS" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="3clFbT" id="3py0KkyNQ7C" role="2_HrWp" />
+            <node concept="Rm8GO" id="64deLZBmS3_" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="2TlDos" id="64deLZBmQ_E" role="2TlDj4">
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <ref role="3VdYhS" to="1y8i:U8r3Yq8LMH" resolve="Order Main Doc GE" />
+              <ref role="3OiViF" to="1y8i:U8r3Yq8LN8" resolve="Ok" />
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <node concept="2IFXgM" id="64deLZBmQWC" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="64deLZBmQYM" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+            <node concept="2TlDos" id="5Ld38uCUbX_" role="2TlDj4">
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <ref role="3VdYhS" to="1y8i:3cAl6M4wnPW" resolve="Complex Edit Order" />
+              <ref role="3OiViF" to="1y8i:3cAl6M4wnQ8" resolve="Ok" />
+              <node concept="2IFXgM" id="5Ld38uCUbXA" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5Ld38uCUbXB" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+          </node>
+          <node concept="2TlDos" id="5Ld38uCUcbY" role="fOGQ8">
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="2_Hrw8" to="1y8i:2Uji7vlCo15" resolve="PD TaskHandler" />
+            <ref role="3uz5Vf" to="dtxg:5Ld38uCUcf5" resolve="SUC_COMP_Complete_NEW" />
+            <node concept="2IFXgM" id="5Ld38uCUcbZ" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="3clFbT" id="5Ld38uCUckp" role="2_HrWp">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="Rm8GO" id="5Ld38uCUcc1" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="2TlDos" id="5Ld38uCUcc2" role="2TlDj4">
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <ref role="3VdYhS" to="1y8i:U8r3Yq8LMH" resolve="Order Main Doc GE" />
+              <ref role="3OiViF" to="1y8i:U8r3Yq8LN8" resolve="Ok" />
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <node concept="2IFXgM" id="5Ld38uCUcc3" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5Ld38uCUcc4" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+            <node concept="2TlDos" id="5Ld38uCUcc5" role="2TlDj4">
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <ref role="3VdYhS" to="1y8i:3cAl6M4wnPW" resolve="Complex Edit Order" />
+              <ref role="3OiViF" to="1y8i:3cAl6M4wnQ8" resolve="Ok" />
+              <node concept="2IFXgM" id="5Ld38uCUcc6" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5Ld38uCUcc7" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+          </node>
+          <node concept="2TlDos" id="5Ld38uCVpdq" role="fOGQ8">
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="2_Hrw8" to="1y8i:2Uji7vlCo15" resolve="PD TaskHandler" />
+            <ref role="3uz5Vf" to="dtxg:5Ld38uCVpf5" resolve="SUC_COMP_Complete_CANCEL" />
+            <node concept="2IFXgM" id="5Ld38uCVpdr" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+            </node>
+            <node concept="3clFbT" id="5Ld38uCWG3P" role="2_HrWp">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="Rm8GO" id="5Ld38uCVpdt" role="2_HrWp">
+              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+            </node>
+            <node concept="2TlDos" id="5Ld38uCVpdu" role="2TlDj4">
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <ref role="3VdYhS" to="1y8i:U8r3Yq8LMH" resolve="Order Main Doc GE" />
+              <ref role="3OiViF" to="1y8i:U8r3Yq8LN8" resolve="Ok" />
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <node concept="2IFXgM" id="5Ld38uCVpdv" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5Ld38uCVpdw" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+            <node concept="2TlDos" id="5Ld38uCVpdx" role="2TlDj4">
+              <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+              <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
+              <ref role="3VdYhS" to="1y8i:3cAl6M4wnPW" resolve="Complex Edit Order" />
+              <ref role="3OiViF" to="1y8i:3cAl6M4wnQ8" resolve="Ok" />
+              <node concept="2IFXgM" id="5Ld38uCVpdy" role="2_HrWp">
+                <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
+              </node>
+              <node concept="Rm8GO" id="5Ld38uCVppY" role="2_HrWp">
+                <ref role="Rm8GQ" to="1y8i:7dlwzTfDyn_" resolve="CANCEL" />
+                <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+              </node>
+            </node>
+          </node>
+          <node concept="Xl_RD" id="5Ld38uCUaoL" role="33Ov9O">
+            <property role="Xl_RC" value="SuccessorPatterns Compound" />
           </node>
         </node>
         <node concept="fOGPe" id="7dlwzTfFMgo" role="fOGQ8">
