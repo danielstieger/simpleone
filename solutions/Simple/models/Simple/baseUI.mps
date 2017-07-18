@@ -3841,41 +3841,6 @@
     <property role="TrG5h" value="SearchOrderResultTable" />
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
     <node concept="fOGPe" id="5T7F9S8Hdsu" role="fOGQ8">
-      <node concept="2TlDos" id="2Gn_LTGoe6a" role="fOGQ8">
-        <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
-        <ref role="3Umo0L" to="1y8i:AN_117h9Yg" resolve="Ok" />
-        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <ref role="3uz5Vf" to="dtxg:298IG9dBCW6" resolve="CMP_CompleteOrder" />
-        <node concept="2IFXgM" id="2Gn_LTGoe6b" role="2_HrWp">
-          <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-        </node>
-        <node concept="2OqwBi" id="2Gn_LTGoe6c" role="2_HrWp">
-          <node concept="2IFXgM" id="2Gn_LTGoe6d" role="2Oq$k0">
-            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-          </node>
-          <node concept="2S8uIT" id="2Gn_LTGoe6e" role="2OqNvi">
-            <ref role="2S8YL0" to="dtxg:4u029Jv8vCO" resolve="id" />
-          </node>
-        </node>
-        <node concept="3clFbT" id="2Gn_LTGoe6f" role="2_HrWp">
-          <property role="3clFbU" value="false" />
-        </node>
-        <node concept="Rm8GO" id="2Gn_LTGoe6g" role="2_HrWp">
-          <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-          <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-        </node>
-        <node concept="2TlDos" id="2Gn_LTGoe6h" role="2TlDj4">
-          <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
-          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-          <node concept="2IFXgM" id="2Gn_LTGoe6i" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-          </node>
-          <node concept="Rm8GO" id="2Gn_LTGoe6j" role="2_HrWp">
-            <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-            <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-          </node>
-        </node>
-      </node>
       <node concept="33WYYh" id="5T7F9S8Hdsv" role="fOGQ8">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />

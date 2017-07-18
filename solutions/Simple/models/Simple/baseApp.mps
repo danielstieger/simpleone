@@ -1039,7 +1039,7 @@
         </node>
         <node concept="2CJf1O" id="2Gn_LTGphmY" role="2CJ4_l">
           <node concept="Xl_RD" id="2Gn_LTGphn0" role="2DqwMp">
-            <property role="Xl_RC" value="/MDEApp/static2" />
+            <property role="Xl_RC" value="/MDEApp/static" />
           </node>
           <node concept="Xl_RD" id="2Gn_LTGphna" role="2DqwMv">
             <property role="Xl_RC" value="1" />
