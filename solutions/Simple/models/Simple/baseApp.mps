@@ -69,6 +69,10 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -87,6 +91,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -506,14 +513,6 @@
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
-      <node concept="2CJf1O" id="5Ld38uCs109" role="2CJ4_l">
-        <node concept="Xl_RD" id="5Ld38uCs10a" role="2DqwMp">
-          <property role="Xl_RC" value="true" />
-        </node>
-        <node concept="Xl_RD" id="5Ld38uCs111" role="2DqwMv">
-          <property role="Xl_RC" value="0" />
-        </node>
-      </node>
     </node>
     <node concept="2CPvp3" id="1$$A7zM8C7_" role="2CGBMS" />
     <node concept="2CJoq6" id="1$$A7zNeFRA" role="2CGBMS">
@@ -575,6 +574,12 @@
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="5cpEwAg87NF" role="2CJf0U">
         <property role="Xl_RC" value="Simple.baseApp.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="5$BCFrw7$Bw" role="2CGBMS">
+      <property role="TrG5h" value="authentification" />
+      <node concept="Xl_RD" id="5$BCFrw7$By" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.vaadinforms.auth.VSimpleLoginWindowAuth" />
       </node>
     </node>
     <node concept="2CJoq6" id="6rifQjUyq6q" role="2CGBMS">
@@ -1029,20 +1034,16 @@
         <node concept="Xl_RD" id="49EzYiePzEa" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.h2forms.runtime.zebramde.ZMAppFactory" />
         </node>
-        <node concept="2CJf1O" id="2Gn_LTGphlG" role="2CJ4_l">
-          <node concept="Xl_RD" id="2Gn_LTGphlH" role="2DqwMp">
+        <node concept="2CJ4$C" id="1LWMBWz8Gfz" role="2CJ4_l">
+          <property role="TrG5h" value="SkipLoggingTcnException" />
+          <node concept="Xl_RD" id="1LWMBWz8Gmx" role="2CaGCA">
             <property role="Xl_RC" value="true" />
           </node>
-          <node concept="Xl_RD" id="2Gn_LTGphm8" role="2DqwMv">
-            <property role="Xl_RC" value="0" />
-          </node>
         </node>
-        <node concept="2CJf1O" id="2Gn_LTGphmY" role="2CJ4_l">
-          <node concept="Xl_RD" id="2Gn_LTGphn0" role="2DqwMp">
+        <node concept="2CJ4$C" id="1LWMBWz8Gnn" role="2CJ4_l">
+          <property role="TrG5h" value="ExtStaticContentUrl" />
+          <node concept="Xl_RD" id="2Gn_LTGphn0" role="2CaGCA">
             <property role="Xl_RC" value="/MDEApp/static" />
-          </node>
-          <node concept="Xl_RD" id="2Gn_LTGphna" role="2DqwMv">
-            <property role="Xl_RC" value="1" />
           </node>
         </node>
       </node>
@@ -1359,14 +1360,6 @@
         <node concept="Xl_RD" id="B01fqRMJBh" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.vaadinforms.windows.VUiFactory" />
         </node>
-        <node concept="2CJf1O" id="B01fqRMJBi" role="2CJ4_l">
-          <node concept="Xl_RD" id="B01fqRMJBj" role="2DqwMp">
-            <property role="Xl_RC" value="BABY" />
-          </node>
-          <node concept="Xl_RD" id="B01fqRMJBk" role="2DqwMv">
-            <property role="Xl_RC" value="0" />
-          </node>
-        </node>
       </node>
       <node concept="2CJf3v" id="1BZ9wCagmRm" role="2CJdiS">
         <property role="TrG5h" value="stringFormatter" />
@@ -1509,39 +1502,27 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5XruxTJPWEp" role="3cqZAp" />
-        <node concept="3clFbF" id="1SuqpWQMedC" role="3cqZAp">
-          <node concept="2OqwBi" id="1SuqpWQMed_" role="3clFbG">
-            <node concept="10M0yZ" id="1SuqpWQMedA" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+        <node concept="3clFbJ" id="4FiFGILjskG" role="3cqZAp">
+          <node concept="3clFbS" id="4FiFGILjskI" role="3clFbx">
+            <node concept="3cpWs6" id="4FiFGILjsDL" role="3cqZAp">
+              <node concept="3clFbT" id="4FiFGILjsDY" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
             </node>
-            <node concept="liA8E" id="1SuqpWQMedB" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="6gfAiFidfu7" role="37wK5m">
-                <node concept="2OqwBi" id="6gfAiFidfJ5" role="3uHU7w">
-                  <node concept="3urNR4" id="6gfAiFidfDz" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1SuqpWQMcuY" resolve="setting" />
-                  </node>
-                  <node concept="2OwXpG" id="6gfAiFidfOI" role="2OqNvi">
-                    <ref role="2Oxat5" node="1SuqpWQMcLr" resolve="VERSION" />
-                  </node>
-                </node>
-                <node concept="3cpWs3" id="1SuqpWQMeVj" role="3uHU7B">
-                  <node concept="3cpWs3" id="1SuqpWQMeJK" role="3uHU7B">
-                    <node concept="Xl_RD" id="1SuqpWQMej9" role="3uHU7B">
-                      <property role="Xl_RC" value="UserName: " />
-                    </node>
-                    <node concept="2MWqbU" id="1SuqpWQMePm" role="3uHU7w" />
-                  </node>
-                  <node concept="Xl_RD" id="1SuqpWQMf2t" role="3uHU7w">
-                    <property role="Xl_RC" value=" / " />
-                  </node>
-                </node>
+          </node>
+          <node concept="3fqX7Q" id="4FiFGILjsAz" role="3clFbw">
+            <node concept="2OqwBi" id="4FiFGILjsA_" role="3fr31v">
+              <node concept="liA8E" id="4FiFGILjsAB" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="2MWqbU" id="4FiFGILmPVm" role="37wK5m" />
+              </node>
+              <node concept="Xl_RD" id="4FiFGILjsAC" role="2Oq$k0">
+                <property role="Xl_RC" value="dan" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4FiFGILjsiz" role="3cqZAp" />
         <node concept="3clFbF" id="5XruxTJPWEL" role="3cqZAp">
           <node concept="2OqwBi" id="5XruxTJPWEM" role="3clFbG">
             <node concept="2Rjrh3" id="5XruxTJPWEN" role="2Oq$k0" />
