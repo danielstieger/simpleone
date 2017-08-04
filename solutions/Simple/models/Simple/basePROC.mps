@@ -264,6 +264,7 @@
         <property id="8569227807555216336" name="overWriteWindowTitle" index="1UlA2q" />
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
         <child id="6525155817177860576" name="enabledWhen" index="20uWH4" />
+        <child id="6525155817177697707" name="documentation" index="20vkWf" />
         <child id="4678401045862677843" name="commandCreationInformation" index="27AfA_" />
         <child id="6185198504743118463" name="defaultIcon" index="2DETGV" />
         <child id="1135314546594241995" name="maxInitCmdDescription" index="2HP2Xr" />
@@ -776,7 +777,7 @@
         </node>
       </node>
       <node concept="3063JU" id="5XruxTJPWFF" role="3063Jp">
-        <ref role="3063JT" to="knfg:5XruxTJPW$x" resolve="THE LIST OF ORDERS" />
+        <ref role="3063JT" to="knfg:7U5eYIS4Ayi" resolve="THE LIST OF ORDERS" />
       </node>
       <node concept="3Yq87T" id="7TgG1qShyhe" role="3YpOId">
         <node concept="3clFbS" id="7TgG1qShyhf" role="2VODD2">
@@ -1581,6 +1582,14 @@
         <ref role="3uigEE" node="7dlwzTfDykH" resolve="Do" />
       </node>
     </node>
+    <node concept="2OqwBi" id="3xmYcCNx8eN" role="3vkzKj">
+      <node concept="3urNR4" id="3xmYcCNx88Z" role="2Oq$k0">
+        <ref role="3cqZAo" node="3cAl6M4p8qY" resolve="checkoutOrder" />
+      </node>
+      <node concept="2S8uIT" id="3xmYcCNx8lT" role="2OqNvi">
+        <ref role="2S8YL0" to="dtxg:AN_117bqBd" resolve="pos" />
+      </node>
+    </node>
     <node concept="3urNR4" id="3cAl6M4qcQq" role="3vkzKj">
       <ref role="3cqZAo" node="3cAl6M4p8qY" resolve="checkoutOrder" />
     </node>
@@ -1625,6 +1634,17 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="20vkWO" id="3xmYcCN$4_h" role="20vkWf">
+      <node concept="20vkWP" id="3xmYcCN$4_i" role="20vkWT">
+        <property role="20vkWQ" value="User Docu Line 1" />
+      </node>
+      <node concept="20vkWP" id="3xmYcCN$4FY" role="20vkWT">
+        <property role="20vkWQ" value="User Docu Line 2" />
+      </node>
+      <node concept="20vkWP" id="3xmYcCN$4Gm" role="20vkWT">
+        <property role="20vkWQ" value="User Docu Line 3" />
       </node>
     </node>
   </node>
@@ -2604,6 +2624,9 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbT" id="3u$lBI4cjGo" role="1PSD5q">
+          <property role="3clFbU" value="false" />
+        </node>
       </node>
       <node concept="10qiFn" id="4XOQNRZgrSC" role="10qiF9">
         <property role="TrG5h" value="Ok" />
@@ -3183,7 +3206,7 @@
           <node concept="2OqwBi" id="6vtMBToch9e" role="3clFbG">
             <node concept="3y28L$" id="6vtMBToch7W" role="2Oq$k0" />
             <node concept="liA8E" id="6vtMBTochbR" role="2OqNvi">
-              <ref role="37wK5l" to="w7gk:6vtMBTngXqz" resolve="addEntityAsCheckedOut" />
+              <ref role="37wK5l" to="w7gk:6vtMBTngXqz" resolve="ensureInSession" />
               <node concept="37vLTw" id="6vtMBTochcm" role="37wK5m">
                 <ref role="3cqZAo" node="6vtMBTnCRdt" resolve="t" />
               </node>
@@ -5608,7 +5631,7 @@
           <node concept="2OqwBi" id="6vtMBTocgTs" role="3clFbG">
             <node concept="3y28L$" id="6vtMBTocgOt" role="2Oq$k0" />
             <node concept="liA8E" id="6vtMBTocgZV" role="2OqNvi">
-              <ref role="37wK5l" to="w7gk:6vtMBTngXqz" resolve="addEntityAsCheckedOut" />
+              <ref role="37wK5l" to="w7gk:6vtMBTngXqz" resolve="ensureInSession" />
               <node concept="37vLTw" id="6vtMBToch0q" role="37wK5m">
                 <ref role="3cqZAo" node="6vtMBTnCRX1" resolve="t" />
               </node>
