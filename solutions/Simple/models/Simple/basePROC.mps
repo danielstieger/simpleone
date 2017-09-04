@@ -484,6 +484,7 @@
       </node>
       <node concept="20qEzJ" id="AN_117fcM1" role="10qiF$">
         <node concept="3clFbS" id="AN_117fcM2" role="2VODD2">
+          <node concept="3clFbH" id="6g0i7p9JMJa" role="3cqZAp" />
           <node concept="3clFbF" id="7H4uG2ddLyC" role="3cqZAp">
             <node concept="37vLTI" id="7H4uG2ddLAb" role="3clFbG">
               <node concept="10Nm6u" id="7H4uG2ddLB4" role="37vLTx" />
@@ -777,7 +778,7 @@
         </node>
       </node>
       <node concept="3063JU" id="5XruxTJPWFF" role="3063Jp">
-        <ref role="3063JT" to="knfg:7U5eYIS4Ayi" resolve="THE LIST OF ORDERS" />
+        <ref role="3063JT" to="knfg:yVRSBcWNSA" resolve="THE LIST OF ORDERS" />
       </node>
       <node concept="3Yq87T" id="7TgG1qShyhe" role="3YpOId">
         <node concept="3clFbS" id="7TgG1qShyhf" role="2VODD2">
@@ -923,8 +924,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4n24ZlESBbT" role="3cqZAp" />
-        <node concept="3clFbH" id="3cAl6M4oXl5" role="3cqZAp" />
       </node>
     </node>
     <node concept="3cmrfG" id="vOp1wfobT6" role="39DNyx">
@@ -6288,6 +6287,21 @@
         <ref role="2DFCCC" to="dtxg:3Rw9V4pLpzQ" resolve="UPDATE" />
         <node concept="20qIzx" id="7P$uL5PE5iS" role="10ot2L">
           <node concept="3clFbS" id="7P$uL5PE5iT" role="2VODD2">
+            <node concept="3clFbF" id="5sm75w$hsLh" role="3cqZAp">
+              <node concept="2OqwBi" id="5sm75w$hsLi" role="3clFbG">
+                <node concept="10M0yZ" id="5sm75w$hsLj" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="5sm75w$hsLk" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="5sm75w$hsLl" role="37wK5m">
+                    <property role="Xl_RC" value="Update Conclusion() update called" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5sm75w$hsjB" role="3cqZAp" />
             <node concept="3SKdUt" id="12GNNnCAfGW" role="3cqZAp">
               <node concept="3SKdUq" id="12GNNnCAfGY" role="3SKWNk">
                 <property role="3SKdUp" value="can we overwrite requestFocus()? Yes we can, but things are getting more complicated" />
@@ -6384,19 +6398,19 @@
                 <property role="Xl_RC" value="Command canceled. 11.0d" />
               </node>
               <node concept="3clFbC" id="12GNNnC$v8h" role="10Adiv">
-                <node concept="1mgVXT" id="12GNNnC$v8i" role="3uHU7w">
+                <node concept="1mgVXT" id="5sm75w_58Wc" role="3uHU7B">
                   <property role="1mgVXS" value="11.0d" />
                 </node>
-                <node concept="2OqwBi" id="12GNNnC$v8j" role="3uHU7B">
-                  <node concept="2OqwBi" id="12GNNnC$v8k" role="2Oq$k0">
-                    <node concept="3urNR4" id="12GNNnC$v8l" role="2Oq$k0">
+                <node concept="2OqwBi" id="5sm75w_58Wd" role="3uHU7w">
+                  <node concept="2OqwBi" id="5sm75w_58We" role="2Oq$k0">
+                    <node concept="3urNR4" id="5sm75w_58Wf" role="2Oq$k0">
                       <ref role="3cqZAo" node="2KQ2inNsF68" resolve="helper" />
                     </node>
-                    <node concept="2S8uIT" id="12GNNnC$v8m" role="2OqNvi">
+                    <node concept="2S8uIT" id="5sm75w_58Wg" role="2OqNvi">
                       <ref role="2S8YL0" to="dtxg:2KQ2inNsEWy" resolve="order1" />
                     </node>
                   </node>
-                  <node concept="2S8uIT" id="12GNNnC$v8n" role="2OqNvi">
+                  <node concept="2S8uIT" id="5sm75w_58Wh" role="2OqNvi">
                     <ref role="2S8YL0" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
                   </node>
                 </node>
@@ -6451,6 +6465,20 @@
       </node>
       <node concept="JX2Gw" id="7P$uL5PE7$G" role="JX2Go">
         <node concept="3clFbS" id="7P$uL5PE7$H" role="2VODD2">
+          <node concept="3clFbF" id="5sm75w$hrAB" role="3cqZAp">
+            <node concept="2OqwBi" id="5sm75w$hrA$" role="3clFbG">
+              <node concept="10M0yZ" id="5sm75w$hrA_" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              </node>
+              <node concept="liA8E" id="5sm75w$hrAA" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="Xl_RD" id="5sm75w$hs9V" role="37wK5m">
+                  <property role="Xl_RC" value="Update Conclusion() RECALCING scope" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3SKdUt" id="3puWk9zQjIr" role="3cqZAp">
             <node concept="3SKdUq" id="3puWk9zQjIt" role="3SKWNk">
               <property role="3SKdUp" value="For the sake of consistency in a UI delegate form, all delegates have to issue the update conclusion" />
