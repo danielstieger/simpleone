@@ -2377,11 +2377,6 @@
             </node>
           </node>
         </node>
-        <node concept="3Oe2IN" id="2HNBaZ19ykp" role="3OfFNq">
-          <node concept="3Oe$u_" id="2HNBaZ19ykq" role="3$nDjG">
-            <ref role="3O0p26" to="dtxg:4u029Jv8vCO" resolve="id" />
-          </node>
-        </node>
       </node>
       <node concept="2U5qGQ" id="2HNBaZ19ylr" role="21u2wS">
         <property role="1Nb$_v" value="false" />
@@ -4645,6 +4640,199 @@
       <ref role="3uigEE" to="zhcn:3Ojm3UunEzl" resolve="DynamicListOfDelegates" />
       <node concept="3uibUv" id="7HGubScBm23" role="11_B2D">
         <ref role="3uigEE" to="dtxg:AN_117bbd$" resolve="OrderPosition" />
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="6XzXfke1ae4">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="BatchJobSearchFilter" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+    <node concept="2U5qGO" id="6XzXfke1afD" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+      <node concept="2U5nhG" id="6XzXfke1afF" role="2TFpq_" />
+      <node concept="3Oe2IN" id="6XzXfke1aga" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke1agb" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke18wx" resolve="id" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="6XzXfke1agc" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke1agd" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke18y3" resolve="text" />
+        </node>
+      </node>
+      <node concept="2TG9WT" id="6XzXfke1age" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke1agf" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke18_5" resolve="date" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="6XzXfke1agg" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke1agh" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke19Nv" resolve="totalValue" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="6XzXfke1aBn">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="BatchJobSearchResult" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+    <node concept="2U5qGQ" id="6XzXfke1aGH" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+      <ref role="1Tjo6F" to="dtxg:6XzXfke1ajR" resolve="items" />
+      <node concept="fOGPe" id="6XzXfke8zow" role="fOGQ8">
+        <node concept="33WYYh" id="6XzXfke8zoU" role="fOGQ8">
+          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+          <node concept="2IFXgM" id="6XzXfke8zpU" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+          </node>
+        </node>
+        <node concept="2TlDos" id="6XzXfke8zqY" role="fOGQ8">
+          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+          <ref role="3Umo0L" to="1y8i:6XzXfke8ySG" resolve="Ok" />
+          <ref role="3uz5Vf" to="dtxg:6XzXfke8zBL" resolve="Complete_BjItem" />
+          <node concept="2IFXgM" id="6XzXfke8zso" role="2_HrWp">
+            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+          </node>
+          <node concept="2TlDos" id="6XzXfke8zuV" role="2TlDj4">
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+            <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+            <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
+            <node concept="2IFXgM" id="6XzXfke8zwe" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PoWA$" id="6XzXfke1aGJ" role="PoUSn" />
+      <node concept="3Oe2IN" id="6XzXfke1aHJ" role="3OfFNq">
+        <node concept="PnLzW" id="6XzXfke1aHK" role="PoUSh">
+          <property role="PiFy3" value="5" />
+        </node>
+        <node concept="3Oe$u_" id="6XzXfke1aHL" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1aoC" resolve="id" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="6XzXfke1aHM" role="3OfFNq">
+        <node concept="PnLzW" id="6XzXfke1aHN" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="6XzXfke1aHO" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1apu" resolve="currentValue" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="6XzXfke1aHP" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke1aHR" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1asx" resolve="text" />
+        </node>
+        <node concept="PnLzW" id="6XzXfke7pwe" role="PoUSh">
+          <property role="PiFy3" value="50" />
+        </node>
+      </node>
+      <node concept="2TG9WT" id="6XzXfke1aHS" role="3OfFNq">
+        <node concept="PnLzW" id="6XzXfke1aHT" role="PoUSh">
+          <property role="PiFy3" value="25" />
+        </node>
+        <node concept="3Oe$u_" id="6XzXfke1aHU" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1au6" resolve="timestamp" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="6XzXfke7pul" role="3OfFNq">
+        <node concept="PnLzW" id="6XzXfke7pum" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="6XzXfke7pun" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke7pmM" resolve="state" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="6XzXfke8yzE">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="BatchJobItemPage" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+    <node concept="33WYYh" id="6XzXfke8zIg" role="fOGQ8">
+      <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+      <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+      <node concept="2IFXgM" id="6XzXfke8zIS" role="2_HrWp">
+        <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+      </node>
+    </node>
+    <node concept="2U5qGO" id="6XzXfke8y_1" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+      <node concept="2U5nhG" id="6XzXfke8y_3" role="2TFpq_" />
+      <node concept="3Oe2IN" id="6XzXfke8y_y" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8y_z" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1aoC" resolve="id" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="6XzXfke8y_$" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8y__" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1apu" resolve="currentValue" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="6XzXfke8y_A" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8y_B" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1asx" resolve="text" />
+        </node>
+      </node>
+      <node concept="2TG9WT" id="6XzXfke8y_C" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8y_D" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1au6" resolve="timestamp" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="6XzXfke8y_E" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8y_F" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke7pmM" resolve="state" />
+        </node>
+      </node>
+      <node concept="PoU6y" id="6XzXfke8yJ2" role="PoUSn" />
+    </node>
+  </node>
+  <node concept="2mKXYI" id="6XzXfke8yJy">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="BatchJobItemStatusChangePage" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+    <node concept="2U5qGO" id="6XzXfke8yJz" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+      <node concept="2U5nhG" id="6XzXfkedYnd" role="2TFpq_" />
+      <node concept="3Oe2IN" id="6XzXfke8yJ_" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8yJA" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1aoC" resolve="id" />
+        </node>
+        <node concept="Pevqn" id="6XzXfke8yL3" role="PoUSh" />
+      </node>
+      <node concept="3Oe2In" id="6XzXfke8yJB" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8yJC" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1apu" resolve="currentValue" />
+        </node>
+        <node concept="Pevqn" id="6XzXfke8yLH" role="PoUSh" />
+      </node>
+      <node concept="3Oe2Ik" id="6XzXfke8yJD" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8yJE" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1asx" resolve="text" />
+        </node>
+        <node concept="Pevqn" id="6XzXfke8yMa" role="PoUSh" />
+      </node>
+      <node concept="2TG9WT" id="6XzXfke8yJF" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8yJG" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke1au6" resolve="timestamp" />
+        </node>
+        <node concept="Pevqn" id="6XzXfke8yMp" role="PoUSh" />
+      </node>
+      <node concept="2TG9WX" id="6XzXfke8yJH" role="3OfFNq">
+        <node concept="3Oe$u_" id="6XzXfke8yJI" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke7pmM" resolve="state" />
+        </node>
       </node>
     </node>
   </node>
