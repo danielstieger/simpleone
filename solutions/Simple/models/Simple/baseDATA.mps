@@ -289,7 +289,36 @@
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
+      <concept id="774207833082448725" name="org.modellwerkstatt.manmap.structure.OptimisticOption" flags="ng" index="jyGaT" />
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
+      <concept id="774207833082557394" name="org.modellwerkstatt.manmap.structure.AutoidOption" flags="ng" index="jyRCY">
+        <child id="774207833082557396" name="sequenceName" index="jyRCS" />
+      </concept>
+      <concept id="8172309840348950202" name="org.modellwerkstatt.manmap.structure.INeedsClassMapper" flags="ng" index="P14SU">
+        <reference id="8172309840348950203" name="entityMapping" index="P14SV" />
+      </concept>
+      <concept id="8172309840348863378" name="org.modellwerkstatt.manmap.structure.SaveWithMap" flags="ng" index="P1rGi">
+        <child id="8172309840348863385" name="expression" index="P1rGp" />
+      </concept>
+      <concept id="871579071900124823" name="org.modellwerkstatt.manmap.structure.PersistenceDescription" flags="ng" index="12nvSr">
+        <child id="871579071900209323" name="entityReference" index="12nEwB" />
+        <child id="871579071900209328" name="persistenceMapping" index="12nEwW" />
+      </concept>
+      <concept id="871579071900209258" name="org.modellwerkstatt.manmap.structure.EntityMapping" flags="ng" index="12nEzA">
+        <reference id="871579071900233967" name="classConcept" index="12nOxz" />
+        <child id="774207833082448730" name="tableOption" index="jyGaQ" />
+        <child id="871579071901472001" name="tableName" index="12gAQd" />
+      </concept>
+      <concept id="871579071900209251" name="org.modellwerkstatt.manmap.structure.FieldMapping" flags="ng" index="12nEzJ">
+        <reference id="871579071900248751" name="property" index="12nL8z" />
+        <child id="871579071900290535" name="fieldName" index="12k7lF" />
+      </concept>
+      <concept id="871579071900209276" name="org.modellwerkstatt.manmap.structure.EntityReference" flags="ng" index="12nEzK">
+        <reference id="871579071900209277" name="classConcept" index="12nEzL" />
+      </concept>
+      <concept id="871579071900248872" name="org.modellwerkstatt.manmap.structure.IMapsClassConcept" flags="ng" index="12nLe$">
+        <child id="4557816287827057767" name="mapping" index="3caO6$" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -3392,6 +3421,14 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="6a7opD1W2ic" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_DOC_CREATOR_NEW_Cancel" />
+      <node concept="2kzhL4" id="6a7opD1W2id" role="2kzgdm">
+        <node concept="Xl_RD" id="6a7opD1W2ie" role="il5_5">
+          <property role="Xl_RC" value="Doc Creator (new Order init-cancel)" />
+        </node>
+      </node>
+    </node>
     <node concept="il5_x" id="5Ld38uCUaBr" role="2kzhMJ">
       <property role="TrG5h" value="SUC_COMP_Complete" />
       <node concept="2kzhL4" id="5Ld38uCUaBs" role="2kzgdm">
@@ -3650,6 +3687,81 @@
       <node concept="3Tm1VV" id="6vtMBTnC$kb" role="1B3o_S" />
       <node concept="3clFbS" id="6vtMBTnC$kc" role="3clF47" />
     </node>
+    <node concept="wbJLE" id="1oz7qwExiK6" role="jymVt">
+      <property role="wbJLN" value="CHECKIN" />
+      <property role="TrG5h" value="checkInBatchJobItem" />
+      <node concept="37vLTG" id="1oz7qwExiLd" role="3clF46">
+        <property role="TrG5h" value="item" />
+        <node concept="3uibUv" id="1oz7qwExiLw" role="1tU5fm">
+          <ref role="3uigEE" node="6XzXfke1alv" resolve="BatchJobItem" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="1oz7qwExiK7" role="3clF45" />
+      <node concept="3Tm1VV" id="1oz7qwExiK8" role="1B3o_S" />
+      <node concept="3clFbS" id="1oz7qwExiK9" role="3clF47">
+        <node concept="P1rGi" id="1oz7qwExiLZ" role="3cqZAp">
+          <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
+          <node concept="37vLTw" id="1oz7qwExiMq" role="P1rGp">
+            <ref role="3cqZAo" node="1oz7qwExiLd" resolve="item" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="wbJLE" id="7zuurfP12Kh" role="jymVt">
+      <property role="TrG5h" value="checkinBatchJobItemProblemMarked" />
+      <property role="wbJLN" value="CHECKIN" />
+      <node concept="37vLTG" id="1oz7qwExjHc" role="3clF46">
+        <property role="TrG5h" value="i" />
+        <node concept="3uibUv" id="1oz7qwExjI8" role="1tU5fm">
+          <ref role="3uigEE" node="6XzXfke1alv" resolve="BatchJobItem" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1oz7qwExjGn" role="3clF46">
+        <property role="TrG5h" value="msg" />
+        <node concept="17QB3L" id="1oz7qwExjGP" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="7zuurfP12Ki" role="3clF45" />
+      <node concept="3Tm1VV" id="7zuurfP12Kj" role="1B3o_S" />
+      <node concept="3clFbS" id="7zuurfP12Kk" role="3clF47">
+        <node concept="3clFbF" id="1oz7qwExjIU" role="3cqZAp">
+          <node concept="37vLTI" id="1oz7qwExjL_" role="3clFbG">
+            <node concept="2XvMaL" id="1oz7qwExjMP" role="37vLTx">
+              <ref role="2XvMaQ" node="6XzXfke7pgu" resolve="ProcessingState" />
+              <ref role="1Vchh_" node="6XzXfke7plP" resolve="problem" />
+            </node>
+            <node concept="2OqwBi" id="1oz7qwExjJd" role="37vLTJ">
+              <node concept="37vLTw" id="1oz7qwExjIS" role="2Oq$k0">
+                <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
+              </node>
+              <node concept="2S8uIT" id="1oz7qwExjKi" role="2OqNvi">
+                <ref role="2S8YL0" node="6XzXfke7pmM" resolve="state" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1oz7qwExjOa" role="3cqZAp">
+          <node concept="37vLTI" id="1oz7qwExjRv" role="3clFbG">
+            <node concept="37vLTw" id="1oz7qwExjSa" role="37vLTx">
+              <ref role="3cqZAo" node="1oz7qwExjGn" resolve="msg" />
+            </node>
+            <node concept="2OqwBi" id="1oz7qwExjOt" role="37vLTJ">
+              <node concept="37vLTw" id="1oz7qwExjO8" role="2Oq$k0">
+                <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
+              </node>
+              <node concept="2S8uIT" id="1oz7qwExjPz" role="2OqNvi">
+                <ref role="2S8YL0" node="6XzXfke1asx" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="P1rGi" id="1oz7qwExjYk" role="3cqZAp">
+          <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
+          <node concept="37vLTw" id="1oz7qwExjZ0" role="P1rGp">
+            <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="6vtMBTnC$jW" role="1B3o_S" />
   </node>
   <node concept="2EH5hC" id="77KX0PDuRx1">
@@ -3819,6 +3931,11 @@
       </node>
       <node concept="10Oyi0" id="6XzXfke1ap3" role="2RkE6I" />
       <node concept="jyRCx" id="6XzXfke1ar8" role="0orDa" />
+      <node concept="jyRCY" id="1oz7qwE$Rdr" role="0orDa">
+        <node concept="Xl_RD" id="1oz7qwE$Rdt" role="jyRCS">
+          <property role="Xl_RC" value="S_MMTBATCHITEM" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="6XzXfke5S$h" role="2CNmdP">
         <property role="Xl_RC" value="Id" />
       </node>
@@ -3898,6 +4015,49 @@
       </node>
       <node concept="Xl_RD" id="6XzXfke8yDs" role="2CNmdL">
         <property role="Xl_RC" value="State" />
+      </node>
+    </node>
+  </node>
+  <node concept="12nvSr" id="1oz7qwEwDnU">
+    <node concept="12nEzK" id="1oz7qwEwDo3" role="12nEwB">
+      <ref role="12nEzL" node="6XzXfke1alv" resolve="BatchJobItem" />
+    </node>
+    <node concept="12nEzA" id="1oz7qwEwDod" role="12nEwW">
+      <property role="TrG5h" value="MapBatchJobItem" />
+      <ref role="12nOxz" node="6XzXfke1alv" resolve="BatchJobItem" />
+      <node concept="jyGaT" id="1oz7qwEwDoe" role="jyGaQ" />
+      <node concept="Xl_RD" id="1oz7qwEwDof" role="12gAQd">
+        <property role="Xl_RC" value="MMT_BATCHJOBITEM" />
+      </node>
+      <node concept="12nEzJ" id="1oz7qwEwDoC" role="3caO6$">
+        <ref role="12nL8z" node="6XzXfke1aoC" resolve="id" />
+        <node concept="Xl_RD" id="1oz7qwEwDoD" role="12k7lF">
+          <property role="Xl_RC" value="KEY_ID" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="1oz7qwEwDoE" role="3caO6$">
+        <ref role="12nL8z" node="6XzXfke1apu" resolve="currentValue" />
+        <node concept="Xl_RD" id="1oz7qwEwDoF" role="12k7lF">
+          <property role="Xl_RC" value="VAL_CURVAL" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="1oz7qwEwDoG" role="3caO6$">
+        <ref role="12nL8z" node="6XzXfke1asx" resolve="text" />
+        <node concept="Xl_RD" id="1oz7qwEwDoH" role="12k7lF">
+          <property role="Xl_RC" value="TXT_TEXT" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="1oz7qwEwDoI" role="3caO6$">
+        <ref role="12nL8z" node="6XzXfke1au6" resolve="timestamp" />
+        <node concept="Xl_RD" id="1oz7qwEwDoJ" role="12k7lF">
+          <property role="Xl_RC" value="DAT_TIMESTAMP" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="1oz7qwEwDoK" role="3caO6$">
+        <ref role="12nL8z" node="6XzXfke7pmM" resolve="state" />
+        <node concept="Xl_RD" id="1oz7qwEwDoL" role="12k7lF">
+          <property role="Xl_RC" value="S_STATE" />
+        </node>
       </node>
     </node>
   </node>
