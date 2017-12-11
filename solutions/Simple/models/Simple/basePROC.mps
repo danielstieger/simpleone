@@ -1642,7 +1642,22 @@
       </node>
     </node>
     <node concept="20qIzx" id="1l1sktc5Q0D" role="10_T4m">
-      <node concept="3clFbS" id="1l1sktc5Q0E" role="2VODD2" />
+      <node concept="3clFbS" id="1l1sktc5Q0E" role="2VODD2">
+        <node concept="3clFbF" id="s8qRni3YKW" role="3cqZAp">
+          <node concept="2OqwBi" id="s8qRni3YKX" role="3clFbG">
+            <node concept="10M0yZ" id="s8qRni3YKY" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="s8qRni3YKZ" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="s8qRni3YL0" role="37wK5m">
+                <property role="Xl_RC" value="EDIT ORDER FINAL_CANCEL() ... " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3LL">
@@ -2525,7 +2540,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3xGERTNqK_$" role="3cqZAp" />
         <node concept="10Adit" id="7dlwzTfD_Q_" role="3cqZAp">
           <node concept="Xl_RD" id="7dlwzTfD_XY" role="10Adiu">
             <property role="Xl_RC" value="Graph_Edit (Complete Order) flagged." />
@@ -3140,20 +3154,6 @@
             </node>
           </node>
         </node>
-        <node concept="10Adxh" id="6a7opD20_uC" role="3cqZAp">
-          <node concept="Xl_RD" id="6a7opD20_uD" role="10Adiu">
-            <property role="Xl_RC" value="WOME BUG - cancel in Main Doc command-init" />
-          </node>
-          <node concept="3eOVzh" id="6a7opD20_uE" role="10Adiv">
-            <node concept="3cmrfG" id="6a7opD20_uF" role="3uHU7w">
-              <property role="3cmrfH" value="10" />
-            </node>
-            <node concept="3cmrfG" id="6a7opD20_uG" role="3uHU7B">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6a7opD20_uz" role="3cqZAp" />
       </node>
     </node>
     <node concept="3cpWs3" id="3cAl6M4wnQD" role="IYfpf">
@@ -3785,7 +3785,20 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="3xGERTNpEQ1" role="3cqZAp" />
+            <node concept="3clFbF" id="s8qRnhHkSy" role="3cqZAp">
+              <node concept="2OqwBi" id="s8qRnhHkSv" role="3clFbG">
+                <node concept="10M0yZ" id="s8qRnhHkSw" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="s8qRnhHkSx" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="s8qRnhHkTh" role="37wK5m">
+                    <property role="Xl_RC" value="Ok conclusion for 'Edit Order Head'" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="10Adxj" id="7RzRXa3H9JP" role="3cqZAp" />
           </node>
         </node>
@@ -3946,6 +3959,60 @@
             </node>
             <node concept="3urNQE" id="3xGERTNpEX6" role="3uHU7B">
               <ref role="3cqZAo" node="3xGERTNpEMe" resolve="spec" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="20qIzx" id="s8qRni3Z1a" role="10_T4l">
+      <node concept="3clFbS" id="s8qRni3Z1b" role="2VODD2">
+        <node concept="3clFbF" id="s8qRni3Z2o" role="3cqZAp">
+          <node concept="2OqwBi" id="s8qRni3Z2l" role="3clFbG">
+            <node concept="10M0yZ" id="s8qRni3Z2m" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="s8qRni3Z2n" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="s8qRni3Z2V" role="37wK5m">
+                <property role="Xl_RC" value="FINAL_OK for 'edit order head'" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="20qIzx" id="s8qRni3ZbH" role="10_T4m">
+      <node concept="3clFbS" id="s8qRni3ZbI" role="2VODD2">
+        <node concept="3clFbF" id="s8qRni3Zcr" role="3cqZAp">
+          <node concept="2OqwBi" id="s8qRni3Zcs" role="3clFbG">
+            <node concept="10M0yZ" id="s8qRni3Zct" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="s8qRni3Zcu" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="s8qRni3Zcv" role="37wK5m">
+                <property role="Xl_RC" value="FINAL_CANCEL for 'edit order head'" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="20qIzx" id="s8qRni3ZfD" role="10_K5X">
+      <node concept="3clFbS" id="s8qRni3ZfE" role="2VODD2">
+        <node concept="3clFbF" id="s8qRni3Zgg" role="3cqZAp">
+          <node concept="2OqwBi" id="s8qRni3Zgh" role="3clFbG">
+            <node concept="10M0yZ" id="s8qRni3Zgi" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="s8qRni3Zgj" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="s8qRni3Zgk" role="37wK5m">
+                <property role="Xl_RC" value="FINAL_EX for 'edit order head'" />
+              </node>
             </node>
           </node>
         </node>

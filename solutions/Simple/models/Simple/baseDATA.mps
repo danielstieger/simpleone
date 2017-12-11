@@ -3497,6 +3497,30 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="s8qRni64GI" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_SUC_2UI_OK" />
+      <node concept="2kzhL4" id="s8qRni64GJ" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRni64GK" role="il5_5">
+          <property role="Xl_RC" value="Compound + Successor - 2UI ok" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="s8qRniasIA" role="2kzhMJ">
+      <property role="TrG5h" value="AUTO_GO_OK" />
+      <node concept="2kzhL4" id="s8qRniasIB" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRniasIC" role="il5_5">
+          <property role="Xl_RC" value="Edit Order (GO) - ok" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="s8qRniasOE" role="2kzhMJ">
+      <property role="TrG5h" value="AUTO_GO_CANCEL" />
+      <node concept="2kzhL4" id="s8qRniasOF" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRniasOG" role="il5_5">
+          <property role="Xl_RC" value="Edit Order (GO) - cancel" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5ol$NvDtID">
     <property role="TrG5h" value="ICON_DEFINITON" />

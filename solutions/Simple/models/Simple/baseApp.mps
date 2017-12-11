@@ -123,9 +123,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
-      <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
-        <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
-      </concept>
       <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXTestStatementList" flags="ig" index="2d2NRx" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
@@ -1552,10 +1549,6 @@
     <property role="TrG5h" value="App Desktop Order" />
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
     <node concept="2$ntO6" id="2qrl3a2NyvY" role="2$nsuY">
-      <node concept="1odsa" id="2qrl3a2N$Jh" role="2$ntWM">
-        <ref role="1ods_" node="2qrl3a2N$Ad" resolve="TileService" />
-        <ref role="37wK5l" node="2qrl3a2N$Bx" resolve="calcLabelHere" />
-      </node>
       <node concept="33WYYh" id="2qrl3a2PL9H" role="2$ntUL">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search for Orders" />
@@ -1565,6 +1558,9 @@
       <node concept="2XvMaL" id="1Ohi5d_Uxnc" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
         <ref role="1Vchh_" to="dtxg:AN_117c2L0" resolve="ordered" />
+      </node>
+      <node concept="Xl_RD" id="s8qRnhHavQ" role="2$ntWM">
+        <property role="Xl_RC" value="THE search command for orders" />
       </node>
     </node>
     <node concept="2$ntO6" id="2HibT1wOZJW" role="2$nsuY">
