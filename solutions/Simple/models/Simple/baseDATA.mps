@@ -179,10 +179,6 @@
         <property id="6525155817177697682" name="text" index="20vkWQ" />
       </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
-      <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
-        <property id="8614254524338490551" name="max" index="8tbpI" />
-        <property id="8614254524338490550" name="min" index="8tbpJ" />
-      </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
         <child id="3146313690715522546" name="platforms" index="2kDvpj" />
@@ -289,6 +285,14 @@
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
+      <concept id="774207833082734171" name="org.modellwerkstatt.manmap.structure.WhereQuery" flags="ng" index="jxyYR">
+        <child id="774207833082734172" name="filter" index="jxyYK" />
+      </concept>
+      <concept id="774207833082573402" name="org.modellwerkstatt.manmap.structure.QueryFromMap" flags="ng" index="jybIQ">
+        <property id="3572493221071471725" name="readOnly" index="HScZ5" />
+        <property id="8660793628824932667" name="debugMe" index="1v8G3g" />
+        <child id="774207833082779687" name="queryOperation" index="jxX7b" />
+      </concept>
       <concept id="774207833082448725" name="org.modellwerkstatt.manmap.structure.OptimisticOption" flags="ng" index="jyGaT" />
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
       <concept id="774207833082557394" name="org.modellwerkstatt.manmap.structure.AutoidOption" flags="ng" index="jyRCY">
@@ -318,6 +322,10 @@
       </concept>
       <concept id="871579071900248872" name="org.modellwerkstatt.manmap.structure.IMapsClassConcept" flags="ng" index="12nLe$">
         <child id="4557816287827057767" name="mapping" index="3caO6$" />
+      </concept>
+      <concept id="1974135804380344167" name="org.modellwerkstatt.manmap.structure.MappingReference" flags="ng" index="3_7ulE">
+        <reference id="5159282717680535116" name="fieldMapping" index="2OG787" />
+        <reference id="1974135804380645439" name="mappingSource" index="3_688M" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -570,10 +578,6 @@
       </node>
       <node concept="Xl_RD" id="AN_117bq$j" role="2CNmdL">
         <property role="Xl_RC" value="Name" />
-      </node>
-      <node concept="8tbpG" id="3cAl6M4x_C7" role="0orDa">
-        <property role="8tbpJ" value="5" />
-        <property role="8tbpI" value="20" />
       </node>
     </node>
     <node concept="1bOX9e" id="4u029Jv8vG8" role="TxmiU">
@@ -3453,6 +3457,46 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="s8qRnhAwfF" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_OK" />
+      <node concept="2kzhL4" id="s8qRnhAwfG" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRnhAwfH" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI ok" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="s8qRnhAwzh" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_CANCEL_INNER" />
+      <node concept="2kzhL4" id="s8qRnhAwzi" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRnhAwzj" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI cancel inner" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="s8qRnhAwBn" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_FLAG_INNER" />
+      <node concept="2kzhL4" id="s8qRnhAwBo" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRnhAwBp" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI flag inner" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="s8qRnhAwFw" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_CANCEL_OUTER" />
+      <node concept="2kzhL4" id="s8qRnhAwFx" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRnhAwFy" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI cancel outer" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="s8qRnhAwJn" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_FLAG_OUTER" />
+      <node concept="2kzhL4" id="s8qRnhAwJo" role="2kzgdm">
+        <node concept="Xl_RD" id="s8qRnhAwJp" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI flag outer" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5ol$NvDtID">
     <property role="TrG5h" value="ICON_DEFINITON" />
@@ -3758,6 +3802,20 @@
           <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
           <node concept="37vLTw" id="1oz7qwExjZ0" role="P1rGp">
             <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="5lDa4M1Z5Xl" role="3cqZAp" />
+        <node concept="3clFbF" id="5lDa4M1Z5Yi" role="3cqZAp">
+          <node concept="jybIQ" id="5lDa4M1Z5Yg" role="3clFbG">
+            <property role="1v8G3g" value="false" />
+            <property role="HScZ5" value="true" />
+            <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
+            <node concept="jxyYR" id="5lDa4M1Z5YP" role="jxX7b">
+              <node concept="3_7ulE" id="5lDa4M1Z61P" role="jxyYK">
+                <ref role="3_688M" node="5lDa4M1Z5Yg" />
+                <ref role="2OG787" node="1oz7qwEwDoC" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
