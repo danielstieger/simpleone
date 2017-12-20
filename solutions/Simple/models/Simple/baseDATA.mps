@@ -13,6 +13,7 @@
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -285,14 +286,6 @@
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
-      <concept id="774207833082734171" name="org.modellwerkstatt.manmap.structure.WhereQuery" flags="ng" index="jxyYR">
-        <child id="774207833082734172" name="filter" index="jxyYK" />
-      </concept>
-      <concept id="774207833082573402" name="org.modellwerkstatt.manmap.structure.QueryFromMap" flags="ng" index="jybIQ">
-        <property id="3572493221071471725" name="readOnly" index="HScZ5" />
-        <property id="8660793628824932667" name="debugMe" index="1v8G3g" />
-        <child id="774207833082779687" name="queryOperation" index="jxX7b" />
-      </concept>
       <concept id="774207833082448725" name="org.modellwerkstatt.manmap.structure.OptimisticOption" flags="ng" index="jyGaT" />
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
       <concept id="774207833082557394" name="org.modellwerkstatt.manmap.structure.AutoidOption" flags="ng" index="jyRCY">
@@ -322,10 +315,6 @@
       </concept>
       <concept id="871579071900248872" name="org.modellwerkstatt.manmap.structure.IMapsClassConcept" flags="ng" index="12nLe$">
         <child id="4557816287827057767" name="mapping" index="3caO6$" />
-      </concept>
-      <concept id="1974135804380344167" name="org.modellwerkstatt.manmap.structure.MappingReference" flags="ng" index="3_7ulE">
-        <reference id="5159282717680535116" name="fieldMapping" index="2OG787" />
-        <reference id="1974135804380645439" name="mappingSource" index="3_688M" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -3180,19 +3169,67 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="56_jou8oUVi" role="2kzhMJ">
+      <property role="TrG5h" value="Complete_BjItem_Cancel" />
+      <node concept="2kzhL4" id="56_jou8oUVj" role="2kzgdm">
+        <node concept="Xl_RD" id="56_jou8oUVk" role="il5_5">
+          <property role="Xl_RC" value="Complete Item (Cancel)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1dqt$gJBSAy" role="2kzhMJ">
+      <property role="TrG5h" value="Create_BjItem_Ok" />
+      <node concept="2kzhL4" id="1dqt$gJBSAz" role="2kzgdm">
+        <node concept="Xl_RD" id="1dqt$gJBSA$" role="il5_5">
+          <property role="Xl_RC" value="Create Item (Suc)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1dqt$gJBSEd" role="2kzhMJ">
+      <property role="TrG5h" value="Create_BjItem_Cancel" />
+      <node concept="2kzhL4" id="1dqt$gJBSEe" role="2kzgdm">
+        <node concept="Xl_RD" id="1dqt$gJBSEf" role="il5_5">
+          <property role="Xl_RC" value="Create Item (Suc Cancel)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1dqt$gJC0$C" role="2kzhMJ">
+      <property role="TrG5h" value="Create_BjItem_Flag" />
+      <node concept="2kzhL4" id="1dqt$gJC0$D" role="2kzgdm">
+        <node concept="Xl_RD" id="1dqt$gJC0$E" role="il5_5">
+          <property role="Xl_RC" value="Create Item (Suc Flag)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1dqt$gJC0Hz" role="2kzhMJ">
+      <property role="TrG5h" value="Create_BjItem_Exception" />
+      <node concept="2kzhL4" id="1dqt$gJC0H$" role="2kzgdm">
+        <node concept="Xl_RD" id="1dqt$gJC0H_" role="il5_5">
+          <property role="Xl_RC" value="Create Item (Suc EX)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1dqt$gJGjho" role="2kzhMJ">
+      <property role="TrG5h" value="Create_BjItem_Cancel_GE" />
+      <node concept="2kzhL4" id="1dqt$gJGjhp" role="2kzgdm">
+        <node concept="Xl_RD" id="1dqt$gJGjhq" role="il5_5">
+          <property role="Xl_RC" value="Create Item (Suc, GE cancel)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1dqt$gJGjlm" role="2kzhMJ">
+      <property role="TrG5h" value="Create_BjItem_EX_GE" />
+      <node concept="2kzhL4" id="1dqt$gJGjln" role="2kzgdm">
+        <node concept="Xl_RD" id="1dqt$gJGjlo" role="il5_5">
+          <property role="Xl_RC" value="Create Item (Suc, GE ex)" />
+        </node>
+      </node>
+    </node>
     <node concept="il5_x" id="7dlwzTfFN2f" role="2kzhMJ">
       <property role="TrG5h" value="MLT_Complete_Cancel" />
       <node concept="2kzhL4" id="7dlwzTfFN2g" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfFN2h" role="il5_5">
           <property role="Xl_RC" value="Complete Order (Multi GO cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfFN4L" role="2kzhMJ">
-      <property role="TrG5h" value="MLT_Complete_Flag" />
-      <node concept="2kzhL4" id="7dlwzTfFN4M" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfFN4N" role="il5_5">
-          <property role="Xl_RC" value="Complete Order (Multi GO flag)" />
         </node>
       </node>
     </node>
@@ -3323,14 +3360,6 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="7dlwzTfDxg0" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Flag" />
-      <node concept="2kzhL4" id="7dlwzTfDxg1" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfDxg2" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (flag)" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="7dlwzTfDxj9" role="2kzhMJ">
       <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO" />
       <node concept="2kzhL4" id="7dlwzTfDxja" role="2kzgdm">
@@ -3382,14 +3411,6 @@
       <node concept="2kzhL4" id="58zkQdG8_Kk" role="2kzgdm">
         <node concept="Xl_RD" id="58zkQdG8_Kl" role="il5_5">
           <property role="Xl_RC" value="Task Handling (new Order)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3cZhE1VQBXi" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_NEW_ORDER_FLAG" />
-      <node concept="2kzhL4" id="3cZhE1VQBXj" role="2kzgdm">
-        <node concept="Xl_RD" id="3cZhE1VQBXk" role="il5_5">
-          <property role="Xl_RC" value="Task Handling (new Order, flag)" />
         </node>
       </node>
     </node>
@@ -3767,10 +3788,33 @@
       <node concept="3cqZAl" id="1oz7qwExiK7" role="3clF45" />
       <node concept="3Tm1VV" id="1oz7qwExiK8" role="1B3o_S" />
       <node concept="3clFbS" id="1oz7qwExiK9" role="3clF47">
-        <node concept="P1rGi" id="1oz7qwExiLZ" role="3cqZAp">
-          <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
-          <node concept="37vLTw" id="1oz7qwExiMq" role="P1rGp">
-            <ref role="3cqZAo" node="1oz7qwExiLd" resolve="item" />
+        <node concept="1X3_iC" id="56_jou8qzuG" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="P1rGi" id="1oz7qwExiLZ" role="8Wnug">
+            <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
+            <node concept="37vLTw" id="1oz7qwExiMq" role="P1rGp">
+              <ref role="3cqZAo" node="1oz7qwExiLd" resolve="item" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="56_jou8qzvm" role="3cqZAp">
+          <node concept="2OqwBi" id="56_jou8qzvj" role="3clFbG">
+            <node concept="10M0yZ" id="56_jou8qzvk" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="56_jou8qzvl" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="56_jou8qzBA" role="37wK5m">
+                <node concept="37vLTw" id="56_jou8qzBL" role="3uHU7w">
+                  <ref role="3cqZAo" node="1oz7qwExiLd" resolve="item" />
+                </node>
+                <node concept="Xl_RD" id="56_jou8qzvW" role="3uHU7B">
+                  <property role="Xl_RC" value="TestModelLRepo.checkInBatchJobItem() " />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -3784,64 +3828,39 @@
           <ref role="3uigEE" node="6XzXfke1alv" resolve="BatchJobItem" />
         </node>
       </node>
-      <node concept="37vLTG" id="1oz7qwExjGn" role="3clF46">
-        <property role="TrG5h" value="msg" />
-        <node concept="17QB3L" id="1oz7qwExjGP" role="1tU5fm" />
-      </node>
       <node concept="3cqZAl" id="7zuurfP12Ki" role="3clF45" />
       <node concept="3Tm1VV" id="7zuurfP12Kj" role="1B3o_S" />
       <node concept="3clFbS" id="7zuurfP12Kk" role="3clF47">
-        <node concept="3clFbF" id="1oz7qwExjIU" role="3cqZAp">
-          <node concept="37vLTI" id="1oz7qwExjL_" role="3clFbG">
-            <node concept="2XvMaL" id="1oz7qwExjMP" role="37vLTx">
-              <ref role="2XvMaQ" node="6XzXfke7pgu" resolve="ProcessingState" />
-              <ref role="1Vchh_" node="6XzXfke7plP" resolve="problem" />
-            </node>
-            <node concept="2OqwBi" id="1oz7qwExjJd" role="37vLTJ">
-              <node concept="37vLTw" id="1oz7qwExjIS" role="2Oq$k0">
-                <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
-              </node>
-              <node concept="2S8uIT" id="1oz7qwExjKi" role="2OqNvi">
-                <ref role="2S8YL0" node="6XzXfke7pmM" resolve="state" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1oz7qwExjOa" role="3cqZAp">
-          <node concept="37vLTI" id="1oz7qwExjRv" role="3clFbG">
-            <node concept="37vLTw" id="1oz7qwExjSa" role="37vLTx">
-              <ref role="3cqZAo" node="1oz7qwExjGn" resolve="msg" />
-            </node>
-            <node concept="2OqwBi" id="1oz7qwExjOt" role="37vLTJ">
-              <node concept="37vLTw" id="1oz7qwExjO8" role="2Oq$k0">
-                <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
-              </node>
-              <node concept="2S8uIT" id="1oz7qwExjPz" role="2OqNvi">
-                <ref role="2S8YL0" node="6XzXfke1asx" resolve="text" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="P1rGi" id="1oz7qwExjYk" role="3cqZAp">
-          <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
-          <node concept="37vLTw" id="1oz7qwExjZ0" role="P1rGp">
-            <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="5lDa4M1Z5Xl" role="3cqZAp" />
-        <node concept="3clFbF" id="5lDa4M1Z5Yi" role="3cqZAp">
-          <node concept="jybIQ" id="5lDa4M1Z5Yg" role="3clFbG">
-            <property role="1v8G3g" value="false" />
-            <property role="HScZ5" value="true" />
+        <node concept="1X3_iC" id="56_jou8qzuT" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="P1rGi" id="1oz7qwExjYk" role="8Wnug">
             <ref role="P14SV" node="1oz7qwEwDod" resolve="MapBatchJobItem" />
-            <node concept="jxyYR" id="5lDa4M1Z5YP" role="jxX7b">
-              <node concept="3_7ulE" id="5lDa4M1Z61P" role="jxyYK">
-                <ref role="3_688M" node="5lDa4M1Z5Yg" />
-                <ref role="2OG787" node="1oz7qwEwDoC" />
+            <node concept="37vLTw" id="1oz7qwExjZ0" role="P1rGp">
+              <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="56_jou8qzMl" role="3cqZAp">
+          <node concept="2OqwBi" id="56_jou8qzMm" role="3clFbG">
+            <node concept="10M0yZ" id="56_jou8qzMn" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="56_jou8qzMo" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="56_jou8qzMp" role="37wK5m">
+                <node concept="Xl_RD" id="56_jou8qzMr" role="3uHU7B">
+                  <property role="Xl_RC" value="TestModelLRepo.checkInBatchJobItemProblemMarked() " />
+                </node>
+                <node concept="37vLTw" id="56_jou8qzSE" role="3uHU7w">
+                  <ref role="3cqZAo" node="1oz7qwExjHc" resolve="i" />
+                </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="56_jou8qzMj" role="3cqZAp" />
       </node>
     </node>
     <node concept="3Tm1VV" id="6vtMBTnC$jW" role="1B3o_S" />
