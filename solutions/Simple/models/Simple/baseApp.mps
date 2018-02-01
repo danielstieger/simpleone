@@ -1174,7 +1174,7 @@
       <node concept="2CJf3v" id="49EzYiePzE9" role="2CJdiS">
         <property role="TrG5h" value="uiFactory" />
         <node concept="Xl_RD" id="49EzYiePzEa" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.h2forms.runtime.zebramde.ZMAppFactory" />
+          <property role="Xl_RC" value="org.modellwerkstatt.h2forms.runtime.zebrajax.AAppFactory" />
         </node>
         <node concept="2CJ4$C" id="1LWMBWz8Gfz" role="2CJ4_l">
           <property role="TrG5h" value="SkipLoggingTcnException" />

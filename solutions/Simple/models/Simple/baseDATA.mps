@@ -87,6 +87,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -1400,6 +1401,16 @@
           <ref role="3uigEE" node="4u029Jv8vvH" resolve="Order" />
         </node>
       </node>
+    </node>
+    <node concept="1bOX9e" id="2gdf8TJboq6" role="TxmiU">
+      <node concept="3Tm1VV" id="2gdf8TJboqc" role="1B3o_S" />
+      <node concept="2RoN1w" id="2gdf8TJboqd" role="2RnVtd">
+        <node concept="3wEZqW" id="2gdf8TJboqe" role="3wFrgM" />
+        <node concept="3xqBd$" id="2gdf8TJboqf" role="3xrYvX">
+          <node concept="3Tm1VV" id="2gdf8TJboqh" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="33vP2l" id="2gdf8TJboqi" role="2RkE6I" />
     </node>
     <node concept="3clFbW" id="AN_117f5o$" role="jymVt">
       <node concept="3cqZAl" id="AN_117f5o_" role="3clF45" />

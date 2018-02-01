@@ -239,7 +239,6 @@
         <reference id="6650986001466059007" name="forSuccessorCommand" index="3VdYhS" />
         <child id="2019652483308170239" name="innerActions" index="2TlDj4" />
       </concept>
-      <concept id="3899779351686566800" name="org.modellwerkstatt.dataux.structure.DateTimeDateOnlyDelegate" flags="ng" index="2TG9WS" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
       <concept id="3899779351686566802" name="org.modellwerkstatt.dataux.structure.LocalDateDelegate" flags="ng" index="2TG9WU" />
       <concept id="3899779351686566804" name="org.modellwerkstatt.dataux.structure.ReferenceDelegate" flags="ng" index="2TG9WW">
@@ -643,31 +642,6 @@
       <node concept="3Oe2IN" id="4443Bgfi61H" role="3OfFNq">
         <node concept="3Oe$u_" id="4443Bgfi61I" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:AN_117bbdA" resolve="id" />
-        </node>
-      </node>
-      <node concept="3Oe2Ik" id="4443Bgfi61J" role="3OfFNq">
-        <node concept="3Oe$u_" id="4443Bgfi61K" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:AN_117bbdK" resolve="ean" />
-        </node>
-      </node>
-      <node concept="3Oe2Ik" id="4443Bgfi61L" role="3OfFNq">
-        <node concept="3Oe$u_" id="4443Bgfi61M" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:AN_117bbdT" resolve="name" />
-        </node>
-      </node>
-      <node concept="3Oe2In" id="4443Bgfi61N" role="3OfFNq">
-        <node concept="3Oe$u_" id="4443Bgfi61O" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:AN_117bbe2" resolve="posValue" />
-        </node>
-      </node>
-      <node concept="2TG9WS" id="4443BgfiEEJ" role="3OfFNq">
-        <node concept="3Oe$u_" id="4443BgfiEEM" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:AN_117bbec" resolve="timestamp" />
-        </node>
-      </node>
-      <node concept="2TG9WX" id="4443Bgfi61R" role="3OfFNq">
-        <node concept="3Oe$u_" id="4443Bgfi61S" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:2IUGN4P8g$C" resolve="status" />
         </node>
       </node>
     </node>
