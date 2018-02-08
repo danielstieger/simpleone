@@ -87,7 +87,6 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -1403,6 +1402,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="2gdf8TJboq6" role="TxmiU">
+      <property role="2RkwnN" value="dateTime" />
       <node concept="3Tm1VV" id="2gdf8TJboqc" role="1B3o_S" />
       <node concept="2RoN1w" id="2gdf8TJboqd" role="2RnVtd">
         <node concept="3wEZqW" id="2gdf8TJboqe" role="3wFrgM" />
@@ -1410,13 +1410,26 @@
           <node concept="3Tm1VV" id="2gdf8TJboqh" role="3xqFEP" />
         </node>
       </node>
-      <node concept="33vP2l" id="2gdf8TJboqi" role="2RkE6I" />
+      <node concept="3uibUv" id="2gdf8TJbpkw" role="2RkE6I">
+        <ref role="3uigEE" to="w08f:~DateTime" resolve="DateTime" />
+      </node>
     </node>
     <node concept="3clFbW" id="AN_117f5o$" role="jymVt">
       <node concept="3cqZAl" id="AN_117f5o_" role="3clF45" />
       <node concept="3Tm1VV" id="AN_117f5oA" role="1B3o_S" />
       <node concept="3clFbS" id="AN_117f5oB" role="3clF47">
-        <node concept="3clFbH" id="2qkRdAoY0eV" role="3cqZAp" />
+        <node concept="3clFbF" id="2gdf8TJbplC" role="3cqZAp">
+          <node concept="37vLTI" id="2gdf8TJbpni" role="3clFbG">
+            <node concept="2ShNRf" id="2gdf8TJbpoH" role="37vLTx">
+              <node concept="1pGfFk" id="2gdf8TJbpo4" role="2ShVmc">
+                <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
+              </node>
+            </node>
+            <node concept="338YkY" id="2gdf8TJbplA" role="37vLTJ">
+              <ref role="338YkT" node="2gdf8TJboq6" resolve="dateTime" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3clFb_" id="Z1sD2yYYnP" role="jymVt">
