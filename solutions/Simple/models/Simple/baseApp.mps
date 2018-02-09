@@ -160,7 +160,6 @@
         <child id="478945708935709196" name="value" index="2DqwMp" />
         <child id="478945708935709194" name="type" index="2DqwMv" />
       </concept>
-      <concept id="478945708907003626" name="org.modellwerkstatt.objectflow.structure.IOFXConfigInstanceElement" flags="ng" index="2CJf1Z" />
       <concept id="478945708907003466" name="org.modellwerkstatt.objectflow.structure.OFXConfigInstance" flags="ng" index="2CJf3v">
         <child id="478945708907022272" name="elements" index="2CJ4_l" />
         <child id="478945708907003567" name="className" index="2CJf0U" />
@@ -1185,19 +1184,12 @@
             <property role="Xl_RC" value="daniels" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="3jsv690yLsc" role="2CJ4_l">
-          <property role="TrG5h" value="SpecialDebugJsUsers" />
-          <node concept="Xl_RD" id="3jsv690yLs$" role="2CaGCA">
-            <property role="Xl_RC" value="daniels" />
-          </node>
-        </node>
         <node concept="2CJ4$C" id="3jsv690z54M" role="2CJ4_l">
           <property role="TrG5h" value="AndroZebraAjax" />
           <node concept="Xl_RD" id="3jsv690z54N" role="2CaGCA">
             <property role="Xl_RC" value="daniels" />
           </node>
         </node>
-        <node concept="2CJf1Z" id="3jsv690z54E" role="2CJ4_l" />
       </node>
       <node concept="2CJf3v" id="1BZ9wCagmUK" role="2CJdiS">
         <property role="TrG5h" value="stringFormatter" />
@@ -1628,6 +1620,13 @@
         <node concept="10Nm6u" id="6XzXfke1cdR" role="2_HrWp" />
       </node>
     </node>
+    <node concept="2$ntO6" id="6gkV9KPaHvC" role="2$nsuY">
+      <node concept="33WYYh" id="6gkV9KPaHvD" role="2$ntUL">
+        <ref role="2_Hrw8" to="1y8i:6gkV9KP8PSo" resolve="Open external Link" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <node concept="10Nm6u" id="6gkV9KPaHvE" role="2_HrWp" />
+      </node>
+    </node>
     <node concept="33WYYh" id="3Z5UV2c7SwU" role="2N77jT">
       <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
@@ -1812,6 +1811,13 @@
           <property role="1$4sGR" value="0" />
           <property role="1$4sGO" value="true" />
         </node>
+      </node>
+    </node>
+    <node concept="2$ntO6" id="6gkV9KP8Qa1" role="2$nsuY">
+      <node concept="33WYYh" id="6gkV9KP8Qa2" role="2$ntUL">
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:6gkV9KP8PSo" resolve="Open external Link" />
+        <node concept="10Nm6u" id="6gkV9KP8Qaw" role="2_HrWp" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">

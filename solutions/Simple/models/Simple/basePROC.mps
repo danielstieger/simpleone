@@ -1083,6 +1083,9 @@
     <node concept="10xUwW" id="7P$uL5PMOMn" role="10HVpa">
       <ref role="10x$tN" node="7P$uL5PDZM2" resolve="Update Conclusion" />
     </node>
+    <node concept="10xUwW" id="6gkV9KP8PSb" role="10HVpa">
+      <ref role="10x$tN" node="6gkV9KP8PSo" resolve="Open external Link" />
+    </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
     <property role="TrG5h" value="Edit Order" />
@@ -8623,6 +8626,36 @@
           </node>
         </node>
         <node concept="3clFbH" id="1nXeD0eJ076" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="3ugp7m" id="6gkV9KP8PSo">
+    <property role="TrG5h" value="Open external Link" />
+    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
+    <node concept="20qIzx" id="6gkV9KP8PTL" role="3umfm7">
+      <node concept="3clFbS" id="6gkV9KP8PTM" role="2VODD2">
+        <node concept="3clFbF" id="6gkV9KP8PUc" role="3cqZAp">
+          <node concept="2OqwBi" id="6gkV9KP8PYH" role="3clFbG">
+            <node concept="2OqwBi" id="6gkV9KP8PW$" role="2Oq$k0">
+              <node concept="2OqwBi" id="6gkV9KP8PUG" role="2Oq$k0">
+                <node concept="3y28L$" id="6gkV9KP8PUb" role="2Oq$k0" />
+                <node concept="liA8E" id="6gkV9KP8PVU" role="2OqNvi">
+                  <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6gkV9KP8PXU" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:2vHEu_N_sTu" resolve="getUserPrintService" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6gkV9KP8Q0P" role="2OqNvi">
+              <ref role="37wK5l" to="28jr:2xJao4Wp9kZ" resolve="openUrl" />
+              <node concept="Xl_RD" id="6gkV9KP8Q1F" role="37wK5m">
+                <property role="Xl_RC" value="http://www.vol.at" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
