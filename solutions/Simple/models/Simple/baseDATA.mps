@@ -73,9 +73,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
@@ -2915,9 +2912,8 @@
       <node concept="2kzhL4" id="7MWNCzYw_M6" role="2kzgdm">
         <property role="il5CD" value="UNDEFINED_0" />
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="10M0yZ" id="5ol$NvHEGl" role="il5$o">
-          <ref role="1PxDUh" node="5ol$NvDtID" resolve="ICON_DEFINITON" />
-          <ref role="3cqZAo" node="5ol$NvDtNF" resolve="SEARCH" />
+        <node concept="Xl_RD" id="1TowlBn5YwI" role="il5$o">
+          <property role="Xl_RC" value="&amp;#xE86C;" />
         </node>
       </node>
     </node>

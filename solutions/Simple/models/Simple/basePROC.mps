@@ -278,7 +278,6 @@
         <property id="96922280160231604" name="defaultHotkey" index="3uBtrS" />
         <property id="8569227807555216336" name="overWriteWindowTitle" index="1UlA2q" />
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
-        <child id="6525155817177860576" name="enabledWhen" index="20uWH4" />
         <child id="6525155817177697707" name="documentation" index="20vkWf" />
         <child id="4678401045862677843" name="commandCreationInformation" index="27AfA_" />
         <child id="6185198504743118463" name="defaultIcon" index="2DETGV" />
@@ -1059,6 +1058,9 @@
     <node concept="10xUwW" id="AN_117c3PV" role="10HVpa">
       <ref role="10x$tN" node="AN_117c3Kl" resolve="Edit Order" />
     </node>
+    <node concept="10xUwW" id="1TowlBnaIBV" role="10HVpa">
+      <ref role="10x$tN" node="1TowlBnaICA" resolve="EditOrder Predecessor" />
+    </node>
     <node concept="10xUwW" id="U8r3Yq8O5E" role="10HVpa">
       <ref role="10x$tN" node="U8r3Yq8LMH" resolve="Order Main Doc GE" />
     </node>
@@ -1377,11 +1379,15 @@
             <property role="3SKdUp" value="force not saved dialog! " />
           </node>
         </node>
-        <node concept="3clFbF" id="5hYsHqQ_Crd" role="3cqZAp">
-          <node concept="2OqwBi" id="5hYsHqQ_Cw$" role="3clFbG">
-            <node concept="3y28L$" id="5hYsHqQ_Crb" role="2Oq$k0" />
-            <node concept="liA8E" id="5hYsHqQ_CCg" role="2OqNvi">
-              <ref role="37wK5l" to="w7gk:5YQrEfEkqbp" resolve="setDirty" />
+        <node concept="1X3_iC" id="1TowlBn8TTl" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5hYsHqQ_Crd" role="8Wnug">
+            <node concept="2OqwBi" id="5hYsHqQ_Cw$" role="3clFbG">
+              <node concept="3y28L$" id="5hYsHqQ_Crb" role="2Oq$k0" />
+              <node concept="liA8E" id="5hYsHqQ_CCg" role="2OqNvi">
+                <ref role="37wK5l" to="w7gk:5YQrEfEkqbp" resolve="setDirty" />
+              </node>
             </node>
           </node>
         </node>
@@ -4519,19 +4525,6 @@
     </node>
     <node concept="10EhbA" id="4ysbFF_T21g" role="3vkzKj">
       <ref role="10EhbB" node="AN_117c0Wn" resolve="order" />
-    </node>
-    <node concept="3fqX7Q" id="4ysbFF_TFYi" role="20uWH4">
-      <node concept="2OqwBi" id="4ysbFF_TFYk" role="3fr31v">
-        <node concept="liA8E" id="4ysbFF_TFYm" role="2OqNvi">
-          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-          <node concept="3urNQE" id="4ysbFF_TFYl" role="37wK5m">
-            <ref role="3cqZAo" node="4ysbFF_SY9l" resolve="param" />
-          </node>
-        </node>
-        <node concept="Xl_RD" id="4ysbFF_TFYn" role="2Oq$k0">
-          <property role="Xl_RC" value="" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="5SbyawjeQdI">
@@ -8544,6 +8537,9 @@
   <node concept="3ugp7m" id="3fji5qpFn_j">
     <property role="TrG5h" value="Set Pos EAN to zero" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
+    <node concept="3urNQE" id="1OvPoUuKLCQ" role="19Ho0k">
+      <ref role="3cqZAo" node="3fji5qpFnSH" resolve="pos" />
+    </node>
     <node concept="3ulXEN" id="3fji5qpFnSH" role="3ulXEL">
       <property role="TrG5h" value="pos" />
       <node concept="3uibUv" id="3fji5qpFnTx" role="1tU5fm">
@@ -8573,7 +8569,7 @@
         </node>
         <node concept="10Adxh" id="3fji5qpSmjt" role="3cqZAp">
           <node concept="Xl_RD" id="3fji5qpSmjX" role="10Adiu">
-            <property role="Xl_RC" value="ID &gt; 2100" />
+            <property role="Xl_RC" value="ID &gt; 2020" />
           </node>
           <node concept="1Wc70l" id="1nXeD0eIWTf" role="10Adiv">
             <node concept="3clFbC" id="1nXeD0eIXDK" role="3uHU7w">
@@ -8594,7 +8590,7 @@
                 </node>
               </node>
               <node concept="3cmrfG" id="3fji5qpSmr8" role="3uHU7w">
-                <property role="3cmrfH" value="2100" />
+                <property role="3cmrfH" value="2020" />
               </node>
             </node>
           </node>
@@ -8651,11 +8647,46 @@
             <node concept="liA8E" id="6gkV9KP8Q0P" role="2OqNvi">
               <ref role="37wK5l" to="28jr:2xJao4Wp9kZ" resolve="openUrl" />
               <node concept="Xl_RD" id="6gkV9KP8Q1F" role="37wK5m">
-                <property role="Xl_RC" value="http://www.vol.at" />
+                <property role="Xl_RC" value="/Basis/?command=editandconfirmorders20&amp;backto=/MDEApp" />
               </node>
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3ugp7m" id="1TowlBnaICA">
+    <property role="TrG5h" value="EditOrder Predecessor" />
+    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
+    <node concept="1t46OP" id="1TowlBnaINY" role="1t4FgK">
+      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" node="AN_117c3Kl" resolve="Edit Order" />
+      <node concept="10EhbA" id="1TowlBnaIZb" role="2_HrWp">
+        <ref role="10EhbB" node="AN_117c0Wn" resolve="order" />
+      </node>
+      <node concept="3urNQE" id="1TowlBnaIPc" role="2_HrWp">
+        <ref role="3cqZAo" node="1TowlBnaIN7" resolve="id" />
+      </node>
+      <node concept="3urNQE" id="1TowlBnaIS1" role="2_HrWp">
+        <ref role="3cqZAo" node="1TowlBnaIN9" resolve="readOnly" />
+      </node>
+      <node concept="3urNQE" id="1TowlBnaIVO" role="2_HrWp">
+        <ref role="3cqZAo" node="1TowlBnaINb" resolve="spec" />
+      </node>
+    </node>
+    <node concept="3ulXEN" id="1TowlBnaIN7" role="3ulXEL">
+      <property role="TrG5h" value="id" />
+      <node concept="10Oyi0" id="1TowlBnaIN8" role="1tU5fm" />
+    </node>
+    <node concept="3ulXEN" id="1TowlBnaIN9" role="3ulXEL">
+      <property role="TrG5h" value="readOnly" />
+      <node concept="10P_77" id="1TowlBnaINa" role="1tU5fm" />
+    </node>
+    <node concept="3ulXEN" id="1TowlBnaINb" role="3ulXEL">
+      <property role="TrG5h" value="spec" />
+      <node concept="3uibUv" id="1TowlBnaINc" role="1tU5fm">
+        <ref role="3uigEE" node="7dlwzTfDykH" resolve="Do" />
       </node>
     </node>
   </node>

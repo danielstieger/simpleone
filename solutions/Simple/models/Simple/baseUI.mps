@@ -349,8 +349,41 @@
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
       <node concept="2U5nhG" id="5XruxTJPW_g" role="2TFpq_" />
-      <node concept="2TG9WT" id="2gdf8TJbp$_" role="3OfFNq">
-        <node concept="3Oe$u_" id="2gdf8TJbp$A" role="3$nDjG">
+      <node concept="2TG9WW" id="EiYh8eZsMI" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsMK" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5lU" resolve="store" />
+        </node>
+        <node concept="P8lqc" id="EiYh8eZsML" role="P8nnQ">
+          <node concept="3Oe$u_" id="EiYh8eZsMM" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bpzX" resolve="id" />
+          </node>
+          <node concept="3Oe$u_" id="EiYh8eZsMN" role="P8WsX">
+            <ref role="3O0p26" to="dtxg:AN_117bqvn" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2TG9WU" id="EiYh8eZsMO" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsMP" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5mG" resolve="from" />
+        </node>
+      </node>
+      <node concept="2TG9WU" id="EiYh8eZsMQ" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsMR" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5nv" resolve="to" />
+        </node>
+      </node>
+      <node concept="2TG9WX" id="EiYh8eZsMS" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsMT" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:AN_117f5oM" resolve="status" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="EiYh8eZsMU" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsMV" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:3JniOZDsNdw" resolve="text" />
+        </node>
+      </node>
+      <node concept="2TG9WT" id="EiYh8eZsMW" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsMX" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:2gdf8TJboq6" resolve="dateTime" />
         </node>
       </node>
@@ -2148,6 +2181,11 @@
           <ref role="3O0p26" to="dtxg:3JniOZDsNdw" resolve="text" />
         </node>
       </node>
+      <node concept="2TG9WT" id="EiYh8eZsFD" role="3OfFNq">
+        <node concept="3Oe$u_" id="EiYh8eZsFG" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:2gdf8TJboq6" resolve="dateTime" />
+        </node>
+      </node>
       <node concept="2U5nhG" id="53acIw4Vpvo" role="2TFpq_" />
     </node>
   </node>
@@ -2683,7 +2721,7 @@
     <node concept="fOGPe" id="6TNACHoTmKR" role="fOGQ8">
       <node concept="33WYYh" id="6TNACHoRReZ" role="fOGQ8">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+        <ref role="2_Hrw8" to="1y8i:1TowlBnaICA" resolve="EditOrder Predecessor" />
         <node concept="2IFXgM" id="6TNACHoRRgZ" role="2_HrWp">
           <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
         </node>
@@ -2757,7 +2795,7 @@
         <node concept="Pk6Vc" id="4ceCyFmuYT6" role="PoUSh" />
         <node concept="Pl0HC" id="12GNNnCCTgo" role="PoUSh">
           <node concept="Xl_RD" id="12GNNnCCTgq" role="Pl0H_">
-            <property role="Xl_RC" value="Order1.Name" />
+            <property role="Xl_RC" value="Artikel Num" />
           </node>
         </node>
       </node>
@@ -2772,10 +2810,44 @@
         </node>
         <node concept="Pl0HC" id="12GNNnCCTiC" role="PoUSh">
           <node concept="Xl_RD" id="12GNNnCCTiE" role="Pl0H_">
-            <property role="Xl_RC" value="Order2.Name" />
+            <property role="Xl_RC" value="Name" />
           </node>
         </node>
         <node concept="Pevqn" id="6TNACHpf1oP" role="PoUSh" />
+      </node>
+      <node concept="3Oe2In" id="4UT3fhugq$8" role="3OfFNq">
+        <node concept="3O0p8O" id="4UT3fhugq$e" role="3$nDjG">
+          <node concept="2THnN3" id="4UT3fhugq$f" role="3O0p8V">
+            <ref role="2THnOx" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
+          </node>
+          <node concept="3Oe$u_" id="4UT3fhugq$g" role="3O0p8X">
+            <ref role="3O0p26" to="dtxg:2KQ2inNsEWy" resolve="order1" />
+          </node>
+        </node>
+        <node concept="Pevqn" id="4UT3fhugq_k" role="PoUSh" />
+      </node>
+      <node concept="3Oe2In" id="4UT3fhvvjBL" role="3OfFNq">
+        <node concept="3O0p8O" id="4UT3fhvvjBR" role="3$nDjG">
+          <node concept="2THnN3" id="4UT3fhvvjBS" role="3O0p8V">
+            <ref role="2THnOx" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
+          </node>
+          <node concept="3Oe$u_" id="4UT3fhvvjBT" role="3O0p8X">
+            <ref role="3O0p26" to="dtxg:2KQ2inNsEWZ" resolve="order2" />
+          </node>
+        </node>
+        <node concept="Pevqn" id="4UT3fhvxDzB" role="PoUSh" />
+      </node>
+      <node concept="2TG9WX" id="4UT3fhvvjF2" role="3OfFNq">
+        <node concept="P9Rn5" id="4UT3fhvx5bv" role="PoUSh" />
+        <node concept="3O0p8O" id="4UT3fhvvjF7" role="3$nDjG">
+          <node concept="2THnN3" id="4UT3fhvvjF8" role="3O0p8V">
+            <ref role="2THnOx" to="dtxg:AN_117c2L7" resolve="status" />
+          </node>
+          <node concept="3Oe$u_" id="4UT3fhvvjF9" role="3O0p8X">
+            <ref role="3O0p26" to="dtxg:2KQ2inNsEWZ" resolve="order2" />
+          </node>
+        </node>
+        <node concept="Pevqn" id="4UT3fhvxD$a" role="PoUSh" />
       </node>
     </node>
   </node>
