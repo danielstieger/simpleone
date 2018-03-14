@@ -160,6 +160,7 @@
         <child id="478945708935709196" name="value" index="2DqwMp" />
         <child id="478945708935709194" name="type" index="2DqwMv" />
       </concept>
+      <concept id="478945708907003626" name="org.modellwerkstatt.objectflow.structure.IOFXConfigInstanceElement" flags="ng" index="2CJf1Z" />
       <concept id="478945708907003466" name="org.modellwerkstatt.objectflow.structure.OFXConfigInstance" flags="ng" index="2CJf3v">
         <child id="478945708907022272" name="elements" index="2CJ4_l" />
         <child id="478945708907003567" name="className" index="2CJf0U" />
@@ -202,7 +203,7 @@
       </concept>
       <concept id="2334746899962967389" name="org.modellwerkstatt.objectflow.structure.OFXConsumerCmdCallContext" flags="ng" index="1sQxEM">
         <child id="2334746899964385285" name="status" index="1sHfvE" />
-        <child id="2334746899962967551" name="commandCall" index="1sQxCg" />
+        <child id="2334746899962967551" name="runCommand" index="1sQxCg" />
         <child id="3603622341550944502" name="whenClause" index="1QN9er" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
@@ -257,6 +258,17 @@
         <property id="569389511234497415" name="hour" index="1$4sGT" />
         <property id="569389511234497412" name="year" index="1$4sGU" />
         <property id="569389511234497413" name="month" index="1$4sGV" />
+      </concept>
+      <concept id="8940448732920175984" name="org.modellwerkstatt.objectflow.structure.OFXBatchCronExpression" flags="ng" index="1QnCuL">
+        <property id="8940448732920176128" name="dayOfMonth" index="1QnCj1" />
+        <property id="8940448732920176132" name="month" index="1QnCj5" />
+        <property id="8940448732920176137" name="dayOfWeek" index="1QnCj8" />
+        <property id="8940448732920176150" name="sec" index="1QnCjn" />
+        <property id="8940448732920176123" name="min" index="1QnCsU" />
+        <property id="8940448732920176125" name="hour" index="1QnCsW" />
+      </concept>
+      <concept id="8940448732926697603" name="org.modellwerkstatt.objectflow.structure.OFXBatchJobDelaytime" flags="ng" index="1QJjD2">
+        <property id="8940448732926697606" name="delayInSecs" index="1QJjD7" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -1180,6 +1192,13 @@
             <property role="Xl_RC" value="8126" />
           </node>
         </node>
+        <node concept="2CJ4$C" id="2_WjAEDxWAy" role="2CJ4_l">
+          <property role="TrG5h" value="KafkaLoggingServer" />
+          <node concept="Xl_RD" id="2_WjAEDxWAH" role="2CaGCA">
+            <property role="Xl_RC" value="jmain.mpreis.co.at:9092" />
+          </node>
+        </node>
+        <node concept="2CJf1Z" id="2_WjAEDxQXu" role="2CJ4_l" />
       </node>
       <node concept="2CJf3v" id="1BZ9wCagmUK" role="2CJdiS">
         <property role="TrG5h" value="stringFormatter" />
@@ -2930,6 +2949,9 @@
               <property role="TrG5h" value="batchJobItem" />
               <ref role="3zdv75" to="1y8i:6XzXfke8yvP" resolve="MainPage" />
               <ref role="3zdv76" to="1y8i:6XzXfke8ySG" resolve="Ok" />
+              <node concept="3zdqQj" id="7JtXXwlZla$" role="3zdlsu">
+                <node concept="3clFbS" id="7JtXXwlZla_" role="2VODD2" />
+              </node>
             </node>
           </node>
           <node concept="2_HltQ" id="382CQP4Nz3w" role="2TpcRq">
@@ -2958,24 +2980,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs3" id="382CQP4S7wy" role="1sHfvE">
-          <node concept="Xl_RD" id="382CQP4S7y1" role="3uHU7w">
-            <property role="Xl_RC" value=" processed with 'Create BatchJobItem()'." />
-          </node>
-          <node concept="3cpWs3" id="382CQP4S7oC" role="3uHU7B">
-            <node concept="Xl_RD" id="382CQP4S7mj" role="3uHU7B">
-              <property role="Xl_RC" value="BatchJobItem " />
-            </node>
-            <node concept="2OqwBi" id="382CQP4S7qD" role="3uHU7w">
-              <node concept="3zknl8" id="382CQP4S7pD" role="2Oq$k0">
-                <ref role="3zkmF1" node="382CQP4Nz3t" resolve="inboxElement" />
-              </node>
-              <node concept="2S8uIT" id="382CQP4S7tZ" role="2OqNvi">
-                <ref role="2S8YL0" to="dtxg:6XzXfke1asx" resolve="text" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1sQxEM" id="382CQP4ZOzj" role="3znymz">
         <node concept="2Tpcjw" id="382CQP4ZOzk" role="1sQxCg">
@@ -2986,6 +2990,7 @@
             <ref role="3zdv76" to="1y8i:6XzXfke8ySG" resolve="Ok" />
             <node concept="3zdqQj" id="3exXxRerXEV" role="3zdlsu">
               <node concept="3clFbS" id="3exXxRerXEW" role="2VODD2">
+                <node concept="3clFbH" id="7JtXXwlZlm9" role="3cqZAp" />
                 <node concept="2Tpcjw" id="3exXxRerXGn" role="3cqZAp">
                   <node concept="3zdtvw" id="3exXxRet_bn" role="2TpcRr">
                     <property role="3zdvax" value="0" />
@@ -3060,6 +3065,17 @@
           <ref role="2Oxat5" node="1SuqpWQMcLr" resolve="VERSION" />
         </node>
       </node>
+    </node>
+    <node concept="1QnCuL" id="5FnVeIxY0aA" role="hNln_">
+      <property role="1QnCjn" value="*" />
+      <property role="1QnCsU" value="*" />
+      <property role="1QnCsW" value="*" />
+      <property role="1QnCj1" value="*" />
+      <property role="1QnCj5" value="*" />
+      <property role="1QnCj8" value="*" />
+    </node>
+    <node concept="1QJjD2" id="5FnVeIxY0_D" role="hNln_">
+      <property role="1QJjD7" value="300" />
     </node>
   </node>
   <node concept="2CG7Z0" id="3tgwmmDjmur">
