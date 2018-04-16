@@ -126,7 +126,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -189,7 +188,6 @@
       <concept id="9110730801960129924" name="org.modellwerkstatt.objectflow.structure.OFXRunCmd" flags="ng" index="2Tpcjw">
         <child id="9110730801960131774" name="commandCall" index="2TpcRq" />
         <child id="9110730801960131775" name="pages" index="2TpcRr" />
-        <child id="4503841283149007813" name="successorHandler" index="3wlH0d" />
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
@@ -202,9 +200,7 @@
         <property id="271985905034983109" name="value" index="1mgVXS" />
       </concept>
       <concept id="2334746899962967389" name="org.modellwerkstatt.objectflow.structure.OFXConsumerCmdCallContext" flags="ng" index="1sQxEM">
-        <child id="2334746899964385285" name="status" index="1sHfvE" />
         <child id="2334746899962967551" name="runCommand" index="1sQxCg" />
-        <child id="3603622341550944502" name="whenClause" index="1QN9er" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640426" name="org.modellwerkstatt.objectflow.structure.Container" flags="ng" index="3ulXEQ">
@@ -225,10 +221,6 @@
       </concept>
       <concept id="4503841283146059763" name="org.modellwerkstatt.objectflow.structure.OFXExceptionStrategyInclude" flags="ng" index="3watgV">
         <reference id="4503841283146059766" name="strategy" index="3watgY" />
-      </concept>
-      <concept id="4503841283149007782" name="org.modellwerkstatt.objectflow.structure.OFXRunCmdSuccessorHandler" flags="ng" index="3wlH1I">
-        <reference id="4503841283149007793" name="command" index="3wlH1T" />
-        <child id="4503841283148969517" name="successorPages" index="3wlqR_" />
       </concept>
       <concept id="7632638241501946195" name="org.modellwerkstatt.objectflow.structure.OFXInboxToPostProcess" flags="ng" index="3y9rlp">
         <reference id="7632638241501946400" name="producerContext" index="3y9roE" />
@@ -319,6 +311,7 @@
         <child id="2781909770750563212" name="tiles" index="2$nsuY" />
         <child id="7784207101902285973" name="options" index="2MWAe8" />
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
+        <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
         <child id="6952410984683978133" name="onStartup" index="3yTP5x" />
       </concept>
@@ -1662,6 +1655,19 @@
       <ref role="2_Hrw8" to="1y8i:7P$uL5PDZM2" resolve="Update Conclusion" />
       <node concept="10Nm6u" id="7P$uL5PMOLa" role="2_HrWp" />
     </node>
+    <node concept="33WYYh" id="3wkdm3W8f8l" role="2N77jT">
+      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" to="1y8i:3wkdm3W8dpZ" resolve="MasterData Editor" />
+      <node concept="10Nm6u" id="3wkdm3W8f9O" role="2_HrWp" />
+      <node concept="3cmrfG" id="3wkdm3W8fa6" role="2_HrWp">
+        <property role="3cmrfH" value="10" />
+      </node>
+    </node>
+    <node concept="33WYYh" id="v00WQapSY3" role="2N77jT">
+      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" to="1y8i:3wkdm3WbpA6" resolve="MasterData Creator" />
+      <node concept="10Nm6u" id="v00WQapSZ_" role="2_HrWp" />
+    </node>
     <node concept="3ulXEM" id="1SuqpWQMcXw" role="3ulXEG">
       <property role="TrG5h" value="thisIsAVeryLongVarName" />
       <node concept="17QB3L" id="1SuqpWQMcYs" role="1tU5fm" />
@@ -1763,6 +1769,11 @@
     <node concept="2d2NRx" id="1oz7qwFe4fa" role="3yTP5x">
       <node concept="3clFbS" id="1oz7qwFe4fb" role="2VODD2" />
     </node>
+    <node concept="33WYYh" id="2MI0JB6CHQr" role="2N77jL">
+      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+      <ref role="2_Hrw8" to="1y8i:2MI0JB6CEnN" resolve="ViewTasksInList" />
+      <node concept="10Nm6u" id="2MI0JB6CHR_" role="2_HrWp" />
+    </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App MDE Order" />
@@ -1772,6 +1783,10 @@
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search for Orders" />
         <node concept="10Nm6u" id="7f4gcD$ZVJC" role="2_HrWp" />
+      </node>
+      <node concept="2XvMaL" id="5faagik40bV" role="2$ntZF">
+        <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
+        <ref role="1Vchh_" to="dtxg:AN_117c2L0" resolve="ordered" />
       </node>
     </node>
     <node concept="2$ntO6" id="6zVU6_jEngn" role="2$nsuY">
@@ -1863,7 +1878,7 @@
       <node concept="17QB3L" id="1SuqpWQMcha" role="1tU5fm" />
       <node concept="3Tm1VV" id="1SuqpWQMcAX" role="1B3o_S" />
       <node concept="Xl_RD" id="1SuqpWQMchR" role="33vP2m">
-        <property role="Xl_RC" value="VERSION 0.0.0" />
+        <property role="Xl_RC" value="VERSION 1.2.4" />
       </node>
     </node>
     <node concept="312cEg" id="3exXxRetpCn" role="jymVt">
@@ -2296,7 +2311,7 @@
         </node>
       </node>
       <node concept="Xl_RD" id="15Ng79oa4AI" role="2CJf0U">
-        <property role="Xl_RC" value="Simple.baseDATA.SimpleRes_MDE" />
+        <property role="Xl_RC" value="Simple.baseDATA.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJoq6" id="15Ng79oa4AJ" role="2CGBMS">
@@ -2901,7 +2916,7 @@
           <node concept="10Nm6u" id="3U0QWzu5dHU" role="2_HrWp" />
         </node>
       </node>
-      <node concept="3uibUv" id="3U0QWzuoFGF" role="3znzZe">
+      <node concept="3uibUv" id="7VDbE_bTEn3" role="3znzZe">
         <ref role="3uigEE" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
       </node>
     </node>
@@ -2931,6 +2946,15 @@
           <ref role="3wgya7" to="z3ji:1TthV9g3fUH" resolve="NOOP_JUST_LOG" />
         </node>
       </node>
+      <node concept="3w4bLU" id="3l87qE_moOs" role="3w4b7O">
+        <property role="35mAoy" value="5" />
+        <node concept="3w5bwq" id="3l87qE_moQt" role="3w5bwn">
+          <ref role="3wgya7" to="z3ji:1TthV9g3fUH" resolve="NOOP_JUST_LOG" />
+        </node>
+        <node concept="Xl_RD" id="3l87qE_moOT" role="3w4aYS">
+          <property role="Xl_RC" value=".*Null.*" />
+        </node>
+      </node>
       <node concept="3watgV" id="7bWGJuS34dr" role="3w4b7O">
         <ref role="3watgY" node="7bWGJuRJZrx" resolve="mpreis_basis_ex_start" />
       </node>
@@ -2940,117 +2964,52 @@
     </node>
     <node concept="3znyvg" id="382CQP4Nz3t" role="2x1CaU">
       <property role="TrG5h" value="inboxElement" />
-      <node concept="1sQxEM" id="382CQP4Nz3u" role="3znymz">
-        <node concept="2Tpcjw" id="382CQP4Nz3v" role="1sQxCg">
-          <node concept="3wlH1I" id="382CQP4S7m6" role="3wlH0d">
-            <ref role="3wlH1T" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
-            <node concept="3zdtvw" id="382CQP4S7m8" role="3wlqR_">
-              <property role="3zdvax" value="0" />
-              <property role="TrG5h" value="batchJobItem" />
-              <ref role="3zdv75" to="1y8i:6XzXfke8yvP" resolve="MainPage" />
-              <ref role="3zdv76" to="1y8i:6XzXfke8ySG" resolve="Ok" />
-              <node concept="3zdqQj" id="7JtXXwlZla$" role="3zdlsu">
-                <node concept="3clFbS" id="7JtXXwlZla_" role="2VODD2" />
-              </node>
-            </node>
-          </node>
-          <node concept="2_HltQ" id="382CQP4Nz3w" role="2TpcRq">
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
-            <node concept="3zknl8" id="382CQP4S7kt" role="2_HrWp">
-              <ref role="3zkmF1" node="382CQP4Nz3t" resolve="inboxElement" />
-            </node>
-            <node concept="Rm8GO" id="382CQP4S7lM" role="2_HrWp">
-              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-            </node>
-          </node>
-        </node>
-        <node concept="3y3z36" id="382CQP4RmLS" role="1QN9er">
-          <node concept="2XvMaL" id="382CQP4RmMO" role="3uHU7w">
-            <ref role="2XvMaQ" to="dtxg:6XzXfke7pgu" resolve="ProcessingState" />
-            <ref role="1Vchh_" to="dtxg:6XzXfke7pis" resolve="processed" />
-          </node>
-          <node concept="2OqwBi" id="382CQP4RmJT" role="3uHU7B">
-            <node concept="3zknl8" id="382CQP4RmJw" role="2Oq$k0">
-              <ref role="3zkmF1" node="382CQP4Nz3t" resolve="inboxElement" />
-            </node>
-            <node concept="2S8uIT" id="382CQP4RmKK" role="2OqNvi">
-              <ref role="2S8YL0" to="dtxg:6XzXfke7pmM" resolve="state" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1sQxEM" id="382CQP4ZOzj" role="3znymz">
-        <node concept="2Tpcjw" id="382CQP4ZOzk" role="1sQxCg">
-          <node concept="3zdtvw" id="3exXxRerXET" role="2TpcRr">
+      <node concept="1sQxEM" id="350ozEAuc$_" role="3znymz">
+        <node concept="2Tpcjw" id="350ozEAuc$A" role="1sQxCg">
+          <node concept="3zdtvw" id="350ozEAucA0" role="2TpcRr">
             <property role="3zdvax" value="0" />
             <property role="TrG5h" value="batchJobItem" />
             <ref role="3zdv75" to="1y8i:6XzXfke8yvP" resolve="MainPage" />
             <ref role="3zdv76" to="1y8i:6XzXfke8ySG" resolve="Ok" />
-            <node concept="3zdqQj" id="3exXxRerXEV" role="3zdlsu">
-              <node concept="3clFbS" id="3exXxRerXEW" role="2VODD2">
-                <node concept="3clFbH" id="7JtXXwlZlm9" role="3cqZAp" />
-                <node concept="2Tpcjw" id="3exXxRerXGn" role="3cqZAp">
-                  <node concept="3zdtvw" id="3exXxRet_bn" role="2TpcRr">
+            <node concept="3zdqQj" id="350ozEAucAa" role="3zdlsu">
+              <node concept="3clFbS" id="350ozEAucAb" role="2VODD2">
+                <node concept="2Tpcjw" id="350ozEAucO2" role="3cqZAp">
+                  <node concept="3zdtvw" id="350ozEAucZt" role="2TpcRr">
                     <property role="3zdvax" value="0" />
                     <property role="TrG5h" value="batchJobItem" />
                     <ref role="3zdv75" to="1y8i:6XzXfke8zab" resolve="Page" />
                     <ref role="3zdv76" to="1y8i:6XzXfke8zxx" resolve="Ok" />
                   </node>
-                  <node concept="2_HltQ" id="3exXxRerXGo" role="2TpcRq">
+                  <node concept="2_HltQ" id="350ozEAucO3" role="2TpcRq">
                     <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
                     <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
-                    <node concept="3zknl8" id="3exXxRerXHG" role="2_HrWp">
-                      <ref role="3zkmF1" node="3exXxRerXET" resolve="batchJobItem" />
+                    <node concept="3zknl8" id="350ozEAucVR" role="2_HrWp">
+                      <ref role="3zkmF1" node="382CQP4Nz3t" resolve="inboxElement" />
                     </node>
-                    <node concept="Rm8GO" id="3exXxRexmwK" role="2_HrWp">
+                    <node concept="Rm8GO" id="350ozEAucXC" role="2_HrWp">
                       <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
                       <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
                     </node>
-                    <node concept="2OqwBi" id="3exXxRetIkS" role="2_HrWp">
-                      <node concept="3urNR4" id="3exXxRetIkf" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4jlzLDlb1QG" resolve="settings" />
-                      </node>
-                      <node concept="liA8E" id="3exXxRetImb" role="2OqNvi">
-                        <ref role="37wK5l" node="3exXxRetsRr" resolve="forceThisRun" />
-                      </node>
+                    <node concept="3clFbT" id="350ozEAucYv" role="2_HrWp">
+                      <property role="3clFbU" value="true" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2_HltQ" id="382CQP4ZOzr" role="2TpcRq">
+          <node concept="2_HltQ" id="350ozEAuc$B" role="2TpcRq">
             <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
             <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
-            <node concept="3zknl8" id="3exXxRerTiV" role="2_HrWp">
+            <node concept="3zknl8" id="350ozEAucAz" role="2_HrWp">
               <ref role="3zkmF1" node="382CQP4Nz3t" resolve="inboxElement" />
             </node>
-            <node concept="3clFbT" id="3exXxRerTlv" role="2_HrWp">
+            <node concept="3clFbT" id="350ozEAucKJ" role="2_HrWp">
               <property role="3clFbU" value="true" />
             </node>
-            <node concept="Rm8GO" id="382CQP4ZOzt" role="2_HrWp">
+            <node concept="Rm8GO" id="350ozEAucML" role="2_HrWp">
               <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs3" id="382CQP4ZOzz" role="1sHfvE">
-          <node concept="Xl_RD" id="382CQP4ZOz$" role="3uHU7w">
-            <property role="Xl_RC" value=" processed with 'BatchJobChangeStatus()'." />
-          </node>
-          <node concept="3cpWs3" id="382CQP4ZOz_" role="3uHU7B">
-            <node concept="Xl_RD" id="382CQP4ZOzA" role="3uHU7B">
-              <property role="Xl_RC" value="BatchJobItem " />
-            </node>
-            <node concept="2OqwBi" id="382CQP4ZOzB" role="3uHU7w">
-              <node concept="3zknl8" id="382CQP4ZOzC" role="2Oq$k0">
-                <ref role="3zkmF1" node="382CQP4Nz3t" resolve="inboxElement" />
-              </node>
-              <node concept="2S8uIT" id="382CQP4ZOzD" role="2OqNvi">
-                <ref role="2S8YL0" to="dtxg:6XzXfke1asx" resolve="text" />
-              </node>
             </node>
           </node>
         </node>
@@ -3117,18 +3076,6 @@
     </node>
     <node concept="2CJf3v" id="3tgwmmDkrqI" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
-      <node concept="2CJ4$C" id="21AFYXWeirP" role="2CJ4_l">
-        <property role="TrG5h" value="CronInterval" />
-        <node concept="Xl_RD" id="3yI9$tKbWdr" role="2CaGCA">
-          <property role="Xl_RC" value="*/1 * * * * *" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="5BROMrWagcC" role="2CJ4_l">
-        <property role="TrG5h" value="DelayTimeSecs" />
-        <node concept="Xl_RD" id="5BROMrWag_7" role="2CaGCA">
-          <property role="Xl_RC" value="120" />
-        </node>
-      </node>
       <node concept="2CJ4$C" id="3exXxReCgG1" role="2CJ4_l">
         <property role="TrG5h" value="NumOfConsumers" />
         <node concept="Xl_RD" id="3exXxReChIk" role="2CaGCA">
