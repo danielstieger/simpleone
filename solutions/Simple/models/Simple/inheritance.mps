@@ -43,6 +43,12 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1201398722958" name="jetbrains.mps.baseLanguage.structure.CustomPropertyImplementation" flags="ng" index="2SWr2p">
+        <child id="1201402259264" name="getAccessor" index="2T9Upn" />
+      </concept>
+      <concept id="1201402044357" name="jetbrains.mps.baseLanguage.structure.GetAccessor" flags="ng" index="2T95Vi">
+        <child id="1202593363480" name="statementList" index="09Bs0" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -52,6 +58,9 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
+      <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
+        <reference id="5862977038373003188" name="property" index="338YkT" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -71,10 +80,15 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -83,6 +97,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -137,6 +154,7 @@
       </concept>
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
+        <property id="659889286494844293" name="andDerived" index="1pH11a" />
         <reference id="8086154250676616105" name="object" index="2IFZ7r" />
       </concept>
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
@@ -146,6 +164,10 @@
       </concept>
       <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.Status" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
+      </concept>
+      <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
+        <reference id="4533072425307838444" name="status" index="2XvMaQ" />
+        <reference id="1707329006119989962" name="element" index="1Vchh_" />
       </concept>
       <concept id="4533072425307800381" name="org.modellwerkstatt.objectflow.structure.StatusType" flags="ig" index="2XvVpB">
         <reference id="6600213247848012755" name="status" index="3$lB4D" />
@@ -321,6 +343,40 @@
         </node>
       </node>
       <node concept="10Oyi0" id="5A$AnVDpn_k" role="2RkE6I" />
+    </node>
+    <node concept="1bOX9e" id="atoEsWdkmm" role="TxmiU">
+      <property role="2RkwnN" value="uiStatus" />
+      <node concept="3Tm1VV" id="atoEsWdkms" role="1B3o_S" />
+      <node concept="2SWr2p" id="atoEsWdkod" role="2RnVtd">
+        <node concept="2T95Vi" id="atoEsWdkoi" role="2T9Upn">
+          <node concept="3clFbS" id="atoEsWdkon" role="09Bs0">
+            <node concept="3clFbJ" id="atoEsWdkqU" role="3cqZAp">
+              <node concept="3clFbS" id="atoEsWdkqW" role="3clFbx">
+                <node concept="3cpWs6" id="atoEsWdl3r" role="3cqZAp">
+                  <node concept="Xl_RD" id="atoEsWdl3M" role="3cqZAk">
+                    <property role="Xl_RC" value="X" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="atoEsWdksF" role="3clFbw">
+                <node concept="2XvMaL" id="atoEsWdl1M" role="3uHU7w">
+                  <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
+                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                </node>
+                <node concept="338YkY" id="atoEsWdkrR" role="3uHU7B">
+                  <ref role="338YkT" node="5A$AnVDpm$9" resolve="status" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="atoEsWdkpO" role="3cqZAp">
+              <node concept="Xl_RD" id="atoEsWdkqj" role="3cqZAk">
+                <property role="Xl_RC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="atoEsWdkn6" role="2RkE6I" />
     </node>
     <node concept="3uibUv" id="5A$AnVDpnA6" role="1zkMxy">
       <ref role="3uigEE" node="5A$AnVDpmnT" resolve="Document" />
@@ -674,6 +730,23 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="$CpsXhuBJA" role="3cqZAp">
+              <node concept="37vLTI" id="$CpsXhuBJB" role="3clFbG">
+                <node concept="2ShNRf" id="$CpsXhuBJC" role="37vLTx">
+                  <node concept="1pGfFk" id="$CpsXhuBJD" role="2ShVmc">
+                    <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="$CpsXhuBJE" role="37vLTJ">
+                  <node concept="37vLTw" id="$CpsXhuBJF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A$AnVDpnD1" resolve="d" />
+                  </node>
+                  <node concept="2S8uIT" id="$CpsXhuBJG" role="2OqNvi">
+                    <ref role="2S8YL0" node="5A$AnVDpmt$" resolve="changedAt" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="5A$AnVDpnUd" role="3cqZAp">
               <node concept="37vLTI" id="5A$AnVDpo6t" role="3clFbG">
                 <node concept="3cpWs3" id="5A$AnVDpobI" role="37vLTx">
@@ -697,6 +770,22 @@
                   </node>
                   <node concept="2S8uIT" id="5A$AnVDpnWk" role="2OqNvi">
                     <ref role="2S8YL0" node="5A$AnVDpntn" resolve="textA" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="$CpsXhuBNR" role="3cqZAp">
+              <node concept="37vLTI" id="$CpsXhuBRS" role="3clFbG">
+                <node concept="2XvMaL" id="$CpsXhuBTu" role="37vLTx">
+                  <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
+                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                </node>
+                <node concept="2OqwBi" id="$CpsXhuBOm" role="37vLTJ">
+                  <node concept="37vLTw" id="$CpsXhuBNP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A$AnVDpnD1" resolve="d" />
+                  </node>
+                  <node concept="2S8uIT" id="$CpsXhuBQl" role="2OqNvi">
+                    <ref role="2S8YL0" node="5A$AnVDpm$9" resolve="status" />
                   </node>
                 </node>
               </node>
@@ -825,6 +914,23 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="$CpsXhuBAB" role="3cqZAp">
+              <node concept="37vLTI" id="$CpsXhuBFB" role="3clFbG">
+                <node concept="2ShNRf" id="$CpsXhuBHl" role="37vLTx">
+                  <node concept="1pGfFk" id="$CpsXhuBGG" role="2ShVmc">
+                    <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="$CpsXhuBB6" role="37vLTJ">
+                  <node concept="37vLTw" id="$CpsXhuBA_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A$AnVDpoUc" resolve="d" />
+                  </node>
+                  <node concept="2S8uIT" id="$CpsXhuBD2" role="2OqNvi">
+                    <ref role="2S8YL0" node="5A$AnVDpmt$" resolve="changedAt" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="5A$AnVDpoUu" role="3cqZAp">
               <node concept="37vLTI" id="5A$AnVDpoUv" role="3clFbG">
                 <node concept="1eOMI4" id="5A$AnVDpoUx" role="37vLTx">
@@ -843,6 +949,22 @@
                   </node>
                   <node concept="2S8uIT" id="5A$AnVDpq67" role="2OqNvi">
                     <ref role="2S8YL0" node="5A$AnVDpn$s" resolve="valueB" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="$CpsXhuBVN" role="3cqZAp">
+              <node concept="37vLTI" id="$CpsXhuBVO" role="3clFbG">
+                <node concept="2XvMaL" id="$CpsXhuBVP" role="37vLTx">
+                  <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
+                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                </node>
+                <node concept="2OqwBi" id="$CpsXhuBVQ" role="37vLTJ">
+                  <node concept="37vLTw" id="$CpsXhuBVR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A$AnVDpoUc" resolve="d" />
+                  </node>
+                  <node concept="2S8uIT" id="$CpsXhuBVS" role="2OqNvi">
+                    <ref role="2S8YL0" node="5A$AnVDpm$9" resolve="status" />
                   </node>
                 </node>
               </node>
@@ -1057,6 +1179,7 @@
             <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
             <node concept="2IFXgM" id="5A$AnVDxSeJ" role="2_HrWp">
+              <property role="1pH11a" value="true" />
               <ref role="2IFZ7r" node="5A$AnVDpmnT" resolve="Document" />
             </node>
           </node>

@@ -217,6 +217,10 @@
         <reference id="8086154250676614082" name="object" index="2IFZAK" />
       </concept>
       <concept id="1879461712355203928" name="org.modellwerkstatt.objectflow.structure.PageScopeConceptFunc" flags="ig" index="JX2Gw" />
+      <concept id="4779674245164303002" name="org.modellwerkstatt.objectflow.structure.StaticRole" flags="ng" index="2RjHbW">
+        <child id="4779674245164315371" name="staticRoleFunc" index="2RjIad" />
+      </concept>
+      <concept id="4779674245164315510" name="org.modellwerkstatt.objectflow.structure.StaticRoleFunc" flags="ig" index="2RjIcg" />
       <concept id="6855023620829296283" name="org.modellwerkstatt.objectflow.structure.ObjectMeta" flags="ng" index="2Tkd$M" />
       <concept id="6855023620835054336" name="org.modellwerkstatt.objectflow.structure.CheckedOutEntities" flags="ng" index="2TUfMD">
         <reference id="6855023620835054339" name="businessObject" index="2TUfME" />
@@ -262,6 +266,9 @@
       <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
         <property id="3585259589779248406" name="formatString" index="35AVef" />
         <child id="3585259589780682365" name="arguments" index="35Gt3$" />
+      </concept>
+      <concept id="4518330267516965068" name="org.modellwerkstatt.objectflow.structure.RolesAndPermissions" flags="ng" index="1jyGmW">
+        <child id="4779674245164354289" name="staticRoles" index="2RjxEn" />
       </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
@@ -1455,6 +1462,31 @@
             <ref role="3cqZAo" node="7RzRXa3Ujpw" resolve="readOnly" />
           </node>
         </node>
+        <node concept="3clFbH" id="4LyjOIy2k83" role="3cqZAp" />
+        <node concept="SfApY" id="4LyjOIy2kPs" role="3cqZAp">
+          <node concept="3clFbS" id="4LyjOIy2kPu" role="SfCbr">
+            <node concept="3clFbF" id="4LyjOIy2kta" role="3cqZAp">
+              <node concept="2YIFZM" id="4LyjOIy2k_E" role="3clFbG">
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
+                <node concept="3cmrfG" id="4LyjOIy2kFt" role="37wK5m">
+                  <property role="3cmrfH" value="2000" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4LyjOIy2kPt" role="3cqZAp" />
+          </node>
+          <node concept="TDmWw" id="4LyjOIy2kPv" role="TEbGg">
+            <node concept="3cpWsn" id="4LyjOIy2kPx" role="TDEfY">
+              <property role="TrG5h" value="ex" />
+              <node concept="3uibUv" id="4LyjOIy2lvB" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="4LyjOIy2kP_" role="TDEfX" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4LyjOIy2keo" role="3cqZAp" />
       </node>
     </node>
     <node concept="3cpWs3" id="7RzRXa3Xgqe" role="IYfpf">
@@ -9522,6 +9554,21 @@
           <node concept="3uNrnE" id="2MI0JB6CEF9" role="1Dwrff">
             <node concept="37vLTw" id="2MI0JB6CEFb" role="2$L3a6">
               <ref role="3cqZAo" node="2MI0JB6CErT" resolve="i" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1jyGmW" id="5WG4isef8Lv">
+    <property role="TrG5h" value="TestRoles" />
+    <node concept="2RjHbW" id="5WG4isef8LW" role="2RjxEn">
+      <property role="TrG5h" value="ADMIN" />
+      <node concept="2RjIcg" id="5WG4isef8LX" role="2RjIad">
+        <node concept="3clFbS" id="5WG4isef8LY" role="2VODD2">
+          <node concept="3clFbF" id="5WG4isef8Nk" role="3cqZAp">
+            <node concept="3clFbT" id="5WG4isef8Nj" role="3clFbG">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
