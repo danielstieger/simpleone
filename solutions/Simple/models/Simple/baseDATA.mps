@@ -4563,6 +4563,7 @@
     </node>
   </node>
   <node concept="12nvSr" id="1oz7qwEwDnU">
+    <property role="TrG5h" value="PersistDesc" />
     <node concept="12nEzK" id="1oz7qwEwDo3" role="12nEwB">
       <ref role="12nEzL" node="6XzXfke1alv" resolve="BatchJobItem" />
     </node>
