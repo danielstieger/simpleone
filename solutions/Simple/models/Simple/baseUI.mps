@@ -214,6 +214,9 @@
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
         <child id="186921216802513051" name="options" index="UTRd0" />
       </concept>
+      <concept id="7366575842045140755" name="org.modellwerkstatt.dataux.structure.LocalSpecialPropertyReference" flags="ng" index="2Ma4Ex">
+        <reference id="7366575842045140756" name="property" index="2Ma4EA" />
+      </concept>
       <concept id="465568541579222548" name="org.modellwerkstatt.dataux.structure.SelectionSummaryLineFOption" flags="ng" index="P6Lob">
         <child id="465568541579240812" name="expression" index="P6QPN" />
       </concept>
@@ -4873,53 +4876,45 @@
   </node>
   <node concept="2mKXYI" id="6XzXfke1ae4">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="BatchJobSearchFilter" />
-    <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+    <property role="TrG5h" value="InvoiceSearchFilter" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="InvoiceSearchFilter" />
     <node concept="2U5qGO" id="6XzXfke1afD" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
-      <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="InvoiceSearchFilter" />
       <node concept="2U5nhG" id="6XzXfke1afF" role="2TFpq_" />
+      <node concept="2TG9WX" id="1FVEJAIuaEx" role="3OfFNq">
+        <node concept="3Oe$u_" id="1FVEJAIuaEy" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAIuas$" resolve="searchOpt" />
+        </node>
+      </node>
       <node concept="3Oe2IN" id="6XzXfke1aga" role="3OfFNq">
         <node concept="3Oe$u_" id="6XzXfke1agb" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:6XzXfke18wx" resolve="id" />
         </node>
       </node>
-      <node concept="3Oe2Ik" id="6XzXfke1agc" role="3OfFNq">
-        <node concept="3Oe$u_" id="6XzXfke1agd" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:6XzXfke18y3" resolve="text" />
-        </node>
-      </node>
-      <node concept="2TG9WT" id="6XzXfke1age" role="3OfFNq">
-        <node concept="3Oe$u_" id="6XzXfke1agf" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:6XzXfke18_5" resolve="date" />
-        </node>
-      </node>
-      <node concept="3Oe2In" id="6XzXfke1agg" role="3OfFNq">
-        <node concept="3Oe$u_" id="6XzXfke1agh" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:6XzXfke19Nv" resolve="totalValue" />
+      <node concept="2TG9WX" id="1FVEJAIuaFm" role="3OfFNq">
+        <node concept="3Oe$u_" id="1FVEJAIuaFn" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:6XzXfke19Nv" resolve="state" />
         </node>
       </node>
     </node>
   </node>
   <node concept="2mKXYI" id="6XzXfke1aBn">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="THE BatchJobItem Result List" />
-    <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+    <property role="TrG5h" value="Invoices Result List" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="InvoiceSearchFilter" />
     <node concept="2U5qGQ" id="6XzXfke1aGH" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
-      <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="BatchJobSearchFilter" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke18vl" resolve="InvoiceSearchFilter" />
       <ref role="1Tjo6F" to="dtxg:6XzXfke1ajR" resolve="items" />
       <node concept="fOGPe" id="6XzXfke8zow" role="fOGQ8">
         <node concept="33WYYh" id="6XzXfke8zoU" role="fOGQ8">
-          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
           <node concept="2IFXgM" id="6XzXfke8zpU" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
-          </node>
-          <node concept="3clFbT" id="4jlzLDlS5vO" role="2_HrWp">
-            <property role="3clFbU" value="true" />
+            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
           </node>
           <node concept="Rm8GO" id="56_jou8oUNV" role="2_HrWp">
             <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
@@ -4927,26 +4922,23 @@
           </node>
         </node>
         <node concept="2TlDos" id="6XzXfke8zqY" role="fOGQ8">
-          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
           <ref role="3Umo0L" to="1y8i:6XzXfke8ySG" resolve="Ok" />
           <ref role="3uz5Vf" to="dtxg:6XzXfke8zBL" resolve="Complete_BjItem" />
           <node concept="2IFXgM" id="6XzXfke8zso" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
-          </node>
-          <node concept="3clFbT" id="4jlzLDlS5wW" role="2_HrWp">
-            <property role="3clFbU" value="true" />
+            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
           </node>
           <node concept="Rm8GO" id="56_jou8oUPJ" role="2_HrWp">
             <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
             <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
           </node>
           <node concept="2TlDos" id="6XzXfke8zuV" role="2TlDj4">
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-            <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+            <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
             <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
             <node concept="2IFXgM" id="6XzXfke8zwe" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJGkwl" role="2_HrWp">
               <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
@@ -4958,26 +4950,23 @@
           </node>
         </node>
         <node concept="2TlDos" id="56_jou8oUQf" role="fOGQ8">
-          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+          <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+          <ref role="2_Hrw8" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
           <ref role="3Umo0L" to="1y8i:6XzXfke8ySG" resolve="Ok" />
           <ref role="3uz5Vf" to="dtxg:56_jou8oUVi" resolve="Complete_BjItem_Cancel" />
           <node concept="2IFXgM" id="56_jou8oUQg" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
-          </node>
-          <node concept="3clFbT" id="56_jou8oUQh" role="2_HrWp">
-            <property role="3clFbU" value="true" />
+            <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
           </node>
           <node concept="Rm8GO" id="56_jou8oV0J" role="2_HrWp">
             <ref role="Rm8GQ" to="1y8i:7dlwzTfDyn_" resolve="CANCEL" />
             <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
           </node>
           <node concept="2TlDos" id="56_jou8oUQj" role="2TlDj4">
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-            <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+            <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
             <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
             <node concept="2IFXgM" id="56_jou8oUQk" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJGkvD" role="2_HrWp">
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
@@ -4990,24 +4979,24 @@
         </node>
         <node concept="fOGPe" id="1dqt$gJDZnd" role="fOGQ8">
           <node concept="2TlDos" id="1dqt$gJBTbJ" role="fOGQ8">
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
             <ref role="3uz5Vf" to="dtxg:1dqt$gJBSAy" resolve="Create_BjItem_Ok" />
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
+            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
             <node concept="2IFXgM" id="1dqt$gJBTbK" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJC0mG" role="2_HrWp">
               <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
             </node>
             <node concept="2TlDos" id="1dqt$gJBTGy" role="2TlDj4">
-              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
               <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
               <ref role="3OiViF" to="1y8i:6XzXfke8ySG" resolve="Ok" />
-              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
-              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
+              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
               <node concept="2IFXgM" id="1dqt$gJBUdm" role="2_HrWp">
-                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
               </node>
               <node concept="Rm8GO" id="1dqt$gJGkuW" role="2_HrWp">
                 <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
@@ -5019,24 +5008,24 @@
             </node>
           </node>
           <node concept="2TlDos" id="1dqt$gJC0nU" role="fOGQ8">
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
+            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
             <ref role="3uz5Vf" to="dtxg:1dqt$gJBSEd" resolve="Create_BjItem_Cancel" />
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
             <node concept="2IFXgM" id="1dqt$gJC0nV" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJC0xV" role="2_HrWp">
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
               <ref role="Rm8GQ" to="1y8i:3xGERTNpF2i" resolve="CANCEL_IN_CONCLUSION" />
             </node>
             <node concept="2TlDos" id="1dqt$gJC0nX" role="2TlDj4">
-              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
               <ref role="3OiViF" to="1y8i:6XzXfke8ySG" resolve="Ok" />
               <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
-              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
               <node concept="2IFXgM" id="1dqt$gJC0nY" role="2_HrWp">
-                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
               </node>
               <node concept="Rm8GO" id="1dqt$gJGkug" role="2_HrWp">
                 <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
@@ -5048,11 +5037,11 @@
             </node>
           </node>
           <node concept="2TlDos" id="1dqt$gJC0RQ" role="fOGQ8">
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
             <ref role="3uz5Vf" to="dtxg:1dqt$gJC0$C" resolve="Create_BjItem_Flag" />
             <node concept="2IFXgM" id="1dqt$gJC0RR" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJC11q" role="2_HrWp">
               <ref role="Rm8GQ" to="1y8i:3xGERTNpF2h" resolve="FLAG_IN_CONCLUSION" />
@@ -5061,11 +5050,11 @@
             <node concept="2TlDos" id="1dqt$gJC0RT" role="2TlDj4">
               <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
               <ref role="3OiViF" to="1y8i:6XzXfke8ySG" resolve="Ok" />
-              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
-              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
+              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
               <node concept="2IFXgM" id="1dqt$gJC0RU" role="2_HrWp">
-                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
               </node>
               <node concept="Rm8GO" id="1dqt$gJGktk" role="2_HrWp">
                 <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
@@ -5077,11 +5066,11 @@
             </node>
           </node>
           <node concept="2TlDos" id="1dqt$gJC0TH" role="fOGQ8">
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
             <ref role="3uz5Vf" to="dtxg:1dqt$gJC0Hz" resolve="Create_BjItem_Exception" />
             <node concept="2IFXgM" id="1dqt$gJC0TI" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJC15R" role="2_HrWp">
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
@@ -5089,12 +5078,12 @@
             </node>
             <node concept="2TlDos" id="1dqt$gJC0TK" role="2TlDj4">
               <ref role="3OiViF" to="1y8i:6XzXfke8ySG" resolve="Ok" />
-              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
-              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
+              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
               <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
-              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
               <node concept="2IFXgM" id="1dqt$gJC0TL" role="2_HrWp">
-                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
               </node>
               <node concept="Rm8GO" id="1dqt$gJGks_" role="2_HrWp">
                 <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
@@ -5106,24 +5095,24 @@
             </node>
           </node>
           <node concept="2TlDos" id="1dqt$gJGjsi" role="fOGQ8">
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
             <ref role="3uz5Vf" to="dtxg:1dqt$gJGjho" resolve="Create_BjItem_Cancel_GE" />
             <node concept="2IFXgM" id="1dqt$gJGjsj" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJGjH9" role="2_HrWp">
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
               <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
             </node>
             <node concept="2TlDos" id="1dqt$gJGjsl" role="2TlDj4">
-              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
-              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
+              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
               <ref role="3OiViF" to="1y8i:6XzXfke8ySG" resolve="Ok" />
               <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
-              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
               <node concept="2IFXgM" id="1dqt$gJGjsm" role="2_HrWp">
-                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
               </node>
               <node concept="Rm8GO" id="1dqt$gJGjOe" role="2_HrWp">
                 <ref role="Rm8GQ" to="1y8i:3xGERTNpF2i" resolve="CANCEL_IN_CONCLUSION" />
@@ -5136,23 +5125,23 @@
           </node>
           <node concept="2TlDos" id="1dqt$gJGjtk" role="fOGQ8">
             <ref role="3uz5Vf" to="dtxg:1dqt$gJGjlm" resolve="Create_BjItem_EX_GE" />
-            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create BatchJob Item" />
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+            <ref role="2_Hrw8" to="1y8i:4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
             <node concept="2IFXgM" id="1dqt$gJGjtl" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
             <node concept="Rm8GO" id="1dqt$gJGjFO" role="2_HrWp">
               <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
               <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
             </node>
             <node concept="2TlDos" id="1dqt$gJGjtn" role="2TlDj4">
-              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
+              <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
               <ref role="3OiViF" to="1y8i:6XzXfke8ySG" resolve="Ok" />
               <ref role="3Umo0L" to="1y8i:6XzXfke8zxx" resolve="Ok" />
-              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
-              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="BatchJobGO" />
+              <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
+              <ref role="3VdYhS" to="1y8i:6XzXfke8x43" resolve="Edit Invoice" />
               <node concept="2IFXgM" id="1dqt$gJGjto" role="2_HrWp">
-                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+                <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
               </node>
               <node concept="Rm8GO" id="1dqt$gJGjM8" role="2_HrWp">
                 <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
@@ -5161,6 +5150,13 @@
               <node concept="3clFbT" id="3exXxRetIPz" role="2_HrWp">
                 <property role="3clFbU" value="false" />
               </node>
+            </node>
+          </node>
+          <node concept="33WYYh" id="1FVEJAIYKmm" role="fOGQ8">
+            <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+            <ref role="2_Hrw8" to="1y8i:1FVEJAIXFWL" resolve="Create InvoiceFolder from Single Invoice" />
+            <node concept="2IFXgM" id="1FVEJAIYKo5" role="2_HrWp">
+              <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
             </node>
           </node>
           <node concept="Xl_RD" id="1dqt$gJDZnS" role="33Ov9O">
@@ -5195,7 +5191,7 @@
       </node>
       <node concept="2TG9WT" id="6XzXfke1aHS" role="3OfFNq">
         <node concept="PnLzW" id="6XzXfke1aHT" role="PoUSh">
-          <property role="PiFy3" value="25" />
+          <property role="PiFy3" value="20" />
         </node>
         <node concept="3Oe$u_" id="6XzXfke1aHU" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:6XzXfke1au6" resolve="timestamp" />
@@ -5209,17 +5205,25 @@
           <ref role="3O0p26" to="dtxg:6XzXfke7pmM" resolve="state" />
         </node>
       </node>
+      <node concept="3Oe2IN" id="1FVEJAJ3ysu" role="3OfFNq">
+        <node concept="PnLzW" id="1FVEJAJ3ysw" role="PoUSh">
+          <property role="PiFy3" value="5" />
+        </node>
+        <node concept="2Ma4Ex" id="1FVEJAJ3ytA" role="3$nDjG">
+          <ref role="2Ma4EA" to="dtxg:1FVEJAItPs0" resolve="folder" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="6XzXfke8yzE">
     <property role="1Nb$_v" value="true" />
     <property role="TrG5h" value="BatchJobItemPage" />
-    <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="Invoice" />
     <node concept="33WYYh" id="6XzXfke8zIg" role="fOGQ8">
-      <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="BatchJobProcess" />
-      <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="BatchJobChangeStatus" />
+      <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+      <ref role="2_Hrw8" to="1y8i:6XzXfke8xsE" resolve="Close Invoice" />
       <node concept="2IFXgM" id="6XzXfke8zIS" role="2_HrWp">
-        <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+        <ref role="2IFZ7r" to="dtxg:6XzXfke1alv" resolve="Invoice" />
       </node>
       <node concept="Rm8GO" id="1dqt$gJGt3a" role="2_HrWp">
         <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
@@ -5232,7 +5236,7 @@
     <node concept="2U5qGO" id="6XzXfke8y_1" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
-      <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="Invoice" />
       <node concept="2U5nhG" id="6XzXfke8y_3" role="2TFpq_" />
       <node concept="3Oe2IN" id="6XzXfke8y_y" role="3OfFNq">
         <node concept="3Oe$u_" id="6XzXfke8y_z" role="3$nDjG">
@@ -5264,12 +5268,12 @@
   </node>
   <node concept="2mKXYI" id="6XzXfke8yJy">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="BatchJobItemStatusChangePage" />
-    <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+    <property role="TrG5h" value="Invoice Editor" />
+    <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="Invoice" />
     <node concept="2U5qGO" id="6XzXfke8yJz" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
-      <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="BatchJobItem" />
+      <ref role="1Tjo7l" to="dtxg:6XzXfke1alv" resolve="Invoice" />
       <node concept="2U5nhG" id="6XzXfkedYnd" role="2TFpq_" />
       <node concept="3Oe2IN" id="6XzXfke8yJ_" role="3OfFNq">
         <node concept="3Oe$u_" id="6XzXfke8yJA" role="3$nDjG">
@@ -5299,6 +5303,12 @@
         <node concept="3Oe$u_" id="6XzXfke8yJI" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:6XzXfke7pmM" resolve="state" />
         </node>
+      </node>
+      <node concept="3Oe2Ik" id="1FVEJAIuhjz" role="3OfFNq">
+        <node concept="3Oe$u_" id="1FVEJAIuhj$" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItXAW" resolve="cancelText" />
+        </node>
+        <node concept="Pevqn" id="1FVEJAIuhk9" role="PoUSh" />
       </node>
     </node>
   </node>
@@ -5676,6 +5686,65 @@
           <node concept="3Oe$u_" id="2MI0JB6CHHG" role="3O0p8X">
             <ref role="3O0p26" to="dtxg:2MI0JB6BcxX" resolve="innerTast" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="4InK$iO3MMh">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="InvoiceFoldersList" />
+    <ref role="1Tjo7l" to="dtxg:1FVEJAItIuo" resolve="InvoiceFolder" />
+    <node concept="2U5qGQ" id="4InK$iO3MMj" role="21u2x1">
+      <property role="1Nb$_v" value="false" />
+      <property role="TrG5h" value="#" />
+      <ref role="1Tjo7l" to="dtxg:1FVEJAItIuo" resolve="InvoiceFolder" />
+      <node concept="PoWA$" id="4InK$iO3MMl" role="PoUSn" />
+      <node concept="3Oe2IN" id="4InK$iO3MMF" role="3OfFNq">
+        <node concept="PnLzW" id="4InK$iO3MMG" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="4InK$iO3MMH" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItIuv" resolve="id" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="4InK$iO3MMI" role="3OfFNq">
+        <node concept="PnLzW" id="4InK$iO3MMJ" role="PoUSh">
+          <property role="PiFy3" value="25" />
+        </node>
+        <node concept="3Oe$u_" id="4InK$iO3MMK" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItIx8" resolve="name" />
+        </node>
+      </node>
+      <node concept="2TG9WT" id="4InK$iO3MML" role="3OfFNq">
+        <node concept="PnLzW" id="4InK$iO3MMM" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="4InK$iO3MMN" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItIyo" resolve="date" />
+        </node>
+      </node>
+      <node concept="3Oe2IN" id="4InK$iO3MMO" role="3OfFNq">
+        <node concept="PnLzW" id="4InK$iO3MMP" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="4InK$iO3MMQ" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItJpd" resolve="numFolders" />
+        </node>
+      </node>
+      <node concept="3Oe2In" id="4InK$iO3MMR" role="3OfFNq">
+        <node concept="PnLzW" id="4InK$iO3MMS" role="PoUSh">
+          <property role="PiFy3" value="16" />
+        </node>
+        <node concept="3Oe$u_" id="4InK$iO3MMT" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItJrs" resolve="totalSum" />
+        </node>
+      </node>
+      <node concept="3Oe2Ik" id="4InK$iO3MMU" role="3OfFNq">
+        <node concept="PnLzW" id="4InK$iO3MMV" role="PoUSh">
+          <property role="PiFy3" value="25" />
+        </node>
+        <node concept="3Oe$u_" id="4InK$iO3MMW" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:1FVEJAItXyX" resolve="cancelText" />
         </node>
       </node>
     </node>
