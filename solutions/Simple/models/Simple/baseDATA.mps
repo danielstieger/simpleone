@@ -5039,6 +5039,9 @@
         </node>
       </node>
     </node>
+    <node concept="12nEzK" id="4lEQj7bpXUA" role="12nEwB">
+      <ref role="12nEzL" node="3cAl6M4nWUn" resolve="Article" />
+    </node>
   </node>
   <node concept="34Athd" id="1FVEJAItIuo">
     <property role="TrG5h" value="InvoiceFolder" />
