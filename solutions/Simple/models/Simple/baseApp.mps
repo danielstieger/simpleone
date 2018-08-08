@@ -152,6 +152,7 @@
       <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.OFXConfig" flags="ng" index="2CG7Z0">
         <property id="3526396426252206723" name="lastUpdated" index="2320hu" />
         <child id="478945708906902061" name="elements" index="2CGBMS" />
+        <child id="4625932951302987031" name="comcponentScanBase" index="3d0G2l" />
       </concept>
       <concept id="478945708907022269" name="org.modellwerkstatt.objectflow.structure.OFXConfigProperty" flags="ng" index="2CJ4$C">
         <property id="478945708938010900" name="ref" index="2DlMY1" />
@@ -650,92 +651,8 @@
       </node>
     </node>
     <node concept="2CPvp3" id="1$$A7zM8C7_" role="2CGBMS" />
-    <node concept="2CJoq6" id="1$$A7zNeFRA" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="1FVEJAIB8RS" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoice" />
-        <node concept="Xl_RD" id="1FVEJAIB8RT" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoice" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8RU" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoiceFolder" />
-        <node concept="Xl_RD" id="1FVEJAIB8RV" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoiceFolder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8RW" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="1FVEJAIB8RX" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8RY" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="1FVEJAIB8RZ" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8S0" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="1FVEJAIB8S1" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8S2" role="2CJdiS">
-        <property role="TrG5h" value="__invoice_Process" />
-        <node concept="Xl_RD" id="1FVEJAIB8S3" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Invoice_Process" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8S4" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="1FVEJAIB8S5" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8S6" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="1FVEJAIB8S7" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8S8" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="1FVEJAIB8S9" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8Sa" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="1FVEJAIB8Sb" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8Sc" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="1FVEJAIB8Sd" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8Se" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="1FVEJAIB8Sf" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8Sg" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="1FVEJAIB8Sh" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIB8Si" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="1FVEJAIB8Sj" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oF" role="3d0G2l">
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="vsIEjNpDA8">
@@ -984,92 +901,8 @@
       <node concept="2CPvp3" id="4d3Pnf3Y3vn" role="2CJdiS" />
       <node concept="2CPvp3" id="4d3Pnf3Y3ws" role="2CJdiS" />
     </node>
-    <node concept="2CJoq6" id="vsIEjNpHLa" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="6PKqlsSTpLh" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoice" />
-        <node concept="Xl_RD" id="6PKqlsSTpLi" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoice" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLj" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoiceFolder" />
-        <node concept="Xl_RD" id="6PKqlsSTpLk" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoiceFolder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLl" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="6PKqlsSTpLm" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLn" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="6PKqlsSTpLo" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLp" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="6PKqlsSTpLq" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLr" role="2CJdiS">
-        <property role="TrG5h" value="__invoice_Process" />
-        <node concept="Xl_RD" id="6PKqlsSTpLs" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Invoice_Process" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLt" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="6PKqlsSTpLu" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLv" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="6PKqlsSTpLw" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLx" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="6PKqlsSTpLy" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLz" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="6PKqlsSTpL$" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpL_" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="6PKqlsSTpLA" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLB" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="6PKqlsSTpLC" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLD" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="6PKqlsSTpLE" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="6PKqlsSTpLF" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="6PKqlsSTpLG" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oC" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
@@ -1282,86 +1115,8 @@
       <node concept="2CPvp3" id="49EzYiePzEo" role="2CJdiS" />
       <node concept="2CPvp3" id="49EzYiePzEp" role="2CJdiS" />
     </node>
-    <node concept="2CJoq6" id="49EzYiePzEq" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="5WG4isehAOp" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBatchJobItem" />
-        <node concept="Xl_RD" id="5WG4isehAOq" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBatchJobItem" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOr" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="5WG4isehAOs" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOt" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="5WG4isehAOu" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOv" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="5WG4isehAOw" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOx" role="2CJdiS">
-        <property role="TrG5h" value="__batchJobProcess" />
-        <node concept="Xl_RD" id="5WG4isehAOy" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.BatchJobProcess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOz" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="5WG4isehAO$" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAO_" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="5WG4isehAOA" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOB" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="5WG4isehAOC" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOD" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="5WG4isehAOE" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOF" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="5WG4isehAOG" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOH" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="5WG4isehAOI" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOJ" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="5WG4isehAOK" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAOL" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="5WG4isehAOM" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oG" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="3JDCTW" id="5E5qL$GrDMr">
@@ -1632,86 +1387,8 @@
       <node concept="2CPvp3" id="B01fqRMJBm" role="2CJdiS" />
       <node concept="2CPvp3" id="B01fqRMJBn" role="2CJdiS" />
     </node>
-    <node concept="2CJoq6" id="B01fqRMJBo" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="5WG4isehB3b" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBatchJobItem" />
-        <node concept="Xl_RD" id="5WG4isehB3c" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBatchJobItem" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3d" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="5WG4isehB3e" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3f" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="5WG4isehB3g" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3h" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="5WG4isehB3i" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3j" role="2CJdiS">
-        <property role="TrG5h" value="__batchJobProcess" />
-        <node concept="Xl_RD" id="5WG4isehB3k" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.BatchJobProcess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3l" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="5WG4isehB3m" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3n" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="5WG4isehB3o" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3p" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="5WG4isehB3q" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3r" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="5WG4isehB3s" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3t" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="5WG4isehB3u" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3v" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="5WG4isehB3w" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3x" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="5WG4isehB3y" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehB3z" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="5WG4isehB3$" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oI" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
@@ -2392,86 +2069,8 @@
       <node concept="2CPvp3" id="2RoKLt0pbg2" role="2CJdiS" />
       <node concept="2CPvp3" id="2RoKLt0pbg3" role="2CJdiS" />
     </node>
-    <node concept="2CJoq6" id="2RoKLt0pbg4" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="5WG4isehAV5" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBatchJobItem" />
-        <node concept="Xl_RD" id="5WG4isehAV6" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBatchJobItem" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAV7" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="5WG4isehAV8" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAV9" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="5WG4isehAVa" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVb" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="5WG4isehAVc" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVd" role="2CJdiS">
-        <property role="TrG5h" value="__batchJobProcess" />
-        <node concept="Xl_RD" id="5WG4isehAVe" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.BatchJobProcess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVf" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="5WG4isehAVg" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVh" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="5WG4isehAVi" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVj" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="5WG4isehAVk" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVl" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="5WG4isehAVm" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVn" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="5WG4isehAVo" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVp" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="5WG4isehAVq" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVr" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="5WG4isehAVs" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAVt" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="5WG4isehAVu" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oB" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2CG7Z0" id="15Ng79oa4AB">
@@ -2779,86 +2378,8 @@
       </node>
     </node>
     <node concept="2CPvp3" id="15Ng79oa4Cn" role="2CGBMS" />
-    <node concept="2CJoq6" id="15Ng79oa4Co" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="5WG4isehAKK" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBatchJobItem" />
-        <node concept="Xl_RD" id="5WG4isehAKL" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBatchJobItem" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKM" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="5WG4isehAKN" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKO" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="5WG4isehAKP" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKQ" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="5WG4isehAKR" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKS" role="2CJdiS">
-        <property role="TrG5h" value="__batchJobProcess" />
-        <node concept="Xl_RD" id="5WG4isehAKT" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.BatchJobProcess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKU" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="5WG4isehAKV" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKW" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="5WG4isehAKX" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAKY" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="5WG4isehAKZ" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAL0" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="5WG4isehAL1" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAL2" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="5WG4isehAL3" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAL4" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="5WG4isehAL5" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAL6" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="5WG4isehAL7" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="5WG4isehAL8" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="5WG4isehAL9" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oH" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2CG7Z0" id="4zRKoOKIHTo">
@@ -2936,6 +2457,9 @@
           <property role="Xl_RC" value="test" />
         </node>
       </node>
+    </node>
+    <node concept="Xl_RD" id="40MBoadB2oJ" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2CG7Z0" id="3tgwmmDjmur">
@@ -3137,92 +2661,8 @@
       </node>
     </node>
     <node concept="2CPvp3" id="3tgwmmDkExu" role="2CGBMS" />
-    <node concept="2CJoq6" id="4jlzLDlwiuA" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="1FVEJAIRdeB" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoice" />
-        <node concept="Xl_RD" id="1FVEJAIRdeC" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoice" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeD" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoiceFolder" />
-        <node concept="Xl_RD" id="1FVEJAIRdeE" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoiceFolder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeF" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="1FVEJAIRdeG" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeH" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="1FVEJAIRdeI" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeJ" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="1FVEJAIRdeK" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeL" role="2CJdiS">
-        <property role="TrG5h" value="__invoice_Process" />
-        <node concept="Xl_RD" id="1FVEJAIRdeM" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Invoice_Process" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeN" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="1FVEJAIRdeO" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeP" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="1FVEJAIRdeQ" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeR" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="1FVEJAIRdeS" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeT" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="1FVEJAIRdeU" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeV" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="1FVEJAIRdeW" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeX" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="1FVEJAIRdeY" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdeZ" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="1FVEJAIRdf0" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIRdf1" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="1FVEJAIRdf2" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oE" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2CG7Z0" id="382CQP52o$k">
@@ -3425,92 +2865,8 @@
       </node>
     </node>
     <node concept="2CPvp3" id="382CQP52o_r" role="2CGBMS" />
-    <node concept="2CJoq6" id="382CQP52o_s" role="2CGBMS">
-      <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="1FVEJAIMfvz" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoice" />
-        <node concept="Xl_RD" id="1FVEJAIMfv$" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoice" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfv_" role="2CJdiS">
-        <property role="TrG5h" value="Simple.baseDATA.MapBInvoiceFolder" />
-        <node concept="Xl_RD" id="1FVEJAIMfvA" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.MapBInvoiceFolder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvB" role="2CJdiS">
-        <property role="TrG5h" value="__tileService" />
-        <node concept="Xl_RD" id="1FVEJAIMfvC" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TileService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvD" role="2CJdiS">
-        <property role="TrG5h" value="__xxxService" />
-        <node concept="Xl_RD" id="1FVEJAIMfvE" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.xxxService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvF" role="2CJdiS">
-        <property role="TrG5h" value="__orderprocess" />
-        <node concept="Xl_RD" id="1FVEJAIMfvG" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Orderprocess" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvH" role="2CJdiS">
-        <property role="TrG5h" value="__invoice_Process" />
-        <node concept="Xl_RD" id="1FVEJAIMfvI" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.Invoice_Process" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvJ" role="2CJdiS">
-        <property role="TrG5h" value="__testRoles" />
-        <node concept="Xl_RD" id="1FVEJAIMfvK" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.basePROC.TestRoles" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvL" role="2CJdiS">
-        <property role="TrG5h" value="__testDataOrder" />
-        <node concept="Xl_RD" id="1FVEJAIMfvM" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataOrder" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvN" role="2CJdiS">
-        <property role="TrG5h" value="__dataManager" />
-        <node concept="Xl_RD" id="1FVEJAIMfvO" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.DataManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvP" role="2CJdiS">
-        <property role="TrG5h" value="__testDataStore" />
-        <node concept="Xl_RD" id="1FVEJAIMfvQ" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestDataStore" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvR" role="2CJdiS">
-        <property role="TrG5h" value="__testModelRepo" />
-        <node concept="Xl_RD" id="1FVEJAIMfvS" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TestModelRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvT" role="2CJdiS">
-        <property role="TrG5h" value="__theService" />
-        <node concept="Xl_RD" id="1FVEJAIMfvU" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseDATA.TheService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvV" role="2CJdiS">
-        <property role="TrG5h" value="__docProc" />
-        <node concept="Xl_RD" id="1FVEJAIMfvW" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocProc" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="1FVEJAIMfvX" role="2CJdiS">
-        <property role="TrG5h" value="__docDataService" />
-        <node concept="Xl_RD" id="1FVEJAIMfvY" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.inheritance.DocDataService" />
-        </node>
-      </node>
+    <node concept="Xl_RD" id="40MBoadB2oD" role="3d0G2l">
+      <property role="Xl_RC" value="Simple.baseApp" />
     </node>
   </node>
   <node concept="2AUT8P" id="2B50FNWLyE8">
