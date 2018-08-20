@@ -143,7 +143,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
-      <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXTestStatementList" flags="ig" index="2d2NRx" />
+      <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXVoidStatementList" flags="ig" index="2d2NRx" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
         <reference id="3875131616719438755" name="process" index="2_Hrwf" />
@@ -307,6 +307,7 @@
         <child id="4503841283145840496" name="exceptionStrategy" index="3w9mMS" />
         <child id="830315156970378402" name="pairs" index="1_k$Iu" />
       </concept>
+      <concept id="754349571275928331" name="org.modellwerkstatt.dataux.structure.OptRunInConsole" flags="ng" index="MakZV" />
       <concept id="7784207101901652180" name="org.modellwerkstatt.dataux.structure.AppUiModule" flags="ng" index="2MVcZ9">
         <child id="4079546759073522236" name="configuredComponents" index="23Ghgl" />
         <child id="2781909770750563212" name="tiles" index="2$nsuY" />
@@ -902,7 +903,7 @@
       <node concept="2CPvp3" id="4d3Pnf3Y3ws" role="2CJdiS" />
     </node>
     <node concept="Xl_RD" id="40MBoadB2oC" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
@@ -1116,7 +1117,7 @@
       <node concept="2CPvp3" id="49EzYiePzEp" role="2CJdiS" />
     </node>
     <node concept="Xl_RD" id="40MBoadB2oG" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="3JDCTW" id="5E5qL$GrDMr">
@@ -1388,7 +1389,7 @@
       <node concept="2CPvp3" id="B01fqRMJBn" role="2CJdiS" />
     </node>
     <node concept="Xl_RD" id="40MBoadB2oI" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
@@ -2070,7 +2071,7 @@
       <node concept="2CPvp3" id="2RoKLt0pbg3" role="2CJdiS" />
     </node>
     <node concept="Xl_RD" id="40MBoadB2oB" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="15Ng79oa4AB">
@@ -2379,7 +2380,7 @@
     </node>
     <node concept="2CPvp3" id="15Ng79oa4Cn" role="2CGBMS" />
     <node concept="Xl_RD" id="40MBoadB2oH" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="4zRKoOKIHTo">
@@ -2459,7 +2460,7 @@
       </node>
     </node>
     <node concept="Xl_RD" id="40MBoadB2oJ" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="3tgwmmDjmur">
@@ -2662,7 +2663,7 @@
     </node>
     <node concept="2CPvp3" id="3tgwmmDkExu" role="2CGBMS" />
     <node concept="Xl_RD" id="40MBoadB2oE" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="382CQP52o$k">
@@ -2866,7 +2867,7 @@
     </node>
     <node concept="2CPvp3" id="382CQP52o_r" role="2CGBMS" />
     <node concept="Xl_RD" id="40MBoadB2oD" role="3d0G2l">
-      <property role="Xl_RC" value="Simple.baseApp" />
+      <property role="Xl_RC" value="Simple" />
     </node>
   </node>
   <node concept="2AUT8P" id="2B50FNWLyE8">
@@ -2952,7 +2953,7 @@
   </node>
   <node concept="2AUT8P" id="2B50FNWRyPd">
     <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="TestConfigurationForFX8" />
+    <ref role="2WPtWl" node="382CQP52o$k" resolve="BatchConfigConsole" />
     <node concept="1_k$Jf" id="4bYxf2FkOrC" role="1_k$Iu">
       <property role="TrG5h" value="Create new Invoices" />
       <node concept="3znxp0" id="3U0QWzu0Gy5" role="1_kBZ6">
@@ -3284,6 +3285,7 @@
         </node>
       </node>
     </node>
+    <node concept="MakZV" id="5zdT7CxuJmH" role="2A_d42" />
     <node concept="3lKYF6" id="2B50FNWRzqs" role="2A_d42">
       <property role="1R4AEf" value="1" />
       <ref role="2k5inG" node="1FVEJAIW7Kc" resolve="Create InvoiceFolders" />
