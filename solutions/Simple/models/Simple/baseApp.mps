@@ -1454,7 +1454,7 @@
       <ref role="3uz5Vf" to="dtxg:3ob8bMn5Wwy" resolve="EditOrder8" />
       <node concept="10Nm6u" id="3Z5UV2c7SwV" role="2_HrWp" />
       <node concept="3cmrfG" id="3Z5UV2c7SwW" role="2_HrWp">
-        <property role="3cmrfH" value="8" />
+        <property role="3cmrfH" value="2" />
       </node>
       <node concept="3clFbT" id="3Z5UV2c7SwX" role="2_HrWp">
         <property role="3clFbU" value="false" />
