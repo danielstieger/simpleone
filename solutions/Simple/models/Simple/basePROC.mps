@@ -4733,9 +4733,9 @@
     </node>
   </node>
   <node concept="3ugp7m" id="206uhc7i3fr">
-    <property role="TrG5h" value="Complete Order (Multi GO)" />
     <property role="3uBtrS" value="F_70" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="TrG5h" value="Complete Order (Multi GO)" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="7dlwzTfFKwK" role="3ulXEL">
       <property role="TrG5h" value="spec" />
@@ -4865,6 +4865,10 @@
     <node concept="3ulXEN" id="7TgG1qSrjF2" role="3ulXEL">
       <property role="TrG5h" value="brandNewNotExisting" />
       <node concept="10P_77" id="7TgG1qSrjHL" role="1tU5fm" />
+    </node>
+    <node concept="3ulXEN" id="5YEYfHw0hJT" role="3ulXEL">
+      <property role="TrG5h" value="cancelOnInit" />
+      <node concept="10P_77" id="5YEYfHw0hMp" role="1tU5fm" />
     </node>
     <node concept="1t46OP" id="U8r3YqcWUL" role="1t4FgK">
       <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
@@ -5040,7 +5044,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="U8r3Yq8OEC" role="3cqZAp" />
+        <node concept="10Adxh" id="5YEYfHw0hNb" role="3cqZAp">
+          <node concept="Xl_RD" id="5YEYfHw0hTA" role="10Adiu">
+            <property role="Xl_RC" value="Cancel on init." />
+          </node>
+          <node concept="3urNQE" id="5YEYfHw0hZZ" role="10Adiv">
+            <ref role="3cqZAo" node="5YEYfHw0hJT" resolve="cancelOnInit" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="7TgG1qSrk2z" role="3cqZAp">
           <node concept="3clFbS" id="7TgG1qSrk2_" role="3clFbx">
             <node concept="3cpWs8" id="U8r3Yq8Vb2" role="3cqZAp">

@@ -2805,7 +2805,7 @@
                     <property role="3cmrfH" value="50" />
                   </node>
                   <node concept="3cmrfG" id="cMAJ_M$Eqq" role="37wK5m">
-                    <property role="3cmrfH" value="100000" />
+                    <property role="3cmrfH" value="1000" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3cAl6M4oUHL" role="37vLTJ">
@@ -2949,7 +2949,7 @@
               <ref role="3cqZAo" node="3cAl6M4oLsd" resolve="i" />
             </node>
             <node concept="3cmrfG" id="15Ng79obhZu" role="3uHU7w">
-              <property role="3cmrfH" value="2" />
+              <property role="3cmrfH" value="15" />
             </node>
           </node>
           <node concept="3uNrnE" id="3cAl6M4oLGF" role="1Dwrff">
