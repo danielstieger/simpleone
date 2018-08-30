@@ -3746,23 +3746,39 @@
       <property role="TrG5h" value="CMP_CompleteOrder_Cancel" />
       <node concept="2kzhL4" id="7dlwzTfDuzy" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfDuzz" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel)" />
+          <property role="Xl_RC" value="Compound - Complete Order (cancel GE)" />
         </node>
       </node>
     </node>
     <node concept="il5_x" id="7dlwzTfDxj9" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO" />
+      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO_Init" />
       <node concept="2kzhL4" id="7dlwzTfDxja" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfDxjb" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel GO)" />
+          <property role="Xl_RC" value="Compound - Complete Order (cancel GO init)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6HvFgwcT6oG" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO_Conc" />
+      <node concept="2kzhL4" id="6HvFgwcT6oH" role="2kzgdm">
+        <node concept="Xl_RD" id="6HvFgwcT6oI" role="il5_5">
+          <property role="Xl_RC" value="Compound - Complete Order (cancel GO con)" />
         </node>
       </node>
     </node>
     <node concept="il5_x" id="7dlwzTfDApp" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Flag_GO" />
+      <property role="TrG5h" value="CMP_CompleteOrder_Flag_GO_Init" />
       <node concept="2kzhL4" id="7dlwzTfDApq" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfDApr" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (flag GO)" />
+          <property role="Xl_RC" value="Compound - Complete Order (flag GO init" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6HvFgwcUm8O" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_CompleteOrder_Flag_GO_Conc" />
+      <node concept="2kzhL4" id="6HvFgwcUm8P" role="2kzgdm">
+        <node concept="Xl_RD" id="6HvFgwcUm8Q" role="il5_5">
+          <property role="Xl_RC" value="Compound - Complete Order (flag GO con)" />
         </node>
       </node>
     </node>
@@ -3770,7 +3786,7 @@
       <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Flag" />
       <node concept="2kzhL4" id="7dlwzTfL4wq" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfL4wr" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel, flag GO)" />
+          <property role="Xl_RC" value="Compound - Complete Order (flag GE)" />
         </node>
       </node>
     </node>
@@ -3805,10 +3821,18 @@
       </node>
     </node>
     <node concept="il5_x" id="3cZhE1VQBZZ" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_NEW_ORDER_CANCEL" />
+      <property role="TrG5h" value="SUC_NEW_ORDER_CANCEL_Pre" />
       <node concept="2kzhL4" id="3cZhE1VQC00" role="2kzgdm">
         <node concept="Xl_RD" id="3cZhE1VQC01" role="il5_5">
-          <property role="Xl_RC" value="Task Handling (new Order, cancel)" />
+          <property role="Xl_RC" value="Task Handling (new Order, cancel in pre)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6HvFgwd9lmS" role="2kzhMJ">
+      <property role="TrG5h" value="SUC_NEW_ORDER_CANCEL_Suc" />
+      <node concept="2kzhL4" id="6HvFgwd9lmT" role="2kzgdm">
+        <node concept="Xl_RD" id="6HvFgwd9lmU" role="il5_5">
+          <property role="Xl_RC" value="Task Handling (new Order, cancel in suc)" />
         </node>
       </node>
     </node>
@@ -3905,6 +3929,22 @@
       <node concept="2kzhL4" id="s8qRnhAwJo" role="2kzgdm">
         <node concept="Xl_RD" id="s8qRnhAwJp" role="il5_5">
           <property role="Xl_RC" value="Compound - 2UI flag outer" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6HvFgwd0iLm" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_EX_OUTER" />
+      <node concept="2kzhL4" id="6HvFgwd0iLn" role="2kzgdm">
+        <node concept="Xl_RD" id="6HvFgwd0iLo" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI ex outer" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6HvFgwd0iPI" role="2kzhMJ">
+      <property role="TrG5h" value="CMP_2UI_EX_INNER" />
+      <node concept="2kzhL4" id="6HvFgwd0iPJ" role="2kzgdm">
+        <node concept="Xl_RD" id="6HvFgwd0iPK" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2UI ex inner" />
         </node>
       </node>
     </node>
