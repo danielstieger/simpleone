@@ -3707,7 +3707,7 @@
       <property role="TrG5h" value="CMP_EditHeadFullUi_FlagInConclusion" />
       <node concept="2kzhL4" id="3xGERTNpFVT" role="2kzgdm">
         <node concept="Xl_RD" id="3xGERTNpFVU" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI flag in conlcusion)" />
+          <property role="Xl_RC" value="Compound - Edit Head (Full UI cancel in conlcusion)" />
         </node>
       </node>
     </node>

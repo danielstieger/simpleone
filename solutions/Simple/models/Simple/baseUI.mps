@@ -4290,7 +4290,7 @@
             </node>
           </node>
           <node concept="Xl_RD" id="yVRSBcWNWz" role="33Ov9O">
-            <property role="Xl_RC" value="Edit Order (no UI) + Edit Order Header (SUB_GRAPH_OWNER" />
+            <property role="Xl_RC" value="GO on auto + GE on edit" />
           </node>
         </node>
         <node concept="fOGPe" id="yVRSBcWNW$" role="fOGQ8">
@@ -4480,7 +4480,7 @@
             </node>
           </node>
           <node concept="Xl_RD" id="yVRSBcWNXs" role="33Ov9O">
-            <property role="Xl_RC" value="Edit Order (+ UI) + Edit Order Pos" />
+            <property role="Xl_RC" value="GO Ui + GE Ui" />
           </node>
         </node>
         <node concept="fOGPe" id="s8qRniasoi" role="fOGQ8">
