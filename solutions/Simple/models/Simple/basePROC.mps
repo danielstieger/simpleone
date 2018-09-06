@@ -16,6 +16,7 @@
     <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(Simple.baseUI)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="ey3s" ref="r:d3df241e-bcd2-4499-9490-fa2ee2437c81(org.modellwerkstatt.objectflow.events)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.solution/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -192,7 +193,7 @@
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="6525155817176738379" name="org.modellwerkstatt.objectflow.structure.PageInitConceptFunc" flags="ig" index="20qEzJ" />
-      <concept id="6525155817176754757" name="org.modellwerkstatt.objectflow.structure.VoidStatementList" flags="ig" index="20qIzx" />
+      <concept id="6525155817176754757" name="org.modellwerkstatt.objectflow.structure.CommandVoidStatementList" flags="ig" index="20qIzx" />
       <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
         <child id="6525155817177697693" name="lines" index="20vkWT" />
       </concept>
@@ -212,6 +213,13 @@
       </concept>
       <concept id="1410680821326658964" name="org.modellwerkstatt.objectflow.structure.BPMetaReference" flags="ng" index="2dcwcJ">
         <reference id="1410680821326658966" name="businessProperty" index="2dcwcH" />
+      </concept>
+      <concept id="2841559548787358444" name="org.modellwerkstatt.objectflow.structure.PageEventVarReference" flags="ng" index="2uYsmQ">
+        <reference id="2841559548787359020" name="event" index="2uYs9Q" />
+      </concept>
+      <concept id="2841559548776424452" name="org.modellwerkstatt.objectflow.structure.PageEvent" flags="ng" index="2vBLHu">
+        <child id="2841559548776426563" name="classifierType" index="2vBLcp" />
+        <child id="2841559548776424651" name="function" index="2vBLIh" />
       </concept>
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
@@ -315,6 +323,7 @@
       </concept>
       <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.Page" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
+        <child id="2841559548776440554" name="events" index="2vBPQK" />
         <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
@@ -8928,13 +8937,49 @@
     <property role="TrG5h" value="Clear Order" />
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ugp7q" id="3l4K2g79nG5" role="3ug97V">
-      <property role="TrG5h" value="Standard" />
+      <property role="TrG5h" value="Page_1" />
       <ref role="3gcvY6" to="dtxg:4u029Jv8vvH" resolve="Order" />
+      <node concept="2vBLHu" id="2tJfPET9KNm" role="2vBPQK">
+        <property role="TrG5h" value="myEvent" />
+        <node concept="3uibUv" id="2tJfPEThVoX" role="2vBLcp">
+          <ref role="3uigEE" to="ey3s:2tJfPET9LIX" resolve="PLogEvent" />
+        </node>
+        <node concept="20qIzx" id="2tJfPET9KNo" role="2vBLIh">
+          <node concept="3clFbS" id="2tJfPET9KNp" role="2VODD2">
+            <node concept="3clFbF" id="2tJfPET_Jfr" role="3cqZAp">
+              <node concept="2OqwBi" id="2tJfPET_Jfo" role="3clFbG">
+                <node concept="10M0yZ" id="2tJfPET_Jfp" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="2tJfPET_Jfq" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="2tJfPET_Jmn" role="37wK5m">
+                    <node concept="2uYsmQ" id="2tJfPETY3TY" role="3uHU7w">
+                      <ref role="2uYs9Q" node="2tJfPET9KNm" resolve="myEvent" />
+                    </node>
+                    <node concept="Xl_RD" id="2tJfPET_Jg7" role="3uHU7B">
+                      <property role="Xl_RC" value="Event is " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="3iJaUC6isFL" role="3cqZAp" />
+            <node concept="10Adit" id="2tJfPETY3YZ" role="3cqZAp">
+              <node concept="Xl_RD" id="2tJfPETY40o" role="10Adiu">
+                <property role="Xl_RC" value="Received event. " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="10qiFn" id="3l4K2g79nKI" role="10qiF9">
         <property role="TrG5h" value="Ok" />
         <ref role="2DFCCC" to="dtxg:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="3l4K2g79nMc" role="10ot2L">
           <node concept="3clFbS" id="3l4K2g79nMd" role="2VODD2">
+            <node concept="3clFbH" id="3iJaUC6cYpt" role="3cqZAp" />
             <node concept="10Adxj" id="3l4K2g79nMn" role="3cqZAp" />
           </node>
         </node>

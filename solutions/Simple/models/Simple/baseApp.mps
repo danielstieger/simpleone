@@ -14,6 +14,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
     <import index="kpm6" ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(Simple.inheritance)" />
+    <import index="jfb4" ref="r:9641c0a2-41b3-496e-9ba1-063c9451cbb0(Simple.eventing)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.solution/)" implicit="true" />
     <import index="z3ji" ref="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)" implicit="true" />
@@ -1446,6 +1447,13 @@
         <ref role="2_Hrw8" to="1y8i:6gkV9KP8PSo" resolve="Open external Link" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <node concept="10Nm6u" id="6gkV9KPaHvE" role="2_HrWp" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="3iJaUC7j175" role="2$nsuY">
+      <node concept="33WYYh" id="3iJaUC7j176" role="2$ntUL">
+        <ref role="2_Hrwf" to="jfb4:5A$AnVDpmyw" resolve="EventProc" />
+        <ref role="2_Hrw8" to="jfb4:5A$AnVDpmNj" resolve="View Events" />
+        <node concept="10Nm6u" id="3iJaUC7j1ak" role="2_HrWp" />
       </node>
     </node>
     <node concept="33WYYh" id="3Z5UV2c7SwU" role="2N77jT">
