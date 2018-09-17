@@ -2,8 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mowareHome}/h2forms/languages/org.modellwerkstatt.h2forms/runtime/org.modellwerkstatt.h2forms.msd" folder="" />
-      <modulePath path="${mowareHome}/manmap/solutions/org.modellwerkstatt.manmap.solution/org.modellwerkstatt.manmap.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Simple/Simple.msd" folder="" />
     </projectModules>
   </component>
