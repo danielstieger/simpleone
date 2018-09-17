@@ -11,7 +11,7 @@
   <imports>
     <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" />
-    <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" />
+    <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
     <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(Simple.baseUI)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
@@ -8942,7 +8942,7 @@
       <node concept="2vBLHu" id="2tJfPET9KNm" role="2vBPQK">
         <property role="TrG5h" value="myEvent" />
         <node concept="3uibUv" id="2tJfPEThVoX" role="2vBLcp">
-          <ref role="3uigEE" to="ey3s:2tJfPET9LIX" resolve="PLogEvent" />
+          <ref role="3uigEE" to="ey3s:2tJfPET9LIX" resolve="Pinger" />
         </node>
         <node concept="20qIzx" id="2tJfPET9KNo" role="2vBLIh">
           <node concept="3clFbS" id="2tJfPET9KNp" role="2VODD2">
