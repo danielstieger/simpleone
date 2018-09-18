@@ -297,6 +297,12 @@
       </concept>
     </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
+      <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe">
+        <child id="3887124829268092187" name="label" index="33Ov9O" />
+      </concept>
+      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ng" index="fOGQ9">
+        <child id="1750699687529771423" name="menuItems" index="fOGQ8" />
+      </concept>
       <concept id="2781909770750560564" name="org.modellwerkstatt.dataux.structure.AppTile" flags="ng" index="2$ntO6">
         <child id="2781909770750560899" name="action" index="2$ntUL" />
         <child id="2781909770750561024" name="tileLabel" index="2$ntWM" />
@@ -751,13 +757,6 @@
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App Desktop Order" />
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="FX8_Lola" />
-    <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
-      <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
-        <ref role="2_Hrwf" to="kpm6:5A$AnVDpmyw" resolve="DocProc" />
-        <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
-        <node concept="10Nm6u" id="5A$AnVDr_im" role="2_HrWp" />
-      </node>
-    </node>
     <node concept="2$ntO6" id="2qrl3a2NyvY" role="2$nsuY">
       <node concept="33WYYh" id="2qrl3a2PL9H" role="2$ntUL">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
@@ -773,6 +772,13 @@
         <property role="Xl_RC" value="THE search command for orders" />
       </node>
     </node>
+    <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
+      <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
+        <ref role="2_Hrwf" to="kpm6:5A$AnVDpmyw" resolve="DocProc" />
+        <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
+        <node concept="10Nm6u" id="5A$AnVDr_im" role="2_HrWp" />
+      </node>
+    </node>
     <node concept="2$ntO6" id="2HibT1wOZJW" role="2$nsuY">
       <node concept="33WYYh" id="2HibT1wOZJX" role="2$ntUL">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
@@ -781,20 +787,6 @@
         <node concept="3cmrfG" id="2HibT1wOZM$" role="2_HrWp">
           <property role="3cmrfH" value="10" />
         </node>
-      </node>
-    </node>
-    <node concept="2$ntO6" id="6XzXfke1ccM" role="2$nsuY">
-      <node concept="33WYYh" id="6XzXfke1ccN" role="2$ntUL">
-        <ref role="2_Hrw8" to="1y8i:6XzXfke15oI" resolve="Search for Invoices" />
-        <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
-        <node concept="10Nm6u" id="6XzXfke1cdR" role="2_HrWp" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="4InK$iO3MWZ" role="2$nsuY">
-      <node concept="33WYYh" id="4InK$iO3MX0" role="2$ntUL">
-        <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
-        <ref role="2_Hrw8" to="1y8i:4InK$iO3KE1" resolve="Mark InvoiceFolders with current date" />
-        <node concept="10Nm6u" id="4InK$iO3MX1" role="2_HrWp" />
       </node>
     </node>
     <node concept="2$ntO6" id="6gkV9KPaHvC" role="2$nsuY">
@@ -811,44 +803,64 @@
         <node concept="10Nm6u" id="3iJaUC7j1ak" role="2_HrWp" />
       </node>
     </node>
-    <node concept="33WYYh" id="3Z5UV2c7SwU" role="2N77jT">
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-      <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
-      <ref role="3uz5Vf" to="dtxg:3ob8bMn5Wwy" resolve="EditOrder8" />
-      <node concept="10Nm6u" id="3Z5UV2c7SwV" role="2_HrWp" />
-      <node concept="3cmrfG" id="3Z5UV2c7SwW" role="2_HrWp">
-        <property role="3cmrfH" value="2" />
+    <node concept="fOGPe" id="1gJQ5nCsovY" role="2N77jT">
+      <node concept="33WYYh" id="3Z5UV2c7SwU" role="fOGQ8">
+        <ref role="3uz5Vf" to="dtxg:3ob8bMn5Wwy" resolve="EditOrder8" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
+        <node concept="10Nm6u" id="3Z5UV2c7SwV" role="2_HrWp" />
+        <node concept="3cmrfG" id="3Z5UV2c7SwW" role="2_HrWp">
+          <property role="3cmrfH" value="2" />
+        </node>
+        <node concept="3clFbT" id="3Z5UV2c7SwX" role="2_HrWp">
+          <property role="3clFbU" value="false" />
+        </node>
+        <node concept="Rm8GO" id="7dlwzTfDGT8" role="2_HrWp">
+          <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+          <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
+        </node>
       </node>
-      <node concept="3clFbT" id="3Z5UV2c7SwX" role="2_HrWp">
-        <property role="3clFbU" value="false" />
+      <node concept="33WYYh" id="5SbyawjeZII" role="fOGQ8">
+        <ref role="2_Hrw8" to="1y8i:5SbyawjeQdI" resolve="Show Empty Order" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <node concept="10Nm6u" id="5SbyawjeZOu" role="2_HrWp" />
       </node>
-      <node concept="Rm8GO" id="7dlwzTfDGT8" role="2_HrWp">
-        <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-        <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
+      <node concept="33WYYh" id="7P$uL5PMOJ7" role="fOGQ8">
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:7P$uL5PDZM2" resolve="Update Conclusion" />
+        <node concept="10Nm6u" id="7P$uL5PMOLa" role="2_HrWp" />
+      </node>
+      <node concept="33WYYh" id="3wkdm3W8f8l" role="fOGQ8">
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:3wkdm3W8dpZ" resolve="MasterData Editor" />
+        <node concept="10Nm6u" id="3wkdm3W8f9O" role="2_HrWp" />
+        <node concept="3cmrfG" id="3wkdm3W8fa6" role="2_HrWp">
+          <property role="3cmrfH" value="10" />
+        </node>
+      </node>
+      <node concept="33WYYh" id="v00WQapSY3" role="fOGQ8">
+        <ref role="2_Hrw8" to="1y8i:3wkdm3WbpA6" resolve="MasterData Creator" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <node concept="10Nm6u" id="v00WQapSZ_" role="2_HrWp" />
+      </node>
+      <node concept="Xl_RD" id="1gJQ5nCsow0" role="33Ov9O">
+        <property role="Xl_RC" value="Order" />
       </node>
     </node>
-    <node concept="33WYYh" id="5SbyawjeZII" role="2N77jT">
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-      <ref role="2_Hrw8" to="1y8i:5SbyawjeQdI" resolve="Show Empty Order" />
-      <node concept="10Nm6u" id="5SbyawjeZOu" role="2_HrWp" />
-    </node>
-    <node concept="33WYYh" id="7P$uL5PMOJ7" role="2N77jT">
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-      <ref role="2_Hrw8" to="1y8i:7P$uL5PDZM2" resolve="Update Conclusion" />
-      <node concept="10Nm6u" id="7P$uL5PMOLa" role="2_HrWp" />
-    </node>
-    <node concept="33WYYh" id="3wkdm3W8f8l" role="2N77jT">
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-      <ref role="2_Hrw8" to="1y8i:3wkdm3W8dpZ" resolve="MasterData Editor" />
-      <node concept="10Nm6u" id="3wkdm3W8f9O" role="2_HrWp" />
-      <node concept="3cmrfG" id="3wkdm3W8fa6" role="2_HrWp">
-        <property role="3cmrfH" value="10" />
+    <node concept="fOGPe" id="1gJQ5nCso$P" role="2N77jT">
+      <node concept="33WYYh" id="1gJQ5nCso$Q" role="fOGQ8">
+        <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+        <ref role="2_Hrw8" to="1y8i:6XzXfke15oI" resolve="Search for Invoices" />
+        <node concept="10Nm6u" id="1gJQ5nCsoOi" role="2_HrWp" />
       </node>
-    </node>
-    <node concept="33WYYh" id="v00WQapSY3" role="2N77jT">
-      <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-      <ref role="2_Hrw8" to="1y8i:3wkdm3WbpA6" resolve="MasterData Creator" />
-      <node concept="10Nm6u" id="v00WQapSZ_" role="2_HrWp" />
+      <node concept="33WYYh" id="1gJQ5nCsoOR" role="fOGQ8">
+        <ref role="2_Hrwf" to="1y8i:6XzXfke8x6E" resolve="Invoice Process" />
+        <ref role="2_Hrw8" to="1y8i:4InK$iO3KE1" resolve="Mark InvoiceFolders with current date" />
+        <node concept="10Nm6u" id="1gJQ5nCsoOS" role="2_HrWp" />
+      </node>
+      <node concept="Xl_RD" id="1gJQ5nCso_4" role="33Ov9O">
+        <property role="Xl_RC" value="Invoice" />
+      </node>
     </node>
     <node concept="3ulXEM" id="1SuqpWQMcXw" role="3ulXEG">
       <property role="TrG5h" value="thisIsAVeryLongVarName" />
@@ -1919,7 +1931,7 @@
       <node concept="2CJf3v" id="7HkVpVbYPJX" role="2CJdiS">
         <property role="TrG5h" value="eventBus" />
         <node concept="Xl_RD" id="7HkVpVbYPJY" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoVoluntaryEventBus" />
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoOptionalEventBus" />
         </node>
         <node concept="2CJf1O" id="7HkVpVbYPKE" role="2CJ4_l">
           <node concept="Xl_RD" id="7HkVpVbYPKF" role="2DqwMp">
