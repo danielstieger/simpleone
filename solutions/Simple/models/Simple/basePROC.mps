@@ -96,6 +96,10 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -144,6 +148,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -7848,8 +7855,8 @@
                           <node concept="2uYsmQ" id="7dmRtJod4tS" role="2Oq$k0">
                             <ref role="2uYs9Q" node="7dmRtJod1S5" resolve="event" />
                           </node>
-                          <node concept="2S8uIT" id="7dmRtJod4x_" role="2OqNvi">
-                            <ref role="2S8YL0" to="ey3s:7HkVpVcVbwp" resolve="entityFqName" />
+                          <node concept="2S8uIT" id="1gJQ5nCvu7J" role="2OqNvi">
+                            <ref role="2S8YL0" to="ey3s:7HkVpVcVb_F" resolve="keyAsString" />
                           </node>
                         </node>
                       </node>
@@ -7916,6 +7923,38 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbF" id="1gJQ5nCxUWI" role="3cqZAp">
+                      <node concept="2OqwBi" id="1gJQ5nCxUWJ" role="3clFbG">
+                        <node concept="10M0yZ" id="1gJQ5nCxUWK" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                        </node>
+                        <node concept="liA8E" id="1gJQ5nCxUWL" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="1gJQ5nCxUWM" role="37wK5m">
+                            <node concept="2OqwBi" id="1gJQ5nCxUWN" role="3uHU7w">
+                              <node concept="1eOMI4" id="1gJQ5nCxUWO" role="2Oq$k0">
+                                <node concept="10QFUN" id="1gJQ5nCxUWP" role="1eOMHV">
+                                  <node concept="3uibUv" id="1gJQ5nCxUWQ" role="10QFUM">
+                                    <ref role="3uigEE" to="28jr:4LCWVp02JQP" resolve="IOFXEntity" />
+                                  </node>
+                                  <node concept="37vLTw" id="1gJQ5nCxV6l" role="10QFUP">
+                                    <ref role="3cqZAo" node="7dmRtJod52Q" resolve="existing" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="1gJQ5nCxUWS" role="2OqNvi">
+                                <ref role="37wK5l" to="w7gk:2P7gGuymjAw" resolve="getReadOnly" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="1gJQ5nCxUWT" role="3uHU7B">
+                              <property role="Xl_RC" value="Invoice is readonly after reload ? " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="1gJQ5nCxU0B" role="3cqZAp" />
                   </node>
                   <node concept="3y3z36" id="7dmRtJod6Am" role="3clFbw">
                     <node concept="10Nm6u" id="7dmRtJod6AP" role="3uHU7w" />
@@ -7945,7 +7984,37 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbH" id="7dmRtJodaA3" role="3cqZAp" />
+                      <node concept="3clFbF" id="1gJQ5nCxUng" role="3cqZAp">
+                        <node concept="2OqwBi" id="1gJQ5nCxUnd" role="3clFbG">
+                          <node concept="10M0yZ" id="1gJQ5nCxUne" role="2Oq$k0">
+                            <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                            <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                          </node>
+                          <node concept="liA8E" id="1gJQ5nCxUnf" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <node concept="3cpWs3" id="1gJQ5nCxUHL" role="37wK5m">
+                              <node concept="2OqwBi" id="1gJQ5nCxUOk" role="3uHU7w">
+                                <node concept="1eOMI4" id="1gJQ5nCxUJg" role="2Oq$k0">
+                                  <node concept="10QFUN" id="1gJQ5nCxUJd" role="1eOMHV">
+                                    <node concept="3uibUv" id="1gJQ5nCxUKG" role="10QFUM">
+                                      <ref role="3uigEE" to="28jr:4LCWVp02JQP" resolve="IOFXEntity" />
+                                    </node>
+                                    <node concept="37vLTw" id="1gJQ5nCxUMl" role="10QFUP">
+                                      <ref role="3cqZAo" node="7dmRtJod6LJ" resolve="loaded" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="1gJQ5nCxUSL" role="2OqNvi">
+                                  <ref role="37wK5l" to="w7gk:2P7gGuymjAw" resolve="getReadOnly" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="1gJQ5nCxU$L" role="3uHU7B">
+                                <property role="Xl_RC" value="Invoice is readonly after get? " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3SKdUt" id="7dmRtJodb2j" role="3cqZAp">
                         <node concept="3SKdUq" id="7dmRtJodb2l" role="3SKWNk">
                           <property role="3SKdUp" value="(4) should we check filter here? Typically yes i would assume.. " />
