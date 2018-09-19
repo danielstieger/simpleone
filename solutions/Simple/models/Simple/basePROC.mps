@@ -17,6 +17,7 @@
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="ey3s" ref="r:d3df241e-bcd2-4499-9490-fa2ee2437c81(org.modellwerkstatt.objectflow.events)" />
+    <import index="vpat" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:mjson(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.solution/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -1115,9 +1116,6 @@
     </node>
     <node concept="10xUwW" id="v00WQaw90k" role="10HVpa">
       <ref role="10x$tN" node="3wkdm3WbpA6" resolve="MasterData Creator" />
-    </node>
-    <node concept="10xUwW" id="2MI0JB6CEny" role="10HVpa">
-      <ref role="10x$tN" node="2MI0JB6CEnN" resolve="ViewTasksInList" />
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
