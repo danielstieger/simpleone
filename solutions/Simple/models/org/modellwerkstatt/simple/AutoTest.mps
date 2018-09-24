@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b3943154-ad25-4139-8505-7cc0cef5ab94(Simple.AutoTest)">
+<model ref="r:b3943154-ad25-4139-8505-7cc0cef5ab94(org.modellwerkstatt.simple.AutoTest)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -11,6 +11,7 @@
   </languages>
   <imports>
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
+    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -235,7 +236,7 @@
       </node>
       <node concept="_YKpA" id="2wjP6CcuWGd" role="2RkE6I">
         <node concept="3uibUv" id="2wjP6CcuWGD" role="_ZDj9">
-          <ref role="3uigEE" node="2wjP6CcuUcy" resolve="Positionen" />
+          <ref role="3uigEE" node="2wjP6CcuUcy" resolve="Position" />
         </node>
       </node>
       <node concept="Xl_RD" id="2wjP6CcuWH9" role="2CNmdP">
@@ -247,7 +248,7 @@
     </node>
   </node>
   <node concept="34Athd" id="2wjP6CcuUcy">
-    <property role="TrG5h" value="Positionen" />
+    <property role="TrG5h" value="Position" />
     <node concept="2XvgOf" id="2wjP6CcuVH8" role="2XvChp">
       <property role="TrG5h" value="PosStatus" />
       <node concept="2XvgOc" id="2wjP6CcuVHK" role="2XvgO2">

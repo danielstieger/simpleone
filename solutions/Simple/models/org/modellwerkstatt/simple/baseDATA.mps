@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)">
+<model ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)">
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
@@ -3988,6 +3988,38 @@
       <node concept="2kzhL4" id="1nXeD0eJ0M3" role="2kzgdm">
         <node concept="Xl_RD" id="1nXeD0eJ0M4" role="il5_5">
           <property role="Xl_RC" value="Set Pos EAN to zero (ex)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf2i" role="2kzhMJ">
+      <property role="TrG5h" value="NEXT" />
+      <node concept="2kzhL4" id="2qcR1OSjf2j" role="2kzgdm">
+        <node concept="Xl_RD" id="2qcR1OSjf2l" role="il5_5">
+          <property role="Xl_RC" value="NEXT" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf2Q" role="2kzhMJ">
+      <property role="TrG5h" value="BACK" />
+      <node concept="2kzhL4" id="2qcR1OSjf2R" role="2kzgdm">
+        <node concept="Xl_RD" id="2qcR1OSjf2T" role="il5_5">
+          <property role="Xl_RC" value="BACK" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf4i" role="2kzhMJ">
+      <property role="TrG5h" value="SAVE_CLOSE" />
+      <node concept="2kzhL4" id="2qcR1OSjf4j" role="2kzgdm">
+        <node concept="Xl_RD" id="2qcR1OSjf4l" role="il5_5">
+          <property role="Xl_RC" value="SAVE_CLOSE" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf4S" role="2kzhMJ">
+      <property role="TrG5h" value="OK" />
+      <node concept="2kzhL4" id="2qcR1OSjf4T" role="2kzgdm">
+        <node concept="Xl_RD" id="2qcR1OSjf4V" role="il5_5">
+          <property role="Xl_RC" value="OK" />
         </node>
       </node>
     </node>

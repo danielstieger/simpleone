@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/Simple/Simple.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" folder="" />
     </projectModules>
   </component>
 </project>

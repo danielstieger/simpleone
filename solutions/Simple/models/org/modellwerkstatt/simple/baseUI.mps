@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(Simple.baseUI)">
+<model ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(org.modellwerkstatt.simple.baseUI)">
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
@@ -9,8 +9,8 @@
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
   </languages>
   <imports>
-    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)" />
-    <import index="1y8i" ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(Simple.basePROC)" />
+    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
+    <import index="1y8i" ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(org.modellwerkstatt.simple.basePROC)" />
     <import index="zhcn" ref="r:14385148-b6a1-46af-8af1-c5f3ff1b3e83(org.modellwerkstatt.dataux.runtime.extensions)" />
     <import index="1e0c" ref="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -2485,13 +2485,8 @@
   </node>
   <node concept="2mKXYI" id="5fkhsRNzdG7">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="MDE Simple Order Editor" />
+    <property role="TrG5h" value="Order Simple View for Mobile Devices" />
     <ref role="1Tjo7l" to="dtxg:4u029Jv8vvH" resolve="Order" />
-    <node concept="U7Xmj" id="ao4XGT1Vj8" role="UTRd0">
-      <node concept="3Oe$u_" id="ao4XGT1Vjs" role="U7Xkl">
-        <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
-      </node>
-    </node>
     <node concept="2U5qGN" id="5fkhsRNzdG8" role="21u2x1">
       <property role="1Nb$_v" value="false" />
       <property role="TrG5h" value="#" />
@@ -2624,61 +2619,10 @@
             <ref role="3O0p26" to="dtxg:AN_117bbec" resolve="timestamp" />
           </node>
         </node>
-        <node concept="fOGPe" id="5fkhsRNzdH8" role="fOGQ8">
-          <node concept="33WYYh" id="5fkhsRNzdH9" role="fOGQ8">
-            <ref role="2_Hrw8" to="1y8i:4XOQNRZgrKt" resolve="Edit Order Position" />
-            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-            <node concept="2IFXgM" id="5fkhsRNzdHa" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-            </node>
-            <node concept="2IFXgM" id="5fkhsRNzdHb" role="2_HrWp">
-              <ref role="2IFZ7r" to="dtxg:AN_117bbd$" resolve="OrderPosition" />
-            </node>
-            <node concept="Rm8GO" id="7dlwzTfDH4Y" role="2_HrWp">
-              <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-              <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="2U5nhG" id="5fkhsRNzdHc" role="2U5niJ" />
       <node concept="2U5nhT" id="5fkhsRNzdHd" role="2U5niL" />
       <node concept="2U5nhG" id="5fkhsRNzdHe" role="2U5niL" />
-    </node>
-    <node concept="fOGPe" id="5fkhsRNzdHf" role="fOGQ8">
-      <node concept="33WYYh" id="5fkhsRNzdHn" role="fOGQ8">
-        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <ref role="2_Hrw8" to="1y8i:AN_117c3LL" resolve="Scan OrderPosition" />
-        <ref role="3uz5Vf" to="dtxg:2w5UnVouMBt" resolve="A_Scan" />
-        <node concept="2IFXgM" id="5fkhsRNzdHo" role="2_HrWp">
-          <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-        </node>
-      </node>
-      <node concept="fOGPe" id="5fkhsRNzdHu" role="fOGQ8">
-        <node concept="33WYYh" id="5fkhsRNzdHv" role="fOGQ8">
-          <ref role="2_Hrw8" to="1y8i:3cAl6M4vge_" resolve="Reset Order" />
-          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-          <ref role="3uz5Vf" to="dtxg:2w5UnVouMup" resolve="A_Reset" />
-          <node concept="2IFXgM" id="5fkhsRNzdHw" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-          </node>
-        </node>
-        <node concept="33WYYh" id="5fkhsRNzdHx" role="fOGQ8">
-          <ref role="2_Hrw8" to="1y8i:AN_117c3Qk" resolve="Complete Order" />
-          <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-          <ref role="3uz5Vf" to="dtxg:2w5UnVouMvR" resolve="A_Complete" />
-          <node concept="2IFXgM" id="5fkhsRNzdHz" role="2_HrWp">
-            <ref role="2IFZ7r" to="dtxg:4u029Jv8vvH" resolve="Order" />
-          </node>
-          <node concept="Rm8GO" id="7dlwzTfDH3C" role="2_HrWp">
-            <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-            <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
-          </node>
-        </node>
-        <node concept="Xl_RD" id="5fkhsRNzdH$" role="33Ov9O">
-          <property role="Xl_RC" value="Status changes" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="3Z5UV2c6s58">

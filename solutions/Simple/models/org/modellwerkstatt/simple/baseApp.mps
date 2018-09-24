@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(Simple.baseApp)">
+<model ref="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)">
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
@@ -8,13 +8,13 @@
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
   </languages>
   <imports>
-    <import index="1y8i" ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(Simple.basePROC)" />
-    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)" />
+    <import index="1y8i" ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(org.modellwerkstatt.simple.basePROC)" />
+    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
-    <import index="kpm6" ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(Simple.inheritance)" />
-    <import index="jfb4" ref="r:9641c0a2-41b3-496e-9ba1-063c9451cbb0(Simple.eventing)" />
+    <import index="kpm6" ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inheritance)" />
+    <import index="jfb4" ref="r:9641c0a2-41b3-496e-9ba1-063c9451cbb0(org.modellwerkstatt.simple.eventing)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.solution/)" implicit="true" />
     <import index="z3ji" ref="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)" implicit="true" />
@@ -460,8 +460,8 @@
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="Xl_RD" id="7HkVpVbqq18" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+    <node concept="Xl_RD" id="4Z17I5XxK$c" role="3d0G2l">
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="vsIEjNpDA8">
@@ -501,8 +501,8 @@
     <node concept="2CJ4_Q" id="7HkVpVc$usl" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="Xl_RD" id="7HkVpVbqq16" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+    <node concept="Xl_RD" id="4Z17I5XxKAE" role="3d0G2l">
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
@@ -716,8 +716,8 @@
       <node concept="2CPvp3" id="49EzYiePzEo" role="2CJdiS" />
       <node concept="2CPvp3" id="49EzYiePzEp" role="2CJdiS" />
     </node>
-    <node concept="Xl_RD" id="7HkVpVbqq13" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+    <node concept="Xl_RD" id="4Z17I5XxKA8" role="3d0G2l">
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
   <node concept="3JDCTW" id="5E5qL$GrDMr">
@@ -1344,8 +1344,8 @@
         </node>
       </node>
     </node>
-    <node concept="Xl_RD" id="7HkVpVbqq17" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+    <node concept="Xl_RD" id="4Z17I5XxKzl" role="3d0G2l">
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="382CQP52o$k">
@@ -1401,7 +1401,7 @@
     <node concept="2CPvp3" id="382CQP52o_8" role="2CGBMS" />
     <node concept="2CPvp3" id="382CQP52o_r" role="2CGBMS" />
     <node concept="Xl_RD" id="7HkVpVbqq1a" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
   <node concept="2AUT8P" id="2B50FNWLyE8">
@@ -1935,7 +1935,7 @@
       <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CJdiS">
         <property role="TrG5h" value="setting" />
         <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
-          <property role="Xl_RC" value="Simple.baseApp.TestSetting" />
+          <property role="Xl_RC" value="org.modellwerkstatt.simple.baseApp.TestSetting" />
         </node>
       </node>
       <node concept="2CPvp3" id="7HkVpVc$j28" role="2CJdiS" />
@@ -2341,8 +2341,8 @@
         </node>
       </node>
     </node>
-    <node concept="Xl_RD" id="7HkVpVbYPHS" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+    <node concept="Xl_RD" id="4Z17I5XxKyh" role="3d0G2l">
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
   <node concept="2CG7Z0" id="3tgwmmDjmur">
@@ -2395,8 +2395,8 @@
     <node concept="2CJ4_Q" id="7HkVpVc$tAo" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="Xl_RD" id="7HkVpVbqq15" role="3d0G2l">
-      <property role="Xl_RC" value="Simple" />
+    <node concept="Xl_RD" id="4Z17I5XxKuz" role="3d0G2l">
+      <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
 </model>

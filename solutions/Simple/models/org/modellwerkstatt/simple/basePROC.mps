@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(Simple.basePROC)">
+<model ref="r:36fd8bd6-c9f5-4399-8b1f-444fe9262492(org.modellwerkstatt.simple.basePROC)">
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
@@ -9,11 +9,11 @@
     <use id="1e645434-f066-4246-95c3-c768bd8f6bee" name="org.modellwerkstatt.FopLand" version="0" />
   </languages>
   <imports>
-    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(Simple.baseDATA)" />
+    <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
-    <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(Simple.baseUI)" />
+    <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(org.modellwerkstatt.simple.baseUI)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="ey3s" ref="r:d3df241e-bcd2-4499-9490-fa2ee2437c81(org.modellwerkstatt.objectflow.events)" />
@@ -1158,7 +1158,7 @@
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="dtxg:4u029Jv8vvH" resolve="Order" />
       <node concept="3063JU" id="5fkhsROu6Ee" role="3063Jp">
-        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="MDE Simple Order Editor" />
+        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="Order Simple View for Mobile Devices" />
         <node concept="1bGNo" id="5fkhsROu6HV" role="2CtmLH">
           <ref role="1bGZi" to="dtxg:6BKPvpCRbDr" resolve="MDE" />
         </node>
@@ -4529,7 +4529,7 @@
         </node>
       </node>
       <node concept="3063JU" id="4ysbFF_T1Jw" role="3063Jp">
-        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="MDE Simple Order Editor" />
+        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="Order Simple View for Mobile Devices" />
       </node>
     </node>
     <node concept="3ulXEN" id="4ysbFF_SY9l" role="3ulXEL">
@@ -4647,7 +4647,7 @@
         </node>
       </node>
       <node concept="3063JU" id="5SbyawjeQhu" role="3063Jp">
-        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="MDE Simple Order Editor" />
+        <ref role="3063JT" to="knfg:5fkhsRNzdG7" resolve="Order Simple View for Mobile Devices" />
       </node>
     </node>
     <node concept="20qIzx" id="5SbyawjeShj" role="3umfm7">
