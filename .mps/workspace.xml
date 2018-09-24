@@ -29,18 +29,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28c4ecba-6ea1-4cca-b332-768dba78c247" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/CentrixPerformance.mps" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/Simple.msd" afterPath="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/AutoTest.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/AutoTest.mps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/baseApp.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/baseApp.mps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/baseDATA.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/baseDATA.mps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/basePROC.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/basePROC.mps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/baseUI.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/baseUI.mps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/eventing.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/eventing.mps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/solutions/Simple/models/Simple/inheritance.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/inheritance.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/modules.xml" afterPath="$PROJECT_DIR$/.mps/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/AutoTest.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/AutoTest.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/baseApp.mps" afterPath="$PROJECT_DIR$/solutions/Simple/models/org/modellwerkstatt/simple/baseApp.mps" />
     </list>
     <ignored path="SimpleOne.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -78,89 +69,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BatchConfigConsole" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigConsole">
+      <file leaf-file-name="MoWareAutoCompletor" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.plugin/MoWareAutoCompletor">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="199">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="239" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fgt3_a0" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230982144074" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-239" />
-                    <property name="sideSelectDirection" value="RIGHT" />
-                    <cellInfo cellId="Collection_fgt3_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230982144074" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchConfigTomcat" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigTomcat">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="463" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323939747" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigBase" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/ConfigBase">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="231" />
-                    <property name="caretXRelative" value="80" />
+                    <property name="caretX" value="191" />
+                    <property name="caretXRelative" value="72" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230991694711" />
+                      <node node_reference="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/2887885338023173967" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -168,7 +89,7 @@
                 <transactionalProperties />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -179,19 +100,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App Desktop Order" pinned="false" current-in-tab="true">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/App Desktop Order">
+      <file leaf-file-name="MoWareAutoCompleterUtil" pinned="false" current-in-tab="true">
+        <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/MoWareAutoCompleterUtil">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="700">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="263" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_eb7h0d_a4a" cellNumber="0" isInList="false">
+                      <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <collapsed />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <collapsed />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RefResolve" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/RefResolve">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="15" />
+                    <property name="caretX" value="303" />
                     <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_vrb02t_h0" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" />
+                    <cellInfo cellId="Constant_ttt6c2_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/4329236420203170412" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -199,7 +151,7 @@
                 <transactionalProperties />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -210,119 +162,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigDeprecated" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/ConfigDeprecated">
+      <file leaf-file-name="CommandAutoCompleter" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/CommandAutoCompleter">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="2154">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="463" />
+                    <property name="caretX" value="216" />
                     <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323940053" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FX8_Lola" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/FX8_Lola">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="463" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323940108" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MdeConfig" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/MdeConfig">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="463" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323940232" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellNumber="3" isInList="true">
-                    <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/2989350472684891998" />
-                    <parent cellId="refNodeList_elements" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4785795765846293129" />
-                    </parent>
-                  </errorMarker>
-                </errorMarkers>
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VaadinConfig" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/VaadinConfig">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="207" />
-                    <property name="caretXRelative" value="48" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989231001559958" />
+                      <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237614060" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -330,7 +182,69 @@
                 <transactionalProperties />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <collapsed />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OFXCronMasterController" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.modellwerkstatt.objectflow.runtime/org.modellwerkstatt.objectflow.batchjob/OFXCronMasterController">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="1060">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="79" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/1729848624800561014" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <collapsed />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <collapsed />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DLGCompleterWindow" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.plugin/DLGCompleterWindow">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="686">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="191" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/2887885338014943697" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <collapsed />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -377,8 +291,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="241" />
-    <option name="y" value="78" />
+    <option name="x" value="177" />
+    <option name="y" value="22" />
     <option name="width" value="2319" />
     <option name="height" value="1313" />
   </component>
@@ -473,121 +387,11 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp) in IdeaFile{file:///Users/danielstieger/javaware/simpleone/solutions/Simple/models/org/modellwerkstatt/simple/baseApp.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modellwerkstatt" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$mowareHome$/dataux/languages/org.modellwerkstatt.moware/org.modellwerkstatt.moware.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:b481728a-522f-4d56-8ee4-d1cab0420505(org.modellwerkstatt.moware.PluginBuild) in IdeaFile{file:///Users/danielstieger/moware/dataux/languages/org.modellwerkstatt.moware/models/org/modellwerkstatt/moware/PluginBuild.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modellwerkstatt" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manmap" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$mowareHome$/manmap/solutions/org.modellwerkstatt.manmap.solution/org.modellwerkstatt.manmap.runtime.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modellwerkstatt" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modellwerkstatt" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$mowareHome$/dataux/languages/org.modellwerkstatt.moware/org.modellwerkstatt.moware.msd" />
+              <option name="myItemId" value="Languages" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -605,7 +409,119 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accessories" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete) in IdeaFile{file:///Users/danielstieger/moware/dataux/languages/org.modellwerkstatt.dataux/models/autcomplete.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:b3943154-ad25-4139-8505-7cc0cef5ab94(org.modellwerkstatt.simple.AutoTest) in IdeaFile{file:///Users/danielstieger/javaware/simpleone/solutions/Simple/models/org/modellwerkstatt/simple/AutoTest.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin) in IdeaFile{file:///Users/danielstieger/moware/dataux/languages/org.modellwerkstatt.dataux/models/plugin.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accessories" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -633,17 +549,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -654,52 +560,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modellwerkstatt" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$mowareHome$/dataux/languages/org.modellwerkstatt.moware/org.modellwerkstatt.moware.msd" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -724,22 +584,8 @@
               <option name="myItemId" value="modellwerkstatt" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manmap" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -756,8 +602,52 @@
               <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp) in IdeaFile{file:///Users/danielstieger/javaware/simpleone/solutions/Simple/models/org/modellwerkstatt/simple/baseApp.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6871219927627844241" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -1008,26 +898,26 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="241" y="78" width="2319" height="1313" extended-state="0" />
-    <editor active="true" />
+    <frame x="177" y="22" width="2319" height="1313" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44043624" sideWeight="0.23994388" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44043624" sideWeight="0.23890339" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279797" sideWeight="0.4790647" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43708053" sideWeight="0.48955613" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16946308" sideWeight="0.43385553" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43708053" sideWeight="0.49303743" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4100088" sideWeight="0.33203968" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40939596" sideWeight="0.33203968" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39898562" sideWeight="0.6218709" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16946308" sideWeight="0.56614447" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39932886" sideWeight="0.5221932" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26426175" sideWeight="0.5127787" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43708053" sideWeight="0.5069626" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923618" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1047,486 +937,7 @@
   </component>
   <component name="UsagesViewTool">
     <version id="0.9997" />
-    <tabs>
-      <tab>
-        <result_provider class_name="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.UnionNode">
-          <children>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.BaseMethodUsages_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.ExactMethodUsages_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.lang.structure.findUsages.NodeUsages_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.AllMethodUsages_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.BaseMethod_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.lang.structure.findUsages.NodeAndDescendantsUsages_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-          </children>
-        </result_provider>
-        <query>
-          <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.GlobalScope" />
-          <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
-            <node ref="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612" />
-          </holder>
-        </query>
-        <usage_view>
-          <tree_wrapper>
-            <node_representator />
-            <view_options>
-              <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
-            </view_options>
-            <contents>
-              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.MainNodeData" caption="" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                <role name="main root" />
-              </data>
-              <children>
-                <child>
-                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.SearchedNodesNodeData" caption="Searched nodes" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                    <role name="searched nodes" />
-                  </data>
-                  <children>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Searched nodes&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="false" category="Searched nodes" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="false" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.ofxutil" info="" excluded="false" expanded="false" isresult="false" results_section="false">
-                                <role name="model" />
-                                <model uid="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter" info="" excluded="false" expanded="true" isresult="false" results_section="false" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009547">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;member&lt;/i&gt;; in: &lt;i&gt;OFXDelegateAutoCompleter&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="false" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                  </children>
-                </child>
-                <child>
-                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ResultsNodeData" caption="results" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                    <role name="results" />
-                  </data>
-                  <children>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Base method usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Base method usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.intentions" info="" excluded="false" expanded="true" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="AutoCompleteDelegates" info="" excluded="false" expanded="true" isresult="false" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687772598">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter.configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687775891">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Base method usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Base method usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.ofxutil" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter" info="" excluded="false" expanded="true" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009547">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;member&lt;/i&gt;; in: &lt;i&gt;OFXDelegateAutoCompleter&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612">
-                                        <role name="root to target" />
-                                      </data>
-                                      <children>
-                                        <child>
-                                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687056408">
-                                            <role name="target" />
-                                          </data>
-                                          <children />
-                                        </child>
-                                      </children>
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Exact Method Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Exact Method Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.intentions" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="AutoCompleteDelegates" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687772598">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter.configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687775891">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Exact Method Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Exact Method Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.ofxutil" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009547">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;member&lt;/i&gt;; in: &lt;i&gt;OFXDelegateAutoCompleter&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612">
-                                        <role name="root to target" />
-                                      </data>
-                                      <children>
-                                        <child>
-                                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687056408">
-                                            <role name="target" />
-                                          </data>
-                                          <children />
-                                        </child>
-                                      </children>
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.intentions" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="AutoCompleteDelegates" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687772598">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter.configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687775891">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.ofxutil" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009547">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;member&lt;/i&gt;; in: &lt;i&gt;OFXDelegateAutoCompleter&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612">
-                                        <role name="root to target" />
-                                      </data>
-                                      <children>
-                                        <child>
-                                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687056408">
-                                            <role name="target" />
-                                          </data>
-                                          <children />
-                                        </child>
-                                      </children>
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Overriden And Implemented methods&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Overriden And Implemented methods" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.intentions" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="AutoCompleteDelegates" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687772598">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter.configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687775891">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Overriden And Implemented methods&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Overriden And Implemented methods" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.ofxutil" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009547">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;member&lt;/i&gt;; in: &lt;i&gt;OFXDelegateAutoCompleter&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612">
-                                        <role name="root to target" />
-                                      </data>
-                                      <children>
-                                        <child>
-                                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687056408">
-                                            <role name="target" />
-                                          </data>
-                                          <children />
-                                        </child>
-                                      </children>
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Base methods&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Base methods" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.ofxutil" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009547">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;member&lt;/i&gt;; in: &lt;i&gt;OFXDelegateAutoCompleter&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:a8cceaac-a892-4039-8ab4-edfae2590c6d(org.modellwerkstatt.dataux.ofxutil)/3899779351687009612">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Descendants Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Descendants Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="org.modellwerkstatt.dataux" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="org.modellwerkstatt.dataux.intentions" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="AutoCompleteDelegates" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687772598">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="OFXDelegateAutoCompleter.configureDelegates(node&amp;lt;IHasDelegates&amp;gt;,node&amp;lt;IOFXObject&amp;gt;,node&amp;lt;PathDot&amp;gt;):void" info="role: &lt;i&gt;expression&lt;/i&gt;; in: &lt;i&gt;ExpressionStatement&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fafe6e01-7a0f-40e7-8d0a-2453186ceffe(org.modellwerkstatt.dataux.intentions)/3899779351687775891">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                  </children>
-                </child>
-              </children>
-            </contents>
-          </tree_wrapper>
-        </usage_view>
-      </tab>
-    </tabs>
+    <tabs />
     <default_view_options>
       <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
     </default_view_options>
@@ -1543,222 +954,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigConsole">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigTomcat">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="463" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323939747" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/ConfigBase">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/ModelRepositoryMethod">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="199" />
-                <property name="caretXRelative" value="68" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/8009046666043401713" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/8009046666043401713" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/8009046666043401704" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/StaticRessources">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1440642197017487130" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1440642197017487130" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1440642197017487130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/Label">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="215" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/3146313690717155575" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/3146313690717155575" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1440642197017487635" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/LabelSpecification">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/3146313690717155301" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/3146313690717155301" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/3146313690717155301" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/PageCommand">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="383" />
-                <property name="caretXRelative" value="124" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1881524139085552758" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1881524139085552758" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/1881524139085552758" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/CommandCrtlStatement">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1923,63 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/RefResolve">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-63" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_eb7h0d_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088234945561" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088234945561" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.plugin/MoWareAutoCompletor">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="210">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="199" />
-                <property name="caretXRelative" value="104" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="VDNCC_property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/2887885338015692278" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/2887885338015692278" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/PageConclusion">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2134,93 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/MoWareAutoCompleterUtil">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="265">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="311" />
-                <property name="caretXRelative" value="80" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088235568877" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:b3943154-ad25-4139-8505-7cc0cef5ab94(Simple.AutoTest)/2801075031990192278" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/CommandAutoCompleter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237149601" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:b3943154-ad25-4139-8505-7cc0cef5ab94(Simple.AutoTest)/2801075031990192278" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/UiAutoCompleter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="617">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="288" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2801075031990089366" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2801075031990089366" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://jetbrains.mps.console.base/jetbrains.mps.console.base.structure/Command">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2248,36 +1299,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:359b1d2b-77c4-46df-9bf2-b25cbea32254(jetbrains.mps.console.base.structure)/6854397602732214175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/Command">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="8180">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="559" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fao2ea_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:ad1b6f40-df5e-4550-9fe5-c68f480ac1fd(org.modellwerkstatt.objectflow.gen.main@generator)/4296094616048635424" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ad1b6f40-df5e-4550-9fe5-c68f480ac1fd(org.modellwerkstatt.objectflow.gen.main@generator)/4296094616048635424" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:ad1b6f40-df5e-4550-9fe5-c68f480ac1fd(org.modellwerkstatt.objectflow.gen.main@generator)/6525155817178420451" />
         </state>
       </provider>
     </entry>
@@ -2369,37 +1390,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1068581242864" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/GU">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="535">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="199" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/5746908553319074520" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:b3943154-ad25-4139-8505-7cc0cef5ab94(Simple.AutoTest)/2887885338020230128" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="ced543e9-ef41-41f2-a4bb-ceaa83217ce2" />
-            </enabledHints>
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -2619,55 +1609,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigConsole">
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.plugin/ModellsHelper">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="239" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fgt3_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230982144074" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-239" />
-                <property name="sideSelectDirection" value="RIGHT" />
-                <cellInfo cellId="Collection_fgt3_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230982144074" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigTomcat">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="463" />
+                <property name="caretX" value="247" />
                 <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323939747" />
+                <cellInfo cellId="Constant_evgwyu_c0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/5712415244721516180" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2675,7 +1628,7 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/5712415244721516180" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2685,18 +1638,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/ConfigBase">
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.AutoTest/Rechnung">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="231" />
-                <property name="caretXRelative" value="80" />
+                <property name="caretX" value="172" />
+                <property name="caretXRelative" value="16" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230991694711" />
+                <cellInfo cellId="property_propertyName" cellNumber="0" isInList="false">
+                  <node node_reference="r:b3943154-ad25-4139-8505-7cc0cef5ab94(org.modellwerkstatt.simple.AutoTest)/2887885338015670981" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2704,7 +1657,7 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4329236420196890907" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2714,7 +1667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/App Desktop Order">
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.AutoTest/Position">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
@@ -2724,8 +1677,8 @@
                 <property name="caretX" value="15" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_vrb02t_h0" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" />
+                <cellInfo cellId="Constant_p3y53a_f0" cellNumber="0" isInList="false">
+                  <node node_reference="r:b3943154-ad25-4139-8505-7cc0cef5ab94(org.modellwerkstatt.simple.AutoTest)/2887885338015671074" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2733,7 +1686,74 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4329236420196890907" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/MdeConfig">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="431" />
+                <property name="caretXRelative" value="288" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5390515959243856837" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="false" cellNumber="3" isInList="true">
+                <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/2989350472684891998" />
+                <parent cellId="refNodeList_elements" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4785795765846293129" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5390515959243856837" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/VaadinConfig">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="selectionStart" value="0" />
+                <property name="hasNonTrivialSelection" value="true" />
+                <property name="caretX" value="431" />
+                <property name="selectionEnd" value="36" />
+                <property name="caretXRelative" value="288" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/3670928012831699111" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/3670928012831699111" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2762,13 +1782,115 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323940053" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <collapsed />
             <enabledHints />
           </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigTomcat">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="223" />
+                <property name="caretXRelative" value="64" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989231001557385" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4329236420196890907" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/BatchConfigConsole">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_fgt3_a0" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230982144074" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-239" />
+                <property name="sideSelectDirection" value="RIGHT" />
+                <cellInfo cellId="Collection_fgt3_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989230982144074" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4329236420196890907" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/App Desktop Order">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="375" />
+                <property name="caretXRelative" value="48" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)/163011713208271896" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solutions/Simple/source_gen/org/modellwerkstatt/simple/AutoTest/MapRechnung.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8864696">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2779,11 +1901,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="463" />
-                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="80" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323940108" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989231001550937" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2791,7 +1913,7 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989231001550937" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2801,33 +1923,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/MdeConfig">
+    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/ConfigBase">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="467">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ocnoqi_a4a" cellNumber="0" isInList="false">
+                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/3303604831308264397" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)/163011713208271896" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux.runtime/org.modellwerkstatt.dataux.runtime.core/CommandContainer">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="2724">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)/163011713208271896" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)/163011713208271896" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solutions/Simple/source_gen/org/modellwerkstatt/simple/AutoTest/SearchRechnung.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5023328">
+          <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure/GenericNewExpression">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="463" />
+                <property name="caretX" value="167" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1145553007750" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1145553007750" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1145552977093" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/UiAutoCompleter">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="124">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
                 <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fgt3_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/5746908553323940232" />
+                <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
+                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/4329236420202823169" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088234001694" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/GU">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="692">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="39" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_fao2ea_c0" cellNumber="0" isInList="false">
+                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/5746908553319080247" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088234001694" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.plugin/MoWareAutoCompletor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="199">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="191" />
+                <property name="caretXRelative" value="72" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/2887885338023173967" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$mowareHome$/objectflow/solutions/sandbox/source_gen/org/modellwerkstatt/objectflow/batchjob/OFXPCPairController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.125">
+          <caret line="222" column="102" selection-start-line="222" selection-start-column="102" selection-end-line="222" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.objectflow.runtime/org.modellwerkstatt.objectflow.batchjob/OFXPCPairController">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="1140">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="223" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReferencePresentation_53xyyk_a0b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/4084244000338517872" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellNumber="3" isInList="true">
-                <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/2989350472684891998" />
-                <parent cellId="refNodeList_elements" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/4785795765846293129" />
-                </parent>
+              <errorMarker text="" propertyCell="true" cellId="property_text" cellNumber="0" isInList="false">
+                <node node_reference="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/2187983825142710507" />
               </errorMarker>
             </errorMarkers>
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/4084244000338517872" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2837,18 +2145,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.modellwerkstatt.simple/org.modellwerkstatt.simple.baseApp/VaadinConfig">
+    <entry file="mps://node://org.modellwerkstatt.objectflow.runtime/org.modellwerkstatt.objectflow.batchjob/RunProducerMsg">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="207" />
-                <property name="caretXRelative" value="48" />
+                <property name="caretX" value="359" />
+                <property name="caretXRelative" value="32" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/8886989231001559958" />
+                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/8027817701147760339" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2856,7 +2164,219 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)/6871219927627844241" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/8027817701147760339" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.objectflow.runtime/org.modellwerkstatt.objectflow.batchjob/Message">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
+                  <node node_reference="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/8789968430670206186" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/8789968430670206186" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.plugin/DLGCompleterWindow">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="686">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="191" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin)/2887885338014943697" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/MoWareAutoCompleterUtil">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="700">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="263" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_eb7h0d_a4a" cellNumber="0" isInList="false">
+                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/CommandAutoCompleter">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="2154">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="216" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237614060" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.autcomplete/RefResolve">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="303" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ttt6c2_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/4329236420203170412" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.objectflow/org.modellwerkstatt.objectflow.structure/Command">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-31" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_6h6dhy_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/7393934493399006223" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/7393934493399006223" viewPositionX="0" viewPositionY="-7">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_6h6dhy_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/7393934493399006223" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)/7192042020163999178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.modellwerkstatt.objectflow.runtime/org.modellwerkstatt.objectflow.batchjob/OFXCronMasterController">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="1060">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)/1729848624800561014" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:16d1b061-0636-4d0c-adab-8aead1b78e6e(org.modellwerkstatt.dataux.autcomplete)/2777837088237542531" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

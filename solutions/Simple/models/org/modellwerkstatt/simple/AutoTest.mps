@@ -149,7 +149,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuVNx" role="TxmiU">
-      <property role="2RkwnN" value="name" />
+      <property role="2RkwnN" value="rechName" />
       <node concept="3Tm1VV" id="2wjP6CcuVNy" role="1B3o_S" />
       <node concept="2RoN1w" id="2wjP6CcuVNz" role="2RnVtd">
         <node concept="3wEZqW" id="2wjP6CcuVN$" role="3wFrgM" />
@@ -166,7 +166,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuVNn" role="TxmiU">
-      <property role="2RkwnN" value="timestamp" />
+      <property role="2RkwnN" value="curTimeStamp" />
       <node concept="3Tm1VV" id="2wjP6CcuVNo" role="1B3o_S" />
       <node concept="2RoN1w" id="2wjP6CcuVNp" role="2RnVtd">
         <node concept="3wEZqW" id="2wjP6CcuVNq" role="3wFrgM" />
@@ -312,7 +312,7 @@
       <node concept="2fr8A1" id="2wjP6CcKjfK" role="0orDa" />
     </node>
     <node concept="1bOX9e" id="2wjP6CcuUeV" role="TxmiU">
-      <property role="2RkwnN" value="name" />
+      <property role="2RkwnN" value="posName" />
       <node concept="3Tm1VV" id="2wjP6CcuUf1" role="1B3o_S" />
       <node concept="2RoN1w" id="2wjP6CcuUf2" role="2RnVtd">
         <node concept="3wEZqW" id="2wjP6CcuUf3" role="3wFrgM" />
@@ -329,7 +329,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuUgM" role="TxmiU">
-      <property role="2RkwnN" value="timestamp" />
+      <property role="2RkwnN" value="curTimestamp" />
       <node concept="3Tm1VV" id="2wjP6CcuUgS" role="1B3o_S" />
       <node concept="2RoN1w" id="2wjP6CcuUgT" role="2RnVtd">
         <node concept="3wEZqW" id="2wjP6CcuUgU" role="3wFrgM" />
@@ -351,7 +351,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuUmD" role="TxmiU">
-      <property role="2RkwnN" value="date" />
+      <property role="2RkwnN" value="curDate" />
       <node concept="3Tm1VV" id="2wjP6CcuUmJ" role="1B3o_S" />
       <node concept="2RoN1w" id="2wjP6CcuUmK" role="2RnVtd">
         <node concept="3wEZqW" id="2wjP6CcuUmL" role="3wFrgM" />
