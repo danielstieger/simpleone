@@ -874,6 +874,9 @@
           <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
         </node>
       </node>
+      <node concept="Xl_RD" id="4uXwdwFzRXm" role="2$ntWM">
+        <property role="Xl_RC" value="AeiouÄéiÖü" />
+      </node>
     </node>
     <node concept="2$ntO6" id="1TowlBnaJ3B" role="2$nsuY">
       <node concept="33WYYh" id="1TowlBnaJ3C" role="2$ntUL">
