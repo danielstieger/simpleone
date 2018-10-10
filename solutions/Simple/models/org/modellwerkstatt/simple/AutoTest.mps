@@ -16,6 +16,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1201370618622" name="jetbrains.mps.baseLanguage.structure.Property" flags="ig" index="2RhdJD">
         <property id="1201371481316" name="propertyName" index="2RkwnN" />
         <child id="1201371521209" name="type" index="2RkE6I" />
@@ -29,12 +33,21 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
+        <reference id="5862977038373003188" name="property" index="338YkT" />
+      </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -73,9 +86,17 @@
       </concept>
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
         <child id="3674496190757459099" name="propertyOption" index="0orDa" />
-        <child id="6057399400731215414" name="numberFormat" index="3bVav" />
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
+      </concept>
+      <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
+        <property id="569389511234497418" name="fromServer" index="1$4sGO" />
+        <property id="569389511234497416" name="minute" index="1$4sGQ" />
+        <property id="569389511234497417" name="second" index="1$4sGR" />
+        <property id="569389511234497414" name="day" index="1$4sGS" />
+        <property id="569389511234497415" name="hour" index="1$4sGT" />
+        <property id="569389511234497412" name="year" index="1$4sGU" />
+        <property id="569389511234497413" name="month" index="1$4sGV" />
       </concept>
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -183,9 +204,6 @@
       <node concept="Xl_RD" id="2wjP6CcuVNv" role="2CNmdL">
         <property role="Xl_RC" value="TimeStamp" />
       </node>
-      <node concept="Xl_RD" id="2wjP6CcuVNw" role="3bVav">
-        <property role="Xl_RC" value="dd.MM.yy HH:mm" />
-      </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuVN5" role="TxmiU">
       <property role="2RkwnN" value="totalValue" />
@@ -268,7 +286,24 @@
     <node concept="3clFbW" id="2wjP6CcuUc_" role="jymVt">
       <node concept="3cqZAl" id="2wjP6CcuUcA" role="3clF45" />
       <node concept="3Tm1VV" id="2wjP6CcuUcB" role="1B3o_S" />
-      <node concept="3clFbS" id="2wjP6CcuUcC" role="3clF47" />
+      <node concept="3clFbS" id="2wjP6CcuUcC" role="3clF47">
+        <node concept="3clFbF" id="6IXjXFJR2lq" role="3cqZAp">
+          <node concept="37vLTI" id="6IXjXFJR2ne" role="3clFbG">
+            <node concept="1$4sJe" id="6IXjXFJR2rd" role="37vLTx">
+              <property role="1$4sGS" value="27" />
+              <property role="1$4sGV" value="01" />
+              <property role="1$4sGU" value="1980" />
+              <property role="1$4sGT" value="08" />
+              <property role="1$4sGQ" value="10" />
+              <property role="1$4sGR" value="0" />
+              <property role="1$4sGO" value="false" />
+            </node>
+            <node concept="338YkY" id="6IXjXFJR2lp" role="37vLTJ">
+              <ref role="338YkT" node="2wjP6CcuUgM" resolve="curTimestamp" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuUcD" role="TxmiU">
       <property role="2RkwnN" value="id" />
@@ -345,9 +380,6 @@
       </node>
       <node concept="Xl_RD" id="2wjP6CcuUkp" role="2CNmdL">
         <property role="Xl_RC" value="TimeStamp" />
-      </node>
-      <node concept="Xl_RD" id="2wjP6CcuUm3" role="3bVav">
-        <property role="Xl_RC" value="dd.MM.yy HH:mm" />
       </node>
     </node>
     <node concept="1bOX9e" id="2wjP6CcuUmD" role="TxmiU">
