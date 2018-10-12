@@ -3527,9 +3527,6 @@
       </node>
       <node concept="2kzhL4" id="2w5UnVouMBw" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="2w5UnVouMBx" role="il5_5">
-          <property role="Xl_RC" value="Position scannen" />
-        </node>
         <node concept="Xl_RD" id="2w5UnVouMBy" role="il5$o">
           <property role="Xl_RC" value="scanner" />
         </node>
