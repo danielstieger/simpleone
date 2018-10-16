@@ -496,7 +496,13 @@
         <property role="Xl_RC" value="org.modellwerkstatt.simple.baseDATA.SimpleRes_RICH" />
       </node>
     </node>
-    <node concept="2CPvp3" id="7HkVpVc$uib" role="2CGBMS" />
+    <node concept="2CJf3v" id="1NjnH06l6J4" role="2CGBMS">
+      <property role="TrG5h" value="appFactory" />
+      <node concept="Xl_RD" id="1NjnH06l6J6" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.vaadinforms.windows.VUiFactory" />
+      </node>
+    </node>
+    <node concept="2CPvp3" id="1NjnH06l6IJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="7HkVpVc$umf" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sx7" resolve="FakeLockNBusNPrint" />
     </node>
