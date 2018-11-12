@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -199,7 +198,9 @@
       <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.Platform" flags="ng" index="2kDv1q">
         <child id="7604036740764640824" name="variantDeclarations" index="3hNl4o" />
       </concept>
-      <concept id="8009046666043401703" name="org.modellwerkstatt.objectflow.structure.ModelRepository" flags="ig" index="wbJL_" />
+      <concept id="8009046666043401703" name="org.modellwerkstatt.objectflow.structure.ModelRepository" flags="ig" index="wbJL_">
+        <child id="2153030403788862895" name="repoFields" index="2_$AKh" />
+      </concept>
       <concept id="8009046666043401704" name="org.modellwerkstatt.objectflow.structure.ModelRepositoryMethod" flags="ig" index="wbJLE">
         <property id="8009046666043401713" name="methodType" index="wbJLN" />
       </concept>
@@ -294,6 +295,7 @@
       <concept id="774207833082734171" name="org.modellwerkstatt.manmap.structure.WhereQuery" flags="ng" index="jxyYR">
         <child id="774207833082734172" name="filter" index="jxyYK" />
       </concept>
+      <concept id="774207833082820017" name="org.modellwerkstatt.manmap.structure.QuerySmartClosureParamDeclaration" flags="ig" index="jxRLt" />
       <concept id="774207833082573402" name="org.modellwerkstatt.manmap.structure.QueryFromMap" flags="ng" index="jybIQ">
         <property id="3572493221071471725" name="readOnly" index="HScZ5" />
         <property id="8660793628824932667" name="debugMe" index="1v8G3g" />
@@ -306,6 +308,9 @@
       </concept>
       <concept id="8915366638470090989" name="org.modellwerkstatt.manmap.structure.OptionalOperator" flags="ng" index="2zQmTl">
         <child id="8915366638470090994" name="expression" index="2zQmTa" />
+      </concept>
+      <concept id="2153030403787874161" name="org.modellwerkstatt.manmap.structure.RowMapperField" flags="ng" index="2_xkrf">
+        <child id="2153030403787874164" name="rowMapper" index="2_xkra" />
       </concept>
       <concept id="7925018510953791520" name="org.modellwerkstatt.manmap.structure.ModifiedAtFieldOption" flags="ng" index="2Mc99S" />
       <concept id="8172309840348950202" name="org.modellwerkstatt.manmap.structure.INeedsClassMapper" flags="ng" index="P14SU">
@@ -4634,6 +4639,15 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="6vtMBTnC$jW" role="1B3o_S" />
+    <node concept="2_xkrf" id="3KW5WeiQMtG" role="2_$AKh">
+      <node concept="1bVj0M" id="3KW5WeiQMtH" role="2_xkra">
+        <node concept="3clFbS" id="3KW5WeiQMtI" role="1bW5cS" />
+        <node concept="jxRLt" id="3KW5WeiQMtJ" role="1bW2Oz">
+          <property role="TrG5h" value="row" />
+          <node concept="2jxLKc" id="3KW5WeiQMtK" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2EH5hC" id="77KX0PDuRx1">
     <property role="TrG5h" value="TheService" />

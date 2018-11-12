@@ -4,7 +4,6 @@
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="1e645434-f066-4246-95c3-c768bd8f6bee" name="org.modellwerkstatt.FopLand" version="0" />
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
   </languages>
   <imports>
@@ -15,7 +14,6 @@
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
     <import index="kpm6" ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inheritance)" />
     <import index="jfb4" ref="r:9641c0a2-41b3-496e-9ba1-063c9451cbb0(org.modellwerkstatt.simple.eventing)" />
-    <import index="lph5" ref="r:b3943154-ad25-4139-8505-7cc0cef5ab94(org.modellwerkstatt.simple.AutoTest)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.solution/)" implicit="true" />
     <import index="z3ji" ref="r:a8bca8d5-1220-4cc2-a6c5-4061175b2dd8(org.modellwerkstatt.objectflow.batchjob)" implicit="true" />
@@ -156,7 +154,7 @@
         <reference id="3875131616719438755" name="process" index="2_Hrwf" />
         <child id="3875131616719439029" name="actualArgument" index="2_HrWp" />
       </concept>
-      <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.OFXConfig" flags="ng" index="2CG7Z0">
+      <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.Config" flags="ng" index="2CG7Z0">
         <property id="3526396426252206723" name="lastUpdated" index="2320hu" />
         <child id="478945708906902061" name="elements" index="2CGBMS" />
         <child id="4625932951302987031" name="comcponentScanBase" index="3d0G2l" />
@@ -172,6 +170,7 @@
         <child id="478945708935709196" name="value" index="2DqwMp" />
         <child id="478945708935709194" name="type" index="2DqwMv" />
       </concept>
+      <concept id="478945708907003626" name="org.modellwerkstatt.objectflow.structure.IOFXConfigInstanceElement" flags="ng" index="2CJf1Z" />
       <concept id="478945708907003466" name="org.modellwerkstatt.objectflow.structure.OFXConfigInstance" flags="ng" index="2CJf3v">
         <child id="478945708907022272" name="elements" index="2CJ4_l" />
         <child id="478945708907003567" name="className" index="2CJf0U" />
@@ -269,36 +268,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="1e645434-f066-4246-95c3-c768bd8f6bee" name="org.modellwerkstatt.FopLand">
-      <concept id="1090118105280683828" name="org.modellwerkstatt.FopLand.structure.Block" flags="ng" index="jmJYg">
-        <child id="1090118105280683831" name="content" index="jmJYj" />
-      </concept>
-      <concept id="8091845429916662078" name="org.modellwerkstatt.FopLand.structure.BlockContainer" flags="ng" index="2VKfIP">
-        <child id="8091845429916662083" name="content" index="2VKfJ8" />
-      </concept>
-      <concept id="3994779150594037435" name="org.modellwerkstatt.FopLand.structure.Barcode" flags="ng" index="3keLz3">
-        <property id="5166201559362676295" name="height" index="8kUUP" />
-        <property id="5166201559362676296" name="orientation" index="8kUUU" />
-        <property id="8897841221869417420" name="widefactor" index="2E8syY" />
-        <child id="5166201559362505811" name="code" index="8rgix" />
-      </concept>
-      <concept id="4419620350168476982" name="org.modellwerkstatt.FopLand.structure.PropertyPath" flags="ng" index="3CH8xW">
-        <reference id="4419620350168525729" name="property" index="3CH4VF" />
-      </concept>
-      <concept id="4419620350168610695" name="org.modellwerkstatt.FopLand.structure.XPathProperty" flags="ng" index="3CHDbd">
-        <property id="2092502327787697465" name="format" index="3evbFY" />
-        <child id="4419620350168610697" name="propertyPath" index="3CHDb3" />
-      </concept>
-      <concept id="5101573753442852894" name="org.modellwerkstatt.FopLand.structure.TextContent" flags="ng" index="3JDCTi">
-        <property id="5101573753442852895" name="text" index="3JDCTj" />
-      </concept>
-      <concept id="5101573753442852912" name="org.modellwerkstatt.FopLand.structure.Document" flags="ng" index="3JDCTW">
-        <reference id="4419620350168511071" name="businessObject" index="3CH1sl" />
-        <child id="4629726998563534107" name="footer" index="14ayOQ" />
-        <child id="691534796939213791" name="header" index="3CYIz$" />
-        <child id="5101573753442852932" name="block" index="3JDCS8" />
       </concept>
     </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
@@ -567,6 +536,13 @@
           <property role="Xl_RC" value="1234" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="5wMKNZIhACL" role="2CJ4_l">
+        <property role="TrG5h" value="ClientDebugEventBusServer" />
+        <node concept="Xl_RD" id="5wMKNZIhACM" role="2CaGCA">
+          <property role="Xl_RC" value="192.168.1.90:8090" />
+        </node>
+      </node>
+      <node concept="2CJf1Z" id="5wMKNZIhACw" role="2CJ4_l" />
     </node>
     <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
@@ -584,40 +560,6 @@
     <node concept="2CPvp3" id="6jihzUGVfSJ" role="2CGBMS" />
     <node concept="Xl_RD" id="4Z17I5XxKA8" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
-    </node>
-  </node>
-  <node concept="3JDCTW" id="5E5qL$GrDMr">
-    <property role="TrG5h" value="OrderDocument" />
-    <ref role="3CH1sl" to="dtxg:4u029Jv8vvH" resolve="Order" />
-    <node concept="2VKfIP" id="5E5qL$GtK2R" role="3JDCS8">
-      <node concept="jmJYg" id="5E5qL$Gv9ew" role="2VKfJ8">
-        <node concept="3keLz3" id="5E5qL$Gv9f3" role="jmJYj">
-          <property role="8kUUP" value="15" />
-          <property role="8kUUU" value="0" />
-          <property role="2E8syY" value="2.5" />
-          <node concept="3CHDbd" id="5E5qL$Gv9g0" role="8rgix">
-            <property role="3evbFY" value="#,00;-##,00" />
-            <node concept="3CH8xW" id="3cAl6M4pvA8" role="3CHDb3">
-              <ref role="3CH4VF" to="dtxg:4u029Jv8vCO" resolve="id" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="jmJYg" id="5E5qL$Gv0fq" role="2VKfJ8">
-        <node concept="3JDCTi" id="5E5qL$Gv0fU" role="jmJYj">
-          <property role="3JDCTj" value="BARCODE Here" />
-        </node>
-      </node>
-    </node>
-    <node concept="jmJYg" id="5E5qL$GrDSh" role="14ayOQ">
-      <node concept="3JDCTi" id="5E5qL$GrDS$" role="jmJYj">
-        <property role="3JDCTj" value="XSLT Text Document Footer" />
-      </node>
-    </node>
-    <node concept="jmJYg" id="5E5qL$GrDQp" role="3CYIz$">
-      <node concept="3JDCTi" id="5E5qL$GrDQG" role="jmJYj">
-        <property role="3JDCTj" value="XSLT Text Document Header" />
-      </node>
     </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWEh">

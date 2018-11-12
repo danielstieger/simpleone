@@ -6,7 +6,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="1e645434-f066-4246-95c3-c768bd8f6bee" name="org.modellwerkstatt.FopLand" version="0" />
   </languages>
   <imports>
     <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
@@ -17,7 +16,6 @@
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="ey3s" ref="r:d3df241e-bcd2-4499-9490-fa2ee2437c81(org.modellwerkstatt.objectflow.events)" />
-    <import index="vpat" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:mjson(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.solution/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -380,40 +378,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="1e645434-f066-4246-95c3-c768bd8f6bee" name="org.modellwerkstatt.FopLand">
-      <concept id="1090118105280683828" name="org.modellwerkstatt.FopLand.structure.Block" flags="ng" index="jmJYg">
-        <child id="1090118105280683831" name="content" index="jmJYj" />
-      </concept>
-      <concept id="8091845429916662078" name="org.modellwerkstatt.FopLand.structure.BlockContainer" flags="ng" index="2VKfIP">
-        <child id="8091845429916662083" name="content" index="2VKfJ8" />
-      </concept>
-      <concept id="943161221832018364" name="org.modellwerkstatt.FopLand.structure.Plus" flags="ng" index="1kb$6u">
-        <child id="943161221832018366" name="left" index="1kb$6s" />
-        <child id="943161221832018367" name="right" index="1kb$6t" />
-      </concept>
-      <concept id="3994779150594037435" name="org.modellwerkstatt.FopLand.structure.Barcode" flags="ng" index="3keLz3">
-        <property id="5166201559362676295" name="height" index="8kUUP" />
-        <property id="5166201559362676296" name="orientation" index="8kUUU" />
-        <property id="8897841221869417420" name="widefactor" index="2E8syY" />
-        <child id="5166201559362505811" name="code" index="8rgix" />
-      </concept>
-      <concept id="4419620350168476982" name="org.modellwerkstatt.FopLand.structure.PropertyPath" flags="ng" index="3CH8xW">
-        <reference id="4419620350168525729" name="property" index="3CH4VF" />
-      </concept>
-      <concept id="4419620350168610695" name="org.modellwerkstatt.FopLand.structure.XPathProperty" flags="ng" index="3CHDbd">
-        <property id="2092502327787697465" name="format" index="3evbFY" />
-        <child id="4419620350168610697" name="propertyPath" index="3CHDb3" />
-      </concept>
-      <concept id="5101573753442852894" name="org.modellwerkstatt.FopLand.structure.TextContent" flags="ng" index="3JDCTi">
-        <property id="5101573753442852895" name="text" index="3JDCTj" />
-      </concept>
-      <concept id="5101573753442852912" name="org.modellwerkstatt.FopLand.structure.Document" flags="ng" index="3JDCTW">
-        <reference id="4419620350168511071" name="businessObject" index="3CH1sl" />
-        <child id="4629726998563534107" name="footer" index="14ayOQ" />
-        <child id="691534796939213791" name="header" index="3CYIz$" />
-        <child id="5101573753442852932" name="block" index="3JDCS8" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -4783,52 +4747,6 @@
       </node>
     </node>
   </node>
-  <node concept="3JDCTW" id="5E5qL$GrDMr">
-    <property role="TrG5h" value="OrderTemplate" />
-    <property role="3GE5qa" value="order_no_db" />
-    <ref role="3CH1sl" to="dtxg:4u029Jv8vvH" resolve="Order" />
-    <node concept="2VKfIP" id="5E5qL$GtK2R" role="3JDCS8">
-      <node concept="1kb$6u" id="1pEW74icaHH" role="2VKfJ8">
-        <node concept="3CHDbd" id="1pEW74icaIm" role="1kb$6t">
-          <property role="3evbFY" value="#,00;-##,00" />
-          <node concept="3CH8xW" id="1pEW74icaIz" role="3CHDb3">
-            <ref role="3CH4VF" to="dtxg:AN_117bqyN" resolve="name" />
-          </node>
-        </node>
-        <node concept="3JDCTi" id="1pEW74icaHl" role="1kb$6s">
-          <property role="3JDCTj" value="ORDER " />
-        </node>
-      </node>
-      <node concept="jmJYg" id="5E5qL$Gv9ew" role="2VKfJ8">
-        <node concept="3keLz3" id="5E5qL$Gv9f3" role="jmJYj">
-          <property role="8kUUP" value="15" />
-          <property role="8kUUU" value="0" />
-          <property role="2E8syY" value="2.5" />
-          <node concept="3CHDbd" id="5E5qL$Gv9g0" role="8rgix">
-            <property role="3evbFY" value="#,00;-##,00" />
-            <node concept="3CH8xW" id="1pEW74icaGp" role="3CHDb3">
-              <ref role="3CH4VF" to="dtxg:4u029Jv8vCO" resolve="id" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="jmJYg" id="5E5qL$Gv0fq" role="2VKfJ8">
-        <node concept="3JDCTi" id="5E5qL$Gv0fU" role="jmJYj">
-          <property role="3JDCTj" value="BARCODE Here" />
-        </node>
-      </node>
-    </node>
-    <node concept="jmJYg" id="5E5qL$GrDSh" role="14ayOQ">
-      <node concept="3JDCTi" id="5E5qL$GrDS$" role="jmJYj">
-        <property role="3JDCTj" value="XSLT Text Document Footer" />
-      </node>
-    </node>
-    <node concept="jmJYg" id="5E5qL$GrDQp" role="3CYIz$">
-      <node concept="3JDCTi" id="5E5qL$GrDQG" role="jmJYj">
-        <property role="3JDCTj" value="XSLT Text Document Header" />
-      </node>
-    </node>
-  </node>
   <node concept="3ugp7m" id="206uhc7i3fr">
     <property role="3uBtrS" value="F_70" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
@@ -4949,6 +4867,39 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1oPkR_87LLs" role="3cqZAp" />
+        <node concept="3clFbH" id="1oPkR_87LLL" role="3cqZAp" />
+        <node concept="3cpWs8" id="1oPkR_87MQY" role="3cqZAp">
+          <node concept="3cpWsn" id="1oPkR_87MQZ" role="3cpWs9">
+            <property role="TrG5h" value="a" />
+            <node concept="3uibUv" id="1oPkR_87MR0" role="1tU5fm">
+              <ref role="3uigEE" to="dtxg:3cAl6M4nWUn" resolve="Article" />
+            </node>
+            <node concept="2ShNRf" id="1oPkR_87MSo" role="33vP2m">
+              <node concept="1pGfFk" id="1oPkR_87Nca" role="2ShVmc">
+                <ref role="37wK5l" to="dtxg:3cAl6M4nWUP" resolve="Article" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1nLGXVrceOw" role="3cqZAp" />
+        <node concept="3clFbF" id="1oPkR_87NdC" role="3cqZAp">
+          <node concept="2OqwBi" id="1oPkR_87Ni2" role="3clFbG">
+            <node concept="2OqwBi" id="1oPkR_87NeB" role="2Oq$k0">
+              <node concept="37vLTw" id="1oPkR_87NdA" role="2Oq$k0">
+                <ref role="3cqZAo" node="1oPkR_87MQZ" resolve="a" />
+              </node>
+              <node concept="2Tkd$M" id="1oPkR_87NgL" role="2OqNvi" />
+            </node>
+            <node concept="liA8E" id="1oPkR_87NjV" role="2OqNvi">
+              <ref role="37wK5l" to="28jr:1nLGXVr3Di9" resolve="isNewInSession" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1oPkR_87Nks" role="3cqZAp" />
+        <node concept="3clFbH" id="1oPkR_87MOD" role="3cqZAp" />
+        <node concept="3clFbH" id="1oPkR_87MOV" role="3cqZAp" />
+        <node concept="3clFbH" id="1oPkR_87LMg" role="3cqZAp" />
       </node>
     </node>
   </node>
