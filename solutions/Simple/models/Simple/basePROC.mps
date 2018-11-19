@@ -1550,79 +1550,13 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="3cZhE1VPtI9" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3cZhE1VPaHm" role="8Wnug">
-            <node concept="2OqwBi" id="3cZhE1VPaI0" role="3clFbG">
-              <node concept="3y28L$" id="3cZhE1VPaHk" role="2Oq$k0" />
-              <node concept="liA8E" id="3cZhE1VPaJK" role="2OqNvi">
-                <ref role="37wK5l" to="28jr:4wvbHtt1$ND" resolve="addOperation" />
-                <node concept="2ShNRf" id="3cZhE1VPaK8" role="37wK5m">
-                  <node concept="YeOm9" id="3cZhE1VPc24" role="2ShVmc">
-                    <node concept="1Y3b0j" id="3cZhE1VPc27" role="YeSDq">
-                      <property role="2bfB8j" value="true" />
-                      <ref role="1Y3XeK" to="28jr:4wvbHtt1$NL" resolve="IOFXSessionOperation" />
-                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                      <node concept="3Tm1VV" id="3cZhE1VPc28" role="1B3o_S" />
-                      <node concept="3clFb_" id="3cZhE1VPc29" role="jymVt">
-                        <property role="1EzhhJ" value="false" />
-                        <property role="TrG5h" value="execute" />
-                        <node concept="3cqZAl" id="3cZhE1VPc2a" role="3clF45" />
-                        <node concept="3Tm1VV" id="3cZhE1VPc2b" role="1B3o_S" />
-                        <node concept="3clFbS" id="3cZhE1VPc2d" role="3clF47">
-                          <node concept="SfApY" id="3cZhE1VOSW5" role="3cqZAp">
-                            <node concept="3clFbS" id="3cZhE1VOSW7" role="SfCbr">
-                              <node concept="3clFbF" id="3cZhE1VOS0O" role="3cqZAp">
-                                <node concept="2YIFZM" id="3cZhE1VOS1E" role="3clFbG">
-                                  <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
-                                  <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                                  <node concept="3cmrfG" id="3cZhE1VOS21" role="37wK5m">
-                                    <property role="3cmrfH" value="1000" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="TDmWw" id="3cZhE1VOSW8" role="TEbGg">
-                              <node concept="3cpWsn" id="3cZhE1VOSWa" role="TDEfY">
-                                <property role="TrG5h" value="ex" />
-                                <node concept="3uibUv" id="3cZhE1VOT16" role="1tU5fm">
-                                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                                </node>
-                              </node>
-                              <node concept="3clFbS" id="3cZhE1VOSWe" role="TDEfX">
-                                <node concept="3clFbF" id="3cZhE1VOT1O" role="3cqZAp">
-                                  <node concept="2OqwBi" id="3cZhE1VOT33" role="3clFbG">
-                                    <node concept="37vLTw" id="3cZhE1VOT1N" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="3cZhE1VOSWa" resolve="ex" />
-                                    </node>
-                                    <node concept="liA8E" id="3cZhE1VOT5Q" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFb_" id="3cZhE1VPc2f" role="jymVt">
-                        <property role="1EzhhJ" value="false" />
-                        <property role="TrG5h" value="getInformation" />
-                        <node concept="17QB3L" id="3cZhE1VPc2g" role="3clF45" />
-                        <node concept="3Tm1VV" id="3cZhE1VPc2h" role="1B3o_S" />
-                        <node concept="3clFbS" id="3cZhE1VPc2j" role="3clF47">
-                          <node concept="3clFbF" id="3cZhE1VPc6G" role="3cqZAp">
-                            <node concept="Xl_RD" id="3cZhE1VPc6F" role="3clFbG">
-                              <property role="Xl_RC" value="WAITING" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbH" id="22Gq75gQKoQ" role="3cqZAp" />
+        <node concept="3clFbF" id="22Gq75gQKxx" role="3cqZAp">
+          <node concept="1odsa" id="22Gq75gQKxv" role="3clFbG">
+            <ref role="1ods_" to="dtxg:6vtMBTnC$jV" resolve="TestModelRepo" />
+            <ref role="37wK5l" to="dtxg:22Gq75gQKUG" resolve="testCheckinMethodForOrder" />
+            <node concept="10EhbA" id="22Gq75gQLgg" role="37wK5m">
+              <ref role="10EhbB" node="AN_117c0Wn" resolve="order" />
             </node>
           </node>
         </node>
@@ -6126,6 +6060,16 @@
                               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                               <node concept="Xl_RD" id="2Uji7vlCo3T" role="37wK5m">
                                 <property role="Xl_RC" value="TaskHandler.sessionOperation()" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="YS8fn" id="22Gq75gQM$y" role="3cqZAp">
+                          <node concept="2ShNRf" id="22Gq75gQM_q" role="YScLw">
+                            <node concept="1pGfFk" id="22Gq75gQO_Z" role="2ShVmc">
+                              <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                              <node concept="Xl_RD" id="22Gq75gQOAQ" role="37wK5m">
+                                <property role="Xl_RC" value="ISE ... PROBLEM in PD TASK HANDLER" />
                               </node>
                             </node>
                           </node>

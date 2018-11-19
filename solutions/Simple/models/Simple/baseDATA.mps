@@ -14,6 +14,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -73,6 +74,9 @@
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -170,6 +174,10 @@
       <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq" />
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -4203,6 +4211,47 @@
       <node concept="3cqZAl" id="6vtMBTnC$ka" role="3clF45" />
       <node concept="3Tm1VV" id="6vtMBTnC$kb" role="1B3o_S" />
       <node concept="3clFbS" id="6vtMBTnC$kc" role="3clF47" />
+    </node>
+    <node concept="wbJLE" id="22Gq75gQKUG" role="jymVt">
+      <property role="wbJLN" value="CHECKIN" />
+      <property role="TrG5h" value="testCheckinMethodForOrder" />
+      <node concept="37vLTG" id="22Gq75gQKX4" role="3clF46">
+        <property role="TrG5h" value="o" />
+        <node concept="3uibUv" id="22Gq75gQKXa" role="1tU5fm">
+          <ref role="3uigEE" node="4u029Jv8vvH" resolve="Order" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="22Gq75gQKUH" role="3clF45" />
+      <node concept="3Tm1VV" id="22Gq75gQKUI" role="1B3o_S" />
+      <node concept="3clFbS" id="22Gq75gQKUJ" role="3clF47">
+        <node concept="3SKdUt" id="22Gq75gQLoc" role="3cqZAp">
+          <node concept="3SKdUq" id="22Gq75gQLod" role="3SKWNk" />
+        </node>
+        <node concept="3clFbF" id="22Gq75gQLqO" role="3cqZAp">
+          <node concept="2OqwBi" id="22Gq75gQLqL" role="3clFbG">
+            <node concept="10M0yZ" id="22Gq75gQLqM" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="22Gq75gQLqN" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="22Gq75gQLwM" role="37wK5m">
+                <node concept="2OqwBi" id="22Gq75gQLBi" role="3uHU7w">
+                  <node concept="37vLTw" id="22Gq75gQL_P" role="2Oq$k0">
+                    <ref role="3cqZAo" node="22Gq75gQKX4" resolve="o" />
+                  </node>
+                  <node concept="2S8uIT" id="22Gq75gQLDe" role="2OqNvi">
+                    <ref role="2S8YL0" node="2VuurZ69yia" resolve="aufgabe" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="22Gq75gQLrs" role="3uHU7B">
+                  <property role="Xl_RC" value="o.aufgabe " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="wbJLE" id="1FVEJAItXUw" role="jymVt">
       <property role="TrG5h" value="findInvoice" />
