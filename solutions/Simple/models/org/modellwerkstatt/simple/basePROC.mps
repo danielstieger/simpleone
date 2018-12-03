@@ -243,11 +243,21 @@
         <reference id="8086154250676614082" name="object" index="2IFZAK" />
       </concept>
       <concept id="1879461712355203928" name="org.modellwerkstatt.objectflow.structure.PageScopeConceptFunc" flags="ig" index="JX2Gw" />
+      <concept id="4779674245203461929" name="org.modellwerkstatt.objectflow.structure.Scope" flags="ng" index="2PePtf">
+        <child id="4779674245203461947" name="scopeFunc" index="2PePtt" />
+        <child id="4779674245208419198" name="restricts" index="2PVZGo" />
+      </concept>
+      <concept id="3551693089249896576" name="org.modellwerkstatt.objectflow.structure.Identity" flags="ng" index="QIgUc">
+        <child id="3551693089258339309" name="covers" index="TetRx" />
+      </concept>
       <concept id="4779674245164303002" name="org.modellwerkstatt.objectflow.structure.StaticRole" flags="ng" index="2RjHbW">
         <child id="4779674245164315371" name="staticRoleFunc" index="2RjIad" />
       </concept>
       <concept id="4779674245164315510" name="org.modellwerkstatt.objectflow.structure.StaticRoleFunc" flags="ig" index="2RjIcg" />
       <concept id="6855023620829296283" name="org.modellwerkstatt.objectflow.structure.ObjectMeta" flags="ng" index="2Tkd$M" />
+      <concept id="3551693089253734220" name="org.modellwerkstatt.objectflow.structure.IdentityReference" flags="ng" index="TpT50">
+        <reference id="3551693089254935783" name="identity" index="T2yFF" />
+      </concept>
       <concept id="6855023620835054336" name="org.modellwerkstatt.objectflow.structure.CheckedOutEntities" flags="ng" index="2TUfMD">
         <reference id="6855023620835054339" name="businessObject" index="2TUfME" />
       </concept>
@@ -294,7 +304,10 @@
         <property id="3585259589779248406" name="formatString" index="35AVef" />
         <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
+      <concept id="4518330267516957488" name="org.modellwerkstatt.objectflow.structure.ScopeFunc" flags="ig" index="1jyyp0" />
       <concept id="4518330267516965068" name="org.modellwerkstatt.objectflow.structure.RolesAndPermissions" flags="ng" index="1jyGmW">
+        <child id="4779674245205936416" name="scopes" index="2PKp_6" />
+        <child id="3551693089249896602" name="identities" index="QIgUm" />
         <child id="4779674245164354289" name="staticRoles" index="2RjxEn" />
       </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
@@ -352,6 +365,9 @@
         <reference id="5319621840368239244" name="testData" index="1vn1lH" />
       </concept>
       <concept id="594565203027877250" name="org.modellwerkstatt.objectflow.structure.Session" flags="ng" index="3y28L$" />
+      <concept id="5697903518443819883" name="org.modellwerkstatt.objectflow.structure.ScopeReference" flags="ng" index="3ymtp$">
+        <reference id="4779674245224959526" name="scope" index="2USPT0" />
+      </concept>
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
         <property id="569389511234497416" name="minute" index="1$4sGQ" />
@@ -4846,6 +4862,58 @@
     <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="20qIzx" id="7T8c0sxUCDr" role="3umfm7">
       <node concept="3clFbS" id="7T8c0sxUCDs" role="2VODD2">
+        <node concept="3clFbH" id="35a9wK8bD31" role="3cqZAp" />
+        <node concept="3clFbF" id="35a9wK8bD7c" role="3cqZAp">
+          <node concept="2OqwBi" id="35a9wK8bD79" role="3clFbG">
+            <node concept="10M0yZ" id="35a9wK8bD7a" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="35a9wK8bD7b" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="35a9wK8bDdd" role="37wK5m">
+                <node concept="3ymtp$" id="35a9wK8bDey" role="3uHU7w">
+                  <ref role="2USPT0" node="35a9wK8bBwM" resolve="Store" />
+                </node>
+                <node concept="Xl_RD" id="35a9wK8bD8X" role="3uHU7B">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="35a9wK8jJpj" role="3cqZAp">
+          <node concept="2OqwBi" id="35a9wK8jJpg" role="3clFbG">
+            <node concept="10M0yZ" id="35a9wK8jJph" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="35a9wK8jJpi" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="35a9wK8jJ$c" role="37wK5m">
+                <node concept="Xl_RD" id="35a9wK8jJsh" role="3uHU7B" />
+                <node concept="TpT50" id="35a9wK8rb70" role="3uHU7w">
+                  <ref role="T2yFF" node="35a9wK848fl" resolve="My own store" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="35a9wK8rbkF" role="3cqZAp" />
+        <node concept="3clFbF" id="35a9wK8MLCw" role="3cqZAp">
+          <node concept="37vLTI" id="35a9wK8MLMh" role="3clFbG">
+            <node concept="2ShNRf" id="35a9wK8MLPh" role="37vLTx">
+              <node concept="1pGfFk" id="35a9wK8MLPg" role="2ShVmc">
+                <ref role="37wK5l" to="dtxg:AN_117bqxX" resolve="Store" />
+              </node>
+            </node>
+            <node concept="TpT50" id="35a9wK8MLCu" role="37vLTJ">
+              <ref role="T2yFF" node="35a9wK848fl" resolve="My own store" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="35a9wK8MLI_" role="3cqZAp" />
+        <node concept="3clFbH" id="35a9wK8MLxN" role="3cqZAp" />
         <node concept="3clFbF" id="7T8c0sxUFLp" role="3cqZAp">
           <node concept="2OqwBi" id="7T8c0sxUFQ6" role="3clFbG">
             <node concept="2OqwBi" id="7T8c0sxUFNR" role="2Oq$k0">
@@ -10149,6 +10217,31 @@
   </node>
   <node concept="1jyGmW" id="5WG4isef8Lv">
     <property role="TrG5h" value="TestRoles" />
+    <node concept="2PePtf" id="35a9wK8bBwM" role="2PKp_6">
+      <property role="TrG5h" value="Store" />
+      <node concept="1jyyp0" id="35a9wK8bBwN" role="2PePtt">
+        <node concept="3clFbS" id="35a9wK8bBwO" role="2VODD2">
+          <node concept="3clFbF" id="35a9wK8bCfp" role="3cqZAp">
+            <node concept="2ShNRf" id="35a9wK8bCfn" role="3clFbG">
+              <node concept="Tc6Ow" id="35a9wK8bC$a" role="2ShVmc">
+                <node concept="3uibUv" id="35a9wK8bCPU" role="HW$YZ">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="35a9wK8bBEr" role="2PVZGo">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+    </node>
+    <node concept="QIgUc" id="35a9wK848fl" role="QIgUm">
+      <property role="TrG5h" value="My own store" />
+      <node concept="3uibUv" id="35a9wK8JBaI" role="TetRx">
+        <ref role="3uigEE" to="dtxg:AN_117bpzI" resolve="Store" />
+      </node>
+    </node>
     <node concept="2RjHbW" id="5WG4isef8LW" role="2RjxEn">
       <property role="TrG5h" value="ADMIN" />
       <node concept="2RjIcg" id="5WG4isef8LX" role="2RjIad">

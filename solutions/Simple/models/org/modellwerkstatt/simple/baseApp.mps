@@ -434,7 +434,7 @@
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="Xl_RD" id="4Z17I5XxK$c" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7ui" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
@@ -481,7 +481,7 @@
     <node concept="2CJ4_Q" id="7HkVpVc$usl" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="Xl_RD" id="4Z17I5XxKAE" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7uk" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
@@ -558,7 +558,7 @@
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
     <node concept="2CPvp3" id="6jihzUGVfSJ" role="2CGBMS" />
-    <node concept="Xl_RD" id="4Z17I5XxKA8" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7uo" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
@@ -756,6 +756,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="65KdKINRfMS" role="3cqZAp" />
+        <node concept="3clFbH" id="35a9wK8ntzG" role="3cqZAp" />
         <node concept="3clFbJ" id="65KdKINRfT0" role="3cqZAp">
           <node concept="3clFbS" id="65KdKINRfT2" role="3clFbx">
             <node concept="3clFbF" id="65KdKINRg1b" role="3cqZAp">
@@ -869,6 +870,23 @@
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
       <node concept="3clFbS" id="5XruxTJPWFg" role="2VODD2">
+        <node concept="3clFbF" id="5RU7BPye6aU" role="3cqZAp">
+          <node concept="2OqwBi" id="5RU7BPye6aR" role="3clFbG">
+            <node concept="10M0yZ" id="5RU7BPye6aS" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="5RU7BPye6aT" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="5RU7BPye6x2" role="37wK5m">
+                <node concept="2MWqbU" id="5RU7BPye6_Q" role="3uHU7w" />
+                <node concept="Xl_RD" id="5RU7BPye6eA" role="3uHU7B">
+                  <property role="Xl_RC" value="Username is " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="6ic9U4dWL6l" role="3cqZAp">
           <node concept="3clFbS" id="6ic9U4dWL6n" role="3clFbx">
             <node concept="3clFbF" id="6ic9U4dWLK4" role="3cqZAp">
@@ -1216,7 +1234,7 @@
         </node>
       </node>
     </node>
-    <node concept="Xl_RD" id="4Z17I5XxKzl" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7ul" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
@@ -1272,7 +1290,7 @@
     </node>
     <node concept="2CPvp3" id="382CQP52o_8" role="2CGBMS" />
     <node concept="2CPvp3" id="382CQP52o_r" role="2CGBMS" />
-    <node concept="Xl_RD" id="7HkVpVbqq1a" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7uj" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
@@ -2053,6 +2071,20 @@
         </node>
       </node>
       <node concept="2CPvp3" id="21a32Cmm3S1" role="2CJdiS" />
+      <node concept="2CJf3v" id="2x95vWgz6eU" role="2CJdiS">
+        <property role="TrG5h" value="jdbcTemplate" />
+        <node concept="Xl_RD" id="2x95vWgz6eV" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.core.JdbcTemplate" />
+        </node>
+        <node concept="2CJ4$C" id="2x95vWgz6eW" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="2x95vWgz6eX" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="2x95vWgz6er" role="2CJdiS" />
       <node concept="2CJf3v" id="3drXVOoNMEM" role="2CJdiS">
         <property role="TrG5h" value="dataSource" />
         <node concept="Xl_RD" id="3drXVOoNMEO" role="2CJf0U">
@@ -2140,6 +2172,20 @@
           </node>
         </node>
       </node>
+      <node concept="2CPvp3" id="2x95vWgz299" role="2CJdiS" />
+      <node concept="2CJf3v" id="2x95vWgz28u" role="2CJdiS">
+        <property role="TrG5h" value="jdbcTemplate" />
+        <node concept="Xl_RD" id="2x95vWgz28v" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.core.JdbcTemplate" />
+        </node>
+        <node concept="2CJ4$C" id="2x95vWgz28w" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="2x95vWgz28x" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
       <node concept="2CPvp3" id="2RoKLt0pbfs" role="2CJdiS" />
       <node concept="2CJf3v" id="2RoKLt0pbft" role="2CJdiS">
         <property role="TrG5h" value="dataSource" />
@@ -2199,13 +2245,13 @@
       <node concept="2CJf3v" id="21a32Cmm3Sr" role="2CJdiS">
         <property role="TrG5h" value="_dateTimeTypeHandler" />
         <node concept="Xl_RD" id="21a32Cmm3Ss" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMJodaDateTimeTypeHanlder" />
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMJodaDateTimeTypeHandler" />
         </node>
       </node>
       <node concept="2CJf3v" id="21a32Cmm3St" role="2CJdiS">
         <property role="TrG5h" value="_localDateTypeHandler" />
         <node concept="Xl_RD" id="21a32Cmm3Su" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMJodaLocalDateTypeHanlder" />
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMJodaLocalDateTypeHandler" />
         </node>
       </node>
       <node concept="2CJf3v" id="21a32Cmm3Sv" role="2CJdiS">
@@ -2229,7 +2275,7 @@
       <node concept="2CJf3v" id="21a32Cmm3S_" role="2CJdiS">
         <property role="TrG5h" value="_mmTypeHandlers" />
         <node concept="Xl_RD" id="21a32Cmm3SA" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMTypeHandlers" />
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMStaticAccessHelper" />
         </node>
       </node>
       <node concept="2CJf3v" id="21a32Cmm3SB" role="2CJdiS">
@@ -2251,7 +2297,7 @@
         </node>
       </node>
     </node>
-    <node concept="Xl_RD" id="4Z17I5XxKyh" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7um" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
@@ -2305,7 +2351,7 @@
     <node concept="2CJ4_Q" id="7HkVpVc$tAo" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="Xl_RD" id="4Z17I5XxKuz" role="3d0G2l">
+    <node concept="Xl_RD" id="26OSHcub7un" role="3d0G2l">
       <property role="Xl_RC" value="org.modellwerkstatt.simple" />
     </node>
   </node>
