@@ -8510,7 +8510,7 @@
   </node>
   <node concept="3ugp7m" id="6XzXfke8x43">
     <property role="TrG5h" value="Edit Invoice" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
     <property role="3GE5qa" value="invoice_db" />
     <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ulXEN" id="56_jou8oKVV" role="3ulXEL">

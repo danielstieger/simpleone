@@ -443,6 +443,12 @@
     </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
+      <node concept="2CJ4$C" id="1FAXgcOZr$9" role="2CJ4_l">
+        <property role="TrG5h" value="PublishPushSelection" />
+        <node concept="Xl_RD" id="1FAXgcOZr$t" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
