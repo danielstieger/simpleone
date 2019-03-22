@@ -180,7 +180,6 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
-      <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXVoidStatementList" flags="ig" index="2d2NRx" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
         <reference id="3875131616719438755" name="process" index="2_Hrwf" />
@@ -224,6 +223,9 @@
         <child id="9110730801960131775" name="pages" index="2TpcRr" />
         <child id="4503841283149007813" name="successorHandler" index="3wlH0d" />
       </concept>
+      <concept id="3551693089253734220" name="org.modellwerkstatt.objectflow.structure.IdentityReference" flags="ng" index="TpT50">
+        <reference id="3551693089254935783" name="identity" index="T2yFF" />
+      </concept>
       <concept id="7270431012770461291" name="org.modellwerkstatt.objectflow.structure.BPRefIdReference" flags="ng" index="WNRgn">
         <reference id="7270431012770461292" name="businessProperty" index="WNRgg" />
       </concept>
@@ -258,9 +260,6 @@
         <reference id="4503841283149007793" name="command" index="3wlH1T" />
         <child id="4503841283148969517" name="successorPages" index="3wlqR_" />
       </concept>
-      <concept id="5697903518443819930" name="org.modellwerkstatt.objectflow.structure.IPermissionReference" flags="ng" index="3ymtql">
-        <reference id="5697903518443819941" name="evaluatePermission" index="3ymtqE" />
-      </concept>
       <concept id="4503841283130095195" name="org.modellwerkstatt.objectflow.structure.OFXRunCmdStatementList" flags="ig" index="3zdqQj" />
       <concept id="4503841283130068008" name="org.modellwerkstatt.objectflow.structure.OFXRunCmdPage" flags="ng" index="3zdtvw">
         <property id="4503841283130075497" name="boundObjectType" index="3zdvax" />
@@ -291,7 +290,6 @@
         <child id="830315156970381562" name="producerImpl" index="1_kBZ6" />
         <child id="830315156970381563" name="consumerImpl" index="1_kBZ7" />
       </concept>
-      <concept id="2665553595289276900" name="org.modellwerkstatt.objectflow.structure.PermissionHasReference" flags="ng" index="1G1AcV" />
       <concept id="2290402148395885702" name="org.modellwerkstatt.objectflow.structure.OFXClearInboxStratBehaviour" flags="ng" index="1K980o" />
       <concept id="2290402148395885582" name="org.modellwerkstatt.objectflow.structure.OFXConsRestartStratBehaviour" flags="ng" index="1K982g" />
       <concept id="2290402148395885642" name="org.modellwerkstatt.objectflow.structure.OFXReAddInboxStratBehaviour" flags="ng" index="1K983k" />
@@ -336,7 +334,7 @@
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
         <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
-        <child id="6952410984683978133" name="onStartup" index="3yTP5x" />
+        <child id="4399874686856833707" name="onStartupCmd" index="1FmHgs" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
@@ -360,6 +358,10 @@
       </concept>
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
+      </concept>
+      <concept id="4399874686857403043" name="org.modellwerkstatt.dataux.structure.StartupCommandCall" flags="ng" index="1Fkigk">
+        <child id="4399874686857403230" name="enabledCondition" index="1FkinD" />
+        <child id="4399874686859853317" name="commandCall" index="1Fzc2M" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -458,15 +460,9 @@
     </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
-      <node concept="2CJ4$C" id="1FAXgcOZr$9" role="2CJ4_l">
-        <property role="TrG5h" value="PublishPushSelection" />
-        <node concept="Xl_RD" id="1FAXgcOZr$t" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="WkCinTf7vu" role="2CJ4_l">
-        <property role="TrG5h" value="DefaultEnglish" />
-        <node concept="Xl_RD" id="WkCinTf7zl" role="2CaGCA">
+      <node concept="2CJ4$C" id="2P$1DRitH63" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="2P$1DRitH64" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
@@ -485,7 +481,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$rWF" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LockNBus" />
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
@@ -528,13 +524,22 @@
     </node>
     <node concept="2CJf3v" id="1NjnH06l6J4" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
+      <node concept="2CJ4$C" id="4L33b_GkfRD" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="4L33b_GkfRE" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="1NjnH06l6J6" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.vaadinforms.windows.VUiFactory" />
       </node>
     </node>
     <node concept="2CPvp3" id="1NjnH06l6IJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="7HkVpVc$umf" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sx7" resolve="FakeLockNBusNPrint" />
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJ4_Q" id="4L33b_GnFAD" role="2CGBMS">
+      <ref role="2CJ4_N" node="4L33b_GnFC9" resolve="FakePrint" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$upL" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
@@ -587,10 +592,10 @@
           <property role="Xl_RC" value="template_suivant" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="57ov2SP$JK" role="2CJ4_l">
-        <property role="TrG5h" value="DebugUsers" />
-        <node concept="Xl_RD" id="57ov2SP$JL" role="2CaGCA">
-          <property role="Xl_RC" value="1234" />
+      <node concept="2CJ4$C" id="2P$1DRitFdf" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="2P$1DRitH5i" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="2CJf1Z" id="5wMKNZIhACw" role="2CJ4_l" />
@@ -600,7 +605,7 @@
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTR" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockNBus" />
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
@@ -810,31 +815,12 @@
         </node>
         <node concept="3clFbH" id="65KdKINRfMS" role="3cqZAp" />
         <node concept="3clFbH" id="35a9wK8ntzG" role="3cqZAp" />
-        <node concept="3clFbJ" id="65KdKINRfT0" role="3cqZAp">
-          <node concept="3clFbS" id="65KdKINRfT2" role="3clFbx">
-            <node concept="3clFbF" id="65KdKINRg1b" role="3cqZAp">
-              <node concept="2OqwBi" id="65KdKINRg3r" role="3clFbG">
-                <node concept="2Rjrh3" id="65KdKINRg19" role="2Oq$k0" />
-                <node concept="liA8E" id="65KdKINRg6n" role="2OqNvi">
-                  <ref role="37wK5l" to="w7gk:65KdKINRh5x" resolve="setProlongedUserSession" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1G1AcV" id="65KdKINRfV1" role="3clFbw">
-            <ref role="3ymtqE" to="1y8i:5WG4isef8LW" resolve="TRUE_ROLE" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="65KdKINRfQH" role="3cqZAp" />
         <node concept="3cpWs6" id="5XruxTJPWF2" role="3cqZAp">
           <node concept="37vLTw" id="5XruxTJPWF3" role="3cqZAk">
             <ref role="3cqZAo" node="5XruxTJPWEm" resolve="login" />
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2d2NRx" id="1oz7qwFe4fa" role="3yTP5x">
-      <node concept="3clFbS" id="1oz7qwFe4fb" role="2VODD2" />
     </node>
     <node concept="33WYYh" id="2MI0JB6CHQr" role="2N77jL">
       <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
@@ -1112,6 +1098,19 @@
           <node concept="3SKdUq" id="4dQ7$MA1b0W" role="3SKWNk">
             <property role="3SKdUp" value="values is defined as local variable above" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Fkigk" id="hcdqIeBU7J" role="1FmHgs">
+      <node concept="2_HltQ" id="hcdqIeBU7K" role="1Fzc2M">
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search Orders" />
+        <node concept="10Nm6u" id="hcdqIeBU9l" role="2_HrWp" />
+      </node>
+      <node concept="3clFbC" id="hcdqIeBVph" role="1FkinD">
+        <node concept="10Nm6u" id="hcdqIeBVpE" role="3uHU7w" />
+        <node concept="TpT50" id="hcdqIeBVo_" role="3uHU7B">
+          <ref role="T2yFF" to="1y8i:35a9wK848fl" resolve="My own store" />
         </node>
       </node>
     </node>
@@ -2000,7 +1999,7 @@
       <node concept="2CPvp3" id="7HkVpVc$j28" role="2CJdiS" />
     </node>
     <node concept="2CJoq6" id="7HkVpVbYPJd" role="2CGBMS">
-      <property role="TrG5h" value="LockNBus" />
+      <property role="TrG5h" value="LockBus" />
       <node concept="2CJf3v" id="7HkVpVbYPJX" role="2CJdiS">
         <property role="TrG5h" value="eventBus" />
         <node concept="Xl_RD" id="7HkVpVbYPJY" role="2CJf0U">
@@ -2039,7 +2038,7 @@
       </node>
     </node>
     <node concept="2CJoq6" id="6jihzUGVoek" role="2CGBMS">
-      <property role="TrG5h" value="FakeLockNBus" />
+      <property role="TrG5h" value="FakeLockBus" />
       <node concept="2CJf3v" id="6jihzUGVoel" role="2CJdiS">
         <property role="TrG5h" value="eventBus" />
         <node concept="Xl_RD" id="6jihzUGVoem" role="2CJf0U">
@@ -2090,7 +2089,15 @@
         </node>
       </node>
     </node>
-    <node concept="2CPvp3" id="7HkVpVbYPJG" role="2CGBMS" />
+    <node concept="2CJoq6" id="4L33b_GnFC9" role="2CGBMS">
+      <property role="TrG5h" value="FakePrint" />
+      <node concept="2CJf3v" id="4L33b_GnFFs" role="2CJdiS">
+        <property role="TrG5h" value="printFactory" />
+        <node concept="Xl_RD" id="4L33b_GnFFt" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.OFXFakePrintFactory" />
+        </node>
+      </node>
+    </node>
     <node concept="2CJoq6" id="7HkVpVc$iWn" role="2CGBMS">
       <property role="TrG5h" value="FatPrinting" />
       <node concept="2CJf3v" id="4u029Jv99om" role="2CJdiS">

@@ -3296,7 +3296,7 @@
       <node concept="2kzhL4" id="6xifBbDF$a1" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDF$bc" role="il5$o">
-          <property role="Xl_RC" value="error" />
+          <property role="Xl_RC" value="delete_outline" />
         </node>
       </node>
     </node>
@@ -3351,10 +3351,10 @@
       <node concept="2kzhL4" id="2w5UnVouM9R" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMaX" role="il5$o">
-          <property role="Xl_RC" value="comment" />
+          <property role="Xl_RC" value="check_circle_outline" />
         </node>
         <node concept="Xl_RD" id="6xifBbDNu2w" role="il5_5">
-          <property role="Xl_RC" value="Edit readonly" />
+          <property role="Xl_RC" value="Beleg freigeben" />
         </node>
       </node>
     </node>
@@ -3371,6 +3371,9 @@
         <node concept="Xl_RD" id="6xifBbDMwxF" role="il5_5">
           <property role="Xl_RC" value="Edit" />
         </node>
+        <node concept="Xl_RD" id="4LNQ1dLeDzR" role="il5$o">
+          <property role="Xl_RC" value="create" />
+        </node>
       </node>
     </node>
     <node concept="il5_x" id="6xifBbDNt94" role="2kzhMJ">
@@ -3384,7 +3387,7 @@
       <node concept="2kzhL4" id="6xifBbDNt97" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDNtfE" role="il5$o">
-          <property role="Xl_RC" value="fiber_new" />
+          <property role="Xl_RC" value="add_box" />
         </node>
         <node concept="Xl_RD" id="6xifBbDTVFk" role="il5_5">
           <property role="Xl_RC" value="New Order" />
@@ -3401,10 +3404,10 @@
       <node concept="2kzhL4" id="6xifBbDNtYR" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDNtYS" role="il5_5">
-          <property role="Xl_RC" value="Complex Edit" />
+          <property role="Xl_RC" value="Beleg reset" />
         </node>
         <node concept="Xl_RD" id="6xifBbDNtZ_" role="il5$o">
-          <property role="Xl_RC" value="report_problem" />
+          <property role="Xl_RC" value="highlight_off" />
         </node>
       </node>
     </node>
@@ -3695,7 +3698,7 @@
         <property role="il5CD" value="UNDEFINED_0" />
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDMwdO" role="il5$o">
-          <property role="Xl_RC" value="speaker_notes" />
+          <property role="Xl_RC" value="check_circle_outline" />
         </node>
       </node>
     </node>
@@ -3710,7 +3713,7 @@
         <property role="il5CD" value="UNDEFINED_0" />
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDMwhn" role="il5$o">
-          <property role="Xl_RC" value="speaker_notes_off" />
+          <property role="Xl_RC" value="highlight_off" />
         </node>
       </node>
     </node>

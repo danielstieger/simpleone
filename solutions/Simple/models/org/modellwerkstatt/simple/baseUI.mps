@@ -2413,9 +2413,6 @@
       <ref role="1Tjo6F" to="dtxg:7i4jsoimSH0" resolve="orders" />
       <ref role="1Tjo7l" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
     </node>
-    <node concept="UTR7Y" id="6xifBbDyCHW" role="UTRd0">
-      <property role="UTR3t" value="068587" />
-    </node>
   </node>
   <node concept="2mKXYI" id="53acIw4Vpvb">
     <property role="1Nb$_v" value="true" />

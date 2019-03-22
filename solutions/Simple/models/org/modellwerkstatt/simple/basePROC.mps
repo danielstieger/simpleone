@@ -250,10 +250,6 @@
       <concept id="3551693089249896576" name="org.modellwerkstatt.objectflow.structure.Identity" flags="ng" index="QIgUc">
         <child id="3551693089258339309" name="covers" index="TetRx" />
       </concept>
-      <concept id="4779674245164303002" name="org.modellwerkstatt.objectflow.structure.StaticRole" flags="ng" index="2RjHbW">
-        <child id="4779674245164315371" name="staticRoleFunc" index="2RjIad" />
-      </concept>
-      <concept id="4779674245164315510" name="org.modellwerkstatt.objectflow.structure.StaticRoleFunc" flags="ig" index="2RjIcg" />
       <concept id="6855023620829296283" name="org.modellwerkstatt.objectflow.structure.ObjectMeta" flags="ng" index="2Tkd$M" />
       <concept id="3551693089253734220" name="org.modellwerkstatt.objectflow.structure.IdentityReference" flags="ng" index="TpT50">
         <reference id="3551693089254935783" name="identity" index="T2yFF" />
@@ -286,8 +282,6 @@
       <concept id="1881524139087020878" name="org.modellwerkstatt.objectflow.structure.Transition" flags="ng" index="10x$tM">
         <reference id="1881524139087020882" name="targetState" index="10x$tI" />
         <reference id="1881524139087020879" name="command" index="10x$tN" />
-        <child id="2924471170334881325" name="permRoleReferenceReadOnly" index="37eV$_" />
-        <child id="2924471170334881318" name="permRoleReference" index="37eV$I" />
       </concept>
       <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085549729" name="org.modellwerkstatt.objectflow.structure.FlagCommand" flags="ng" index="10Adit">
@@ -311,7 +305,6 @@
       <concept id="4518330267516965068" name="org.modellwerkstatt.objectflow.structure.RolesAndPermissions" flags="ng" index="1jyGmW">
         <child id="4779674245205936416" name="scopes" index="2PKp_6" />
         <child id="3551693089249896602" name="identities" index="QIgUm" />
-        <child id="4779674245164354289" name="staticRoles" index="2RjxEn" />
       </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
@@ -371,9 +364,6 @@
       <concept id="5697903518443819883" name="org.modellwerkstatt.objectflow.structure.ScopeReference" flags="ng" index="3ymtp$">
         <reference id="4779674245224959526" name="scope" index="2USPT0" />
       </concept>
-      <concept id="5697903518443819930" name="org.modellwerkstatt.objectflow.structure.IPermissionReference" flags="ng" index="3ymtql">
-        <reference id="5697903518443819941" name="evaluatePermission" index="3ymtqE" />
-      </concept>
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
         <property id="569389511234497416" name="minute" index="1$4sGQ" />
@@ -389,7 +379,6 @@
         <property id="569389511234497408" name="year" index="1$4sGY" />
         <property id="569389511234497409" name="month" index="1$4sGZ" />
       </concept>
-      <concept id="2665553595289276900" name="org.modellwerkstatt.objectflow.structure.PermissionHasReference" flags="ng" index="1G1AcV" />
       <concept id="6303390138597557532" name="org.modellwerkstatt.objectflow.structure.ConvTextExpression" flags="ng" index="1WHerN">
         <property id="6303390138597572053" name="type" index="1WHdSU" />
         <child id="6303390138597674847" name="expression" index="1WEEMK" />
@@ -1047,6 +1036,9 @@
     </node>
     <node concept="10xgET" id="AN_117c2XR" role="10xgEU">
       <ref role="10xgEu" to="dtxg:AN_117c2L0" resolve="ordered" />
+      <node concept="10xUwW" id="2M4KcIRA_vu" role="10x$tn">
+        <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
+      </node>
       <node concept="10xUwW" id="3cAl6M4vghV" role="10x$tn">
         <ref role="10x$tN" node="3cAl6M4vge_" resolve="Reset Order" />
         <ref role="10x$tI" node="AN_117c2XP" />
@@ -1077,6 +1069,9 @@
     </node>
     <node concept="10xgET" id="AN_117c2XU" role="10xgEU">
       <ref role="10xgEu" to="dtxg:AN_117c2L3" resolve="completed" />
+      <node concept="10xUwW" id="2M4KcIRA_wd" role="10x$tn">
+        <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
+      </node>
       <node concept="10xUwW" id="1ReQ$xd3Npu" role="10x$tn">
         <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
       </node>
@@ -1137,21 +1132,9 @@
     </node>
     <node concept="10xUwW" id="3RUln15CG2a" role="10HVpa">
       <ref role="10x$tN" node="3RUln15CFXX" resolve="GoWithoutPage" />
-      <node concept="1G1AcV" id="3RUln15NdoG" role="37eV$_">
-        <ref role="3ymtqE" node="5WG4isef8LW" resolve="TRUE_ROLE" />
-      </node>
-      <node concept="1G1AcV" id="3RUln15Qx33" role="37eV$I">
-        <ref role="3ymtqE" node="3RUln15Qx48" resolve="FALSE_ROLE" />
-      </node>
     </node>
     <node concept="10xUwW" id="3RUln16qRZl" role="10HVpa">
       <ref role="10x$tN" node="3RUln16qRl4" resolve="GoWithoutPage2" />
-      <node concept="1G1AcV" id="3RUln16qRZm" role="37eV$_">
-        <ref role="3ymtqE" node="5WG4isef8LW" resolve="TRUE_ROLE" />
-      </node>
-      <node concept="1G1AcV" id="3RUln16qRZn" role="37eV$I">
-        <ref role="3ymtqE" node="3RUln15Qx48" resolve="FALSE_ROLE" />
-      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
@@ -1702,8 +1685,18 @@
       <ref role="1PxDUh" to="ache:$arjoT88Li" resolve="Fx8IconDefaults" />
       <ref role="3cqZAo" to="ache:4HlXVUYdTP$" resolve="ICON_EDIT" />
     </node>
-    <node concept="Xl_RD" id="6G8jBJnBK8K" role="19I_$n">
-      <property role="Xl_RC" value="LOCK" />
+    <node concept="3cpWs3" id="7lZUamR9wJp" role="19I_$n">
+      <node concept="3urNQE" id="7lZUamR9wM4" role="3uHU7w">
+        <ref role="3cqZAo" node="3cAl6M4p83C" resolve="id" />
+      </node>
+      <node concept="3cpWs3" id="7lZUamR9wFl" role="3uHU7B">
+        <node concept="Xl_RD" id="6G8jBJnBK8K" role="3uHU7B">
+          <property role="Xl_RC" value="ORDER" />
+        </node>
+        <node concept="Xl_RD" id="7lZUamR9wGP" role="3uHU7w">
+          <property role="Xl_RC" value="_" />
+        </node>
+      </node>
     </node>
     <node concept="20vkWO" id="3xmYcCN$4_h" role="20vkWf">
       <node concept="20vkWP" id="3xmYcCN$4_i" role="20vkWT">
@@ -2327,6 +2320,28 @@
         <ref role="2DFCCC" to="dtxg:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="2_YacpKQMiX" role="10ot2L">
           <node concept="3clFbS" id="2_YacpKQMiY" role="2VODD2">
+            <node concept="3clFbJ" id="4LNQ1dLxv3R" role="3cqZAp">
+              <node concept="3clFbS" id="4LNQ1dLxv3T" role="3clFbx">
+                <node concept="10Adxj" id="4LNQ1dLxvO7" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="4LNQ1dLxveW" role="3clFbw">
+                <node concept="liA8E" id="4LNQ1dLxvzj" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="4LNQ1dLxv6g" role="37wK5m">
+                    <node concept="3urNR4" id="4LNQ1dLxvaD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+                    </node>
+                    <node concept="2S8uIT" id="4LNQ1dLxvcp" role="2OqNvi">
+                      <ref role="2S8YL0" to="dtxg:AN_117ldb_" resolve="ean" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="4LNQ1dLxvzM" role="2Oq$k0">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4LNQ1dLxvOo" role="3cqZAp" />
             <node concept="3clFbF" id="2_YacpKQMiZ" role="3cqZAp">
               <node concept="37vLTI" id="2_YacpKQMj0" role="3clFbG">
                 <node concept="2OqwBi" id="2_YacpKQMj1" role="37vLTx">
@@ -10433,30 +10448,6 @@
       <property role="TrG5h" value="My own store" />
       <node concept="3uibUv" id="35a9wK8JBaI" role="TetRx">
         <ref role="3uigEE" to="dtxg:AN_117bpzI" resolve="Store" />
-      </node>
-    </node>
-    <node concept="2RjHbW" id="5WG4isef8LW" role="2RjxEn">
-      <property role="TrG5h" value="TRUE_ROLE" />
-      <node concept="2RjIcg" id="5WG4isef8LX" role="2RjIad">
-        <node concept="3clFbS" id="5WG4isef8LY" role="2VODD2">
-          <node concept="3clFbF" id="5WG4isef8Nk" role="3cqZAp">
-            <node concept="3clFbT" id="5WG4isef8Nj" role="3clFbG">
-              <property role="3clFbU" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2RjHbW" id="3RUln15Qx48" role="2RjxEn">
-      <property role="TrG5h" value="FALSE_ROLE" />
-      <node concept="2RjIcg" id="3RUln15Qx49" role="2RjIad">
-        <node concept="3clFbS" id="3RUln15Qx4a" role="2VODD2">
-          <node concept="3clFbF" id="3RUln15Qx4b" role="3cqZAp">
-            <node concept="3clFbT" id="3RUln15Qx6R" role="3clFbG">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
