@@ -5072,8 +5072,8 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="35a9wK8jJ$c" role="37wK5m">
                 <node concept="Xl_RD" id="35a9wK8jJsh" role="3uHU7B" />
-                <node concept="TpT50" id="35a9wK8rb70" role="3uHU7w">
-                  <ref role="T2yFF" node="35a9wK848fl" resolve="My own store" />
+                <node concept="TpT50" id="5etApAvouG$" role="3uHU7w">
+                  <ref role="T2yFF" node="5etApAv2XGa" resolve="Int_Identity" />
                 </node>
               </node>
             </node>
@@ -5082,18 +5082,15 @@
         <node concept="3clFbH" id="35a9wK8rbkF" role="3cqZAp" />
         <node concept="3clFbF" id="35a9wK8MLCw" role="3cqZAp">
           <node concept="37vLTI" id="35a9wK8MLMh" role="3clFbG">
-            <node concept="2ShNRf" id="35a9wK8MLPh" role="37vLTx">
-              <node concept="1pGfFk" id="35a9wK8MLPg" role="2ShVmc">
-                <ref role="37wK5l" to="dtxg:AN_117bqxX" resolve="Store" />
-              </node>
+            <node concept="3cmrfG" id="5etApAvouNG" role="37vLTx">
+              <property role="3cmrfH" value="10" />
             </node>
-            <node concept="TpT50" id="35a9wK8MLCu" role="37vLTJ">
-              <ref role="T2yFF" node="35a9wK848fl" resolve="My own store" />
+            <node concept="TpT50" id="5etApAvouKJ" role="37vLTJ">
+              <ref role="T2yFF" node="5etApAv2XGa" resolve="Int_Identity" />
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="35a9wK8MLI_" role="3cqZAp" />
-        <node concept="3clFbH" id="35a9wK8MLxN" role="3cqZAp" />
         <node concept="3clFbF" id="7T8c0sxUFLp" role="3cqZAp">
           <node concept="2OqwBi" id="7T8c0sxUFQ6" role="3clFbG">
             <node concept="2OqwBi" id="7T8c0sxUFNR" role="2Oq$k0">
@@ -10424,6 +10421,24 @@
   </node>
   <node concept="1jyGmW" id="5WG4isef8Lv">
     <property role="TrG5h" value="TestRoles" />
+    <node concept="QIgUc" id="5etApAv2XGa" role="QIgUm">
+      <property role="TrG5h" value="Int_Identity" />
+      <node concept="3uibUv" id="5etApAv$ZQN" role="TetRx">
+        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+    </node>
+    <node concept="QIgUc" id="5etApAv$ZT0" role="QIgUm">
+      <property role="TrG5h" value="String_Identity" />
+      <node concept="3uibUv" id="5etApAv$ZVh" role="TetRx">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+    </node>
+    <node concept="QIgUc" id="5etApAv$ZVv" role="QIgUm">
+      <property role="TrG5h" value="ValueObject_Identity" />
+      <node concept="3uibUv" id="5etApAv_0eP" role="TetRx">
+        <ref role="3uigEE" to="dtxg:18291WB_jj6" resolve="Money" />
+      </node>
+    </node>
     <node concept="2PePtf" id="35a9wK8bBwM" role="2PKp_6">
       <property role="TrG5h" value="Store" />
       <node concept="1jyyp0" id="35a9wK8bBwN" role="2PePtt">
@@ -10442,12 +10457,6 @@
       </node>
       <node concept="3uibUv" id="35a9wK8bBEr" role="2PVZGo">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-    </node>
-    <node concept="QIgUc" id="35a9wK848fl" role="QIgUm">
-      <property role="TrG5h" value="My own store" />
-      <node concept="3uibUv" id="35a9wK8JBaI" role="TetRx">
-        <ref role="3uigEE" to="dtxg:AN_117bpzI" resolve="Store" />
       </node>
     </node>
   </node>

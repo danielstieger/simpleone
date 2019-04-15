@@ -4772,6 +4772,14 @@
           <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
         </node>
       </node>
+      <node concept="2TG9WX" id="4443BgfpedW" role="3OfFNq">
+        <node concept="PnLzW" id="4443BgfpedX" role="PoUSh">
+          <property role="PiFy3" value="10" />
+        </node>
+        <node concept="3Oe$u_" id="10OK0P_y0Hz" role="3$nDjG">
+          <ref role="3O0p26" to="dtxg:5jJxQKSR6RQ" resolve="status2" />
+        </node>
+      </node>
       <node concept="3Oe2IN" id="4443BgfpedJ" role="3OfFNq">
         <node concept="PnLzW" id="4443BgfpedK" role="PoUSh">
           <property role="PiFy3" value="5" />
@@ -4811,14 +4819,6 @@
         <node concept="PoUSp" id="4443BgfpedU" role="PoUSh" />
         <node concept="3Oe$u_" id="4443BgfpedV" role="3$nDjG">
           <ref role="3O0p26" to="dtxg:4u029Jv8vG8" resolve="totalValue" />
-        </node>
-      </node>
-      <node concept="2TG9WX" id="4443BgfpedW" role="3OfFNq">
-        <node concept="PnLzW" id="4443BgfpedX" role="PoUSh">
-          <property role="PiFy3" value="10" />
-        </node>
-        <node concept="3Oe$u_" id="4443BgfpedZ" role="3$nDjG">
-          <ref role="3O0p26" to="dtxg:AN_117c2L7" resolve="status" />
         </node>
       </node>
     </node>
