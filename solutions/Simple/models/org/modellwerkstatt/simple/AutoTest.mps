@@ -69,13 +69,16 @@
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="3262649880239917894" name="org.modellwerkstatt.objectflow.structure.OppositeOption" flags="ng" index="2fr8A1" />
+      <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
+        <child id="1707086779727598829" name="options" index="2_RhUc" />
       </concept>
-      <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.Status" flags="ng" index="2XvgOf">
+      <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
+        <child id="4706474809433463576" name="options" index="1TMXFZ" />
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
@@ -95,6 +98,7 @@
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
+      <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
@@ -122,6 +126,7 @@
         <property role="2XvgOS" value="A" />
         <property role="1YKsg0" value="A" />
         <property role="1YKsg1" value="A" />
+        <node concept="2_5uyX" id="7h5_Fe2gwpG" role="2_RhUc" />
       </node>
       <node concept="2XvgOc" id="2SRXiXAJ4Mh" role="2XvgO2">
         <property role="TrG5h" value="B" />
@@ -129,6 +134,7 @@
         <property role="1YKsg0" value="B" />
         <property role="1YKsg1" value="b" />
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpH" role="1TMXFZ" />
     </node>
     <node concept="3Tm1VV" id="1W$tMb4XU9I" role="1B3o_S" />
     <node concept="3clFbW" id="1W$tMb4XU9J" role="jymVt">

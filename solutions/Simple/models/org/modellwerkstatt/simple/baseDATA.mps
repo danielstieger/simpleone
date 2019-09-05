@@ -182,12 +182,6 @@
       </concept>
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
-      <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
-        <child id="6525155817177697693" name="lines" index="20vkWT" />
-      </concept>
-      <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
-        <property id="6525155817177697682" name="text" index="20vkWQ" />
-      </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
@@ -215,6 +209,10 @@
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
       </concept>
+      <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
+        <property id="1707086779732260970" name="val" index="2_138b" />
+      </concept>
+      <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="6135709767654760054" name="org.modellwerkstatt.objectflow.structure.SimpleBuilderElement" flags="ng" index="GOFnK" />
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
@@ -236,10 +234,11 @@
         <property id="4533072425307715682" name="value" index="2XvgOS" />
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
-        <child id="3140039561980674369" name="doc" index="1V6Uwp" />
+        <child id="1707086779727598829" name="options" index="2_RhUc" />
       </concept>
-      <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.Status" flags="ng" index="2XvgOf">
+      <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
+        <child id="4706474809433463576" name="options" index="1TMXFZ" />
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
@@ -297,6 +296,7 @@
         <property id="569389511234497408" name="year" index="1$4sGY" />
         <property id="569389511234497409" name="month" index="1$4sGZ" />
       </concept>
+      <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -570,10 +570,9 @@
         <property role="2XvgOS" value="A" />
         <property role="1YKsg0" value="Acpt" />
         <property role="1YKsg1" value="Accepted" />
-        <node concept="20vkWO" id="T1jWmti01X" role="1V6Uwp">
-          <node concept="20vkWP" id="T1jWmti01Y" role="20vkWT">
-            <property role="20vkWQ" value="#E74C3C" />
-          </node>
+        <node concept="2_5uyX" id="7h5_Fe2gwpS" role="2_RhUc" />
+        <node concept="2_1389" id="7h5_Fe2gwpU" role="2_RhUc">
+          <property role="2_138b" value="#E74C3C" />
         </node>
       </node>
       <node concept="2XvgOc" id="2IUGN4P8gzi" role="2XvgO2">
@@ -581,10 +580,8 @@
         <property role="2XvgOS" value="R" />
         <property role="1YKsg0" value="Rcjt" />
         <property role="1YKsg1" value="Rejected" />
-        <node concept="20vkWO" id="T1jWmti025" role="1V6Uwp">
-          <node concept="20vkWP" id="T1jWmti026" role="20vkWT">
-            <property role="20vkWQ" value="#30B41D" />
-          </node>
+        <node concept="2_1389" id="7h5_Fe2gwpV" role="2_RhUc">
+          <property role="2_138b" value="#30B41D" />
         </node>
       </node>
       <node concept="2XvgOc" id="2IUGN4P9es0" role="2XvgO2">
@@ -592,12 +589,11 @@
         <property role="2XvgOS" value="U" />
         <property role="1YKsg0" value="?" />
         <property role="1YKsg1" value="Unknown" />
-        <node concept="20vkWO" id="T1jWmti02d" role="1V6Uwp">
-          <node concept="20vkWP" id="T1jWmti02e" role="20vkWT">
-            <property role="20vkWQ" value="#2C3E50" />
-          </node>
+        <node concept="2_1389" id="7h5_Fe2gwpW" role="2_RhUc">
+          <property role="2_138b" value="#2C3E50" />
         </node>
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpT" role="1TMXFZ" />
     </node>
     <node concept="3Tm1VV" id="AN_117bbd_" role="1B3o_S" />
     <node concept="1bOX9e" id="AN_117bbdA" role="TxmiU">
@@ -4037,10 +4033,9 @@
         <property role="2XvgOS" value="E" />
         <property role="1YKsg0" value="existing" />
         <property role="1YKsg1" value="existing" />
-        <node concept="20vkWO" id="2MI0JB6BcAq" role="1V6Uwp">
-          <node concept="20vkWP" id="2MI0JB6BcAr" role="20vkWT">
-            <property role="20vkWQ" value="#FF0000" />
-          </node>
+        <node concept="2_5uyX" id="7h5_Fe2gwpI" role="2_RhUc" />
+        <node concept="2_1389" id="7h5_Fe2gwpK" role="2_RhUc">
+          <property role="2_138b" value="#FF0000" />
         </node>
       </node>
       <node concept="2XvgOc" id="2Uji7vlCu8G" role="2XvgO2">
@@ -4048,12 +4043,11 @@
         <property role="2XvgOS" value="N" />
         <property role="1YKsg0" value="new" />
         <property role="1YKsg1" value="new" />
-        <node concept="20vkWO" id="2MI0JB6CE0_" role="1V6Uwp">
-          <node concept="20vkWP" id="2MI0JB6CE0A" role="20vkWT">
-            <property role="20vkWQ" value="#00FF00" />
-          </node>
+        <node concept="2_1389" id="7h5_Fe2gwpL" role="2_RhUc">
+          <property role="2_138b" value="#00FF00" />
         </node>
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpJ" role="1TMXFZ" />
     </node>
     <node concept="3Tm1VV" id="3kFdJs03WY" role="1B3o_S" />
     <node concept="1bOX9e" id="3kFdJs03XV" role="TxmiU">
@@ -4714,6 +4708,7 @@
         <property role="2XvgOS" value="C" />
         <property role="1YKsg0" value="CRT" />
         <property role="1YKsg1" value="Create Items" />
+        <node concept="2_5uyX" id="7h5_Fe2gwpO" role="2_RhUc" />
       </node>
       <node concept="2XvgOc" id="1FVEJAIuasu" role="2XvgO2">
         <property role="TrG5h" value="loadFormDB" />
@@ -4721,6 +4716,7 @@
         <property role="1YKsg0" value="LOAD" />
         <property role="1YKsg1" value="Load from DB" />
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpP" role="1TMXFZ" />
     </node>
     <node concept="3clFbW" id="6XzXfke19P_" role="jymVt">
       <node concept="3cqZAl" id="6XzXfke19PB" role="3clF45" />
@@ -4830,6 +4826,7 @@
         <property role="2XvgOS" value="O" />
         <property role="1YKsg0" value="Open" />
         <property role="1YKsg1" value="Open" />
+        <node concept="2_5uyX" id="7h5_Fe2gwpE" role="2_RhUc" />
       </node>
       <node concept="2XvgOc" id="6XzXfke7plP" role="2XvgO2">
         <property role="TrG5h" value="problem" />
@@ -4849,6 +4846,7 @@
         <property role="1YKsg0" value="Processed 2" />
         <property role="1YKsg1" value="Processed 2" />
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpF" role="1TMXFZ" />
     </node>
     <node concept="3Tm1VV" id="6XzXfke1alx" role="1B3o_S" />
     <node concept="3clFbW" id="6XzXfke1an9" role="jymVt">
@@ -5784,10 +5782,9 @@
         <property role="2XvgOS" value="C" />
         <property role="1YKsg0" value="created" />
         <property role="1YKsg1" value="created" />
-        <node concept="20vkWO" id="ao4XGT1UZ7" role="1V6Uwp">
-          <node concept="20vkWP" id="ao4XGT1UZ8" role="20vkWT">
-            <property role="20vkWQ" value="#4BA1C6" />
-          </node>
+        <node concept="2_5uyX" id="7h5_Fe2gwpX" role="2_RhUc" />
+        <node concept="2_1389" id="7h5_Fe2gwpZ" role="2_RhUc">
+          <property role="2_138b" value="#4BA1C6" />
         </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L0" role="2XvgO2">
@@ -5795,10 +5792,8 @@
         <property role="2XvgOS" value="O" />
         <property role="1YKsg0" value="ordered" />
         <property role="1YKsg1" value="ordered" />
-        <node concept="20vkWO" id="ao4XGT1UZb" role="1V6Uwp">
-          <node concept="20vkWP" id="ao4XGT1UZc" role="20vkWT">
-            <property role="20vkWQ" value="#4FB973" />
-          </node>
+        <node concept="2_1389" id="7h5_Fe2gwq0" role="2_RhUc">
+          <property role="2_138b" value="#4FB973" />
         </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L3" role="2XvgO2">
@@ -5806,12 +5801,11 @@
         <property role="2XvgOS" value="CO" />
         <property role="1YKsg0" value="completed" />
         <property role="1YKsg1" value="completed" />
-        <node concept="20vkWO" id="ao4XGT1UZf" role="1V6Uwp">
-          <node concept="20vkWP" id="ao4XGT1UZg" role="20vkWT">
-            <property role="20vkWQ" value="#6C3419" />
-          </node>
+        <node concept="2_1389" id="7h5_Fe2gwq1" role="2_RhUc">
+          <property role="2_138b" value="#6C3419" />
         </node>
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpY" role="1TMXFZ" />
     </node>
   </node>
 </model>

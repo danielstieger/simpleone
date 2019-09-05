@@ -152,6 +152,7 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
         <reference id="3875131616719438755" name="process" index="2_Hrwf" />
@@ -166,9 +167,11 @@
         <property id="4533072425307715682" name="value" index="2XvgOS" />
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
+        <child id="1707086779727598829" name="options" index="2_RhUc" />
       </concept>
-      <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.Status" flags="ng" index="2XvgOf">
+      <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
+        <child id="4706474809433463576" name="options" index="1TMXFZ" />
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
@@ -242,6 +245,7 @@
         <property id="569389511234497412" name="year" index="1$4sGU" />
         <property id="569389511234497413" name="month" index="1$4sGV" />
       </concept>
+      <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -406,6 +410,7 @@
         <property role="2XvgOS" value="O" />
         <property role="1YKsg0" value="OP" />
         <property role="1YKsg1" value="Open" />
+        <node concept="2_5uyX" id="7h5_Fe2gwpQ" role="2_RhUc" />
       </node>
       <node concept="2XvgOc" id="5A$AnVDpmBe" role="2XvgO2">
         <property role="TrG5h" value="closed" />
@@ -413,6 +418,7 @@
         <property role="1YKsg0" value="CL" />
         <property role="1YKsg1" value="Closed" />
       </node>
+      <node concept="1TNdZI" id="7h5_Fe2gwpR" role="1TMXFZ" />
     </node>
     <node concept="1bOX9e" id="5A$AnVDpmqH" role="TxmiU">
       <property role="2RkwnN" value="id" />

@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" />
+    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
     <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(org.modellwerkstatt.simple.baseUI)" />
@@ -5137,7 +5137,7 @@
               <node concept="2Tkd$M" id="1oPkR_87NgL" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="1oPkR_87NjV" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:1nLGXVr3Di9" resolve="isNewInSession" />
+              <ref role="37wK5l" to="28jr:1nLGXVr3Di9" resolve="isTransientInSession" />
             </node>
           </node>
         </node>
@@ -7432,7 +7432,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="4ceCyFmnikg" role="2OqNvi">
-                      <ref role="37wK5l" to="28jr:4ceCyFmjuQV" resolve="isElementEnabled" />
+                      <ref role="37wK5l" to="28jr:3RwvUFpL0Gg" resolve="isElementEnabled" />
                       <node concept="2OqwBi" id="4ceCyFmnikh" role="37wK5m">
                         <node concept="2S8uIT" id="4ceCyFmnikj" role="2OqNvi">
                           <ref role="2S8YL0" to="dtxg:AN_117c2L7" resolve="status" />
