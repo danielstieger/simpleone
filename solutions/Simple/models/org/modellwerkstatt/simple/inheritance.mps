@@ -168,6 +168,8 @@
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
+        <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
+        <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
       </concept>
       <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
@@ -245,6 +247,12 @@
         <property id="569389511234497412" name="year" index="1$4sGU" />
         <property id="569389511234497413" name="month" index="1$4sGV" />
       </concept>
+      <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
+        <child id="6436022531931826628" name="translations" index="3Rpr6w" />
+      </concept>
+      <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
+        <property id="6436022531931826103" name="value" index="3RprZj" />
+      </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
@@ -303,6 +311,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -408,15 +419,27 @@
       <node concept="2XvgOc" id="5A$AnVDpm_R" role="2XvgO2">
         <property role="TrG5h" value="open" />
         <property role="2XvgOS" value="O" />
-        <property role="1YKsg0" value="OP" />
-        <property role="1YKsg1" value="Open" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpQ" role="2_RhUc" />
+        <node concept="Xl_RD" id="5_hm6iII8e5" role="3RLGhM">
+          <property role="Xl_RC" value="Open" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8e6" role="3RLGe5">
+          <property role="Xl_RC" value="OP" />
+        </node>
       </node>
       <node concept="2XvgOc" id="5A$AnVDpmBe" role="2XvgO2">
         <property role="TrG5h" value="closed" />
         <property role="2XvgOS" value="C" />
-        <property role="1YKsg0" value="CL" />
-        <property role="1YKsg1" value="Closed" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
+        <node concept="Xl_RD" id="5_hm6iII8dF" role="3RLGhM">
+          <property role="Xl_RC" value="Closed" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dG" role="3RLGe5">
+          <property role="Xl_RC" value="CL" />
+        </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpR" role="1TMXFZ" />
     </node>
@@ -721,6 +744,11 @@
           <node concept="37vLTI" id="2JsbshgWAhw" role="3clFbG">
             <node concept="Xl_RD" id="2JsbshgWAi2" role="37vLTx">
               <property role="Xl_RC" value="Just created" />
+              <node concept="3RprTR" id="5_hm6iIs8E_" role="lGtFl">
+                <node concept="3RprXr" id="5_hm6iIs8EA" role="3Rpr6w">
+                  <property role="3RprZj" value="Hello Daniel" />
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="2JsbshgWAdm" role="37vLTJ">
               <node concept="3urNR4" id="2JsbshgWAcE" role="2Oq$k0">

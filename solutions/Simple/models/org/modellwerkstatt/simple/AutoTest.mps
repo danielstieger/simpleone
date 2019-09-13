@@ -75,6 +75,8 @@
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
+        <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
+        <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
       </concept>
       <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
@@ -124,15 +126,27 @@
       <node concept="2XvgOc" id="2SRXiXAJ4Mf" role="2XvgO2">
         <property role="TrG5h" value="A" />
         <property role="2XvgOS" value="A" />
-        <property role="1YKsg0" value="A" />
-        <property role="1YKsg1" value="A" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpG" role="2_RhUc" />
+        <node concept="Xl_RD" id="5_hm6iII8dR" role="3RLGhM">
+          <property role="Xl_RC" value="A" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dS" role="3RLGe5">
+          <property role="Xl_RC" value="A" />
+        </node>
       </node>
       <node concept="2XvgOc" id="2SRXiXAJ4Mh" role="2XvgO2">
         <property role="TrG5h" value="B" />
         <property role="2XvgOS" value="B" />
-        <property role="1YKsg0" value="B" />
-        <property role="1YKsg1" value="b" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
+        <node concept="Xl_RD" id="5_hm6iII8dD" role="3RLGhM">
+          <property role="Xl_RC" value="b" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dE" role="3RLGe5">
+          <property role="Xl_RC" value="B" />
+        </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpH" role="1TMXFZ" />
     </node>

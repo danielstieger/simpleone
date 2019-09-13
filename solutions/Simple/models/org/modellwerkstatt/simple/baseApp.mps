@@ -2472,7 +2472,20 @@
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter" />
         </node>
       </node>
+      <node concept="2CJf3v" id="76zKLSqVXLJ" role="2CJdiS">
+        <property role="TrG5h" value="stringFormatter2" />
+        <node concept="Xl_RD" id="76zKLSqVXLK" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter2" />
+        </node>
+        <node concept="2CJ4$C" id="76zKLSqVXPF" role="2CJ4_l">
+          <property role="TrG5h" value="bigDecimalFormat" />
+          <node concept="Xl_RD" id="76zKLSqVXQp" role="2CaGCA">
+            <property role="Xl_RC" value="#,##0.00" />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2CPvp3" id="76zKLSqVXMD" role="2CGBMS" />
     <node concept="20ptWn" id="2XYulUz3spa" role="20ptHX">
       <node concept="Xl_RD" id="2XYulUz3spb" role="20ptNC">
         <property role="Xl_RC" value="org.modellwerkstatt.simple" />

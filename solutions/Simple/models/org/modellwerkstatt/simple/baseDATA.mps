@@ -235,6 +235,8 @@
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
+        <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
+        <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
       </concept>
       <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
@@ -568,29 +570,47 @@
       <node concept="2XvgOc" id="2IUGN4P8gxl" role="2XvgO2">
         <property role="TrG5h" value="accepted" />
         <property role="2XvgOS" value="A" />
-        <property role="1YKsg0" value="Acpt" />
-        <property role="1YKsg1" value="Accepted" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpS" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpU" role="2_RhUc">
           <property role="2_138b" value="#E74C3C" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8e7" role="3RLGhM">
+          <property role="Xl_RC" value="Accepted" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8e8" role="3RLGe5">
+          <property role="Xl_RC" value="Acpt" />
         </node>
       </node>
       <node concept="2XvgOc" id="2IUGN4P8gzi" role="2XvgO2">
         <property role="TrG5h" value="rejected" />
         <property role="2XvgOS" value="R" />
-        <property role="1YKsg0" value="Rcjt" />
-        <property role="1YKsg1" value="Rejected" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_1389" id="7h5_Fe2gwpV" role="2_RhUc">
           <property role="2_138b" value="#30B41D" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dT" role="3RLGhM">
+          <property role="Xl_RC" value="Rejected" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dU" role="3RLGe5">
+          <property role="Xl_RC" value="Rcjt" />
         </node>
       </node>
       <node concept="2XvgOc" id="2IUGN4P9es0" role="2XvgO2">
         <property role="TrG5h" value="unknown" />
         <property role="2XvgOS" value="U" />
-        <property role="1YKsg0" value="?" />
-        <property role="1YKsg1" value="Unknown" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_1389" id="7h5_Fe2gwpW" role="2_RhUc">
           <property role="2_138b" value="#2C3E50" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dB" role="3RLGhM">
+          <property role="Xl_RC" value="Unknown" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dC" role="3RLGe5">
+          <property role="Xl_RC" value="?" />
         </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpT" role="1TMXFZ" />
@@ -4031,20 +4051,32 @@
       <node concept="2XvgOc" id="2Uji7vlCu7b" role="2XvgO2">
         <property role="TrG5h" value="existing" />
         <property role="2XvgOS" value="E" />
-        <property role="1YKsg0" value="existing" />
-        <property role="1YKsg1" value="existing" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpI" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpK" role="2_RhUc">
           <property role="2_138b" value="#FF0000" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dV" role="3RLGhM">
+          <property role="Xl_RC" value="existing" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dW" role="3RLGe5">
+          <property role="Xl_RC" value="existing" />
         </node>
       </node>
       <node concept="2XvgOc" id="2Uji7vlCu8G" role="2XvgO2">
         <property role="TrG5h" value="new" />
         <property role="2XvgOS" value="N" />
-        <property role="1YKsg0" value="new" />
-        <property role="1YKsg1" value="new" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_1389" id="7h5_Fe2gwpL" role="2_RhUc">
           <property role="2_138b" value="#00FF00" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dH" role="3RLGhM">
+          <property role="Xl_RC" value="new" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dI" role="3RLGe5">
+          <property role="Xl_RC" value="new" />
         </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpJ" role="1TMXFZ" />
@@ -4706,15 +4738,27 @@
       <node concept="2XvgOc" id="1FVEJAIuass" role="2XvgO2">
         <property role="TrG5h" value="create" />
         <property role="2XvgOS" value="C" />
-        <property role="1YKsg0" value="CRT" />
-        <property role="1YKsg1" value="Create Items" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpO" role="2_RhUc" />
+        <node concept="Xl_RD" id="5_hm6iII8dJ" role="3RLGhM">
+          <property role="Xl_RC" value="Create Items" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dK" role="3RLGe5">
+          <property role="Xl_RC" value="CRT" />
+        </node>
       </node>
       <node concept="2XvgOc" id="1FVEJAIuasu" role="2XvgO2">
         <property role="TrG5h" value="loadFormDB" />
         <property role="2XvgOS" value="D" />
-        <property role="1YKsg0" value="LOAD" />
-        <property role="1YKsg1" value="Load from DB" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
+        <node concept="Xl_RD" id="5_hm6iII8d_" role="3RLGhM">
+          <property role="Xl_RC" value="Load from DB" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dA" role="3RLGe5">
+          <property role="Xl_RC" value="LOAD" />
+        </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpP" role="1TMXFZ" />
     </node>
@@ -4824,27 +4868,51 @@
       <node concept="2XvgOc" id="6XzXfke7phk" role="2XvgO2">
         <property role="TrG5h" value="open" />
         <property role="2XvgOS" value="O" />
-        <property role="1YKsg0" value="Open" />
-        <property role="1YKsg1" value="Open" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpE" role="2_RhUc" />
+        <node concept="Xl_RD" id="5_hm6iII8e1" role="3RLGhM">
+          <property role="Xl_RC" value="Open" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8e2" role="3RLGe5">
+          <property role="Xl_RC" value="Open" />
+        </node>
       </node>
       <node concept="2XvgOc" id="6XzXfke7plP" role="2XvgO2">
         <property role="TrG5h" value="problem" />
         <property role="2XvgOS" value="R" />
-        <property role="1YKsg0" value="Problem" />
-        <property role="1YKsg1" value="Problem" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
+        <node concept="Xl_RD" id="5_hm6iII8e9" role="3RLGhM">
+          <property role="Xl_RC" value="Problem" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8ea" role="3RLGe5">
+          <property role="Xl_RC" value="Problem" />
+        </node>
       </node>
       <node concept="2XvgOc" id="6XzXfke7pis" role="2XvgO2">
         <property role="TrG5h" value="processed" />
         <property role="2XvgOS" value="P" />
-        <property role="1YKsg0" value="Processed" />
-        <property role="1YKsg1" value="Processed" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
+        <node concept="Xl_RD" id="5_hm6iII8e3" role="3RLGhM">
+          <property role="Xl_RC" value="Processed" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8e4" role="3RLGe5">
+          <property role="Xl_RC" value="Processed" />
+        </node>
       </node>
       <node concept="2XvgOc" id="6XzXfke7pj_" role="2XvgO2">
         <property role="TrG5h" value="processed2" />
         <property role="2XvgOS" value="P2" />
-        <property role="1YKsg0" value="Processed 2" />
-        <property role="1YKsg1" value="Processed 2" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
+        <node concept="Xl_RD" id="5_hm6iII8dL" role="3RLGhM">
+          <property role="Xl_RC" value="Processed 2" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dM" role="3RLGe5">
+          <property role="Xl_RC" value="Processed 2" />
+        </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpF" role="1TMXFZ" />
     </node>
@@ -5482,7 +5550,9 @@
     <node concept="3clFbW" id="4u029Jv8wD1" role="jymVt">
       <node concept="3cqZAl" id="4u029Jv8wD2" role="3clF45" />
       <node concept="3Tm1VV" id="4u029Jv8wD3" role="1B3o_S" />
-      <node concept="3clFbS" id="4u029Jv8wD4" role="3clF47" />
+      <node concept="3clFbS" id="4u029Jv8wD4" role="3clF47">
+        <node concept="3clFbH" id="3sIS$IKH_fg" role="3cqZAp" />
+      </node>
     </node>
     <node concept="3clFb_" id="AN_117bqFh" role="jymVt">
       <property role="TrG5h" value="complete" />
@@ -5780,29 +5850,47 @@
       <node concept="2XvgOc" id="AN_117c2KY" role="2XvgO2">
         <property role="TrG5h" value="created" />
         <property role="2XvgOS" value="C" />
-        <property role="1YKsg0" value="created" />
-        <property role="1YKsg1" value="created" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpX" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpZ" role="2_RhUc">
           <property role="2_138b" value="#4BA1C6" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dX" role="3RLGhM">
+          <property role="Xl_RC" value="created" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dY" role="3RLGe5">
+          <property role="Xl_RC" value="created" />
         </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L0" role="2XvgO2">
         <property role="TrG5h" value="ordered" />
         <property role="2XvgOS" value="O" />
-        <property role="1YKsg0" value="ordered" />
-        <property role="1YKsg1" value="ordered" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_1389" id="7h5_Fe2gwq0" role="2_RhUc">
           <property role="2_138b" value="#4FB973" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dN" role="3RLGhM">
+          <property role="Xl_RC" value="ordered" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dO" role="3RLGe5">
+          <property role="Xl_RC" value="ordered" />
         </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L3" role="2XvgO2">
         <property role="TrG5h" value="completed" />
         <property role="2XvgOS" value="CO" />
-        <property role="1YKsg0" value="completed" />
-        <property role="1YKsg1" value="completed" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_1389" id="7h5_Fe2gwq1" role="2_RhUc">
           <property role="2_138b" value="#6C3419" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dP" role="3RLGhM">
+          <property role="Xl_RC" value="completed" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8dQ" role="3RLGe5">
+          <property role="Xl_RC" value="completed" />
         </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpY" role="1TMXFZ" />

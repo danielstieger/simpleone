@@ -167,6 +167,8 @@
         <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
         <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
+        <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
+        <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
       </concept>
       <concept id="4533072425307715669" name="org.modellwerkstatt.objectflow.structure.StatusDeclaration" flags="ng" index="2XvgOf">
         <child id="4533072425307715672" name="element" index="2XvgO2" />
@@ -350,9 +352,15 @@
       <node concept="2XvgOc" id="5A$AnVDpm_R" role="2XvgO2">
         <property role="TrG5h" value="rec" />
         <property role="2XvgOS" value="R" />
-        <property role="1YKsg0" value="RCV" />
-        <property role="1YKsg1" value="Received" />
+        <property role="1YKsg0" value="" />
+        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpM" role="2_RhUc" />
+        <node concept="Xl_RD" id="5_hm6iII8dZ" role="3RLGhM">
+          <property role="Xl_RC" value="Received" />
+        </node>
+        <node concept="Xl_RD" id="5_hm6iII8e0" role="3RLGe5">
+          <property role="Xl_RC" value="RCV" />
+        </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpN" role="1TMXFZ" />
     </node>
