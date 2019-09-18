@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="dtxg" ref="r:6f67d059-39b1-4ed6-bc93-94545498671f(org.modellwerkstatt.simple.baseDATA)" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
+    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
     <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(org.modellwerkstatt.simple.baseUI)" />
@@ -215,6 +215,9 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="3976364335720280601" name="org.modellwerkstatt.objectflow.structure.TranslatedMultiString" flags="ng" index="273l1i">
+        <property id="3976364335720280712" name="formatString" index="273l33" />
+      </concept>
       <concept id="4678401045862675371" name="org.modellwerkstatt.objectflow.structure.CommandCreationInfo" flags="ng" index="27Aftt">
         <property id="4678401045864276002" name="refName" index="27oQjk" />
         <child id="4678401045862675913" name="keyReference" index="27Af4Z" />
@@ -299,6 +302,7 @@
       </concept>
       <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
         <property id="3585259589779248406" name="formatString" index="35AVef" />
+        <child id="3976364335720280796" name="translations" index="273l2n" />
         <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
       <concept id="4518330267516957488" name="org.modellwerkstatt.objectflow.structure.ScopeFunc" flags="ig" index="1jyyp0" />
@@ -10495,8 +10499,11 @@
           </node>
         </node>
         <node concept="10Adxh" id="1FVEJAIXG8x" role="3cqZAp">
-          <node concept="Xl_RD" id="1FVEJAIXG9o" role="10Adiu">
-            <property role="Xl_RC" value="Given invoice is already in a folder" />
+          <node concept="35AVbj" id="12GSMxhZRcg" role="10Adiu">
+            <property role="35AVef" value="Given invoice is already in a folder" />
+            <node concept="273l1i" id="12GSMxi3Twm" role="273l2n">
+              <property role="273l33" value="Die Rechnung is bereits in einem Verzeichnis." />
+            </node>
           </node>
           <node concept="3y3z36" id="1FVEJAIXGg$" role="10Adiv">
             <node concept="3cmrfG" id="1FVEJAIXGhi" role="3uHU7w">

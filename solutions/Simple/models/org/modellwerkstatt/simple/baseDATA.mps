@@ -298,6 +298,12 @@
         <property id="569389511234497408" name="year" index="1$4sGY" />
         <property id="569389511234497409" name="month" index="1$4sGZ" />
       </concept>
+      <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
+        <child id="6436022531931826628" name="translations" index="3Rpr6w" />
+      </concept>
+      <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
+        <property id="6436022531931826103" name="value" index="3RprZj" />
+      </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
@@ -4873,9 +4879,19 @@
         <node concept="2_5uyX" id="7h5_Fe2gwpE" role="2_RhUc" />
         <node concept="Xl_RD" id="5_hm6iII8e1" role="3RLGhM">
           <property role="Xl_RC" value="Open" />
+          <node concept="3RprTR" id="41T7W8Jbbp8" role="lGtFl">
+            <node concept="3RprXr" id="41T7W8Jbbp9" role="3Rpr6w">
+              <property role="3RprZj" value="Offen DAN" />
+            </node>
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8e2" role="3RLGe5">
           <property role="Xl_RC" value="Open" />
+          <node concept="3RprTR" id="12GSMxhUOMU" role="lGtFl">
+            <node concept="3RprXr" id="12GSMxhUOMV" role="3Rpr6w">
+              <property role="3RprZj" value="Offen DAN" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2XvgOc" id="6XzXfke7plP" role="2XvgO2">

@@ -424,6 +424,11 @@
         <node concept="2_5uyX" id="7h5_Fe2gwpQ" role="2_RhUc" />
         <node concept="Xl_RD" id="5_hm6iII8e5" role="3RLGhM">
           <property role="Xl_RC" value="Open" />
+          <node concept="3RprTR" id="41T7W8Jbbpa" role="lGtFl">
+            <node concept="3RprXr" id="41T7W8Jbbpb" role="3Rpr6w">
+              <property role="3RprZj" value="Offen DAN" />
+            </node>
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8e6" role="3RLGe5">
           <property role="Xl_RC" value="OP" />
