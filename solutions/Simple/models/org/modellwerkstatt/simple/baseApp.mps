@@ -423,7 +423,7 @@
         </node>
       </node>
       <node concept="Xl_RD" id="7MWNCzYDeqU" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.baseDATA.SimpleRes_RICH" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.baseDATA.SimpleRes_MDE" />
       </node>
     </node>
     <node concept="2CJoq6" id="2n3p7A96F5O" role="2CGBMS">
@@ -642,6 +642,7 @@
       <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
         <ref role="2_Hrwf" to="kpm6:5A$AnVDpmyw" resolve="DocProc" />
         <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
+        <ref role="3uz5Vf" to="dtxg:6zVU6_jm7GQ" resolve="Tile_S2" />
         <node concept="10Nm6u" id="5A$AnVDr_im" role="2_HrWp" />
       </node>
     </node>
@@ -813,7 +814,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="Da7DafdVdf" role="3cqZAp" />
+        <node concept="3clFbF" id="59p98S7ulpq" role="3cqZAp">
+          <node concept="2OqwBi" id="59p98S7ulr$" role="3clFbG">
+            <node concept="2Rjrh3" id="59p98S7ulpo" role="2Oq$k0" />
+            <node concept="liA8E" id="59p98S7ulvE" role="2OqNvi">
+              <ref role="37wK5l" to="w7gk:Da7DafdCon" resolve="setLang" />
+              <node concept="Xl_RD" id="59p98S7ulxs" role="37wK5m">
+                <property role="Xl_RC" value="trans_0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="59p98S7uln7" role="3cqZAp" />
         <node concept="3cpWs6" id="5XruxTJPWF2" role="3cqZAp">
           <node concept="37vLTw" id="5XruxTJPWF3" role="3cqZAk">
             <ref role="3cqZAo" node="5XruxTJPWEm" resolve="login" />
@@ -889,7 +901,7 @@
       <node concept="33WYYh" id="6zVU6_jEngo" role="2$ntUL">
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
         <ref role="2_Hrw8" to="1y8i:AN_117c3Kl" resolve="Edit Order" />
-        <ref role="3uz5Vf" to="dtxg:3XmXsOjql2x" resolve="Edit_Order_ReadOnly" />
+        <ref role="3uz5Vf" to="dtxg:6zVU6_jm7GQ" resolve="Tile_S2" />
         <node concept="10Nm6u" id="6zVU6_jEnhi" role="2_HrWp" />
         <node concept="3cmrfG" id="6zVU6_jEnh$" role="2_HrWp">
           <property role="3cmrfH" value="3" />
@@ -900,24 +912,6 @@
         <node concept="Rm8GO" id="7dlwzTfDNiA" role="2_HrWp">
           <ref role="Rm8GQ" to="1y8i:7dlwzTfDymw" resolve="OK" />
           <ref role="1Px2BO" to="1y8i:7dlwzTfDykH" resolve="Do" />
-        </node>
-      </node>
-      <node concept="3cpWs3" id="4h8GofeWBP3" role="2$ntWM">
-        <node concept="Xl_RD" id="4h8GofeWBQn" role="3uHU7w">
-          <property role="Xl_RC" value=")" />
-        </node>
-        <node concept="3cpWs3" id="4h8GofeWBzz" role="3uHU7B">
-          <node concept="Xl_RD" id="4uXwdwFzRXm" role="3uHU7B">
-            <property role="Xl_RC" value="AeiouÄéiÖü (" />
-          </node>
-          <node concept="1y4W85" id="4h8GofeWBzM" role="3uHU7w">
-            <node concept="3cmrfG" id="4h8GofeWBzN" role="1y58nS">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="3urNR4" id="4h8GofeWBzO" role="1y566C">
-              <ref role="3cqZAo" node="4h8GofeW2LA" resolve="values" />
-            </node>
-          </node>
         </node>
       </node>
       <node concept="2XvMaL" id="7xpVvRMyDj3" role="2$ntZF">
@@ -2465,24 +2459,25 @@
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoSimplePrintService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="5zF9hZsEnqh" role="2CJdiS">
-        <property role="TrG5h" value="stringFormatter" />
-        <node concept="Xl_RD" id="5zF9hZsEnqj" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter" />
-        </node>
-      </node>
       <node concept="2CJf3v" id="76zKLSqVXLJ" role="2CJdiS">
         <property role="TrG5h" value="stringFormatter2" />
         <node concept="Xl_RD" id="76zKLSqVXLK" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter2" />
         </node>
-        <node concept="2CJ4$C" id="76zKLSqVXPF" role="2CJ4_l">
-          <property role="TrG5h" value="bigDecimalFormat" />
-          <node concept="Xl_RD" id="76zKLSqVXQp" role="2CaGCA">
-            <property role="Xl_RC" value="#,##0.00" />
+        <node concept="2CJ4$C" id="59p98S7tBQM" role="2CJ4_l">
+          <property role="TrG5h" value="TranslationCsvFileAbsolute" />
+          <node concept="Xl_RD" id="59p98S7tBTJ" role="2CaGCA">
+            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/trans.txt" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="59p98S7tBVb" role="2CJ4_l">
+          <property role="TrG5h" value="LocaleForTranslation" />
+          <node concept="Xl_RD" id="59p98S7tDmM" role="2CaGCA">
+            <property role="Xl_RC" value="de" />
           </node>
         </node>
       </node>
+      <node concept="2CPvp3" id="59p98S7tBUx" role="2CJdiS" />
     </node>
     <node concept="2CPvp3" id="76zKLSqVXMD" role="2CGBMS" />
     <node concept="20ptWn" id="2XYulUz3spa" role="20ptHX">

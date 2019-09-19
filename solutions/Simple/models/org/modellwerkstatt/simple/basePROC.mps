@@ -596,8 +596,20 @@
       <node concept="3063JU" id="53acIw4Wi0r" role="3063Jp">
         <ref role="3063JT" to="knfg:53acIw4Vpvb" resolve="MDE Search Order Pane" />
       </node>
-      <node concept="Xl_RD" id="6xifBbDEmcz" role="1K0AWC">
-        <property role="Xl_RC" value="Specify search filter" />
+      <node concept="35AVbj" id="59p98S7zDfF" role="1K0AWC">
+        <property role="35AVef" value="It is now %sld" />
+        <node concept="1$4sJe" id="59p98S7zDCT" role="35Gt3$">
+          <property role="1$4sGS" value="0" />
+          <property role="1$4sGV" value="0" />
+          <property role="1$4sGU" value="0" />
+          <property role="1$4sGT" value="0" />
+          <property role="1$4sGQ" value="0" />
+          <property role="1$4sGR" value="0" />
+          <property role="1$4sGO" value="true" />
+        </node>
+        <node concept="273l1i" id="59p98S7zDDA" role="273l2n">
+          <property role="273l33" value="Es ist nun %sld" />
+        </node>
       </node>
     </node>
     <node concept="3ugp7q" id="AN_117fcIc" role="3ug97V">

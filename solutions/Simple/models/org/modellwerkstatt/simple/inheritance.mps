@@ -749,11 +749,6 @@
           <node concept="37vLTI" id="2JsbshgWAhw" role="3clFbG">
             <node concept="Xl_RD" id="2JsbshgWAi2" role="37vLTx">
               <property role="Xl_RC" value="Just created" />
-              <node concept="3RprTR" id="5_hm6iIs8E_" role="lGtFl">
-                <node concept="3RprXr" id="5_hm6iIs8EA" role="3Rpr6w">
-                  <property role="3RprZj" value="Hello Daniel" />
-                </node>
-              </node>
             </node>
             <node concept="2OqwBi" id="2JsbshgWAdm" role="37vLTJ">
               <node concept="3urNR4" id="2JsbshgWAcE" role="2Oq$k0">
