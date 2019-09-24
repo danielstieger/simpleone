@@ -1295,7 +1295,7 @@
       </node>
       <node concept="10qiFn" id="AN_117h9Yg" role="10qiF9">
         <property role="TrG5h" value="Ok" />
-        <ref role="2DFCCC" to="dtxg:Q$ztZJ3OoE" resolve="Ok_N_Save" />
+        <ref role="2DFCCC" to="dtxg:6XA$NCcU$N8" resolve="MSTR_OK_CON" />
         <node concept="20qIzx" id="AN_117ha2$" role="10ot2L">
           <node concept="3clFbS" id="AN_117ha2_" role="2VODD2">
             <node concept="10Adxh" id="7dlwzTfDvLO" role="3cqZAp">
@@ -9763,7 +9763,7 @@
       <ref role="3gcvY6" to="dtxg:1Zhh97664rm" resolve="Order" />
       <node concept="10qiFn" id="3wkdm3W8eWw" role="10qiF9">
         <property role="TrG5h" value="Ok" />
-        <ref role="2DFCCC" to="dtxg:3Rw9V4pLp$h" resolve="OK2" />
+        <ref role="2DFCCC" to="dtxg:6XA$NCcU$N8" resolve="MSTR_OK_CON" />
         <node concept="20qIzx" id="3wkdm3W8eYx" role="10ot2L">
           <node concept="3clFbS" id="3wkdm3W8eYy" role="2VODD2">
             <node concept="10Adxj" id="3wkdm3W8eYT" role="3cqZAp" />

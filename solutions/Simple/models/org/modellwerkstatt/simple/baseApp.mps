@@ -297,6 +297,12 @@
         <property id="2290402148389301028" name="supendSeconds" index="1Kg0YU" />
       </concept>
       <concept id="2290402148389254903" name="org.modellwerkstatt.objectflow.structure.IOFXStratBehaviour" flags="ng" index="1Kgl9D" />
+      <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
+        <child id="6436022531931826628" name="translations" index="3Rpr6w" />
+      </concept>
+      <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
+        <property id="6436022531931826103" name="value" index="3RprZj" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -634,9 +640,6 @@
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
         <ref role="1Vchh_" to="dtxg:AN_117c2L0" resolve="ordered" />
       </node>
-      <node concept="Xl_RD" id="s8qRnhHavQ" role="2$ntWM">
-        <property role="Xl_RC" value="THE search command for orders" />
-      </node>
     </node>
     <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
       <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
@@ -685,6 +688,21 @@
       </node>
     </node>
     <node concept="fOGPe" id="1gJQ5nCsovY" role="2N77jT">
+      <node concept="33WYYh" id="3wkdm3W8f8l" role="fOGQ8">
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="2_Hrw8" to="1y8i:3wkdm3W8dpZ" resolve="MasterData Editor" />
+        <ref role="3uz5Vf" to="dtxg:6XA$NCcU$$J" resolve="MSTR_Editor" />
+        <node concept="10Nm6u" id="3wkdm3W8f9O" role="2_HrWp" />
+        <node concept="3cmrfG" id="3wkdm3W8fa6" role="2_HrWp">
+          <property role="3cmrfH" value="10" />
+        </node>
+      </node>
+      <node concept="33WYYh" id="v00WQapSY3" role="fOGQ8">
+        <ref role="2_Hrw8" to="1y8i:3wkdm3WbpA6" resolve="MasterData Creator" />
+        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+        <ref role="3uz5Vf" to="dtxg:6XA$NCcU$Ft" resolve="MSTR_Creator" />
+        <node concept="10Nm6u" id="v00WQapSZ_" role="2_HrWp" />
+      </node>
       <node concept="33WYYh" id="3Z5UV2c7SwU" role="fOGQ8">
         <ref role="3uz5Vf" to="dtxg:3ob8bMn5Wwy" resolve="EditOrder8" />
         <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
@@ -711,21 +729,13 @@
         <ref role="2_Hrw8" to="1y8i:7P$uL5PDZM2" resolve="Update Conclusion" />
         <node concept="10Nm6u" id="7P$uL5PMOLa" role="2_HrWp" />
       </node>
-      <node concept="33WYYh" id="3wkdm3W8f8l" role="fOGQ8">
-        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <ref role="2_Hrw8" to="1y8i:3wkdm3W8dpZ" resolve="MasterData Editor" />
-        <node concept="10Nm6u" id="3wkdm3W8f9O" role="2_HrWp" />
-        <node concept="3cmrfG" id="3wkdm3W8fa6" role="2_HrWp">
-          <property role="3cmrfH" value="10" />
-        </node>
-      </node>
-      <node concept="33WYYh" id="v00WQapSY3" role="fOGQ8">
-        <ref role="2_Hrw8" to="1y8i:3wkdm3WbpA6" resolve="MasterData Creator" />
-        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <node concept="10Nm6u" id="v00WQapSZ_" role="2_HrWp" />
-      </node>
       <node concept="Xl_RD" id="1gJQ5nCsow0" role="33Ov9O">
         <property role="Xl_RC" value="Order" />
+        <node concept="3RprTR" id="6XA$NCdca_l" role="lGtFl">
+          <node concept="3RprXr" id="6XA$NCdca_m" role="3Rpr6w">
+            <property role="3RprZj" value="Order 0" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="fOGPe" id="1gJQ5nCso$P" role="2N77jT">

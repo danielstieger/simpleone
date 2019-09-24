@@ -745,6 +745,11 @@
       </node>
       <node concept="Xl_RD" id="AN_117bbej" role="2CNmdP">
         <property role="Xl_RC" value="Timestamp" />
+        <node concept="3RprTR" id="6XA$NCcXBkM" role="lGtFl">
+          <node concept="3RprXr" id="6XA$NCcXBkN" role="3Rpr6w">
+            <property role="3RprZj" value="Zeitstempel" />
+          </node>
+        </node>
       </node>
       <node concept="Xl_RD" id="AN_117bbek" role="2CNmdL">
         <property role="Xl_RC" value="Timestamp" />
@@ -857,6 +862,11 @@
       </node>
       <node concept="Xl_RD" id="59p98S7uXQ$" role="2CNmdL">
         <property role="Xl_RC" value="Summary" />
+        <node concept="3RprTR" id="6XA$NCcXBkO" role="lGtFl">
+          <node concept="3RprXr" id="6XA$NCcXBkP" role="3Rpr6w">
+            <property role="3RprZj" value="Zusammenfsg" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1bOX9e" id="6Ocik2nMjcX" role="TxmiU">
@@ -3538,10 +3548,15 @@
       <node concept="2kzhL4" id="6zVU6_jm7Dh" role="2kzgdm">
         <property role="il5CD" value="M_77" />
         <node concept="Xl_RD" id="6zVU6_jm7Di" role="il5_5">
-          <property role="Xl_RC" value="Seach1" />
+          <property role="Xl_RC" value="Seach Orders -1" />
+          <node concept="3RprTR" id="6XA$NCcXBkU" role="lGtFl">
+            <node concept="3RprXr" id="6XA$NCcXBkV" role="3Rpr6w">
+              <property role="3RprZj" value="Search Orders 0" />
+            </node>
+          </node>
         </node>
-        <node concept="Xl_RD" id="2CZV3d2VISc" role="il5$o">
-          <property role="Xl_RC" value="&amp;#xE91E" />
+        <node concept="Xl_RD" id="16rmuCMPAu3" role="il5$o">
+          <property role="Xl_RC" value="launch" />
         </node>
       </node>
     </node>
@@ -3550,16 +3565,10 @@
       <node concept="2kzhL4" id="6zVU6_jm7GR" role="2kzgdm">
         <property role="il5CD" value="N_78" />
         <node concept="Xl_RD" id="6zVU6_jm7GS" role="il5_5">
-          <property role="Xl_RC" value="SeachDefault" />
+          <property role="Xl_RC" value="Search Doc -1" />
         </node>
-        <node concept="Xl_RD" id="2CZV3d2VISh" role="il5$o">
-          <property role="Xl_RC" value="&amp;#xE16D" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="59p98S7D6pV" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="59p98S7D6pW" role="il5_5">
-          <property role="Xl_RC" value="SearchMDE" />
+        <node concept="Xl_RD" id="6XA$NCcUcHQ" role="il5$o">
+          <property role="Xl_RC" value="launch" />
         </node>
       </node>
     </node>
@@ -4069,6 +4078,40 @@
       <node concept="2kzhL4" id="2qcR1OSjf4T" role="2kzgdm">
         <node concept="Xl_RD" id="2qcR1OSjf4V" role="il5_5">
           <property role="Xl_RC" value="OK" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6XA$NCcU$$J" role="2kzhMJ">
+      <property role="TrG5h" value="MSTR_Editor" />
+      <node concept="2kzhL4" id="6XA$NCcU$$K" role="2kzgdm">
+        <node concept="Xl_RD" id="6XA$NCcU$$L" role="il5_5">
+          <property role="Xl_RC" value="MSTR Editor -1" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6XA$NCcU$Ft" role="2kzhMJ">
+      <property role="TrG5h" value="MSTR_Creator" />
+      <node concept="2kzhL4" id="6XA$NCcU$Fu" role="2kzgdm">
+        <node concept="Xl_RD" id="6XA$NCcU$Fv" role="il5_5">
+          <property role="Xl_RC" value="Master Creator -1" />
+          <node concept="3RprTR" id="6XA$NCcXBkW" role="lGtFl">
+            <node concept="3RprXr" id="6XA$NCcXBkX" role="3Rpr6w">
+              <property role="3RprZj" value="Master Creator 0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6XA$NCcU$N8" role="2kzhMJ">
+      <property role="TrG5h" value="MSTR_OK_CON" />
+      <node concept="2kzhL4" id="6XA$NCcU$N9" role="2kzgdm">
+        <node concept="Xl_RD" id="6XA$NCcU$Na" role="il5_5">
+          <property role="Xl_RC" value="Save &amp; Close -1" />
+          <node concept="3RprTR" id="6XA$NCcXBkY" role="lGtFl">
+            <node concept="3RprXr" id="6XA$NCcXBkZ" role="3Rpr6w">
+              <property role="3RprZj" value="Save &amp; Close 0" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -5068,9 +5111,19 @@
       </node>
       <node concept="Xl_RD" id="6XzXfke5S__" role="2CNmdP">
         <property role="Xl_RC" value="Timestamp" />
+        <node concept="3RprTR" id="6XA$NCcXBkQ" role="lGtFl">
+          <node concept="3RprXr" id="6XA$NCcXBkR" role="3Rpr6w">
+            <property role="3RprZj" value="Zeitstempel" />
+          </node>
+        </node>
       </node>
       <node concept="Xl_RD" id="6XzXfke8yCW" role="2CNmdL">
         <property role="Xl_RC" value="Timestamp" />
+        <node concept="3RprTR" id="6XA$NCcXBkS" role="lGtFl">
+          <node concept="3RprXr" id="6XA$NCcXBkT" role="3Rpr6w">
+            <property role="3RprZj" value="Zeitstempel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1bOX9e" id="6XzXfke7pmM" role="TxmiU">

@@ -185,6 +185,12 @@
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
       </concept>
+      <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
+        <child id="6436022531931826628" name="translations" index="3Rpr6w" />
+      </concept>
+      <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
+        <property id="6436022531931826103" name="value" index="3RprZj" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -2481,6 +2487,11 @@
         <node concept="PoUSf" id="2HNBaZ19ygs" role="PoUSn">
           <node concept="Xl_RD" id="2HNBaZ19ygq" role="PoUSc">
             <property role="Xl_RC" value="Order" />
+            <node concept="3RprTR" id="6XA$NCdca_f" role="lGtFl">
+              <node concept="3RprXr" id="6XA$NCdca_g" role="3Rpr6w">
+                <property role="3RprZj" value="Order 0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3Oe2IN" id="2HNBaZ19yh0" role="3OfFNq">
@@ -2530,6 +2541,11 @@
         <node concept="PoUSf" id="2HNBaZ19ylv" role="PoUSn">
           <node concept="Xl_RD" id="2HNBaZ19ylt" role="PoUSc">
             <property role="Xl_RC" value="Order" />
+            <node concept="3RprTR" id="6XA$NCdca_h" role="lGtFl">
+              <node concept="3RprXr" id="6XA$NCdca_i" role="3Rpr6w">
+                <property role="3RprZj" value="Order 0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="PoWA$" id="2HNBaZ19ylx" role="PoUSn" />
@@ -2910,6 +2926,11 @@
         <node concept="PoUSf" id="3Z5UV2cbXyN" role="PoUSn">
           <node concept="Xl_RD" id="3Z5UV2cbXyL" role="PoUSc">
             <property role="Xl_RC" value="Order" />
+            <node concept="3RprTR" id="6XA$NCdca_j" role="lGtFl">
+              <node concept="3RprXr" id="6XA$NCdca_k" role="3Rpr6w">
+                <property role="3RprZj" value="Order 0" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="PoWA$" id="3Z5UV2cbXyP" role="PoUSn" />

@@ -254,6 +254,12 @@
         <property id="569389511234497412" name="year" index="1$4sGU" />
         <property id="569389511234497413" name="month" index="1$4sGV" />
       </concept>
+      <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
+        <child id="6436022531931826628" name="translations" index="3Rpr6w" />
+      </concept>
+      <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
+        <property id="6436022531931826103" name="value" index="3RprZj" />
+      </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -299,6 +305,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -399,6 +408,11 @@
       </node>
       <node concept="Xl_RD" id="5A$AnVDvNef" role="2CNmdL">
         <property role="Xl_RC" value="Timestamp" />
+        <node concept="3RprTR" id="6XA$NCcXBl0" role="lGtFl">
+          <node concept="3RprXr" id="6XA$NCcXBl1" role="3Rpr6w">
+            <property role="3RprZj" value="Zeitstempel" />
+          </node>
+        </node>
       </node>
       <node concept="Xl_RD" id="1SDXsyHC470" role="3bVav">
         <property role="Xl_RC" value="dd.MM.yyyy hh:mm:ss" />
