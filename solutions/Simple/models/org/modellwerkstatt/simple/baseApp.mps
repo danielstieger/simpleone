@@ -580,12 +580,6 @@
       <node concept="Xl_RD" id="49EzYiePzEa" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.h2forms.pebble.PAppFactory" />
       </node>
-      <node concept="2CJ4$C" id="1LWMBWz8Gfz" role="2CJ4_l">
-        <property role="TrG5h" value="SkipLoggingTcnException" />
-        <node concept="Xl_RD" id="1LWMBWz8Gmx" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
       <node concept="2CJ4$C" id="7uqK6azzPCy" role="2CJ4_l">
         <property role="TrG5h" value="TemplateName" />
         <node concept="Xl_RD" id="7uqK6azzPCz" role="2CaGCA">
