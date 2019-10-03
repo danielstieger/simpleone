@@ -5803,8 +5803,8 @@
         <property role="Xl_RC" value="Value" />
       </node>
       <node concept="WfFEq" id="3cAl6M4x_ER" role="0orDa">
-        <property role="WfFEv" value="9.0d" />
-        <property role="WfFEu" value="1000.0d" />
+        <property role="WfFEv" value="9.0bd" />
+        <property role="WfFEu" value="1000.0bd" />
         <property role="1BDm0K" value="1" />
       </node>
     </node>
