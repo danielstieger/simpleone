@@ -1548,9 +1548,6 @@
                 <node concept="3y28L$" id="7RzRXa3UjG1" role="2Oq$k0" />
                 <node concept="liA8E" id="7RzRXa3UjI3" role="2OqNvi">
                   <ref role="37wK5l" to="w7gk:3_5k9VmQ$6f" resolve="setReadOnly" />
-                  <node concept="3clFbT" id="7RzRXa3UjID" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
                 </node>
               </node>
             </node>
