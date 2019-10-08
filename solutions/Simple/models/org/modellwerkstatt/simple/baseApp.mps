@@ -429,7 +429,7 @@
         </node>
       </node>
       <node concept="Xl_RD" id="7MWNCzYDeqU" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.baseDATA.SimpleRes_MDE" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.baseDATA.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJoq6" id="2n3p7A96F5O" role="2CGBMS">
