@@ -244,6 +244,7 @@
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
       </concept>
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
+      <concept id="4503841283144443935" name="org.modellwerkstatt.objectflow.structure.IOFXExceptionStrategyMember" flags="ng" index="3w4bfn" />
       <concept id="4503841283144443826" name="org.modellwerkstatt.objectflow.structure.OFXStrategyForException" flags="ng" index="3w4bLU">
         <property id="8285694191462700245" name="suspendSeconds" index="35mAoy" />
         <child id="4503841283144447522" name="messagePartMatch" index="3w4aRE" />
@@ -482,7 +483,10 @@
         <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.UserEnvironmentInformation" />
       </node>
     </node>
-    <node concept="2CPvp3" id="7HkVpVc$jrF" role="2CGBMS" />
+    <node concept="2CJf3v" id="4H3LB8AkSZI" role="2CGBMS">
+      <property role="TrG5h" value="userServices" />
+      <node concept="Xl_RD" id="4H3LB8AkSZK" role="2CJf0U" />
+    </node>
     <node concept="2CJ4_Q" id="7HkVpVc$rW1" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
@@ -545,7 +549,7 @@
       <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4L33b_GnFAD" role="2CGBMS">
-      <ref role="2CJ4_N" node="4L33b_GnFC9" resolve="FakePrint" />
+      <ref role="2CJ4_N" node="7HkVpVc$u2G" resolve="ServerPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$upL" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
@@ -2122,7 +2126,7 @@
         </node>
         <node concept="2CJf1O" id="5E5qL$GwFso" role="2CJ4_l">
           <node concept="Xl_RD" id="5E5qL$GwFsp" role="2DqwMp">
-            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/solutions/Simple/classes_gen/Simple/baseApp" />
+            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/templates" />
           </node>
           <node concept="Xl_RD" id="5E5qL$GwFsq" role="2DqwMv">
             <property role="Xl_RC" value="1" />
@@ -2162,7 +2166,7 @@
         </node>
         <node concept="2CJf1O" id="1pEW74iccSl" role="2CJ4_l">
           <node concept="Xl_RD" id="1pEW74iccSm" role="2DqwMp">
-            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/solutions/Simple/classes_gen/Simple/basePROC" />
+            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/templates" />
           </node>
           <node concept="Xl_RD" id="1pEW74iccSn" role="2DqwMv">
             <property role="Xl_RC" value="1" />
@@ -2905,6 +2909,67 @@
     <node concept="2tJIrI" id="6RExamIzP0z" role="jymVt" />
     <node concept="2tJIrI" id="6RExamIzP0A" role="jymVt" />
     <node concept="2tJIrI" id="6RExamIzP0E" role="jymVt" />
+  </node>
+  <node concept="2AUT8P" id="4H3LB8AgRA_">
+    <property role="TrG5h" value="PrintingJob" />
+    <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <node concept="1_k$Jf" id="4H3LB8AgRAA" role="1_k$Iu">
+      <property role="TrG5h" value="A Pair" />
+      <node concept="3znxp0" id="4H3LB8AgRAB" role="1_kBZ6">
+        <property role="TrG5h" value="inbox" />
+        <node concept="3uibUv" id="4H3LB8AgS46" role="3znzZe">
+          <ref role="3uigEE" to="dtxg:6XzXfke1alv" resolve="Invoice" />
+        </node>
+        <node concept="2Tpcjw" id="4H3LB8AgRAD" role="3znwwn">
+          <node concept="3zdtvw" id="4H3LB8AgVQQ" role="2TpcRr">
+            <property role="3zdvax" value="0" />
+            <property role="TrG5h" value="order" />
+            <ref role="3zdv75" to="1y8i:4H3LB8AgS9X" resolve="Standard1" />
+            <ref role="3zdv76" to="1y8i:4H3LB8AgS9Y" resolve="OK" />
+          </node>
+          <node concept="2_HltQ" id="4H3LB8AgRAE" role="2TpcRq">
+            <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
+            <ref role="2_Hrw8" to="1y8i:4H3LB8AgS9W" resolve="Print Order GO" />
+            <node concept="10Nm6u" id="4H3LB8AgVQI" role="2_HrWp" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3lKVtU" id="4H3LB8AgRAG" role="2A_d42">
+      <property role="1QnCjn" value="0" />
+      <property role="1QnCsU" value="*/5" />
+      <property role="1QnCsW" value="*" />
+      <property role="1QnCj8" value="*" />
+      <property role="1QnCj1" value="*" />
+      <property role="1QnCj5" value="*" />
+      <ref role="2k5inG" node="4H3LB8AgRAA" resolve="A Pair" />
+    </node>
+    <node concept="3w4e_Z" id="4H3LB8AgRAI" role="3w9mMS">
+      <property role="TrG5h" value="JobExceptionStrategy" />
+      <node concept="3w4bfn" id="4H3LB8AgRAJ" role="3w4b7O" />
+      <node concept="3watgV" id="4H3LB8AgRAK" role="3w4b7O">
+        <ref role="3watgY" node="7bWGJuRJZrx" resolve="mpreis_basis_ex_start" />
+      </node>
+    </node>
+    <node concept="2MWAvL" id="4H3LB8AgRAL" role="2A_d42">
+      <node concept="Xl_RD" id="4H3LB8AgRCQ" role="2MWAvM">
+        <property role="Xl_RC" value="1.0" />
+      </node>
+    </node>
+    <node concept="2MZaQk" id="4H3LB8AgRAN" role="2A_d42">
+      <node concept="Xl_RD" id="4H3LB8AgRDg" role="2MZaQn">
+        <property role="Xl_RC" value="PrintingJob" />
+      </node>
+    </node>
+    <node concept="2MWq9S" id="4H3LB8AgRAP" role="2AUypC">
+      <node concept="3clFbS" id="4H3LB8AgRAQ" role="2VODD2">
+        <node concept="3clFbF" id="4H3LB8AgRDL" role="3cqZAp">
+          <node concept="3clFbT" id="4H3LB8AgRDK" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
