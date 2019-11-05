@@ -213,6 +213,7 @@
         <property id="1707086779732260970" name="val" index="2_138b" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
+      <concept id="1707086779727598828" name="org.modellwerkstatt.objectflow.structure.IStatusElementOption" flags="ng" index="2_RhUd" />
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="6135709767654760054" name="org.modellwerkstatt.objectflow.structure.SimpleBuilderElement" flags="ng" index="GOFnK" />
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
@@ -4105,13 +4106,17 @@
     <node concept="il5_x" id="6XA$NCcU$N8" role="2kzhMJ">
       <property role="TrG5h" value="MSTR_OK_CON" />
       <node concept="2kzhL4" id="6XA$NCcU$N9" role="2kzgdm">
-        <node concept="Xl_RD" id="6XA$NCcU$Na" role="il5_5">
-          <property role="Xl_RC" value="Save &amp; Close -1" />
-          <node concept="3RprTR" id="6XA$NCcXBkY" role="lGtFl">
-            <node concept="3RprXr" id="6XA$NCcXBkZ" role="3Rpr6w">
-              <property role="3RprZj" value="Save &amp; Close 0" />
-            </node>
-          </node>
+        <node concept="Xl_RD" id="2kpuhi0s$$P" role="il5_5">
+          <property role="Xl_RC" value="SV" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2kpuhi0vFum" role="2kzhMJ">
+      <property role="TrG5h" value="GO_CONCLUSION" />
+      <node concept="2kzhL4" id="2kpuhi0vFun" role="2kzgdm">
+        <property role="il5CD" value="GO_FF1" />
+        <node concept="Xl_RD" id="2kpuhi0vFuo" role="il5_5">
+          <property role="Xl_RC" value="GO" />
         </node>
       </node>
     </node>
@@ -4830,8 +4835,30 @@
           </node>
         </node>
         <node concept="3clFbH" id="3Fi_l5ZULIa" role="3cqZAp" />
-        <node concept="3clFbH" id="3Fi_l5ZULIy" role="3cqZAp" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="4Iw7xyH$3J7" role="jymVt" />
+    <node concept="3clFb_" id="4Iw7xyH$3M2" role="jymVt">
+      <property role="TrG5h" value="verbuchen" />
+      <node concept="37vLTG" id="4Iw7xyH$3NT" role="3clF46">
+        <property role="TrG5h" value="theOrder" />
+        <node concept="3uibUv" id="4Iw7xyH$3Oq" role="1tU5fm">
+          <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4Iw7xyH$3OZ" role="3clF46">
+        <property role="TrG5h" value="whichPosition" />
+        <node concept="3uibUv" id="4Iw7xyH$3PM" role="1tU5fm">
+          <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4Iw7xyH$3Q9" role="3clF46">
+        <property role="TrG5h" value="times" />
+        <node concept="10Oyi0" id="4Iw7xyH$3Rp" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="4Iw7xyH$3M4" role="3clF45" />
+      <node concept="3Tm1VV" id="4Iw7xyH$3M5" role="1B3o_S" />
+      <node concept="3clFbS" id="4Iw7xyH$3M6" role="3clF47" />
     </node>
     <node concept="3Tm1VV" id="77KX0PDuRx2" role="1B3o_S" />
   </node>
@@ -5995,6 +6022,7 @@
         <node concept="2_1389" id="7h5_Fe2gwq0" role="2_RhUc">
           <property role="2_138b" value="#4FB973" />
         </node>
+        <node concept="2_RhUd" id="2kpuhi0B7Rf" role="2_RhUc" />
         <node concept="Xl_RD" id="5_hm6iII8dN" role="3RLGhM">
           <property role="Xl_RC" value="ordered" />
         </node>
@@ -6017,7 +6045,7 @@
           <property role="Xl_RC" value="completed" />
         </node>
       </node>
-      <node concept="1TNdZI" id="7h5_Fe2gwpY" role="1TMXFZ" />
+      <node concept="1TNdZI" id="2kpuhi0Aa5k" role="1TMXFZ" />
     </node>
   </node>
 </model>
