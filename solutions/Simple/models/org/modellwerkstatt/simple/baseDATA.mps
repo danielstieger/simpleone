@@ -5901,9 +5901,6 @@
       <node concept="Xl_RD" id="7rv7nMWuAcO" role="2CNmdL">
         <property role="Xl_RC" value="DateTime" />
       </node>
-      <node concept="Xl_RD" id="7rv7nMW$x4e" role="3bVav">
-        <property role="Xl_RC" value="dd.MM.yyyy hh:mm:ss" />
-      </node>
     </node>
     <node concept="1bOX9e" id="AN_117bq$J" role="TxmiU">
       <property role="2RkwnN" value="store" />

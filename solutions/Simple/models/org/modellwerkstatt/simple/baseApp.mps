@@ -223,9 +223,6 @@
         <child id="9110730801960131775" name="pages" index="2TpcRr" />
         <child id="4503841283149007813" name="successorHandler" index="3wlH0d" />
       </concept>
-      <concept id="3551693089253734220" name="org.modellwerkstatt.objectflow.structure.IdentityReference" flags="ng" index="TpT50">
-        <reference id="3551693089254935783" name="identity" index="T2yFF" />
-      </concept>
       <concept id="7270431012770461291" name="org.modellwerkstatt.objectflow.structure.BPRefIdReference" flags="ng" index="WNRgn">
         <reference id="7270431012770461292" name="businessProperty" index="WNRgg" />
       </concept>
@@ -341,7 +338,6 @@
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
         <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
-        <child id="4399874686856833707" name="onStartupCmd" index="1FmHgs" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
@@ -365,10 +361,6 @@
       </concept>
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
-      </concept>
-      <concept id="4399874686857403043" name="org.modellwerkstatt.dataux.structure.StartupCommandCall" flags="ng" index="1Fkigk">
-        <child id="4399874686857403230" name="enabledCondition" index="1FkinD" />
-        <child id="4399874686859853317" name="commandCall" index="1Fzc2M" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1101,19 +1093,6 @@
           <node concept="3SKdUq" id="4dQ7$MA1b0W" role="3SKWNk">
             <property role="3SKdUp" value="values is defined as local variable above" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1Fkigk" id="hcdqIeBU7J" role="1FmHgs">
-      <node concept="2_HltQ" id="hcdqIeBU7K" role="1Fzc2M">
-        <ref role="2_Hrwf" to="1y8i:AN_117c0Wm" resolve="Orderprocess" />
-        <ref role="2_Hrw8" to="1y8i:4u029Jv8v68" resolve="Search Orders" />
-        <node concept="10Nm6u" id="hcdqIeBU9l" role="2_HrWp" />
-      </node>
-      <node concept="3clFbC" id="hcdqIeBVph" role="1FkinD">
-        <node concept="10Nm6u" id="5etApAv_0Jl" role="3uHU7w" />
-        <node concept="TpT50" id="hcdqIeBVo_" role="3uHU7B">
-          <ref role="T2yFF" to="1y8i:5etApAv2XGa" resolve="Int_Identity" />
         </node>
       </node>
     </node>
