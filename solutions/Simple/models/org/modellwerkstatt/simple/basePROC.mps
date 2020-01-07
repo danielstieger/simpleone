@@ -3013,7 +3013,31 @@
       </node>
     </node>
     <node concept="20qIzx" id="jDMPdcybee" role="3umfm7">
-      <node concept="3clFbS" id="jDMPdcybef" role="2VODD2" />
+      <node concept="3clFbS" id="jDMPdcybef" role="2VODD2">
+        <node concept="3clFbJ" id="76rZKFTh7oa" role="3cqZAp">
+          <node concept="3clFbS" id="76rZKFTh7oc" role="3clFbx">
+            <node concept="10Adxh" id="76rZKFTh7ug" role="3cqZAp">
+              <node concept="Xl_RD" id="76rZKFTh7uu" role="10Adiu">
+                <property role="Xl_RC" value="BING" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="76rZKFTh7rM" role="3clFbw">
+            <node concept="2XvMaL" id="76rZKFTh7sJ" role="3uHU7w">
+              <ref role="2XvMaQ" to="dtxg:2IUGN4P8gvE" resolve="PositionStatus" />
+              <ref role="1Vchh_" to="dtxg:2IUGN4P8gxl" resolve="accepted" />
+            </node>
+            <node concept="2OqwBi" id="76rZKFTh7p3" role="3uHU7B">
+              <node concept="3urNQE" id="76rZKFTh7oz" role="2Oq$k0">
+                <ref role="3cqZAo" node="4XOQNRZgrPU" resolve="pos" />
+              </node>
+              <node concept="2S8uIT" id="76rZKFTh7q7" role="2OqNvi">
+                <ref role="2S8YL0" to="dtxg:2IUGN4P8g$C" resolve="status" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="6OyHsl_7imr">
