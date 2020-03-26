@@ -265,6 +265,10 @@
       <concept id="3551693089249896576" name="org.modellwerkstatt.objectflow.structure.Identity" flags="ng" index="QIgUc">
         <child id="3551693089258339309" name="covers" index="TetRx" />
       </concept>
+      <concept id="4779674245164303002" name="org.modellwerkstatt.objectflow.structure.StaticRole" flags="ng" index="2RjHbW">
+        <child id="4779674245164315371" name="staticRoleFunc" index="2RjIad" />
+      </concept>
+      <concept id="4779674245164315510" name="org.modellwerkstatt.objectflow.structure.StaticRoleFunc" flags="ig" index="2RjIcg" />
       <concept id="6855023620829296283" name="org.modellwerkstatt.objectflow.structure.ObjectMeta" flags="ng" index="2Tkd$M" />
       <concept id="3551693089253734220" name="org.modellwerkstatt.objectflow.structure.IdentityReference" flags="ng" index="TpT50">
         <reference id="3551693089254935783" name="identity" index="T2yFF" />
@@ -297,6 +301,7 @@
       <concept id="1881524139087020878" name="org.modellwerkstatt.objectflow.structure.Transition" flags="ng" index="10x$tM">
         <reference id="1881524139087020882" name="targetState" index="10x$tI" />
         <reference id="1881524139087020879" name="command" index="10x$tN" />
+        <child id="2924471170334881325" name="permRoleReferenceReadOnly" index="37eV$_" />
       </concept>
       <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085549729" name="org.modellwerkstatt.objectflow.structure.FlagCommand" flags="ng" index="10Adit">
@@ -321,6 +326,7 @@
       <concept id="4518330267516965068" name="org.modellwerkstatt.objectflow.structure.RolesAndPermissions" flags="ng" index="1jyGmW">
         <child id="4779674245205936416" name="scopes" index="2PKp_6" />
         <child id="3551693089249896602" name="identities" index="QIgUm" />
+        <child id="4779674245164354289" name="staticRoles" index="2RjxEn" />
       </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
@@ -380,6 +386,9 @@
       <concept id="5697903518443819883" name="org.modellwerkstatt.objectflow.structure.ScopeReference" flags="ng" index="3ymtp$">
         <reference id="4779674245224959526" name="scope" index="2USPT0" />
       </concept>
+      <concept id="5697903518443819930" name="org.modellwerkstatt.objectflow.structure.IPermissionReference" flags="ng" index="3ymtql">
+        <reference id="5697903518443819941" name="evaluatePermission" index="3ymtqE" />
+      </concept>
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
         <property id="569389511234497416" name="minute" index="1$4sGQ" />
@@ -395,6 +404,7 @@
         <property id="569389511234497408" name="year" index="1$4sGY" />
         <property id="569389511234497409" name="month" index="1$4sGZ" />
       </concept>
+      <concept id="2665553595289276900" name="org.modellwerkstatt.objectflow.structure.PermissionHasReference" flags="ng" index="1G1AcV" />
       <concept id="6303390138597557532" name="org.modellwerkstatt.objectflow.structure.ConvTextExpression" flags="ng" index="1WHerN">
         <property id="6303390138597572053" name="type" index="1WHdSU" />
         <child id="6303390138597674847" name="expression" index="1WEEMK" />
@@ -1029,6 +1039,9 @@
       </node>
       <node concept="10xUwW" id="4XOQNRZgrNK" role="10x$tn">
         <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
+        <node concept="1G1AcV" id="4JWEgNMG2eG" role="37eV$_">
+          <ref role="3ymtqE" node="4JWEgNMG2mf" resolve="SimpleGuy" />
+        </node>
       </node>
       <node concept="10xUwW" id="3cAl6M4sAcg" role="10x$tn">
         <ref role="10x$tN" node="6OyHsl_7imr" resolve="Edit all OrderPositions" />
@@ -1078,6 +1091,9 @@
       </node>
       <node concept="10xUwW" id="1pEW74icaoU" role="10x$tn">
         <ref role="10x$tN" node="1pEW74icak5" resolve="Print Order" />
+        <node concept="1G1AcV" id="4JWEgNMG2sq" role="37eV$_">
+          <ref role="3ymtqE" node="4JWEgNMG2mf" resolve="SimpleGuy" />
+        </node>
       </node>
       <node concept="10xUwW" id="206uhc7i3eY" role="10x$tn">
         <ref role="10x$tN" node="206uhc7i3fr" resolve="Complete Order (Multi GO)" />
@@ -1097,12 +1113,18 @@
       <ref role="10xgEu" to="dtxg:AN_117c2L3" resolve="completed" />
       <node concept="10xUwW" id="2M4KcIRA_wd" role="10x$tn">
         <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
+        <node concept="1G1AcV" id="4JWEgNMG2rh" role="37eV$_">
+          <ref role="3ymtqE" node="4JWEgNMG2jj" resolve="Admin" />
+        </node>
       </node>
       <node concept="10xUwW" id="1ReQ$xd3Npu" role="10x$tn">
         <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
       </node>
       <node concept="10xUwW" id="1pEW74ican4" role="10x$tn">
         <ref role="10x$tN" node="1pEW74icak5" resolve="Print Order" />
+        <node concept="1G1AcV" id="4JWEgNMG2t7" role="37eV$_">
+          <ref role="3ymtqE" node="4JWEgNMG2mf" resolve="SimpleGuy" />
+        </node>
       </node>
       <node concept="10xUwW" id="7T8c0sxUG0I" role="10x$tn">
         <ref role="10x$tN" node="7T8c0sxUCBG" resolve="Open Wikipedia" />
@@ -9878,6 +9900,30 @@
   </node>
   <node concept="1jyGmW" id="5WG4isef8Lv">
     <property role="TrG5h" value="TestRoles" />
+    <node concept="2RjHbW" id="4JWEgNMG2jj" role="2RjxEn">
+      <property role="TrG5h" value="Admin" />
+      <node concept="2RjIcg" id="4JWEgNMG2jk" role="2RjIad">
+        <node concept="3clFbS" id="4JWEgNMG2jl" role="2VODD2">
+          <node concept="3clFbF" id="4JWEgNMG2kQ" role="3cqZAp">
+            <node concept="3clFbT" id="4JWEgNMG2kP" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2RjHbW" id="4JWEgNMG2mf" role="2RjxEn">
+      <property role="TrG5h" value="SimpleGuy" />
+      <node concept="2RjIcg" id="4JWEgNMG2mg" role="2RjIad">
+        <node concept="3clFbS" id="4JWEgNMG2mh" role="2VODD2">
+          <node concept="3clFbF" id="4JWEgNMG2nL" role="3cqZAp">
+            <node concept="3clFbT" id="4JWEgNMG2nK" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="QIgUc" id="5etApAv2XGa" role="QIgUm">
       <property role="TrG5h" value="Int_Identity" />
       <node concept="3uibUv" id="5etApAv$ZQN" role="TetRx">
