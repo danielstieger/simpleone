@@ -157,6 +157,7 @@
         <child id="2841559548776426563" name="classifierType" index="2vBLcp" />
         <child id="2841559548776424651" name="function" index="2vBLIh" />
       </concept>
+      <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
@@ -1381,6 +1382,39 @@
       <property role="TrG5h" value="events" />
       <node concept="_YKpA" id="4X6$QoZ2vpo" role="1tU5fm">
         <node concept="3uibUv" id="4X6$QoZ2vpE" role="_ZDj9">
+          <ref role="3uigEE" node="5A$AnVDpmnT" resolve="LogEvent" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2EH5hC" id="5TC7JC3WprF">
+    <property role="TrG5h" value="ProcEventProc" />
+    <node concept="3Tm1VV" id="5TC7JC3WprG" role="1B3o_S" />
+    <node concept="2vDG_T" id="5TC7JC3WprH" role="jymVt">
+      <property role="TrG5h" value="rec" />
+      <node concept="3cqZAl" id="5TC7JC3WprI" role="3clF45" />
+      <node concept="3clFbS" id="5TC7JC3WprJ" role="3clF47">
+        <node concept="3clFbF" id="5TC7JC3WprS" role="3cqZAp">
+          <node concept="37vLTI" id="5TC7JC3WprN" role="3clFbG">
+            <node concept="2XvMaL" id="5TC7JC3WprO" role="37vLTx">
+              <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="EventStatus" />
+              <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="rec" />
+            </node>
+            <node concept="2OqwBi" id="5TC7JC3WprP" role="37vLTJ">
+              <node concept="37vLTw" id="5TC7JC3WprQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="5TC7JC3WprL" resolve="doc" />
+              </node>
+              <node concept="2S8uIT" id="5TC7JC3WprR" role="2OqNvi">
+                <ref role="2S8YL0" node="3iJaUC7iIwN" resolve="status" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5TC7JC3WprK" role="1B3o_S" />
+      <node concept="37vLTG" id="5TC7JC3WprL" role="3clF46">
+        <property role="TrG5h" value="doc" />
+        <node concept="3uibUv" id="5TC7JC3WprM" role="1tU5fm">
           <ref role="3uigEE" node="5A$AnVDpmnT" resolve="LogEvent" />
         </node>
       </node>

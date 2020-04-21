@@ -164,11 +164,18 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
+        <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
+      </concept>
+      <concept id="7919209473516657270" name="org.modellwerkstatt.objectflow.structure.StatusOfOperator" flags="ng" index="2veflS">
+        <child id="7919209473516657611" name="statusElements" index="2vefj5" />
+        <child id="7919209473516657283" name="statusLeftSide" index="2vefmd" />
+      </concept>
+      <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
         <reference id="3875131616719438755" name="process" index="2_Hrwf" />
-        <child id="3875131616719439029" name="actualArgument" index="2_HrWp" />
       </concept>
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
@@ -210,9 +217,6 @@
       </concept>
       <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
-      <concept id="1881524139088778970" name="org.modellwerkstatt.objectflow.structure.ProcessDocumentReference" flags="ng" index="10EhbA">
-        <reference id="1881524139088778971" name="processDocument" index="10EhbB" />
-      </concept>
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
@@ -232,6 +236,7 @@
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
+        <child id="4222064144042812753" name="andIsEnabledNew" index="e0yQD" />
         <child id="1394557069846129412" name="finalCancelSelection" index="Wq_P0" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
@@ -249,6 +254,7 @@
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
         <child id="7192042020164640429" name="parameter" index="3ulXEL" />
       </concept>
+      <concept id="7192042020165155254" name="org.modellwerkstatt.objectflow.structure.ContainerParamReference" flags="ng" index="3urNQE" />
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
@@ -788,6 +794,16 @@
     <property role="TrG5h" value="Comment Document" />
     <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
     <ref role="3lhHOO" node="5A$AnVDpmyw" resolve="DocProc" />
+    <node concept="3ulXEN" id="5TC7JC3Wpy3" role="3ulXEL">
+      <property role="TrG5h" value="docprocParam" />
+      <node concept="3uibUv" id="5TC7JC3Wpy4" role="1tU5fm">
+        <ref role="3uigEE" node="5A$AnVDpmnT" resolve="Document" />
+      </node>
+      <node concept="2IFXgM" id="5TC7JC3Wpy7" role="33vP2m">
+        <property role="1pH11a" value="true" />
+        <ref role="2IFZ7r" node="5A$AnVDpmnT" resolve="Document" />
+      </node>
+    </node>
     <node concept="3ulXEM" id="5A$AnVDpxXd" role="3ulXEG">
       <property role="TrG5h" value="doc2" />
       <node concept="3uibUv" id="2JsbshhbyXf" role="1tU5fm">
@@ -835,8 +851,8 @@
           <node concept="37vLTI" id="5A$AnVDpyev" role="3clFbG">
             <node concept="2OqwBi" id="2JsbshhiSBp" role="37vLTx">
               <node concept="2OqwBi" id="2JsbshhiSwa" role="2Oq$k0">
-                <node concept="10EhbA" id="2Jsbshhfb6c" role="2Oq$k0">
-                  <ref role="10EhbB" node="5A$AnVDpmyx" resolve="doc" />
+                <node concept="3urNQE" id="5TC7JC3Wpy5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5TC7JC3Wpy3" resolve="docprocParam" />
                 </node>
                 <node concept="liA8E" id="2JsbshhiS_i" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
@@ -906,6 +922,22 @@
     </node>
     <node concept="3urNR4" id="10OK0P_xIHR" role="3vkzKj">
       <ref role="3cqZAo" node="5A$AnVDpxXd" resolve="doc2" />
+    </node>
+    <node concept="2veflS" id="5TC7JC3Wpst" role="e0yQD">
+      <node concept="2OqwBi" id="5TC7JC3Wpsu" role="2vefmd">
+        <node concept="3urNQE" id="5TC7JC3Wpy6" role="2Oq$k0">
+          <ref role="3cqZAo" node="5TC7JC3Wpy3" resolve="docprocParam" />
+        </node>
+        <node concept="2S8uIT" id="5TC7JC3Wpsw" role="2OqNvi">
+          <ref role="2S8YL0" node="5A$AnVDpm$9" resolve="status" />
+        </node>
+      </node>
+      <node concept="2vefiz" id="5TC7JC3Wpsy" role="2vefj5">
+        <ref role="2vefiw" node="5A$AnVDpm_R" resolve="open" />
+      </node>
+      <node concept="2vefiz" id="5TC7JC3Wpsz" role="2vefj5">
+        <ref role="2vefiw" node="5A$AnVDpmBe" resolve="closed" />
+      </node>
     </node>
   </node>
   <node concept="2EH5hC" id="5A$AnVDpmTb">
@@ -1503,10 +1535,6 @@
           <node concept="33WYYh" id="2JsbshhiGmX" role="fOGQ8">
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
             <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
-            <node concept="2IFXgM" id="2JsbshhiGmY" role="2_HrWp">
-              <property role="1pH11a" value="true" />
-              <ref role="2IFZ7r" node="5A$AnVDpmnT" resolve="Document" />
-            </node>
           </node>
         </node>
         <node concept="PoUSf" id="2Jsbshh847c" role="PoUSn">
@@ -1565,10 +1593,6 @@
           <node concept="33WYYh" id="2JsbshhiGmo" role="fOGQ8">
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
             <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
-            <node concept="2IFXgM" id="2JsbshhiGmp" role="2_HrWp">
-              <property role="1pH11a" value="true" />
-              <ref role="2IFZ7r" node="5A$AnVDpmnT" resolve="Document" />
-            </node>
           </node>
         </node>
         <node concept="PoUSf" id="2Jsbshh8490" role="PoUSn">
@@ -1641,10 +1665,6 @@
           <node concept="33WYYh" id="2JsbshgStzC" role="fOGQ8">
             <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
-            <node concept="2IFXgM" id="2JsbshgStzD" role="2_HrWp">
-              <property role="1pH11a" value="true" />
-              <ref role="2IFZ7r" node="5A$AnVDpmnT" resolve="Document" />
-            </node>
           </node>
         </node>
         <node concept="3Oe2IN" id="2JsbshgStMH" role="3OfFNq">
@@ -1709,6 +1729,68 @@
       <node concept="2TG9WX" id="5A$AnVDpxOZ" role="3OfFNq">
         <node concept="3Oe$u_" id="5A$AnVDpxP0" role="3$nDjG">
           <ref role="3O0p26" node="5A$AnVDpm$9" resolve="status" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2EH5hC" id="5TC7JC3WprT">
+    <property role="TrG5h" value="ProcDocProc" />
+    <node concept="3Tm1VV" id="5TC7JC3WprU" role="1B3o_S" />
+    <node concept="2vDG_T" id="5TC7JC3WprV" role="jymVt">
+      <property role="TrG5h" value="open" />
+      <node concept="3cqZAl" id="5TC7JC3WprW" role="3clF45" />
+      <node concept="3clFbS" id="5TC7JC3WprX" role="3clF47">
+        <node concept="3clFbF" id="5TC7JC3Wps6" role="3cqZAp">
+          <node concept="37vLTI" id="5TC7JC3Wps1" role="3clFbG">
+            <node concept="2XvMaL" id="5TC7JC3Wps2" role="37vLTx">
+              <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
+              <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+            </node>
+            <node concept="2OqwBi" id="5TC7JC3Wps3" role="37vLTJ">
+              <node concept="37vLTw" id="5TC7JC3Wps4" role="2Oq$k0">
+                <ref role="3cqZAo" node="5TC7JC3WprZ" resolve="doc" />
+              </node>
+              <node concept="2S8uIT" id="5TC7JC3Wps5" role="2OqNvi">
+                <ref role="2S8YL0" node="5A$AnVDpm$9" resolve="status" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5TC7JC3WprY" role="1B3o_S" />
+      <node concept="37vLTG" id="5TC7JC3WprZ" role="3clF46">
+        <property role="TrG5h" value="doc" />
+        <node concept="3uibUv" id="5TC7JC3Wps0" role="1tU5fm">
+          <ref role="3uigEE" node="5A$AnVDpmnT" resolve="Document" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vDG_T" id="5TC7JC3Wps7" role="jymVt">
+      <property role="TrG5h" value="closed" />
+      <node concept="3cqZAl" id="5TC7JC3Wps8" role="3clF45" />
+      <node concept="3clFbS" id="5TC7JC3Wps9" role="3clF47">
+        <node concept="3clFbF" id="5TC7JC3Wpsi" role="3cqZAp">
+          <node concept="37vLTI" id="5TC7JC3Wpsd" role="3clFbG">
+            <node concept="2XvMaL" id="5TC7JC3Wpse" role="37vLTx">
+              <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
+              <ref role="1Vchh_" node="5A$AnVDpmBe" resolve="closed" />
+            </node>
+            <node concept="2OqwBi" id="5TC7JC3Wpsf" role="37vLTJ">
+              <node concept="37vLTw" id="5TC7JC3Wpsg" role="2Oq$k0">
+                <ref role="3cqZAo" node="5TC7JC3Wpsb" resolve="doc" />
+              </node>
+              <node concept="2S8uIT" id="5TC7JC3Wpsh" role="2OqNvi">
+                <ref role="2S8YL0" node="5A$AnVDpm$9" resolve="status" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5TC7JC3Wpsa" role="1B3o_S" />
+      <node concept="37vLTG" id="5TC7JC3Wpsb" role="3clF46">
+        <property role="TrG5h" value="doc" />
+        <node concept="3uibUv" id="5TC7JC3Wpsc" role="1tU5fm">
+          <ref role="3uigEE" node="5A$AnVDpmnT" resolve="Document" />
         </node>
       </node>
     </node>
