@@ -4133,6 +4133,20 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="4kNjw_nvCAf" role="2kzhMJ">
+      <property role="TrG5h" value="WARNING" />
+      <node concept="2kzhL4" id="4kNjw_nvCAg" role="2kzgdm">
+        <node concept="Xl_RD" id="4kNjw_nvCAh" role="il5_5">
+          <property role="Xl_RC" value="This is a important warning" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="4kNjw_nvCH5" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="4kNjw_nvCH6" role="il5_5">
+          <property role="Xl_RC" value="This is an important MDE warning" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5ol$NvDtID">
     <property role="TrG5h" value="ICON_DEFINITON" />
@@ -6587,6 +6601,16 @@
         </node>
       </node>
       <node concept="10Oyi0" id="6QYU_OS3REZ" role="2RkE6I" />
+    </node>
+  </node>
+  <node concept="wbJL_" id="6WiSq7959r4">
+    <property role="TrG5h" value="TestRepor" />
+    <node concept="3Tm1VV" id="6WiSq7959r5" role="1B3o_S" />
+    <node concept="wbJLE" id="6WiSq7959rW" role="jymVt">
+      <property role="TrG5h" value="someMethod1" />
+      <node concept="3cqZAl" id="6WiSq7959rX" role="3clF45" />
+      <node concept="3Tm1VV" id="6WiSq7959rY" role="1B3o_S" />
+      <node concept="3clFbS" id="6WiSq7959rZ" role="3clF47" />
     </node>
   </node>
 </model>
