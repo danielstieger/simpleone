@@ -863,7 +863,7 @@
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App MDE Order" />
-    <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" node="4l1zKLo5jkE" resolve="FX8_Lola_MDE" />
     <node concept="3ulXEM" id="4h8GofeW2LA" role="3ulXEG">
       <property role="TrG5h" value="values" />
       <node concept="_YKpA" id="4h8GofeW2LI" role="1tU5fm">
@@ -919,6 +919,9 @@
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
         <ref role="1Vchh_" to="dtxg:AN_117c2KY" resolve="created" />
       </node>
+      <node concept="Xl_RD" id="4l1zKLo5jEc" role="2$ntWM">
+        <property role="Xl_RC" value="Edit order 3 - Do.OK" />
+      </node>
     </node>
     <node concept="2$ntO6" id="2DIWJdVax$p" role="2$nsuY">
       <node concept="33WYYh" id="2DIWJdVax$q" role="2$ntUL">
@@ -940,6 +943,9 @@
       <node concept="2XvMaL" id="2DIWJdVax$v" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
         <ref role="1Vchh_" to="dtxg:AN_117c2KY" resolve="created" />
+      </node>
+      <node concept="Xl_RD" id="4l1zKLo5jHt" role="2$ntWM">
+        <property role="Xl_RC" value="Edit order 4 - Do.OK" />
       </node>
     </node>
     <node concept="2$ntO6" id="1TowlBnaJ3B" role="2$nsuY">
@@ -1006,7 +1012,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1v6GfusbRRx" role="3cqZAp" />
-        <node concept="3clFbH" id="1v6GfusbRHY" role="3cqZAp" />
         <node concept="3clFbJ" id="1v6GfusbS6u" role="3cqZAp">
           <node concept="3clFbS" id="1v6GfusbS6w" role="3clFbx">
             <node concept="3clFbF" id="1v6GfusbSdt" role="3cqZAp">
@@ -1477,89 +1482,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="2qrl3a2N$Ae" role="1B3o_S" />
-  </node>
-  <node concept="2CG7Z0" id="4zRKoOKIHTo">
-    <property role="TrG5h" value="ConfigDeprecated" />
-    <property role="3GE5qa" value="configs" />
-    <node concept="2CJf3v" id="21a32Cmm3S2" role="2CGBMS">
-      <property role="TrG5h" value="dataSource" />
-      <node concept="2DlbD8" id="21a32Cmm3S3" role="2DlbIj">
-        <node concept="Xl_RD" id="21a32Cmm3S4" role="2DlbDb">
-          <property role="Xl_RC" value="destroy-method" />
-        </node>
-        <node concept="Xl_RD" id="21a32Cmm3S5" role="2DlbDP">
-          <property role="Xl_RC" value="close" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="21a32Cmm3S6" role="2CJf0U">
-        <property role="Xl_RC" value="com.mchange.v2.c3p0.ComboPooledDataSource" />
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3S7" role="2CJ4_l">
-        <property role="TrG5h" value="numHelperThreads" />
-        <node concept="Xl_RD" id="21a32Cmm3S8" role="2CaGCA">
-          <property role="Xl_RC" value="2" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sb" role="2CJ4_l">
-        <property role="TrG5h" value="acquireRetryDelay" />
-        <node concept="Xl_RD" id="21a32Cmm3Sc" role="2CaGCA">
-          <property role="Xl_RC" value="0" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sd" role="2CJ4_l">
-        <property role="TrG5h" value="acquireRetryAttempts" />
-        <node concept="Xl_RD" id="21a32Cmm3Se" role="2CaGCA">
-          <property role="Xl_RC" value="30" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sf" role="2CJ4_l">
-        <property role="TrG5h" value="driverClass" />
-        <node concept="Xl_RD" id="21a32Cmm3Sg" role="2CaGCA">
-          <property role="Xl_RC" value="oracle.jdbc.driver.OracleDriver" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sh" role="2CJ4_l">
-        <property role="TrG5h" value="jdbcUrl" />
-        <node concept="Xl_RD" id="21a32Cmm3Si" role="2CaGCA">
-          <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sj" role="2CJ4_l">
-        <property role="TrG5h" value="maxPoolSize" />
-        <node concept="Xl_RD" id="21a32Cmm3Sk" role="2CaGCA">
-          <property role="Xl_RC" value="2" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2tF6Zswg5LU" role="2CJ4_l">
-        <property role="TrG5h" value="minPoolSize" />
-        <node concept="Xl_RD" id="2tF6Zswg5MB" role="2CaGCA">
-          <property role="Xl_RC" value="0" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2tF6ZswlZW7" role="2CJ4_l">
-        <property role="TrG5h" value="initialPoolSize" />
-        <node concept="Xl_RD" id="2tF6ZswlZW8" role="2CaGCA">
-          <property role="Xl_RC" value="0" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sl" role="2CJ4_l">
-        <property role="TrG5h" value="user" />
-        <node concept="Xl_RD" id="21a32Cmm3Sm" role="2CaGCA">
-          <property role="Xl_RC" value="reko" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="21a32Cmm3Sn" role="2CJ4_l">
-        <property role="TrG5h" value="password" />
-        <node concept="Xl_RD" id="21a32Cmm3So" role="2CaGCA">
-          <property role="Xl_RC" value="test" />
-        </node>
-      </node>
-    </node>
-    <node concept="20ptWn" id="2XYulUz3skn" role="20ptHX">
-      <node concept="Xl_RD" id="2XYulUz3sko" role="20ptNC">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
-      </node>
-    </node>
   </node>
   <node concept="2CG7Z0" id="382CQP52o$k">
     <property role="TrG5h" value="BatchConfigConsole" />
@@ -2668,18 +2590,6 @@
         <node concept="Xl_RD" id="76zKLSqVXLK" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter2" />
         </node>
-        <node concept="2CJ4$C" id="59p98S7tBQM" role="2CJ4_l">
-          <property role="TrG5h" value="TranslationCsvFileAbsolute" />
-          <node concept="Xl_RD" id="59p98S7tBTJ" role="2CaGCA">
-            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/trans.txt" />
-          </node>
-        </node>
-        <node concept="2CJ4$C" id="59p98S7tBVb" role="2CJ4_l">
-          <property role="TrG5h" value="LocaleForTranslation" />
-          <node concept="Xl_RD" id="59p98S7tDmM" role="2CaGCA">
-            <property role="Xl_RC" value="de" />
-          </node>
-        </node>
       </node>
       <node concept="2CPvp3" id="59p98S7tBUx" role="2CJdiS" />
     </node>
@@ -3160,6 +3070,89 @@
             <property role="3clFbU" value="true" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="4l1zKLo5jkE">
+    <property role="TrG5h" value="FX8_Lola_MDE" />
+    <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJ4_Q" id="4l1zKLo5jkF" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    </node>
+    <node concept="2CJf3v" id="4l1zKLo5jkG" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="2CJf1O" id="4l1zKLo5jkH" role="2CJ4_l">
+        <node concept="Xl_RD" id="4l1zKLo5jkI" role="2DqwMp">
+          <property role="Xl_RC" value="BABY" />
+        </node>
+        <node concept="Xl_RD" id="4l1zKLo5jkJ" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4l1zKLo5jkK" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.baseDATA.SimpleRes_MDE" />
+      </node>
+    </node>
+    <node concept="2CJoq6" id="4l1zKLo5jkL" role="2CGBMS">
+      <property role="TrG5h" value="SetupLog4j_4_Console___Set_Level_Simple" />
+      <node concept="2CJf3v" id="4l1zKLo5jkM" role="2CJdiS">
+        <property role="TrG5h" value="logConfig_1" />
+        <node concept="Xl_RD" id="4l1zKLo5jkN" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JLogLevel" />
+        </node>
+        <node concept="2CJf1O" id="4l1zKLo5jkO" role="2CJ4_l">
+          <node concept="Xl_RD" id="4l1zKLo5jkP" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="4l1zKLo5jkQ" role="2DqwMp">
+            <property role="Xl_RC" value="Simple" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="4l1zKLo5jkR" role="2CJ4_l">
+          <node concept="Xl_RD" id="4l1zKLo5jkS" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="4l1zKLo5jkT" role="2DqwMp">
+            <property role="Xl_RC" value="INFO" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="4l1zKLo5jkU" role="2CJdiS" />
+    </node>
+    <node concept="2CJf3v" id="4l1zKLo5jkV" role="2CGBMS">
+      <property role="TrG5h" value="hotkeyTranslator" />
+      <node concept="Xl_RD" id="4l1zKLo5jkW" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8AppleMacKeyBoard" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4l1zKLo5jkX" role="2CGBMS">
+      <property role="TrG5h" value="fxUiFactory" />
+      <node concept="2CJ4$C" id="4l1zKLo5jkY" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="4l1zKLo5jkZ" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4l1zKLo5jl0" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="4l1zKLo5jl1" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
+    </node>
+    <node concept="2CJ4_Q" id="4l1zKLo5jl2" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LockBus" />
+    </node>
+    <node concept="2CJ4_Q" id="4l1zKLo5jl3" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
+    </node>
+    <node concept="2CJ4_Q" id="4l1zKLo5jl4" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="4l1zKLo5jl5" role="20ptHX">
+      <node concept="Xl_RD" id="4l1zKLo5jl6" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
       </node>
     </node>
   </node>

@@ -3437,7 +3437,7 @@
           <property role="Xl_RC" value="check_circle_outline" />
         </node>
         <node concept="Xl_RD" id="6xifBbDNu2w" role="il5_5">
-          <property role="Xl_RC" value="Beleg freigeben" />
+          <property role="Xl_RC" value="Edit Order (RO)" />
         </node>
       </node>
     </node>
