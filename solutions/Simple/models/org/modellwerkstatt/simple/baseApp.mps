@@ -814,17 +814,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="59p98S7ulpq" role="3cqZAp">
-          <node concept="2OqwBi" id="59p98S7ulr$" role="3clFbG">
-            <node concept="2Rjrh3" id="59p98S7ulpo" role="2Oq$k0" />
-            <node concept="liA8E" id="59p98S7ulvE" role="2OqNvi">
-              <ref role="37wK5l" to="w7gk:Da7DafdCon" resolve="setLang" />
-              <node concept="Xl_RD" id="59p98S7ulxs" role="37wK5m">
-                <property role="Xl_RC" value="trans_0" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="59p98S7uln7" role="3cqZAp" />
         <node concept="3cpWs6" id="5XruxTJPWF2" role="3cqZAp">
           <node concept="37vLTw" id="5XruxTJPWF3" role="3cqZAk">
@@ -2589,6 +2578,12 @@
         <property role="TrG5h" value="stringFormatter2" />
         <node concept="Xl_RD" id="76zKLSqVXLK" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter2" />
+        </node>
+        <node concept="2CJ4$C" id="59p98S7tBVb" role="2CJ4_l">
+          <property role="TrG5h" value="LocaleForTranslation" />
+          <node concept="Xl_RD" id="59p98S7tDmM" role="2CaGCA">
+            <property role="Xl_RC" value="de" />
+          </node>
         </node>
       </node>
       <node concept="2CPvp3" id="59p98S7tBUx" role="2CJdiS" />
