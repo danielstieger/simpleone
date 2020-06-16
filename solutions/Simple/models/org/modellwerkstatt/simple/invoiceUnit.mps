@@ -687,7 +687,7 @@
             </node>
             <node concept="1odsa" id="KI7S7jw9U2" role="37vLTx">
               <ref role="1ods_" to="8csk:KI7S7jw9Pz" resolve="InvoiceFact" />
-              <ref role="37wK5l" to="8csk:KI7S7jw9P_" resolve="createInvoiceWithOnePos" />
+              <ref role="37wK5l" to="8csk:4nH4LOF$GKB" resolve="createInvoiceWithOnePos" />
             </node>
           </node>
         </node>
