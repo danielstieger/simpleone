@@ -195,13 +195,6 @@
         <child id="1881524139085091981" name="function" index="10ot2L" />
         <child id="7158462476985919208" name="enabledWhen" index="1PSD5q" />
       </concept>
-      <concept id="1881524139086941829" name="org.modellwerkstatt.objectflow.structure.State" flags="ng" index="10xgET">
-        <reference id="1881524139086941858" name="status" index="10xgEu" />
-      </concept>
-      <concept id="1881524139087020878" name="org.modellwerkstatt.objectflow.structure.Transition" flags="ng" index="10x$tM">
-        <reference id="1881524139087020879" name="command" index="10x$tN" />
-      </concept>
-      <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085552758" name="org.modellwerkstatt.objectflow.structure.PageCommand" flags="ng" index="10Adxa">
         <reference id="1881524139085552759" name="page" index="10Adxb" />
       </concept>
@@ -220,18 +213,12 @@
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
       </concept>
-      <concept id="7192042020163999185" name="org.modellwerkstatt.objectflow.structure.Process" flags="ng" index="3ugp7d">
-        <reference id="1881524139087681829" name="statusField" index="10I5Op" />
-        <child id="1881524139086941830" name="states" index="10xgEU" />
-        <child id="1881524139088097910" name="creatorsAndViews" index="10HVpa" />
-      </concept>
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
-        <reference id="1993450443311478185" name="process" index="3lhHOO" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
       </concept>
-      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.Page" flags="ng" index="3ugp7q">
+      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
         <child id="2841559548776440554" name="events" index="2vBPQK" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
@@ -240,10 +227,8 @@
         <child id="8413087471126127955" name="dynamicPageTitle" index="1K0AWC" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
-      <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
       <concept id="7192042020164640426" name="org.modellwerkstatt.objectflow.structure.Container" flags="ng" index="3ulXEQ">
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
-        <child id="7192042020164640429" name="parameter" index="3ulXEL" />
       </concept>
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
       <concept id="594565203027877250" name="org.modellwerkstatt.objectflow.structure.Session" flags="ng" index="3y28L$" />
@@ -334,28 +319,6 @@
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
-  <node concept="3ugp7d" id="5A$AnVDpmyw">
-    <property role="TrG5h" value="EventProc" />
-    <ref role="10I5Op" node="3iJaUC7iIwN" resolve="status" />
-    <node concept="10xUwW" id="5A$AnVDvFkB" role="10HVpa">
-      <ref role="10x$tN" node="5A$AnVDpmNj" resolve="View Events" />
-    </node>
-    <node concept="10xUwW" id="4X6$QoZ2uAL" role="10HVpa">
-      <ref role="10x$tN" node="4X6$QoYdV9n" resolve="Log a User-Message" />
-    </node>
-    <node concept="10xUwW" id="4X6$QoZ2uXv" role="10HVpa">
-      <ref role="10x$tN" node="4X6$QoZ2uUU" resolve="SendReplyTest" />
-    </node>
-    <node concept="10xgET" id="5A$AnVDpmDe" role="10xgEU">
-      <ref role="10xgEu" node="5A$AnVDpm_R" resolve="rec" />
-    </node>
-    <node concept="3ulXEN" id="5A$AnVDpmyx" role="3ulXEL">
-      <property role="TrG5h" value="doc" />
-      <node concept="3uibUv" id="5A$AnVDpmyS" role="1tU5fm">
-        <ref role="3uigEE" node="5A$AnVDpmnT" resolve="LogEvent" />
-      </node>
-    </node>
-  </node>
   <node concept="34Athd" id="5A$AnVDpmnT">
     <property role="TrG5h" value="LogEvent" />
     <node concept="2XvgOf" id="5A$AnVDpm_h" role="2XvChp">
@@ -483,7 +446,6 @@
   <node concept="3ugp7m" id="5A$AnVDpmNj">
     <property role="TrG5h" value="View Events" />
     <property role="19I623" value="SEARCH_CMD" />
-    <ref role="3lhHOO" node="5A$AnVDpmyw" resolve="EventProc" />
     <node concept="3ulXEM" id="5A$AnVDpx0I" role="3ulXEG">
       <property role="TrG5h" value="events" />
       <node concept="_YKpA" id="3iJaUC7iIVT" role="1tU5fm">
@@ -1164,7 +1126,6 @@
   <node concept="3ugp7m" id="4X6$QoYdV9n">
     <property role="TrG5h" value="Log a User-Message" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="5A$AnVDpmyw" resolve="EventProc" />
     <node concept="20qIzx" id="4X6$QoYdVum" role="3umfm7">
       <node concept="3clFbS" id="4X6$QoYdVun" role="2VODD2">
         <node concept="3cpWs8" id="4X6$QoYe5t8" role="3cqZAp">
@@ -1282,7 +1243,6 @@
   <node concept="3ugp7m" id="4X6$QoZ2uUU">
     <property role="TrG5h" value="SendReplyTest" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="5A$AnVDpmyw" resolve="EventProc" />
     <node concept="3ugp7q" id="4X6$QoZ2v7K" role="3ug97V">
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" node="5A$AnVDpmnT" resolve="LogEvent" />

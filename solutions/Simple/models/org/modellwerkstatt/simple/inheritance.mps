@@ -176,7 +176,6 @@
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
-        <reference id="3875131616719438755" name="process" index="2_Hrwf" />
       </concept>
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
@@ -209,14 +208,6 @@
         <reference id="8554054623635738995" name="label" index="2DFCCC" />
         <child id="1881524139085091981" name="function" index="10ot2L" />
       </concept>
-      <concept id="1881524139086941829" name="org.modellwerkstatt.objectflow.structure.State" flags="ng" index="10xgET">
-        <reference id="1881524139086941858" name="status" index="10xgEu" />
-        <child id="1881524139087020907" name="transitions" index="10x$tn" />
-      </concept>
-      <concept id="1881524139087020878" name="org.modellwerkstatt.objectflow.structure.Transition" flags="ng" index="10x$tM">
-        <reference id="1881524139087020879" name="command" index="10x$tN" />
-      </concept>
-      <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
@@ -229,21 +220,15 @@
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
-      <concept id="7192042020163999185" name="org.modellwerkstatt.objectflow.structure.Process" flags="ng" index="3ugp7d">
-        <reference id="1881524139087681829" name="statusField" index="10I5Op" />
-        <child id="1881524139086941830" name="states" index="10xgEU" />
-        <child id="1881524139088097910" name="creatorsAndViews" index="10HVpa" />
-      </concept>
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
-        <reference id="1993450443311478185" name="process" index="3lhHOO" />
         <child id="4222064144042812753" name="andIsEnabledNew" index="e0yQD" />
         <child id="1394557069846129412" name="finalCancelSelection" index="Wq_P0" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalOkSelection" index="3vkzKj" />
       </concept>
-      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.Page" flags="ng" index="3ugp7q">
+      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
@@ -618,35 +603,9 @@
       </node>
     </node>
   </node>
-  <node concept="3ugp7d" id="5A$AnVDpmyw">
-    <property role="TrG5h" value="DocProc" />
-    <ref role="10I5Op" node="5A$AnVDpm$9" resolve="status" />
-    <node concept="10xUwW" id="5A$AnVDvFkB" role="10HVpa">
-      <ref role="10x$tN" node="5A$AnVDpmNj" resolve="Search Documents" />
-    </node>
-    <node concept="10xgET" id="5A$AnVDpmDe" role="10xgEU">
-      <ref role="10xgEu" node="5A$AnVDpm_R" resolve="open" />
-      <node concept="10xUwW" id="5A$AnVDpmMO" role="10x$tn">
-        <ref role="10x$tN" node="5A$AnVDpmPc" resolve="Comment Document" />
-      </node>
-    </node>
-    <node concept="10xgET" id="5A$AnVDpmLT" role="10xgEU">
-      <ref role="10xgEu" node="5A$AnVDpmBe" resolve="closed" />
-      <node concept="10xUwW" id="5A$AnVDAoRV" role="10x$tn">
-        <ref role="10x$tN" node="5A$AnVDpmPc" resolve="Comment Document" />
-      </node>
-    </node>
-    <node concept="3ulXEN" id="5A$AnVDpmyx" role="3ulXEL">
-      <property role="TrG5h" value="doc" />
-      <node concept="3uibUv" id="5A$AnVDpmyS" role="1tU5fm">
-        <ref role="3uigEE" node="5A$AnVDpmnT" resolve="Document" />
-      </node>
-    </node>
-  </node>
   <node concept="3ugp7m" id="5A$AnVDpmNj">
     <property role="TrG5h" value="Search Documents" />
     <property role="19I623" value="SEARCH_CMD" />
-    <ref role="3lhHOO" node="5A$AnVDpmyw" resolve="DocProc" />
     <node concept="3ulXEM" id="5A$AnVDpx0I" role="3ulXEG">
       <property role="TrG5h" value="view" />
       <node concept="3uibUv" id="5A$AnVDpx1s" role="1tU5fm">
@@ -794,7 +753,6 @@
   <node concept="3ugp7m" id="5A$AnVDpmPc">
     <property role="TrG5h" value="Comment Document" />
     <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
-    <ref role="3lhHOO" node="5A$AnVDpmyw" resolve="DocProc" />
     <node concept="3ulXEN" id="5TC7JC3Wpy3" role="3ulXEL">
       <property role="TrG5h" value="docprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpy4" role="1tU5fm">
@@ -1535,7 +1493,6 @@
         <node concept="fOGPe" id="2JsbshhiGmW" role="fOGQ8">
           <node concept="33WYYh" id="2JsbshhiGmX" role="fOGQ8">
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
-            <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
           </node>
         </node>
         <node concept="PoUSf" id="2Jsbshh847c" role="PoUSn">
@@ -1593,7 +1550,6 @@
         <node concept="fOGPe" id="2JsbshhiGmn" role="fOGQ8">
           <node concept="33WYYh" id="2JsbshhiGmo" role="fOGQ8">
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
-            <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
           </node>
         </node>
         <node concept="PoUSf" id="2Jsbshh8490" role="PoUSn">
@@ -1664,7 +1620,6 @@
         <node concept="PoWA$" id="2JsbshgStzn" role="PoUSn" />
         <node concept="fOGPe" id="2JsbshgStzB" role="fOGQ8">
           <node concept="33WYYh" id="2JsbshgStzC" role="fOGQ8">
-            <ref role="2_Hrwf" node="5A$AnVDpmyw" resolve="DocProc" />
             <ref role="2_Hrw8" node="5A$AnVDpmPc" resolve="Comment Document" />
           </node>
         </node>

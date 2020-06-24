@@ -268,7 +268,6 @@
       <concept id="8009046666043401703" name="org.modellwerkstatt.objectflow.structure.ModelRepository" flags="ig" index="wbJL_" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
-        <reference id="3875131616719438755" name="process" index="2_Hrwf" />
         <child id="3875131616719439029" name="actualArgument" index="2_HrWp" />
       </concept>
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
@@ -317,16 +316,6 @@
         <child id="1881524139085091981" name="function" index="10ot2L" />
         <child id="7158462476985919208" name="enabledWhen" index="1PSD5q" />
       </concept>
-      <concept id="1881524139086941829" name="org.modellwerkstatt.objectflow.structure.State" flags="ng" index="10xgET">
-        <reference id="1881524139086941858" name="status" index="10xgEu" />
-        <child id="1881524139087020907" name="transitions" index="10x$tn" />
-      </concept>
-      <concept id="1881524139087020878" name="org.modellwerkstatt.objectflow.structure.Transition" flags="ng" index="10x$tM">
-        <reference id="1881524139087020882" name="targetState" index="10x$tI" />
-        <reference id="1881524139087020879" name="command" index="10x$tN" />
-        <child id="2924471170334881325" name="permRoleReferenceReadOnly" index="37eV$_" />
-      </concept>
-      <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085552758" name="org.modellwerkstatt.objectflow.structure.PageCommand" flags="ng" index="10Adxa">
         <reference id="1881524139085552759" name="page" index="10Adxb" />
         <child id="2989872035376923994" name="flagMessage" index="1pYyQs" />
@@ -350,17 +339,10 @@
       <concept id="7393934493398918410" name="org.modellwerkstatt.objectflow.structure.SuccessorCommandCall" flags="ng" index="1t46OP">
         <child id="7393934493398998974" name="condition" index="1t4Du1" />
       </concept>
-      <concept id="7192042020163999185" name="org.modellwerkstatt.objectflow.structure.Process" flags="ng" index="3ugp7d">
-        <reference id="1881524139087681829" name="statusField" index="10I5Op" />
-        <child id="1881524139086941830" name="states" index="10xgEU" />
-        <child id="1881524139088097910" name="creatorsAndViews" index="10HVpa" />
-      </concept>
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <property id="96922280160231604" name="defaultHotkey" index="3uBtrS" />
         <property id="8569227807555216336" name="overWriteWindowTitle" index="1UlA2q" />
-        <reference id="1993450443311478185" name="process" index="3lhHOO" />
-        <child id="6525155817177860576" name="enabledWhen" index="20uWH4" />
         <child id="6525155817177697707" name="documentation" index="20vkWf" />
         <child id="4678401045862677843" name="commandCreationInformation" index="27AfA_" />
         <child id="4222064144042812753" name="andIsEnabledNew" index="e0yQD" />
@@ -379,7 +361,7 @@
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalOkSelection" index="3vkzKj" />
       </concept>
-      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.Page" flags="ng" index="3ugp7q">
+      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
         <child id="2841559548776440554" name="events" index="2vBPQK" />
         <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
@@ -404,9 +386,6 @@
       <concept id="5697903518443819883" name="org.modellwerkstatt.objectflow.structure.ScopeReference" flags="ng" index="3ymtp$">
         <reference id="4779674245224959526" name="scope" index="2USPT0" />
       </concept>
-      <concept id="5697903518443819930" name="org.modellwerkstatt.objectflow.structure.IPermissionReference" flags="ng" index="3ymtql">
-        <reference id="5697903518443819941" name="evaluatePermission" index="3ymtqE" />
-      </concept>
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
         <property id="569389511234497416" name="minute" index="1$4sGQ" />
@@ -422,7 +401,6 @@
         <property id="569389511234497408" name="year" index="1$4sGY" />
         <property id="569389511234497409" name="month" index="1$4sGZ" />
       </concept>
-      <concept id="2665553595289276900" name="org.modellwerkstatt.objectflow.structure.PermissionHasReference" flags="ng" index="1G1AcV" />
       <concept id="6303390138597557532" name="org.modellwerkstatt.objectflow.structure.ConvTextExpression" flags="ng" index="1WHerN">
         <property id="6303390138597572053" name="type" index="1WHdSU" />
         <child id="6303390138597674847" name="expression" index="1WEEMK" />
@@ -547,7 +525,6 @@
     <property role="3GE5qa" value="order_no_db" />
     <property role="3uBtrS" value="S_83" />
     <property role="1UlA2q" value="true" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ugp7q" id="AN_117fcM0" role="3ug97V">
       <property role="TrG5h" value="FilterPage" />
       <ref role="3gcvY6" to="dtxg:AN_117f5lp" resolve="OrderSearchView" />
@@ -1051,179 +1028,12 @@
       <property role="Xl_RC" value="Search" />
     </node>
   </node>
-  <node concept="3ugp7d" id="AN_117c0Wm">
-    <property role="TrG5h" value="Orderprocess" />
-    <property role="3GE5qa" value="order_no_db" />
-    <ref role="10I5Op" to="dtxg:AN_117c2L7" resolve="status" />
-    <node concept="3ulXEN" id="AN_117c0Wn" role="3ulXEL">
-      <property role="TrG5h" value="order" />
-      <node concept="3uibUv" id="AN_117c2$X" role="1tU5fm">
-        <ref role="3uigEE" to="dtxg:1Zhh97664rm" resolve="Order" />
-      </node>
-    </node>
-    <node concept="10xgET" id="AN_117c2XP" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:AN_117c2KY" resolve="created" />
-      <node concept="10xUwW" id="AN_117c3Q3" role="10x$tn">
-        <ref role="10x$tN" node="AN_117c3LL" resolve="Scan OrderPosition" />
-      </node>
-      <node concept="10xUwW" id="4XOQNRZgrNK" role="10x$tn">
-        <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
-        <node concept="1G1AcV" id="4JWEgNMG2eG" role="37eV$_">
-          <ref role="3ymtqE" node="4JWEgNMG2mf" resolve="SimpleGuy" />
-        </node>
-      </node>
-      <node concept="10xUwW" id="3cAl6M4sAcg" role="10x$tn">
-        <ref role="10x$tN" node="6OyHsl_7imr" resolve="Edit all OrderPositions" />
-      </node>
-      <node concept="10xUwW" id="3cAl6M4xAcF" role="10x$tn">
-        <ref role="10x$tN" node="3cAl6M4xA3w" resolve="Meta Head Wizzard" />
-      </node>
-      <node concept="10xUwW" id="3Z5UV2c6rMO" role="10x$tn">
-        <ref role="10x$tN" node="3Z5UV2c6rtl" resolve="Size Head Wizzard" />
-      </node>
-      <node concept="10xUwW" id="7RzRXa3H9u9" role="10x$tn">
-        <ref role="10x$tN" node="7RzRXa3H9ff" resolve="Edit Order Head" />
-        <ref role="10x$tI" node="AN_117c2XR" />
-      </node>
-      <node concept="10xUwW" id="1ReQ$xd3Kgz" role="10x$tn">
-        <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
-      </node>
-      <node concept="10xUwW" id="7T8c0sxUCBo" role="10x$tn">
-        <ref role="10x$tN" node="7T8c0sxUCBG" resolve="Open Wikipedia" />
-      </node>
-      <node concept="10xUwW" id="3fji5qpFo16" role="10x$tn">
-        <ref role="10x$tN" node="3fji5qpFn_j" resolve="Set Pos EAN to zero" />
-      </node>
-      <node concept="10xUwW" id="3l4K2g79nnc" role="10x$tn">
-        <ref role="10x$tN" node="3l4K2g79nnC" resolve="Clear Order" />
-      </node>
-      <node concept="10xUwW" id="6HvFgwdfOwS" role="10x$tn">
-        <ref role="10x$tI" node="AN_117c2XU" />
-        <ref role="10x$tN" node="AN_117c3Qk" resolve="Complete Order" />
-      </node>
-    </node>
-    <node concept="10xgET" id="AN_117c2XR" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:AN_117c2L0" resolve="ordered" />
-      <node concept="10xUwW" id="2M4KcIRA_vu" role="10x$tn">
-        <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
-      </node>
-      <node concept="10xUwW" id="3cAl6M4vghV" role="10x$tn">
-        <ref role="10x$tN" node="3cAl6M4vge_" resolve="Reset Order" />
-        <ref role="10x$tI" node="AN_117c2XP" />
-      </node>
-      <node concept="10xUwW" id="3cAl6M4vgk1" role="10x$tn">
-        <ref role="10x$tI" node="AN_117c2XU" />
-        <ref role="10x$tN" node="AN_117c3Qk" resolve="Complete Order" />
-      </node>
-      <node concept="10xUwW" id="1ReQ$xd3Np7" role="10x$tn">
-        <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
-      </node>
-      <node concept="10xUwW" id="1pEW74icaoU" role="10x$tn">
-        <ref role="10x$tN" node="1pEW74icak5" resolve="Print Order" />
-        <node concept="1G1AcV" id="4JWEgNMG2sq" role="37eV$_">
-          <ref role="3ymtqE" node="4JWEgNMG2mf" resolve="SimpleGuy" />
-        </node>
-      </node>
-      <node concept="10xUwW" id="206uhc7i3eY" role="10x$tn">
-        <ref role="10x$tN" node="206uhc7i3fr" resolve="Complete Order (Multi GO)" />
-        <ref role="10x$tI" node="AN_117c2XU" />
-      </node>
-      <node concept="10xUwW" id="7T8c0sxUG0o" role="10x$tn">
-        <ref role="10x$tN" node="7T8c0sxUCBG" resolve="Open Wikipedia" />
-      </node>
-      <node concept="10xUwW" id="3fji5qpFo1R" role="10x$tn">
-        <ref role="10x$tN" node="3fji5qpFn_j" resolve="Set Pos EAN to zero" />
-      </node>
-      <node concept="10xUwW" id="3l4K2g79npX" role="10x$tn">
-        <ref role="10x$tN" node="3l4K2g79nnC" resolve="Clear Order" />
-      </node>
-    </node>
-    <node concept="10xgET" id="AN_117c2XU" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:AN_117c2L3" resolve="completed" />
-      <node concept="10xUwW" id="2M4KcIRA_wd" role="10x$tn">
-        <ref role="10x$tN" node="4XOQNRZgrKt" resolve="Edit Order Position" />
-        <node concept="1G1AcV" id="4JWEgNMG2rh" role="37eV$_">
-          <ref role="3ymtqE" node="4JWEgNMG2jj" resolve="Admin" />
-        </node>
-      </node>
-      <node concept="10xUwW" id="1ReQ$xd3Npu" role="10x$tn">
-        <ref role="10x$tN" node="1ReQ$xd3KdU" resolve="Message Command" />
-      </node>
-      <node concept="10xUwW" id="1pEW74ican4" role="10x$tn">
-        <ref role="10x$tN" node="1pEW74icak5" resolve="Print Order" />
-        <node concept="1G1AcV" id="4JWEgNMG2t7" role="37eV$_">
-          <ref role="3ymtqE" node="4JWEgNMG2mf" resolve="SimpleGuy" />
-        </node>
-      </node>
-      <node concept="10xUwW" id="7T8c0sxUG0I" role="10x$tn">
-        <ref role="10x$tN" node="7T8c0sxUCBG" resolve="Open Wikipedia" />
-      </node>
-      <node concept="10xUwW" id="3fji5qpFo2l" role="10x$tn">
-        <ref role="10x$tN" node="3fji5qpFn_j" resolve="Set Pos EAN to zero" />
-      </node>
-      <node concept="10xUwW" id="3l4K2g79nqu" role="10x$tn">
-        <ref role="10x$tN" node="3l4K2g79nnC" resolve="Clear Order" />
-      </node>
-    </node>
-    <node concept="10xUwW" id="AN_117c2XY" role="10HVpa">
-      <ref role="10x$tN" node="4u029Jv8v68" resolve="Search Orders" />
-    </node>
-    <node concept="10xUwW" id="AN_117c3PV" role="10HVpa">
-      <ref role="10x$tN" node="AN_117c3Kl" resolve="Edit Order" />
-    </node>
-    <node concept="10xUwW" id="1TowlBnaIBV" role="10HVpa">
-      <ref role="10x$tN" node="1TowlBnaICA" resolve="EditOrder Predecessor" />
-    </node>
-    <node concept="10xUwW" id="U8r3Yq8O5E" role="10HVpa">
-      <ref role="10x$tN" node="U8r3Yq8LMH" resolve="Order Main Doc GE" />
-    </node>
-    <node concept="10xUwW" id="3cAl6M4wnDU" role="10HVpa">
-      <ref role="10x$tN" node="3cAl6M4wnPW" resolve="Complex Edit Order" />
-    </node>
-    <node concept="10xUwW" id="2IUGN4P78iz" role="10HVpa">
-      <ref role="10x$tN" node="2IUGN4P78gB" resolve="New Order" />
-    </node>
-    <node concept="10xUwW" id="4ysbFF_SY5C" role="10HVpa">
-      <ref role="10x$tN" node="4ysbFF_SY5X" resolve="Edit Order by open Param" />
-    </node>
-    <node concept="10xUwW" id="5SbyawjeZ_J" role="10HVpa">
-      <ref role="10x$tN" node="5SbyawjeQdI" resolve="Show Empty Order" />
-    </node>
-    <node concept="10xUwW" id="2N_nDunL3cR" role="10HVpa">
-      <ref role="10x$tN" node="2N_nDunL3de" resolve="PD DocCreator" />
-    </node>
-    <node concept="10xUwW" id="2Uji7vlCvLW" role="10HVpa">
-      <ref role="10x$tN" node="2Uji7vlCo15" resolve="PD TaskHandler" />
-    </node>
-    <node concept="10xUwW" id="7P$uL5PMOMn" role="10HVpa">
-      <ref role="10x$tN" node="7P$uL5PDZM2" resolve="Update Conclusion" />
-    </node>
-    <node concept="10xUwW" id="6gkV9KP8PSb" role="10HVpa">
-      <ref role="10x$tN" node="6gkV9KP8PSo" resolve="Open external Link" />
-    </node>
-    <node concept="10xUwW" id="3wkdm3W8dpy" role="10HVpa">
-      <ref role="10x$tN" node="3wkdm3W8dpZ" resolve="MasterData Editor" />
-    </node>
-    <node concept="10xUwW" id="v00WQaw90k" role="10HVpa">
-      <ref role="10x$tN" node="3wkdm3WbpA6" resolve="MasterData Creator" />
-    </node>
-    <node concept="10xUwW" id="3RUln15CG2a" role="10HVpa">
-      <ref role="10x$tN" node="3RUln15CFXX" resolve="GoWithoutPage" />
-    </node>
-    <node concept="10xUwW" id="3RUln16qRZl" role="10HVpa">
-      <ref role="10x$tN" node="3RUln16qRl4" resolve="GoWithoutPage2" />
-    </node>
-    <node concept="10xUwW" id="6DdGzN6_OMB" role="10HVpa">
-      <ref role="10x$tN" node="4H3LB8AgS9W" resolve="Print Order GO" />
-    </node>
-  </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
     <property role="TrG5h" value="Edit Order" />
     <property role="3GE5qa" value="order_no_db" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3uBtrS" value="ENTER_10" />
     <property role="1UlA2q" value="true" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WpsQ" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpsR" role="1tU5fm">
@@ -1670,7 +1480,7 @@
           <node concept="2OqwBi" id="v00WQap4gY" role="3clFbw">
             <node concept="3y28L$" id="v00WQap4aE" role="2Oq$k0" />
             <node concept="liA8E" id="v00WQap4oe" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="isShared" />
+              <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="inSuccessorPattern" />
             </node>
           </node>
           <node concept="9aQIb" id="v00WQap4rW" role="9aQIa">
@@ -2176,7 +1986,6 @@
     <property role="TrG5h" value="Scan OrderPosition" />
     <property role="3GE5qa" value="order_no_db" />
     <property role="1UlA2q" value="false" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpt9" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpta" role="1tU5fm">
@@ -3165,7 +2974,6 @@
   <node concept="3ugp7m" id="AN_117c3Qk">
     <property role="TrG5h" value="Complete Order" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpti" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wptj" role="1tU5fm">
@@ -3307,7 +3115,6 @@
     <property role="3GE5qa" value="order_no_db" />
     <property role="TrG5h" value="Edit Order Position" />
     <property role="3uBtrS" value="E_69" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="mlg3r" id="6YnZcASwtby" role="2V4Fwz">
       <node concept="lgADV" id="6YnZcASwtb$" role="mlgNH">
         <node concept="35AVbj" id="6YnZcASwtb_" role="lgxf9">
@@ -3599,7 +3406,6 @@
     <property role="1UlA2q" value="true" />
     <property role="3uBtrS" value="E_69" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wptz" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpt$" role="1tU5fm">
@@ -3789,7 +3595,6 @@
     <property role="TrG5h" value="Reset Order" />
     <property role="3GE5qa" value="order_no_db" />
     <property role="3uBtrS" value="R_82" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WptI" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WptJ" role="1tU5fm">
@@ -3879,12 +3684,6 @@
       <ref role="1PxDUh" to="ache:$arjoT88Li" resolve="Fx8IconDefaults" />
       <ref role="3cqZAo" to="ache:1cSMVgYAa86" resolve="ICON_STATUS" />
     </node>
-    <node concept="3y3z36" id="7Qjd9ayYiPX" role="20uWH4">
-      <node concept="10Nm6u" id="7Qjd9ayYiRe" role="3uHU7w" />
-      <node concept="3urNQE" id="5TC7JC3WptM" role="3uHU7B">
-        <ref role="3cqZAo" node="5TC7JC3WptI" resolve="orderprocParam" />
-      </node>
-    </node>
     <node concept="2veflS" id="5TC7JC3Wpni" role="e0yQD">
       <node concept="2OqwBi" id="5TC7JC3Wpnj" role="2vefmd">
         <node concept="3urNQE" id="5TC7JC3WptN" role="2Oq$k0">
@@ -3904,7 +3703,6 @@
     <property role="3GE5qa" value="order_no_db" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="1UlA2q" value="false" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WptP" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WptQ" role="1tU5fm">
@@ -4153,7 +3951,6 @@
     <property role="TrG5h" value="Meta Head Wizzard" />
     <property role="3uBtrS" value="H_72" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WptX" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WptY" role="1tU5fm">
@@ -4629,7 +4426,6 @@
   <node concept="3ugp7m" id="7RzRXa3H9ff">
     <property role="TrG5h" value="Edit Order Head" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpug" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpuh" role="1tU5fm">
@@ -4976,7 +4772,6 @@
     <property role="TrG5h" value="Message Command" />
     <property role="3uBtrS" value="M_77" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpuv" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpuw" role="1tU5fm">
@@ -5053,7 +4848,6 @@
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3uBtrS" value="N_78" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpu_" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpuA" role="1tU5fm">
@@ -5062,7 +4856,6 @@
       <node concept="10Nm6u" id="5TC7JC3WpuJ" role="33vP2m" />
     </node>
     <node concept="1t46OP" id="6xifBbDMx5O" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="AN_117c3Kl" resolve="Edit Order" />
       <node concept="3urNQE" id="5TC7JC3WpuB" role="2_HrWp">
         <ref role="3cqZAo" node="5TC7JC3Wpu_" resolve="orderprocParam" />
@@ -5186,7 +4979,6 @@
     <property role="TrG5h" value="Size Head Wizzard" />
     <property role="3uBtrS" value="S_83" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WpuK" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpuL" role="1tU5fm">
@@ -5494,7 +5286,6 @@
     <property role="TrG5h" value="Edit Order by open Param" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WpuW" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpuX" role="1tU5fm">
@@ -5658,7 +5449,6 @@
     <property role="TrG5h" value="Show Empty Order" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEM" id="5SbyawjeSgx" role="3ulXEG">
       <property role="TrG5h" value="o" />
       <node concept="3uibUv" id="5SbyawjeSgP" role="1tU5fm">
@@ -5730,7 +5520,6 @@
   <node concept="3ugp7m" id="1pEW74icak5">
     <property role="TrG5h" value="Print Order" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpv8" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpv9" role="1tU5fm">
@@ -5854,7 +5643,6 @@
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="TrG5h" value="Complete Order (Multi GO)" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpvg" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpvh" role="1tU5fm">
@@ -5986,7 +5774,6 @@
   <node concept="3ugp7m" id="7T8c0sxUCBG">
     <property role="TrG5h" value="Open Wikipedia" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpvn" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpvo" role="1tU5fm">
@@ -6122,7 +5909,6 @@
     <property role="TrG5h" value="PD DocCreator" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpvr" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpvs" role="1tU5fm">
@@ -6159,7 +5945,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="U8r3YqcWUL" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="U8r3Yq8LMH" resolve="Order Main Doc GE" />
       <node concept="3urNQE" id="5TC7JC3Wpvt" role="2_HrWp">
         <ref role="3cqZAo" node="5TC7JC3Wpvr" resolve="orderprocParam" />
@@ -6181,7 +5966,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="U8r3YqcX1T" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="U8r3Yq8LMH" resolve="Order Main Doc GE" />
       <node concept="3urNQE" id="5TC7JC3Wpvv" role="2_HrWp">
         <ref role="3cqZAo" node="5TC7JC3Wpvr" resolve="orderprocParam" />
@@ -6608,19 +6392,6 @@
         <node concept="3clFbH" id="U8r3YqcXu1" role="3cqZAp" />
       </node>
     </node>
-    <node concept="3clFbC" id="6HvFgwbA7rq" role="20uWH4">
-      <node concept="3cmrfG" id="6HvFgwbA7v8" role="3uHU7w">
-        <property role="3cmrfH" value="0" />
-      </node>
-      <node concept="2dk9JS" id="6HvFgwbA7l7" role="3uHU7B">
-        <node concept="3urNQE" id="6HvFgwbA7hn" role="3uHU7B">
-          <ref role="3cqZAo" node="7TgG1qSrky3" resolve="id" />
-        </node>
-        <node concept="3cmrfG" id="6HvFgwbA7lj" role="3uHU7w">
-          <property role="3cmrfH" value="2" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />
@@ -6660,7 +6431,6 @@
     <property role="3GE5qa" value="order_no_db" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3uBtrS" value="ENTER_10" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WpvL" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpvM" role="1tU5fm">
@@ -7073,7 +6843,6 @@
     <property role="TrG5h" value="PD TaskHandler" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpw3" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpw4" role="1tU5fm">
@@ -7084,7 +6853,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="2Uji7vlCo16" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="U8r3Yq8LMH" resolve="Order Main Doc GE" />
       <node concept="3urNR4" id="2Uji7vlCo17" role="2_HrWp">
         <ref role="3cqZAo" node="2Uji7vlCo1T" resolve="newOrder" />
@@ -7112,7 +6880,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="6HvFgwd9x$7" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="U8r3Yq8LMH" resolve="Order Main Doc GE" />
       <node concept="3urNR4" id="6HvFgwd9x$8" role="2_HrWp">
         <ref role="3cqZAo" node="2Uji7vlCo1T" resolve="newOrder" />
@@ -7129,7 +6896,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="2Uji7vlCo1a" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="3cAl6M4wnPW" resolve="Complex Edit Order" />
       <node concept="3urNR4" id="2Uji7vlCo1b" role="2_HrWp">
         <ref role="3cqZAo" node="2Uji7vlCo1T" resolve="newOrder" />
@@ -7590,7 +7356,6 @@
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
     <property role="3uBtrS" value="U_85" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEM" id="2KQ2inNsF68" role="3ulXEG">
       <property role="TrG5h" value="helper" />
       <node concept="3uibUv" id="2KQ2inNsF8b" role="1tU5fm">
@@ -8196,7 +7961,6 @@
     <property role="TrG5h" value="Search for Invoices" />
     <property role="19I623" value="SEARCH_CMD" />
     <property role="3GE5qa" value="invoice_db" />
-    <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ulXEM" id="6XzXfke19QZ" role="3ulXEG">
       <property role="TrG5h" value="filter" />
       <node concept="3uibUv" id="6XzXfke19Sp" role="1tU5fm">
@@ -9054,7 +8818,6 @@
     <property role="TrG5h" value="Edit Invoice" />
     <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
     <property role="3GE5qa" value="invoice_db" />
-    <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ulXEN" id="5TC7JC3Wpxc" role="3ulXEL">
       <property role="TrG5h" value="invoiceprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpxd" role="1tU5fm">
@@ -9227,7 +8990,7 @@
           <node concept="2OqwBi" id="1FVEJAItPeo" role="3clFbw">
             <node concept="3y28L$" id="1FVEJAItPdK" role="2Oq$k0" />
             <node concept="liA8E" id="1FVEJAItPfH" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="isShared" />
+              <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="inSuccessorPattern" />
             </node>
           </node>
           <node concept="9aQIb" id="1FVEJAItPhP" role="9aQIa">
@@ -9340,78 +9103,9 @@
       </node>
     </node>
   </node>
-  <node concept="3ugp7d" id="6XzXfke8x6E">
-    <property role="TrG5h" value="Invoice Process" />
-    <property role="3GE5qa" value="invoice_db" />
-    <ref role="10I5Op" to="dtxg:6XzXfke7pmM" resolve="state" />
-    <node concept="3ulXEN" id="6XzXfke8x6F" role="3ulXEL">
-      <property role="TrG5h" value="invoice" />
-      <node concept="3uibUv" id="6XzXfke8x7n" role="1tU5fm">
-        <ref role="3uigEE" to="dtxg:6XzXfke1alv" resolve="Invoice" />
-      </node>
-    </node>
-    <node concept="10xgET" id="6XzXfke8x8g" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:6XzXfke7phk" resolve="open" />
-      <node concept="10xUwW" id="6XzXfke8xqn" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8x43" resolve="Edit Invoice" />
-      </node>
-      <node concept="10xUwW" id="6XzXfkeb4Us" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8xsE" resolve="Close Invoice" />
-      </node>
-      <node concept="10xUwW" id="4jlzLDlTsun" role="10x$tn">
-        <ref role="10x$tN" node="4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
-      </node>
-    </node>
-    <node concept="10xgET" id="6XzXfke8x8p" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:6XzXfke7plP" resolve="problem" />
-      <node concept="10xUwW" id="6XzXfke8xqS" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8x43" resolve="Edit Invoice" />
-      </node>
-      <node concept="10xUwW" id="6XzXfkeb4Vx" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8xsE" resolve="Close Invoice" />
-      </node>
-      <node concept="10xUwW" id="4jlzLDlTsv1" role="10x$tn">
-        <ref role="10x$tN" node="4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
-      </node>
-    </node>
-    <node concept="10xgET" id="6XzXfke8x8E" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:6XzXfke7pis" resolve="processed" />
-      <node concept="10xUwW" id="6XzXfke8xr2" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8x43" resolve="Edit Invoice" />
-      </node>
-      <node concept="10xUwW" id="6XzXfkeb4VN" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8xsE" resolve="Close Invoice" />
-      </node>
-      <node concept="10xUwW" id="4jlzLDlTsvk" role="10x$tn">
-        <ref role="10x$tN" node="4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
-      </node>
-    </node>
-    <node concept="10xgET" id="6XzXfke8x8P" role="10xgEU">
-      <ref role="10xgEu" to="dtxg:6XzXfke7pj_" resolve="processed2" />
-      <node concept="10xUwW" id="6XzXfke8xrc" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8x43" resolve="Edit Invoice" />
-      </node>
-      <node concept="10xUwW" id="6XzXfkeb4VY" role="10x$tn">
-        <ref role="10x$tN" node="6XzXfke8xsE" resolve="Close Invoice" />
-      </node>
-      <node concept="10xUwW" id="4jlzLDlTsvB" role="10x$tn">
-        <ref role="10x$tN" node="4jlzLDlRW6v" resolve="Create Invoice from Invoice" />
-      </node>
-    </node>
-    <node concept="10xUwW" id="1FVEJAJ19uo" role="10HVpa">
-      <ref role="10x$tN" node="6XzXfke15oI" resolve="Search for Invoices" />
-    </node>
-    <node concept="10xUwW" id="6XzXfke8x9m" role="10HVpa">
-      <ref role="10x$tN" node="1FVEJAIXFWL" resolve="Create InvoiceFolder from Single Invoice" />
-    </node>
-    <node concept="10xUwW" id="4InK$iO3KHO" role="10HVpa">
-      <ref role="10x$tN" node="4InK$iO3KE1" resolve="Mark InvoiceFolders with current date" />
-    </node>
-  </node>
   <node concept="3ugp7m" id="6XzXfke8xsE">
     <property role="TrG5h" value="Close Invoice" />
     <property role="3GE5qa" value="invoice_db" />
-    <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ulXEN" id="5TC7JC3Wpxr" role="3ulXEL">
       <property role="TrG5h" value="invoiceprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpxs" role="1tU5fm">
@@ -9607,7 +9301,6 @@
     <property role="TrG5h" value="Create Invoice from Invoice" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="invoice_db" />
-    <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ulXEN" id="5TC7JC3Wpx$" role="3ulXEL">
       <property role="TrG5h" value="invoiceprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpx_" role="1tU5fm">
@@ -9816,7 +9509,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="4jlzLDlRWVK" role="1t4FgK">
-      <ref role="2_Hrwf" node="6XzXfke8x6E" resolve="Invoice Process" />
       <ref role="2_Hrw8" node="6XzXfke8x43" resolve="Edit Invoice" />
       <node concept="3urNR4" id="4jlzLDlRWXx" role="2_HrWp">
         <ref role="3cqZAo" node="4jlzLDlRWjC" resolve="newItem" />
@@ -9917,7 +9609,6 @@
   <node concept="3ugp7m" id="3fji5qpFn_j">
     <property role="TrG5h" value="Set Pos EAN to zero" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpw9" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpwa" role="1tU5fm">
@@ -10058,7 +9749,6 @@
   <node concept="3ugp7m" id="6gkV9KP8PSo">
     <property role="TrG5h" value="Open external Link" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="20qIzx" id="6gkV9KP8PTL" role="3umfm7">
       <node concept="3clFbS" id="6gkV9KP8PTM" role="2VODD2">
         <node concept="3clFbF" id="6gkV9KP8PUc" role="3cqZAp">
@@ -10079,15 +9769,11 @@
         </node>
       </node>
     </node>
-    <node concept="3clFbT" id="3etKkK$zOlz" role="20uWH4">
-      <property role="3clFbU" value="false" />
-    </node>
   </node>
   <node concept="3ugp7m" id="1TowlBnaICA">
     <property role="TrG5h" value="EditOrder Predecessor" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpwg" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpwh" role="1tU5fm">
@@ -10112,7 +9798,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="1TowlBnaINY" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="AN_117c3Kl" resolve="Edit Order" />
       <node concept="3urNQE" id="5TC7JC3Wpwj" role="2_HrWp">
         <ref role="3cqZAo" node="5TC7JC3Wpwg" resolve="orderprocParam" />
@@ -10223,7 +9908,6 @@
   <node concept="3ugp7m" id="3l4K2g79nnC">
     <property role="TrG5h" value="Clear Order" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpws" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpwt" role="1tU5fm">
@@ -10378,7 +10062,6 @@
     <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
     <property role="3uBtrS" value="F7_118" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpwz" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpw$" role="1tU5fm">
@@ -10469,7 +10152,6 @@
     <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
     <property role="3uBtrS" value="F6_117" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WpwG" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpwH" role="1tU5fm">
@@ -10478,7 +10160,6 @@
       <node concept="10Nm6u" id="5TC7JC3WpwV" role="33vP2m" />
     </node>
     <node concept="1t46OP" id="v00WQap3sA" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="AN_117c3Kl" resolve="Edit Order" />
       <node concept="3urNQE" id="5TC7JC3WpwI" role="2_HrWp">
         <ref role="3cqZAo" node="5TC7JC3WpwG" resolve="orderprocParam" />
@@ -10811,7 +10492,6 @@
     <property role="TrG5h" value="ViewTasksInList" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="order_no_db" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ugp7q" id="2MI0JB6CHj3" role="3ug97V">
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="dtxg:3kFdJs03WW" resolve="Task" />
@@ -11149,7 +10829,6 @@
     <property role="TrG5h" value="Create InvoiceFolder from Single Invoice" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="invoice_db" />
-    <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ulXEN" id="5TC7JC3WpxP" role="3ulXEL">
       <property role="TrG5h" value="invoiceprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpxQ" role="1tU5fm">
@@ -11439,26 +11118,11 @@
         </node>
       </node>
     </node>
-    <node concept="3clFbC" id="1FVEJAIYJnB" role="20uWH4">
-      <node concept="2XvMaL" id="1FVEJAIYJpo" role="3uHU7w">
-        <ref role="2XvMaQ" to="dtxg:6XzXfke7pgu" resolve="ProcessingState" />
-        <ref role="1Vchh_" to="dtxg:6XzXfke7pis" resolve="processed" />
-      </node>
-      <node concept="2OqwBi" id="1FVEJAIYJkQ" role="3uHU7B">
-        <node concept="3urNQE" id="5TC7JC3Wpy0" role="2Oq$k0">
-          <ref role="3cqZAo" node="5TC7JC3WpxP" resolve="invoiceprocParam" />
-        </node>
-        <node concept="2S8uIT" id="1FVEJAIYJmp" role="2OqNvi">
-          <ref role="2S8YL0" to="dtxg:6XzXfke7pmM" resolve="state" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="3ugp7m" id="4InK$iO3KE1">
     <property role="TrG5h" value="Mark InvoiceFolders with current date" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <property role="3GE5qa" value="invoice_db" />
-    <ref role="3lhHOO" node="6XzXfke8x6E" resolve="Invoice Process" />
     <node concept="3ugp7q" id="4InK$iO3L_a" role="3ug97V">
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" to="dtxg:1FVEJAItIuo" resolve="InvoiceFolder" />
@@ -11568,7 +11232,6 @@
     <property role="3GE5qa" value="order_no_db" />
     <property role="TrG5h" value="GoWithoutPage" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3WpwW" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpwX" role="1tU5fm">
@@ -11579,7 +11242,6 @@
       </node>
     </node>
     <node concept="1t46OP" id="3RUln16g4oC" role="1t4FgK">
-      <ref role="2_Hrwf" node="AN_117c0Wm" resolve="Orderprocess" />
       <ref role="2_Hrw8" node="3RUln16qRl4" resolve="GoWithoutPage2" />
     </node>
     <node concept="20qIzx" id="3RUln15CG3k" role="3umfm7">
@@ -11649,7 +11311,6 @@
     <property role="3GE5qa" value="order_no_db" />
     <property role="TrG5h" value="GoWithoutPage2" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="20qIzx" id="3RUln16qRlc" role="3umfm7">
       <node concept="3clFbS" id="3RUln16qRld" role="2VODD2">
         <node concept="3clFbF" id="3RUln16qRle" role="3cqZAp">
@@ -11717,7 +11378,6 @@
     <property role="TrG5h" value="Print Order GO" />
     <property role="3GE5qa" value="order_no_db" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <ref role="3lhHOO" node="AN_117c0Wm" resolve="Orderprocess" />
     <node concept="3ulXEN" id="5TC7JC3Wpx0" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpx1" role="1tU5fm">
