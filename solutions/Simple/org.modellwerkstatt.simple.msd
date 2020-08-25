@@ -12,6 +12,7 @@
     <dependency reexport="false">5a857198-951d-4874-b213-66fc66e0ee10(org.modellwerkstatt.objectflow.runtime)</dependency>
     <dependency reexport="false">bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)</dependency>
     <dependency reexport="false">86b5ca77-71d4-452d-8c64-76f13a80aab6(org.modellwerkstatt.fx8forms)</dependency>
+    <dependency reexport="false">08c9a2cc-7837-46ae-a3ab-0cf6a857d8df(org.modellwerkstatt.objectflow.tests)</dependency>
   </dependencies>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
@@ -32,6 +33,7 @@
     <module reference="86b5ca77-71d4-452d-8c64-76f13a80aab6(org.modellwerkstatt.fx8forms)" version="0" />
     <module reference="37fdf88a-1025-4d01-864a-0bf987f72e6f(org.modellwerkstatt.manmap.runtime)" version="0" />
     <module reference="5a857198-951d-4874-b213-66fc66e0ee10(org.modellwerkstatt.objectflow.runtime)" version="0" />
+    <module reference="08c9a2cc-7837-46ae-a3ab-0cf6a857d8df(org.modellwerkstatt.objectflow.tests)" version="0" />
     <module reference="f6ea4529-b826-49cb-a717-2ac43f8ba5f5(org.modellwerkstatt.simple)" version="0" />
   </dependencyVersions>
 </solution>
