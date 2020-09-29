@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
   </languages>
   <imports>
@@ -218,7 +218,6 @@
         <child id="478945708935709196" name="value" index="2DqwMp" />
         <child id="478945708935709194" name="type" index="2DqwMv" />
       </concept>
-      <concept id="478945708907003626" name="org.modellwerkstatt.objectflow.structure.IOFXConfigInstanceElement" flags="ng" index="2CJf1Z" />
       <concept id="478945708907003466" name="org.modellwerkstatt.objectflow.structure.OFXConfigInstance" flags="ng" index="2CJf3v">
         <child id="478945708907022272" name="elements" index="2CJ4_l" />
         <child id="478945708907003567" name="className" index="2CJf0U" />
@@ -261,7 +260,6 @@
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
       </concept>
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
-      <concept id="4503841283144443935" name="org.modellwerkstatt.objectflow.structure.IOFXExceptionStrategyMember" flags="ng" index="3w4bfn" />
       <concept id="4503841283144443826" name="org.modellwerkstatt.objectflow.structure.OFXStrategyForException" flags="ng" index="3w4bLU">
         <property id="8285694191462700245" name="suspendSeconds" index="35mAoy" />
         <child id="4503841283144447522" name="messagePartMatch" index="3w4aRE" />
@@ -314,7 +312,6 @@
       <concept id="2290402148389300787" name="org.modellwerkstatt.objectflow.structure.OFXDelayStratBehaviour" flags="ng" index="1Kg0UH">
         <property id="2290402148389301028" name="supendSeconds" index="1Kg0YU" />
       </concept>
-      <concept id="2290402148389254903" name="org.modellwerkstatt.objectflow.structure.IOFXStratBehaviour" flags="ng" index="1Kgl9D" />
       <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
         <child id="6436022531931826628" name="translations" index="3Rpr6w" />
       </concept>
@@ -364,7 +361,6 @@
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
         <child id="7784207101902285039" name="exp" index="2MWAvM" />
       </concept>
-      <concept id="7784207101902285035" name="org.modellwerkstatt.dataux.structure.IModuleOption" flags="ng" index="2MWAvQ" />
       <concept id="7784207101902693001" name="org.modellwerkstatt.dataux.structure.OptOfficialAppName" flags="ng" index="2MZaQk">
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
@@ -596,7 +592,6 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJf1Z" id="5wMKNZIhACw" role="2CJ4_l" />
     </node>
     <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
@@ -1976,7 +1971,6 @@
       <property role="1QnCj5" value="*" />
       <ref role="2k5inG" node="4InK$iO3KBB" resolve="Last concluder as GO" />
     </node>
-    <node concept="2MWAvQ" id="2B50FNWUd67" role="2A_d42" />
     <node concept="2MWq9S" id="2B50FNWRyPt" role="2AUypC">
       <node concept="3clFbS" id="2B50FNWRyPu" role="2VODD2">
         <node concept="3clFbF" id="2B50FNWRyRu" role="3cqZAp">
@@ -2037,7 +2031,6 @@
         <node concept="1Kg0UH" id="1Z999TK48mp" role="1K988c">
           <property role="1Kg0YU" value="1" />
         </node>
-        <node concept="1Kgl9D" id="3V1gzeLVYqS" role="1K988c" />
       </node>
       <node concept="3w4bLU" id="1FVEJAITMEm" role="3w4b7O">
         <property role="35mAoy" value="120" />
@@ -3123,7 +3116,6 @@
     </node>
     <node concept="3w4e_Z" id="4H3LB8AgRAI" role="3w9mMS">
       <property role="TrG5h" value="JobExceptionStrategy" />
-      <node concept="3w4bfn" id="4H3LB8AgRAJ" role="3w4b7O" />
       <node concept="3watgV" id="4H3LB8AgRAK" role="3w4b7O">
         <ref role="3watgY" node="7bWGJuRJZrx" resolve="mpreis_basis_ex_start" />
       </node>

@@ -75,7 +75,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -1080,7 +1079,7 @@
         </node>
         <node concept="3clFbF" id="4nH4LOF$GKN" role="3cqZAp">
           <node concept="37vLTI" id="4nH4LOF$GKO" role="3clFbG">
-            <node concept="3cpWsa" id="4nH4LOF$GKP" role="37vLTJ">
+            <node concept="37vLTw" id="4nH4LOF$GKP" role="37vLTJ">
               <ref role="3cqZAo" node="4nH4LOF$GKL" resolve="invoice" />
             </node>
             <node concept="2ShNRf" id="4nH4LOF$GKQ" role="37vLTx">
@@ -1106,7 +1105,7 @@
         <node concept="3clFbF" id="4nH4LOF$GKX" role="3cqZAp">
           <node concept="2OqwBi" id="4nH4LOF$GKY" role="3clFbG">
             <node concept="2OqwBi" id="4nH4LOF$GKZ" role="2Oq$k0">
-              <node concept="3cpWsa" id="4nH4LOF$GL0" role="2Oq$k0">
+              <node concept="37vLTw" id="4nH4LOF$GL0" role="2Oq$k0">
                 <ref role="3cqZAo" node="4nH4LOF$GKL" resolve="invoice" />
               </node>
               <node concept="2S8uIT" id="4nH4LOF$GL1" role="2OqNvi">
@@ -1114,14 +1113,14 @@
               </node>
             </node>
             <node concept="TSZUe" id="4nH4LOF$GL2" role="2OqNvi">
-              <node concept="3cpWsa" id="4nH4LOF$GL3" role="25WWJ7">
+              <node concept="37vLTw" id="4nH4LOF$GL3" role="25WWJ7">
                 <ref role="3cqZAo" node="4nH4LOF$GKT" resolve="invoicepos" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="4nH4LOF$GL4" role="3cqZAp">
-          <node concept="3cpWsa" id="4nH4LOF$GL5" role="3clFbG">
+          <node concept="37vLTw" id="4nH4LOF$GL5" role="3clFbG">
             <ref role="3cqZAo" node="4nH4LOF$GKL" resolve="invoice" />
           </node>
         </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
@@ -15,7 +15,7 @@
     <import index="knfg" ref="r:2bc9492b-8e5e-4a19-87c6-3cf15ee38f5f(org.modellwerkstatt.simple.baseUI)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="o8g0" ref="r:831cebd4-cda8-4862-99dd-17b5779c7ec3(org.modellwerkstatt.objectflow.tests.services)" />
+    <import index="7q8f" ref="r:91c83059-4419-459d-a4b0-7a37c6c2c27c(org.modellwerkstatt.objectflow.tests.services)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
     <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
@@ -138,7 +138,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -1889,7 +1888,7 @@
             <node concept="liA8E" id="4kNjw_liN5i" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="3cpWs3" id="4kNjw_liNuO" role="37wK5m">
-                <node concept="3cpWsa" id="4kNjw_lCAnw" role="3uHU7w">
+                <node concept="37vLTw" id="4kNjw_lCAnw" role="3uHU7w">
                   <ref role="3cqZAo" node="4kNjw_lCAns" resolve="exception" />
                 </node>
                 <node concept="Xl_RD" id="4kNjw_liN8B" role="3uHU7B">
@@ -1915,7 +1914,7 @@
                   <node concept="Xl_RD" id="4kNjw_lwEdv" role="3uHU7B">
                     <property role="Xl_RC" value="Msg received is '" />
                   </node>
-                  <node concept="3cpWsa" id="4kNjw_lCAnA" role="3uHU7w">
+                  <node concept="37vLTw" id="4kNjw_lCAnA" role="3uHU7w">
                     <ref role="3cqZAo" node="4kNjw_lCAny" resolve="cancelMsg" />
                   </node>
                 </node>
@@ -3278,12 +3277,6 @@
                 <property role="Xl_RC" value="Final OK called." />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7K21hvE6ltL" role="3cqZAp">
-          <node concept="1odsa" id="7K21hvE6ltK" role="3clFbG">
-            <ref role="1ods_" node="5gNkualwSJi" resolve="xxxService" />
-            <ref role="37wK5l" node="4nH4LOF$GTL" resolve="doACancel" />
           </node>
         </node>
         <node concept="3clFbH" id="7K21hvEaffL" role="3cqZAp" />
@@ -9271,7 +9264,7 @@
               <node concept="Xl_RD" id="1FVEJAItZoh" role="3uHU7w">
                 <property role="Xl_RC" value=" (not copied)" />
               </node>
-              <node concept="3cpWsa" id="4kNjw_lCApa" role="3uHU7B">
+              <node concept="37vLTw" id="4kNjw_lCApa" role="3uHU7B">
                 <ref role="3cqZAo" node="4kNjw_lCAp6" resolve="cancelMsg" />
               </node>
             </node>
@@ -9410,12 +9403,12 @@
         <node concept="3cpWs8" id="3v9X2lgM33f" role="3cqZAp">
           <node concept="3cpWsn" id="3v9X2lgM33i" role="3cpWs9">
             <property role="TrG5h" value="state" />
-            <node concept="3uibUv" id="_R35BQX1R_" role="1tU5fm">
-              <ref role="3uigEE" to="o8g0:_R35BQEeSd" resolve="DynLockStateHolder" />
+            <node concept="3uibUv" id="3g1Uva$KIE_" role="1tU5fm">
+              <ref role="3uigEE" to="7q8f:_R35BQEeSd" resolve="DynLockStateHolder" />
             </node>
             <node concept="1odsa" id="3v9X2lgM2vy" role="33vP2m">
-              <ref role="1ods_" to="o8g0:6EKawaqkpQO" resolve="DynLockService" />
-              <ref role="37wK5l" to="o8g0:6EKawaqkpSj" resolve="getADynLockInstance" />
+              <ref role="1ods_" to="7q8f:6EKawaqkpQO" resolve="DynLockService" />
+              <ref role="37wK5l" to="7q8f:6EKawaqkpSj" resolve="getADynLockInstance" />
             </node>
           </node>
         </node>
@@ -9428,7 +9421,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BR0qVm" role="2OqNvi">
-                  <ref role="37wK5l" to="o8g0:_R35BR0bfC" resolve="requestLocks" />
+                  <ref role="37wK5l" to="7q8f:_R35BR0bfC" resolve="requestLocks" />
                   <node concept="2ShNRf" id="_R35BR0qWO" role="37wK5m">
                     <node concept="Tc6Ow" id="_R35BR0rlv" role="2ShVmc">
                       <node concept="17QB3L" id="_R35BR0ryV" role="HW$YZ" />
@@ -9473,7 +9466,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BQX29_" role="2OqNvi">
-                  <ref role="37wK5l" to="o8g0:_R35BQEeTb" resolve="ensureLocksReceived" />
+                  <ref role="37wK5l" to="7q8f:_R35BQEeTb" resolve="ensureLocksReceived" />
                   <node concept="3cmrfG" id="_R35BQX2aM" role="37wK5m">
                     <property role="3cmrfH" value="2000" />
                   </node>
@@ -9490,7 +9483,7 @@
                           <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                         </node>
                         <node concept="liA8E" id="_R35BQX2rs" role="2OqNvi">
-                          <ref role="37wK5l" to="o8g0:_R35BQEeYv" resolve="firstUserHoldingALock" />
+                          <ref role="37wK5l" to="7q8f:_R35BQEeYv" resolve="firstUserHoldingALock" />
                         </node>
                       </node>
                       <node concept="ic4WF" id="_R35BQX2ja" role="icr7_">
@@ -9505,7 +9498,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BQX2id" role="2OqNvi">
-                  <ref role="37wK5l" to="o8g0:_R35BQEeV5" resolve="anyLockNotGranted" />
+                  <ref role="37wK5l" to="7q8f:_R35BQEeV5" resolve="anyLockNotGranted" />
                 </node>
               </node>
             </node>
@@ -9541,7 +9534,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BR0qKj" role="2OqNvi">
-                  <ref role="37wK5l" to="o8g0:_R35BR0bbr" resolve="close" />
+                  <ref role="37wK5l" to="7q8f:_R35BR0bbr" resolve="close" />
                 </node>
               </node>
             </node>
@@ -10799,7 +10792,7 @@
                 <ref role="2S8YL0" to="dtxg:1FVEJAItXAW" resolve="cancelText" />
               </node>
             </node>
-            <node concept="3cpWsa" id="4kNjw_lCAnp" role="37vLTx">
+            <node concept="37vLTw" id="4kNjw_lCAnp" role="37vLTx">
               <ref role="3cqZAo" node="4kNjw_lCAnl" resolve="cancelMsg" />
             </node>
           </node>
