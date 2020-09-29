@@ -9,7 +9,7 @@
     <use id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap" version="0" />
   </languages>
   <imports>
-    <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.solution/)" />
+    <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -183,6 +183,10 @@
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
+      <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
+        <property id="8614254524338490551" name="max" index="8tbpI" />
+        <property id="8614254524338490550" name="min" index="8tbpJ" />
+      </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
         <child id="3146313690715522546" name="platforms" index="2kDvpj" />
@@ -197,9 +201,7 @@
         <child id="1440642197017487722" name="icon" index="il5$o" />
         <child id="1440642197017487671" name="text" index="il5_5" />
       </concept>
-      <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.Platform" flags="ng" index="2kDv1q">
-        <child id="7604036740764640824" name="variantDeclarations" index="3hNl4o" />
-      </concept>
+      <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.Platform" flags="ng" index="2kDv1q" />
       <concept id="5788629615582330252" name="org.modellwerkstatt.objectflow.structure.ProblemMessage" flags="ng" index="lgADV">
         <child id="5788629615582331966" name="problem" index="lgxf9" />
       </concept>
@@ -226,9 +228,6 @@
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
         <child id="6135709767654760053" name="elements" index="GOFnN" />
         <child id="8174619299762601960" name="type" index="115eGp" />
-      </concept>
-      <concept id="1642685958923200785" name="org.modellwerkstatt.objectflow.structure.TestData" flags="ng" index="PU5sW">
-        <child id="8624114674902976382" name="builderExpression" index="34v4n$" />
       </concept>
       <concept id="3517052249651130105" name="org.modellwerkstatt.objectflow.structure.RangeOption" flags="ng" index="WfFEq">
         <property id="3517052249651130109" name="stop" index="WfFEu" />
@@ -274,18 +273,11 @@
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
-      <concept id="7604036740764640594" name="org.modellwerkstatt.objectflow.structure.VariantDeclaration" flags="ng" index="3hNl9M">
-        <property id="8988286044096513865" name="logOption" index="21hoB1" />
-        <property id="7604036740764640651" name="variant" index="3hNlaF" />
-      </concept>
       <concept id="836579671456120410" name="org.modellwerkstatt.objectflow.structure.EqualPropertyReference" flags="ng" index="1kU5Ut">
         <reference id="836579671456120411" name="property" index="1kU5Us" />
       </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
-      </concept>
-      <concept id="5319621840364545916" name="org.modellwerkstatt.objectflow.structure.TestDataListAccess" flags="ng" index="1vxr2t">
-        <reference id="5319621840368239244" name="testData" index="1vn1lH" />
       </concept>
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
@@ -426,7 +418,6 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -1057,369 +1048,6 @@
       <node concept="3cqZAl" id="AN_117bqxY" role="3clF45" />
       <node concept="3Tm1VV" id="AN_117bqxZ" role="1B3o_S" />
       <node concept="3clFbS" id="AN_117bqy0" role="3clF47" />
-    </node>
-  </node>
-  <node concept="PU5sW" id="AN_117bQAI">
-    <property role="TrG5h" value="TestDataOrder" />
-    <node concept="GOFnM" id="AN_117bQAJ" role="34v4n$">
-      <node concept="3uibUv" id="AN_117bQCr" role="115eGp">
-        <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
-      </node>
-      <node concept="GOFnK" id="AN_117bQC$" role="GOFnN">
-        <ref role="1bDdzG" node="4u029Jv8vCO" resolve="id" />
-        <node concept="3cmrfG" id="AN_117bUGi" role="1bDdzI">
-          <property role="3cmrfH" value="0" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="AN_117bQC_" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqyN" resolve="name" />
-        <node concept="Xl_RD" id="AN_117bUFS" role="1bDdzI">
-          <property role="Xl_RC" value="AutoOrder" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="AN_117bQCA" role="GOFnN">
-        <ref role="1bDdzG" node="4u029Jv8vG8" resolve="totalValue" />
-        <node concept="1mgVXT" id="AN_117bUFK" role="1bDdzI">
-          <property role="1mgVXS" value="0.0bd" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="AN_117bQCB" role="GOFnN">
-        <ref role="1bDdzG" node="4u029Jv8vHX" resolve="orderDat" />
-        <node concept="1$4sJh" id="AN_117bUva" role="1bDdzI">
-          <property role="1$4sGW" value="0" />
-          <property role="1$4sGZ" value="0" />
-          <property role="1$4sGY" value="0" />
-          <property role="1$4sGX" value="true" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="3cAl6M4o1hF" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117c2L7" resolve="status" />
-        <node concept="2XvMaL" id="3cAl6M4o1iZ" role="1bDdzI">
-          <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
-          <ref role="1Vchh_" node="AN_117c2KY" resolve="created" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="AN_117bQCC" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bq$J" resolve="store" />
-        <node concept="2OqwBi" id="3cAl6M4p4ki" role="1bDdzI">
-          <node concept="1vxr2t" id="3cAl6M4p4eg" role="2Oq$k0">
-            <ref role="1vn1lH" node="3cAl6M4p3Zi" resolve="TestDataStore" />
-          </node>
-          <node concept="1uHKPH" id="3cAl6M4p4tr" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="188KQk" id="AN_117bQCD" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
-        <node concept="GOFnM" id="AN_117bQG8" role="1bDdzI">
-          <node concept="3uibUv" id="AN_117bQG9" role="115eGp">
-            <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
-          </node>
-          <node concept="GOFnK" id="AN_117bQGu" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdA" resolve="id" />
-            <node concept="3cmrfG" id="AN_117bQH0" role="1bDdzI">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bQGv" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
-            <node concept="Xl_RD" id="AN_117bQH8" role="1bDdzI">
-              <property role="Xl_RC" value="12345678" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bQGw" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
-            <node concept="Xl_RD" id="AN_117bQHI" role="1bDdzI">
-              <property role="Xl_RC" value="Ariel 500ml" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bQGx" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
-            <node concept="1mgVXT" id="AN_117bR6n" role="1bDdzI">
-              <property role="1mgVXS" value="8.0bd" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bQGy" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-            <node concept="1$4sJe" id="AN_117bR6v" role="1bDdzI">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="188KQk" id="AN_117bUGq" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
-        <node concept="GOFnM" id="AN_117bUGr" role="1bDdzI">
-          <node concept="3uibUv" id="AN_117bUGs" role="115eGp">
-            <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
-          </node>
-          <node concept="GOFnK" id="AN_117bUGt" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdA" resolve="id" />
-            <node concept="3cmrfG" id="AN_117bUGu" role="1bDdzI">
-              <property role="3cmrfH" value="2" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUGv" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
-            <node concept="Xl_RD" id="AN_117bUGw" role="1bDdzI">
-              <property role="Xl_RC" value="12345679" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUGx" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
-            <node concept="Xl_RD" id="AN_117bUGy" role="1bDdzI">
-              <property role="Xl_RC" value="Momo 500ml" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUGz" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
-            <node concept="1mgVXT" id="AN_117bUG$" role="1bDdzI">
-              <property role="1mgVXS" value="9.0bd" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUG_" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-            <node concept="1$4sJe" id="AN_117bUGA" role="1bDdzI">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="188KQk" id="AN_117bUJ0" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
-        <node concept="GOFnM" id="AN_117bUJ1" role="1bDdzI">
-          <node concept="3uibUv" id="AN_117bUJ2" role="115eGp">
-            <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
-          </node>
-          <node concept="GOFnK" id="AN_117bUJ3" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdA" resolve="id" />
-            <node concept="3cmrfG" id="AN_117bULk" role="1bDdzI">
-              <property role="3cmrfH" value="3" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUJ5" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
-            <node concept="Xl_RD" id="AN_117bUJ6" role="1bDdzI">
-              <property role="Xl_RC" value="123456780" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUJ7" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
-            <node concept="Xl_RD" id="AN_117bUJ8" role="1bDdzI">
-              <property role="Xl_RC" value="Omo 500ml" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUJ9" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
-            <node concept="1mgVXT" id="AN_117bUJa" role="1bDdzI">
-              <property role="1mgVXS" value="12.0bd" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="AN_117bUJb" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-            <node concept="1$4sJe" id="AN_117bUJc" role="1bDdzI">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="GOFnM" id="Q$ztZJ3NEb" role="34v4n$">
-      <node concept="3uibUv" id="Q$ztZJ3NEc" role="115eGp">
-        <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
-      </node>
-      <node concept="GOFnK" id="Q$ztZJ3NEd" role="GOFnN">
-        <ref role="1bDdzG" node="4u029Jv8vCO" resolve="id" />
-        <node concept="3cmrfG" id="Q$ztZJ3NEe" role="1bDdzI">
-          <property role="3cmrfH" value="4711" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="Q$ztZJ3NEf" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqyN" resolve="name" />
-        <node concept="Xl_RD" id="Q$ztZJ3NEg" role="1bDdzI">
-          <property role="Xl_RC" value="Amazon S.A.R.L" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="Q$ztZJ3NEh" role="GOFnN">
-        <ref role="1bDdzG" node="4u029Jv8vG8" resolve="totalValue" />
-        <node concept="1mgVXT" id="Q$ztZJ3NEi" role="1bDdzI">
-          <property role="1mgVXS" value="0.0bd" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="Q$ztZJ3NEj" role="GOFnN">
-        <ref role="1bDdzG" node="4u029Jv8vHX" resolve="orderDat" />
-        <node concept="1$4sJh" id="Q$ztZJ3NEk" role="1bDdzI">
-          <property role="1$4sGW" value="0" />
-          <property role="1$4sGZ" value="0" />
-          <property role="1$4sGY" value="0" />
-          <property role="1$4sGX" value="true" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="Q$ztZJ3NEl" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117c2L7" resolve="status" />
-        <node concept="2XvMaL" id="Q$ztZJ3NEm" role="1bDdzI">
-          <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
-          <ref role="1Vchh_" node="AN_117c2KY" resolve="created" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="Q$ztZJ3NEn" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bq$J" resolve="store" />
-        <node concept="2OqwBi" id="Q$ztZJ3NEo" role="1bDdzI">
-          <node concept="1vxr2t" id="Q$ztZJ3NEp" role="2Oq$k0">
-            <ref role="1vn1lH" node="3cAl6M4p3Zi" resolve="TestDataStore" />
-          </node>
-          <node concept="1uHKPH" id="Q$ztZJ3NEq" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="188KQk" id="Q$ztZJ3NEr" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
-        <node concept="GOFnM" id="Q$ztZJ3NEs" role="1bDdzI">
-          <node concept="3uibUv" id="Q$ztZJ3NEt" role="115eGp">
-            <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEu" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdA" resolve="id" />
-            <node concept="3cmrfG" id="Q$ztZJ3NEv" role="1bDdzI">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEw" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
-            <node concept="Xl_RD" id="Q$ztZJ3NEx" role="1bDdzI">
-              <property role="Xl_RC" value="1430262532" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEy" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
-            <node concept="Xl_RD" id="Q$ztZJ3NEz" role="1bDdzI">
-              <property role="Xl_RC" value="Beginning COBOL for Programmers" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NE$" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
-            <node concept="1mgVXT" id="Q$ztZJ3NE_" role="1bDdzI">
-              <property role="1mgVXS" value="40.99bd" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEA" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-            <node concept="1$4sJe" id="Q$ztZJ3NEB" role="1bDdzI">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="188KQk" id="Q$ztZJ3NEC" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
-        <node concept="GOFnM" id="Q$ztZJ3NED" role="1bDdzI">
-          <node concept="3uibUv" id="Q$ztZJ3NEE" role="115eGp">
-            <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEF" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdA" resolve="id" />
-            <node concept="3cmrfG" id="Q$ztZJ3NEG" role="1bDdzI">
-              <property role="3cmrfH" value="2" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEH" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
-            <node concept="Xl_RD" id="Q$ztZJ3NEI" role="1bDdzI">
-              <property role="Xl_RC" value="0764502980" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEJ" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
-            <node concept="Xl_RD" id="Q$ztZJ3NEK" role="1bDdzI">
-              <property role="Xl_RC" value="Cobol for Dummies" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEL" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
-            <node concept="1mgVXT" id="Q$ztZJ3NEM" role="1bDdzI">
-              <property role="1mgVXS" value="6.99bd" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEN" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-            <node concept="1$4sJe" id="Q$ztZJ3NEO" role="1bDdzI">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="188KQk" id="Q$ztZJ3NEP" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
-        <node concept="GOFnM" id="Q$ztZJ3NEQ" role="1bDdzI">
-          <node concept="3uibUv" id="Q$ztZJ3NER" role="115eGp">
-            <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NES" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdA" resolve="id" />
-            <node concept="3cmrfG" id="Q$ztZJ3NET" role="1bDdzI">
-              <property role="3cmrfH" value="3" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEU" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
-            <node concept="Xl_RD" id="Q$ztZJ3NEV" role="1bDdzI">
-              <property role="Xl_RC" value="3519022818" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEW" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
-            <node concept="Xl_RD" id="Q$ztZJ3NEX" role="1bDdzI">
-              <property role="Xl_RC" value="Programming with COBOL" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NEY" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
-            <node concept="1mgVXT" id="Q$ztZJ3NEZ" role="1bDdzI">
-              <property role="1mgVXS" value="59.99bd" />
-            </node>
-          </node>
-          <node concept="GOFnK" id="Q$ztZJ3NF0" role="GOFnN">
-            <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-            <node concept="1$4sJe" id="Q$ztZJ3NF1" role="1bDdzI">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="1YeyE5" id="AN_117f5lp">
@@ -2495,11 +2123,115 @@
             <node concept="3uibUv" id="4nH4LOF$GOA" role="1tU5fm">
               <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
             </node>
-            <node concept="2OqwBi" id="4nH4LOF$GOB" role="33vP2m">
-              <node concept="1vxr2t" id="4nH4LOF$GOC" role="2Oq$k0">
-                <ref role="1vn1lH" node="AN_117bQAI" resolve="TestDataOrder" />
+            <node concept="GOFnM" id="3fPy_dHe_Z4" role="33vP2m">
+              <node concept="3uibUv" id="3fPy_dHe_Z6" role="115eGp">
+                <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
               </node>
-              <node concept="1uHKPH" id="4nH4LOF$GOD" role="2OqNvi" />
+              <node concept="GOFnK" id="3fPy_dHeA7x" role="GOFnN">
+                <ref role="1bDdzG" node="AN_117bqyN" resolve="name" />
+                <node concept="Xl_RD" id="3fPy_dHeAzI" role="1bDdzI">
+                  <property role="Xl_RC" value="TestOrder" />
+                </node>
+              </node>
+              <node concept="GOFnK" id="3fPy_dHeA7y" role="GOFnN">
+                <ref role="1bDdzG" node="4u029Jv8vG8" resolve="totalValue" />
+                <node concept="1mgVXT" id="3fPy_dHeARi" role="1bDdzI">
+                  <property role="1mgVXS" value="12.0bd" />
+                </node>
+              </node>
+              <node concept="GOFnK" id="3fPy_dHeA7z" role="GOFnN">
+                <ref role="1bDdzG" node="4u029Jv8vHX" resolve="orderDat" />
+                <node concept="1$4sJh" id="3fPy_dHeASH" role="1bDdzI">
+                  <property role="1$4sGW" value="0" />
+                  <property role="1$4sGZ" value="0" />
+                  <property role="1$4sGY" value="0" />
+                  <property role="1$4sGX" value="true" />
+                </node>
+              </node>
+              <node concept="GOFnK" id="3fPy_dHeA7$" role="GOFnN">
+                <ref role="1bDdzG" node="7rv7nMWu_ew" resolve="dt" />
+                <node concept="1$4sJe" id="3fPy_dHeATP" role="1bDdzI">
+                  <property role="1$4sGS" value="0" />
+                  <property role="1$4sGV" value="0" />
+                  <property role="1$4sGU" value="0" />
+                  <property role="1$4sGT" value="0" />
+                  <property role="1$4sGQ" value="0" />
+                  <property role="1$4sGR" value="0" />
+                  <property role="1$4sGO" value="true" />
+                </node>
+              </node>
+              <node concept="GOFnK" id="3fPy_dHeA7_" role="GOFnN">
+                <ref role="1bDdzG" node="AN_117bq$J" resolve="store" />
+                <node concept="GOFnM" id="3fPy_dHeAUJ" role="1bDdzI">
+                  <node concept="3uibUv" id="3fPy_dHeAUK" role="115eGp">
+                    <ref role="3uigEE" node="AN_117bpzI" resolve="Store" />
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeAVv" role="GOFnN">
+                    <ref role="1bDdzG" node="AN_117bqvn" resolve="name" />
+                    <node concept="Xl_RD" id="3fPy_dHeAW_" role="1bDdzI">
+                      <property role="Xl_RC" value="London Flagship" />
+                    </node>
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeAVw" role="GOFnN">
+                    <ref role="1bDdzG" node="3cAl6M4nWRa" resolve="address" />
+                    <node concept="Xl_RD" id="3fPy_dHeAYd" role="1bDdzI">
+                      <property role="Xl_RC" value="Oxfordstreet 10" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="188KQk" id="3fPy_dHeA7A" role="GOFnN">
+                <ref role="1bDdzG" node="AN_117bqBd" resolve="pos" />
+                <node concept="GOFnM" id="3fPy_dHeB0e" role="1bDdzI">
+                  <node concept="3uibUv" id="3fPy_dHeB0f" role="115eGp">
+                    <ref role="3uigEE" node="AN_117bbd$" resolve="OrderPosition" />
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeB19" role="GOFnN">
+                    <ref role="1bDdzG" node="AN_117bbdK" resolve="ean" />
+                    <node concept="Xl_RD" id="3fPy_dHeGnC" role="1bDdzI">
+                      <property role="Xl_RC" value="12345" />
+                    </node>
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeB1a" role="GOFnN">
+                    <ref role="1bDdzG" node="AN_117bbdT" resolve="name" />
+                    <node concept="Xl_RD" id="3fPy_dHeGmI" role="1bDdzI">
+                      <property role="Xl_RC" value="Pos 1" />
+                    </node>
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeB1b" role="GOFnN">
+                    <ref role="1bDdzG" node="AN_117bbe2" resolve="posValue" />
+                    <node concept="1mgVXT" id="3fPy_dHeGlZ" role="1bDdzI">
+                      <property role="1mgVXS" value="12.0bd" />
+                    </node>
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeB1c" role="GOFnN">
+                    <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
+                    <node concept="1$4sJe" id="3fPy_dHeFZH" role="1bDdzI">
+                      <property role="1$4sGS" value="0" />
+                      <property role="1$4sGV" value="0" />
+                      <property role="1$4sGU" value="0" />
+                      <property role="1$4sGT" value="0" />
+                      <property role="1$4sGQ" value="0" />
+                      <property role="1$4sGR" value="0" />
+                      <property role="1$4sGO" value="true" />
+                    </node>
+                  </node>
+                  <node concept="GOFnK" id="3fPy_dHeB1f" role="GOFnN">
+                    <ref role="1bDdzG" node="2IUGN4P8g$C" resolve="status" />
+                    <node concept="2XvMaL" id="3fPy_dHeFYL" role="1bDdzI">
+                      <ref role="2XvMaQ" node="2IUGN4P8gvE" resolve="PositionStatus" />
+                      <ref role="1Vchh_" node="2IUGN4P8gxl" resolve="accepted" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="GOFnK" id="3fPy_dHeA7B" role="GOFnN">
+                <ref role="1bDdzG" node="AN_117c2L7" resolve="status" />
+                <node concept="2XvMaL" id="3fPy_dHeLfO" role="1bDdzI">
+                  <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
+                  <ref role="1Vchh_" node="AN_117c2L3" resolve="completed" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2914,18 +2646,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4nH4LOF$GRh" role="3cqZAp">
-          <node concept="2OqwBi" id="4nH4LOF$GRi" role="3clFbG">
-            <node concept="37vLTw" id="4nH4LOF$GRj" role="2Oq$k0">
-              <ref role="3cqZAo" node="4nH4LOF$GRb" resolve="stores" />
-            </node>
-            <node concept="X8dFx" id="4nH4LOF$GRk" role="2OqNvi">
-              <node concept="1vxr2t" id="4nH4LOF$GRl" role="25WWJ7">
-                <ref role="1vn1lH" node="3cAl6M4p3Zi" resolve="TestDataStore" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1Dw8fO" id="4nH4LOF$GRm" role="3cqZAp">
           <node concept="3clFbS" id="4nH4LOF$GRn" role="2LFqv$">
             <node concept="3cpWs8" id="4nH4LOF$GRo" role="3cqZAp">
@@ -3100,75 +2820,13 @@
       </node>
     </node>
   </node>
-  <node concept="PU5sW" id="3cAl6M4p3Zi">
-    <property role="TrG5h" value="TestDataStore" />
-    <node concept="GOFnM" id="3cAl6M4p42V" role="34v4n$">
-      <node concept="3uibUv" id="3cAl6M4p439" role="115eGp">
-        <ref role="3uigEE" node="AN_117bpzI" resolve="Store" />
-      </node>
-      <node concept="GOFnK" id="3cAl6M4p43w" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bpzX" resolve="id" />
-        <node concept="3cmrfG" id="3cAl6M4p44n" role="1bDdzI">
-          <property role="3cmrfH" value="1" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="3cAl6M4p43x" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqvn" resolve="name" />
-        <node concept="Xl_RD" id="3cAl6M4p44v" role="1bDdzI">
-          <property role="Xl_RC" value="London FlagShip" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="3cAl6M4p43y" role="GOFnN">
-        <ref role="1bDdzG" node="3cAl6M4nWRa" resolve="address" />
-        <node concept="Xl_RD" id="3cAl6M4p467" role="1bDdzI">
-          <property role="Xl_RC" value="1 Oxford Street" />
-        </node>
-      </node>
-    </node>
-    <node concept="GOFnM" id="3cAl6M4p43O" role="34v4n$">
-      <node concept="3uibUv" id="3cAl6M4p43P" role="115eGp">
-        <ref role="3uigEE" node="AN_117bpzI" resolve="Store" />
-      </node>
-      <node concept="GOFnK" id="3cAl6M4p43Q" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bpzX" resolve="id" />
-        <node concept="3cmrfG" id="3cAl6M4p47J" role="1bDdzI">
-          <property role="3cmrfH" value="2" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="3cAl6M4p43R" role="GOFnN">
-        <ref role="1bDdzG" node="AN_117bqvn" resolve="name" />
-        <node concept="Xl_RD" id="3cAl6M4p47Y" role="1bDdzI">
-          <property role="Xl_RC" value="Masilla" />
-        </node>
-      </node>
-      <node concept="GOFnK" id="3cAl6M4p43S" role="GOFnN">
-        <ref role="1bDdzG" node="3cAl6M4nWRa" resolve="address" />
-        <node concept="Xl_RD" id="3cAl6M4p49v" role="1bDdzI">
-          <property role="Xl_RC" value="10 Rue Adolphe Thiers" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="il5tC" id="3Rw9V4pLpzc">
     <property role="TrG5h" value="SimpleRes" />
     <node concept="2kDv1q" id="6A6XM2SxGWC" role="2kDvpj">
       <property role="TrG5h" value="RICH" />
-      <node concept="3hNl9M" id="6A6XM2SxGWD" role="3hNl4o">
-        <property role="21hoB1" value="SILENT_LOG" />
-      </node>
-      <node concept="3hNl9M" id="5fkhsROwCK6" role="3hNl4o">
-        <property role="3hNlaF" value="BABY" />
-        <property role="21hoB1" value="EXCPT_ON_SCREEN" />
-      </node>
     </node>
     <node concept="2kDv1q" id="6BKPvpCRbDr" role="2kDvpj">
       <property role="TrG5h" value="MDE" />
-      <node concept="3hNl9M" id="6BKPvpCRbDs" role="3hNl4o">
-        <property role="21hoB1" value="EXCPT_ON_SCREEN" />
-      </node>
-      <node concept="3hNl9M" id="59p98S7G31t" role="3hNl4o">
-        <property role="3hNlaF" value="BABY" />
-      </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
       <property role="TrG5h" value="Search" />
@@ -5406,7 +5064,9 @@
     <node concept="3clFbW" id="6XzXfke1an9" role="jymVt">
       <node concept="3cqZAl" id="6XzXfke1ana" role="3clF45" />
       <node concept="3Tm1VV" id="6XzXfke1anb" role="1B3o_S" />
-      <node concept="3clFbS" id="6XzXfke1anc" role="3clF47" />
+      <node concept="3clFbS" id="6XzXfke1anc" role="3clF47">
+        <node concept="3clFbH" id="2rFQaT9ITFv" role="3cqZAp" />
+      </node>
     </node>
     <node concept="1bOX9e" id="6XzXfke1aoC" role="TxmiU">
       <property role="2RkwnN" value="id" />
@@ -5465,6 +5125,10 @@
       </node>
       <node concept="Xl_RD" id="6XzXfke8yCs" role="2CNmdL">
         <property role="Xl_RC" value="Text" />
+      </node>
+      <node concept="8tbpG" id="7K21hvEaG1G" role="0orDa">
+        <property role="8tbpJ" value="0" />
+        <property role="8tbpI" value="200" />
       </node>
     </node>
     <node concept="1bOX9e" id="6XzXfke1au6" role="TxmiU">
