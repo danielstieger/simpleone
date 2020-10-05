@@ -155,8 +155,8 @@
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalOkSelection" index="3vkzKj" />
       </concept>
-      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.Page" flags="ng" index="3ugp7q">
-        <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
+      <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
+        <reference id="4152417163565704942" name="boundObject" index="3gcvY6" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
@@ -493,7 +493,7 @@
             <node concept="2OqwBi" id="KI7S7jw9Sh" role="3fr31v">
               <node concept="3y28L$" id="KI7S7jw9Sm" role="2Oq$k0" />
               <node concept="liA8E" id="KI7S7jw9So" role="2OqNvi">
-                <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="isShared" />
+                <ref role="37wK5l" to="28jr:g2nNIPmzuh" resolve="inSuccessorPattern" />
               </node>
             </node>
           </node>
