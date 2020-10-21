@@ -7,9 +7,11 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
   </languages>
   <imports>
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
+    <import index="eaio" ref="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.baseApp)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -179,6 +181,9 @@
       </concept>
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
+        <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
+      </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
       <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
         <property id="8614254524338490551" name="max" index="8tbpI" />
@@ -224,6 +229,9 @@
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
         <child id="6135709767654760053" name="elements" index="GOFnN" />
         <child id="8174619299762601960" name="type" index="115eGp" />
+      </concept>
+      <concept id="2252697316673436458" name="org.modellwerkstatt.objectflow.structure.ValidationStatement" flags="ng" index="Hy8HG">
+        <child id="2252697316673436459" name="statements" index="Hy8HH" />
       </concept>
       <concept id="3517052249651130105" name="org.modellwerkstatt.objectflow.structure.RangeOption" flags="ng" index="WfFEq">
         <property id="3517052249651130109" name="stop" index="WfFEu" />
@@ -2358,10 +2366,10 @@
               <node concept="GOFnK" id="3fPy_dHeA7$" role="GOFnN">
                 <ref role="1bDdzG" node="7rv7nMWu_ew" resolve="dt" />
                 <node concept="1$4sJe" id="3fPy_dHeATP" role="1bDdzI">
-                  <property role="1$4sGS" value="0" />
-                  <property role="1$4sGV" value="0" />
-                  <property role="1$4sGU" value="0" />
-                  <property role="1$4sGT" value="0" />
+                  <property role="1$4sGS" value="2" />
+                  <property role="1$4sGV" value="9" />
+                  <property role="1$4sGU" value="1990" />
+                  <property role="1$4sGT" value="15" />
                   <property role="1$4sGQ" value="0" />
                   <property role="1$4sGR" value="0" />
                   <property role="1$4sGO" value="true" />
@@ -2423,7 +2431,7 @@
               </node>
               <node concept="GOFnK" id="3fPy_dHeA7B" role="GOFnN">
                 <ref role="1bDdzG" node="AN_117c2L7" resolve="status" />
-                <node concept="2XvMaL" id="3fPy_dHeLfO" role="1bDdzI">
+                <node concept="2XvMaL" id="3gRL8qOFFVp" role="1bDdzI">
                   <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
                   <ref role="1Vchh_" node="AN_117c2L3" resolve="completed" />
                 </node>
@@ -4563,7 +4571,14 @@
       </node>
       <node concept="3cqZAl" id="4nH4LOF$GTl" role="3clF45" />
       <node concept="3clFbS" id="4nH4LOF$GTm" role="3clF47">
-        <node concept="3clFbH" id="4nH4LOF$GTn" role="3cqZAp" />
+        <node concept="3clFbF" id="50jY$XkLHWK" role="3cqZAp">
+          <node concept="1rXfSq" id="50jY$XkLHWI" role="3clFbG">
+            <ref role="37wK5l" node="4nH4LOF$GS$" resolve="doCancel" />
+            <node concept="Xl_RD" id="50jY$XkLHZc" role="37wK5m">
+              <property role="Xl_RC" value="helloWorld" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm6S6" id="4nH4LOF$GTo" role="1B3o_S" />
     </node>
@@ -5770,24 +5785,6 @@
         </node>
       </node>
     </node>
-    <node concept="wbJLE" id="59yQXoMlD70" role="jymVt">
-      <property role="TrG5h" value="helloTestCustom" />
-      <node concept="3cqZAl" id="59yQXoMlD71" role="3clF45" />
-      <node concept="3Tm1VV" id="59yQXoMlD72" role="1B3o_S" />
-      <node concept="3clFbS" id="59yQXoMlD73" role="3clF47">
-        <node concept="3clFbF" id="59yQXoMvaSy" role="3cqZAp">
-          <node concept="2KoPwa" id="59yQXoMvaSu" role="3clFbG">
-            <node concept="1Q8zPT" id="59yQXoMvaSv" role="2KoP_5">
-              <node concept="19SGf9" id="59yQXoMvaSw" role="1Q8hHE">
-                <node concept="19SUe$" id="59yQXoMvaSx" role="19SJt6">
-                  <property role="19SUeA" value="fadf" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3Tm1VV" id="7HkVpVcC4Cm" role="1B3o_S" />
     <node concept="1o6$dd" id="59yQXoMlDz1" role="2_$AKh">
       <property role="TrG5h" value="s" />
@@ -5841,6 +5838,24 @@
         <ref role="12nL8z" node="4uXwdwF76d1" resolve="testInt" />
         <node concept="Xl_RD" id="59yQXoMlDDZ" role="12k7lF">
           <property role="Xl_RC" value="TEST_INT" />
+        </node>
+      </node>
+    </node>
+    <node concept="wbJLE" id="59yQXoMlD70" role="jymVt">
+      <property role="TrG5h" value="helloTestCustom" />
+      <node concept="3cqZAl" id="59yQXoMlD71" role="3clF45" />
+      <node concept="3Tm1VV" id="59yQXoMlD72" role="1B3o_S" />
+      <node concept="3clFbS" id="59yQXoMlD73" role="3clF47">
+        <node concept="3clFbF" id="59yQXoMvaSy" role="3cqZAp">
+          <node concept="2KoPwa" id="59yQXoMvaSu" role="3clFbG">
+            <node concept="1Q8zPT" id="59yQXoMvaSv" role="2KoP_5">
+              <node concept="19SGf9" id="59yQXoMvaSw" role="1Q8hHE">
+                <node concept="19SUe$" id="59yQXoMvaSx" role="19SJt6">
+                  <property role="19SUeA" value="sdf " />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -6294,6 +6309,35 @@
       <node concept="3Tm1VV" id="6WiSq7959rY" role="1B3o_S" />
       <node concept="3clFbS" id="6WiSq7959rZ" role="3clF47" />
     </node>
+  </node>
+  <node concept="2EH5hC" id="50jY$Xk$JBJ">
+    <property role="TrG5h" value="TheService2" />
+    <node concept="2tJIrI" id="50jY$Xk$JBK" role="jymVt" />
+    <node concept="2tJIrI" id="50jY$Xk$JBL" role="jymVt" />
+    <node concept="2tJIrI" id="50jY$Xk$JBM" role="jymVt" />
+    <node concept="2vDG_T" id="50jY$Xk$JN8" role="jymVt">
+      <property role="TrG5h" value="someCall" />
+      <node concept="3clFbS" id="50jY$Xk$JNb" role="3clF47">
+        <node concept="3clFbH" id="50jY$Xk$JNc" role="3cqZAp" />
+        <node concept="Hy8HG" id="50jY$Xk$JNd" role="3cqZAp">
+          <node concept="3clFbS" id="50jY$Xk$JNe" role="Hy8HH" />
+        </node>
+        <node concept="3clFbH" id="50jY$Xk$JNf" role="3cqZAp" />
+        <node concept="3clFbF" id="50jY$Xk$JQ3" role="3cqZAp">
+          <node concept="1odsa" id="50jY$Xk$JQ1" role="3clFbG">
+            <ref role="1ods_" node="77KX0PDuRx1" resolve="TheService" />
+            <ref role="37wK5l" node="4nH4LOF$GS$" resolve="doCancel" />
+            <node concept="Xl_RD" id="50jY$Xk$JSq" role="37wK5m">
+              <property role="Xl_RC" value="someCancel" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="50jY$Xk$JNg" role="3cqZAp" />
+      </node>
+      <node concept="3cqZAl" id="50jY$Xk$JNh" role="3clF45" />
+      <node concept="3Tm6S6" id="50jY$Xk$JNi" role="1B3o_S" />
+    </node>
+    <node concept="3Tm6S6" id="50jY$Xk$JBN" role="1B3o_S" />
   </node>
 </model>
 
