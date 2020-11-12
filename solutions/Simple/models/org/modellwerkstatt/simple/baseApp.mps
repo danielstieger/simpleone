@@ -197,6 +197,9 @@
       <concept id="9029332601822340346" name="org.modellwerkstatt.objectflow.structure.IOFXSurpErrorMarker" flags="ng" index="fdWrj">
         <property id="9029332601822340347" name="knowWhatDoing" index="fdWri" />
       </concept>
+      <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
+        <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
+      </concept>
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
@@ -244,7 +247,7 @@
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
-        <reference id="1707329006119989962" name="element" index="1Vchh_" />
+        <child id="1410203836819592831" name="operation" index="h55Ek" />
       </concept>
       <concept id="3887124829263120988" name="org.modellwerkstatt.objectflow.structure.Action" flags="ng" index="309pON">
         <reference id="96922280161183875" name="customLabel" index="3uz5Vf" />
@@ -623,7 +626,9 @@
       </node>
       <node concept="2XvMaL" id="1Ohi5d_Uxnc" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
-        <ref role="1Vchh_" to="dtxg:AN_117c2L0" resolve="ordered" />
+        <node concept="2vefiz" id="wGbog3pXNS" role="h55Ek">
+          <ref role="2vefiw" to="dtxg:AN_117c2L0" resolve="ordered" />
+        </node>
       </node>
     </node>
     <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
@@ -826,7 +831,9 @@
       </node>
       <node concept="2XvMaL" id="5faagik40bV" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
-        <ref role="1Vchh_" to="dtxg:AN_117c2L0" resolve="ordered" />
+        <node concept="2vefiz" id="wGbog3pXNT" role="h55Ek">
+          <ref role="2vefiw" to="dtxg:AN_117c2L0" resolve="ordered" />
+        </node>
       </node>
       <node concept="3cpWs3" id="4h8GofeWBVd" role="2$ntWM">
         <node concept="Xl_RD" id="4h8GofeWBVg" role="3uHU7w">
@@ -865,7 +872,9 @@
       </node>
       <node concept="2XvMaL" id="7xpVvRMyDj3" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
-        <ref role="1Vchh_" to="dtxg:AN_117c2KY" resolve="created" />
+        <node concept="2vefiz" id="wGbog3pXNU" role="h55Ek">
+          <ref role="2vefiw" to="dtxg:AN_117c2KY" resolve="created" />
+        </node>
       </node>
       <node concept="Xl_RD" id="4l1zKLo5jEc" role="2$ntWM">
         <property role="Xl_RC" value="Edit order 3 - Do.OK" />
@@ -889,7 +898,9 @@
       </node>
       <node concept="2XvMaL" id="2DIWJdVax$v" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
-        <ref role="1Vchh_" to="dtxg:AN_117c2KY" resolve="created" />
+        <node concept="2vefiz" id="wGbog3pXNV" role="h55Ek">
+          <ref role="2vefiw" to="dtxg:AN_117c2KY" resolve="created" />
+        </node>
       </node>
       <node concept="Xl_RD" id="4l1zKLo5jHt" role="2$ntWM">
         <property role="Xl_RC" value="Edit order 4 - Do.OK" />
@@ -912,7 +923,9 @@
       </node>
       <node concept="2XvMaL" id="7xpVvRMyDjn" role="2$ntZF">
         <ref role="2XvMaQ" to="dtxg:AN_117c2Ar" resolve="OrderStat" />
-        <ref role="1Vchh_" to="dtxg:AN_117c2L3" resolve="completed" />
+        <node concept="2vefiz" id="wGbog3pXNW" role="h55Ek">
+          <ref role="2vefiw" to="dtxg:AN_117c2L3" resolve="completed" />
+        </node>
       </node>
       <node concept="3cpWs3" id="4h8GofeWBHF" role="2$ntWM">
         <node concept="Xl_RD" id="4h8GofeWBKf" role="3uHU7w">
@@ -1593,7 +1606,9 @@
                   <node concept="37vLTI" id="1FVEJAIMeRU" role="3clFbG">
                     <node concept="2XvMaL" id="1FVEJAIMeT3" role="37vLTx">
                       <ref role="2XvMaQ" to="dtxg:1FVEJAIuas5" resolve="SearchOpt" />
-                      <ref role="1Vchh_" to="dtxg:1FVEJAIuass" resolve="create" />
+                      <node concept="2vefiz" id="wGbog3pXNX" role="h55Ek">
+                        <ref role="2vefiw" to="dtxg:1FVEJAIuass" resolve="create" />
+                      </node>
                     </node>
                     <node concept="2OqwBi" id="1FVEJAIMePU" role="37vLTJ">
                       <node concept="3zknl8" id="1FVEJAIMePr" role="2Oq$k0">
@@ -1751,7 +1766,9 @@
                   <node concept="37vLTI" id="1FVEJAIWAda" role="3clFbG">
                     <node concept="2XvMaL" id="1FVEJAIWAeD" role="37vLTx">
                       <ref role="2XvMaQ" to="dtxg:1FVEJAIuas5" resolve="SearchOpt" />
-                      <ref role="1Vchh_" to="dtxg:1FVEJAIuasu" resolve="loadFormDB" />
+                      <node concept="2vefiz" id="wGbog3pXNY" role="h55Ek">
+                        <ref role="2vefiw" to="dtxg:1FVEJAIuasu" resolve="loadFormDB" />
+                      </node>
                     </node>
                     <node concept="2OqwBi" id="1FVEJAIWAb1" role="37vLTJ">
                       <node concept="3zknl8" id="1FVEJAIWAaw" role="2Oq$k0">
@@ -1774,8 +1791,10 @@
                       </node>
                     </node>
                     <node concept="2XvMaL" id="1FVEJAIWA8A" role="37vLTx">
-                      <ref role="1Vchh_" to="dtxg:6XzXfke7pis" resolve="processed" />
                       <ref role="2XvMaQ" to="dtxg:6XzXfke7pgu" resolve="ProcessingState" />
+                      <node concept="2vefiz" id="wGbog3pXNZ" role="h55Ek">
+                        <ref role="2vefiw" to="dtxg:6XzXfke7pis" resolve="processed" />
+                      </node>
                     </node>
                   </node>
                 </node>

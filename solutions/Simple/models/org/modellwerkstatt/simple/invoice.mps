@@ -106,6 +106,9 @@
         <property id="8614254524338490550" name="min" index="8tbpJ" />
       </concept>
       <concept id="3262649880239917894" name="org.modellwerkstatt.objectflow.structure.OppositeOption" flags="ng" index="2fr8A1" />
+      <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
+        <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
+      </concept>
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="8009046666043401703" name="org.modellwerkstatt.objectflow.structure.ModelRepository" flags="ig" index="wbJL_" />
       <concept id="8009046666043401704" name="org.modellwerkstatt.objectflow.structure.ModelRepositoryMethod" flags="ig" index="wbJLE">
@@ -127,7 +130,7 @@
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
-        <reference id="1707329006119989962" name="element" index="1Vchh_" />
+        <child id="1410203836819592831" name="operation" index="h55Ek" />
       </concept>
       <concept id="4533072425307800381" name="org.modellwerkstatt.objectflow.structure.StatusType" flags="ig" index="2XvVpB">
         <reference id="6600213247848012755" name="status" index="3$lB4D" />
@@ -939,7 +942,9 @@
           <node concept="37vLTI" id="6LOXurw8Gds" role="3clFbG">
             <node concept="2XvMaL" id="6LOXurw8Gdt" role="37vLTx">
               <ref role="2XvMaQ" node="4p5bUJBbt69" resolve="InvoiceStatus" />
-              <ref role="1Vchh_" node="4p5bUJBbt6a" resolve="NEW" />
+              <node concept="2vefiz" id="wGbog3pXO0" role="h55Ek">
+                <ref role="2vefiw" node="4p5bUJBbt6a" resolve="NEW" />
+              </node>
             </node>
             <node concept="2OqwBi" id="6LOXurw8Gdu" role="37vLTJ">
               <node concept="37vLTw" id="6LOXurw8Gdv" role="2Oq$k0">
@@ -968,7 +973,9 @@
           <node concept="37vLTI" id="6LOXurw8GdC" role="3clFbG">
             <node concept="2XvMaL" id="6LOXurw8GdD" role="37vLTx">
               <ref role="2XvMaQ" node="4p5bUJBbt69" resolve="InvoiceStatus" />
-              <ref role="1Vchh_" node="4p5bUJBbtb1" resolve="DELIVERED" />
+              <node concept="2vefiz" id="wGbog3pXO1" role="h55Ek">
+                <ref role="2vefiw" node="4p5bUJBbtb1" resolve="DELIVERED" />
+              </node>
             </node>
             <node concept="2OqwBi" id="6LOXurw8GdE" role="37vLTJ">
               <node concept="37vLTw" id="6LOXurw8GdF" role="2Oq$k0">
@@ -997,7 +1004,9 @@
           <node concept="37vLTI" id="6LOXurw8GdO" role="3clFbG">
             <node concept="2XvMaL" id="6LOXurw8GdP" role="37vLTx">
               <ref role="2XvMaQ" node="4p5bUJBbt69" resolve="InvoiceStatus" />
-              <ref role="1Vchh_" node="4p5bUJBbt8R" resolve="PAYED" />
+              <node concept="2vefiz" id="wGbog3pXO2" role="h55Ek">
+                <ref role="2vefiw" node="4p5bUJBbt8R" resolve="PAYED" />
+              </node>
             </node>
             <node concept="2OqwBi" id="6LOXurw8GdQ" role="37vLTJ">
               <node concept="37vLTw" id="6LOXurw8GdR" role="2Oq$k0">

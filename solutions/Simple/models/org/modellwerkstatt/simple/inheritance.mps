@@ -196,7 +196,7 @@
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
-        <reference id="1707329006119989962" name="element" index="1Vchh_" />
+        <child id="1410203836819592831" name="operation" index="h55Ek" />
       </concept>
       <concept id="4533072425307800381" name="org.modellwerkstatt.objectflow.structure.StatusType" flags="ig" index="2XvVpB">
         <reference id="6600213247848012755" name="status" index="3$lB4D" />
@@ -420,7 +420,9 @@
               <node concept="3clFbC" id="atoEsWdksF" role="3clFbw">
                 <node concept="2XvMaL" id="atoEsWdl1M" role="3uHU7w">
                   <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
-                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                  <node concept="2vefiz" id="wGbog3pXNM" role="h55Ek">
+                    <ref role="2vefiw" node="5A$AnVDpm_R" resolve="open" />
+                  </node>
                 </node>
                 <node concept="338YkY" id="atoEsWdkrR" role="3uHU7B">
                   <ref role="338YkT" node="5A$AnVDpm$9" resolve="status" />
@@ -1032,7 +1034,9 @@
               <node concept="37vLTI" id="4nH4LOF$GX_" role="3clFbG">
                 <node concept="2XvMaL" id="4nH4LOF$GXA" role="37vLTx">
                   <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
-                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                  <node concept="2vefiz" id="wGbog3pXNN" role="h55Ek">
+                    <ref role="2vefiw" node="5A$AnVDpm_R" resolve="open" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GXB" role="37vLTJ">
                   <node concept="37vLTw" id="4nH4LOF$GXC" role="2Oq$k0">
@@ -1210,7 +1214,9 @@
               <node concept="37vLTI" id="4nH4LOF$GYJ" role="3clFbG">
                 <node concept="2XvMaL" id="4nH4LOF$GYK" role="37vLTx">
                   <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
-                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                  <node concept="2vefiz" id="wGbog3pXNO" role="h55Ek">
+                    <ref role="2vefiw" node="5A$AnVDpm_R" resolve="open" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GYL" role="37vLTJ">
                   <node concept="37vLTw" id="4nH4LOF$GYM" role="2Oq$k0">
@@ -1366,7 +1372,9 @@
               <node concept="37vLTI" id="4nH4LOF$GZK" role="3clFbG">
                 <node concept="2XvMaL" id="4nH4LOF$GZL" role="37vLTx">
                   <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
-                  <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+                  <node concept="2vefiz" id="wGbog3pXNP" role="h55Ek">
+                    <ref role="2vefiw" node="5A$AnVDpm_R" resolve="open" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GZM" role="37vLTJ">
                   <node concept="37vLTw" id="4nH4LOF$GZN" role="2Oq$k0">
@@ -1706,7 +1714,9 @@
           <node concept="37vLTI" id="4nH4LOF$H0b" role="3clFbG">
             <node concept="2XvMaL" id="4nH4LOF$H0c" role="37vLTx">
               <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
-              <ref role="1Vchh_" node="5A$AnVDpm_R" resolve="open" />
+              <node concept="2vefiz" id="wGbog3pXNQ" role="h55Ek">
+                <ref role="2vefiw" node="5A$AnVDpm_R" resolve="open" />
+              </node>
             </node>
             <node concept="2OqwBi" id="4nH4LOF$H0d" role="37vLTJ">
               <node concept="37vLTw" id="4nH4LOF$H0e" role="2Oq$k0">
@@ -1735,7 +1745,9 @@
           <node concept="37vLTI" id="4nH4LOF$H0o" role="3clFbG">
             <node concept="2XvMaL" id="4nH4LOF$H0p" role="37vLTx">
               <ref role="2XvMaQ" node="5A$AnVDpm_h" resolve="DocStat" />
-              <ref role="1Vchh_" node="5A$AnVDpmBe" resolve="closed" />
+              <node concept="2vefiz" id="wGbog3pXNR" role="h55Ek">
+                <ref role="2vefiw" node="5A$AnVDpmBe" resolve="closed" />
+              </node>
             </node>
             <node concept="2OqwBi" id="4nH4LOF$H0q" role="37vLTJ">
               <node concept="37vLTw" id="4nH4LOF$H0r" role="2Oq$k0">

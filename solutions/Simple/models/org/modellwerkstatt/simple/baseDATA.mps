@@ -210,6 +210,9 @@
       <concept id="5788629615597606700" name="org.modellwerkstatt.objectflow.structure.Precondition" flags="ng" index="mlg3r">
         <child id="5788629615597607706" name="problemdesc" index="mlgNH" />
       </concept>
+      <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
+        <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
+      </concept>
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="8009046666043401703" name="org.modellwerkstatt.objectflow.structure.ModelRepository" flags="ig" index="wbJL_">
         <child id="2153030403788862895" name="customSqlRepoFields" index="2_$AKh" />
@@ -255,7 +258,7 @@
       </concept>
       <concept id="4533072425307838443" name="org.modellwerkstatt.objectflow.structure.StatusConstReference" flags="ng" index="2XvMaL">
         <reference id="4533072425307838444" name="status" index="2XvMaQ" />
-        <reference id="1707329006119989962" name="element" index="1Vchh_" />
+        <child id="1410203836819592831" name="operation" index="h55Ek" />
       </concept>
       <concept id="4533072425307800381" name="org.modellwerkstatt.objectflow.structure.StatusType" flags="ig" index="2XvVpB">
         <reference id="6600213247848012755" name="status" index="3$lB4D" />
@@ -2424,7 +2427,9 @@
                     <ref role="1bDdzG" node="2IUGN4P8g$C" resolve="status" />
                     <node concept="2XvMaL" id="3fPy_dHeFYL" role="1bDdzI">
                       <ref role="2XvMaQ" node="2IUGN4P8gvE" resolve="PositionStatus" />
-                      <ref role="1Vchh_" node="2IUGN4P8gxl" resolve="accepted" />
+                      <node concept="2vefiz" id="wGbog3pXNH" role="h55Ek">
+                        <ref role="2vefiw" node="2IUGN4P8gxl" resolve="accepted" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2433,7 +2438,9 @@
                 <ref role="1bDdzG" node="AN_117c2L7" resolve="status" />
                 <node concept="2XvMaL" id="3gRL8qOFFVp" role="1bDdzI">
                   <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
-                  <ref role="1Vchh_" node="AN_117c2L3" resolve="completed" />
+                  <node concept="2vefiz" id="wGbog3pXNI" role="h55Ek">
+                    <ref role="2vefiw" node="AN_117c2L3" resolve="completed" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2579,8 +2586,10 @@
             <node concept="3clFbF" id="4nH4LOF$GPw" role="3cqZAp">
               <node concept="37vLTI" id="4nH4LOF$GPx" role="3clFbG">
                 <node concept="2XvMaL" id="4nH4LOF$GPy" role="37vLTx">
-                  <ref role="1Vchh_" node="AN_117c2KY" resolve="created" />
                   <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
+                  <node concept="2vefiz" id="wGbog3pXNJ" role="h55Ek">
+                    <ref role="2vefiw" node="AN_117c2KY" resolve="created" />
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GPz" role="37vLTJ">
                   <node concept="37vLTw" id="4nH4LOF$GP$" role="2Oq$k0">
@@ -2606,7 +2615,9 @@
                     </node>
                     <node concept="2XvMaL" id="4nH4LOF$GPH" role="37vLTx">
                       <ref role="2XvMaQ" node="AN_117c2Ar" resolve="OrderStat" />
-                      <ref role="1Vchh_" node="AN_117c2L0" resolve="ordered" />
+                      <node concept="2vefiz" id="wGbog3pXNK" role="h55Ek">
+                        <ref role="2vefiw" node="AN_117c2L0" resolve="ordered" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -4209,7 +4220,9 @@
                 <node concept="3clFbC" id="1FVEJAIXIaN" role="3uHU7w">
                   <node concept="2XvMaL" id="1FVEJAIXId9" role="3uHU7w">
                     <ref role="2XvMaQ" node="6XzXfke7pgu" resolve="ProcessingState" />
-                    <ref role="1Vchh_" node="6XzXfke7pis" resolve="processed" />
+                    <node concept="2vefiz" id="wGbog3pXNL" role="h55Ek">
+                      <ref role="2vefiw" node="6XzXfke7pis" resolve="processed" />
+                    </node>
                   </node>
                   <node concept="3_7ulE" id="1FVEJAIXI6L" role="3uHU7B">
                     <ref role="3_688M" node="1FVEJAIXHmE" />
