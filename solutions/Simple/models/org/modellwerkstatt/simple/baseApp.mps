@@ -463,12 +463,6 @@
       </node>
       <node concept="2CPvp3" id="2h5WDoVdfDB" role="2CJdiS" />
     </node>
-    <node concept="2CJf3v" id="12Eg3QJH2mV" role="2CGBMS">
-      <property role="TrG5h" value="hotkeyTranslator" />
-      <node concept="Xl_RD" id="12Eg3QJH2mX" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8AppleMacKeyBoard" />
-      </node>
-    </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
       <node concept="2CJ4$C" id="2P$1DRitH63" role="2CJ4_l">
@@ -3197,12 +3191,6 @@
         </node>
       </node>
       <node concept="2CPvp3" id="4l1zKLo5jkU" role="2CJdiS" />
-    </node>
-    <node concept="2CJf3v" id="4l1zKLo5jkV" role="2CGBMS">
-      <property role="TrG5h" value="hotkeyTranslator" />
-      <node concept="Xl_RD" id="4l1zKLo5jkW" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8AppleMacKeyBoard" />
-      </node>
     </node>
     <node concept="2CJf3v" id="4l1zKLo5jkX" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
