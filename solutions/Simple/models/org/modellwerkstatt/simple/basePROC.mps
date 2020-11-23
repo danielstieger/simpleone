@@ -2011,20 +2011,6 @@
         <ref role="2DFCCC" to="dtxg:3Rw9V4pLpzQ" resolve="UPDATE" />
         <node concept="20qIzx" id="AN_117ldHh" role="10ot2L">
           <node concept="3clFbS" id="AN_117ldHi" role="2VODD2">
-            <node concept="3clFbF" id="2_YacpKQLTM" role="3cqZAp">
-              <node concept="2OqwBi" id="2_YacpKQLTN" role="3clFbG">
-                <node concept="10M0yZ" id="2_YacpKQLTO" role="2Oq$k0">
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                </node>
-                <node concept="liA8E" id="2_YacpKQLTP" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="Xl_RD" id="2_YacpKQLTQ" role="37wK5m">
-                    <property role="Xl_RC" value="Scan Orderposition() Scan conclusion" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="5IReaJKs_XL" role="3cqZAp">
               <node concept="3cpWsn" id="5IReaJKs_XO" role="3cpWs9">
                 <property role="TrG5h" value="msg" />
@@ -2035,35 +2021,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="32SBLyAS0gr" role="3cqZAp" />
-            <node concept="mlg3r" id="4nH4LOF$HDj" role="3cqZAp">
-              <node concept="3fqX7Q" id="4nH4LOF$HDk" role="mlgNJ">
-                <node concept="1eOMI4" id="4nH4LOF$HDl" role="3fr31v">
-                  <node concept="3eOVzh" id="32SBLyAS2C_" role="1eOMHV">
-                    <node concept="3cmrfG" id="32SBLyAS2CF" role="3uHU7w">
-                      <property role="3cmrfH" value="10" />
-                    </node>
-                    <node concept="3cmrfG" id="32SBLyAS2jk" role="3uHU7B">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="lgADV" id="4nH4LOF$HDm" role="mlgNH">
-                <node concept="3cpWs3" id="32SBLyAS1WS" role="lgxf9">
-                  <node concept="2OqwBi" id="32SBLyAS2gE" role="3uHU7w">
-                    <node concept="3urNR4" id="32SBLyAS2f_" role="2Oq$k0">
-                      <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
-                    </node>
-                    <node concept="2S8uIT" id="32SBLyAS2i7" role="2OqNvi">
-                      <ref role="2S8YL0" to="dtxg:AN_117ld9W" resolve="text" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="32SBLyAS1BO" role="3uHU7B">
-                    <property role="Xl_RC" value="Bonjour: Type is " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="32SBLyAS0Aa" role="3cqZAp" />
             <node concept="3clFbJ" id="AN_117nQtV" role="3cqZAp">
               <node concept="3clFbS" id="AN_117nQtX" role="3clFbx">
@@ -2856,6 +2813,21 @@
             <node concept="10Nm6u" id="AN_117nPT_" role="37vLTx" />
             <node concept="3urNR4" id="AN_117nPS3" role="37vLTJ">
               <ref role="3cqZAo" node="AN_117nPQa" resolve="lastPos" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nH3Uz8IPwN" role="3cqZAp">
+          <node concept="37vLTI" id="7nH3Uz8IPIw" role="3clFbG">
+            <node concept="3urNQE" id="7nH3Uz8IPPG" role="37vLTx">
+              <ref role="3cqZAo" node="5TC7JC3Wpt9" resolve="orderprocParam" />
+            </node>
+            <node concept="2OqwBi" id="7nH3Uz8IP_2" role="37vLTJ">
+              <node concept="3urNR4" id="7nH3Uz8IPwL" role="2Oq$k0">
+                <ref role="3cqZAo" node="AN_117ld_Q" resolve="helper" />
+              </node>
+              <node concept="2S8uIT" id="7nH3Uz8IPEe" role="2OqNvi">
+                <ref role="2S8YL0" to="dtxg:7nH3Uz8IOgH" resolve="order" />
+              </node>
             </node>
           </node>
         </node>
@@ -10037,12 +10009,6 @@
       </node>
       <node concept="2vefiz" id="5TC7JC3Wppv" role="2vefj5">
         <ref role="2vefiw" to="dtxg:AN_117c2KY" resolve="created" />
-      </node>
-      <node concept="2vefiz" id="5TC7JC3Wppw" role="2vefj5">
-        <ref role="2vefiw" to="dtxg:AN_117c2L0" resolve="ordered" />
-      </node>
-      <node concept="2vefiz" id="5TC7JC3Wppx" role="2vefj5">
-        <ref role="2vefiw" to="dtxg:AN_117c2L3" resolve="completed" />
       </node>
     </node>
   </node>
