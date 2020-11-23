@@ -16,18 +16,15 @@ The application comes with examples for
 * UI modelling (forms, tables, etc.)
 * mapping between data-strucutres and database schemas
 * applications, batch-jobs and their configuration  
-* Eventing and usage of vert.x event bus interface (demo only)
 
 
 # Models available within the solution org.modellwerkstatt.simple 
 ```
 
-AutoTest:    simple data-structur to demonstrate moware auto-completer
-baseApp:     application and batchjobs + their config
-baseDATA:    data-structures and database interaction
-basePROC:    processes and commands, some examples
-baseUI:      user interfaces for commands in basePROC 
-eventing:    eventing and access to the vert.x event bus
-inheritance: demonstrating entity inheritance features and ui handling
-
+domain.order: Order Aggregate
+domain.invoice: Invoice Aggregate
+unit.orderUnit: Ui-Definitions and Ui-Controllers for Order Aggregate
+unit.invoiceUnit: Ui-Definitions and Ui-Controllers for Invoice Aggregate
+basis: App Wide Basis Data Structures
+basisUnit: Labels / Configs
 ```
