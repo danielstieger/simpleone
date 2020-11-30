@@ -17,6 +17,7 @@
     <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="dr5r" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -124,7 +125,6 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -192,10 +192,6 @@
       <concept id="5788629615597606700" name="org.modellwerkstatt.objectflow.structure.Precondition" flags="ng" index="mlg3r">
         <child id="5788629615597607706" name="problemdesc" index="mlgNH" />
         <child id="5788629615597607704" name="condition" index="mlgNJ" />
-        <child id="5788629615600818949" name="options" index="mp0NM" />
-      </concept>
-      <concept id="5788629615600813174" name="org.modellwerkstatt.objectflow.structure.CheckOptionRef" flags="ng" index="mp1e1">
-        <reference id="5788629615600813175" name="option" index="mp1e0" />
       </concept>
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
@@ -271,7 +267,6 @@
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <child id="4222064144042812753" name="andIsEnabledNew" index="e0yQD" />
         <child id="3748648354049763742" name="titleAddOn" index="IYfpf" />
-        <child id="7919478814742486054" name="preconditiondsNew" index="2V4Fwz" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="1881524139085993258" name="cancelConclusionStatements" index="10_T4m" />
         <child id="1531629899316469246" name="cancelMarkerOperation" index="1pomMT" />
@@ -306,6 +301,10 @@
         <property id="569389511234497413" name="month" index="1$4sGV" />
       </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
+      <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
+        <property id="830334255848575723" name="logLevel" index="Rda9K" />
+        <child id="2356914237085088917" name="exp" index="3VcgQn" />
+      </concept>
       <concept id="8322225022199855721" name="org.modellwerkstatt.objectflow.structure.PageChildTermConceptFunc" flags="ig" index="3Yq87T" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -397,26 +396,6 @@
   <node concept="3ugp7m" id="6XzXfke15oI">
     <property role="TrG5h" value="Search for Invoices" />
     <property role="19I623" value="SEARCH_CMD" />
-    <node concept="mlg3r" id="5yulfH_nF4H" role="2V4Fwz">
-      <node concept="3eOSWO" id="5yulfH_nFbk" role="mlgNJ">
-        <node concept="3cmrfG" id="5yulfH_nFbn" role="3uHU7w">
-          <property role="3cmrfH" value="10" />
-        </node>
-        <node concept="3cmrfG" id="5yulfH_nF5I" role="3uHU7B">
-          <property role="3cmrfH" value="1" />
-        </node>
-      </node>
-      <node concept="lgADV" id="5yulfH_nF4J" role="mlgNH">
-        <node concept="35AVbj" id="5yulfH_nF4K" role="lgxf9">
-          <node concept="ic4WF" id="5yulfH_nF4L" role="icr7_">
-            <property role="ic4Xk" value="This is a command precondition." />
-          </node>
-        </node>
-      </node>
-      <node concept="mp1e1" id="5yulfH_pkkL" role="mp0NM">
-        <ref role="mp1e0" to="28jr:51llZt5Ptbm" resolve="JOB_ITEM_ALREAD_DONE" />
-      </node>
-    </node>
     <node concept="3ulXEM" id="6XzXfke19QZ" role="3ulXEG">
       <property role="TrG5h" value="filter" />
       <node concept="3uibUv" id="6XzXfke19Sp" role="1tU5fm">
@@ -834,7 +813,34 @@
     <node concept="20qIzx" id="6XzXfke19SM" role="3umfm7">
       <node concept="3clFbS" id="6XzXfke19SN" role="2VODD2">
         <node concept="3clFbH" id="2_d40IFjfiI" role="3cqZAp" />
-        <node concept="3clFbH" id="2_d40IFjfjH" role="3cqZAp" />
+        <node concept="3VdxhY" id="6QuBvexqHpr" role="3cqZAp">
+          <property role="Rda9K" value="ERROR" />
+          <node concept="Xl_RD" id="6QuBvexqHrF" role="3VcgQn">
+            <property role="Xl_RC" value="This is a error log via moware log" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6QuBvexqI$5" role="3cqZAp">
+          <node concept="2OqwBi" id="6QuBvexqIEy" role="3clFbG">
+            <node concept="2YIFZM" id="6QuBvexqIAj" role="2Oq$k0">
+              <ref role="37wK5l" to="dr5r:~Logger.getLogger(java.lang.String)" resolve="getLogger" />
+              <ref role="1Pybhc" to="dr5r:~Logger" resolve="Logger" />
+              <node concept="Xl_RD" id="6QuBvexqK$p" role="37wK5m">
+                <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6QuBvexqIMS" role="2OqNvi">
+              <ref role="37wK5l" to="dr5r:~Logger.log(java.util.logging.Level,java.lang.String)" resolve="log" />
+              <node concept="10M0yZ" id="6QuBvexqIUT" role="37wK5m">
+                <ref role="3cqZAo" to="dr5r:~Level.SEVERE" resolve="SEVERE" />
+                <ref role="1PxDUh" to="dr5r:~Level" resolve="Level" />
+              </node>
+              <node concept="Xl_RD" id="6QuBvexqJ0c" role="37wK5m">
+                <property role="Xl_RC" value="This is a log via util.logging." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6QuBvexqKIJ" role="3cqZAp" />
         <node concept="3clFbF" id="6XzXfke19To" role="3cqZAp">
           <node concept="37vLTI" id="6XzXfke19U2" role="3clFbG">
             <node concept="2ShNRf" id="6XzXfke19UE" role="37vLTx">

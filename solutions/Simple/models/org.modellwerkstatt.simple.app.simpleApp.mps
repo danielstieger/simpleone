@@ -76,9 +76,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
-        <child id="1164991057263" name="throwable" index="YScLw" />
-      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -1035,29 +1032,6 @@
                     <node concept="10Nm6u" id="37q6uRCrr23" role="3uHU7w" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="37q6uRCrqHH" role="3cqZAp" />
-                <node concept="3clFbJ" id="1Z999TKxm08" role="3cqZAp">
-                  <node concept="3clFbS" id="1Z999TKxm09" role="3clFbx">
-                    <node concept="YS8fn" id="1Z999TKxm0a" role="3cqZAp">
-                      <node concept="2ShNRf" id="1Z999TKxm0b" role="YScLw">
-                        <node concept="1pGfFk" id="1Z999TKxm0c" role="2ShVmc">
-                          <ref role="37wK5l" to="wyt6:~Exception.&lt;init&gt;(java.lang.String)" resolve="Exception" />
-                          <node concept="Xl_RD" id="1Z999TKxm0d" role="37wK5m">
-                            <property role="Xl_RC" value=" Clear Inbox " />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3eOVzh" id="1Z999TKxm0e" role="3clFbw">
-                    <node concept="3cmrfG" id="1Z999TKxm0f" role="3uHU7w">
-                      <property role="3cmrfH" value="10" />
-                    </node>
-                    <node concept="3cmrfG" id="1Z999TKxm0g" role="3uHU7B">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbH" id="1FVEJAIWBkU" role="3cqZAp" />
               </node>
             </node>
@@ -1118,8 +1092,8 @@
     </node>
     <node concept="3lKVtU" id="7oLsFCHIe71" role="2A_d42">
       <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="30" />
-      <property role="1QnCsW" value="13" />
+      <property role="1QnCsU" value="*/5" />
+      <property role="1QnCsW" value="*" />
       <property role="1QnCj8" value="*" />
       <property role="1QnCj1" value="*" />
       <property role="1QnCj5" value="*" />
