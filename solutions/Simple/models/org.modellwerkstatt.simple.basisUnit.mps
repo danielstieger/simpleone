@@ -1472,7 +1472,7 @@
       <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
+      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />

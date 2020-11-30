@@ -441,6 +441,10 @@
       <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
         <property id="6436022531931826103" name="value" index="3RprZj" />
       </concept>
+      <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
+        <property id="830334255848575723" name="logLevel" index="Rda9K" />
+        <child id="2356914237085088917" name="exp" index="3VcgQn" />
+      </concept>
       <concept id="6303390138597557532" name="org.modellwerkstatt.objectflow.structure.ConvTextExpression" flags="ng" index="1WHerN">
         <property id="6303390138597572053" name="type" index="1WHdSU" />
         <child id="6303390138597674847" name="expression" index="1WEEMK" />
@@ -1119,6 +1123,14 @@
           </node>
         </node>
         <node concept="3clFbH" id="3V1gzeLUeS6" role="3cqZAp" />
+        <node concept="3VdxhY" id="48b3WENR1di" role="3cqZAp">
+          <property role="Rda9K" value="ERROR" />
+          <node concept="35AVbj" id="48b3WENR1lY" role="3VcgQn">
+            <node concept="ic4WF" id="48b3WENR1m0" role="icr7_">
+              <property role="ic4Xk" value="Search Orders - command init()" />
+            </node>
+          </node>
+        </node>
         <node concept="10Adxa" id="3V1gzeLUeXJ" role="3cqZAp">
           <ref role="10Adxb" node="AN_117fcIc" resolve="ResultPage" />
         </node>
@@ -3469,19 +3481,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2veflS" id="3$wB26aItun" role="e0yQD">
-      <node concept="2vefiz" id="3$wB26aItQl" role="2vefj5">
-        <ref role="2vefiw" to="eqbi:2IUGN4P8gxl" resolve="accepted" />
-      </node>
-      <node concept="2OqwBi" id="3$wB26aIsXl" role="2vefmd">
-        <node concept="3urNQE" id="3$wB26aIsE_" role="2Oq$k0">
-          <ref role="3cqZAo" node="4XOQNRZgrPU" resolve="pos" />
-        </node>
-        <node concept="2S8uIT" id="3$wB26aItne" role="2OqNvi">
-          <ref role="2S8YL0" to="eqbi:2IUGN4P8g$C" resolve="status" />
         </node>
       </node>
     </node>
@@ -11202,7 +11201,7 @@
     </node>
     <node concept="3Oe2Ik" id="58kyrO89Vjr" role="3OfFNq">
       <node concept="PnLzW" id="58kyrO89Vjs" role="PoUSh">
-        <property role="PiFy3" value="60" />
+        <property role="PiFy3" value="50" />
       </node>
       <node concept="3Oe$u_" id="58kyrO89Vjt" role="3$nDjG">
         <ref role="3O0p26" to="eqbi:AN_117bbdT" resolve="name" />
@@ -11222,6 +11221,14 @@
       </node>
       <node concept="3Oe$u_" id="58kyrO89Vjz" role="3$nDjG">
         <ref role="3O0p26" to="eqbi:AN_117bbec" resolve="timestamp" />
+      </node>
+    </node>
+    <node concept="2TG9WX" id="2HUKIwc$KKo" role="3OfFNq">
+      <node concept="PnLzW" id="2HUKIwc$KKp" role="PoUSh">
+        <property role="PiFy3" value="10" />
+      </node>
+      <node concept="3Oe$u_" id="2HUKIwc$KKq" role="3$nDjG">
+        <ref role="3O0p26" to="eqbi:2IUGN4P8g$C" resolve="status" />
       </node>
     </node>
   </node>
