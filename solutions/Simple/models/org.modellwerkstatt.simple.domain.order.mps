@@ -16,6 +16,7 @@
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
     <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.unit.orderUnit)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
+    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -119,6 +120,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -167,11 +169,15 @@
       <concept id="9029332601822340346" name="org.modellwerkstatt.objectflow.structure.IOFXSurpErrorMarker" flags="ng" index="fdWrj">
         <property id="9029332601822340347" name="knowWhatDoing" index="fdWri" />
       </concept>
+      <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
+        <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
+      </concept>
       <concept id="5788629615582330252" name="org.modellwerkstatt.objectflow.structure.ProblemMessage" flags="ng" index="lgADV">
         <child id="5788629615582331966" name="problem" index="lgxf9" />
       </concept>
       <concept id="5788629615597606700" name="org.modellwerkstatt.objectflow.structure.Precondition" flags="ng" index="mlg3r">
         <child id="5788629615597607706" name="problemdesc" index="mlgNH" />
+        <child id="5788629615597607704" name="condition" index="mlgNJ" />
       </concept>
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
@@ -194,6 +200,10 @@
         <property id="3517052249651130109" name="stop" index="WfFEu" />
         <property id="3517052249651130108" name="start" index="WfFEv" />
         <property id="5903203825074373802" name="scale" index="1BDm0K" />
+      </concept>
+      <concept id="1335996842166371514" name="org.modellwerkstatt.objectflow.structure.OFXTestSuit" flags="ng" index="2WPaUQ">
+        <reference id="1335996842166433049" name="configuration" index="2WPtWl" />
+        <child id="6952410984685371541" name="content" index="3yMuLx" />
       </concept>
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
@@ -220,6 +230,9 @@
       <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.BusinessObject" flags="ig" index="34Athd">
         <child id="4533072425307746563" name="status" index="2XvChp" />
       </concept>
+      <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
+        <child id="4986415014450757612" name="formatString" index="icr7_" />
+      </concept>
       <concept id="3860064244065287790" name="org.modellwerkstatt.objectflow.structure.ListBuilderElement" flags="ng" index="188KQk" />
       <concept id="3860064244070526091" name="org.modellwerkstatt.objectflow.structure.IBuilderElement" flags="ng" index="1b$LXL">
         <reference id="3860064244073851670" name="property" index="1bDdzG" />
@@ -231,18 +244,10 @@
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
-      <concept id="9127051365898173147" name="org.modellwerkstatt.objectflow.structure.OnStatementCase" flags="ng" index="1hGRo7">
-        <reference id="9127051365898173151" name="statusElement" index="1hGRo3" />
-        <child id="9127051365898173148" name="statementList" index="1hGRo0" />
-      </concept>
-      <concept id="9127051365898173137" name="org.modellwerkstatt.objectflow.structure.OnStatement" flags="ng" index="1hGRod">
-        <child id="9127051365898173138" name="sourceStatusExpression" index="1hGRoe" />
-        <child id="9127051365898173169" name="onStatementCase" index="1hGRoH" />
-        <child id="9127051365898310193" name="defaultStatementList" index="1hHhVH" />
-      </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
       </concept>
+      <concept id="6952410984685067935" name="org.modellwerkstatt.objectflow.structure.OFXTestMethod" flags="ng" index="3yPF9F" />
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
         <property id="569389511234497416" name="minute" index="1$4sGQ" />
@@ -479,7 +484,7 @@
       </node>
     </node>
     <node concept="2vDG_T" id="4q1OD65uB2A" role="jymVt">
-      <property role="TrG5h" value="switchMe" />
+      <property role="TrG5h" value="conditionNotPassed" />
       <node concept="37vLTG" id="4q1OD65uB8V" role="3clF46">
         <property role="TrG5h" value="odr" />
         <node concept="3uibUv" id="4q1OD65uBaj" role="1tU5fm">
@@ -487,41 +492,25 @@
         </node>
       </node>
       <node concept="3clFbS" id="4q1OD65uB2D" role="3clF47">
-        <node concept="3cpWs8" id="4q1OD65O1mc" role="3cqZAp">
-          <node concept="3cpWsn" id="4q1OD65O1md" role="3cpWs9">
-            <property role="TrG5h" value="o" />
-            <node concept="3uibUv" id="4q1OD65O1me" role="1tU5fm">
-              <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
+        <node concept="3clFbH" id="4q1OD65uB2H" role="3cqZAp" />
+        <node concept="mlg3r" id="6zTm1h8ZMAL" role="3cqZAp">
+          <node concept="3eOSWO" id="6zTm1h8ZMVS" role="mlgNJ">
+            <node concept="3cmrfG" id="6zTm1h8ZMW3" role="3uHU7w">
+              <property role="3cmrfH" value="10" />
             </node>
-            <node concept="2ShNRf" id="4q1OD65O1pk" role="33vP2m">
-              <node concept="1pGfFk" id="4q1OD65O1o$" role="2ShVmc">
-                <ref role="37wK5l" node="4u029Jv8wD1" resolve="Order" />
+            <node concept="3cmrfG" id="6zTm1h8ZMD6" role="3uHU7B">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="lgADV" id="6zTm1h8ZMAO" role="mlgNH">
+            <node concept="35AVbj" id="6zTm1h8ZMAP" role="lgxf9">
+              <node concept="ic4WF" id="6zTm1h8ZMAQ" role="icr7_">
+                <property role="ic4Xk" value="This is the precondition which is not passed." />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4q1OD65xmDQ" role="3cqZAp" />
-        <node concept="1hGRod" id="4q1OD65uC5u" role="3cqZAp">
-          <node concept="1hGRo7" id="4q1OD65uC5y" role="1hGRoH">
-            <ref role="1hGRo3" node="AN_117c2L3" resolve="completed" />
-            <node concept="3clFbS" id="4q1OD65uC5$" role="1hGRo0" />
-          </node>
-          <node concept="1hGRo7" id="4q1OD65uLxX" role="1hGRoH">
-            <ref role="1hGRo3" node="AN_117c2KY" resolve="created" />
-            <node concept="3clFbS" id="4q1OD65uLxY" role="1hGRo0" />
-          </node>
-          <node concept="3clFbS" id="4q1OD65uC5A" role="1hHhVH" />
-          <node concept="2OqwBi" id="4q1OD65O1tR" role="1hGRoe">
-            <node concept="37vLTw" id="4q1OD65O1rZ" role="2Oq$k0">
-              <ref role="3cqZAo" node="4q1OD65O1md" resolve="o" />
-            </node>
-            <node concept="2S8uIT" id="4q1OD65O1xM" role="2OqNvi">
-              <ref role="2S8YL0" node="AN_117c2L7" resolve="status" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4q1OD65uB2H" role="3cqZAp" />
-        <node concept="3clFbH" id="4q1OD65uB2I" role="3cqZAp" />
+        <node concept="3clFbH" id="6zTm1h8ZNw2" role="3cqZAp" />
         <node concept="3cpWs6" id="4q1OD65uCst" role="3cqZAp">
           <node concept="10Nm6u" id="4q1OD65uCsS" role="3cqZAk" />
         </node>
@@ -2786,6 +2775,27 @@
         <node concept="3clFbF" id="4nH4LOF$GR3" role="3cqZAp">
           <node concept="37vLTw" id="4nH4LOF$GR4" role="3clFbG">
             <ref role="3cqZAo" node="4nH4LOF$GOF" resolve="allOrders" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2WPaUQ" id="6zTm1h8ZLJi">
+    <property role="TrG5h" value="OrderTest" />
+    <ref role="2WPtWl" to="oyrz:382CQP52o$k" resolve="BatchConfigConsole" />
+    <node concept="3yPF9F" id="6zTm1h8ZM9l" role="3yMuLx">
+      <property role="TrG5h" value="Check something here. " />
+      <node concept="3cqZAl" id="6zTm1h8ZM9n" role="3clF45" />
+      <node concept="3clFbS" id="6zTm1h8ZM9o" role="3clF47">
+        <node concept="3clFbF" id="6zTm1h8ZMfu" role="3cqZAp">
+          <node concept="1odsa" id="6zTm1h8ZMft" role="3clFbG">
+            <ref role="1ods_" node="2qrl3a2N$Ad" resolve="TS" />
+            <ref role="37wK5l" node="4q1OD65uB2A" resolve="conditionNotPassed" />
+            <node concept="2ShNRf" id="6zTm1h8ZNzv" role="37wK5m">
+              <node concept="1pGfFk" id="6zTm1h8ZPz4" role="2ShVmc">
+                <ref role="37wK5l" node="4u029Jv8wD1" resolve="Order" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

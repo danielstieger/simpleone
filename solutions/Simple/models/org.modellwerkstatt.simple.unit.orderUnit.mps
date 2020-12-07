@@ -30,6 +30,8 @@
     <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.domain.invoice)" />
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.domain.order)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
+    <import index="dr5r" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
+    <import index="jqqh" ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5/java:org.slf4j(org.modellwerkstatt.simple/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -440,10 +442,6 @@
       </concept>
       <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
         <property id="6436022531931826103" name="value" index="3RprZj" />
-      </concept>
-      <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
-        <property id="830334255848575723" name="logLevel" index="Rda9K" />
-        <child id="2356914237085088917" name="exp" index="3VcgQn" />
       </concept>
       <concept id="6303390138597557532" name="org.modellwerkstatt.objectflow.structure.ConvTextExpression" flags="ng" index="1WHerN">
         <property id="6303390138597572053" name="type" index="1WHdSU" />
@@ -1123,14 +1121,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3V1gzeLUeS6" role="3cqZAp" />
-        <node concept="3VdxhY" id="48b3WENR1di" role="3cqZAp">
-          <property role="Rda9K" value="ERROR" />
-          <node concept="35AVbj" id="48b3WENR1lY" role="3VcgQn">
-            <node concept="ic4WF" id="48b3WENR1m0" role="icr7_">
-              <property role="ic4Xk" value="Search Orders - command init()" />
-            </node>
-          </node>
-        </node>
         <node concept="10Adxa" id="3V1gzeLUeXJ" role="3cqZAp">
           <ref role="10Adxb" node="AN_117fcIc" resolve="ResultPage" />
         </node>
@@ -1287,6 +1277,7 @@
               </node>
             </node>
             <node concept="3clFbH" id="2gjGACnx1mI" role="3cqZAp" />
+            <node concept="3clFbH" id="37VUDlBwrIz" role="3cqZAp" />
             <node concept="Hy8HG" id="1X3c4oMSy1e" role="3cqZAp">
               <node concept="3clFbS" id="1X3c4oMSy1g" role="Hy8HH">
                 <node concept="mlg3r" id="23OxdyxjUX9" role="3cqZAp">
@@ -1326,7 +1317,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="4ZCTy50pZW8" role="3cqZAp" />
-            <node concept="3clFbH" id="1X3c4oN1LXL" role="3cqZAp" />
             <node concept="10Adxa" id="1dqt$gJysmi" role="3cqZAp">
               <ref role="10Adxb" node="AN_117h9tB" resolve="Standard" />
             </node>
@@ -4486,6 +4476,23 @@
         <ref role="2DFCCC" to="oyrz:64PSf$EMKQ2" resolve="FlagMessage" />
         <node concept="20qIzx" id="5qqOeaPGoaH" role="10ot2L">
           <node concept="3clFbS" id="5qqOeaPGoaI" role="2VODD2">
+            <node concept="3clFbH" id="71STBfXrv7V" role="3cqZAp" />
+            <node concept="3clFbF" id="71STBfXrvdn" role="3cqZAp">
+              <node concept="2OqwBi" id="71STBfXrvdo" role="3clFbG">
+                <node concept="2OqwBi" id="71STBfXrvdp" role="2Oq$k0">
+                  <node concept="3urNQE" id="71STBfXrvdq" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
+                  </node>
+                  <node concept="2dcwcJ" id="71STBfXrvdr" role="2OqNvi">
+                    <ref role="2dcwcH" to="eqbi:4u029Jv8vG8" resolve="totalValue" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="71STBfXrvds" role="2OqNvi">
+                  <ref role="37wK5l" to="28jr:653WpvxxYh8" resolve="requestFocus" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="71STBfXrv89" role="3cqZAp" />
             <node concept="mlg3r" id="4nH4LOF$HCM" role="3cqZAp">
               <node concept="3fqX7Q" id="4nH4LOF$HCN" role="mlgNJ">
                 <node concept="1eOMI4" id="4nH4LOF$HCO" role="3fr31v">
@@ -4690,6 +4697,23 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="37VUDlBwsVG" role="3cqZAp" />
+          <node concept="3clFbF" id="37VUDlBwt1E" role="3cqZAp">
+            <node concept="2OqwBi" id="37VUDlBwtzr" role="3clFbG">
+              <node concept="2OqwBi" id="37VUDlBwt8t" role="2Oq$k0">
+                <node concept="3urNQE" id="37VUDlBwt1C" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
+                </node>
+                <node concept="2dcwcJ" id="37VUDlBwtmQ" role="2OqNvi">
+                  <ref role="2dcwcH" to="eqbi:4u029Jv8vG8" resolve="totalValue" />
+                </node>
+              </node>
+              <node concept="liA8E" id="37VUDlBwtNf" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:653WpvxxYh8" resolve="requestFocus" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="37VUDlBwtT4" role="3cqZAp" />
           <node concept="3clFbF" id="7RzRXa3H9fF" role="3cqZAp">
             <node concept="3urNQE" id="5TC7JC3Wpuo" role="3clFbG">
               <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
@@ -4786,19 +4810,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="2veflS" id="5TC7JC3Wpnv" role="e0yQD">
-      <node concept="2OqwBi" id="5TC7JC3Wpnw" role="2vefmd">
-        <node concept="3urNQE" id="5TC7JC3Wpus" role="2Oq$k0">
-          <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
-        </node>
-        <node concept="2S8uIT" id="5TC7JC3Wpnx" role="2OqNvi">
-          <ref role="2S8YL0" to="eqbi:AN_117c2L7" resolve="status" />
-        </node>
-      </node>
-      <node concept="2vefiz" id="5TC7JC3Wpny" role="2vefj5">
-        <ref role="2vefiw" to="eqbi:AN_117c2KY" resolve="created" />
       </node>
     </node>
     <node concept="Xl_RD" id="3v9X2lgO1W$" role="19I_$n">
@@ -9907,6 +9918,11 @@
         <node concept="3Oe$u_" id="3Z5UV2c6s5h" role="3$nDjG">
           <ref role="3O0p26" to="eqbi:4u029Jv8vG8" resolve="totalValue" />
         </node>
+        <node concept="Pl0HC" id="37VUDlBCplZ" role="PoUSh">
+          <node concept="Xl_RD" id="37VUDlBCpm0" role="Pl0H_">
+            <property role="Xl_RC" value="DAN" />
+          </node>
+        </node>
       </node>
       <node concept="2TG9WW" id="3Z5UV2c6s5k" role="3OfFNq">
         <node concept="3Oe$u_" id="3Z5UV2c6s5l" role="3$nDjG">
@@ -13588,6 +13604,13 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="6RDa77rB8Ab" role="jymVt" />
+    <node concept="3clFb_" id="6RDa77rB7ee" role="jymVt">
+      <property role="TrG5h" value="preDelayedAfterFullUiInitialized" />
+      <node concept="3cqZAl" id="6RDa77rB7ef" role="3clF45" />
+      <node concept="3Tm1VV" id="6RDa77rB7eg" role="1B3o_S" />
+      <node concept="3clFbS" id="6RDa77rB7ep" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="7HGubScBkiU" role="jymVt" />
     <node concept="3clFb_" id="7HGubScBx9J" role="jymVt">

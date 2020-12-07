@@ -4,9 +4,13 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${mowareHome}/objectflow/solutions/sandbox/jars/basis" type="java_classes">
+      <sourceRoot location="slf4j-api-1.7.25.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${mowareHome}/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
+    <stubModelEntry path="${mowareHome}/objectflow/solutions/sandbox/jars/basis/slf4j-api-1.7.25.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
