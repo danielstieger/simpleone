@@ -224,6 +224,7 @@
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <child id="4222064144042812753" name="andIsEnabledNew" index="e0yQD" />
         <child id="1394557069846129412" name="finalCancelSelection" index="Wq_P0" />
+        <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalOkSelection" index="3vkzKj" />
@@ -899,6 +900,9 @@
       <node concept="2vefiz" id="5TC7JC3Wpsz" role="2vefj5">
         <ref role="2vefiw" node="5A$AnVDpmBe" resolve="closed" />
       </node>
+    </node>
+    <node concept="20qIzx" id="7U8SbhftUT$" role="10_T4l">
+      <node concept="3clFbS" id="7U8SbhftUT_" role="2VODD2" />
     </node>
   </node>
   <node concept="2EH5hC" id="5A$AnVDpmTb">

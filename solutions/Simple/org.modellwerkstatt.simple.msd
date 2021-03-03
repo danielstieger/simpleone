@@ -4,8 +4,11 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${mowareHome}/objectflow/solutions/sandbox/jars/basis" type="java_classes">
-      <sourceRoot location="slf4j-api-1.7.25.jar" />
+    <modelRoot contentPath="/Users/danielstieger/stuff/spring5/libs" type="java_classes">
+      <sourceRoot location="spring-context-5.2.9.RELEASE.jar" />
+      <sourceRoot location="spring-core-5.2.9.RELEASE.jar" />
+      <sourceRoot location="spring-beans-5.2.9.RELEASE.jar" />
+      <sourceRoot location="spring-jdbc-5.2.9.RELEASE.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
