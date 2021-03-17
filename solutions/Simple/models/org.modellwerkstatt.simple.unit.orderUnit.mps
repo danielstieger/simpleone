@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
@@ -234,11 +234,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -589,6 +586,14 @@
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -617,8 +622,8 @@
   </registry>
   <node concept="3ugp7m" id="4u029Jv8v68">
     <property role="TrG5h" value="Search Orders" />
-    <property role="19I623" value="SEARCH_CMD" />
-    <property role="3uBtrS" value="S_83" />
+    <property role="19I623" value="6Rdz00$tuDj/SEARCH_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSB/S" />
     <property role="1UlA2q" value="true" />
     <node concept="3ugp7q" id="AN_117fcM0" role="3ug97V">
       <property role="TrG5h" value="FilterPage" />
@@ -698,8 +703,8 @@
       </node>
       <node concept="3063JU" id="5XruxTJPWFG" role="3063Jp">
         <ref role="3063JT" node="5XruxTJPW$P" resolve="Search Order Pane" />
-        <node concept="3clFbT" id="4uXwdwF76S6" role="2CtmLH">
-          <property role="3clFbU" value="false" />
+        <node concept="1bGNo" id="2a0RfU21ZXZ" role="2CtmLH">
+          <ref role="1bGZi" to="oyrz:6A6XM2SxGWC" resolve="RICH" />
         </node>
       </node>
       <node concept="3063JU" id="53acIw4Wi0r" role="3063Jp">
@@ -728,7 +733,7 @@
       <ref role="3gcvY6" node="AN_117f5lp" resolve="OrderSearchView" />
       <node concept="10qiFn" id="AN_117fie9" role="10qiF9">
         <property role="TrG5h" value="Back" />
-        <property role="10BtBF" value="NOSAVE_CONCLUSION" />
+        <property role="10BtBF" value="1Csx3LqwlRk/NOSAVE_CONCLUSION" />
         <ref role="2DFCCC" to="oyrz:6xifBbDMvuX" resolve="SearchFilter" />
         <node concept="20qIzx" id="AN_117filJ" role="10ot2L">
           <node concept="3clFbS" id="AN_117filK" role="2VODD2">
@@ -772,8 +777,13 @@
         <node concept="20qIzx" id="7ecadVRqtrn" role="10ot2L">
           <node concept="3clFbS" id="7ecadVRqtro" role="2VODD2">
             <node concept="3SKdUt" id="6xifBbDMvIS" role="3cqZAp">
-              <node concept="3SKdUq" id="6xifBbDMvIU" role="3SKWNk">
-                <property role="3SKdUp" value="dummy text" />
+              <node concept="1PaTwC" id="38_UPIIR3NU" role="3ndbpf">
+                <node concept="3oM_SD" id="38_UPIIR3NV" role="1PaTwD">
+                  <property role="3oM_SC" value="dummy" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3NW" role="1PaTwD">
+                  <property role="3oM_SC" value="text" />
+                </node>
               </node>
             </node>
             <node concept="10Adxa" id="7ecadVRqtrp" role="3cqZAp">
@@ -1134,8 +1144,8 @@
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
     <property role="TrG5h" value="Edit Order" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <property role="3uBtrS" value="ENTER_10" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSX/ENTER" />
     <property role="1UlA2q" value="true" />
     <node concept="3ulXEN" id="5TC7JC3WpsQ" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
@@ -1323,7 +1333,7 @@
       </node>
       <node concept="10qiFn" id="5ol$NvKd4$" role="10qiF9">
         <property role="TrG5h" value="Msg" />
-        <property role="10BtBF" value="NOSAVE_CONCLUSION" />
+        <property role="10BtBF" value="1Csx3LqwlRk/NOSAVE_CONCLUSION" />
         <ref role="2DFCCC" to="oyrz:5ol$NvKd7x" resolve="Msg" />
         <node concept="20qIzx" id="5ol$NvKdd4" role="10ot2L">
           <node concept="3clFbS" id="5ol$NvKdd5" role="2VODD2">
@@ -1427,23 +1437,7 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="5qtEEIGy_qy" role="3cqZAp">
-            <node concept="2OqwBi" id="5qtEEIGy_qv" role="3clFbG">
-              <node concept="10M0yZ" id="5qtEEIGy_qw" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="5qtEEIGy_qx" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                <node concept="Xl_RD" id="5qtEEIGy_rY" role="37wK5m">
-                  <property role="Xl_RC" value="Page load() for Edit Order" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbH" id="2gjGACnxORb" role="3cqZAp" />
-          <node concept="3clFbH" id="2gjGACn_TsB" role="3cqZAp" />
-          <node concept="3clFbH" id="2gjGACn_TvL" role="3cqZAp" />
           <node concept="mlg3r" id="1X3c4oMJjHB" role="3cqZAp">
             <node concept="lgADV" id="1X3c4oMJjHC" role="mlgNH">
               <node concept="35AVbj" id="1X3c4oMJjHD" role="lgxf9">
@@ -1465,7 +1459,6 @@
             </node>
           </node>
           <node concept="3clFbH" id="2gjGACnxOGC" role="3cqZAp" />
-          <node concept="3clFbH" id="2gjGACn_Tzr" role="3cqZAp" />
           <node concept="3clFbJ" id="5qtEEIGAoT3" role="3cqZAp">
             <node concept="3clFbS" id="5qtEEIGAoT5" role="3clFbx">
               <node concept="YS8fn" id="5qtEEIGAppb" role="3cqZAp">
@@ -1563,17 +1556,54 @@
     <node concept="20qIzx" id="AN_117h9vz" role="3umfm7">
       <node concept="3clFbS" id="AN_117h9v$" role="2VODD2">
         <node concept="3SKdUt" id="5hYsHqQ_CQg" role="3cqZAp">
-          <node concept="3SKdUq" id="5hYsHqQ_CQi" role="3SKWNk">
-            <property role="3SKdUp" value="force not saved dialog! " />
+          <node concept="1PaTwC" id="38_UPIIR3NX" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3NY" role="1PaTwD">
+              <property role="3oM_SC" value="force" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3NZ" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3O0" role="1PaTwD">
+              <property role="3oM_SC" value="saved" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3O1" role="1PaTwD">
+              <property role="3oM_SC" value="dialog!" />
+            </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4bXc32fgqK6" role="3cqZAp">
+          <node concept="2OqwBi" id="4bXc32fgqXD" role="3clFbG">
+            <node concept="3y28L$" id="4bXc32fgqK4" role="2Oq$k0" />
+            <node concept="liA8E" id="4bXc32fgrcf" role="2OqNvi">
+              <ref role="37wK5l" to="w7gk:6vtMBTngXqz" resolve="ensureInSession" />
+              <node concept="2ShNRf" id="4bXc32fgrd1" role="37wK5m">
+                <node concept="1pGfFk" id="4bXc32fguiI" role="2ShVmc">
+                  <ref role="37wK5l" to="eqbi:4u029Jv8wD1" resolve="Order" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4bXc32fgqzs" role="3cqZAp" />
         <node concept="3clFbJ" id="v00WQap43C" role="3cqZAp">
           <node concept="3clFbS" id="v00WQap43E" role="3clFbx">
             <node concept="3SKdUt" id="v00WQap4pg" role="3cqZAp">
-              <node concept="3SKdUq" id="v00WQap4pi" role="3SKWNk">
-                <property role="3SKdUp" value="order passed from outside" />
+              <node concept="1PaTwC" id="38_UPIIR3O2" role="3ndbpf">
+                <node concept="3oM_SD" id="38_UPIIR3O3" role="1PaTwD">
+                  <property role="3oM_SC" value="order" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3O4" role="1PaTwD">
+                  <property role="3oM_SC" value="passed" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3O5" role="1PaTwD">
+                  <property role="3oM_SC" value="from" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3O6" role="1PaTwD">
+                  <property role="3oM_SC" value="outside" />
+                </node>
               </node>
             </node>
+            <node concept="3clFbH" id="4bXc32fgq6S" role="3cqZAp" />
           </node>
           <node concept="2OqwBi" id="v00WQap4gY" role="3clFbw">
             <node concept="3y28L$" id="v00WQap4aE" role="2Oq$k0" />
@@ -1621,13 +1651,11 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="4bXc32fgq7b" role="3cqZAp" />
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="4ZCTy50lxfU" role="3cqZAp" />
-        <node concept="3clFbH" id="4ZCTy50lx64" role="3cqZAp" />
-        <node concept="3clFbH" id="4ZCTy50pWiF" role="3cqZAp" />
-        <node concept="3clFbH" id="4kNjw_ntncm" role="3cqZAp" />
         <node concept="3cpWs8" id="6QYU_OS3WMX" role="3cqZAp">
           <node concept="3cpWsn" id="6QYU_OS3WN0" role="3cpWs9">
             <property role="TrG5h" value="someViews" />
@@ -1781,8 +1809,19 @@
         </node>
         <node concept="3clFbH" id="OuCfNxW1gL" role="3cqZAp" />
         <node concept="3SKdUt" id="3cAl6M4p9eR" role="3cqZAp">
-          <node concept="3SKdUq" id="3cAl6M4p9eS" role="3SKWNk">
-            <property role="3SKdUp" value="check in order here! " />
+          <node concept="1PaTwC" id="38_UPIIR3O7" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3O8" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3O9" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Oa" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Ob" role="1PaTwD">
+              <property role="3oM_SC" value="here!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="75Ym_uF9OVb" role="3cqZAp">
@@ -2102,9 +2141,6 @@
           <node concept="3clFbS" id="2kpuhi0vFSC" role="2VODD2">
             <node concept="10Adxa" id="2kpuhi0vFT4" role="3cqZAp">
               <ref role="10Adxb" node="AN_117ldD7" resolve="Standard" />
-              <node concept="Xl_RD" id="2kpuhi0vFU7" role="1pYyQs">
-                <property role="Xl_RC" value="This was the go :)" />
-              </node>
             </node>
           </node>
         </node>
@@ -2128,15 +2164,37 @@
             <node concept="3clFbJ" id="AN_117nQtV" role="3cqZAp">
               <node concept="3clFbS" id="AN_117nQtX" role="3clFbx">
                 <node concept="3SKdUt" id="AN_117nQD7" role="3cqZAp">
-                  <node concept="3SKdUq" id="AN_117nQDo" role="3SKWNk">
-                    <property role="3SKdUp" value="same ean again? " />
+                  <node concept="1PaTwC" id="38_UPIIR3Oc" role="3ndbpf">
+                    <node concept="3oM_SD" id="38_UPIIR3Od" role="1PaTwD">
+                      <property role="3oM_SC" value="same" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Oe" role="1PaTwD">
+                      <property role="3oM_SC" value="ean" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Of" role="1PaTwD">
+                      <property role="3oM_SC" value="again?" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbJ" id="AN_117nQEM" role="3cqZAp">
                   <node concept="3clFbS" id="AN_117nQEO" role="3clFbx">
                     <node concept="3SKdUt" id="AN_117nRn8" role="3cqZAp">
-                      <node concept="3SKdUq" id="AN_117nRnp" role="3SKWNk">
-                        <property role="3SKdUp" value="yes. so just increase amount" />
+                      <node concept="1PaTwC" id="38_UPIIR3Og" role="3ndbpf">
+                        <node concept="3oM_SD" id="38_UPIIR3Oh" role="1PaTwD">
+                          <property role="3oM_SC" value="yes." />
+                        </node>
+                        <node concept="3oM_SD" id="38_UPIIR3Oi" role="1PaTwD">
+                          <property role="3oM_SC" value="so" />
+                        </node>
+                        <node concept="3oM_SD" id="38_UPIIR3Oj" role="1PaTwD">
+                          <property role="3oM_SC" value="just" />
+                        </node>
+                        <node concept="3oM_SD" id="38_UPIIR3Ok" role="1PaTwD">
+                          <property role="3oM_SC" value="increase" />
+                        </node>
+                        <node concept="3oM_SD" id="38_UPIIR3Ol" role="1PaTwD">
+                          <property role="3oM_SC" value="amount" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbF" id="AN_117nRpy" role="3cqZAp">
@@ -2233,8 +2291,28 @@
                 </node>
                 <node concept="3clFbH" id="AN_117nTXT" role="3cqZAp" />
                 <node concept="3SKdUt" id="AN_117nTO6" role="3cqZAp">
-                  <node concept="3SKdUq" id="AN_117nTVz" role="3SKWNk">
-                    <property role="3SKdUp" value="else, update amount from helper to lastPos" />
+                  <node concept="1PaTwC" id="38_UPIIR3Om" role="3ndbpf">
+                    <node concept="3oM_SD" id="38_UPIIR3On" role="1PaTwD">
+                      <property role="3oM_SC" value="else," />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Oo" role="1PaTwD">
+                      <property role="3oM_SC" value="update" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Op" role="1PaTwD">
+                      <property role="3oM_SC" value="amount" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Oq" role="1PaTwD">
+                      <property role="3oM_SC" value="from" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Or" role="1PaTwD">
+                      <property role="3oM_SC" value="helper" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Os" role="1PaTwD">
+                      <property role="3oM_SC" value="to" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3Ot" role="1PaTwD">
+                      <property role="3oM_SC" value="lastPos" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="4XOQNRZbNCw" role="3cqZAp">
@@ -2268,8 +2346,28 @@
             <node concept="3clFbH" id="4XOQNRZbKNT" role="3cqZAp" />
             <node concept="3clFbH" id="4XOQNRZbL6R" role="3cqZAp" />
             <node concept="3SKdUt" id="AN_117nUIi" role="3cqZAp">
-              <node concept="3SKdUq" id="AN_117nUSC" role="3SKWNk">
-                <property role="3SKdUp" value="do we have that position already available?" />
+              <node concept="1PaTwC" id="38_UPIIR3Ou" role="3ndbpf">
+                <node concept="3oM_SD" id="38_UPIIR3Ov" role="1PaTwD">
+                  <property role="3oM_SC" value="do" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3Ow" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3Ox" role="1PaTwD">
+                  <property role="3oM_SC" value="have" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3Oy" role="1PaTwD">
+                  <property role="3oM_SC" value="that" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3Oz" role="1PaTwD">
+                  <property role="3oM_SC" value="position" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3O$" role="1PaTwD">
+                  <property role="3oM_SC" value="already" />
+                </node>
+                <node concept="3oM_SD" id="38_UPIIR3O_" role="1PaTwD">
+                  <property role="3oM_SC" value="available?" />
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="AN_117nVf9" role="3cqZAp">
@@ -2325,8 +2423,16 @@
             <node concept="3clFbJ" id="AN_117nYdv" role="3cqZAp">
               <node concept="3clFbS" id="AN_117nYdx" role="3clFbx">
                 <node concept="3SKdUt" id="AN_117nYPe" role="3cqZAp">
-                  <node concept="3SKdUq" id="AN_117nYPo" role="3SKWNk">
-                    <property role="3SKdUp" value="create one then. " />
+                  <node concept="1PaTwC" id="38_UPIIR3OA" role="3ndbpf">
+                    <node concept="3oM_SD" id="38_UPIIR3OB" role="1PaTwD">
+                      <property role="3oM_SC" value="create" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3OC" role="1PaTwD">
+                      <property role="3oM_SC" value="one" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3OD" role="1PaTwD">
+                      <property role="3oM_SC" value="then." />
+                    </node>
                   </node>
                 </node>
                 <node concept="3cpWs8" id="AN_117nYRT" role="3cqZAp">
@@ -2763,8 +2869,19 @@
             <node concept="3clFbJ" id="2_YacpKQMjk" role="3cqZAp">
               <node concept="3clFbS" id="2_YacpKQMjl" role="3clFbx">
                 <node concept="3SKdUt" id="2_YacpKQMjm" role="3cqZAp">
-                  <node concept="3SKdUq" id="2_YacpKQMjn" role="3SKWNk">
-                    <property role="3SKdUp" value="ean not found .. " />
+                  <node concept="1PaTwC" id="38_UPIIR3OE" role="3ndbpf">
+                    <node concept="3oM_SD" id="38_UPIIR3OF" role="1PaTwD">
+                      <property role="3oM_SC" value="ean" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3OG" role="1PaTwD">
+                      <property role="3oM_SC" value="not" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3OH" role="1PaTwD">
+                      <property role="3oM_SC" value="found" />
+                    </node>
+                    <node concept="3oM_SD" id="38_UPIIR3OI" role="1PaTwD">
+                      <property role="3oM_SC" value=".." />
+                    </node>
                   </node>
                 </node>
                 <node concept="mlg3r" id="4nH4LOF$HCd" role="3cqZAp">
@@ -3181,25 +3298,28 @@
   </node>
   <node concept="3ugp7m" id="4XOQNRZgrKt">
     <property role="TrG5h" value="Edit Order Position" />
-    <property role="3uBtrS" value="E_69" />
-    <node concept="mlg3r" id="4UfyoJaSc3m" role="2V4Fwz">
-      <node concept="2veflS" id="4UfyoJaScXn" role="mlgNJ">
-        <node concept="2vefiz" id="4UfyoJaScYJ" role="2vefj5">
-          <ref role="2vefiw" to="eqbi:2IUGN4P8gxl" resolve="accepted" />
+    <property role="3uBtrS" value="1hImSMr5NSr/E" />
+    <node concept="mlg3r" id="2a0RfU2248N" role="2V4Fwz">
+      <node concept="2veflS" id="2a0RfU224zP" role="mlgNJ">
+        <node concept="2vefiz" id="2a0RfU224_G" role="2vefj5">
+          <ref role="2vefiw" to="eqbi:AN_117c2KY" resolve="created" />
         </node>
-        <node concept="2OqwBi" id="4UfyoJaScMA" role="2vefmd">
-          <node concept="3urNQE" id="4UfyoJaScKW" role="2Oq$k0">
-            <ref role="3cqZAo" node="4XOQNRZgrPU" resolve="pos" />
+        <node concept="2vefiz" id="2a0RfU224BG" role="2vefj5">
+          <ref role="2vefiw" to="eqbi:AN_117c2L0" resolve="ordered" />
+        </node>
+        <node concept="2OqwBi" id="2a0RfU224ru" role="2vefmd">
+          <node concept="3urNQE" id="2a0RfU224p9" role="2Oq$k0">
+            <ref role="3cqZAo" node="5TC7JC3Wptq" resolve="orderprocParam" />
           </node>
-          <node concept="2S8uIT" id="4UfyoJaScQ4" role="2OqNvi">
-            <ref role="2S8YL0" to="eqbi:2IUGN4P8g$C" resolve="status" />
+          <node concept="2S8uIT" id="2a0RfU224uy" role="2OqNvi">
+            <ref role="2S8YL0" to="eqbi:AN_117c2L7" resolve="status" />
           </node>
         </node>
       </node>
-      <node concept="lgADV" id="4UfyoJaSc3o" role="mlgNH">
-        <node concept="35AVbj" id="4UfyoJaSc3p" role="lgxf9">
-          <node concept="ic4WF" id="4UfyoJaSc3q" role="icr7_">
-            <property role="ic4Xk" value="Hello" />
+      <node concept="lgADV" id="2a0RfU2248P" role="mlgNH">
+        <node concept="35AVbj" id="2a0RfU2248Q" role="lgxf9">
+          <node concept="ic4WF" id="2a0RfU2248R" role="icr7_">
+            <property role="ic4Xk" value="Order document has to be in state created/ordered." />
           </node>
         </node>
       </node>
@@ -3248,25 +3368,6 @@
         <node concept="20qIzx" id="4XOQNRZgrVW" role="10ot2L">
           <node concept="3clFbS" id="4XOQNRZgrVX" role="2VODD2">
             <node concept="3clFbH" id="3sbPL42pAej" role="3cqZAp" />
-            <node concept="mlg3r" id="4nH4LOF$HD4" role="3cqZAp">
-              <node concept="3fqX7Q" id="4nH4LOF$HD5" role="mlgNJ">
-                <node concept="1eOMI4" id="4nH4LOF$HD6" role="3fr31v">
-                  <node concept="3eOSWO" id="4bYxf2Fl0jE" role="1eOMHV">
-                    <node concept="3cmrfG" id="4bYxf2Fl0jK" role="3uHU7w">
-                      <property role="3cmrfH" value="10" />
-                    </node>
-                    <node concept="3cmrfG" id="4bYxf2Fl0dT" role="3uHU7B">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="lgADV" id="4nH4LOF$HD7" role="mlgNH">
-                <node concept="Xl_RD" id="4bYxf2Fl0d9" role="lgxf9">
-                  <property role="Xl_RC" value="Test cancel" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="4bYxf2Fl0nT" role="3cqZAp">
               <node concept="3clFbS" id="4bYxf2Fl0nV" role="3clFbx">
                 <node concept="YS8fn" id="uIozejIidf" role="3cqZAp">
@@ -3289,6 +3390,7 @@
                 </node>
               </node>
             </node>
+            <node concept="10Adxj" id="2a0RfU22573" role="3cqZAp" />
           </node>
         </node>
       </node>
@@ -3298,16 +3400,12 @@
         <node concept="20qIzx" id="uIozejIjeA" role="10ot2L">
           <node concept="3clFbS" id="uIozejIjeB" role="2VODD2">
             <node concept="mlg3r" id="4nH4LOF$HC_" role="3cqZAp">
-              <node concept="3fqX7Q" id="4nH4LOF$HCA" role="mlgNJ">
-                <node concept="1eOMI4" id="4nH4LOF$HCB" role="3fr31v">
-                  <node concept="3eOVzh" id="uIozejIjo4" role="1eOMHV">
-                    <node concept="3cmrfG" id="uIozejIjoa" role="3uHU7w">
-                      <property role="3cmrfH" value="10" />
-                    </node>
-                    <node concept="3cmrfG" id="uIozejIjl9" role="3uHU7B">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                  </node>
+              <node concept="3eOSWO" id="2a0RfU224Xh" role="mlgNJ">
+                <node concept="3cmrfG" id="2a0RfU224We" role="3uHU7B">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="3cmrfG" id="2a0RfU224Yp" role="3uHU7w">
+                  <property role="3cmrfH" value="20" />
                 </node>
               </node>
               <node concept="lgADV" id="4nH4LOF$HCC" role="mlgNH">
@@ -3424,35 +3522,7 @@
       </node>
     </node>
     <node concept="20qIzx" id="jDMPdcybee" role="3umfm7">
-      <node concept="3clFbS" id="jDMPdcybef" role="2VODD2">
-        <node concept="3clFbJ" id="76rZKFTh7oa" role="3cqZAp">
-          <node concept="3clFbS" id="76rZKFTh7oc" role="3clFbx">
-            <node concept="mlg3r" id="4nH4LOF$HCH" role="3cqZAp">
-              <node concept="lgADV" id="4nH4LOF$HCI" role="mlgNH">
-                <node concept="Xl_RD" id="76rZKFTh7uu" role="lgxf9">
-                  <property role="Xl_RC" value="BING" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="76rZKFTh7rM" role="3clFbw">
-            <node concept="2XvMaL" id="76rZKFTh7sJ" role="3uHU7w">
-              <ref role="2XvMaQ" to="eqbi:2IUGN4P8gvE" resolve="PositionStatus" />
-              <node concept="2vefiz" id="wGbog3pXNp" role="h55Ek">
-                <ref role="2vefiw" to="eqbi:2IUGN4P9es0" resolve="unknown" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="76rZKFTh7p3" role="3uHU7B">
-              <node concept="3urNQE" id="76rZKFTh7oz" role="2Oq$k0">
-                <ref role="3cqZAo" node="4XOQNRZgrPU" resolve="pos" />
-              </node>
-              <node concept="2S8uIT" id="76rZKFTh7q7" role="2OqNvi">
-                <ref role="2S8YL0" to="eqbi:2IUGN4P8g$C" resolve="status" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="jDMPdcybef" role="2VODD2" />
     </node>
     <node concept="20qIzx" id="7K21hvEaf1t" role="10_T4m">
       <node concept="3clFbS" id="7K21hvEaf1u" role="2VODD2">
@@ -3476,7 +3546,7 @@
   <node concept="3ugp7m" id="6OyHsl_7imr">
     <property role="TrG5h" value="Edit all OrderPositions" />
     <property role="1UlA2q" value="true" />
-    <property role="3uBtrS" value="E_69" />
+    <property role="3uBtrS" value="1hImSMr5NSr/E" />
     <node concept="3ulXEN" id="5TC7JC3Wptz" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpt$" role="1tU5fm">
@@ -3665,7 +3735,7 @@
   </node>
   <node concept="3ugp7m" id="3cAl6M4vge_">
     <property role="TrG5h" value="Reset Order" />
-    <property role="3uBtrS" value="R_82" />
+    <property role="3uBtrS" value="1hImSMr5NSA/R" />
     <node concept="3ulXEN" id="5TC7JC3WptI" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WptJ" role="1tU5fm">
@@ -3722,7 +3792,7 @@
   </node>
   <node concept="3ugp7m" id="3cAl6M4wnPW">
     <property role="TrG5h" value="Complex Edit Order" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <property role="1UlA2q" value="false" />
     <node concept="3ulXEN" id="5TC7JC3WptP" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
@@ -3908,8 +3978,19 @@
         </node>
         <node concept="3clFbH" id="6vtMBTnCRsr" role="3cqZAp" />
         <node concept="3SKdUt" id="3cAl6M4wnQM" role="3cqZAp">
-          <node concept="3SKdUq" id="3cAl6M4wnQN" role="3SKWNk">
-            <property role="3SKdUp" value="check in order here! " />
+          <node concept="1PaTwC" id="38_UPIIR3OJ" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3OK" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OL" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OM" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3ON" role="1PaTwD">
+              <property role="3oM_SC" value="here!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="5Ld38uCUbx5" role="3cqZAp">
@@ -3969,7 +4050,7 @@
   </node>
   <node concept="3ugp7m" id="3cAl6M4xA3w">
     <property role="TrG5h" value="Meta Head Wizzard" />
-    <property role="3uBtrS" value="H_72" />
+    <property role="3uBtrS" value="1hImSMr5NSt/H" />
     <node concept="3ulXEN" id="5TC7JC3WptX" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WptY" role="1tU5fm">
@@ -4726,8 +4807,8 @@
             <node concept="37vLTI" id="6Uq8sBmESn$" role="3clFbG">
               <node concept="2XvMaL" id="6Uq8sBmIhpx" role="37vLTx">
                 <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-                <node concept="2vefiz" id="6Uq8sBmIhxa" role="h55Ek">
-                  <ref role="2vefiw" to="eqbi:AN_117c2L3" resolve="completed" />
+                <node concept="2vefiz" id="6hAaVCriQB3" role="h55Ek">
+                  <ref role="2vefiw" to="eqbi:AN_117c2KY" resolve="created" />
                 </node>
               </node>
               <node concept="2OqwBi" id="6Uq8sBmES1V" role="37vLTJ">
@@ -4815,22 +4896,70 @@
     </node>
     <node concept="20qIzx" id="3xGERTNpEVL" role="3umfm7">
       <node concept="3clFbS" id="3xGERTNpEVM" role="2VODD2">
-        <node concept="mlg3r" id="4nH4LOF$HD8" role="3cqZAp">
-          <node concept="3y3z36" id="4nH4LOF$HD9" role="mlgNJ">
-            <node concept="3urNQE" id="3xGERTNpEX1" role="3uHU7B">
-              <ref role="3cqZAo" node="3xGERTNpEMe" resolve="spec" />
+        <node concept="3clFbH" id="6hAaVCreafD" role="3cqZAp" />
+        <node concept="mlg3r" id="6hAaVCreahe" role="3cqZAp">
+          <node concept="3eOSWO" id="6hAaVCrea$V" role="mlgNJ">
+            <node concept="3cmrfG" id="6hAaVCrea_1" role="3uHU7w">
+              <property role="3cmrfH" value="20" />
             </node>
-            <node concept="Rm8GO" id="3xGERTNpEX0" role="3uHU7w">
-              <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-              <ref role="Rm8GQ" to="oyrz:7dlwzTfDyn_" resolve="CANCEL" />
+            <node concept="3cmrfG" id="6hAaVCreaiy" role="3uHU7B">
+              <property role="3cmrfH" value="1" />
             </node>
           </node>
-          <node concept="lgADV" id="4nH4LOF$HDa" role="mlgNH">
-            <node concept="Xl_RD" id="3xGERTNpEWY" role="lgxf9">
-              <property role="Xl_RC" value="Edit Order Head in page init canceled." />
+          <node concept="lgADV" id="6hAaVCreahh" role="mlgNH">
+            <node concept="35AVbj" id="6hAaVCreahi" role="lgxf9">
+              <node concept="ic4WF" id="6hAaVCreahj" role="icr7_">
+                <property role="ic4Xk" value="(1) Das ist ein Warning HINT in einer precondition Graph_Edit" />
+              </node>
+            </node>
+          </node>
+          <node concept="mp1e1" id="6hAaVCrebqs" role="mp0NM">
+            <ref role="mp1e0" to="28jr:51llZt5Ptbk" resolve="WARNING_HINT" />
+          </node>
+        </node>
+        <node concept="mlg3r" id="6hAaVCrmg10" role="3cqZAp">
+          <node concept="3eOSWO" id="6hAaVCrmg11" role="mlgNJ">
+            <node concept="3cmrfG" id="6hAaVCrmg12" role="3uHU7w">
+              <property role="3cmrfH" value="20" />
+            </node>
+            <node concept="3cmrfG" id="6hAaVCrmg13" role="3uHU7B">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="lgADV" id="6hAaVCrmg14" role="mlgNH">
+            <node concept="35AVbj" id="6hAaVCrmg15" role="lgxf9">
+              <node concept="ic4WF" id="6hAaVCrmg16" role="icr7_">
+                <property role="ic4Xk" value="(2) Das ist ein Warning HINT in einer precondition Graph_Edit" />
+              </node>
+            </node>
+          </node>
+          <node concept="mp1e1" id="6hAaVCrmg17" role="mp0NM">
+            <ref role="mp1e0" to="28jr:51llZt5Ptbk" resolve="WARNING_HINT" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6hAaVCreafO" role="3cqZAp" />
+        <node concept="1X3_iC" id="6hAaVCrebL1" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="mlg3r" id="4nH4LOF$HD8" role="8Wnug">
+            <node concept="3y3z36" id="4nH4LOF$HD9" role="mlgNJ">
+              <node concept="3urNQE" id="3xGERTNpEX1" role="3uHU7B">
+                <ref role="3cqZAo" node="3xGERTNpEMe" resolve="spec" />
+              </node>
+              <node concept="Rm8GO" id="3xGERTNpEX0" role="3uHU7w">
+                <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
+                <ref role="Rm8GQ" to="oyrz:7dlwzTfDyn_" resolve="CANCEL" />
+              </node>
+            </node>
+            <node concept="lgADV" id="4nH4LOF$HDa" role="mlgNH">
+              <node concept="Xl_RD" id="3xGERTNpEWY" role="lgxf9">
+                <property role="Xl_RC" value="Edit Order Head in page init canceled." />
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6hAaVCrkzAy" role="3cqZAp" />
+        <node concept="10Adxj" id="6hAaVCrkzC8" role="3cqZAp" />
       </node>
     </node>
     <node concept="20qIzx" id="s8qRni3Z1a" role="10_T4l">
@@ -4860,7 +4989,7 @@
   </node>
   <node concept="3ugp7m" id="1ReQ$xd3KdU">
     <property role="TrG5h" value="Message Command" />
-    <property role="3uBtrS" value="M_77" />
+    <property role="3uBtrS" value="1hImSMr5NSx/M" />
     <node concept="3ulXEN" id="5TC7JC3Wpuv" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpuw" role="1tU5fm">
@@ -4934,8 +5063,8 @@
   </node>
   <node concept="3ugp7m" id="2IUGN4P78gB">
     <property role="TrG5h" value="New Order" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <property role="3uBtrS" value="N_78" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSy/N" />
     <node concept="3ulXEN" id="5TC7JC3Wpu_" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpuA" role="1tU5fm">
@@ -5065,7 +5194,7 @@
   </node>
   <node concept="3ugp7m" id="3Z5UV2c6rtl">
     <property role="TrG5h" value="Size Head Wizzard" />
-    <property role="3uBtrS" value="S_83" />
+    <property role="3uBtrS" value="1hImSMr5NSB/S" />
     <node concept="3ulXEN" id="5TC7JC3WpuK" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpuL" role="1tU5fm">
@@ -5374,7 +5503,7 @@
   </node>
   <node concept="3ugp7m" id="4ysbFF_SY5X">
     <property role="TrG5h" value="Edit Order by open Param" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="5TC7JC3WpuW" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpuX" role="1tU5fm">
@@ -5535,7 +5664,7 @@
   </node>
   <node concept="3ugp7m" id="5SbyawjeQdI">
     <property role="TrG5h" value="Show Empty Order" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEM" id="5SbyawjeSgx" role="3ulXEG">
       <property role="TrG5h" value="o" />
       <node concept="3uibUv" id="5SbyawjeSgP" role="1tU5fm">
@@ -5659,7 +5788,7 @@
                 <property role="Xl_RC" value="OrderDocument.xml" />
               </node>
               <node concept="1WHerN" id="1pEW74icb20" role="37wK5m">
-                <property role="1WHdSU" value="XML" />
+                <property role="1WHdSU" value="5tU8YWFO8zP/XML" />
                 <node concept="3urNQE" id="5TC7JC3Wpvb" role="1WEEMK">
                   <ref role="3cqZAo" node="5TC7JC3Wpv8" resolve="orderprocParam" />
                 </node>
@@ -5685,8 +5814,8 @@
     </node>
   </node>
   <node concept="3ugp7m" id="206uhc7i3fr">
-    <property role="3uBtrS" value="F_70" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSs/F" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <property role="TrG5h" value="Complete Order (Multi GO)" />
     <node concept="3ulXEN" id="5TC7JC3Wpvg" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
@@ -5818,7 +5947,7 @@
   </node>
   <node concept="3ugp7m" id="2N_nDunL3de">
     <property role="TrG5h" value="PD DocCreator" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="5TC7JC3Wpvr" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpvs" role="1tU5fm">
@@ -6304,8 +6433,8 @@
   </node>
   <node concept="3ugp7m" id="U8r3Yq8LMH">
     <property role="TrG5h" value="Order Main Doc GE" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <property role="3uBtrS" value="ENTER_10" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSX/ENTER" />
     <node concept="3ulXEN" id="5TC7JC3WpvL" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpvM" role="1tU5fm">
@@ -6383,7 +6512,7 @@
       </node>
       <node concept="10qiFn" id="U8r3Yq8LMY" role="10qiF9">
         <property role="TrG5h" value="Msg" />
-        <property role="10BtBF" value="NOSAVE_CONCLUSION" />
+        <property role="10BtBF" value="1Csx3LqwlRk/NOSAVE_CONCLUSION" />
         <ref role="2DFCCC" to="oyrz:5ol$NvKd7x" resolve="Msg" />
         <node concept="20qIzx" id="U8r3Yq8LMZ" role="10ot2L">
           <node concept="3clFbS" id="U8r3Yq8LN0" role="2VODD2">
@@ -6502,8 +6631,19 @@
     <node concept="20qIzx" id="U8r3Yq8LNw" role="3umfm7">
       <node concept="3clFbS" id="U8r3Yq8LNx" role="2VODD2">
         <node concept="3SKdUt" id="U8r3Yq8LNy" role="3cqZAp">
-          <node concept="3SKdUq" id="U8r3Yq8LNz" role="3SKWNk">
-            <property role="3SKdUp" value="force not saved dialog! " />
+          <node concept="1PaTwC" id="38_UPIIR3OO" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3OP" role="1PaTwD">
+              <property role="3oM_SC" value="force" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OQ" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OR" role="1PaTwD">
+              <property role="3oM_SC" value="saved" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OS" role="1PaTwD">
+              <property role="3oM_SC" value="dialog!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="U8r3Yq8LN$" role="3cqZAp">
@@ -6553,8 +6693,19 @@
     <node concept="20qIzx" id="U8r3Yq8LOq" role="10_T4l">
       <node concept="3clFbS" id="U8r3Yq8LOr" role="2VODD2">
         <node concept="3SKdUt" id="U8r3Yq8LOs" role="3cqZAp">
-          <node concept="3SKdUq" id="U8r3Yq8LOt" role="3SKWNk">
-            <property role="3SKdUp" value="check in order here! " />
+          <node concept="1PaTwC" id="38_UPIIR3OT" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3OU" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OV" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OW" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3OX" role="1PaTwD">
+              <property role="3oM_SC" value="here!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="U8r3Yq8LOu" role="3cqZAp">
@@ -6715,7 +6866,7 @@
   </node>
   <node concept="3ugp7m" id="2Uji7vlCo15">
     <property role="TrG5h" value="PD TaskHandler" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="5TC7JC3Wpw3" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpw4" role="1tU5fm">
@@ -7162,8 +7313,34 @@
         </node>
         <node concept="3clFbH" id="1D2xWyK4Eoe" role="3cqZAp" />
         <node concept="3SKdUt" id="70brf64PPgI" role="3cqZAp">
-          <node concept="3SKdUq" id="70brf64PPgK" role="3SKWNk">
-            <property role="3SKdUp" value="do not have to check that in - alread " />
+          <node concept="1PaTwC" id="38_UPIIR3OY" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3OZ" role="1PaTwD">
+              <property role="3oM_SC" value="do" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P0" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P1" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P2" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P3" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P4" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P5" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P6" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3P7" role="1PaTwD">
+              <property role="3oM_SC" value="alread" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2Uji7vlCo3D" role="3cqZAp">
@@ -7225,8 +7402,8 @@
   </node>
   <node concept="3ugp7m" id="7P$uL5PDZM2">
     <property role="TrG5h" value="Update Conclusion" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <property role="3uBtrS" value="U_85" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSD/U" />
     <node concept="3ulXEM" id="2KQ2inNsF68" role="3ulXEG">
       <property role="TrG5h" value="helper" />
       <node concept="3uibUv" id="2KQ2inNsF8b" role="1tU5fm">
@@ -7362,30 +7539,205 @@
       <node concept="JX2Gw" id="7P$uL5PE7$G" role="JX2Go">
         <node concept="3clFbS" id="7P$uL5PE7$H" role="2VODD2">
           <node concept="3SKdUt" id="3puWk9zQjIr" role="3cqZAp">
-            <node concept="3SKdUq" id="3puWk9zQjIt" role="3SKWNk">
-              <property role="3SKdUp" value="For the sake of consistency in a UI delegate form, all delegates have to issue the update conclusion" />
+            <node concept="1PaTwC" id="38_UPIIR3P8" role="3ndbpf">
+              <node concept="3oM_SD" id="38_UPIIR3P9" role="1PaTwD">
+                <property role="3oM_SC" value="For" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pa" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pb" role="1PaTwD">
+                <property role="3oM_SC" value="sake" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pc" role="1PaTwD">
+                <property role="3oM_SC" value="of" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pd" role="1PaTwD">
+                <property role="3oM_SC" value="consistency" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pe" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pf" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pg" role="1PaTwD">
+                <property role="3oM_SC" value="UI" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Ph" role="1PaTwD">
+                <property role="3oM_SC" value="delegate" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pi" role="1PaTwD">
+                <property role="3oM_SC" value="form," />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pj" role="1PaTwD">
+                <property role="3oM_SC" value="all" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pk" role="1PaTwD">
+                <property role="3oM_SC" value="delegates" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pl" role="1PaTwD">
+                <property role="3oM_SC" value="have" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pm" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pn" role="1PaTwD">
+                <property role="3oM_SC" value="issue" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Po" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pp" role="1PaTwD">
+                <property role="3oM_SC" value="update" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pq" role="1PaTwD">
+                <property role="3oM_SC" value="conclusion" />
+              </node>
             </node>
           </node>
           <node concept="3SKdUt" id="3puWk9zQjmT" role="3cqZAp">
-            <node concept="3SKdUq" id="3puWk9zQjmV" role="3SKWNk">
-              <property role="3SKdUp" value="except the last one (no update necessary, select a conclusion to proceed)" />
+            <node concept="1PaTwC" id="38_UPIIR3Pr" role="3ndbpf">
+              <node concept="3oM_SD" id="38_UPIIR3Ps" role="1PaTwD">
+                <property role="3oM_SC" value="except" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pt" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pu" role="1PaTwD">
+                <property role="3oM_SC" value="last" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pv" role="1PaTwD">
+                <property role="3oM_SC" value="one" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pw" role="1PaTwD">
+                <property role="3oM_SC" value="(no" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Px" role="1PaTwD">
+                <property role="3oM_SC" value="update" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Py" role="1PaTwD">
+                <property role="3oM_SC" value="necessary," />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Pz" role="1PaTwD">
+                <property role="3oM_SC" value="select" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3P$" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3P_" role="1PaTwD">
+                <property role="3oM_SC" value="conclusion" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PA" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PB" role="1PaTwD">
+                <property role="3oM_SC" value="proceed)" />
+              </node>
             </node>
           </node>
           <node concept="3SKdUt" id="3puWk9zQkHk" role="3cqZAp">
-            <node concept="3SKdUq" id="3puWk9zQkHm" role="3SKWNk">
-              <property role="3SKdUp" value="all others have to issue the update to keep the UI in sync when traveling frwd/backward with the focus" />
+            <node concept="1PaTwC" id="38_UPIIR3PC" role="3ndbpf">
+              <node concept="3oM_SD" id="38_UPIIR3PD" role="1PaTwD">
+                <property role="3oM_SC" value="all" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PE" role="1PaTwD">
+                <property role="3oM_SC" value="others" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PF" role="1PaTwD">
+                <property role="3oM_SC" value="have" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PG" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PH" role="1PaTwD">
+                <property role="3oM_SC" value="issue" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PI" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PJ" role="1PaTwD">
+                <property role="3oM_SC" value="update" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PK" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PL" role="1PaTwD">
+                <property role="3oM_SC" value="keep" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PM" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PN" role="1PaTwD">
+                <property role="3oM_SC" value="UI" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PO" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PP" role="1PaTwD">
+                <property role="3oM_SC" value="sync" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PQ" role="1PaTwD">
+                <property role="3oM_SC" value="when" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PR" role="1PaTwD">
+                <property role="3oM_SC" value="traveling" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PS" role="1PaTwD">
+                <property role="3oM_SC" value="frwd/backward" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PT" role="1PaTwD">
+                <property role="3oM_SC" value="with" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PU" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PV" role="1PaTwD">
+                <property role="3oM_SC" value="focus" />
+              </node>
             </node>
           </node>
           <node concept="3SKdUt" id="3puWk9zQl_Z" role="3cqZAp">
-            <node concept="3SKdUq" id="3puWk9zQlA1" role="3SKWNk">
-              <property role="3SKdUp" value="or skipping a particular delegate ! " />
+            <node concept="1PaTwC" id="38_UPIIR3PW" role="3ndbpf">
+              <node concept="3oM_SD" id="38_UPIIR3PX" role="1PaTwD">
+                <property role="3oM_SC" value="or" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PY" role="1PaTwD">
+                <property role="3oM_SC" value="skipping" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3PZ" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q0" role="1PaTwD">
+                <property role="3oM_SC" value="particular" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q1" role="1PaTwD">
+                <property role="3oM_SC" value="delegate" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q2" role="1PaTwD">
+                <property role="3oM_SC" value="!" />
+              </node>
             </node>
           </node>
           <node concept="3clFbH" id="3puWk9zQiZq" role="3cqZAp" />
           <node concept="3clFbH" id="1D2xWyK33wj" role="3cqZAp" />
           <node concept="3SKdUt" id="4ceCyFmjpGc" role="3cqZAp">
-            <node concept="3SKdUq" id="4ceCyFmjpGe" role="3SKWNk">
-              <property role="3SKdUp" value="(1) Reset Scopes for page" />
+            <node concept="1PaTwC" id="38_UPIIR3Q3" role="3ndbpf">
+              <node concept="3oM_SD" id="38_UPIIR3Q4" role="1PaTwD">
+                <property role="3oM_SC" value="(1)" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q5" role="1PaTwD">
+                <property role="3oM_SC" value="Reset" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q6" role="1PaTwD">
+                <property role="3oM_SC" value="Scopes" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q7" role="1PaTwD">
+                <property role="3oM_SC" value="for" />
+              </node>
+              <node concept="3oM_SD" id="38_UPIIR3Q8" role="1PaTwD">
+                <property role="3oM_SC" value="page" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="72SytNjX93y" role="3cqZAp">
@@ -8047,7 +8399,7 @@
   </node>
   <node concept="3ugp7m" id="1TowlBnaICA">
     <property role="TrG5h" value="EditOrder Predecessor" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="5TC7JC3Wpwg" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpwh" role="1tU5fm">
@@ -8249,7 +8601,7 @@
                   <property role="Xl_RC" value="OrderDocument.xml" />
                 </node>
                 <node concept="1WHerN" id="38$Wln8ipMj" role="37wK5m">
-                  <property role="1WHdSU" value="XML" />
+                  <property role="1WHdSU" value="5tU8YWFO8zP/XML" />
                   <node concept="3urNQE" id="38$Wln8ipMk" role="1WEEMK">
                     <ref role="3cqZAo" node="5TC7JC3Wpws" resolve="orderprocParam" />
                   </node>
@@ -8273,7 +8625,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="38$Wln8iqNA" role="3cqZAp" />
-        <node concept="3clFbH" id="38$Wln8iqOm" role="3cqZAp" />
         <node concept="3clFbF" id="38$Wln8ipMr" role="3cqZAp">
           <node concept="2OqwBi" id="38$Wln8ipMs" role="3clFbG">
             <node concept="10M0yZ" id="38$Wln8ipMt" role="2Oq$k0">
@@ -8363,8 +8714,8 @@
   </node>
   <node concept="3ugp7m" id="3wkdm3W8dpZ">
     <property role="TrG5h" value="MasterData Editor" />
-    <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
-    <property role="3uBtrS" value="F7_118" />
+    <property role="19I623" value="701$ZaZsahE/GRAPH_OWNER_CMD_MODAL" />
+    <property role="3uBtrS" value="1hImSMr5NT$/F7" />
     <node concept="3ulXEN" id="5TC7JC3Wpwz" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpw$" role="1tU5fm">
@@ -8452,8 +8803,8 @@
   </node>
   <node concept="3ugp7m" id="3wkdm3WbpA6">
     <property role="TrG5h" value="MasterData Creator" />
-    <property role="19I623" value="GRAPH_OWNER_CMD_MODAL" />
-    <property role="3uBtrS" value="F6_117" />
+    <property role="19I623" value="701$ZaZsahE/GRAPH_OWNER_CMD_MODAL" />
+    <property role="3uBtrS" value="1hImSMr5NTz/F6" />
     <node concept="3ulXEN" id="5TC7JC3WpwG" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpwH" role="1tU5fm">
@@ -8796,7 +9147,7 @@
   </node>
   <node concept="3ugp7m" id="2MI0JB6CEnN">
     <property role="TrG5h" value="ViewTasksInList" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ugp7q" id="2MI0JB6CHj3" role="3ug97V">
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="h484:3kFdJs03WW" resolve="Task" />
@@ -9071,7 +9422,7 @@
   </node>
   <node concept="3ugp7m" id="3RUln15CFXX">
     <property role="TrG5h" value="GoWithoutPage" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="5TC7JC3WpwW" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3WpwX" role="1tU5fm">
@@ -9149,7 +9500,7 @@
   </node>
   <node concept="3ugp7m" id="3RUln16qRl4">
     <property role="TrG5h" value="GoWithoutPage2" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="20qIzx" id="3RUln16qRlc" role="3umfm7">
       <node concept="3clFbS" id="3RUln16qRld" role="2VODD2">
         <node concept="3clFbF" id="3RUln16qRle" role="3cqZAp">
@@ -9215,7 +9566,7 @@
   </node>
   <node concept="3ugp7m" id="4H3LB8AgS9W">
     <property role="TrG5h" value="Print Order GO" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="5TC7JC3Wpx0" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpx1" role="1tU5fm">
@@ -9262,7 +9613,7 @@
                       <property role="Xl_RC" value="OrderDocument.xml" />
                     </node>
                     <node concept="1WHerN" id="4H3LB8AgSac" role="37wK5m">
-                      <property role="1WHdSU" value="XML" />
+                      <property role="1WHdSU" value="5tU8YWFO8zP/XML" />
                       <node concept="3urNQE" id="5TC7JC3Wpx3" role="1WEEMK">
                         <ref role="3cqZAo" node="5TC7JC3Wpx0" resolve="orderprocParam" />
                       </node>
@@ -9424,33 +9775,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3ugp7m" id="6W9Z7_c4dCk">
-    <property role="TrG5h" value="BlaBla Test" />
-    <property role="19I623" value="GRAPH_OWNER_CMD" />
-    <node concept="3ulXEN" id="6W9Z7_c8n$b" role="3ulXEL">
-      <property role="TrG5h" value="art" />
-      <node concept="3uibUv" id="6W9Z7_c8n_0" role="1tU5fm">
-        <ref role="3uigEE" to="4njd:3cAl6M4nWUn" resolve="Article" />
-      </node>
-      <node concept="2IFXgM" id="6W9Z7_c8n_g" role="33vP2m">
-        <ref role="2IFZ7r" to="4njd:3cAl6M4nWUn" resolve="Article" />
-      </node>
-    </node>
-    <node concept="20qIzx" id="6W9Z7_c4dEH" role="3umfm7">
-      <node concept="3clFbS" id="6W9Z7_c4dEI" role="2VODD2">
-        <node concept="mlg3r" id="6W9Z7_c4dG8" role="3cqZAp">
-          <node concept="lgADV" id="6W9Z7_c4dGa" role="mlgNH">
-            <node concept="35AVbj" id="6W9Z7_c4dGb" role="lgxf9">
-              <node concept="ic4WF" id="6W9Z7_c4dGc" role="icr7_">
-                <property role="ic4Xk" value="BONGO" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2b0Ui1io0nw" role="3cqZAp" />
       </node>
     </node>
   </node>
@@ -10750,8 +11074,16 @@
         </node>
         <node concept="3clFbH" id="3uMEeimeIKE" role="3cqZAp" />
         <node concept="3SKdUt" id="7RzRXa3TxLS" role="3cqZAp">
-          <node concept="3SKdUq" id="7RzRXa3TxLU" role="3SKWNk">
-            <property role="3SKdUp" value="first update ! " />
+          <node concept="1PaTwC" id="38_UPIIR3Q9" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3Qa" role="1PaTwD">
+              <property role="3oM_SC" value="first" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qb" role="1PaTwD">
+              <property role="3oM_SC" value="update" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qc" role="1PaTwD">
+              <property role="3oM_SC" value="!" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7RzRXa3Txsp" role="3cqZAp">
@@ -10827,13 +11159,56 @@
         </node>
         <node concept="3clFbH" id="52pTiJHexep" role="3cqZAp" />
         <node concept="3SKdUt" id="7RzRXa3TkPV" role="3cqZAp">
-          <node concept="3SKdUq" id="7RzRXa3TkPX" role="3SKWNk">
-            <property role="3SKdUp" value="this is not working, since boundObject does not have any different values  " />
+          <node concept="1PaTwC" id="38_UPIIR3Qd" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3Qe" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qf" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qg" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qh" role="1PaTwD">
+              <property role="3oM_SC" value="working," />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qi" role="1PaTwD">
+              <property role="3oM_SC" value="since" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qj" role="1PaTwD">
+              <property role="3oM_SC" value="boundObject" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qk" role="1PaTwD">
+              <property role="3oM_SC" value="does" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Ql" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qm" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qn" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qo" role="1PaTwD">
+              <property role="3oM_SC" value="different" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qp" role="1PaTwD">
+              <property role="3oM_SC" value="values" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="7RzRXa3Tl4l" role="3cqZAp">
-          <node concept="3SKdUq" id="7RzRXa3Tl4n" role="3SKWNk">
-            <property role="3SKdUp" value="before any save!!" />
+          <node concept="1PaTwC" id="38_UPIIR3Qq" role="3ndbpf">
+            <node concept="3oM_SD" id="38_UPIIR3Qr" role="1PaTwD">
+              <property role="3oM_SC" value="before" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qs" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="38_UPIIR3Qt" role="1PaTwD">
+              <property role="3oM_SC" value="save!!" />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="7RzRXa3Tlcg" role="lGtFl">
@@ -11602,9 +11977,6 @@
       </node>
       <node concept="33WYYh" id="1pEW74idpsm" role="fOGQ8">
         <ref role="2_Hrw8" node="1pEW74icak5" resolve="Print Order" />
-      </node>
-      <node concept="33WYYh" id="7T8c0sxUGfb" role="fOGQ8">
-        <ref role="2_Hrw8" to="oyrz:7T8c0sxUCBG" resolve="Open Wikipedia" />
       </node>
       <node concept="fOGPe" id="3cAl6M4xWkz" role="fOGQ8">
         <node concept="33WYYh" id="3cAl6M4vvG0" role="fOGQ8">
@@ -14560,6 +14932,30 @@
         </node>
       </node>
       <node concept="10Oyi0" id="6QYU_OS3REZ" role="2RkE6I" />
+    </node>
+  </node>
+  <node concept="3ugp7m" id="2a0RfU1skUG">
+    <property role="TrG5h" value="Show Documentation" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <node concept="20qIzx" id="2a0RfU1sl1z" role="3umfm7">
+      <node concept="3clFbS" id="2a0RfU1sl1$" role="2VODD2">
+        <node concept="3clFbF" id="2a0RfU1slqy" role="3cqZAp">
+          <node concept="2OqwBi" id="2a0RfU1slzc" role="3clFbG">
+            <node concept="2OqwBi" id="2a0RfU1slsY" role="2Oq$k0">
+              <node concept="3y28L$" id="2a0RfU1slqx" role="2Oq$k0" />
+              <node concept="liA8E" id="2a0RfU1slxk" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2a0RfU1slBK" role="2OqNvi">
+              <ref role="37wK5l" to="28jr:3ooJmL_sXPC" resolve="openUrl" />
+              <node concept="Xl_RD" id="2a0RfU1slD5" role="37wK5m">
+                <property role="Xl_RC" value="https://en.wikipedia.org/wiki/Documentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
