@@ -18,7 +18,6 @@
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
-    <import index="7q8f" ref="r:91c83059-4419-459d-a4b0-7a37c6c2c27c(org.modellwerkstatt.objectflow.tests.services)" />
     <import index="zhcn" ref="r:14385148-b6a1-46af-8af1-c5f3ff1b3e83(org.modellwerkstatt.dataux.runtime.extensions)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="1e0c" ref="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)" />
@@ -30,6 +29,7 @@
     <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.domain.invoice)" />
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.domain.order)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
+    <import index="wvlo" ref="r:5fa46c85-bd47-4c0b-8a07-c68ea9dc95fc(org.modellwerkstatt.dataux.runtime.services)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5744,22 +5744,6 @@
         <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
       </node>
     </node>
-    <node concept="2veflS" id="5TC7JC3Wpoc" role="e0yQD">
-      <node concept="2OqwBi" id="5TC7JC3Wpod" role="2vefmd">
-        <node concept="3urNQE" id="5TC7JC3Wpve" role="2Oq$k0">
-          <ref role="3cqZAo" node="5TC7JC3Wpv8" resolve="orderprocParam" />
-        </node>
-        <node concept="2S8uIT" id="5TC7JC3Wpof" role="2OqNvi">
-          <ref role="2S8YL0" to="eqbi:AN_117c2L7" resolve="status" />
-        </node>
-      </node>
-      <node concept="2vefiz" id="5TC7JC3Wpoh" role="2vefj5">
-        <ref role="2vefiw" to="eqbi:AN_117c2L0" resolve="ordered" />
-      </node>
-      <node concept="2vefiz" id="5TC7JC3Wpoi" role="2vefj5">
-        <ref role="2vefiw" to="eqbi:AN_117c2L3" resolve="completed" />
-      </node>
-    </node>
     <node concept="20qIzx" id="vwRaRh6CWp" role="3umfm7">
       <node concept="3clFbS" id="vwRaRh6CWq" role="2VODD2">
         <node concept="3clFbF" id="1pEW74icass" role="3cqZAp">
@@ -8199,11 +8183,11 @@
           <node concept="3cpWsn" id="3v9X2lgM33i" role="3cpWs9">
             <property role="TrG5h" value="state" />
             <node concept="3uibUv" id="3g1Uva$KIE_" role="1tU5fm">
-              <ref role="3uigEE" to="7q8f:_R35BQEeSd" resolve="DynLockStateHolder" />
+              <ref role="3uigEE" to="wvlo:_R35BQEeSd" resolve="DynLockStateHolder" />
             </node>
             <node concept="1odsa" id="3v9X2lgM2vy" role="33vP2m">
-              <ref role="1ods_" to="7q8f:6EKawaqkpQO" resolve="DynLockService" />
-              <ref role="37wK5l" to="7q8f:6EKawaqkpSj" resolve="getADynLockInstance" />
+              <ref role="1ods_" to="wvlo:6EKawaqkpQO" resolve="DynLockService" />
+              <ref role="37wK5l" to="wvlo:6EKawaqkpSj" resolve="getADynLockInstance" />
             </node>
           </node>
         </node>
@@ -8216,7 +8200,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BR0qVm" role="2OqNvi">
-                  <ref role="37wK5l" to="7q8f:_R35BR0bfC" resolve="requestLocks" />
+                  <ref role="37wK5l" to="wvlo:_R35BR0bfC" resolve="requestLocks" />
                   <node concept="2ShNRf" id="_R35BR0qWO" role="37wK5m">
                     <node concept="Tc6Ow" id="_R35BR0rlv" role="2ShVmc">
                       <node concept="17QB3L" id="_R35BR0ryV" role="HW$YZ" />
@@ -8261,7 +8245,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BQX29_" role="2OqNvi">
-                  <ref role="37wK5l" to="7q8f:_R35BQEeTb" resolve="ensureLocksReceived" />
+                  <ref role="37wK5l" to="wvlo:_R35BQEeTb" resolve="ensureLocksReceived" />
                   <node concept="3cmrfG" id="_R35BQX2aM" role="37wK5m">
                     <property role="3cmrfH" value="2000" />
                   </node>
@@ -8278,7 +8262,7 @@
                           <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                         </node>
                         <node concept="liA8E" id="_R35BQX2rs" role="2OqNvi">
-                          <ref role="37wK5l" to="7q8f:_R35BQEeYv" resolve="firstUserHoldingALock" />
+                          <ref role="37wK5l" to="wvlo:_R35BQEeYv" resolve="firstUserHoldingALock" />
                         </node>
                       </node>
                       <node concept="ic4WF" id="_R35BQX2ja" role="icr7_">
@@ -8293,7 +8277,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BQX2id" role="2OqNvi">
-                  <ref role="37wK5l" to="7q8f:_R35BQEeV5" resolve="anyLockNotGranted" />
+                  <ref role="37wK5l" to="wvlo:_R35BQEeV5" resolve="anyLockNotGranted" />
                 </node>
               </node>
             </node>
@@ -8329,7 +8313,7 @@
                   <ref role="3cqZAo" node="3v9X2lgM33i" resolve="state" />
                 </node>
                 <node concept="liA8E" id="_R35BR0qKj" role="2OqNvi">
-                  <ref role="37wK5l" to="7q8f:_R35BR0bbr" resolve="close" />
+                  <ref role="37wK5l" to="wvlo:_R35BR0bbr" resolve="close" />
                 </node>
               </node>
             </node>
