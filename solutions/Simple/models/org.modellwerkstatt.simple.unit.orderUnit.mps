@@ -353,7 +353,6 @@
       </concept>
       <concept id="1881524139085552758" name="org.modellwerkstatt.objectflow.structure.PageCommand" flags="ng" index="10Adxa">
         <reference id="1881524139085552759" name="page" index="10Adxb" />
-        <child id="2989872035376923994" name="flagMessage" index="1pYyQs" />
       </concept>
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
@@ -2744,12 +2743,18 @@
                   <node concept="3clFbH" id="1X3c4oMSyMk" role="3cqZAp" />
                   <node concept="3clFbH" id="1X3c4oMSyNV" role="3cqZAp" />
                   <node concept="3clFbH" id="1X3c4oMSyPz" role="3cqZAp" />
-                  <node concept="3clFbH" id="1X3c4oMSyRc" role="3cqZAp" />
-                  <node concept="10Adxa" id="2_YacpK_PR9" role="3cqZAp">
-                    <ref role="10Adxb" node="AN_117ldD7" resolve="Standard" />
-                    <node concept="37vLTw" id="5IReaJKsArg" role="1pYyQs">
-                      <ref role="3cqZAo" node="5IReaJKs_XO" resolve="msg" />
+                  <node concept="mlg3r" id="5B0gxG08Cni" role="3cqZAp">
+                    <node concept="lgADV" id="5B0gxG08Cnl" role="mlgNH">
+                      <node concept="37vLTw" id="5B0gxG08Cty" role="lgxf9">
+                        <ref role="3cqZAo" node="5IReaJKs_XO" resolve="msg" />
+                      </node>
                     </node>
+                    <node concept="mp1e1" id="5B0gxG08CxH" role="mp0NM">
+                      <ref role="mp1e0" to="28jr:51llZt5Ptbk" resolve="WARNING_HINT" />
+                    </node>
+                  </node>
+                  <node concept="10Adxa" id="5B0gxG08D6B" role="3cqZAp">
+                    <ref role="10Adxb" node="AN_117ldD7" resolve="Standard" />
                   </node>
                   <node concept="3clFbH" id="4XOQNRZbScF" role="3cqZAp" />
                 </node>
