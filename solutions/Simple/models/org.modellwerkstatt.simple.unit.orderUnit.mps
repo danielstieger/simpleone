@@ -30,6 +30,7 @@
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.domain.order)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
     <import index="wvlo" ref="r:5fa46c85-bd47-4c0b-8a07-c68ea9dc95fc(org.modellwerkstatt.dataux.runtime.services)" />
+    <import index="9amd" ref="r:69b5efb2-1631-4bc4-9ab1-36b1d57252c2(org.modellwerkstatt.dataux.tests.dynlock)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -8191,8 +8192,8 @@
               <ref role="3uigEE" to="wvlo:_R35BQEeSd" resolve="DynLockStateHolder" />
             </node>
             <node concept="1odsa" id="3v9X2lgM2vy" role="33vP2m">
-              <ref role="1ods_" to="wvlo:6EKawaqkpQO" resolve="DynLockService" />
-              <ref role="37wK5l" to="wvlo:6EKawaqkpSj" resolve="getADynLockInstance" />
+              <ref role="1ods_" to="9amd:6EKawaqkpQO" resolve="DynLockService" />
+              <ref role="37wK5l" to="9amd:6EKawaqkpSj" resolve="getADynLockInstance" />
             </node>
           </node>
         </node>

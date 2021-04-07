@@ -1,0 +1,95 @@
+<!--
+
+
+ Build.xml: Building FX8 Application with defined environment 
+            obviously, that is not possible always in MPS
+            
+ daniel stieger, spring 2021, koblach
+
+ 
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr11/Contents/Home
+ export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+ 
+-->
+
+<project name="BuildFx8App" default="default">
+
+  <property name="mowarePluginHomeDir"      value="/Users/danielstieger/javaexe/MoPluginFake/" />
+  <property name="mowareMpsHomeDir"         value="/Applications/MPS 2019.2.app/Contents/" />
+  <property name="buildUserHome"            value="/Users/danielstieger/" />
+      
+  <!-- **** include files setup **************************************************************** -->
+  <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
+
+
+	
+  <!-- **** job specific definitions **************************************************************** -->
+  <property name="appBuildVersion"      value="BUILD V0.0.0" />
+  <property name="appName"              value="SimpleOneFx8" />
+  <!-- App_Desktop_Order -->
+  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.simpleApp.App_Desktop_Order" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/simple/basisUnit/FX8_Lola.xml" /> 
+  
+  <property name="solultionSimpleGen"    value="${buildUserHome}/javaware/simpleone/solutions/Simple/classes_gen" />
+
+  <echo>
+    Run by ${user.name} on Java Home : ${java.home}
+    Building VERSION ${appBuildVersion} of ${appMainclass}
+	MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}
+  </echo>
+
+
+
+  <!-- **** test to build fx8 app **************************************************************** -->
+  <target name="default" depends="moware.fx8forms">
+    <mkdir dir="work/WEB-INF/classes"/>
+    <copy todir="work/WEB-INF/classes">
+      <fileset dir="${solultionSimpleGen}" />
+    </copy>
+    
+      
+    <mkdir dir="dist"/>  
+    <!-- copy libs to dist/lib before calculating manifest path -->
+    <copy todir="dist/lib">
+      <fileset dir="work/WEB-INF/lib" />
+    </copy>
+    
+    <path id="build-classpath">
+      <fileset dir="dist/lib">
+      	<include name="*.jar"/>
+      </fileset>
+    </path>
+
+    <manifestclasspath property="lib.list" jarfile="dist/${appName}.jar">
+    	<classpath refid="build-classpath" />
+    </manifestclasspath>
+
+    
+    <jar destfile="dist/${appName}.jar" basedir="work/WEB-INF/classes" update="false">
+      <manifest>
+        <attribute name="Main-Class" 		 value="${appMainclass}" />
+        <attribute name="Version"    		 value="${appBuildVersion}" />
+        <attribute name="AppXmlConfig"    	 value="${appConfiguration}" />
+        <attribute name="Class-Path"    	 value="${lib.list}" />
+        <attribute name="SplashScreen-Image" value="images/splash.png" />
+      </manifest>
+    </jar>
+
+    
+  </target>  
+  
+  
+  
+  
+  
+  <target name="clean" description="Delete old work and dist directories">
+	<delete dir="work"/>
+	<delete dir="dist"/>	
+  </target>
+  
+  <target name="redeploy" depends="default">
+  	<copy todir="${tomcatHomeDir}/webapps/${appName}">
+  		<fileset dir="work" />
+  	</copy>
+  </target>
+</project>
