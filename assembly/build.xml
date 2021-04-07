@@ -14,12 +14,13 @@
 
 <project name="BuildFx8App" default="default">
 
-  <property name="mowarePluginHomeDir"      value="/Users/danielstieger/javaexe/MoPluginFake/" />
-  <property name="mowareMpsHomeDir"         value="/Applications/MPS 2019.2.app/Contents/" />
-  <property name="buildUserHome"            value="/Users/danielstieger/" />
+  <property name="mowarePluginHomeDir"      value="C:/javaexe/MoPluginFake/" />
+  <property name="mowareMpsHomeDir"         value="C:/javaexe/MPS_20192/" />
+  <property name="buildUserHome"            value="C:/" />
       
   <!-- **** include files setup **************************************************************** -->
   <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
+  <include file="${mowarePluginHomeDir}/ofassembly/bmoware.xml" as="bmoware"/>
 
 
 	
@@ -41,7 +42,7 @@
 
 
   <!-- **** test to build fx8 app **************************************************************** -->
-  <target name="default" depends="moware.fx8forms">
+  <target name="default" depends="bmoware.mowarePluginAdoption, moware.fx8forms">
     <mkdir dir="work/WEB-INF/classes"/>
     <copy todir="work/WEB-INF/classes">
       <fileset dir="${solultionSimpleGen}" />

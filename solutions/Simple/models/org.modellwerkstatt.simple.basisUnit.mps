@@ -1672,7 +1672,7 @@
         </node>
         <node concept="2CJf1O" id="5E5qL$GwFso" role="2CJ4_l">
           <node concept="Xl_RD" id="5E5qL$GwFsp" role="2DqwMp">
-            <property role="Xl_RC" value="/Users/danielstieger/javaware/simpleone/templates" />
+            <property role="Xl_RC" value="C:/javaware/simpleone/templates" />
           </node>
           <node concept="Xl_RD" id="5E5qL$GwFsq" role="2DqwMv">
             <property role="Xl_RC" value="1" />
