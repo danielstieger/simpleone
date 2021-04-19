@@ -2,7 +2,7 @@
 <model ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
   </languages>
@@ -1312,7 +1312,6 @@
           </node>
         </node>
       </node>
-      <node concept="2CPvp3" id="2h5WDoVdfDB" role="2CJdiS" />
     </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
@@ -2335,6 +2334,56 @@
     <node concept="20ptWn" id="4l1zKLo5jl5" role="20ptHX">
       <node concept="Xl_RD" id="4l1zKLo5jl6" role="20ptNC">
         <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="4EjcJZrzjeE">
+    <property role="3GE5qa" value="configs" />
+    <property role="TrG5h" value="Fake" />
+    <node concept="2CJf3v" id="234a5JEu3C5" role="2CGBMS">
+      <property role="TrG5h" value="setupMailLogging" />
+      <node concept="Xl_RD" id="234a5JEu3C6" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JProperties" />
+      </node>
+      <node concept="2DlbD8" id="234a5JEu3C7" role="2DlbIj">
+        <node concept="Xl_RD" id="234a5JEu3C8" role="2DlbDb">
+          <property role="Xl_RC" value="factory-method" />
+        </node>
+        <node concept="Xl_RD" id="234a5JEu3C9" role="2DlbDP">
+          <property role="Xl_RC" value="configMail" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="234a5JEu3Ca" role="2CJ4_l">
+        <node concept="Xl_RD" id="234a5JEu3Cb" role="2DqwMp">
+          <property role="Xl_RC" value="helpline_mps@mpreis.at" />
+        </node>
+        <node concept="Xl_RD" id="234a5JEu3Cc" role="2DqwMv">
+          <property role="Xl_RC" value="String" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="234a5JEu3Cd" role="2CJ4_l">
+        <node concept="Xl_RD" id="234a5JEu3Ce" role="2DqwMp">
+          <property role="Xl_RC" value="edvhelp@mpreis.at" />
+        </node>
+        <node concept="Xl_RD" id="234a5JEu3Cf" role="2DqwMv">
+          <property role="Xl_RC" value="String" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="234a5JEu3Cg" role="2CJ4_l">
+        <node concept="Xl_RD" id="234a5JEu3Ch" role="2DqwMp">
+          <property role="Xl_RC" value="proxy.mpreis.co.at" />
+        </node>
+        <node concept="Xl_RD" id="234a5JEu3Ci" role="2DqwMv">
+          <property role="Xl_RC" value="String" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="234a5JEu3Cj" role="2CJ4_l">
+        <node concept="Xl_RD" id="234a5JEu3Ck" role="2DqwMp">
+          <property role="Xl_RC" value="Exception/Problem in eFWWS-App ###Zuordnung: ServiceAreaITEntwicklungMPS" />
+        </node>
+        <node concept="Xl_RD" id="234a5JEu3Cl" role="2DqwMv">
+          <property role="Xl_RC" value="String" />
+        </node>
       </node>
     </node>
   </node>
