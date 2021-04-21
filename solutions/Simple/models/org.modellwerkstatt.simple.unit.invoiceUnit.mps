@@ -296,6 +296,7 @@
       </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
+        <property id="830334255848575723" name="logLevel" index="Rda9K" />
         <child id="2356914237085088917" name="exp" index="3VcgQn" />
       </concept>
       <concept id="8322225022199855721" name="org.modellwerkstatt.objectflow.structure.PageChildTermConceptFunc" flags="ig" index="3Yq87T" />
@@ -381,10 +382,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -2504,6 +2505,42 @@
       <node concept="_YKpA" id="6XzXfke1akW" role="2RkE6I">
         <node concept="3uibUv" id="6XzXfke1avS" role="_ZDj9">
           <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3ugp7m" id="21clogiSxQN">
+    <property role="TrG5h" value="Open external link" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <node concept="20qIzx" id="21clogiSxR$" role="3umfm7">
+      <node concept="3clFbS" id="21clogiSxR_" role="2VODD2">
+        <node concept="3VdxhY" id="21clogiSz4z" role="3cqZAp">
+          <property role="Rda9K" value="I5W9GWEMXX/DEBUG" />
+          <node concept="Xl_RD" id="21clogiSz4R" role="3VcgQn">
+            <property role="Xl_RC" value="eMIG application test log on log level DEBUG (daniel test)" />
+          </node>
+        </node>
+        <node concept="3VdxhY" id="21clogiSz7I" role="3cqZAp">
+          <node concept="Xl_RD" id="21clogiSz7J" role="3VcgQn">
+            <property role="Xl_RC" value="eMIG application test log on log level ERROR (daniel test)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="21clogiSz8F" role="3cqZAp" />
+        <node concept="3clFbF" id="21clogiSz9k" role="3cqZAp">
+          <node concept="2OqwBi" id="21clogiSzm4" role="3clFbG">
+            <node concept="2OqwBi" id="21clogiSzdL" role="2Oq$k0">
+              <node concept="3y28L$" id="21clogiSz9i" role="2Oq$k0" />
+              <node concept="liA8E" id="21clogiSzrJ" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+              </node>
+            </node>
+            <node concept="liA8E" id="21clogiSzvQ" role="2OqNvi">
+              <ref role="37wK5l" to="28jr:3ooJmL_sXPC" resolve="openUrl" />
+              <node concept="Xl_RD" id="21clogiSzxb" role="37wK5m">
+                <property role="Xl_RC" value="http://www.vol.at" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -1,8 +1,8 @@
 <!--
 
 
- Build.xml: Building FX8 Application with defined environment 
-            obviously, that is not possible always in MPS
+ Build.xml: Building an mde application with h2forms 
+            based on moware plugin 11
             
  daniel stieger, spring 2021, koblach
 
@@ -11,81 +11,84 @@
  export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
  
 -->
-
-<project name="BuildFx8App" default="default">
-
-  <property name="mowarePluginHomeDir"      value="C:/javaexe/MoPluginFake/" />
-  <property name="mowareMpsHomeDir"         value="C:/javaexe/MPS_20192/" />
-  <property name="buildUserHome"            value="C:/" />
-      
-  <!-- **** include files setup **************************************************************** -->
-  <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
-  <include file="${mowarePluginHomeDir}/ofassembly/bmoware.xml" as="bmoware"/>
-
-
-	
-  <!-- **** job specific definitions **************************************************************** -->
-  <property name="appBuildVersion"      value="BUILD V0.0.0" />
-  <property name="appName"              value="SimpleOneFx8" />
-  <!-- App_Desktop_Order -->
-  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.simpleApp.App_Desktop_Order" />
-  <property name="appConfiguration"     value="org/modellwerkstatt/simple/basisUnit/FX8_Lola.xml" /> 
+ 
+<project name="MdeApplication" default="default">      
   
-  <property name="solultionSimpleGen"    value="${buildUserHome}/javaware/simpleone/solutions/Simple/classes_gen" />
+  <!-- **** include files setup **************************************************************** -->
+  <include file="../../moware/objectflow/assembly/bmoware.xml" as="bmoware"/>
+  <include file="../../moware/objectflow/assembly/moware.xml" as="moware"/>
 
+
+  <!-- **** app specific definitions **************************************************************** -->
+  <property name="appName"              value="eMIG-2.0.0" />
+  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.simpleApp.eMIG" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/simple/basisUnit/MdeConfig.xml" /> 
+  <property name="appHomeScreen"        value="eMIG" />
+    
+  <property name="tomcatHomeDir"        value="/Users/danielstieger/stuff/green" /> 
+ 
+ 
+        
+  <!-- **** solutions to incorporate in this build ************************************************** -->
+  <property name="solultionSimpleGen"   value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
+
+  <exec executable="java" outputproperty="appBuildVersion">
+   <arg value="-cp"/>
+   <!-- <arg value="${solultionSimpleGen};${execInBuildClassPathWin}" /> -->
+   <arg value="${solultionSimpleGen}:${execInBuildClassPathUnix}" />
+   <arg value="org.modellwerkstatt.simple.basis.TestSetting" />
+  </exec>
+  
   <echo>
     Run by ${user.name} on Java Home : ${java.home}
     Building VERSION ${appBuildVersion} of ${appMainclass}
-	MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}
+	MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}    
   </echo>
 
 
 
-  <!-- **** test to build fx8 app **************************************************************** -->
-  <target name="default" depends="bmoware.mowarePluginAdoption, moware.fx8forms">
+
+
+
+
+  <target name="default" depends="bmoware.mowarePluginAdoption, moware.h2forms">
+  
     <mkdir dir="work/WEB-INF/classes"/>
     <copy todir="work/WEB-INF/classes">
       <fileset dir="${solultionSimpleGen}" />
     </copy>
     
-      
     <mkdir dir="dist"/>  
-    <!-- copy libs to dist/lib before calculating manifest path -->
-    <copy todir="dist/lib">
-      <fileset dir="work/WEB-INF/lib" />
-    </copy>
-    
-    <path id="build-classpath">
-      <fileset dir="dist/lib">
-      	<include name="*.jar"/>
-      </fileset>
-    </path>
-
-    <manifestclasspath property="lib.list" jarfile="dist/${appName}.jar">
-    	<classpath refid="build-classpath" />
-    </manifestclasspath>
-
-    
-    <jar destfile="dist/${appName}.jar" basedir="work/WEB-INF/classes" update="false">
+    <jar destfile="dist/${appName}.war" basedir="${mowareWorkDir}" update="false">
       <manifest>
-        <attribute name="Main-Class" 		 value="${appMainclass}" />
-        <attribute name="Version"    		 value="${appBuildVersion}" />
-        <attribute name="AppXmlConfig"    	 value="${appConfiguration}" />
-        <attribute name="Class-Path"    	 value="${lib.list}" />
-        <attribute name="SplashScreen-Image" value="images/splash.png" />
+        <attribute name="Main-Class" value="${appMainclass}" />
+        <attribute name="Version"    value="${appBuildVersion}" />
       </manifest>
     </jar>
-
     
-  </target>  
-  
-  
-  
-  
+  </target>
+
+
+
+
+
+
+
+
+
   
   <target name="clean" description="Delete old work and dist directories">
 	<delete dir="work"/>
-	<delete dir="dist"/>	
+    <delete dir="dist"/>
+  </target>
+  
+  <target name="rt">
+  	<copy todir="${tomcatHomeDir}/webapps/${appName}/static/template_leg">
+  		<fileset dir="artefact/template_leg" />
+  	</copy>
+    	<copy todir="${tomcatHomeDir}/webapps/${appName}/static/template_suivant">
+  		<fileset dir="artefact/template_suivant" />
+  	</copy>
   </target>
   
   <target name="redeploy" depends="default">
