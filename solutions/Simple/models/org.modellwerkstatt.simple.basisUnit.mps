@@ -178,6 +178,10 @@
       <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
         <property id="6436022531931826103" name="value" index="3RprZj" />
       </concept>
+      <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
+        <property id="830334255848575723" name="logLevel" index="Rda9K" />
+        <child id="2356914237085088917" name="exp" index="3VcgQn" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1322,6 +1326,19 @@
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <node concept="20qIzx" id="6gkV9KP8PTL" role="3umfm7">
       <node concept="3clFbS" id="6gkV9KP8PTM" role="2VODD2">
+        <node concept="3VdxhY" id="6dfYxy48Od_" role="3cqZAp">
+          <property role="Rda9K" value="ERROR" />
+          <node concept="Xl_RD" id="6dfYxy48Oh1" role="3VcgQn">
+            <property role="Xl_RC" value="eMIG Application log on ERROR level (daniel test)" />
+          </node>
+        </node>
+        <node concept="3VdxhY" id="6dfYxy48OmI" role="3cqZAp">
+          <property role="Rda9K" value="DEBUG" />
+          <node concept="Xl_RD" id="6dfYxy48OmJ" role="3VcgQn">
+            <property role="Xl_RC" value="eMIG Application log on DEBUG level (daniel test)" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6dfYxy48Olz" role="3cqZAp" />
         <node concept="3clFbF" id="6gkV9KP8PUc" role="3cqZAp">
           <node concept="2OqwBi" id="6gkV9KP8PYH" role="3clFbG">
             <node concept="liA8E" id="6gkV9KP8Q0P" role="2OqNvi">

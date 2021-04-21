@@ -561,7 +561,7 @@
     </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
-    <property role="TrG5h" value="App MDE Order" />
+    <property role="TrG5h" value="eMIG" />
     <ref role="2WPtWl" to="oyrz:4l1zKLo5jkE" resolve="FX8_Lola_MDE" />
     <node concept="3ulXEM" id="4h8GofeW2LA" role="3ulXEG">
       <property role="TrG5h" value="values" />
@@ -777,12 +777,12 @@
     </node>
     <node concept="2MWAvL" id="2WdiRyr8sLg" role="2A_d42">
       <node concept="Xl_RD" id="2WdiRyr8tK4" role="2MWAvM">
-        <property role="Xl_RC" value="1.0" />
+        <property role="Xl_RC" value="1.0.0" />
       </node>
     </node>
     <node concept="2MZaQk" id="5kphc59RIUz" role="2A_d42">
       <node concept="Xl_RD" id="5kphc59RIUI" role="2MZaQn">
-        <property role="Xl_RC" value="SmartOrder" />
+        <property role="Xl_RC" value="eMIG (java8)" />
       </node>
     </node>
     <node concept="2aJ7Jc" id="4h8Goff1MWX" role="2aJ6r$">
