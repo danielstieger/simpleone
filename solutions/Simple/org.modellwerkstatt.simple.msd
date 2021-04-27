@@ -17,7 +17,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${mowareHome}/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
+    <stubModelEntry path="${APPHome}/moware/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

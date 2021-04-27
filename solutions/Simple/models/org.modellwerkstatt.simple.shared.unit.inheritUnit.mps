@@ -19,7 +19,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -184,8 +184,6 @@
       </concept>
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
-        <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
-        <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
         <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
         <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
@@ -476,8 +474,6 @@
       <node concept="2XvgOc" id="5A$AnVDpm_R" role="2XvgO2">
         <property role="TrG5h" value="open" />
         <property role="2XvgOS" value="O" />
-        <property role="1YKsg0" value="" />
-        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpQ" role="2_RhUc" />
         <node concept="Xl_RD" id="5_hm6iII8e5" role="3RLGhM">
           <property role="Xl_RC" value="Open" />
@@ -494,8 +490,6 @@
       <node concept="2XvgOc" id="5A$AnVDpmBe" role="2XvgO2">
         <property role="TrG5h" value="closed" />
         <property role="2XvgOS" value="C" />
-        <property role="1YKsg0" value="" />
-        <property role="1YKsg1" value="" />
         <node concept="Xl_RD" id="5_hm6iII8dF" role="3RLGhM">
           <property role="Xl_RC" value="Closed" />
         </node>

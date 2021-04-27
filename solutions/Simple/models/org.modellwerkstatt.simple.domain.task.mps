@@ -15,7 +15,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -100,8 +100,6 @@
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
-        <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
-        <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
         <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
         <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
@@ -142,8 +140,6 @@
       <node concept="2XvgOc" id="2Uji7vlCu7b" role="2XvgO2">
         <property role="TrG5h" value="existing" />
         <property role="2XvgOS" value="E" />
-        <property role="1YKsg0" value="" />
-        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpI" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpK" role="2_RhUc">
           <property role="2_138b" value="#FF0000" />
@@ -158,8 +154,6 @@
       <node concept="2XvgOc" id="2Uji7vlCu8G" role="2XvgO2">
         <property role="TrG5h" value="new" />
         <property role="2XvgOS" value="N" />
-        <property role="1YKsg0" value="" />
-        <property role="1YKsg1" value="" />
         <node concept="2_1389" id="7h5_Fe2gwpL" role="2_RhUc">
           <property role="2_138b" value="#00FF00" />
         </node>

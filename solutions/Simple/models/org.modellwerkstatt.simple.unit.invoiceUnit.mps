@@ -211,8 +211,6 @@
       </concept>
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
-        <property id="1085421207787009238" name="shortDesc" index="1YKsg0" />
-        <property id="1085421207787009239" name="longDesc" index="1YKsg1" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
         <child id="6436022531938294753" name="shortDescNew" index="3RLGe5" />
         <child id="6436022531938294806" name="longDescNew" index="3RLGhM" />
@@ -2386,8 +2384,6 @@
       <node concept="2XvgOc" id="1FVEJAIuass" role="2XvgO2">
         <property role="TrG5h" value="create" />
         <property role="2XvgOS" value="C" />
-        <property role="1YKsg0" value="" />
-        <property role="1YKsg1" value="" />
         <node concept="2_5uyX" id="7h5_Fe2gwpO" role="2_RhUc" />
         <node concept="Xl_RD" id="5_hm6iII8dJ" role="3RLGhM">
           <property role="Xl_RC" value="Create Items" />
@@ -2399,8 +2395,6 @@
       <node concept="2XvgOc" id="1FVEJAIuasu" role="2XvgO2">
         <property role="TrG5h" value="loadFormDB" />
         <property role="2XvgOS" value="D" />
-        <property role="1YKsg0" value="" />
-        <property role="1YKsg1" value="" />
         <node concept="Xl_RD" id="5_hm6iII8d_" role="3RLGhM">
           <property role="Xl_RC" value="Load from DB" />
         </node>

@@ -1532,7 +1532,7 @@
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="3clFbF" id="77KX0PDuRvx" role="8Wnug">
               <node concept="1odsa" id="77KX0PDuRvv" role="3clFbG">
-                <ref role="1ods_" to="eqbi:77KX0PDuRx1" resolve="TheService" />
+                <ref role="1ods_" to="eqbi:50jY$Xk$JBJ" resolve="TheService2" />
                 <ref role="37wK5l" to="eqbi:4nH4LOF$GSs" resolve="doFlag" />
                 <node concept="Xl_RD" id="77KX0PDuRJa" role="37wK5m">
                   <property role="Xl_RC" value="This is a flag Message" />
