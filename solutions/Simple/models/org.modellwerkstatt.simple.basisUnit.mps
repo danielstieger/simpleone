@@ -403,7 +403,7 @@
     <node concept="il5_x" id="64PSf$EMKQ2" role="2kzhMJ">
       <property role="TrG5h" value="FlagMessage" />
       <node concept="2kzhL4" id="64PSf$EMKQ3" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTz/F6" />
+        <property role="il5CD" value="7qQ6PJwv4Q2/INSERT" />
         <node concept="Xl_RD" id="64PSf$EMKQ4" role="il5_5">
           <property role="Xl_RC" value="Flag" />
         </node>
@@ -418,7 +418,7 @@
     <node concept="il5_x" id="3Rw9V4pLp$h" role="2kzhMJ">
       <property role="TrG5h" value="OK2" />
       <node concept="2kzhL4" id="3Rw9V4pLp$i" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTx/F4" />
+        <property role="il5CD" value="1hImSMr5NTD/F12" />
         <node concept="Xl_RD" id="3Rw9V4pLp$j" role="il5_5">
           <property role="Xl_RC" value="OK" />
         </node>
@@ -1581,20 +1581,6 @@
           </node>
         </node>
       </node>
-      <node concept="2CJf3v" id="7HkVpVc$iQM" role="2CJdiS">
-        <property role="TrG5h" value="lockService" />
-        <node concept="Xl_RD" id="7HkVpVc$iQN" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoZooLockService" />
-        </node>
-        <node concept="2CJf1O" id="7HkVpVc$iQO" role="2CJ4_l">
-          <node concept="Xl_RD" id="7HkVpVc$iQP" role="2DqwMp">
-            <property role="Xl_RC" value="10.1.22.16:2128" />
-          </node>
-          <node concept="Xl_RD" id="7HkVpVc$iQQ" role="2DqwMv">
-            <property role="Xl_RC" value="String" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2CJoq6" id="6jihzUGVoek" role="2CGBMS">
       <property role="TrG5h" value="FakeLockBus" />
@@ -1605,7 +1591,7 @@
         </node>
         <node concept="2CJf1O" id="6jihzUGVoen" role="2CJ4_l">
           <node concept="Xl_RD" id="6jihzUGVoeo" role="2DqwMp">
-            <property role="Xl_RC" value="localhost" />
+            <property role="Xl_RC" value="jappsrv2.mpreis.co.at" />
           </node>
           <node concept="Xl_RD" id="6jihzUGVoep" role="2DqwMv">
             <property role="Xl_RC" value="0" />
@@ -1620,21 +1606,9 @@
           </node>
         </node>
       </node>
-      <node concept="2CJf3v" id="6jihzUGVoet" role="2CJdiS">
-        <property role="TrG5h" value="lockService" />
-        <node concept="Xl_RD" id="6jihzUGVoeu" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoFakeLockService" />
-        </node>
-      </node>
     </node>
     <node concept="2CJoq6" id="7HkVpVc$sx7" role="2CGBMS">
       <property role="TrG5h" value="FakeLockNBusNPrint" />
-      <node concept="2CJf3v" id="2RoKLt0pbfb" role="2CJdiS">
-        <property role="TrG5h" value="lockService" />
-        <node concept="Xl_RD" id="2RoKLt0pbfc" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoFakeLockService" />
-        </node>
-      </node>
       <node concept="2CJf3v" id="2RoKLt0pbfd" role="2CJdiS">
         <property role="TrG5h" value="printFactory" />
         <node concept="Xl_RD" id="2RoKLt0pbfe" role="2CJf0U">
