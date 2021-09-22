@@ -1665,6 +1665,22 @@
             <property role="Xl_RC" value="3" />
           </node>
         </node>
+        <node concept="2CJf1O" id="3koC2wwxuVl" role="2CJ4_l">
+          <node concept="Xl_RD" id="3koC2wwxuVm" role="2DqwMp">
+            <property role="Xl_RC" value="/Library/Fonts" />
+          </node>
+          <node concept="Xl_RD" id="3koC2wwxuVn" role="2DqwMv">
+            <property role="Xl_RC" value="4" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="3koC2wwxuVH" role="2CJ4_l">
+          <node concept="Xl_RD" id="3koC2wwxuVI" role="2DqwMp">
+            <property role="Xl_RC" value="false" />
+          </node>
+          <node concept="Xl_RD" id="3koC2wwxuVJ" role="2DqwMv">
+            <property role="Xl_RC" value="5" />
+          </node>
+        </node>
         <node concept="Xl_RD" id="4u029Jv99oo" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXFatClientPrintFactory" />
         </node>

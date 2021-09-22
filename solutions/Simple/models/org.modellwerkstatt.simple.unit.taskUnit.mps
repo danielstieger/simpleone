@@ -46,9 +46,11 @@
       <concept id="1469414169489846211" name="org.modellwerkstatt.dataux.structure.LocalPropertyReference" flags="ng" index="3Oe$u_">
         <reference id="1469414169490356448" name="property" index="3O0p26" />
       </concept>
+      <concept id="1469414169489626296" name="org.modellwerkstatt.dataux.structure.BaseDelegate" flags="ng" index="3OfFNu">
+        <child id="1469414169489720478" name="boundTo" index="3Oe2NS" />
+      </concept>
       <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ng" index="3OfFNv">
         <child id="465568541573490190" name="option" index="PoUSh" />
-        <child id="5041988022747670920" name="boundTo" index="3$nDjG" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -70,7 +72,7 @@
         <node concept="PnLzW" id="2MI0JB6CHFB" role="PoUSh">
           <property role="PiFy3" value="25" />
         </node>
-        <node concept="3Oe$u_" id="2MI0JB6CHFC" role="3$nDjG">
+        <node concept="3Oe$u_" id="2MI0JB6CHFC" role="3Oe2NS">
           <ref role="3O0p26" to="h484:3kFdJs03XV" resolve="id" />
         </node>
       </node>
@@ -78,7 +80,7 @@
         <node concept="PnLzW" id="2MI0JB6CHFE" role="PoUSh">
           <property role="PiFy3" value="25" />
         </node>
-        <node concept="3Oe$u_" id="2MI0JB6CHFF" role="3$nDjG">
+        <node concept="3Oe$u_" id="2MI0JB6CHFF" role="3Oe2NS">
           <ref role="3O0p26" to="h484:3kFdJs06ST" resolve="name" />
         </node>
       </node>
@@ -86,7 +88,7 @@
         <node concept="PnLzW" id="2MI0JB6CHFH" role="PoUSh">
           <property role="PiFy3" value="25" />
         </node>
-        <node concept="3Oe$u_" id="2MI0JB6CHFI" role="3$nDjG">
+        <node concept="3Oe$u_" id="2MI0JB6CHFI" role="3Oe2NS">
           <ref role="3O0p26" to="h484:3kFdJs06U8" resolve="taskId" />
         </node>
       </node>
@@ -94,7 +96,7 @@
         <node concept="PnLzW" id="2MI0JB6CHFK" role="PoUSh">
           <property role="PiFy3" value="10" />
         </node>
-        <node concept="3Oe$u_" id="2MI0JB6CHFL" role="3$nDjG">
+        <node concept="3Oe$u_" id="2MI0JB6CHFL" role="3Oe2NS">
           <ref role="3O0p26" to="h484:2Uji7vlCu9w" resolve="existing" />
         </node>
       </node>
@@ -102,7 +104,7 @@
         <node concept="PnLzW" id="2MI0JB6CHH8" role="PoUSh">
           <property role="PiFy3" value="10" />
         </node>
-        <node concept="3O0p8O" id="2MI0JB6CHI5" role="3$nDjG">
+        <node concept="3O0p8O" id="2MI0JB6CHI5" role="3Oe2NS">
           <node concept="2THnN3" id="2MI0JB6CHIt" role="3O0p8V">
             <ref role="2THnOx" to="h484:2Uji7vlCu9w" resolve="existing" />
           </node>
@@ -123,22 +125,22 @@
       <ref role="1Tjo7l" to="h484:3kFdJs03WW" resolve="Task" />
       <node concept="2U5nhG" id="3kFdJs0bcm" role="2TFpq_" />
       <node concept="3Oe2IN" id="3kFdJs0bd3" role="3OfFNq">
-        <node concept="3Oe$u_" id="3kFdJs0bd4" role="3$nDjG">
+        <node concept="3Oe$u_" id="3kFdJs0bd4" role="3Oe2NS">
           <ref role="3O0p26" to="h484:3kFdJs03XV" resolve="id" />
         </node>
       </node>
       <node concept="3Oe2Ik" id="3kFdJs0bd5" role="3OfFNq">
-        <node concept="3Oe$u_" id="3kFdJs0bd6" role="3$nDjG">
+        <node concept="3Oe$u_" id="3kFdJs0bd6" role="3Oe2NS">
           <ref role="3O0p26" to="h484:3kFdJs06ST" resolve="name" />
         </node>
       </node>
       <node concept="3Oe2IN" id="3kFdJs0bd7" role="3OfFNq">
-        <node concept="3Oe$u_" id="3kFdJs0bd8" role="3$nDjG">
+        <node concept="3Oe$u_" id="3kFdJs0bd8" role="3Oe2NS">
           <ref role="3O0p26" to="h484:3kFdJs06U8" resolve="taskId" />
         </node>
       </node>
       <node concept="2TG9WX" id="2Uji7vlCufW" role="3OfFNq">
-        <node concept="3Oe$u_" id="2Uji7vlCuh6" role="3$nDjG">
+        <node concept="3Oe$u_" id="2Uji7vlCuh6" role="3Oe2NS">
           <ref role="3O0p26" to="h484:2Uji7vlCu9w" resolve="existing" />
         </node>
       </node>
