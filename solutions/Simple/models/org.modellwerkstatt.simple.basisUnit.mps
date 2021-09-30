@@ -1832,7 +1832,7 @@
         <node concept="2CJ4$C" id="3drXVOoNMYp" role="2CJ4_l">
           <property role="TrG5h" value="URL" />
           <node concept="Xl_RD" id="3drXVOoNMYx" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
+            <property role="Xl_RC" value="jdbc:oracle:thin:@LOLA" />
           </node>
         </node>
         <node concept="2CJ4$C" id="3drXVOoNMYE" role="2CJ4_l">
@@ -2150,12 +2150,6 @@
         <property role="TrG5h" value="deprecatedServerDateProvider" />
         <node concept="Xl_RD" id="21a32Cmm3SC" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.DeprecatedServerDateProvider" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="21a32Cmm3SD" role="2CJdiS">
-        <property role="TrG5h" value="simplePrinterServices" />
-        <node concept="Xl_RD" id="21a32Cmm3SE" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoSimplePrintService" />
         </node>
       </node>
       <node concept="2CJf3v" id="76zKLSqVXLJ" role="2CJdiS">

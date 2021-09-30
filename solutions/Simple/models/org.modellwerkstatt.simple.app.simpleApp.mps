@@ -602,6 +602,11 @@
         </node>
       </node>
     </node>
+    <node concept="2$ntO6" id="6w_G7LX$o2m" role="2$nsuY">
+      <node concept="33WYYh" id="6w_G7LX$o2n" role="2$ntUL">
+        <ref role="2_Hrw8" to="ygz6:6XzXfke15oI" resolve="Search for Invoices" />
+      </node>
+    </node>
     <node concept="2$ntO6" id="6zVU6_jEngn" role="2$nsuY">
       <node concept="33WYYh" id="6zVU6_jEngo" role="2$ntUL">
         <ref role="3uz5Vf" to="oyrz:6zVU6_jm7GQ" resolve="Tile_S2" />
@@ -760,7 +765,7 @@
     </node>
     <node concept="2MZaQk" id="5kphc59RIUz" role="2A_d42">
       <node concept="Xl_RD" id="5kphc59RIUI" role="2MZaQn">
-        <property role="Xl_RC" value="eMIG (java11)" />
+        <property role="Xl_RC" value="Simple" />
       </node>
     </node>
     <node concept="2aJ7Jc" id="4h8Goff1MWX" role="2aJ6r$">
