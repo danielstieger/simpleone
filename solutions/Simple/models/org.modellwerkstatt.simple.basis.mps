@@ -166,7 +166,7 @@
       <node concept="17QB3L" id="1SuqpWQMcha" role="1tU5fm" />
       <node concept="3Tm1VV" id="1SuqpWQMcAX" role="1B3o_S" />
       <node concept="Xl_RD" id="1SuqpWQMchR" role="33vP2m">
-        <property role="Xl_RC" value="eMIG" />
+        <property role="Xl_RC" value="0.9.1" />
       </node>
     </node>
     <node concept="312cEg" id="3exXxRetpCn" role="jymVt">
@@ -270,7 +270,7 @@
       <node concept="3clFbS" id="1SuqpWQMcjS" role="3clF47">
         <node concept="3cpWs6" id="1SuqpWQMcAe" role="3cqZAp">
           <node concept="Xl_RD" id="1SuqpWQMcAf" role="3cqZAk">
-            <property role="Xl_RC" value="ORDER Demo Application" />
+            <property role="Xl_RC" value="ORDER App" />
           </node>
         </node>
       </node>

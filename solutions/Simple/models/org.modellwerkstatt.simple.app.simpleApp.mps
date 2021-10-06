@@ -20,6 +20,7 @@
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.domain.order)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
+    <import index="nm54" ref="r:b4dfd7c8-34bd-4a69-87a0-1b2a185b6c53(org.modellwerkstatt.simple.unit.taskUnit)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
   <registry>
@@ -185,7 +186,6 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
-      <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXVoidStatementList" flags="ig" index="2d2NRx" />
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -298,7 +298,6 @@
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
         <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
-        <child id="6952410984683978133" name="onStartup" index="3yTP5x" />
         <child id="4243878476893838311" name="helpMenu" index="1BMTcq" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
@@ -402,6 +401,11 @@
     <node concept="2$ntO6" id="29mqFQz5Rmd" role="2$nsuY">
       <node concept="33WYYh" id="29mqFQz5Rme" role="2$ntUL">
         <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="65FLMuCL0fE" role="2$nsuY">
+      <node concept="33WYYh" id="65FLMuCL0fF" role="2$ntUL">
+        <ref role="2_Hrw8" to="nm54:6SMC$eDSOhg" resolve="Show Task Image" />
       </node>
     </node>
     <node concept="fOGPe" id="1gJQ5nCsovY" role="2N77jT">
@@ -538,7 +542,7 @@
       </node>
     </node>
     <node concept="33WYYh" id="2MI0JB6CHQr" role="2N77jL">
-      <ref role="2_Hrw8" to="tsl4:2MI0JB6CEnN" resolve="ViewTasksInList" />
+      <ref role="2_Hrw8" to="nm54:2MI0JB6CEnN" resolve="ViewTasksInList" />
     </node>
     <node concept="2MWAvL" id="5XruxTJPWEj" role="2A_d42">
       <node concept="2OqwBi" id="1SuqpWQMcwP" role="2MWAvM">
@@ -559,9 +563,6 @@
           <ref role="37wK5l" to="o7da:1SuqpWQMcjO" resolve="getAppName" />
         </node>
       </node>
-    </node>
-    <node concept="2d2NRx" id="6W9Z7_cTqy2" role="3yTP5x">
-      <node concept="3clFbS" id="6W9Z7_cTqy3" role="2VODD2" />
     </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">

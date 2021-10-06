@@ -686,15 +686,6 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="6w_G7LXCIJs" role="3cqZAp">
-                        <node concept="1odsa" id="6w_G7LXCIJq" role="3clFbG">
-                          <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
-                          <ref role="37wK5l" to="sdim:1oz7qwExiK6" resolve="checkInInv" />
-                          <node concept="37vLTw" id="6w_G7LXCKxy" role="37wK5m">
-                            <ref role="3cqZAo" node="6XzXfke3X9g" resolve="item" />
-                          </node>
-                        </node>
-                      </node>
                       <node concept="3clFbF" id="6XzXfke3YeV" role="3cqZAp">
                         <node concept="2OqwBi" id="6XzXfke3Ym3" role="3clFbG">
                           <node concept="2OqwBi" id="6XzXfke3YfT" role="2Oq$k0">
