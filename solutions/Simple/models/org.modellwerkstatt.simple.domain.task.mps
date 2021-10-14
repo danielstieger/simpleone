@@ -38,6 +38,12 @@
       <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
         <reference id="1201385237847" name="property" index="2S8YL0" />
       </concept>
+      <concept id="1201398722958" name="jetbrains.mps.baseLanguage.structure.CustomPropertyImplementation" flags="ng" index="2SWr2p">
+        <child id="1201402259264" name="getAccessor" index="2T9Upn" />
+      </concept>
+      <concept id="1201402044357" name="jetbrains.mps.baseLanguage.structure.GetAccessor" flags="ng" index="2T95Vi">
+        <child id="1202593363480" name="statementList" index="09Bs0" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -186,7 +192,7 @@
       </node>
     </node>
     <node concept="1bOX9e" id="3kFdJs06ST" role="TxmiU">
-      <property role="2RkwnN" value="name" />
+      <property role="2RkwnN" value="fullPath" />
       <node concept="3Tm1VV" id="3kFdJs06SZ" role="1B3o_S" />
       <node concept="2RoN1w" id="3kFdJs06T0" role="2RnVtd">
         <node concept="3wEZqW" id="3kFdJs06T1" role="3wFrgM" />
@@ -201,6 +207,22 @@
       <node concept="Xl_RD" id="6bl3$WOGpIS" role="2CNmdL">
         <property role="Xl_RC" value="Name" />
       </node>
+    </node>
+    <node concept="1bOX9e" id="65FLMuCTceU" role="TxmiU">
+      <property role="2RkwnN" value="pathVisible" />
+      <node concept="3Tm1VV" id="65FLMuCTcf0" role="1B3o_S" />
+      <node concept="2SWr2p" id="65FLMuCTcp8" role="2RnVtd">
+        <node concept="2T95Vi" id="65FLMuCTcpd" role="2T9Upn">
+          <node concept="3clFbS" id="65FLMuCTcpi" role="09Bs0">
+            <node concept="3clFbF" id="65FLMuCTcqE" role="3cqZAp">
+              <node concept="338YkY" id="65FLMuCTcqD" role="3clFbG">
+                <ref role="338YkT" node="3kFdJs06ST" resolve="fullPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="65FLMuCTcj9" role="2RkE6I" />
     </node>
     <node concept="1bOX9e" id="3kFdJs06U8" role="TxmiU">
       <property role="2RkwnN" value="taskId" />
@@ -276,7 +298,7 @@
               <ref role="3cqZAo" node="6vtMBTnCRg4" resolve="taskName" />
             </node>
             <node concept="338YkY" id="6vtMBTnCRgE" role="37vLTJ">
-              <ref role="338YkT" node="3kFdJs06ST" resolve="name" />
+              <ref role="338YkT" node="3kFdJs06ST" resolve="fullPath" />
             </node>
           </node>
         </node>
@@ -298,7 +320,7 @@
             <node concept="2OqwBi" id="6vtMBTnD2A7" role="3uHU7w">
               <node concept="Xjq3P" id="6vtMBTnD2$y" role="2Oq$k0" />
               <node concept="2S8uIT" id="6vtMBTnD2CE" role="2OqNvi">
-                <ref role="2S8YL0" node="3kFdJs06ST" resolve="name" />
+                <ref role="2S8YL0" node="3kFdJs06ST" resolve="fullPath" />
               </node>
             </node>
             <node concept="3cpWs3" id="6vtMBTnD2tC" role="3uHU7B">
