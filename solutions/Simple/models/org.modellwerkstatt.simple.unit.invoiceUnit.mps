@@ -248,6 +248,7 @@
       </concept>
       <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
         <child id="4986415014450757612" name="formatString" index="icr7_" />
+        <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
         <child id="3674496190757459099" name="propertyOption" index="0orDa" />
@@ -282,6 +283,10 @@
       </concept>
       <concept id="7192042020165155254" name="org.modellwerkstatt.objectflow.structure.ContainerParamReference" flags="ng" index="3urNQE" />
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
+      <concept id="1327102270983237349" name="org.modellwerkstatt.objectflow.structure.LogStatementProperty" flags="ng" index="3wYNUu">
+        <child id="1327102270983237706" name="propName" index="3wYM0L" />
+        <child id="1327102270983237708" name="value" index="3wYM0R" />
+      </concept>
       <concept id="594565203027877250" name="org.modellwerkstatt.objectflow.structure.Session" flags="ng" index="3y28L$" />
       <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
         <property id="569389511234497418" name="fromServer" index="1$4sGO" />
@@ -295,6 +300,7 @@
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
         <property id="830334255848575723" name="logLevel" index="Rda9K" />
+        <child id="1327102270983266048" name="props" index="3wY8XV" />
         <child id="2356914237085088917" name="exp" index="3VcgQn" />
       </concept>
       <concept id="8322225022199855721" name="org.modellwerkstatt.objectflow.structure.PageChildTermConceptFunc" flags="ig" index="3Yq87T" />
@@ -820,15 +826,20 @@
     <node concept="20qIzx" id="6XzXfke19SM" role="3umfm7">
       <node concept="3clFbS" id="6XzXfke19SN" role="2VODD2">
         <node concept="3clFbH" id="2_d40IFjfiI" role="3cqZAp" />
-        <node concept="1X3_iC" id="7ymmWYKGN7t" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3VdxhY" id="6QuBvexqHpr" role="8Wnug">
-            <node concept="Xl_RD" id="6QuBvexqHrF" role="3VcgQn">
-              <property role="Xl_RC" value="This is a error log via moware log" />
+        <node concept="3VdxhY" id="6QuBvexqHpr" role="3cqZAp">
+          <node concept="3wYNUu" id="19EO7JPbpsn" role="3wY8XV">
+            <node concept="Xl_RD" id="19EO7JPbpso" role="3wYM0L">
+              <property role="Xl_RC" value="type" />
+            </node>
+            <node concept="Xl_RD" id="19EO7JPbpta" role="3wYM0R">
+              <property role="Xl_RC" value="SEARCH" />
             </node>
           </node>
+          <node concept="Xl_RD" id="6QuBvexqHrF" role="3VcgQn">
+            <property role="Xl_RC" value="Log Statement in Search for Invoices." />
+          </node>
         </node>
+        <node concept="3clFbH" id="19EO7JPbppf" role="3cqZAp" />
         <node concept="1X3_iC" id="7ymmWYKGNaV" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -855,6 +866,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="6QuBvexqKIJ" role="3cqZAp" />
+        <node concept="3clFbH" id="19EO7JPbpnj" role="3cqZAp" />
         <node concept="3clFbF" id="6XzXfke19To" role="3cqZAp">
           <node concept="37vLTI" id="6XzXfke19U2" role="3clFbG">
             <node concept="2ShNRf" id="6XzXfke19UE" role="37vLTx">
@@ -926,71 +938,79 @@
     </node>
     <node concept="20qIzx" id="1dqt$gJb3YF" role="10_T4m">
       <node concept="3clFbS" id="1dqt$gJb3YG" role="2VODD2">
-        <node concept="3clFbF" id="5yulfH_mLyQ" role="3cqZAp">
-          <node concept="2OqwBi" id="5yulfH_mLyN" role="3clFbG">
-            <node concept="10M0yZ" id="5yulfH_mLyO" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="5yulfH_mLyP" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="Xl_RD" id="5yulfH_mLzj" role="37wK5m">
-                <property role="Xl_RC" value="THIS IS THE FINAL CANCEL CONCLUSION .... " />
+        <node concept="1X3_iC" id="19EO7JPbFch" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5yulfH_mLyQ" role="8Wnug">
+            <node concept="2OqwBi" id="5yulfH_mLyN" role="3clFbG">
+              <node concept="10M0yZ" id="5yulfH_mLyO" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              </node>
+              <node concept="liA8E" id="5yulfH_mLyP" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                <node concept="Xl_RD" id="5yulfH_mLzj" role="37wK5m">
+                  <property role="Xl_RC" value="THIS IS THE FINAL CANCEL CONCLUSION .... " />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1DcWWT" id="5yulfH_nFhZ" role="3cqZAp">
-          <node concept="3clFbS" id="5yulfH_nFi1" role="2LFqv$">
-            <node concept="3clFbF" id="5yulfH_nFDB" role="3cqZAp">
-              <node concept="2OqwBi" id="5yulfH_nFD$" role="3clFbG">
-                <node concept="10M0yZ" id="5yulfH_nFD_" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="5yulfH_nFDA" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="5yulfH_owp7" role="37wK5m">
-                    <node concept="2OqwBi" id="5yulfH_owws" role="3uHU7w">
-                      <node concept="37vLTw" id="5yulfH_owuG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5yulfH_nFi2" resolve="problem" />
-                      </node>
-                      <node concept="liA8E" id="5yulfH_owyJ" role="2OqNvi">
-                        <ref role="37wK5l" to="28jr:6RAFKVMg46N" resolve="isJobIgnore" />
-                      </node>
-                    </node>
-                    <node concept="3cpWs3" id="5yulfH_ow8P" role="3uHU7B">
-                      <node concept="3cpWs3" id="5yulfH_nFJd" role="3uHU7B">
-                        <node concept="Xl_RD" id="5yulfH_nFEf" role="3uHU7B">
-                          <property role="Xl_RC" value="&gt; " />
+        <node concept="1X3_iC" id="19EO7JPbFqt" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="1DcWWT" id="5yulfH_nFhZ" role="8Wnug">
+            <node concept="3clFbS" id="5yulfH_nFi1" role="2LFqv$">
+              <node concept="3clFbF" id="5yulfH_nFDB" role="3cqZAp">
+                <node concept="2OqwBi" id="5yulfH_nFD$" role="3clFbG">
+                  <node concept="10M0yZ" id="5yulfH_nFD_" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  </node>
+                  <node concept="liA8E" id="5yulfH_nFDA" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                    <node concept="3cpWs3" id="5yulfH_owp7" role="37wK5m">
+                      <node concept="2OqwBi" id="5yulfH_owws" role="3uHU7w">
+                        <node concept="37vLTw" id="5yulfH_owuG" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5yulfH_nFi2" resolve="problem" />
                         </node>
-                        <node concept="2OqwBi" id="5yulfH_nG9V" role="3uHU7w">
-                          <node concept="37vLTw" id="5yulfH_nG8E" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5yulfH_nFi2" resolve="problem" />
-                          </node>
-                          <node concept="liA8E" id="5yulfH_nGc9" role="2OqNvi">
-                            <ref role="37wK5l" to="28jr:7VbqtSRQEbP" resolve="getSimpleText_Lgcy" />
-                          </node>
+                        <node concept="liA8E" id="5yulfH_owyJ" role="2OqNvi">
+                          <ref role="37wK5l" to="28jr:6RAFKVMg46N" resolve="isJobIgnore" />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="5yulfH_owgg" role="3uHU7w">
-                        <property role="Xl_RC" value=" job ignore " />
+                      <node concept="3cpWs3" id="5yulfH_ow8P" role="3uHU7B">
+                        <node concept="3cpWs3" id="5yulfH_nFJd" role="3uHU7B">
+                          <node concept="Xl_RD" id="5yulfH_nFEf" role="3uHU7B">
+                            <property role="Xl_RC" value="&gt; " />
+                          </node>
+                          <node concept="2OqwBi" id="5yulfH_nG9V" role="3uHU7w">
+                            <node concept="37vLTw" id="5yulfH_nG8E" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5yulfH_nFi2" resolve="problem" />
+                            </node>
+                            <node concept="liA8E" id="5yulfH_nGc9" role="2OqNvi">
+                              <ref role="37wK5l" to="28jr:7VbqtSRQEbP" resolve="getSimpleText_Lgcy" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="5yulfH_owgg" role="3uHU7w">
+                          <property role="Xl_RC" value=" job ignore " />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="5yulfH_nFDj" role="3cqZAp" />
+              <node concept="3clFbH" id="5yulfH_nFDp" role="3cqZAp" />
             </node>
-            <node concept="3clFbH" id="5yulfH_nFDj" role="3cqZAp" />
-            <node concept="3clFbH" id="5yulfH_nFDp" role="3cqZAp" />
-          </node>
-          <node concept="3cpWsn" id="5yulfH_nFi2" role="1Duv9x">
-            <property role="TrG5h" value="problem" />
-            <node concept="3uibUv" id="5yulfH_nFoc" role="1tU5fm">
-              <ref role="3uigEE" to="28jr:51llZt5Pk22" resolve="IOFXProblem" />
+            <node concept="3cpWsn" id="5yulfH_nFi2" role="1Duv9x">
+              <property role="TrG5h" value="problem" />
+              <node concept="3uibUv" id="5yulfH_nFoc" role="1tU5fm">
+                <ref role="3uigEE" to="28jr:51llZt5Pk22" resolve="IOFXProblem" />
+              </node>
             </node>
+            <node concept="gHub0" id="5yulfH_nFvG" role="1DdaDG" />
           </node>
-          <node concept="gHub0" id="5yulfH_nFvG" role="1DdaDG" />
         </node>
       </node>
     </node>
@@ -1515,7 +1535,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7ymmWYKCPkn" role="3cqZAp" />
-        <node concept="3clFbH" id="1FVEJAIXLf3" role="3cqZAp" />
       </node>
     </node>
     <node concept="20qIzx" id="1FVEJAIXGie" role="10_T4m">
@@ -1604,7 +1623,7 @@
           <node concept="lgADV" id="4nH4LOF$HEd" role="mlgNH">
             <node concept="35AVbj" id="12GSMxhZRcg" role="lgxf9">
               <node concept="ic4WF" id="4kNjw_nasNm" role="icr7_">
-                <property role="ic4Xk" value="This is a WARNING_HINT" />
+                <property role="ic4Xk" value="This is a PRIO_FATAL WARNING_HINT in job." />
               </node>
             </node>
           </node>
@@ -1615,6 +1634,43 @@
             <ref role="mp1e0" to="28jr:51llZt5Ptbk" resolve="WARNING_HINT" />
           </node>
         </node>
+        <node concept="3clFbH" id="2rXgTRtl4T1" role="3cqZAp" />
+        <node concept="3VdxhY" id="2rXgTRtlYUO" role="3cqZAp">
+          <node concept="3wYNUu" id="2rXgTRtlZ5v" role="3wY8XV">
+            <node concept="Xl_RD" id="2rXgTRtlZ5w" role="3wYM0L">
+              <property role="Xl_RC" value="errorCode" />
+            </node>
+            <node concept="3cmrfG" id="2rXgTRtlZ6M" role="3wYM0R">
+              <property role="3cmrfH" value="4711" />
+            </node>
+          </node>
+          <node concept="3wYNUu" id="2rXgTRtlZ7l" role="3wY8XV">
+            <node concept="Xl_RD" id="2rXgTRtlZ7m" role="3wYM0L">
+              <property role="Xl_RC" value="someJsonProp" />
+            </node>
+            <node concept="Xl_RD" id="2rXgTRtlZ8V" role="3wYM0R">
+              <property role="Xl_RC" value="GO" />
+            </node>
+          </node>
+          <node concept="3wYNUu" id="2rXgTRtlZ9R" role="3wY8XV">
+            <node concept="Xl_RD" id="2rXgTRtlZ9S" role="3wYM0L">
+              <property role="Xl_RC" value="timeTaken" />
+            </node>
+            <node concept="3cmrfG" id="2rXgTRtlZb8" role="3wYM0R">
+              <property role="3cmrfH" value="50" />
+            </node>
+          </node>
+          <node concept="35AVbj" id="2rXgTRtlYZk" role="3VcgQn">
+            <node concept="ic4WF" id="2rXgTRtlYZm" role="icr7_">
+              <property role="ic4Xk" value="Log-Meldung mit Prio ERROR und %d Fehler" />
+            </node>
+            <node concept="3cmrfG" id="4g_sjDP9g7X" role="35Gt3$">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2rXgTRtl4Ux" role="3cqZAp" />
+        <node concept="3clFbH" id="2rXgTRtlZbF" role="3cqZAp" />
         <node concept="mlg3r" id="7ymmWYKHzUO" role="3cqZAp">
           <node concept="3eOSWO" id="7ymmWYKHzUP" role="mlgNJ">
             <node concept="3cmrfG" id="7ymmWYKHzUQ" role="3uHU7w">
@@ -1627,7 +1683,7 @@
           <node concept="lgADV" id="7ymmWYKHzUS" role="mlgNH">
             <node concept="35AVbj" id="7ymmWYKHzUT" role="lgxf9">
               <node concept="ic4WF" id="7ymmWYKHzUV" role="icr7_">
-                <property role="ic4Xk" value="This is a Prio FATAL" />
+                <property role="ic4Xk" value="This is a Prio FATAL precondition in job." />
               </node>
             </node>
           </node>
@@ -2488,7 +2544,7 @@
             <node concept="liA8E" id="21clogiSzvQ" role="2OqNvi">
               <ref role="37wK5l" to="28jr:3ooJmL_sXPC" resolve="openUrl" />
               <node concept="Xl_RD" id="21clogiSzxb" role="37wK5m">
-                <property role="Xl_RC" value="http://www.vol.at" />
+                <property role="Xl_RC" value="/MDEApp/logout" />
               </node>
             </node>
           </node>

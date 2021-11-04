@@ -1321,12 +1321,6 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="vwRaRh8xQA" role="2CJ4_l">
-        <property role="TrG5h" value="SilentExLogging" />
-        <node concept="Xl_RD" id="vwRaRh8$Nb" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
@@ -1335,7 +1329,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$rWF" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
@@ -1385,7 +1379,7 @@
     </node>
     <node concept="2CPvp3" id="1NjnH06l6IJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="7HkVpVc$umf" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="jappsrv2LockBuck" />
     </node>
     <node concept="2CJ4_Q" id="4L33b_GnFAD" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$u2G" resolve="ServerPrinting" />
@@ -1451,7 +1445,7 @@
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTR" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="jappsrv2LockBuck" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
@@ -1470,27 +1464,13 @@
     <property role="TrG5h" value="BatchConfigConsole" />
     <property role="2320hu" value="2018-07-23T14:32:24.158+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJf3v" id="2nnkxsSKv6H" role="2CGBMS">
-      <property role="TrG5h" value="setLogger" />
-      <node concept="2DlbD8" id="2nnkxsSKOuW" role="2DlbIj">
-        <node concept="Xl_RD" id="2nnkxsSKOuX" role="2DlbDb">
-          <property role="Xl_RC" value="factory-method" />
-        </node>
-        <node concept="Xl_RD" id="2nnkxsSKOuY" role="2DlbDP">
-          <property role="Xl_RC" value="enablePort2" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="2nnkxsSKv6K" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMLogger" />
-      </node>
-    </node>
     <node concept="2CJ4_Q" id="7HkVpVc$te_" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
     </node>
     <node concept="2CJf3v" id="382CQP52o$n" role="2CGBMS">
       <property role="TrG5h" value="hw" />
       <node concept="Xl_RD" id="382CQP52o$o" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.batchjob.HW" />
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXFakePlatform" />
       </node>
     </node>
     <node concept="2CJf3v" id="382CQP52o$p" role="2CGBMS">
@@ -1515,20 +1495,17 @@
         </node>
       </node>
     </node>
-    <node concept="2CJf3v" id="6DdGzN6wj3N" role="2CGBMS">
-      <property role="TrG5h" value="userServices" />
-      <node concept="Xl_RD" id="6DdGzN6wj3O" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleUserServices" />
-      </node>
-    </node>
     <node concept="2CJf3v" id="382CQP52o$x" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
       <node concept="Xl_RD" id="382CQP52o$A" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleAppFactory" />
       </node>
     </node>
+    <node concept="2CJ4_Q" id="2rXgTRs6qh2" role="2CGBMS">
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="jappsrv2LockBuck" />
+    </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tiC" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sx7" resolve="FakeLockNBusNPrint" />
+      <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tqz" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
@@ -1557,6 +1534,15 @@
       </node>
       <node concept="2CPvp3" id="7HkVpVc$j28" role="2CJdiS" />
     </node>
+    <node concept="2CJoq6" id="4WoSiUOZhGc" role="2CGBMS">
+      <property role="TrG5h" value="FakeLockBus" />
+      <node concept="2CJf3v" id="4WoSiUOZhUy" role="2CJdiS">
+        <property role="TrG5h" value="eventBus" />
+        <node concept="Xl_RD" id="4WoSiUOZhUz" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoFakeEventBus" />
+        </node>
+      </node>
+    </node>
     <node concept="2CJoq6" id="7HkVpVbYPJd" role="2CGBMS">
       <property role="TrG5h" value="LockBus" />
       <node concept="2CJf3v" id="7HkVpVbYPJX" role="2CJdiS">
@@ -1566,7 +1552,7 @@
         </node>
         <node concept="2CJf1O" id="7HkVpVbYPKE" role="2CJ4_l">
           <node concept="Xl_RD" id="7HkVpVbYPKF" role="2DqwMp">
-            <property role="Xl_RC" value="localhost" />
+            <property role="Xl_RC" value="192.168.0.73" />
           </node>
           <node concept="Xl_RD" id="7HkVpVbYPKZ" role="2DqwMv">
             <property role="Xl_RC" value="0" />
@@ -1583,7 +1569,7 @@
       </node>
     </node>
     <node concept="2CJoq6" id="6jihzUGVoek" role="2CGBMS">
-      <property role="TrG5h" value="FakeLockBus" />
+      <property role="TrG5h" value="jappsrv2LockBuck" />
       <node concept="2CJf3v" id="6jihzUGVoel" role="2CJdiS">
         <property role="TrG5h" value="eventBus" />
         <node concept="Xl_RD" id="6jihzUGVoem" role="2CJf0U">
@@ -1832,7 +1818,7 @@
         <node concept="2CJ4$C" id="3drXVOoNMYp" role="2CJ4_l">
           <property role="TrG5h" value="URL" />
           <node concept="Xl_RD" id="3drXVOoNMYx" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:oracle:thin:@LOLA" />
+            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
           </node>
         </node>
         <node concept="2CJ4$C" id="3drXVOoNMYE" role="2CJ4_l">
@@ -2174,30 +2160,30 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="3tgwmmDjmur">
-    <property role="TrG5h" value="BatchConfigTomcat" />
+    <property role="TrG5h" value="    BatchConfigTomcat" />
     <property role="2320hu" value="2018-07-23T14:41:00.987+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJf3v" id="2nnkxsSL19b" role="2CGBMS">
-      <property role="TrG5h" value="setLogger" />
-      <node concept="2DlbD8" id="2nnkxsSL19c" role="2DlbIj">
-        <node concept="Xl_RD" id="2nnkxsSL19d" role="2DlbDb">
-          <property role="Xl_RC" value="factory-method" />
-        </node>
-        <node concept="Xl_RD" id="2nnkxsSL19e" role="2DlbDP">
-          <property role="Xl_RC" value="enablePort2" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="2nnkxsSL19f" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMLogger" />
-      </node>
-    </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tA9" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    </node>
+    <node concept="2CJf3v" id="4g_sjDPCT2D" role="2CGBMS">
+      <property role="TrG5h" value="portjEnabled" />
+      <node concept="2DlbD8" id="4g_sjDPCT36" role="2DlbIj">
+        <node concept="Xl_RD" id="4g_sjDPCT37" role="2DlbDb">
+          <property role="Xl_RC" value="factory-method" />
+        </node>
+        <node concept="Xl_RD" id="4g_sjDPCT38" role="2DlbDP">
+          <property role="Xl_RC" value="enablePortJ" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4g_sjDPCT2F" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXLogger" />
+      </node>
     </node>
     <node concept="2CJf3v" id="7HkVpVc$tAa" role="2CGBMS">
       <property role="TrG5h" value="hw" />
       <node concept="Xl_RD" id="7HkVpVc$tAb" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.batchjob.HW" />
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXFakePlatform" />
       </node>
     </node>
     <node concept="2CJf3v" id="7HkVpVc$tAc" role="2CGBMS">
@@ -2222,12 +2208,6 @@
         </node>
       </node>
     </node>
-    <node concept="2CJf3v" id="6DdGzN6z3zC" role="2CGBMS">
-      <property role="TrG5h" value="userServices" />
-      <node concept="Xl_RD" id="6DdGzN6z3zD" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleUserServices" />
-      </node>
-    </node>
     <node concept="2CJf3v" id="7HkVpVc$tAk" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
       <node concept="Xl_RD" id="7HkVpVc$tAl" role="2CJf0U">
@@ -2235,7 +2215,7 @@
       </node>
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tAm" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="jappsrv2LockBuck" />
     </node>
     <node concept="2CJ4_Q" id="6DdGzN6Dtbw" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
