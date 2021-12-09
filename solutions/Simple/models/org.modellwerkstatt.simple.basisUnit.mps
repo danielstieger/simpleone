@@ -8,8 +8,6 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
   </imports>
   <registry>
@@ -1329,7 +1327,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$rWF" role="2CGBMS">
-      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
@@ -1379,7 +1377,7 @@
     </node>
     <node concept="2CPvp3" id="1NjnH06l6IJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="7HkVpVc$umf" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="jappsrv2LockBuck" />
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4L33b_GnFAD" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$u2G" resolve="ServerPrinting" />
@@ -1439,13 +1437,19 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="6pxECILIwg4" role="2CJ4_l">
+        <property role="TrG5h" value="AuthenticatorName" />
+        <node concept="Xl_RD" id="6pxECILIwh0" role="2CaGCA">
+          <property role="Xl_RC" value="org.modellwerkstatt.h2forms.mdeauth.H2MpreisTrialFirstAuth" />
+        </node>
+      </node>
     </node>
     <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTR" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="jappsrv2LockBuck" />
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
@@ -1544,7 +1548,7 @@
       </node>
     </node>
     <node concept="2CJoq6" id="7HkVpVbYPJd" role="2CGBMS">
-      <property role="TrG5h" value="LockBus" />
+      <property role="TrG5h" value="LocalLockBus" />
       <node concept="2CJf3v" id="7HkVpVbYPJX" role="2CJdiS">
         <property role="TrG5h" value="eventBus" />
         <node concept="Xl_RD" id="7HkVpVbYPJY" role="2CJf0U">
@@ -2160,7 +2164,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="3tgwmmDjmur">
-    <property role="TrG5h" value="    BatchConfigTomcat" />
+    <property role="TrG5h" value="BatchConfigTomcat" />
     <property role="2320hu" value="2018-07-23T14:41:00.987+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJ4_Q" id="7HkVpVc$tA9" role="2CGBMS">
@@ -2287,7 +2291,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl2" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LockBus" />
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl3" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />

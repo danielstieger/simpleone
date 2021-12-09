@@ -12,6 +12,7 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
     <import index="4njd" ref="r:ab371df4-c540-459a-b54a-ba2897c2136f(org.modellwerkstatt.simple.shared.domain.stamm)" />
+    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -39,6 +40,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1217,11 +1221,32 @@
       </node>
       <node concept="3Tm1VV" id="4InK$iO3KUe" role="1B3o_S" />
       <node concept="3clFbS" id="4InK$iO3KUf" role="3clF47">
+        <node concept="3cpWs8" id="qTvKrRYEiP" role="3cqZAp">
+          <node concept="3cpWsn" id="qTvKrRYEiS" role="3cpWs9">
+            <property role="TrG5h" value="var" />
+            <node concept="17QB3L" id="qTvKrRYEiN" role="1tU5fm" />
+            <node concept="10M0yZ" id="qTvKrRYEkU" role="33vP2m">
+              <ref role="3cqZAo" to="o7da:4YKdn4nykHu" resolve="DAN" />
+              <ref role="1PxDUh" to="o7da:4YKdn4nykFY" resolve="Constants" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4InK$iO3Lg4" role="3cqZAp">
           <node concept="jybIQ" id="4InK$iO3Lg3" role="3clFbG">
             <property role="1v8G3g" value="false" />
             <property role="HScZ5" value="false" />
             <ref role="P14SV" node="1FVEJAItPqv" resolve="MapBInvoiceFolder" />
+            <node concept="jxyYR" id="qTvKrRWtSo" role="jxX7b">
+              <node concept="3clFbC" id="qTvKrRWu81" role="jxyYK">
+                <node concept="37vLTw" id="qTvKrRYElG" role="3uHU7w">
+                  <ref role="3cqZAo" node="qTvKrRYEiS" resolve="var" />
+                </node>
+                <node concept="3_7ulE" id="qTvKrRWtY0" role="3uHU7B">
+                  <ref role="3_688M" node="4InK$iO3Lg3" />
+                  <ref role="2OG787" node="1FVEJAItPr5" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

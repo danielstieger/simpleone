@@ -40,6 +40,7 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -452,6 +453,19 @@
         <node concept="17QB3L" id="18291WBBwTg" role="1tU5fm" />
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="4YKdn4nykFY">
+    <property role="TrG5h" value="Constants" />
+    <node concept="Wx3nA" id="4YKdn4nykHu" role="jymVt">
+      <property role="TrG5h" value="DAN" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="4YKdn4nykGQ" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4YKdn4nykVz" role="1B3o_S" />
+      <node concept="Xl_RD" id="4YKdn4nykHY" role="33vP2m">
+        <property role="Xl_RC" value="DAN" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4YKdn4nykFZ" role="1B3o_S" />
   </node>
 </model>
 
