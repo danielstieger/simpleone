@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)" />
-    <import index="ufi3" ref="r:0aa59eb3-fad9-497e-8f65-41a87e0c659e(org.modellwerkstatt.simple.demo.benutzerUnit)" />
+    <import index="ufi3" ref="r:0aa59eb3-fad9-497e-8f65-41a87e0c659e(org.modellwerkstatt.simple.demo.artikelstammUnit)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -61,11 +61,11 @@
     </language>
   </registry>
   <node concept="2MVcZ9" id="2chn3uSFhUx">
-    <property role="TrG5h" value="Benutzerapp" />
+    <property role="TrG5h" value="MeineTestApp" />
     <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
     <node concept="2$ntO6" id="2chn3uSFi8q" role="2$nsuY">
       <node concept="33WYYh" id="2chn3uSFi8r" role="2$ntUL">
-        <ref role="2_Hrw8" to="ufi3:2chn3uSFf3a" resolve="Search Benutzer" />
+        <ref role="2_Hrw8" to="ufi3:3ET_HGDPguJ" resolve="Search Artikelstamm" />
       </node>
     </node>
     <node concept="2MWAvL" id="2chn3uSFhUy" role="2A_d42">
@@ -75,7 +75,7 @@
     </node>
     <node concept="2MZaQk" id="2chn3uSFhU$" role="2A_d42">
       <node concept="Xl_RD" id="2chn3uSFi0o" role="2MZaQn">
-        <property role="Xl_RC" value="MyBentuzerApp" />
+        <property role="Xl_RC" value="MeineTestApp" />
       </node>
     </node>
     <node concept="2MWq9S" id="2chn3uSFhUA" role="2MZU0z">
