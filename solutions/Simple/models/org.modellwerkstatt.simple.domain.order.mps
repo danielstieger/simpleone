@@ -17,6 +17,7 @@
     <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.unit.orderUnit)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)" />
+    <import index="rapu" ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5/java:org.springframework.jdbc(org.modellwerkstatt.simple/)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
   </imports>
   <registry>
@@ -209,9 +210,6 @@
         <child id="6135709767654760053" name="elements" index="GOFnN" />
         <child id="8174619299762601960" name="type" index="115eGp" />
       </concept>
-      <concept id="2252697316673436458" name="org.modellwerkstatt.objectflow.structure.ValidationStatement" flags="ng" index="Hy8HG">
-        <child id="2252697316673436459" name="statements" index="Hy8HH" />
-      </concept>
       <concept id="3517052249651130105" name="org.modellwerkstatt.objectflow.structure.RangeOption" flags="ng" index="WfFEq">
         <property id="3517052249651130109" name="stop" index="WfFEu" />
         <property id="3517052249651130108" name="start" index="WfFEv" />
@@ -288,6 +286,10 @@
         <property id="6436022531931826103" name="value" index="3RprZj" />
       </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
+      <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
+        <property id="830334255848575723" name="logLevel" index="Rda9K" />
+        <child id="2356914237085088917" name="exp" index="3VcgQn" />
+      </concept>
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
@@ -1630,7 +1632,7 @@
     </node>
   </node>
   <node concept="2EH5hC" id="77KX0PDuRx1">
-    <property role="TrG5h" value="TheService" />
+    <property role="TrG5h" value="OrderService" />
     <node concept="2tJIrI" id="3Fi_l5ZUKCU" role="jymVt" />
     <node concept="2tJIrI" id="3Fi_l5ZUKDc" role="jymVt" />
     <node concept="2tJIrI" id="4Iw7xyH$3J7" role="jymVt" />
@@ -1754,33 +1756,40 @@
       </node>
       <node concept="3Tm6S6" id="4nH4LOF$GTo" role="1B3o_S" />
     </node>
+    <node concept="2vDG_T" id="2vFotli8DYQ" role="jymVt">
+      <property role="TrG5h" value="returnTrue" />
+      <node concept="3clFbS" id="2vFotli8DYT" role="3clF47">
+        <node concept="3cpWs6" id="2vFotli8Ead" role="3cqZAp">
+          <node concept="3clFbT" id="2vFotli8Edf" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2vFotli8Ei1" role="3clF45" />
+      <node concept="3Tm1VV" id="2vFotli8EuF" role="1B3o_S" />
+    </node>
   </node>
   <node concept="2EH5hC" id="50jY$Xk$JBJ">
-    <property role="TrG5h" value="TheService2" />
+    <property role="TrG5h" value="LogTestService" />
     <node concept="2tJIrI" id="50jY$Xk$JBK" role="jymVt" />
     <node concept="2tJIrI" id="50jY$Xk$JBL" role="jymVt" />
     <node concept="2tJIrI" id="50jY$Xk$JBM" role="jymVt" />
     <node concept="2vDG_T" id="50jY$Xk$JN8" role="jymVt">
-      <property role="TrG5h" value="someCall" />
+      <property role="TrG5h" value="testVariousLoggingOptions" />
       <node concept="3clFbS" id="50jY$Xk$JNb" role="3clF47">
         <node concept="3clFbH" id="50jY$Xk$JNc" role="3cqZAp" />
-        <node concept="Hy8HG" id="50jY$Xk$JNd" role="3cqZAp">
-          <node concept="3clFbS" id="50jY$Xk$JNe" role="Hy8HH" />
-        </node>
-        <node concept="3clFbH" id="50jY$Xk$JNf" role="3cqZAp" />
-        <node concept="3clFbF" id="50jY$Xk$JQ3" role="3cqZAp">
-          <node concept="1odsa" id="50jY$Xk$JQ1" role="3clFbG">
-            <ref role="1ods_" node="77KX0PDuRx1" resolve="TheService" />
-            <ref role="37wK5l" node="4nH4LOF$GS$" resolve="doCancel" />
-            <node concept="Xl_RD" id="50jY$Xk$JSq" role="37wK5m">
-              <property role="Xl_RC" value="someCancel" />
-            </node>
+        <node concept="3clFbH" id="2vFotli87ge" role="3cqZAp" />
+        <node concept="3VdxhY" id="2vFotli87hy" role="3cqZAp">
+          <property role="Rda9K" value="I5W9GWEMXU/TRACE" />
+          <node concept="Xl_RD" id="2vFotli87je" role="3VcgQn">
+            <property role="Xl_RC" value="This is a log with moware logStatement on TRACE level" />
           </node>
         </node>
+        <node concept="3clFbH" id="50jY$Xk$JNf" role="3cqZAp" />
         <node concept="3clFbH" id="50jY$Xk$JNg" role="3cqZAp" />
       </node>
       <node concept="3cqZAl" id="50jY$Xk$JNh" role="3clF45" />
-      <node concept="3Tm6S6" id="50jY$Xk$JNi" role="1B3o_S" />
+      <node concept="3Tm1VV" id="2vFotli9dfR" role="1B3o_S" />
     </node>
     <node concept="3Tm6S6" id="50jY$Xk$JBN" role="1B3o_S" />
     <node concept="2vDG_T" id="4nH4LOF$GSs" role="jymVt">
@@ -2897,6 +2906,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6f52sUFC88A" role="3cqZAp" />
         <node concept="3clFbF" id="4nH4LOF$GR3" role="3cqZAp">
           <node concept="37vLTw" id="4nH4LOF$GR4" role="3clFbG">
             <ref role="3cqZAo" node="4nH4LOF$GOF" resolve="allOrders" />
@@ -2904,6 +2914,8 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6f52sUFC799" role="jymVt" />
+    <node concept="2tJIrI" id="6f52sUFC7hv" role="jymVt" />
     <node concept="2vDG_T" id="4A7QxK79I6N" role="jymVt">
       <property role="TrG5h" value="createOrder" />
       <node concept="37vLTG" id="4A7QxK79Jmy" role="3clF46">

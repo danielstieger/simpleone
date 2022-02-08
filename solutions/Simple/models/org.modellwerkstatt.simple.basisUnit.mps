@@ -1298,7 +1298,7 @@
             <property role="Xl_RC" value="String" />
           </node>
           <node concept="Xl_RD" id="2n3p7A96Fa3" role="2DqwMp">
-            <property role="Xl_RC" value="Simple" />
+            <property role="Xl_RC" value="org.modellwerkstatt" />
           </node>
         </node>
         <node concept="2CJf1O" id="2n3p7A96Fa4" role="2CJ4_l">
@@ -1306,7 +1306,7 @@
             <property role="Xl_RC" value="String" />
           </node>
           <node concept="Xl_RD" id="2n3p7A96Fa6" role="2DqwMp">
-            <property role="Xl_RC" value="INFO" />
+            <property role="Xl_RC" value="TRACE" />
           </node>
         </node>
       </node>
@@ -1316,6 +1316,12 @@
       <node concept="2CJ4$C" id="2P$1DRitH63" role="2CJ4_l">
         <property role="TrG5h" value="EventBusLocking" />
         <node concept="Xl_RD" id="2P$1DRitH64" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="63eS$XL$V0N" role="2CJ4_l">
+        <property role="TrG5h" value="SilentExLogging" />
+        <node concept="Xl_RD" id="63eS$XL$V0O" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
@@ -1441,6 +1447,12 @@
         <property role="TrG5h" value="AuthenticatorName" />
         <node concept="Xl_RD" id="6pxECILIwh0" role="2CaGCA">
           <property role="Xl_RC" value="org.modellwerkstatt.h2forms.mdeauth.H2MpreisTrialFirstAuth" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="6f52sUFHAr9" role="2CJ4_l">
+        <property role="TrG5h" value="SilentExLogging" />
+        <node concept="Xl_RD" id="6f52sUFHAra" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
     </node>
