@@ -1332,6 +1332,29 @@
           </node>
         </node>
       </node>
+      <node concept="2CJf3v" id="5P7wIRWDqSS" role="2CJdiS">
+        <property role="TrG5h" value="setupMailLogging" />
+        <node concept="2DlbD8" id="5P7wIRWDqST" role="2DlbIj">
+          <node concept="Xl_RD" id="5P7wIRWDqSU" role="2DlbDb">
+            <property role="Xl_RC" value="factory-method" />
+          </node>
+          <node concept="Xl_RD" id="5P7wIRWDqSV" role="2DlbDP">
+            <property role="Xl_RC" value="configFile" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="5P7wIRWDqSW" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JProperties" />
+        </node>
+        <node concept="2CJf1O" id="5P7wIRWDqSX" role="2CJ4_l">
+          <node concept="Xl_RD" id="5P7wIRWDqSY" role="2DqwMp">
+            <property role="Xl_RC" value="/Users/danielstieger/log4jtestlog.log" />
+          </node>
+          <node concept="Xl_RD" id="5P7wIRWDqSZ" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="6hZYQSVo5Av" role="2CJdiS" />
     </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />

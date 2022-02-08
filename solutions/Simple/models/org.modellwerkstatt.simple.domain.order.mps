@@ -1889,6 +1889,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4zX5jmVJO1U" role="3cqZAp" />
+        <node concept="3clFbF" id="4zX5jmVJOfI" role="3cqZAp">
+          <node concept="2YIFZM" id="4zX5jmVJOm6" role="3clFbG">
+            <ref role="37wK5l" to="28jr:4FgSVMqlSRi" resolve="log" />
+            <ref role="1Pybhc" to="28jr:4FgSVMqlPtR" resolve="OFXLogger" />
+            <node concept="3VsKOn" id="4zX5jmVJP2D" role="37wK5m">
+              <ref role="3VsUkX" node="50jY$Xk$JBJ" resolve="LogTestService" />
+            </node>
+            <node concept="Rm8GO" id="4zX5jmVJQdo" role="37wK5m">
+              <ref role="Rm8GQ" to="28jr:2dTopMvfA_o" resolve="ERROR" />
+              <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
+            </node>
+            <node concept="Xl_RD" id="4zX5jmVJPqO" role="37wK5m">
+              <property role="Xl_RC" value="This is a log via OFXLogger on ERROR level." />
+            </node>
+            <node concept="10Nm6u" id="4zX5jmVJPqP" role="37wK5m" />
+          </node>
+        </node>
       </node>
       <node concept="3cqZAl" id="50jY$Xk$JNh" role="3clF45" />
       <node concept="3Tm1VV" id="2vFotli9dfR" role="1B3o_S" />
