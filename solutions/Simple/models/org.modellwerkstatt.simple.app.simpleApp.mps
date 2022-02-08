@@ -540,6 +540,13 @@
           </node>
         </node>
         <node concept="3clFbH" id="1WX6wrRJ6Z8" role="3cqZAp" />
+        <node concept="3clFbF" id="2vFotlic4EC" role="3cqZAp">
+          <node concept="1odsa" id="2vFotlic4EA" role="3clFbG">
+            <ref role="1ods_" to="eqbi:50jY$Xk$JBJ" resolve="LogTestService" />
+            <ref role="37wK5l" to="eqbi:50jY$Xk$JN8" resolve="testVariousLoggingOptions" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2vFotlic4CI" role="3cqZAp" />
         <node concept="3cpWs6" id="5XruxTJPWF2" role="3cqZAp">
           <node concept="37vLTw" id="5XruxTJPWF3" role="3cqZAk">
             <ref role="3cqZAo" node="5XruxTJPWEm" resolve="login" />
