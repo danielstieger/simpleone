@@ -18,7 +18,11 @@
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)" />
     <import index="rapu" ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5/java:org.springframework.jdbc(org.modellwerkstatt.simple/)" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
+    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
+    <import index="flzs" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core(org.modellwerkstatt.objectflow.runtime/)" />
+    <import index="8mad" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j(org.modellwerkstatt.objectflow.runtime/)" />
+    <import index="jqqh" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.slf4j(org.modellwerkstatt.objectflow.runtime/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -45,6 +49,10 @@
         <child id="1201371521209" name="type" index="2RkE6I" />
         <child id="1201372378714" name="propertyImplementation" index="2RnVtd" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1201372606839" name="jetbrains.mps.baseLanguage.structure.DefaultPropertyImplementation" flags="ng" index="2RoN1w">
         <child id="1202065356069" name="defaultGetAccessor" index="3wFrgM" />
         <child id="1202078082794" name="defaultSetAccessor" index="3xrYvX" />
@@ -64,6 +72,12 @@
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -172,6 +186,9 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
@@ -1777,16 +1794,101 @@
     <node concept="2vDG_T" id="50jY$Xk$JN8" role="jymVt">
       <property role="TrG5h" value="testVariousLoggingOptions" />
       <node concept="3clFbS" id="50jY$Xk$JNb" role="3clF47">
-        <node concept="3clFbH" id="50jY$Xk$JNc" role="3cqZAp" />
-        <node concept="3clFbH" id="2vFotli87ge" role="3cqZAp" />
+        <node concept="1X3_iC" id="6hZYQSVjSKG" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2vFotlipdtF" role="8Wnug">
+            <node concept="2OqwBi" id="2vFotlipdtC" role="3clFbG">
+              <node concept="10M0yZ" id="2vFotlipdtD" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              </node>
+              <node concept="liA8E" id="2vFotlipdtE" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                <node concept="Xl_RD" id="2vFotlipdDJ" role="37wK5m">
+                  <property role="Xl_RC" value="This is a message to System.error.println()" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2vFotlimeG5" role="3cqZAp">
+          <node concept="2YIFZM" id="2vFotlimeJr" role="3clFbG">
+            <ref role="1Pybhc" to="28jr:4FgSVMqlPtR" resolve="OFXLogger" />
+            <ref role="37wK5l" to="28jr:4FgSVMqlSRi" resolve="log" />
+            <node concept="3VsKOn" id="2vFotlimePE" role="37wK5m">
+              <ref role="3VsUkX" node="50jY$Xk$JBJ" resolve="LogTestService" />
+            </node>
+            <node concept="Rm8GO" id="2vFotlimf28" role="37wK5m">
+              <ref role="Rm8GQ" to="28jr:2dTopMvfBbN" resolve="TRACE" />
+              <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
+            </node>
+            <node concept="Xl_RD" id="2vFotlimf8W" role="37wK5m">
+              <property role="Xl_RC" value="This is a log via OFXLogger on TRACE level." />
+            </node>
+            <node concept="10Nm6u" id="2vFotlimfsl" role="37wK5m" />
+          </node>
+        </node>
         <node concept="3VdxhY" id="2vFotli87hy" role="3cqZAp">
           <property role="Rda9K" value="I5W9GWEMXU/TRACE" />
           <node concept="Xl_RD" id="2vFotli87je" role="3VcgQn">
-            <property role="Xl_RC" value="This is a log with moware logStatement on TRACE level" />
+            <property role="Xl_RC" value="This is a log with moware logStatement on TRACE level." />
           </node>
         </node>
         <node concept="3clFbH" id="50jY$Xk$JNf" role="3cqZAp" />
-        <node concept="3clFbH" id="50jY$Xk$JNg" role="3cqZAp" />
+        <node concept="3clFbF" id="2vFotlippBz" role="3cqZAp">
+          <node concept="2OqwBi" id="2vFotlippZM" role="3clFbG">
+            <node concept="2YIFZM" id="2vFotliprOj" role="2Oq$k0">
+              <ref role="37wK5l" to="8mad:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
+              <ref role="1Pybhc" to="8mad:~LogManager" resolve="LogManager" />
+              <node concept="3VsKOn" id="2vFotliprUc" role="37wK5m">
+                <ref role="3VsUkX" node="50jY$Xk$JBJ" resolve="LogTestService" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2vFotlipq81" role="2OqNvi">
+              <ref role="37wK5l" to="8mad:~Logger.trace(java.lang.CharSequence)" resolve="trace" />
+              <node concept="Xl_RD" id="2vFotlipq8j" role="37wK5m">
+                <property role="Xl_RC" value="This is a TRACE message directly via log4j2 LogManager." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2vFotliprwf" role="3cqZAp" />
+        <node concept="3clFbF" id="6hZYQSVk7kk" role="3cqZAp">
+          <node concept="2YIFZM" id="6hZYQSVk7Tv" role="3clFbG">
+            <ref role="37wK5l" to="28jr:4FgSVMqlTgX" resolve="log" />
+            <ref role="1Pybhc" to="28jr:4FgSVMqlPtR" resolve="OFXLogger" />
+            <node concept="Xl_RD" id="6hZYQSVk7Xe" role="37wK5m">
+              <property role="Xl_RC" value="org.test" />
+            </node>
+            <node concept="Rm8GO" id="6hZYQSVk82L" role="37wK5m">
+              <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
+              <ref role="Rm8GQ" to="28jr:2dTopMvfBbN" resolve="TRACE" />
+            </node>
+            <node concept="Xl_RD" id="6hZYQSVk82M" role="37wK5m">
+              <property role="Xl_RC" value="This is a log via OFXLogger on TRACE level for ORG.TEST." />
+            </node>
+            <node concept="10Nm6u" id="6hZYQSVk82N" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6hZYQSVnr38" role="3cqZAp" />
+        <node concept="3clFbF" id="6hZYQSVnrDz" role="3cqZAp">
+          <node concept="2OqwBi" id="6hZYQSVntnu" role="3clFbG">
+            <node concept="2YIFZM" id="6hZYQSVnslc" role="2Oq$k0">
+              <ref role="37wK5l" to="jqqh:~LoggerFactory.getLogger(java.lang.String)" resolve="getLogger" />
+              <ref role="1Pybhc" to="jqqh:~LoggerFactory" resolve="LoggerFactory" />
+              <node concept="Xl_RD" id="6hZYQSVnsTW" role="37wK5m">
+                <property role="Xl_RC" value="org.test" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6hZYQSVnu6A" role="2OqNvi">
+              <ref role="37wK5l" to="jqqh:~Logger.info(java.lang.String)" resolve="info" />
+              <node concept="Xl_RD" id="6hZYQSVnu9R" role="37wK5m">
+                <property role="Xl_RC" value="This is a log message via slf4j on level INFO" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3cqZAl" id="50jY$Xk$JNh" role="3clF45" />
       <node concept="3Tm1VV" id="2vFotli9dfR" role="1B3o_S" />

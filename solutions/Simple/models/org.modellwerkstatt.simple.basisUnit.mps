@@ -1310,6 +1310,28 @@
           </node>
         </node>
       </node>
+      <node concept="2CJf3v" id="6hZYQSVjTKo" role="2CJdiS">
+        <property role="TrG5h" value="logConfig_2" />
+        <node concept="Xl_RD" id="6hZYQSVjTKp" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JLogLevel" />
+        </node>
+        <node concept="2CJf1O" id="6hZYQSVjTKq" role="2CJ4_l">
+          <node concept="Xl_RD" id="6hZYQSVjTKr" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="6hZYQSVjTKs" role="2DqwMp">
+            <property role="Xl_RC" value="org.test" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="6hZYQSVjTKt" role="2CJ4_l">
+          <node concept="Xl_RD" id="6hZYQSVjTKu" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="6hZYQSVjTKv" role="2DqwMp">
+            <property role="Xl_RC" value="TRACE" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
