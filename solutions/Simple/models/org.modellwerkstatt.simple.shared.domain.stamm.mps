@@ -124,6 +124,12 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
+        <child id="6525155817177697693" name="lines" index="20vkWT" />
+      </concept>
+      <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
+        <property id="6525155817177697682" name="text" index="20vkWQ" />
+      </concept>
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
@@ -135,6 +141,7 @@
       <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.BusinessObject" flags="ig" index="34Athd" />
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
         <child id="3674496190757459099" name="propertyOption" index="0orDa" />
+        <child id="6287236659904683502" name="documentation" index="3b_Q0" />
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
@@ -198,6 +205,11 @@
       <node concept="Xl_RD" id="3cAl6M4nWUF" role="2CNmdL">
         <property role="Xl_RC" value="Name" />
       </node>
+      <node concept="20vkWO" id="6PQK_SYrIRk" role="3b_Q0">
+        <node concept="20vkWP" id="6PQK_SYrIRl" role="20vkWT">
+          <property role="20vkWQ" value="dfadf a" />
+        </node>
+      </node>
     </node>
     <node concept="1bOX9e" id="3cAl6M4nWUG" role="TxmiU">
       <property role="2RkwnN" value="price" />
@@ -216,6 +228,11 @@
       </node>
       <node concept="Xl_RD" id="3cAl6M4nWUO" role="2CNmdL">
         <property role="Xl_RC" value="Price" />
+      </node>
+      <node concept="20vkWO" id="6PQK_SYrIRP" role="3b_Q0">
+        <node concept="20vkWP" id="6PQK_SYrIRQ" role="20vkWT">
+          <property role="20vkWQ" value="fasd a" />
+        </node>
       </node>
     </node>
     <node concept="3clFbW" id="3cAl6M4nWUP" role="jymVt">
