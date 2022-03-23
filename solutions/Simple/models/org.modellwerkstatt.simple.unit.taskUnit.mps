@@ -302,7 +302,6 @@
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="h484:3kFdJs03WW" resolve="Task" />
       <node concept="10qiFn" id="2MI0JB6CHoe" role="10qiF9">
-        <property role="TrG5h" value="Ok" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="2MI0JB6CHsW" role="10ot2L">
           <node concept="3clFbS" id="2MI0JB6CHsX" role="2VODD2">
@@ -583,7 +582,6 @@
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" to="h484:3kFdJs03WW" resolve="Task" />
       <node concept="10qiFn" id="6SMC$eDUYGD" role="10qiF9">
-        <property role="TrG5h" value="done" />
         <ref role="2DFCCC" to="oyrz:2qcR1OSjf4S" resolve="OK" />
         <node concept="20qIzx" id="6SMC$eDUYHH" role="10ot2L">
           <node concept="3clFbS" id="6SMC$eDUYHI" role="2VODD2">

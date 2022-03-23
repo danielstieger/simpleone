@@ -429,7 +429,6 @@
         <ref role="3063JT" node="6XzXfke1ae4" resolve="SearchInvoices" />
       </node>
       <node concept="10qiFn" id="6XzXfke1a81" role="10qiF9">
-        <property role="TrG5h" value="Next" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLp$2" resolve="Next" />
         <node concept="20qIzx" id="6XzXfke1aa2" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke1aa3" role="2VODD2">
@@ -479,7 +478,6 @@
       <property role="TrG5h" value="SearchResult" />
       <ref role="3gcvY6" node="6XzXfke18vl" resolve="InvoiceSearchFilter" />
       <node concept="10qiFn" id="6XzXfke1aKS" role="10qiF9">
-        <property role="TrG5h" value="Back" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLp$e" resolve="Back" />
         <node concept="20qIzx" id="6XzXfke1aNh" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke1aNi" role="2VODD2">
@@ -1060,7 +1058,6 @@
       <property role="TrG5h" value="MainPage" />
       <ref role="3gcvY6" to="sdim:6XzXfke1alv" resolve="Invoice" />
       <node concept="10qiFn" id="6XzXfke8ySG" role="10qiF9">
-        <property role="TrG5h" value="Ok" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="6XzXfke8z0g" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke8z0h" role="2VODD2">
@@ -1344,7 +1341,6 @@
       <property role="TrG5h" value="Page" />
       <ref role="3gcvY6" to="sdim:6XzXfke1alv" resolve="Invoice" />
       <node concept="10qiFn" id="6XzXfke8zxx" role="10qiF9">
-        <property role="TrG5h" value="Ok" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="6XzXfke8zyT" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke8zyU" role="2VODD2">
@@ -2008,7 +2004,6 @@
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" to="sdim:1FVEJAItIuo" resolve="InvoiceFolder" />
       <node concept="10qiFn" id="4InK$iO3LCY" role="10qiF9">
-        <property role="TrG5h" value="Done" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="4InK$iO3LHG" role="10ot2L">
           <node concept="3clFbS" id="4InK$iO3LHH" role="2VODD2">

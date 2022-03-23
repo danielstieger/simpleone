@@ -617,7 +617,6 @@
       <property role="TrG5h" value="ResultList" />
       <ref role="3gcvY6" node="5A$AnVDpqN1" resolve="DoubleTableView" />
       <node concept="10qiFn" id="5A$AnVDpxhe" role="10qiF9">
-        <property role="TrG5h" value="Ok" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="5A$AnVDpxjK" role="10ot2L">
           <node concept="3clFbS" id="5A$AnVDpxjL" role="2VODD2">
@@ -773,7 +772,6 @@
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" node="5A$AnVDpmnT" resolve="Document" />
       <node concept="10qiFn" id="5A$AnVDpxQx" role="10qiF9">
-        <property role="TrG5h" value="Ok" />
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
         <node concept="20qIzx" id="5A$AnVDpxRU" role="10ot2L">
           <node concept="3clFbS" id="5A$AnVDpxRV" role="2VODD2">

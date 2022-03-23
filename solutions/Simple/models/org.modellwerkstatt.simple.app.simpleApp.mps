@@ -400,9 +400,9 @@
         <node concept="3clFbT" id="2het$DF8g77" role="2_HrWp">
           <property role="3clFbU" value="false" />
         </node>
-        <node concept="Rm8GO" id="2het$DF8g78" role="2_HrWp">
-          <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-          <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
+        <node concept="Rm8GO" id="2jDJ2hE3e0j" role="2_HrWp">
+          <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
+          <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
         </node>
       </node>
       <node concept="2XvMaL" id="2het$DF8g79" role="2$ntZF">
@@ -428,21 +428,6 @@
         <ref role="3uz5Vf" to="oyrz:6XA$NCcU$Ft" resolve="MSTR_Creator" />
         <ref role="2_Hrw8" to="tsl4:3wkdm3WbpA6" resolve="MasterData Creator" />
         <node concept="10Nm6u" id="v00WQapSZ_" role="2_HrWp" />
-      </node>
-      <node concept="33WYYh" id="3Z5UV2c7SwU" role="fOGQ8">
-        <ref role="3uz5Vf" to="oyrz:3ob8bMn5Wwy" resolve="EditOrder8" />
-        <ref role="2_Hrw8" to="tsl4:AN_117c3Kl" resolve="Edit Order" />
-        <node concept="10Nm6u" id="3Z5UV2c7SwV" role="2_HrWp" />
-        <node concept="3cmrfG" id="3Z5UV2c7SwW" role="2_HrWp">
-          <property role="3cmrfH" value="2" />
-        </node>
-        <node concept="3clFbT" id="3Z5UV2c7SwX" role="2_HrWp">
-          <property role="3clFbU" value="false" />
-        </node>
-        <node concept="Rm8GO" id="7dlwzTfDGT8" role="2_HrWp">
-          <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-          <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
-        </node>
       </node>
       <node concept="33WYYh" id="5SbyawjeZII" role="fOGQ8">
         <ref role="2_Hrw8" to="tsl4:5SbyawjeQdI" resolve="Show Empty Order" />
@@ -541,10 +526,14 @@
           </node>
         </node>
         <node concept="3clFbH" id="1WX6wrRJ6Z8" role="3cqZAp" />
-        <node concept="3clFbF" id="2vFotlic4EC" role="3cqZAp">
-          <node concept="1odsa" id="2vFotlic4EA" role="3clFbG">
-            <ref role="1ods_" to="eqbi:50jY$Xk$JBJ" resolve="LogTestService" />
-            <ref role="37wK5l" to="eqbi:50jY$Xk$JN8" resolve="testVariousLoggingOptions" />
+        <node concept="1X3_iC" id="2jDJ2hA6Z1p" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2vFotlic4EC" role="8Wnug">
+            <node concept="1odsa" id="2vFotlic4EA" role="3clFbG">
+              <ref role="1ods_" to="eqbi:50jY$Xk$JBJ" resolve="LogTestService" />
+              <ref role="37wK5l" to="eqbi:50jY$Xk$JN8" resolve="testVariousLoggingOptions" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="2vFotlic4CI" role="3cqZAp" />
@@ -622,32 +611,6 @@
         <ref role="2_Hrw8" to="ygz6:6XzXfke15oI" resolve="Search for Invoices" />
       </node>
     </node>
-    <node concept="2$ntO6" id="6zVU6_jEngn" role="2$nsuY">
-      <node concept="33WYYh" id="6zVU6_jEngo" role="2$ntUL">
-        <ref role="3uz5Vf" to="oyrz:6zVU6_jm7GQ" resolve="Tile_S2" />
-        <ref role="2_Hrw8" to="tsl4:AN_117c3Kl" resolve="Edit Order" />
-        <node concept="10Nm6u" id="6zVU6_jEnhi" role="2_HrWp" />
-        <node concept="3cmrfG" id="6zVU6_jEnh$" role="2_HrWp">
-          <property role="3cmrfH" value="3" />
-        </node>
-        <node concept="3clFbT" id="6zVU6_jEni8" role="2_HrWp">
-          <property role="3clFbU" value="false" />
-        </node>
-        <node concept="Rm8GO" id="7dlwzTfDNiA" role="2_HrWp">
-          <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-          <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
-        </node>
-      </node>
-      <node concept="2XvMaL" id="7xpVvRMyDj3" role="2$ntZF">
-        <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-        <node concept="2vefiz" id="wGbog3pXNU" role="h55Ek">
-          <ref role="2vefiw" to="eqbi:AN_117c2KY" resolve="created" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="4l1zKLo5jEc" role="2$ntWM">
-        <property role="Xl_RC" value="Edit order 3 - Do.OK" />
-      </node>
-    </node>
     <node concept="2$ntO6" id="1TowlBnaJ3B" role="2$nsuY">
       <node concept="33WYYh" id="1TowlBnaJ3C" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="EditOrder Predecessor" />
@@ -658,9 +621,9 @@
         <node concept="3clFbT" id="1TowlBnaJ5q" role="2_HrWp">
           <property role="3clFbU" value="false" />
         </node>
-        <node concept="Rm8GO" id="1TowlBnaJ6M" role="2_HrWp">
-          <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-          <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
+        <node concept="Rm8GO" id="2jDJ2hE3PAs" role="2_HrWp">
+          <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+          <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
         </node>
       </node>
       <node concept="2XvMaL" id="7xpVvRMyDjn" role="2$ntZF">
@@ -1023,7 +986,7 @@
           <node concept="3zdtvw" id="1FVEJAIW7W7" role="2TpcRr">
             <property role="TrG5h" value="invoiceSearchFilter" />
             <ref role="3zdv75" to="ygz6:6XzXfke18sN" resolve="FilterSpecification" />
-            <ref role="3zdv76" to="ygz6:6XzXfke1a81" resolve="Next" />
+            <ref role="3zdv76" to="ygz6:6XzXfke1a81" />
             <node concept="3zdqQj" id="1FVEJAIW_Vf" role="3zdlsu">
               <node concept="3clFbS" id="1FVEJAIW_Vg" role="2VODD2">
                 <node concept="3clFbF" id="1FVEJAIWAay" role="3cqZAp">
