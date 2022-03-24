@@ -5,6 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -139,6 +140,18 @@
       <concept id="6436022531931825983" name="org.modellwerkstatt.objectflow.structure.TranslatedStringLiteral" flags="ng" index="3RprXr">
         <property id="6436022531931826103" name="value" index="3RprZj" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2394,12 +2407,19 @@
   </node>
   <node concept="Qs71p" id="2jDJ2hE2j_s">
     <property role="TrG5h" value="UI_SPEC" />
+    <node concept="Wx3nA" id="2c1OwJS238r" role="jymVt">
+      <property role="TrG5h" value="currentSpec" />
+      <node concept="3Tm1VV" id="2c1OwJS24xN" role="1B3o_S" />
+      <node concept="3uibUv" id="2c1OwJS23mt" role="1tU5fm">
+        <ref role="3uigEE" node="2jDJ2hE2j_s" resolve="UI_SPEC" />
+      </node>
+    </node>
     <node concept="QsSxf" id="2jDJ2hE2ok2" role="Qtgdg">
       <property role="TrG5h" value="NOTHING" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2jDJ2hE2jCs" role="Qtgdg">
-      <property role="TrG5h" value="CASE1_GO_PRECOND_INIT" />
+      <property role="TrG5h" value="CASE1_GO_PRECOND_CMDINIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2jDJ2hE2jIu" role="Qtgdg">
@@ -2411,7 +2431,7 @@
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2jDJ2hE2kgh" role="Qtgdg">
-      <property role="TrG5h" value="CASE4_GO_WARNING_INIT" />
+      <property role="TrG5h" value="CASE4_GO_WARNING_CMDINIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2jDJ2hEolAu" role="Qtgdg">
@@ -2422,11 +2442,113 @@
       <property role="TrG5h" value="CASE6_GO_WARNING_PAGEINIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="2c1OwJREI9B" role="Qtgdg">
+      <property role="TrG5h" value="CASE7_GO_PRECOND_PAGEINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRNQv_" role="Qtgdg">
+      <property role="TrG5h" value="CASE8_GO_GUARD_CMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRNQAF" role="Qtgdg">
+      <property role="TrG5h" value="CASE9_GO_GUARD_PAGEINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRNQIs" role="Qtgdg">
+      <property role="TrG5h" value="CASE10_GO_GUARD_PAGECONC" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRNQQS" role="Qtgdg">
+      <property role="TrG5h" value="CASE11_GO_GUARD_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRNSKU" role="Qtgdg">
+      <property role="TrG5h" value="CASE12_GO_GUARD_FINAL_CANCEL_USE_APPLCOSE" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRUW7s" role="Qtgdg">
+      <property role="TrG5h" value="CASE20_GE_PRECOND_CMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRUXA8" role="Qtgdg">
+      <property role="TrG5h" value="CASE21_GE_PRECOND_CONC_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJRUYoR" role="Qtgdg">
+      <property role="TrG5h" value="CASE22_GE_PRECOND_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="QsSxf" id="2jDJ2hEsbJe" role="Qtgdg">
-      <property role="TrG5h" value="CASE_XXXXX_GO_PRECOND_CHILDTERM" />
+      <property role="TrG5h" value="CASE23_GOGE_PRECOND_CHILDTERM" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJS9D_a" role="Qtgdg">
+      <property role="TrG5h" value="CASE24_GE_GUARD_CMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJS9EOF" role="Qtgdg">
+      <property role="TrG5h" value="CASE25_GE_GUARD_PAGEINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJS9D_b" role="Qtgdg">
+      <property role="TrG5h" value="CASE26_GE_GUARD_CONC_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJS9D_c" role="Qtgdg">
+      <property role="TrG5h" value="CASE27_GE_GUARD_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJS9Glh" role="Qtgdg">
+      <property role="TrG5h" value="CASE28_GE_GUARD_FINAL_CANCEL" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJS9D_d" role="Qtgdg">
+      <property role="TrG5h" value="CASE29_GOGE_GUARD_CHILDTERM" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="2jDJ2hE2j_t" role="1B3o_S" />
+    <node concept="3UR2Jj" id="2c1OwJS9Hwo" role="lGtFl">
+      <node concept="TZ5HA" id="2c1OwJS9Hwp" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9Hwq" role="1dT_Ay">
+          <property role="1dT_AB" value="Command &amp; CommandContainer UI Handling (moware11 - Spring 2022)" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HNS" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HNT" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HN9" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HNa" role="1dT_Ay">
+          <property role="1dT_AB" value="Case1X: GO checks" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HK8" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HK9" role="1dT_Ay">
+          <property role="1dT_AB" value="Case2X: GO / GE checks" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HKH" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HKI" role="1dT_Ay">
+          <property role="1dT_AB" value="Case3X: Successor with UI checks" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HLk" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HLl" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HLR" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HLS" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJS9HMs" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJS9HMt" role="1dT_Ay">
+          <property role="1dT_AB" value="Exceptions are not checked actively, since they are in no way different that guards." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
