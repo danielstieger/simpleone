@@ -209,6 +209,50 @@
     <node concept="2kDv1q" id="6BKPvpCRbDr" role="2kDvpj">
       <property role="TrG5h" value="MDE" />
     </node>
+    <node concept="il5_x" id="7dlwzTfFN2f" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_multiexe_cancel" />
+      <node concept="2kzhL4" id="7dlwzTfFN2g" role="2kzgdm">
+        <node concept="Xl_RD" id="7dlwzTfFN2h" role="il5_5">
+          <property role="Xl_RC" value="Complete Ordered (Multi GO cancel)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="1w38SCBtbSt" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_multiexec_ex" />
+      <node concept="2kzhL4" id="1w38SCBtbSu" role="2kzgdm">
+        <node concept="Xl_RD" id="1w38SCBtbSv" role="il5_5">
+          <property role="Xl_RC" value="Complete Ordered (Multi GO EX)" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="298IG9dBCW6" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_CMP_CompleteOrder" />
+      <node concept="2kzhL4" id="298IG9dBCW7" role="2kzgdm">
+        <node concept="Xl_RD" id="298IG9dBCW8" role="il5_5">
+          <property role="Xl_RC" value="Compound - Complete Order" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="2Gn_LTGoeht" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="6xifBbDMwdO" role="il5$o">
+          <property role="Xl_RC" value="check_circle_outline" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="42aYeYNuQAs" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_CMP_ResetOrder" />
+      <node concept="2kzhL4" id="42aYeYNuQAt" role="2kzgdm">
+        <node concept="Xl_RD" id="42aYeYNuQAu" role="il5_5">
+          <property role="Xl_RC" value="Compound - Reset Order" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="42aYeYNuQAv" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="6xifBbDMwhn" role="il5$o">
+          <property role="Xl_RC" value="highlight_off" />
+        </node>
+      </node>
+    </node>
     <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
       <property role="TrG5h" value="Search" />
       <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
@@ -317,7 +361,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLpzZ" role="2kzhMJ">
-      <property role="TrG5h" value="Reload" />
+      <property role="TrG5h" value="CFT_Reload" />
       <node concept="2kzhL4" id="3Rw9V4pLp$0" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTw/F3" />
         <node concept="Xl_RD" id="3Rw9V4pLp$1" role="il5_5">
@@ -412,7 +456,7 @@
       </node>
     </node>
     <node concept="il5_x" id="64PSf$EMKQ2" role="2kzhMJ">
-      <property role="TrG5h" value="FlagMessage" />
+      <property role="TrG5h" value="CFT_FlagMessage" />
       <node concept="2kzhL4" id="64PSf$EMKQ3" role="2kzgdm">
         <property role="il5CD" value="7qQ6PJwv4Q2/INSERT" />
         <node concept="Xl_RD" id="64PSf$EMKQ4" role="il5_5">
@@ -444,7 +488,7 @@
       </node>
     </node>
     <node concept="il5_x" id="5ol$NvKd7x" role="2kzhMJ">
-      <property role="TrG5h" value="Msg" />
+      <property role="TrG5h" value="CFT_Msg" />
       <node concept="2kzhL4" id="5ol$NvKd7y" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTz/F6" />
         <node concept="Xl_RD" id="5ol$NvKd7z" role="il5_5">
@@ -717,22 +761,6 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="7dlwzTfFN2f" role="2kzhMJ">
-      <property role="TrG5h" value="MLT_Complete_Cancel" />
-      <node concept="2kzhL4" id="7dlwzTfFN2g" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfFN2h" role="il5_5">
-          <property role="Xl_RC" value="Complete Order (Multi GO cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1w38SCBtbSt" role="2kzhMJ">
-      <property role="TrG5h" value="MLT_Complete_EX" />
-      <node concept="2kzhL4" id="1w38SCBtbSu" role="2kzgdm">
-        <node concept="Xl_RD" id="1w38SCBtbSv" role="il5_5">
-          <property role="Xl_RC" value="Complete Order (Multi GO EX)" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="50l$rcpGTQh" role="2kzhMJ">
       <property role="TrG5h" value="CMP_EditPos" />
       <node concept="2kzhL4" id="50l$rcpGTQi" role="2kzgdm">
@@ -826,98 +854,6 @@
       <node concept="2kzhL4" id="7dlwzTfNW$_" role="2kzgdm">
         <node concept="Xl_RD" id="7dlwzTfNW$A" role="il5_5">
           <property role="Xl_RC" value="Compound - Edit Head (Full UI flag GO)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="298IG9dBCW6" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder" />
-      <node concept="2kzhL4" id="298IG9dBCW7" role="2kzgdm">
-        <node concept="Xl_RD" id="298IG9dBCW8" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="2Gn_LTGoeht" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDMwdO" role="il5$o">
-          <property role="Xl_RC" value="check_circle_outline" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="42aYeYNuQAs" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_ResetOrder" />
-      <node concept="2kzhL4" id="42aYeYNuQAt" role="2kzgdm">
-        <node concept="Xl_RD" id="42aYeYNuQAu" role="il5_5">
-          <property role="Xl_RC" value="Compound - Reset Order" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="42aYeYNuQAv" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDMwhn" role="il5$o">
-          <property role="Xl_RC" value="highlight_off" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfDuzx" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel" />
-      <node concept="2kzhL4" id="7dlwzTfDuzy" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfDuzz" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel GE)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfDxj9" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO_Init" />
-      <node concept="2kzhL4" id="7dlwzTfDxja" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfDxjb" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel GO init)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6HvFgwcT6oG" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_GO_Conc" />
-      <node concept="2kzhL4" id="6HvFgwcT6oH" role="2kzgdm">
-        <node concept="Xl_RD" id="6HvFgwcT6oI" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (cancel GO con)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfDApp" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Flag_GO_Init" />
-      <node concept="2kzhL4" id="7dlwzTfDApq" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfDApr" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (flag GO init" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6HvFgwcUm8O" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Flag_GO_Conc" />
-      <node concept="2kzhL4" id="6HvFgwcUm8P" role="2kzgdm">
-        <node concept="Xl_RD" id="6HvFgwcUm8Q" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (flag GO con)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfL4wp" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Flag" />
-      <node concept="2kzhL4" id="7dlwzTfL4wq" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfL4wr" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (flag GE)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="5qtEEIGAo1_" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Exception" />
-      <node concept="2kzhL4" id="5qtEEIGAo1A" role="2kzgdm">
-        <node concept="Xl_RD" id="5qtEEIGAo1B" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (EX in GE)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="5qtEEIGAo6b" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_CompleteOrder_Cancel_Exception_GO" />
-      <node concept="2kzhL4" id="5qtEEIGAo6c" role="2kzgdm">
-        <node concept="Xl_RD" id="5qtEEIGAo6d" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order (EX in GO)" />
         </node>
       </node>
     </node>
@@ -1130,10 +1066,10 @@
       </node>
     </node>
     <node concept="il5_x" id="2qcR1OSjf4S" role="2kzhMJ">
-      <property role="TrG5h" value="OK" />
+      <property role="TrG5h" value="CFT_OK" />
       <node concept="2kzhL4" id="2qcR1OSjf4T" role="2kzgdm">
         <node concept="Xl_RD" id="2qcR1OSjf4V" role="il5_5">
-          <property role="Xl_RC" value="OK" />
+          <property role="Xl_RC" value="Ok" />
         </node>
       </node>
     </node>
@@ -1159,10 +1095,10 @@
       </node>
     </node>
     <node concept="il5_x" id="6XA$NCcU$N8" role="2kzhMJ">
-      <property role="TrG5h" value="MSTR_OK_CON" />
+      <property role="TrG5h" value="CFT_SaveNClose" />
       <node concept="2kzhL4" id="6XA$NCcU$N9" role="2kzgdm">
         <node concept="Xl_RD" id="2kpuhi0s$$P" role="il5_5">
-          <property role="Xl_RC" value="SV" />
+          <property role="Xl_RC" value="Save &amp; Close" />
         </node>
       </node>
     </node>
@@ -2506,6 +2442,86 @@
       <property role="TrG5h" value="CASE29_GOGE_GUARD_CHILDTERM" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="2c1OwJSCmDq" role="Qtgdg">
+      <property role="TrG5h" value="CASE40_SUCGO_PRECOND_SUCCMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJSCuZw" role="Qtgdg">
+      <property role="TrG5h" value="CASE41_SUCGO_PRECOND_CMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJSCvX3" role="Qtgdg">
+      <property role="TrG5h" value="CASE42_SUCGO_PRECOND_PAGEINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJSCwWv" role="Qtgdg">
+      <property role="TrG5h" value="CASE43_SUCGO_PRECOND_SAVE_CON" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJSCyeq" role="Qtgdg">
+      <property role="TrG5h" value="CASE44_SUCGO_PRECOND_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJSCzhC" role="Qtgdg">
+      <property role="TrG5h" value="CASE45_SUCGO_PRECOND_SUC_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJT59U0" role="Qtgdg">
+      <property role="TrG5h" value="CASE46_SUCGO_GUARD_SUCCMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJT59U1" role="Qtgdg">
+      <property role="TrG5h" value="CASE47_SUCGO_GUARD_CMDINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJT59U2" role="Qtgdg">
+      <property role="TrG5h" value="CASE48_SUCGO_GUARD_PAGEINIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJT59U3" role="Qtgdg">
+      <property role="TrG5h" value="CASE49_SUCGO_GUARD_SAVE_CON" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJT59U4" role="Qtgdg">
+      <property role="TrG5h" value="CASE50_SUCGO_GUARD_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJT59U5" role="Qtgdg">
+      <property role="TrG5h" value="CASE51_SUCGO_GUARD_SUC_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJTbGCj" role="Qtgdg">
+      <property role="TrG5h" value="CASE60_MULTIEXEC_CANCEL" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJTbK_5" role="Qtgdg">
+      <property role="TrG5h" value="CASE61_MULTIEXEC_EXCEPTION" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJTosSV" role="Qtgdg">
+      <property role="TrG5h" value="CASE62_CMP_PRECOND_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJTo$ft" role="Qtgdg">
+      <property role="TrG5h" value="CASE63_CMP_PRECOND_GE_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJToAws" role="Qtgdg">
+      <property role="TrG5h" value="CASE64_CMP_PRECOND_GO_CONC" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJToDjQ" role="Qtgdg">
+      <property role="TrG5h" value="CASE66_CMP_GUARD_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJToEXR" role="Qtgdg">
+      <property role="TrG5h" value="CASE67_CMP_GUARD_GE_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="2c1OwJToFPG" role="Qtgdg">
+      <property role="TrG5h" value="CASE68_CMP_GUARD_GO_CON" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="3Tm1VV" id="2jDJ2hE2j_t" role="1B3o_S" />
     <node concept="3UR2Jj" id="2c1OwJS9Hwo" role="lGtFl">
       <node concept="TZ5HA" id="2c1OwJS9Hwp" role="TZ5H$">
@@ -2530,12 +2546,17 @@
       </node>
       <node concept="TZ5HA" id="2c1OwJS9HKH" role="TZ5H$">
         <node concept="1dT_AC" id="2c1OwJS9HKI" role="1dT_Ay">
-          <property role="1dT_AB" value="Case3X: Successor with UI checks" />
+          <property role="1dT_AB" value="Case4X: Successor with UI checks" />
         </node>
       </node>
       <node concept="TZ5HA" id="2c1OwJS9HLk" role="TZ5H$">
         <node concept="1dT_AC" id="2c1OwJS9HLl" role="1dT_Ay">
           <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2c1OwJTbGBx" role="TZ5H$">
+        <node concept="1dT_AC" id="2c1OwJTbGBy" role="1dT_Ay">
+          <property role="1dT_AB" value="Case6x: Multi execution " />
         </node>
       </node>
       <node concept="TZ5HA" id="2c1OwJS9HLR" role="TZ5H$">
