@@ -229,13 +229,31 @@
       <property role="TrG5h" value="CFT_CMP_CompleteOrder" />
       <node concept="2kzhL4" id="298IG9dBCW7" role="2kzgdm">
         <node concept="Xl_RD" id="298IG9dBCW8" role="il5_5">
-          <property role="Xl_RC" value="Compound - Complete Order" />
+          <property role="Xl_RC" value="Compound - GE No UI" />
         </node>
       </node>
-      <node concept="2kzhL4" id="2Gn_LTGoeht" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDMwdO" role="il5$o">
-          <property role="Xl_RC" value="check_circle_outline" />
+    </node>
+    <node concept="il5_x" id="38D16t18OzT" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_CMP_UI" />
+      <node concept="2kzhL4" id="38D16t18OzU" role="2kzgdm">
+        <node concept="Xl_RD" id="38D16t18OzV" role="il5_5">
+          <property role="Xl_RC" value="Compound - 2 Ui" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="38D16t1Pb9s" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_CMP_One_UI" />
+      <node concept="2kzhL4" id="38D16t1Pb9t" role="2kzgdm">
+        <node concept="Xl_RD" id="38D16t1Pb9u" role="il5_5">
+          <property role="Xl_RC" value="Compound - 1 Ui" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="38D16t1VqWN" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_CMP_No_GE" />
+      <node concept="2kzhL4" id="38D16t1VqWO" role="2kzgdm">
+        <node concept="Xl_RD" id="38D16t1VqWP" role="il5_5">
+          <property role="Xl_RC" value="Compound - No GE" />
         </node>
       </node>
     </node>
@@ -254,7 +272,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
-      <property role="TrG5h" value="Search" />
+      <property role="TrG5h" value="CFT_Search" />
       <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTx/F4" />
         <node concept="Xl_RD" id="3Rw9V4pLpzM" role="il5_5">
@@ -272,7 +290,7 @@
       </node>
     </node>
     <node concept="il5_x" id="66oHjdjqLR2" role="2kzhMJ">
-      <property role="TrG5h" value="Search_Text" />
+      <property role="TrG5h" value="CFT_Search_Text" />
       <node concept="2kzhL4" id="66oHjdjqLR3" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTx/F4" />
         <node concept="Xl_RD" id="66oHjdjqLR4" role="il5_5">
@@ -290,7 +308,7 @@
       </node>
     </node>
     <node concept="il5_x" id="3Rw9V4pLpzN" role="2kzhMJ">
-      <property role="TrG5h" value="Ok" />
+      <property role="TrG5h" value="CFT_OK_Hide" />
       <node concept="2kzhL4" id="3Rw9V4pLpzO" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTD/F12" />
         <node concept="Xl_RD" id="3Rw9V4pLpzP" role="il5_5">
@@ -311,30 +329,8 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="Q$ztZJ3OoE" role="2kzhMJ">
-      <property role="TrG5h" value="Ok_N_Save" />
-      <node concept="2kzhL4" id="Q$ztZJ3OoF" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTD/F12" />
-        <node concept="Xl_RD" id="Q$ztZJ3OoG" role="il5_5">
-          <property role="Xl_RC" value="Close &amp; Save" />
-        </node>
-        <node concept="Xl_RD" id="Q$ztZJ3OoH" role="il5$o">
-          <property role="Xl_RC" value="ok_white" />
-        </node>
-        <node concept="238Bvw" id="Q$ztZJ3OoI" role="238Brw" />
-      </node>
-      <node concept="2kzhL4" id="Q$ztZJ3OoJ" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="Q$ztZJ3OoK" role="il5_5">
-          <property role="Xl_RC" value="OK" />
-        </node>
-        <node concept="Xl_RD" id="Q$ztZJ3OoL" role="il5$o">
-          <property role="Xl_RC" value="save" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="3Rw9V4pLpzQ" role="2kzhMJ">
-      <property role="TrG5h" value="UPDATE" />
+      <property role="TrG5h" value="CFT_UPDATE" />
       <node concept="2kzhL4" id="3Rw9V4pLpzR" role="2kzgdm">
         <property role="il5CD" value="7MWNCzXNDQp/SCAN_UPDATE" />
         <node concept="Xl_RD" id="3Rw9V4pLpzS" role="il5_5">
@@ -342,21 +338,12 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="3Rw9V4pLpzT" role="2kzhMJ">
-      <property role="TrG5h" value="StatusEdit" />
-      <node concept="2kzhL4" id="3Rw9V4pLpzU" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTx/F4" />
-        <node concept="Xl_RD" id="3Rw9V4pLpzV" role="il5_5">
-          <property role="Xl_RC" value="Status Edit" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3Rw9V4pLpzW" role="2kzhMJ">
-      <property role="TrG5h" value="ValueEdit" />
-      <node concept="2kzhL4" id="3Rw9V4pLpzX" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTw/F3" />
-        <node concept="Xl_RD" id="3Rw9V4pLpzY" role="il5_5">
-          <property role="Xl_RC" value="Value Edit" />
+    <node concept="il5_x" id="2kpuhi0vFum" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_GO" />
+      <node concept="2kzhL4" id="2kpuhi0vFun" role="2kzgdm">
+        <property role="il5CD" value="6eGMS3GUIM7/GO_OK" />
+        <node concept="Xl_RD" id="2kpuhi0vFuo" role="il5_5">
+          <property role="Xl_RC" value="GO" />
         </node>
       </node>
     </node>
@@ -375,6 +362,92 @@
         </node>
         <node concept="Xl_RD" id="6xifBbDUrYS" role="il5$o">
           <property role="Xl_RC" value="autorenew" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="64PSf$EMKQ2" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_FlagMessage" />
+      <node concept="2kzhL4" id="64PSf$EMKQ3" role="2kzgdm">
+        <property role="il5CD" value="7qQ6PJwv4Q2/INSERT" />
+        <node concept="Xl_RD" id="64PSf$EMKQ4" role="il5_5">
+          <property role="Xl_RC" value="Flag" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="6xifBbDF$a1" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="6xifBbDF$bc" role="il5$o">
+          <property role="Xl_RC" value="delete_outline" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="5ol$NvKd7x" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_Msg" />
+      <node concept="2kzhL4" id="5ol$NvKd7y" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTz/F6" />
+        <node concept="Xl_RD" id="5ol$NvKd7z" role="il5_5">
+          <property role="Xl_RC" value="Msg" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="5ol$NvKd9t" role="2kzgdm">
+        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <node concept="Xl_RD" id="5ol$NvKd9u" role="il5_5">
+          <property role="Xl_RC" value="Msg" />
+        </node>
+        <node concept="238Bvw" id="1E9WFYq4utp" role="238Brw" />
+        <node concept="Xl_RD" id="6xifBbDUutu" role="il5$o">
+          <property role="Xl_RC" value="cancel" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf4S" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_OK" />
+      <node concept="2kzhL4" id="2qcR1OSjf4T" role="2kzgdm">
+        <node concept="Xl_RD" id="2qcR1OSjf4V" role="il5_5">
+          <property role="Xl_RC" value="Ok" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6XA$NCcU$N8" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_SaveNClose" />
+      <node concept="2kzhL4" id="6XA$NCcU$N9" role="2kzgdm">
+        <node concept="Xl_RD" id="2kpuhi0s$$P" role="il5_5">
+          <property role="Xl_RC" value="Save &amp; Close" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf2i" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_NEXT" />
+      <node concept="2kzhL4" id="2qcR1OSjf2j" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTx/F4" />
+        <node concept="Xl_RD" id="2qcR1OSjf2l" role="il5_5">
+          <property role="Xl_RC" value="NEXT" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="2qcR1OSjf2Q" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_BACK" />
+      <node concept="2kzhL4" id="2qcR1OSjf2R" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTw/F3" />
+        <node concept="Xl_RD" id="2qcR1OSjf2T" role="il5_5">
+          <property role="Xl_RC" value="BACK" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzT" role="2kzhMJ">
+      <property role="TrG5h" value="StatusEdit" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzU" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTx/F4" />
+        <node concept="Xl_RD" id="3Rw9V4pLpzV" role="il5_5">
+          <property role="Xl_RC" value="Status Edit" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="3Rw9V4pLpzW" role="2kzhMJ">
+      <property role="TrG5h" value="ValueEdit" />
+      <node concept="2kzhL4" id="3Rw9V4pLpzX" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTw/F3" />
+        <node concept="Xl_RD" id="3Rw9V4pLpzY" role="il5_5">
+          <property role="Xl_RC" value="Value Edit" />
         </node>
       </node>
     </node>
@@ -411,36 +484,6 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="3Rw9V4pLp$e" role="2kzhMJ">
-      <property role="TrG5h" value="Back" />
-      <node concept="2kzhL4" id="3Rw9V4pLp$f" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTw/F3" />
-        <node concept="Xl_RD" id="3Rw9V4pLp$g" role="il5_5">
-          <property role="Xl_RC" value="Back" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="6xifBbDF$gl" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDF$hi" role="il5$o">
-          <property role="Xl_RC" value="arrow_back" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6xifBbDMvuX" role="2kzhMJ">
-      <property role="TrG5h" value="SearchFilter" />
-      <node concept="2kzhL4" id="6xifBbDMvuY" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTw/F3" />
-        <node concept="Xl_RD" id="6xifBbDMvuZ" role="il5_5">
-          <property role="Xl_RC" value="Search Filter" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="6xifBbDMvv0" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDMvv1" role="il5$o">
-          <property role="Xl_RC" value="settings" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="U8r3Yq8SGc" role="2kzhMJ">
       <property role="TrG5h" value="RaiseException" />
       <node concept="2kzhL4" id="U8r3Yq8SGd" role="2kzgdm">
@@ -455,54 +498,11 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="64PSf$EMKQ2" role="2kzhMJ">
-      <property role="TrG5h" value="CFT_FlagMessage" />
-      <node concept="2kzhL4" id="64PSf$EMKQ3" role="2kzgdm">
-        <property role="il5CD" value="7qQ6PJwv4Q2/INSERT" />
-        <node concept="Xl_RD" id="64PSf$EMKQ4" role="il5_5">
-          <property role="Xl_RC" value="Flag" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="6xifBbDF$a1" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDF$bc" role="il5$o">
-          <property role="Xl_RC" value="delete_outline" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3Rw9V4pLp$h" role="2kzhMJ">
-      <property role="TrG5h" value="OK2" />
-      <node concept="2kzhL4" id="3Rw9V4pLp$i" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTD/F12" />
-        <node concept="Xl_RD" id="3Rw9V4pLp$j" role="il5_5">
-          <property role="Xl_RC" value="OK" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="3Rw9V4pLp$k" role="2kzhMJ">
       <property role="TrG5h" value="Create" />
       <node concept="2kzhL4" id="3Rw9V4pLp$l" role="2kzgdm">
         <node concept="Xl_RD" id="3Rw9V4pLp$m" role="il5_5">
           <property role="Xl_RC" value="Create" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="5ol$NvKd7x" role="2kzhMJ">
-      <property role="TrG5h" value="CFT_Msg" />
-      <node concept="2kzhL4" id="5ol$NvKd7y" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTz/F6" />
-        <node concept="Xl_RD" id="5ol$NvKd7z" role="il5_5">
-          <property role="Xl_RC" value="Msg" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="5ol$NvKd9t" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="5ol$NvKd9u" role="il5_5">
-          <property role="Xl_RC" value="Msg" />
-        </node>
-        <node concept="238Bvw" id="1E9WFYq4utp" role="238Brw" />
-        <node concept="Xl_RD" id="6xifBbDUutu" role="il5$o">
-          <property role="Xl_RC" value="cancel" />
         </node>
       </node>
     </node>
@@ -697,332 +697,6 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="6XzXfke8zBL" role="2kzhMJ">
-      <property role="TrG5h" value="Complete_BjItem" />
-      <node concept="2kzhL4" id="6XzXfke8zBM" role="2kzgdm">
-        <node concept="Xl_RD" id="6XzXfke8zBN" role="il5_5">
-          <property role="Xl_RC" value="Complete Invoice" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="56_jou8oUVi" role="2kzhMJ">
-      <property role="TrG5h" value="Complete_BjItem_Cancel" />
-      <node concept="2kzhL4" id="56_jou8oUVj" role="2kzgdm">
-        <node concept="Xl_RD" id="56_jou8oUVk" role="il5_5">
-          <property role="Xl_RC" value="Complete Invoice (Cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1dqt$gJBSAy" role="2kzhMJ">
-      <property role="TrG5h" value="Create_BjItem_Ok" />
-      <node concept="2kzhL4" id="1dqt$gJBSAz" role="2kzgdm">
-        <node concept="Xl_RD" id="1dqt$gJBSA$" role="il5_5">
-          <property role="Xl_RC" value="Create Item (Suc)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1dqt$gJBSEd" role="2kzhMJ">
-      <property role="TrG5h" value="Create_BjItem_Cancel" />
-      <node concept="2kzhL4" id="1dqt$gJBSEe" role="2kzgdm">
-        <node concept="Xl_RD" id="1dqt$gJBSEf" role="il5_5">
-          <property role="Xl_RC" value="Create Item (Suc Cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1dqt$gJC0$C" role="2kzhMJ">
-      <property role="TrG5h" value="Create_BjItem_Flag" />
-      <node concept="2kzhL4" id="1dqt$gJC0$D" role="2kzgdm">
-        <node concept="Xl_RD" id="1dqt$gJC0$E" role="il5_5">
-          <property role="Xl_RC" value="Create Item (Suc Flag)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1dqt$gJC0Hz" role="2kzhMJ">
-      <property role="TrG5h" value="Create_BjItem_Exception" />
-      <node concept="2kzhL4" id="1dqt$gJC0H$" role="2kzgdm">
-        <node concept="Xl_RD" id="1dqt$gJC0H_" role="il5_5">
-          <property role="Xl_RC" value="Create Item (Suc EX)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1dqt$gJGjho" role="2kzhMJ">
-      <property role="TrG5h" value="Create_BjItem_Cancel_GE" />
-      <node concept="2kzhL4" id="1dqt$gJGjhp" role="2kzgdm">
-        <node concept="Xl_RD" id="1dqt$gJGjhq" role="il5_5">
-          <property role="Xl_RC" value="Create Item (Suc, GE cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="1dqt$gJGjlm" role="2kzhMJ">
-      <property role="TrG5h" value="Create_BjItem_EX_GE" />
-      <node concept="2kzhL4" id="1dqt$gJGjln" role="2kzgdm">
-        <node concept="Xl_RD" id="1dqt$gJGjlo" role="il5_5">
-          <property role="Xl_RC" value="Create Item (Suc, GE ex)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="50l$rcpGTQh" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditPos" />
-      <node concept="2kzhL4" id="50l$rcpGTQi" role="2kzgdm">
-        <node concept="Xl_RD" id="50l$rcpGTQj" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Position" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfDuFa" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditPos_Cancel" />
-      <node concept="2kzhL4" id="7dlwzTfDuFb" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfDuFc" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Position (cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfMcBt" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditPos_Flag" />
-      <node concept="2kzhL4" id="7dlwzTfMcBu" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfMcBv" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Position (flag)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfMcDN" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditPos_Cancel_GO" />
-      <node concept="2kzhL4" id="7dlwzTfMcDO" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfMcDP" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Position (cancel GO)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfMcGc" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditPos_Flag_GO" />
-      <node concept="2kzhL4" id="7dlwzTfMcGd" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfMcGe" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Position (flag GO)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3kFdJs8jYW" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi" />
-      <node concept="2kzhL4" id="3kFdJs8jYX" role="2kzgdm">
-        <node concept="Xl_RD" id="3kFdJs8jYY" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfDuDj" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi_Cancel" />
-      <node concept="2kzhL4" id="7dlwzTfDuDk" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfDuDl" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfNWvE" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi_Flag" />
-      <node concept="2kzhL4" id="7dlwzTfNWvF" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfNWvG" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI flag)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3xGERTNpFSS" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi_CancelInConclusion" />
-      <node concept="2kzhL4" id="3xGERTNpFST" role="2kzgdm">
-        <node concept="Xl_RD" id="3xGERTNpFSU" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI flag in conclusion)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3xGERTNpFVS" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi_FlagInConclusion" />
-      <node concept="2kzhL4" id="3xGERTNpFVT" role="2kzgdm">
-        <node concept="Xl_RD" id="3xGERTNpFVU" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI cancel in conlcusion)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfNWy2" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi_CancelGO" />
-      <node concept="2kzhL4" id="7dlwzTfNWy3" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfNWy4" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI cancel GO )" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7dlwzTfNW$$" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EditHeadFullUi_FlagGO" />
-      <node concept="2kzhL4" id="7dlwzTfNW$_" role="2kzgdm">
-        <node concept="Xl_RD" id="7dlwzTfNW$A" role="il5_5">
-          <property role="Xl_RC" value="Compound - Edit Head (Full UI flag GO)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3xGERTNpFwH" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_EDITH" />
-      <node concept="2kzhL4" id="3xGERTNpFwI" role="2kzgdm">
-        <node concept="Xl_RD" id="3xGERTNpFwJ" role="il5_5" />
-      </node>
-    </node>
-    <node concept="il5_x" id="58zkQdG8_Kj" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_NEW_ORDER" />
-      <node concept="2kzhL4" id="58zkQdG8_Kk" role="2kzgdm">
-        <node concept="Xl_RD" id="58zkQdG8_Kl" role="il5_5">
-          <property role="Xl_RC" value="Task Handling (new Order)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3cZhE1VQBZZ" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_NEW_ORDER_CANCEL_Pre" />
-      <node concept="2kzhL4" id="3cZhE1VQC00" role="2kzgdm">
-        <node concept="Xl_RD" id="3cZhE1VQC01" role="il5_5">
-          <property role="Xl_RC" value="Task Handling (new Order, cancel in pre)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6HvFgwd9lmS" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_NEW_ORDER_CANCEL_Suc" />
-      <node concept="2kzhL4" id="6HvFgwd9lmT" role="2kzgdm">
-        <node concept="Xl_RD" id="6HvFgwd9lmU" role="il5_5">
-          <property role="Xl_RC" value="Task Handling (new Order, cancel in suc)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="58zkQdG8_OB" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_EXISTING_ORDER" />
-      <node concept="2kzhL4" id="58zkQdG8_OC" role="2kzgdm">
-        <node concept="Xl_RD" id="58zkQdG8_OD" role="il5_5">
-          <property role="Xl_RC" value="Task Handling (existing Order)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="2Uji7vlCwwi" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_DOC_CREATOR" />
-      <node concept="2kzhL4" id="2Uji7vlCwwj" role="2kzgdm">
-        <node concept="Xl_RD" id="2Uji7vlCwwk" role="il5_5">
-          <property role="Xl_RC" value="Doc Creator (existing Order)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="7TgG1qSrmPS" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_DOC_CREATOR_NEW" />
-      <node concept="2kzhL4" id="7TgG1qSrmPT" role="2kzgdm">
-        <node concept="Xl_RD" id="7TgG1qSrmPU" role="il5_5">
-          <property role="Xl_RC" value="Doc Creator (new Order)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6a7opD1W2ic" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_DOC_CREATOR_NEW_Cancel" />
-      <node concept="2kzhL4" id="6a7opD1W2id" role="2kzgdm">
-        <node concept="Xl_RD" id="6a7opD1W2ie" role="il5_5">
-          <property role="Xl_RC" value="Doc Creator (new Order init-cancel)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="5Ld38uCUaBr" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_COMP_Complete" />
-      <node concept="2kzhL4" id="5Ld38uCUaBs" role="2kzgdm">
-        <node concept="Xl_RD" id="5Ld38uCUaBt" role="il5_5">
-          <property role="Xl_RC" value="Complete with Successor/GE (existing)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="5Ld38uCUcf5" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_COMP_Complete_NEW" />
-      <node concept="2kzhL4" id="5Ld38uCUcf6" role="2kzgdm">
-        <node concept="Xl_RD" id="5Ld38uCUcf7" role="il5_5">
-          <property role="Xl_RC" value="Complete with Successor/GE (new)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="5Ld38uCVpf5" role="2kzhMJ">
-      <property role="TrG5h" value="SUC_COMP_Complete_CANCEL" />
-      <node concept="2kzhL4" id="5Ld38uCVpf6" role="2kzgdm">
-        <node concept="Xl_RD" id="5Ld38uCVpf7" role="il5_5">
-          <property role="Xl_RC" value="Complete with Successor/GE (cancel GE / existing)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRnhAwfF" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_OK" />
-      <node concept="2kzhL4" id="s8qRnhAwfG" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRnhAwfH" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI ok" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRnhAwzh" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_CANCEL_INNER" />
-      <node concept="2kzhL4" id="s8qRnhAwzi" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRnhAwzj" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI cancel inner" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRnhAwBn" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_FLAG_INNER" />
-      <node concept="2kzhL4" id="s8qRnhAwBo" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRnhAwBp" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI flag inner" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRnhAwFw" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_CANCEL_OUTER" />
-      <node concept="2kzhL4" id="s8qRnhAwFx" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRnhAwFy" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI cancel outer" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRnhAwJn" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_FLAG_OUTER" />
-      <node concept="2kzhL4" id="s8qRnhAwJo" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRnhAwJp" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI flag outer" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6HvFgwd0iLm" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_EX_OUTER" />
-      <node concept="2kzhL4" id="6HvFgwd0iLn" role="2kzgdm">
-        <node concept="Xl_RD" id="6HvFgwd0iLo" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI ex outer" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6HvFgwd0iPI" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_2UI_EX_INNER" />
-      <node concept="2kzhL4" id="6HvFgwd0iPJ" role="2kzgdm">
-        <node concept="Xl_RD" id="6HvFgwd0iPK" role="il5_5">
-          <property role="Xl_RC" value="Compound - 2UI ex inner" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRni64GI" role="2kzhMJ">
-      <property role="TrG5h" value="CMP_SUC_2UI_OK" />
-      <node concept="2kzhL4" id="s8qRni64GJ" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRni64GK" role="il5_5">
-          <property role="Xl_RC" value="Compound + Successor - 2UI ok" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRniasIA" role="2kzhMJ">
-      <property role="TrG5h" value="AUTO_GO_OK" />
-      <node concept="2kzhL4" id="s8qRniasIB" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRniasIC" role="il5_5">
-          <property role="Xl_RC" value="Edit Order (GO) - ok" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="s8qRniasOE" role="2kzhMJ">
-      <property role="TrG5h" value="AUTO_GO_CANCEL" />
-      <node concept="2kzhL4" id="s8qRniasOF" role="2kzgdm">
-        <node concept="Xl_RD" id="s8qRniasOG" role="il5_5">
-          <property role="Xl_RC" value="Edit Order (GO) - cancel" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="1nXeD0eJ0FL" role="2kzhMJ">
       <property role="TrG5h" value="SEAN_WITHCANCEL" />
       <node concept="2kzhL4" id="1nXeD0eJ0FM" role="2kzgdm">
@@ -1036,40 +710,6 @@
       <node concept="2kzhL4" id="1nXeD0eJ0M3" role="2kzgdm">
         <node concept="Xl_RD" id="1nXeD0eJ0M4" role="il5_5">
           <property role="Xl_RC" value="Set Pos EAN to zero (ex)" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="2qcR1OSjf2i" role="2kzhMJ">
-      <property role="TrG5h" value="NEXT" />
-      <node concept="2kzhL4" id="2qcR1OSjf2j" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTx/F4" />
-        <node concept="Xl_RD" id="2qcR1OSjf2l" role="il5_5">
-          <property role="Xl_RC" value="NEXT" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="2qcR1OSjf2Q" role="2kzhMJ">
-      <property role="TrG5h" value="BACK" />
-      <node concept="2kzhL4" id="2qcR1OSjf2R" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTw/F3" />
-        <node concept="Xl_RD" id="2qcR1OSjf2T" role="il5_5">
-          <property role="Xl_RC" value="BACK" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="2qcR1OSjf4i" role="2kzhMJ">
-      <property role="TrG5h" value="SAVE_CLOSE" />
-      <node concept="2kzhL4" id="2qcR1OSjf4j" role="2kzgdm">
-        <node concept="Xl_RD" id="2qcR1OSjf4l" role="il5_5">
-          <property role="Xl_RC" value="SAVE_CLOSE" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="2qcR1OSjf4S" role="2kzhMJ">
-      <property role="TrG5h" value="CFT_OK" />
-      <node concept="2kzhL4" id="2qcR1OSjf4T" role="2kzgdm">
-        <node concept="Xl_RD" id="2qcR1OSjf4V" role="il5_5">
-          <property role="Xl_RC" value="Ok" />
         </node>
       </node>
     </node>
@@ -1091,37 +731,6 @@
               <property role="3RprZj" value="Master Creator 0" />
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="6XA$NCcU$N8" role="2kzhMJ">
-      <property role="TrG5h" value="CFT_SaveNClose" />
-      <node concept="2kzhL4" id="6XA$NCcU$N9" role="2kzgdm">
-        <node concept="Xl_RD" id="2kpuhi0s$$P" role="il5_5">
-          <property role="Xl_RC" value="Save &amp; Close" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="2kpuhi0vFum" role="2kzhMJ">
-      <property role="TrG5h" value="GO_CONCLUSION" />
-      <node concept="2kzhL4" id="2kpuhi0vFun" role="2kzgdm">
-        <property role="il5CD" value="6eGMS3GUIM7/GO_OK" />
-        <node concept="Xl_RD" id="2kpuhi0vFuo" role="il5_5">
-          <property role="Xl_RC" value="GO" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="4kNjw_nvCAf" role="2kzhMJ">
-      <property role="TrG5h" value="WARNING" />
-      <node concept="2kzhL4" id="4kNjw_nvCAg" role="2kzgdm">
-        <node concept="Xl_RD" id="4kNjw_nvCAh" role="il5_5">
-          <property role="Xl_RC" value="This is a important warning" />
-        </node>
-      </node>
-      <node concept="2kzhL4" id="4kNjw_nvCH5" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="4kNjw_nvCH6" role="il5_5">
-          <property role="Xl_RC" value="This is an important MDE warning" />
         </node>
       </node>
     </node>
@@ -2402,6 +2011,10 @@
       <property role="TrG5h" value="CASE12_GO_GUARD_FINAL_CANCEL_USE_APPLCOSE" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="38D16t1osrB" role="Qtgdg">
+      <property role="TrG5h" value="GoGe_Nothing" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="QsSxf" id="2c1OwJRUW7s" role="Qtgdg">
       <property role="TrG5h" value="CASE20_GE_PRECOND_CMDINIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
@@ -2440,6 +2053,10 @@
     </node>
     <node concept="QsSxf" id="2c1OwJS9D_d" role="Qtgdg">
       <property role="TrG5h" value="CASE29_GOGE_GUARD_CHILDTERM" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1opAp" role="Qtgdg">
+      <property role="TrG5h" value="SucGo_Nothing" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2c1OwJSCmDq" role="Qtgdg">
@@ -2490,6 +2107,10 @@
       <property role="TrG5h" value="CASE51_SUCGO_GUARD_SUC_FINAL_OK" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="38D16t1ohQG" role="Qtgdg">
+      <property role="TrG5h" value="MultiExec_Nothing" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="QsSxf" id="2c1OwJTbGCj" role="Qtgdg">
       <property role="TrG5h" value="CASE60_MULTIEXEC_CANCEL" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
@@ -2498,28 +2119,100 @@
       <property role="TrG5h" value="CASE61_MULTIEXEC_EXCEPTION" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="38D16t1o4Bn" role="Qtgdg">
+      <property role="TrG5h" value="CMP_NoUi_Nothing" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1odBn" role="Qtgdg">
+      <property role="TrG5h" value="CMP_NoUi_Nothing_User_cancel" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="QsSxf" id="2c1OwJTosSV" role="Qtgdg">
-      <property role="TrG5h" value="CASE62_CMP_PRECOND_GO_INIT" />
+      <property role="TrG5h" value="CASE62_CMP_NoUi_PRECOND_GO_INIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2c1OwJTo$ft" role="Qtgdg">
-      <property role="TrG5h" value="CASE63_CMP_PRECOND_GE_INIT" />
+      <property role="TrG5h" value="CASE63_CMP_NoUi_PRECOND_GE_INIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2c1OwJToAws" role="Qtgdg">
-      <property role="TrG5h" value="CASE64_CMP_PRECOND_GO_CONC" />
+      <property role="TrG5h" value="CASE64_CMP_NoUi_PRECOND_GO_CONC" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2c1OwJToDjQ" role="Qtgdg">
-      <property role="TrG5h" value="CASE66_CMP_GUARD_GO_INIT" />
+      <property role="TrG5h" value="CASE66_CMP_NoUi_GUARD_GO_INIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2c1OwJToEXR" role="Qtgdg">
-      <property role="TrG5h" value="CASE67_CMP_GUARD_GE_INIT" />
+      <property role="TrG5h" value="CASE67_CMP_NoUi_GUARD_GE_INIT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="2c1OwJToFPG" role="Qtgdg">
       <property role="TrG5h" value="CASE68_CMP_GUARD_GO_CON" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1nZZ8" role="Qtgdg">
+      <property role="TrG5h" value="Cmp_Nothing" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t18tKi" role="Qtgdg">
+      <property role="TrG5h" value="CASE71_CMP_PRECOND_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t18tKj" role="Qtgdg">
+      <property role="TrG5h" value="CASE72_CMP_PRECOND_GE_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t18tKk" role="Qtgdg">
+      <property role="TrG5h" value="CASE73_CMP_PRECOND_GO_CONC" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t18tKl" role="Qtgdg">
+      <property role="TrG5h" value="CASE74_CMP_GUARD_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t18tKm" role="Qtgdg">
+      <property role="TrG5h" value="CASE75_CMP_GUARD_GE_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t18tKn" role="Qtgdg">
+      <property role="TrG5h" value="CASE76_CMP_GUARD_GO_CON" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t19CWU" role="Qtgdg">
+      <property role="TrG5h" value="CASE77_CMP_PRECOND_CHILD_TERM" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1EK9U" role="Qtgdg">
+      <property role="TrG5h" value="CASE78_CMP_GUARD_CHILD_TERM" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t19P6m" role="Qtgdg">
+      <property role="TrG5h" value="CASE79_CMP_GUARD_GE_FIN_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1Vc8C" role="Qtgdg">
+      <property role="TrG5h" value="Cmp_NoGE_Nothing" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1V479" role="Qtgdg">
+      <property role="TrG5h" value="CASE80_CMP_NOGE_PRECOND_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1Viy7" role="Qtgdg">
+      <property role="TrG5h" value="CASE81_CMP_NOGE_GUARD_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1Vk3K" role="Qtgdg">
+      <property role="TrG5h" value="CASE82_CMP_NOGE_PRECOND_GO_CONC" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1Vl09" role="Qtgdg">
+      <property role="TrG5h" value="CASE83_CMP_NOGE_GUARD_GO_CONC" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="38D16t1SB$C" role="Qtgdg">
+      <property role="TrG5h" value="Cmp_OneUI_Nothing" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="2jDJ2hE2j_t" role="1B3o_S" />

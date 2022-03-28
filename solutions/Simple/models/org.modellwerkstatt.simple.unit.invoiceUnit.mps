@@ -204,7 +204,6 @@
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
-        <child id="3875131616719439029" name="actualArgument" index="2_HrWp" />
       </concept>
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
@@ -229,9 +228,6 @@
       </concept>
       <concept id="3887124829264538773" name="org.modellwerkstatt.objectflow.structure.PagePaneActionProviderLink" flags="ng" index="3063JU">
         <reference id="3887124829264538774" name="actionProviderPagePane" index="3063JT" />
-      </concept>
-      <concept id="3887124829263120988" name="org.modellwerkstatt.objectflow.structure.Action" flags="ng" index="309pON">
-        <reference id="96922280161183875" name="customLabel" index="3uz5Vf" />
       </concept>
       <concept id="1881524139084590827" name="org.modellwerkstatt.objectflow.structure.PageConclusion" flags="ng" index="10qiFn">
         <reference id="8554054623635738995" name="label" index="2DFCCC" />
@@ -316,9 +312,6 @@
       </concept>
     </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
-      <concept id="4039601557370583410" name="org.modellwerkstatt.dataux.structure.PageConclusionReference" flags="ng" index="2dfVl4">
-        <reference id="4039601557370583631" name="pageConclusion" index="2dfVpT" />
-      </concept>
       <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe" />
       <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ng" index="fOGQ9">
         <child id="1750699687529771423" name="menuItems" index="fOGQ8" />
@@ -337,11 +330,6 @@
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
-      <concept id="2019652483308169511" name="org.modellwerkstatt.dataux.structure.MenuCompoundAction" flags="ng" index="2TlDos">
-        <child id="4039601557371474864" name="graphOwnerAutoCon" index="2dc_Y6" />
-        <child id="8697556949218969227" name="graphEditCall" index="3bnEHX" />
-        <child id="8697556949218969098" name="graphEditAutoCon" index="3bnEJW" />
-      </concept>
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
       <concept id="3899779351686566805" name="org.modellwerkstatt.dataux.structure.StatusDelegate" flags="ng" index="2TG9WX" />
       <concept id="7834248083556639603" name="org.modellwerkstatt.dataux.structure.OneWeight" flags="ng" index="2U5nhG" />
@@ -478,7 +466,7 @@
       <property role="TrG5h" value="SearchResult" />
       <ref role="3gcvY6" node="6XzXfke18vl" resolve="InvoiceSearchFilter" />
       <node concept="10qiFn" id="6XzXfke1aKS" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3Rw9V4pLp$e" resolve="Back" />
+        <ref role="2DFCCC" to="oyrz:2qcR1OSjf2Q" resolve="CFT_BACK" />
         <node concept="20qIzx" id="6XzXfke1aNh" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke1aNi" role="2VODD2">
             <node concept="10Adxa" id="6XzXfke1aNw" role="3cqZAp">
@@ -1002,7 +990,7 @@
                               <ref role="3cqZAo" node="5yulfH_nFi2" resolve="problem" />
                             </node>
                             <node concept="liA8E" id="5yulfH_nGc9" role="2OqNvi">
-                              <ref role="37wK5l" to="28jr:7VbqtSRQEbP" resolve="getSimpleText_Lgcy" />
+                              <ref role="37wK5l" to="28jr:7VbqtSRQEbP" resolve="getSimpleUserText" />
                             </node>
                           </node>
                         </node>
@@ -1058,7 +1046,7 @@
       <property role="TrG5h" value="MainPage" />
       <ref role="3gcvY6" to="sdim:6XzXfke1alv" resolve="Invoice" />
       <node concept="10qiFn" id="6XzXfke8ySG" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
+        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="CFT_OK_Hide" />
         <node concept="20qIzx" id="6XzXfke8z0g" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke8z0h" role="2VODD2">
             <node concept="3clFbH" id="382CQP4S5_X" role="3cqZAp" />
@@ -1341,7 +1329,7 @@
       <property role="TrG5h" value="Page" />
       <ref role="3gcvY6" to="sdim:6XzXfke1alv" resolve="Invoice" />
       <node concept="10qiFn" id="6XzXfke8zxx" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
+        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="CFT_OK_Hide" />
         <node concept="20qIzx" id="6XzXfke8zyT" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke8zyU" role="2VODD2">
             <node concept="3clFbF" id="6XzXfke8zgd" role="3cqZAp">
@@ -2004,7 +1992,7 @@
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" to="sdim:1FVEJAItIuo" resolve="InvoiceFolder" />
       <node concept="10qiFn" id="4InK$iO3LCY" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
+        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="CFT_OK_Hide" />
         <node concept="20qIzx" id="4InK$iO3LHG" role="10ot2L">
           <node concept="3clFbS" id="4InK$iO3LHH" role="2VODD2">
             <node concept="10Adxj" id="4InK$iO3LHR" role="3cqZAp" />
@@ -2391,59 +2379,6 @@
       <node concept="fOGPe" id="6XzXfke8zow" role="fOGQ8">
         <node concept="33WYYh" id="6XzXfke8zoU" role="fOGQ8">
           <ref role="2_Hrw8" node="6XzXfke8x43" resolve="Edit Invoice" />
-        </node>
-        <node concept="2TlDos" id="6XzXfke8zqY" role="fOGQ8">
-          <ref role="3uz5Vf" to="oyrz:6XzXfke8zBL" resolve="Complete_BjItem" />
-          <ref role="2_Hrw8" node="6XzXfke8x43" resolve="Edit Invoice" />
-          <node concept="2dfVl4" id="5YEYfHw0j19" role="2dc_Y6">
-            <ref role="2dfVpT" node="6XzXfke8ySG" resolve="Ok" />
-          </node>
-          <node concept="2_HltQ" id="7h5_Fe2gwq_" role="3bnEHX">
-            <ref role="2_Hrw8" node="6XzXfke8xsE" resolve="Close Invoice" />
-            <node concept="2IFXgM" id="6XzXfke8zwe" role="2_HrWp">
-              <ref role="2IFZ7r" to="sdim:6XzXfke1alv" resolve="Invoice" />
-            </node>
-            <node concept="Rm8GO" id="1dqt$gJGkwl" role="2_HrWp">
-              <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-              <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
-            </node>
-            <node concept="3clFbT" id="3exXxRetIuA" role="2_HrWp">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="2dfVl4" id="5YEYfHw0j13" role="3bnEJW">
-            <ref role="2dfVpT" node="6XzXfke8zxx" resolve="Ok" />
-          </node>
-        </node>
-        <node concept="2TlDos" id="56_jou8oUQf" role="fOGQ8">
-          <ref role="3uz5Vf" to="oyrz:56_jou8oUVi" resolve="Complete_BjItem_Cancel" />
-          <ref role="2_Hrw8" node="6XzXfke8x43" resolve="Edit Invoice" />
-          <node concept="2IFXgM" id="56_jou8oUQg" role="2_HrWp">
-            <ref role="2IFZ7r" to="sdim:6XzXfke1alv" resolve="Invoice" />
-          </node>
-          <node concept="Rm8GO" id="56_jou8oV0J" role="2_HrWp">
-            <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-            <ref role="Rm8GQ" to="oyrz:7dlwzTfDyn_" resolve="CANCEL" />
-          </node>
-          <node concept="2dfVl4" id="5YEYfHw0j14" role="2dc_Y6">
-            <ref role="2dfVpT" node="6XzXfke8ySG" resolve="Ok" />
-          </node>
-          <node concept="2_HltQ" id="7h5_Fe2gwqb" role="3bnEHX">
-            <ref role="2_Hrw8" node="6XzXfke8xsE" resolve="Close Invoice" />
-            <node concept="2IFXgM" id="56_jou8oUQk" role="2_HrWp">
-              <ref role="2IFZ7r" to="sdim:6XzXfke1alv" resolve="Invoice" />
-            </node>
-            <node concept="Rm8GO" id="1dqt$gJGkvD" role="2_HrWp">
-              <ref role="1Px2BO" to="oyrz:7dlwzTfDykH" resolve="Do" />
-              <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
-            </node>
-            <node concept="3clFbT" id="3exXxRetIyQ" role="2_HrWp">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="2dfVl4" id="5YEYfHw0j1s" role="3bnEJW">
-            <ref role="2dfVpT" node="6XzXfke8zxx" resolve="Ok" />
-          </node>
         </node>
       </node>
       <node concept="PoWA$" id="6XzXfke1aGJ" role="PoUSn" />
