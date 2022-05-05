@@ -178,12 +178,19 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="1410680821326658964" name="org.modellwerkstatt.objectflow.structure.BPMetaReference" flags="ng" index="2dcwcJ">
+        <reference id="1410680821326658966" name="businessProperty" index="2dcwcH" />
+      </concept>
       <concept id="4986415014425832649" name="org.modellwerkstatt.objectflow.structure.VslProblemsParam" flags="ng" index="gHub0" />
       <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
         <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
       </concept>
       <concept id="5788629615582330252" name="org.modellwerkstatt.objectflow.structure.ProblemMessage" flags="ng" index="lgADV">
         <child id="5788629615582331966" name="problem" index="lgxf9" />
+      </concept>
+      <concept id="5788629615582326299" name="org.modellwerkstatt.objectflow.structure.Guard" flags="ng" index="lgBBG">
+        <child id="5788629615582344424" name="desc" index="lgycv" />
+        <child id="5788629615582327858" name="condition" index="lgAf5" />
       </concept>
       <concept id="5788629615597606700" name="org.modellwerkstatt.objectflow.structure.Precondition" flags="ng" index="mlg3r">
         <child id="5788629615597607706" name="problemdesc" index="mlgNH" />
@@ -209,6 +216,7 @@
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
         <reference id="8086154250676616105" name="object" index="2IFZ7r" />
       </concept>
+      <concept id="1879461712355203928" name="org.modellwerkstatt.objectflow.structure.PageScopeConceptFunc" flags="ig" index="JX2Gw" />
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
@@ -266,6 +274,7 @@
       </concept>
       <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundObject" index="3gcvY6" />
+        <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
@@ -319,6 +328,9 @@
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
       </concept>
+      <concept id="465568541577797267" name="org.modellwerkstatt.dataux.structure.RefDelegateScopeProps" flags="ng" index="P8lqc">
+        <child id="465568541577695010" name="paths" index="P8WsX" />
+      </concept>
       <concept id="465568541577313928" name="org.modellwerkstatt.dataux.structure.DisabledDOption" flags="ng" index="Pevqn" />
       <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ng" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
@@ -331,6 +343,9 @@
       </concept>
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
+      <concept id="3899779351686566804" name="org.modellwerkstatt.dataux.structure.ReferenceDelegate" flags="ng" index="2TG9WW">
+        <child id="465568541577805289" name="scopeText" index="P8nnQ" />
+      </concept>
       <concept id="3899779351686566805" name="org.modellwerkstatt.dataux.structure.StatusDelegate" flags="ng" index="2TG9WX" />
       <concept id="7834248083556639603" name="org.modellwerkstatt.dataux.structure.OneWeight" flags="ng" index="2U5nhG" />
       <concept id="7834248083556629547" name="org.modellwerkstatt.dataux.structure.DelegateForm" flags="ng" index="2U5qGO">
@@ -392,8 +407,13 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
@@ -1175,6 +1195,44 @@
           </node>
         </node>
       </node>
+      <node concept="JX2Gw" id="3dciNchQbZb" role="JX2Go">
+        <node concept="3clFbS" id="3dciNchQbZc" role="2VODD2">
+          <node concept="1X3_iC" id="3dciNchQSXN" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="3dciNchQc2b" role="8Wnug">
+              <node concept="2OqwBi" id="3dciNchQcpE" role="3clFbG">
+                <node concept="2OqwBi" id="3dciNchQc6j" role="2Oq$k0">
+                  <node concept="3urNQE" id="3dciNchQc2a" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
+                  </node>
+                  <node concept="2dcwcJ" id="3dciNchQccy" role="2OqNvi">
+                    <ref role="2dcwcH" to="sdim:1FVEJAItPs0" resolve="folder" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3dciNchQczc" role="2OqNvi">
+                  <ref role="37wK5l" to="28jr:3_EaJyvi4d8" resolve="setScope" />
+                  <node concept="2ShNRf" id="3dciNchQc$U" role="37wK5m">
+                    <node concept="Tc6Ow" id="3dciNchQdQY" role="2ShVmc">
+                      <node concept="3uibUv" id="3dciNchQesY" role="HW$YZ">
+                        <ref role="3uigEE" to="sdim:1FVEJAItIuo" resolve="InvoiceFolder" />
+                      </node>
+                      <node concept="2OqwBi" id="3dciNchQeQs" role="HW$Y0">
+                        <node concept="3urNQE" id="3dciNchQeLn" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
+                        </node>
+                        <node concept="2S8uIT" id="3dciNchQeVj" role="2OqNvi">
+                          <ref role="2S8YL0" to="sdim:1FVEJAItPs0" resolve="folder" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="20qIzx" id="6XzXfke8xRa" role="3umfm7">
       <node concept="3clFbS" id="6XzXfke8xRb" role="2VODD2">
@@ -1633,8 +1691,15 @@
     <node concept="20qIzx" id="1FVEJAIXGCU" role="10_T4l">
       <node concept="3clFbS" id="1FVEJAIXGCV" role="2VODD2">
         <node concept="3clFbH" id="7ymmWYKCQhW" role="3cqZAp" />
-        <node concept="mlg3r" id="37j3FAMoWll" role="3cqZAp">
-          <node concept="3y3z36" id="5kXhxaxF5jz" role="mlgNJ">
+        <node concept="lgBBG" id="1_PE6VjAo5O" role="3cqZAp">
+          <node concept="lgADV" id="1_PE6VjAo5R" role="lgycv">
+            <node concept="35AVbj" id="1_PE6VjAo5S" role="lgxf9">
+              <node concept="ic4WF" id="1_PE6VjAo5T" role="icr7_">
+                <property role="ic4Xk" value="MoWare Command Test" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="5kXhxaxF5jz" role="lgAf5">
             <node concept="2dk9JS" id="5kXhxaxF4S3" role="3uHU7B">
               <node concept="2OqwBi" id="5kXhxaxF5qk" role="3uHU7B">
                 <node concept="3urNQE" id="5kXhxaxF4FT" role="2Oq$k0">
@@ -1650,13 +1715,6 @@
             </node>
             <node concept="3cmrfG" id="5kXhxaxF5mO" role="3uHU7w">
               <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-          <node concept="lgADV" id="37j3FAMoWlo" role="mlgNH">
-            <node concept="35AVbj" id="37j3FAMoWlp" role="lgxf9">
-              <node concept="ic4WF" id="37j3FAMoWlq" role="icr7_">
-                <property role="ic4Xk" value="Valerie Command Test" />
-              </node>
             </node>
           </node>
         </node>
@@ -2258,6 +2316,19 @@
       <node concept="2TG9WX" id="6XzXfke8y_E" role="3OfFNq">
         <node concept="3Oe$u_" id="6XzXfke8y_F" role="3Oe2NS">
           <ref role="3O0p26" to="sdim:6XzXfke7pmM" resolve="state" />
+        </node>
+      </node>
+      <node concept="2TG9WW" id="3dciNchJfgQ" role="3OfFNq">
+        <node concept="P8lqc" id="3dciNchJfgR" role="P8nnQ">
+          <node concept="3Oe$u_" id="3dciNchJfh$" role="P8WsX">
+            <ref role="3O0p26" to="sdim:1FVEJAItIuv" resolve="id" />
+          </node>
+          <node concept="3Oe$u_" id="3dciNchJfhQ" role="P8WsX">
+            <ref role="3O0p26" to="sdim:1FVEJAItIx8" resolve="name" />
+          </node>
+        </node>
+        <node concept="3Oe$u_" id="3dciNchJfgS" role="3Oe2NS">
+          <ref role="3O0p26" to="sdim:3dciNchUr12" resolve="folderVirtualProp" />
         </node>
       </node>
     </node>

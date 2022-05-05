@@ -365,6 +365,12 @@
         </node>
       </node>
     </node>
+    <node concept="2$ntO6" id="4ezdYK9Xrp7" role="2$nsuY">
+      <node concept="33WYYh" id="4ezdYK9Xrp8" role="2$ntUL">
+        <ref role="3uz5Vf" to="oyrz:6zVU6_jm7Dg" resolve="Tile_S1" />
+        <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
+      </node>
+    </node>
     <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
       <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
         <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
@@ -392,7 +398,7 @@
     </node>
     <node concept="2$ntO6" id="2het$DF8g73" role="2$nsuY">
       <node concept="33WYYh" id="2het$DF8g74" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="EditOrder Predecessor" />
+        <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
         <node concept="10Nm6u" id="2het$DF8g75" role="2_HrWp" />
         <node concept="3cmrfG" id="2het$DF8g76" role="2_HrWp">
           <property role="3cmrfH" value="3" />
@@ -613,7 +619,7 @@
     </node>
     <node concept="2$ntO6" id="1TowlBnaJ3B" role="2$nsuY">
       <node concept="33WYYh" id="1TowlBnaJ3C" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="EditOrder Predecessor" />
+        <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
         <node concept="10Nm6u" id="1TowlBnaJ4$" role="2_HrWp" />
         <node concept="3cmrfG" id="1TowlBnaJ4Q" role="2_HrWp">
           <property role="3cmrfH" value="3" />
@@ -1125,7 +1131,7 @@
     </node>
     <node concept="3lKVtU" id="7oLsFCHIe71" role="2A_d42">
       <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="10" />
+      <property role="1QnCsU" value="*/5" />
       <property role="1QnCsW" value="*" />
       <property role="1QnCj8" value="*" />
       <property role="1QnCj1" value="*" />
@@ -1134,7 +1140,7 @@
     </node>
     <node concept="3lKVtU" id="7oLsFCHIe7s" role="2A_d42">
       <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="10" />
+      <property role="1QnCsU" value="*/5" />
       <property role="1QnCsW" value="*" />
       <property role="1QnCj8" value="*" />
       <property role="1QnCj1" value="*" />
@@ -1172,6 +1178,14 @@
     </node>
     <node concept="3w4e_Z" id="3U0QWzuEgZ$" role="3w9mMS">
       <property role="TrG5h" value="BatchJobStrategy" />
+      <node concept="3w4bLU" id="1_PE6VjAoEZ" role="3w4b7O">
+        <node concept="Xl_RD" id="1_PE6VjAoGp" role="3w4aRE">
+          <property role="Xl_RC" value=".*MoWare Command Test.*" />
+        </node>
+        <node concept="Xl_RD" id="1_PE6VjAwzC" role="3w4aYS">
+          <property role="Xl_RC" value=".*Exception.*" />
+        </node>
+      </node>
       <node concept="3w4bLU" id="7Kr$v2f_hpa" role="3w4b7O">
         <node concept="Xl_RD" id="7Kr$v2f_hpG" role="3w4aYS">
           <property role="Xl_RC" value=".*IllegalStateException.*" />
@@ -1240,8 +1254,8 @@
         <node concept="Xl_RD" id="3l87qE_moOT" role="3w4aYS">
           <property role="Xl_RC" value=".*Null.*" />
         </node>
-        <node concept="1Kg0UH" id="1Z999TK48mo" role="1K988c">
-          <property role="1Kg0YU" value="5" />
+        <node concept="1Kg0UH" id="1_PE6Vjza0E" role="1K988c">
+          <property role="1Kg0YU" value="90" />
         </node>
       </node>
       <node concept="3watgV" id="7bWGJuS34dr" role="3w4b7O">

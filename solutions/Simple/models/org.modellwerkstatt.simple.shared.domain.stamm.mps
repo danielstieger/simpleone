@@ -126,6 +126,7 @@
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
         <child id="6525155817177697693" name="lines" index="20vkWT" />
+        <child id="1083620718216065081" name="singleLines" index="13z7HO" />
       </concept>
       <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
         <property id="6525155817177697682" name="text" index="20vkWQ" />
@@ -152,6 +153,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -209,6 +218,11 @@
         <node concept="20vkWP" id="6PQK_SYrIRl" role="20vkWT">
           <property role="20vkWQ" value="dfadf a" />
         </node>
+        <node concept="1PaTwC" id="7YG44tSvn5X" role="13z7HO">
+          <node concept="3oM_SD" id="7YG44tSvn5Y" role="1PaTwD">
+            <property role="3oM_SC" value="dfadf a" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1bOX9e" id="3cAl6M4nWUG" role="TxmiU">
@@ -232,6 +246,11 @@
       <node concept="20vkWO" id="6PQK_SYrIRP" role="3b_Q0">
         <node concept="20vkWP" id="6PQK_SYrIRQ" role="20vkWT">
           <property role="20vkWQ" value="fasd a" />
+        </node>
+        <node concept="1PaTwC" id="7YG44tSvn5Z" role="13z7HO">
+          <node concept="3oM_SD" id="7YG44tSvn60" role="1PaTwD">
+            <property role="3oM_SC" value="fasd a" />
+          </node>
         </node>
       </node>
     </node>
