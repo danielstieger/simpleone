@@ -418,7 +418,7 @@
     <node concept="il5_x" id="2qcR1OSjf2i" role="2kzhMJ">
       <property role="TrG5h" value="CFT_NEXT" />
       <node concept="2kzhL4" id="2qcR1OSjf2j" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTx/F4" />
+        <property role="il5CD" value="1hImSMr5NT2/DOWN" />
         <node concept="Xl_RD" id="2qcR1OSjf2l" role="il5_5">
           <property role="Xl_RC" value="NEXT" />
         </node>
@@ -427,7 +427,7 @@
     <node concept="il5_x" id="2qcR1OSjf2Q" role="2kzhMJ">
       <property role="TrG5h" value="CFT_BACK" />
       <node concept="2kzhL4" id="2qcR1OSjf2R" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTw/F3" />
+        <property role="il5CD" value="1hImSMr5NT1/UP" />
         <node concept="Xl_RD" id="2qcR1OSjf2T" role="il5_5">
           <property role="Xl_RC" value="BACK" />
         </node>
@@ -755,6 +755,24 @@
       <node concept="2kzhL4" id="3dciNchuq5t" role="2kzgdm">
         <node concept="Xl_RD" id="3dciNchuq5v" role="il5_5">
           <property role="Xl_RC" value="BACK" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7IcK5LneMUH" role="2kzhMJ">
+      <property role="TrG5h" value="EDIT" />
+      <node concept="2kzhL4" id="7IcK5LneMUI" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTx/F4" />
+        <node concept="Xl_RD" id="7IcK5LneMUJ" role="il5_5">
+          <property role="Xl_RC" value="Edit Positions &gt;" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7IcK5LnLjB4" role="2kzhMJ">
+      <property role="TrG5h" value="SELECT" />
+      <node concept="2kzhL4" id="7IcK5LnLjB5" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTw/F3" />
+        <node concept="Xl_RD" id="7IcK5LnLjB6" role="il5_5">
+          <property role="Xl_RC" value="&lt; Select Positions" />
         </node>
       </node>
     </node>

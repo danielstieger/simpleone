@@ -14,6 +14,8 @@
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
     <import index="4njd" ref="r:ab371df4-c540-459a-b54a-ba2897c2136f(org.modellwerkstatt.simple.shared.domain.stamm)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
+    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
+    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -57,6 +59,9 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
         <reference id="5862977038373003188" name="property" index="338YkT" />
       </concept>
@@ -137,6 +142,7 @@
         <property id="8614254524338490551" name="max" index="8tbpI" />
         <property id="8614254524338490550" name="min" index="8tbpJ" />
       </concept>
+      <concept id="1303316523343439632" name="org.modellwerkstatt.objectflow.structure.StatusAllElements" flags="ng" index="hRyxD" />
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -624,7 +630,22 @@
       <node concept="3cqZAl" id="6XzXfke1ana" role="3clF45" />
       <node concept="3Tm1VV" id="6XzXfke1anb" role="1B3o_S" />
       <node concept="3clFbS" id="6XzXfke1anc" role="3clF47">
-        <node concept="3clFbH" id="2rFQaT9ITFv" role="3cqZAp" />
+        <node concept="3clFbH" id="6fz7HvfOYXZ" role="3cqZAp" />
+        <node concept="3cpWs8" id="6fz7HvfOZ6t" role="3cqZAp">
+          <node concept="3cpWsn" id="6fz7HvfOZ6w" role="3cpWs9">
+            <property role="TrG5h" value="all" />
+            <node concept="10Q1$e" id="6fz7HvfOZ8o" role="1tU5fm">
+              <node concept="2XvVpB" id="6fz7HvfOZ6r" role="10Q1$1">
+                <ref role="3$lB4D" node="6PQK_SXXwVg" resolve="Konto" />
+              </node>
+            </node>
+            <node concept="2XvMaL" id="6fz7HvfOYYz" role="33vP2m">
+              <ref role="2XvMaQ" node="6PQK_SXXwVg" resolve="Konto" />
+              <node concept="hRyxD" id="6fz7HvfOZ2r" role="h55Ek" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6fz7HvfOYYd" role="3cqZAp" />
       </node>
     </node>
     <node concept="1bOX9e" id="6XzXfke1aoC" role="TxmiU">
