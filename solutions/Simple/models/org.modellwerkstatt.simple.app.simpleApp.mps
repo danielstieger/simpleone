@@ -358,12 +358,6 @@
         <ref role="3uz5Vf" to="oyrz:6zVU6_jm7Dg" resolve="Tile_S1" />
         <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
       </node>
-      <node concept="2XvMaL" id="1Ohi5d_Uxnc" role="2$ntZF">
-        <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-        <node concept="2vefiz" id="wGbog3pXNS" role="h55Ek">
-          <ref role="2vefiw" to="eqbi:AN_117c2L0" resolve="ordered" />
-        </node>
-      </node>
     </node>
     <node concept="2$ntO6" id="4ezdYK9Xrp7" role="2$nsuY">
       <node concept="33WYYh" id="4ezdYK9Xrp8" role="2$ntUL">

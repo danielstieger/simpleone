@@ -73,7 +73,11 @@
         <child id="406105322043152971" name="componentBaseName" index="20ptNC" />
       </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
+      <concept id="4862154259426722580" name="org.modellwerkstatt.objectflow.structure.Color" flags="ng" index="27cpit">
+        <property id="4862154259426722583" name="value" index="27cpiu" />
+      </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
+        <child id="4862154259426820861" name="color" index="27c1lO" />
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
         <child id="3146313690715522546" name="platforms" index="2kDvpj" />
       </concept>
@@ -203,6 +207,14 @@
   </node>
   <node concept="il5tC" id="3Rw9V4pLpzc">
     <property role="TrG5h" value="SimpleRes" />
+    <node concept="27cpit" id="4dTPSB4moi6" role="27c1lO">
+      <property role="TrG5h" value="Rot" />
+      <property role="27cpiu" value="#AAFFBB" />
+    </node>
+    <node concept="27cpit" id="4dTPSB4moi8" role="27c1lO">
+      <property role="TrG5h" value="Gel" />
+      <property role="27cpiu" value="#445566" />
+    </node>
     <node concept="2kDv1q" id="6A6XM2SxGWC" role="2kDvpj">
       <property role="TrG5h" value="RICH" />
     </node>
