@@ -208,7 +208,9 @@
         <child id="7919209473516657283" name="statusLeftSide" index="2vefmd" />
       </concept>
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
-      <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389" />
+      <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
+        <property id="1707086779732260970" name="val" index="2_138b" />
+      </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
@@ -2546,7 +2548,9 @@
         <node concept="Xl_RD" id="5_hm6iII8dA" role="3RLGe5">
           <property role="Xl_RC" value="LOAD" />
         </node>
-        <node concept="2_1389" id="3DDVbNiOBhl" role="2_RhUc" />
+        <node concept="2_1389" id="3DDVbNiOBhl" role="2_RhUc">
+          <property role="2_138b" value="#ff0000" />
+        </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpP" role="1TMXFZ" />
     </node>
