@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="oyrz" ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5/r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple/org.modellwerkstatt.simple.basisUnit)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -100,8 +101,12 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
+        <reference id="4862154259428332766" name="theColor" index="276gdn" />
+      </concept>
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
         <property id="1707086779732260970" name="val" index="2_138b" />
+        <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
@@ -149,6 +154,9 @@
         <node concept="2_5uyX" id="7h5_Fe2gwpI" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpK" role="2_RhUc">
           <property role="2_138b" value="#FF0000" />
+          <node concept="276gdk" id="5D2sKoovgKu" role="276g70">
+            <ref role="276gdn" to="oyrz:5D2sKoovgKt" resolve="COLOR_8" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dV" role="3RLGhM">
           <property role="Xl_RC" value="existing" />
@@ -162,6 +170,9 @@
         <property role="2XvgOS" value="N" />
         <node concept="2_1389" id="7h5_Fe2gwpL" role="2_RhUc">
           <property role="2_138b" value="#00FF00" />
+          <node concept="276gdk" id="5D2sKoovgKw" role="276g70">
+            <ref role="276gdn" to="oyrz:5D2sKoovgKv" resolve="COLOR_9" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dH" role="3RLGhM">
           <property role="Xl_RC" value="new" />
