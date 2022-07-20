@@ -7739,7 +7739,7 @@
         <node concept="3clFbF" id="7HXmtz0A5mV" role="3cqZAp">
           <node concept="37vLTI" id="7HXmtz0A5E3" role="3clFbG">
             <node concept="Xl_RD" id="7HXmtz0A5F3" role="37vLTx">
-              <property role="Xl_RC" value="T &amp; G" />
+              <property role="Xl_RC" value="T &amp; G &lt;Dan&gt;" />
             </node>
             <node concept="2OqwBi" id="7HXmtz0A5rq" role="37vLTJ">
               <node concept="3urNQE" id="7HXmtz0A5mT" role="2Oq$k0">
