@@ -788,54 +788,6 @@
         </node>
       </node>
     </node>
-    <node concept="27cpit" id="5D2sKoovgKe" role="27c1lO">
-      <property role="27cpiu" value="#E74C3C" />
-      <property role="TrG5h" value="COLOR_2" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKg" role="27c1lO">
-      <property role="27cpiu" value="#30B41D" />
-      <property role="TrG5h" value="COLOR_3" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKi" role="27c1lO">
-      <property role="27cpiu" value="#2C3E50" />
-      <property role="TrG5h" value="COLOR_4" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKk" role="27c1lO">
-      <property role="27cpiu" value="#4BA1C6" />
-      <property role="TrG5h" value="COLOR_5" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKm" role="27c1lO">
-      <property role="27cpiu" value="#4FB973" />
-      <property role="TrG5h" value="COLOR_6" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKo" role="27c1lO">
-      <property role="27cpiu" value="#6C3419" />
-      <property role="TrG5h" value="COLOR_7" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKt" role="27c1lO">
-      <property role="27cpiu" value="#FF0000" />
-      <property role="TrG5h" value="COLOR_8" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKv" role="27c1lO">
-      <property role="27cpiu" value="#00FF00" />
-      <property role="TrG5h" value="COLOR_9" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKx" role="27c1lO">
-      <property role="27cpiu" value="#ff0000" />
-      <property role="TrG5h" value="COLOR_10" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgK_" role="27c1lO">
-      <property role="27cpiu" value="#068587" />
-      <property role="TrG5h" value="COLOR_11" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKB" role="27c1lO">
-      <property role="27cpiu" value="#ED553B" />
-      <property role="TrG5h" value="COLOR_12" />
-    </node>
-    <node concept="27cpit" id="5D2sKoovgKF" role="27c1lO">
-      <property role="27cpiu" value="#C51162" />
-      <property role="TrG5h" value="COLOR_13" />
-    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />

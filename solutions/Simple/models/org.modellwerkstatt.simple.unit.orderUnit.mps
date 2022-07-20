@@ -272,9 +272,6 @@
       <concept id="3976364335720280601" name="org.modellwerkstatt.objectflow.structure.TranslatedMultiString" flags="ng" index="273l1i">
         <property id="3976364335720280712" name="formatString" index="273l33" />
       </concept>
-      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
-        <reference id="4862154259428332766" name="theColor" index="276gdn" />
-      </concept>
       <concept id="4678401045862675371" name="org.modellwerkstatt.objectflow.structure.CommandCreationInfo" flags="ng" index="27Aftt">
         <property id="4678401045864276002" name="refName" index="27oQjk" />
         <child id="4678401045862675913" name="keyReference" index="27Af4Z" />
@@ -538,7 +535,6 @@
       </concept>
       <concept id="186921216802513445" name="org.modellwerkstatt.dataux.structure.ColorPpOption" flags="ng" index="UTR7Y">
         <property id="186921216802513670" name="value" index="UTR3t" />
-        <child id="4862154259448213895" name="color" index="26Uuoe" />
       </concept>
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
       <concept id="7421151876966077536" name="org.modellwerkstatt.dataux.structure.TableSummaryLineFOption" flags="ng" index="1cd6SK">
@@ -1168,11 +1164,8 @@
     <node concept="Xl_RD" id="T1jWmtlgog" role="IYfpf">
       <property role="Xl_RC" value="Search Dans Order" />
     </node>
-    <node concept="2XvMaL" id="5D2sKooyYh9" role="1bacTB">
-      <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-      <node concept="2vefiz" id="5D2sKooyYuy" role="h55Ek">
-        <ref role="2vefiw" to="eqbi:AN_117c2KY" resolve="created" />
-      </node>
+    <node concept="Xl_RD" id="4ezdYK9Xsf5" role="1bacTB">
+      <property role="Xl_RC" value="#FF0000" />
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
@@ -2837,8 +2830,8 @@
     <node concept="3urNQE" id="38D16t1r$Kc" role="Wq_P0">
       <ref role="3cqZAo" node="5TC7JC3WpsQ" resolve="orderprocParam" />
     </node>
-    <node concept="276gdk" id="5D2sKoovgK$" role="1bacTB">
-      <ref role="276gdn" to="oyrz:5D2sKoovgKv" resolve="COLOR_9" />
+    <node concept="Xl_RD" id="4ezdYKaDGwj" role="1bacTB">
+      <property role="Xl_RC" value="#00FF00" />
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3LL">
@@ -10851,9 +10844,6 @@
     </node>
     <node concept="UTR7Y" id="6xifBbDyCIQ" role="UTRd0">
       <property role="UTR3t" value="068587" />
-      <node concept="276gdk" id="5D2sKoovgKA" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgK_" resolve="COLOR_11" />
-      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="1ReQ$xd3NYv">
@@ -11217,9 +11207,6 @@
     </node>
     <node concept="UTR7Y" id="6xifBbDyDNd" role="UTRd0">
       <property role="UTR3t" value="ED553B" />
-      <node concept="276gdk" id="5D2sKoovgKC" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgKB" resolve="COLOR_12" />
-      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="5XruxTJPWAl">
@@ -11424,9 +11411,6 @@
     </node>
     <node concept="UTR7Y" id="6xifBbDyDdA" role="UTRd0">
       <property role="UTR3t" value="ED553B" />
-      <node concept="276gdk" id="5D2sKoovgKD" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgKB" resolve="COLOR_12" />
-      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="5fkhsRNzdG7">
@@ -12505,9 +12489,6 @@
     <ref role="1Tjo7l" node="AN_117f5lp" resolve="OrderSearchView" />
     <node concept="UTR7Y" id="ao4XGSWFSc" role="UTRd0">
       <property role="UTR3t" value="30B41D" />
-      <node concept="276gdk" id="5D2sKoovgKE" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgKg" resolve="COLOR_3" />
-      </node>
     </node>
     <node concept="2U5qGO" id="5XruxTJPW$Q" role="21u2x1">
       <property role="1Nb$_v" value="false" />
@@ -12865,11 +12846,6 @@
         </node>
       </node>
     </node>
-    <node concept="UTR7Y" id="5D2sKooA1_0" role="UTRd0">
-      <node concept="276gdk" id="5D2sKooA1_u" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgKx" resolve="COLOR_10" />
-      </node>
-    </node>
   </node>
   <node concept="2mKXYI" id="yVRSBcWNSA">
     <property role="1Nb$_v" value="true" />
@@ -12878,9 +12854,6 @@
     <ref role="1Tjo7l" node="AN_117f5lp" resolve="OrderSearchView" />
     <node concept="UTR7Y" id="7wZDRPWZQYa" role="UTRd0">
       <property role="UTR3t" value="C51162" />
-      <node concept="276gdk" id="5D2sKoovgKG" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgKF" resolve="COLOR_13" />
-      </node>
     </node>
     <node concept="2U5qGQ" id="4443BgfpedF" role="21u2x1">
       <property role="1Nb$_v" value="false" />
@@ -17703,9 +17676,6 @@
     <ref role="1Tjo7l" node="AN_117f5lp" resolve="OrderSearchView" />
     <node concept="UTR7Y" id="2c1OwJT5qQu" role="UTRd0">
       <property role="UTR3t" value="C51162" />
-      <node concept="276gdk" id="5D2sKoovgKH" role="26Uuoe">
-        <ref role="276gdn" to="oyrz:5D2sKoovgKF" resolve="COLOR_13" />
-      </node>
     </node>
     <node concept="2U5qGQ" id="2c1OwJT5qQv" role="21u2x1">
       <property role="1Nb$_v" value="false" />

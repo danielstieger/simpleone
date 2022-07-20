@@ -178,9 +178,6 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
-      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
-        <reference id="4862154259428332766" name="theColor" index="276gdn" />
-      </concept>
       <concept id="1410680821326658964" name="org.modellwerkstatt.objectflow.structure.BPMetaReference" flags="ng" index="2dcwcJ">
         <reference id="1410680821326658966" name="businessProperty" index="2dcwcH" />
       </concept>
@@ -213,7 +210,6 @@
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
         <property id="1707086779732260970" name="val" index="2_138b" />
-        <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
@@ -2554,9 +2550,6 @@
         </node>
         <node concept="2_1389" id="3DDVbNiOBhl" role="2_RhUc">
           <property role="2_138b" value="#ff0000" />
-          <node concept="276gdk" id="5D2sKoovgKy" role="276g70">
-            <ref role="276gdn" to="oyrz:5D2sKoovgKx" resolve="COLOR_10" />
-          </node>
         </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpP" role="1TMXFZ" />
