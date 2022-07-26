@@ -195,6 +195,9 @@
         <property id="5449388640458266934" name="longFormat" index="3Ac4sI" />
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
+        <reference id="4862154259428332766" name="theColor" index="276gdn" />
+      </concept>
       <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
         <property id="8614254524338490551" name="max" index="8tbpI" />
         <property id="8614254524338490550" name="min" index="8tbpJ" />
@@ -219,6 +222,7 @@
       </concept>
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
         <property id="1707086779732260970" name="val" index="2_138b" />
+        <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
@@ -1169,6 +1173,9 @@
         <node concept="2_5uyX" id="7h5_Fe2gwpX" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpZ" role="2_RhUc">
           <property role="2_138b" value="#4BA1C6" />
+          <node concept="276gdk" id="19BL7nj01NN" role="276g70">
+            <ref role="276gdn" to="oyrz:19BL7nj01NM" resolve="COLOR_3" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dX" role="3RLGhM">
           <property role="Xl_RC" value="created" />
@@ -1182,6 +1189,9 @@
         <property role="2XvgOS" value="O" />
         <node concept="2_1389" id="7h5_Fe2gwq0" role="2_RhUc">
           <property role="2_138b" value="#4FB973" />
+          <node concept="276gdk" id="19BL7nj01NP" role="276g70">
+            <ref role="276gdn" to="oyrz:19BL7nj01NO" resolve="COLOR_4" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dN" role="3RLGhM">
           <property role="Xl_RC" value="ordered" />
@@ -1195,6 +1205,9 @@
         <property role="2XvgOS" value="CO" />
         <node concept="2_1389" id="7h5_Fe2gwq1" role="2_RhUc">
           <property role="2_138b" value="#6C3419" />
+          <node concept="276gdk" id="19BL7nj01NR" role="276g70">
+            <ref role="276gdn" to="oyrz:19BL7nj01NQ" resolve="COLOR_5" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dP" role="3RLGhM">
           <property role="Xl_RC" value="completed" />
@@ -3456,6 +3469,9 @@
         <node concept="2_5uyX" id="7h5_Fe2gwpS" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpU" role="2_RhUc">
           <property role="2_138b" value="#E74C3C" />
+          <node concept="276gdk" id="19BL7nj01NS" role="276g70">
+            <ref role="276gdn" to="oyrz:19BL7nj01NG" resolve="COLOR_0" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8e7" role="3RLGhM">
           <property role="Xl_RC" value="Accepted" />
@@ -3479,6 +3495,9 @@
         <property role="2XvgOS" value="R" />
         <node concept="2_1389" id="7h5_Fe2gwpV" role="2_RhUc">
           <property role="2_138b" value="#30B41D" />
+          <node concept="276gdk" id="19BL7nj01NT" role="276g70">
+            <ref role="276gdn" to="oyrz:19BL7nj01NI" resolve="COLOR_1" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dT" role="3RLGhM">
           <property role="Xl_RC" value="Rejected" />
@@ -3502,6 +3521,9 @@
         <property role="2XvgOS" value="U" />
         <node concept="2_1389" id="7h5_Fe2gwpW" role="2_RhUc">
           <property role="2_138b" value="#2C3E50" />
+          <node concept="276gdk" id="19BL7nj01NU" role="276g70">
+            <ref role="276gdn" to="oyrz:19BL7nj01NK" resolve="COLOR_2" />
+          </node>
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dB" role="3RLGhM">
           <property role="Xl_RC" value="Unknown" />
