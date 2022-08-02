@@ -178,9 +178,6 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
-      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
-        <reference id="4862154259428332766" name="theColor" index="276gdn" />
-      </concept>
       <concept id="1410680821326658964" name="org.modellwerkstatt.objectflow.structure.BPMetaReference" flags="ng" index="2dcwcJ">
         <reference id="1410680821326658966" name="businessProperty" index="2dcwcH" />
       </concept>
@@ -213,7 +210,6 @@
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
         <property id="1707086779732260970" name="val" index="2_138b" />
-        <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
@@ -782,8 +778,8 @@
                     <node concept="3clFbF" id="1FVEJAIueAC" role="3cqZAp">
                       <node concept="37vLTI" id="1FVEJAIueV9" role="3clFbG">
                         <node concept="1odsa" id="1FVEJAIuf29" role="37vLTx">
-                          <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-                          <ref role="37wK5l" to="sdim:19BL7nj01Oj" resolve="findInvoice" />
+                          <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+                          <ref role="37wK5l" to="sdim:1FVEJAItXUw" resolve="findInvoice" />
                           <node concept="2OqwBi" id="1FVEJAIufyg" role="37wK5m">
                             <node concept="3urNR4" id="1FVEJAIufs5" role="2Oq$k0">
                               <ref role="3cqZAo" node="6XzXfke19QZ" resolve="filter" />
@@ -1269,8 +1265,8 @@
               <node concept="3clFbF" id="1FVEJAItPje" role="3cqZAp">
                 <node concept="37vLTI" id="1FVEJAItPjE" role="3clFbG">
                   <node concept="1odsa" id="1FVEJAItPk9" role="37vLTx">
-                    <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-                    <ref role="37wK5l" to="sdim:19BL7nj01On" resolve="checkoutInv" />
+                    <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+                    <ref role="37wK5l" to="sdim:1FVEJAItPwZ" resolve="checkoutInv" />
                     <node concept="2OqwBi" id="1FVEJAItQJf" role="37wK5m">
                       <node concept="3urNQE" id="5TC7JC3Wpxk" role="2Oq$k0">
                         <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
@@ -1327,8 +1323,8 @@
         </node>
         <node concept="3clFbF" id="1oz7qwExiF_" role="3cqZAp">
           <node concept="1odsa" id="1oz7qwExiFz" role="3clFbG">
-            <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-            <ref role="37wK5l" to="sdim:19BL7nj01Op" resolve="checkInInv" />
+            <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+            <ref role="37wK5l" to="sdim:1oz7qwExiK6" resolve="checkInInv" />
             <node concept="3urNQE" id="5TC7JC3Wpxn" role="37wK5m">
               <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
             </node>
@@ -1582,8 +1578,8 @@
           <node concept="3clFbF" id="1FVEJAIXG1G" role="8Wnug">
             <node concept="37vLTI" id="1FVEJAIXG29" role="3clFbG">
               <node concept="1odsa" id="1FVEJAIXG2L" role="37vLTx">
-                <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-                <ref role="37wK5l" to="sdim:19BL7nj01On" resolve="checkoutInv" />
+                <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+                <ref role="37wK5l" to="sdim:1FVEJAItPwZ" resolve="checkoutInv" />
                 <node concept="2OqwBi" id="1FVEJAIXG5M" role="37wK5m">
                   <node concept="3urNQE" id="5TC7JC3WpxR" role="2Oq$k0">
                     <ref role="3cqZAo" node="5TC7JC3WpxP" resolve="invoiceprocParam" />
@@ -1684,8 +1680,8 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbF" id="7ymmWYKCQUM" role="8Wnug">
             <node concept="1odsa" id="1FVEJAIXGsL" role="3clFbG">
-              <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-              <ref role="37wK5l" to="sdim:19BL7nj01Op" resolve="checkInInv" />
+              <ref role="37wK5l" to="sdim:1oz7qwExiK6" resolve="checkInInv" />
+              <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
               <node concept="3urNQE" id="5TC7JC3WpxW" role="37wK5m">
                 <ref role="3cqZAo" node="5TC7JC3WpxP" resolve="invoiceprocParam" />
               </node>
@@ -1874,8 +1870,8 @@
           <node concept="3clFbF" id="1FVEJAIXIlq" role="8Wnug">
             <node concept="37vLTI" id="1FVEJAIXIq5" role="3clFbG">
               <node concept="1odsa" id="1FVEJAIXIqW" role="37vLTx">
-                <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-                <ref role="37wK5l" to="sdim:19BL7nj01Ol" resolve="checkoutAllProcessedInvoicesExeptGiven" />
+                <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+                <ref role="37wK5l" to="sdim:1FVEJAIXHmw" resolve="checkoutAllProcessedInvoicesExeptGiven" />
                 <node concept="3urNQE" id="5TC7JC3WpxX" role="37wK5m">
                   <ref role="3cqZAo" node="5TC7JC3WpxP" resolve="invoiceprocParam" />
                 </node>
@@ -2039,8 +2035,8 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbF" id="1FVEJAIXL8D" role="8Wnug">
             <node concept="1odsa" id="1FVEJAIXL8B" role="3clFbG">
-              <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-              <ref role="37wK5l" to="sdim:19BL7nj01Or" resolve="checkInInvoiceFolderWithInvoices" />
+              <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+              <ref role="37wK5l" to="sdim:1FVEJAItXSu" resolve="checkInInvoiceFolderWithInvoices" />
               <node concept="37vLTw" id="1FVEJAIXLcO" role="37wK5m">
                 <ref role="3cqZAo" node="1FVEJAIXGEq" resolve="fld" />
               </node>
@@ -2090,8 +2086,8 @@
         <node concept="3clFbF" id="4InK$iO3KJx" role="3cqZAp">
           <node concept="37vLTI" id="4InK$iO3KOv" role="3clFbG">
             <node concept="1odsa" id="4InK$iO3KPO" role="37vLTx">
-              <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-              <ref role="37wK5l" to="sdim:19BL7nj01Of" resolve="checkoutAllInvoiceFolders" />
+              <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+              <ref role="37wK5l" to="sdim:4InK$iO3KU7" resolve="checkoutAllInvoiceFolders" />
             </node>
             <node concept="3urNR4" id="4InK$iO3KJv" role="37vLTJ">
               <ref role="3cqZAo" node="4InK$iO3KIB" resolve="flds" />
@@ -2138,8 +2134,8 @@
                   </node>
                   <node concept="3clFbF" id="4InK$iO3LMl" role="3cqZAp">
                     <node concept="1odsa" id="4InK$iO3LMk" role="3clFbG">
-                      <ref role="1ods_" to="sdim:19BL7nj01Oc" resolve="InvoiceRepo" />
-                      <ref role="37wK5l" to="sdim:19BL7nj01Ot" resolve="checkInInvoiceFolder" />
+                      <ref role="1ods_" to="sdim:6vtMBTnC$jV" resolve="InvoiceRepo" />
+                      <ref role="37wK5l" to="sdim:4InK$iO3LiQ" resolve="checkInInvoiceFolder" />
                       <node concept="37vLTw" id="4InK$iO3MFq" role="37wK5m">
                         <ref role="3cqZAo" node="4InK$iO3M10" resolve="it" />
                       </node>
@@ -2554,9 +2550,6 @@
         </node>
         <node concept="2_1389" id="3DDVbNiOBhl" role="2_RhUc">
           <property role="2_138b" value="#ff0000" />
-          <node concept="276gdk" id="19BL7nj01O0" role="276g70">
-            <ref role="276gdn" to="oyrz:19BL7nj01NZ" resolve="COLOR_8" />
-          </node>
         </node>
       </node>
       <node concept="1TNdZI" id="7h5_Fe2gwpP" role="1TMXFZ" />
