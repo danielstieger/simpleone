@@ -73,7 +73,11 @@
         <child id="406105322043152971" name="componentBaseName" index="20ptNC" />
       </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
+      <concept id="4862154259426722580" name="org.modellwerkstatt.objectflow.structure.Color" flags="ng" index="27cpit">
+        <property id="4862154259426722583" name="value" index="27cpiu" />
+      </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
+        <child id="4862154259426820861" name="color" index="27c1lO" />
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
         <child id="3146313690715522546" name="platforms" index="2kDvpj" />
       </concept>
@@ -776,6 +780,54 @@
         </node>
       </node>
     </node>
+    <node concept="27cpit" id="6QrtA9Mt95Q" role="27c1lO">
+      <property role="27cpiu" value="#E74C3C" />
+      <property role="TrG5h" value="COLOR_0" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt95S" role="27c1lO">
+      <property role="27cpiu" value="#30B41D" />
+      <property role="TrG5h" value="COLOR_1" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt95U" role="27c1lO">
+      <property role="27cpiu" value="#2C3E50" />
+      <property role="TrG5h" value="COLOR_2" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt95W" role="27c1lO">
+      <property role="27cpiu" value="#4BA1C6" />
+      <property role="TrG5h" value="COLOR_3" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt95Y" role="27c1lO">
+      <property role="27cpiu" value="#4FB973" />
+      <property role="TrG5h" value="COLOR_4" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt960" role="27c1lO">
+      <property role="27cpiu" value="#6C3419" />
+      <property role="TrG5h" value="COLOR_5" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt965" role="27c1lO">
+      <property role="27cpiu" value="#FF0000" />
+      <property role="TrG5h" value="COLOR_6" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt967" role="27c1lO">
+      <property role="27cpiu" value="#00FF00" />
+      <property role="TrG5h" value="COLOR_7" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt969" role="27c1lO">
+      <property role="27cpiu" value="#ff0000" />
+      <property role="TrG5h" value="COLOR_8" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt96d" role="27c1lO">
+      <property role="27cpiu" value="#068587" />
+      <property role="TrG5h" value="COLOR_9" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt96f" role="27c1lO">
+      <property role="27cpiu" value="#ED553B" />
+      <property role="TrG5h" value="COLOR_10" />
+    </node>
+    <node concept="27cpit" id="6QrtA9Mt96j" role="27c1lO">
+      <property role="27cpiu" value="#C51162" />
+      <property role="TrG5h" value="COLOR_11" />
+    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />
@@ -1453,7 +1505,7 @@
         <node concept="2CJ4$C" id="3drXVOoNMYp" role="2CJ4_l">
           <property role="TrG5h" value="URL" />
           <node concept="Xl_RD" id="3drXVOoNMYx" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
+            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest.mpreis.co.at:1521/LOLA" />
           </node>
         </node>
         <node concept="2CJ4$C" id="3drXVOoNMYE" role="2CJ4_l">
@@ -1687,7 +1739,7 @@
         <node concept="2CJ4$C" id="2RoKLt0pbfw" role="2CJ4_l">
           <property role="TrG5h" value="url" />
           <node concept="Xl_RD" id="2RoKLt0pbfx" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
+            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest.mpreis.co.at:1521/LOLA" />
           </node>
         </node>
         <node concept="2CJ4$C" id="2RoKLt0pbfy" role="2CJ4_l">
