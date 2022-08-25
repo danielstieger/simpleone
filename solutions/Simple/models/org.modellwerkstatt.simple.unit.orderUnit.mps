@@ -301,7 +301,7 @@
         <child id="5788629615582344424" name="desc" index="lgycv" />
         <child id="5788629615582327858" name="condition" index="lgAf5" />
       </concept>
-      <concept id="2107333720523989160" name="org.modellwerkstatt.objectflow.structure.PageUpdaterConceptFuntionParamTermOk" flags="ng" index="2mdy1M" />
+      <concept id="2107333720523989160" name="org.modellwerkstatt.objectflow.structure.PageCmdTermConceptFuntionParamTermOk" flags="ng" index="2mdy1M" />
       <concept id="5788629615597606700" name="org.modellwerkstatt.objectflow.structure.Precondition" flags="ng" index="mlg3r">
         <child id="5788629615597607706" name="problemdesc" index="mlgNH" />
         <child id="5788629615597607704" name="condition" index="mlgNJ" />
@@ -313,7 +313,7 @@
       <concept id="2107333720514438478" name="org.modellwerkstatt.objectflow.structure.PageCmdTermHandler" flags="ng" index="2niumk">
         <child id="2107333720514438483" name="func" index="2nium9" />
       </concept>
-      <concept id="2107333720514438479" name="org.modellwerkstatt.objectflow.structure.CmdTermConceptFunction" flags="ig" index="2niuml" />
+      <concept id="2107333720514438479" name="org.modellwerkstatt.objectflow.structure.PageCmdTermConceptFunction" flags="ig" index="2niuml" />
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -990,72 +990,6 @@
           <property role="ic4Xk" value="%ld - %ld - %s" />
         </node>
       </node>
-      <node concept="2niumk" id="1jy7rUtNDyC" role="2nihkg">
-        <node concept="2niuml" id="1jy7rUtNDyD" role="2nium9">
-          <node concept="3clFbS" id="7TgG1qShyhf" role="2VODD2">
-            <node concept="3clFbF" id="7TgG1qShylx" role="3cqZAp">
-              <node concept="2OqwBi" id="7TgG1qShylu" role="3clFbG">
-                <node concept="10M0yZ" id="7TgG1qShylv" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="7TgG1qShylw" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="7TgG1qShyxc" role="37wK5m">
-                    <node concept="2mdy1M" id="1jy7rUtNNIS" role="3uHU7w" />
-                    <node concept="Xl_RD" id="7TgG1qShymk" role="3uHU7B">
-                      <property role="Xl_RC" value="Search_Orders() child terminated " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="1jy7rUtT4hH" role="3cqZAp">
-              <node concept="3clFbS" id="1jy7rUtT4hJ" role="3clFbx">
-                <node concept="YS8fn" id="1jy7rUtT4Z5" role="3cqZAp">
-                  <node concept="2ShNRf" id="1jy7rUtT4Zj" role="YScLw">
-                    <node concept="1pGfFk" id="1jy7rUtT5oC" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="1jy7rUtT5oN" role="37wK5m">
-                        <property role="Xl_RC" value="Full cmd term exception" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3eOVzh" id="1jy7rUtT4Xd" role="3clFbw">
-                <node concept="3cmrfG" id="1jy7rUtT4Xo" role="3uHU7w">
-                  <property role="3cmrfH" value="10" />
-                </node>
-                <node concept="3cmrfG" id="1jy7rUtT4ou" role="3uHU7B">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="1jy7rUtT4em" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="mlg3r" id="3DDVbNjm2m$" role="8Wnug">
-                <node concept="lgADV" id="3DDVbNjm2mB" role="mlgNH">
-                  <node concept="35AVbj" id="3DDVbNjm2mC" role="lgxf9">
-                    <node concept="ic4WF" id="3DDVbNjm2mD" role="icr7_">
-                      <property role="ic4Xk" value="This is a precondition in child cmd term." />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3eOSWO" id="3DDVbNjo_dw" role="mlgNJ">
-                  <node concept="3cmrfG" id="3DDVbNjm2_a" role="3uHU7B">
-                    <property role="3cmrfH" value="1" />
-                  </node>
-                  <node concept="3cmrfG" id="3DDVbNjm31o" role="3uHU7w">
-                    <property role="3cmrfH" value="10" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3ulXEM" id="AN_117f5tz" role="3ulXEG">
       <property role="TrG5h" value="searchViewObject" />
@@ -1205,6 +1139,12 @@
     </node>
     <node concept="276gdk" id="6QrtA9Mt96b" role="1bacTB">
       <ref role="276gdn" to="oyrz:6QrtA9Mt965" resolve="COLOR_6" />
+    </node>
+    <node concept="20qIzx" id="1jy7rUu1Vwm" role="10_T4m">
+      <node concept="3clFbS" id="1jy7rUu1Vwn" role="2VODD2" />
+    </node>
+    <node concept="20qIzx" id="1jy7rUu1X$Q" role="10_T4l">
+      <node concept="3clFbS" id="1jy7rUu1X$R" role="2VODD2" />
     </node>
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
