@@ -1022,7 +1022,7 @@
         </node>
       </node>
       <node concept="3063JU" id="5XruxTJPWFF" role="3063Jp">
-        <ref role="3063JT" node="yVRSBcWNSA" resolve="THE Command Flow Tests" />
+        <ref role="3063JT" node="yVRSBcWNSA" resolve="Command Flow Tests Search" />
         <node concept="3urNQE" id="4h62mqe9eBD" role="2CtmLH">
           <ref role="3cqZAo" node="4h62mqe9ebX" resolve="cmdFlowTest" />
         </node>
@@ -6288,6 +6288,9 @@
     <property role="TrG5h" value="CF Edit Order Head" />
     <property role="3uBtrS" value="1hImSMr5NSw/L" />
     <property role="3GE5qa" value="CommandFLow" />
+    <node concept="3urNQE" id="KHAAyQe0HG" role="3vkzKj">
+      <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
+    </node>
     <node concept="3ulXEN" id="5TC7JC3Wpug" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpuh" role="1tU5fm">
@@ -13031,11 +13034,28 @@
           <property role="Xl_RC" value="Status changes" />
         </node>
       </node>
+      <node concept="33WYYh" id="KHAAyQgaJd" role="fOGQ8">
+        <ref role="2_Hrw8" node="Vvu817zHH9" resolve="CF Edit Order (NEW STYLE)" />
+        <node concept="10Nm6u" id="KHAAyQAvvO" role="2_HrWp" />
+        <node concept="2OqwBi" id="KHAAyQElZn" role="2_HrWp">
+          <node concept="2IFXgM" id="KHAAyQElZo" role="2Oq$k0">
+            <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+          </node>
+          <node concept="2S8uIT" id="KHAAyQElZp" role="2OqNvi">
+            <ref role="2S8YL0" to="eqbi:4u029Jv8vCO" resolve="id" />
+          </node>
+        </node>
+        <node concept="3clFbT" id="KHAAyQAwtj" role="2_HrWp" />
+        <node concept="Rm8GO" id="KHAAyQAwwL" role="2_HrWp">
+          <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
+          <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="yVRSBcWNSA">
     <property role="1Nb$_v" value="true" />
-    <property role="TrG5h" value="THE Command Flow Tests" />
+    <property role="TrG5h" value="Command Flow Tests Search" />
     <property role="3GE5qa" value="CommandFLow" />
     <ref role="1Tjo7l" node="AN_117f5lp" resolve="OrderSearchView" />
     <node concept="UTR7Y" id="7wZDRPWZQYa" role="UTRd0">
@@ -14771,6 +14791,74 @@
             </node>
             <node concept="2dfVl4" id="v5O1Qhssqg" role="2dc_Y6">
               <ref role="2dfVpT" node="AN_117h9Yg" resolve="Ok" />
+            </node>
+          </node>
+        </node>
+        <node concept="fOGPe" id="KHAAyQ9xCa" role="fOGQ8">
+          <node concept="Xl_RD" id="KHAAyQ9xM$" role="33Ov9O">
+            <property role="Xl_RC" value="Cmd Term" />
+          </node>
+          <node concept="33WYYh" id="KHAAyQ9xMS" role="fOGQ8">
+            <ref role="2_Hrw8" node="Vvu817zHH9" resolve="CF Edit Order (NEW STYLE)" />
+            <node concept="2IFXgM" id="KHAAyQ9DOt" role="2_HrWp">
+              <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+            </node>
+            <node concept="2OqwBi" id="KHAAyQ9DOu" role="2_HrWp">
+              <node concept="2IFXgM" id="KHAAyQ9DOv" role="2Oq$k0">
+                <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+              </node>
+              <node concept="2S8uIT" id="KHAAyQ9DOw" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:4u029Jv8vCO" resolve="id" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="KHAAyQ9DOx" role="2_HrWp">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="Rm8GO" id="KHAAyQ9DOy" role="2_HrWp">
+              <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
+              <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+            </node>
+          </node>
+          <node concept="33WYYh" id="KHAAyQ9E9B" role="fOGQ8">
+            <ref role="2_Hrw8" node="Vvu817zHH9" resolve="CF Edit Order (NEW STYLE)" />
+            <node concept="2IFXgM" id="KHAAyQ9E9C" role="2_HrWp">
+              <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+            </node>
+            <node concept="2OqwBi" id="KHAAyQ9E9D" role="2_HrWp">
+              <node concept="2IFXgM" id="KHAAyQ9E9E" role="2Oq$k0">
+                <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+              </node>
+              <node concept="2S8uIT" id="KHAAyQ9E9F" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:4u029Jv8vCO" resolve="id" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="KHAAyQ9E9G" role="2_HrWp">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="Rm8GO" id="KHAAyQ9EbY" role="2_HrWp">
+              <ref role="Rm8GQ" to="oyrz:KHAAyQ8IjA" resolve="CASE101_CMD_TERM_PRECONDITION" />
+              <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+            </node>
+          </node>
+          <node concept="33WYYh" id="KHAAyQ9Eax" role="fOGQ8">
+            <ref role="2_Hrw8" node="Vvu817zHH9" resolve="CF Edit Order (NEW STYLE)" />
+            <node concept="2IFXgM" id="KHAAyQ9Eay" role="2_HrWp">
+              <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+            </node>
+            <node concept="2OqwBi" id="KHAAyQ9Eaz" role="2_HrWp">
+              <node concept="2IFXgM" id="KHAAyQ9Ea$" role="2Oq$k0">
+                <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+              </node>
+              <node concept="2S8uIT" id="KHAAyQ9Ea_" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:4u029Jv8vCO" resolve="id" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="KHAAyQ9EaA" role="2_HrWp">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="Rm8GO" id="KHAAyQ9ExD" role="2_HrWp">
+              <ref role="Rm8GQ" to="oyrz:KHAAyQ8STh" resolve="CASE102_CMD_TERM_EXCEPTION" />
+              <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
             </node>
           </node>
         </node>
@@ -18148,6 +18236,47 @@
     <node concept="3ugp7q" id="Vvu817zHHp" role="3ug97V">
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="eqbi:1Zhh97664rm" resolve="Order" />
+      <node concept="2niumk" id="KHAAyQ8FqI" role="2nihkg">
+        <property role="2m0tre" value="1OYKdEb2e2$/AnyCmdTerminated" />
+        <ref role="2zWoI2" to="eqbi:AN_117bbd$" resolve="OrderPosition" />
+        <node concept="2niuml" id="KHAAyQ8FqJ" role="2nium9">
+          <node concept="3clFbS" id="KHAAyQ8FqK" role="2VODD2">
+            <node concept="3clFbF" id="KHAAyQ8FZK" role="3cqZAp">
+              <node concept="2OqwBi" id="KHAAyQ8FZL" role="3clFbG">
+                <node concept="10M0yZ" id="KHAAyQ8FZM" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="KHAAyQ8FZN" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="3cpWs3" id="KHAAyQ8FZO" role="37wK5m">
+                    <node concept="2niuma" id="KHAAyQ8FZP" role="3uHU7w" />
+                    <node concept="3cpWs3" id="KHAAyQ8FZQ" role="3uHU7B">
+                      <node concept="3cpWs3" id="KHAAyQ8FZR" role="3uHU7B">
+                        <node concept="3cpWs3" id="KHAAyQ8FZS" role="3uHU7B">
+                          <node concept="3cpWs3" id="KHAAyQ8FZT" role="3uHU7B">
+                            <node concept="Xl_RD" id="KHAAyQ8FZU" role="3uHU7B">
+                              <property role="Xl_RC" value="CMD_TERM for ORDER POSITION - - GO Edit Order  (NEW STYLE): ok=" />
+                            </node>
+                            <node concept="2mdy1M" id="KHAAyQ8FZV" role="3uHU7w" />
+                          </node>
+                          <node concept="Xl_RD" id="KHAAyQ8FZW" role="3uHU7w">
+                            <property role="Xl_RC" value=" wasChild=" />
+                          </node>
+                        </node>
+                        <node concept="WwWzQ" id="KHAAyQ8FZX" role="3uHU7w" />
+                      </node>
+                      <node concept="Xl_RD" id="KHAAyQ8FZY" role="3uHU7w">
+                        <property role="Xl_RC" value=" the pushed=" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3063JU" id="Vvu817zHHq" role="3063Jp">
         <ref role="3063JT" node="5fkhsRNzdG7" resolve="Order Simple View for Mobile Devices" />
         <node concept="1bGNo" id="Vvu817zHHr" role="2CtmLH">
@@ -18200,6 +18329,8 @@
         <ref role="3063JT" node="5XruxTJPW_h" resolve="Single Order Main AppTab Pane" />
       </node>
       <node concept="2niumk" id="Vvu817zHKX" role="2nihkg">
+        <property role="2m0tre" value="1OYKdEb2e2$/AnyCmdTerminated" />
+        <ref role="2zWoI2" to="eqbi:1Zhh97664rm" resolve="Order" />
         <node concept="2niuml" id="Vvu817zHKY" role="2nium9">
           <node concept="3clFbS" id="Vvu817zHKZ" role="2VODD2">
             <node concept="3clFbF" id="Vvu817zHL0" role="3cqZAp">
@@ -18210,15 +18341,74 @@
                 </node>
                 <node concept="liA8E" id="Vvu817zHL3" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="Vvu817zHL4" role="37wK5m">
-                    <node concept="2mdy1M" id="Vvu817zHL5" role="3uHU7w" />
-                    <node concept="Xl_RD" id="Vvu817zHL6" role="3uHU7B">
-                      <property role="Xl_RC" value="CHILD_TERM() GO Edit Order  (NEW STYLE): ok=" />
+                  <node concept="3cpWs3" id="KHAAyQ8FdT" role="37wK5m">
+                    <node concept="2niuma" id="KHAAyQ8Fis" role="3uHU7w" />
+                    <node concept="3cpWs3" id="KHAAyQ8EFK" role="3uHU7B">
+                      <node concept="3cpWs3" id="KHAAyQ8Emy" role="3uHU7B">
+                        <node concept="3cpWs3" id="KHAAyQ8E0L" role="3uHU7B">
+                          <node concept="3cpWs3" id="Vvu817zHL4" role="3uHU7B">
+                            <node concept="Xl_RD" id="Vvu817zHL6" role="3uHU7B">
+                              <property role="Xl_RC" value="CMD_TERM for ORDER - - GO Edit Order  (NEW STYLE): ok=" />
+                            </node>
+                            <node concept="2mdy1M" id="Vvu817zHL5" role="3uHU7w" />
+                          </node>
+                          <node concept="Xl_RD" id="KHAAyQ8E1b" role="3uHU7w">
+                            <property role="Xl_RC" value=" wasChild=" />
+                          </node>
+                        </node>
+                        <node concept="WwWzQ" id="KHAAyQ8Ep1" role="3uHU7w" />
+                      </node>
+                      <node concept="Xl_RD" id="KHAAyQ8EGi" role="3uHU7w">
+                        <property role="Xl_RC" value=" the pushed=" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="KHAAyQuUwU" role="3cqZAp" />
+            <node concept="mlg3r" id="KHAAyQ8VRr" role="3cqZAp">
+              <node concept="lgADV" id="KHAAyQ8VRu" role="mlgNH">
+                <node concept="35AVbj" id="KHAAyQ8VRv" role="lgxf9">
+                  <node concept="ic4WF" id="KHAAyQ8VRw" role="icr7_">
+                    <property role="ic4Xk" value="CASE101 Precondition in cmd term" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="KHAAyQ8W6N" role="mlgNJ">
+                <node concept="3urNQE" id="KHAAyQ8VGG" role="3uHU7B">
+                  <ref role="3cqZAo" node="Vvu817zHQL" resolve="spec" />
+                </node>
+                <node concept="Rm8GO" id="KHAAyQ8VHY" role="3uHU7w">
+                  <ref role="Rm8GQ" to="oyrz:KHAAyQ8IjA" resolve="CASE101_CMD_TERM_PRECONDITION" />
+                  <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="KHAAyQ8Wnb" role="3cqZAp">
+              <node concept="3clFbS" id="KHAAyQ8Wnd" role="3clFbx">
+                <node concept="YS8fn" id="KHAAyQ9sJp" role="3cqZAp">
+                  <node concept="2ShNRf" id="KHAAyQ9sK1" role="YScLw">
+                    <node concept="1pGfFk" id="KHAAyQ9uZK" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="KHAAyQ9v1U" role="37wK5m">
+                        <property role="Xl_RC" value="Ui ... EX in cmd term" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="KHAAyQ8XLG" role="3clFbw">
+                <node concept="Rm8GO" id="KHAAyQ9sIy" role="3uHU7w">
+                  <ref role="Rm8GQ" to="oyrz:KHAAyQ8STh" resolve="CASE102_CMD_TERM_EXCEPTION" />
+                  <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+                </node>
+                <node concept="3urNQE" id="KHAAyQ8Xup" role="3uHU7B">
+                  <ref role="3cqZAo" node="Vvu817zHQL" resolve="spec" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="KHAAyQuUDu" role="3cqZAp" />
           </node>
         </node>
       </node>
@@ -18508,14 +18698,6 @@
         <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
       </node>
     </node>
-    <node concept="2OqwBi" id="Vvu817zHQO" role="3vkzKj">
-      <node concept="3urNQE" id="Vvu817zHQP" role="2Oq$k0">
-        <ref role="3cqZAo" node="Vvu817zHHa" resolve="orderprocParam" />
-      </node>
-      <node concept="2S8uIT" id="Vvu817zHQQ" role="2OqNvi">
-        <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-      </node>
-    </node>
     <node concept="3urNQE" id="Vvu817zHQR" role="3vkzKj">
       <ref role="3cqZAo" node="Vvu817zHHa" resolve="orderprocParam" />
     </node>
@@ -18614,6 +18796,7 @@
     <node concept="276gdk" id="Vvu817zHRB" role="1bacTB">
       <ref role="276gdn" to="oyrz:6QrtA9Mt967" resolve="COLOR_7" />
     </node>
+    <node concept="2YYyHn" id="KHAAyQaoUp" role="3ap3dX" />
   </node>
 </model>
 

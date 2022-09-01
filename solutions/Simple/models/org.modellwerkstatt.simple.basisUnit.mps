@@ -2330,6 +2330,14 @@
       <property role="TrG5h" value="CASE98_GEUI_PRECOND_GE_CONC" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="KHAAyQ8IjA" role="Qtgdg">
+      <property role="TrG5h" value="CASE101_CMD_TERM_PRECONDITION" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="KHAAyQ8STh" role="Qtgdg">
+      <property role="TrG5h" value="CASE102_CMD_TERM_EXCEPTION" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="3Tm1VV" id="2jDJ2hE2j_t" role="1B3o_S" />
     <node concept="3UR2Jj" id="2c1OwJS9Hwo" role="lGtFl">
       <node concept="TZ5HA" id="2c1OwJS9Hwp" role="TZ5H$">
