@@ -640,15 +640,10 @@
       <node concept="2kzhL4" id="6zVU6_jm7Dh" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NSx/M" />
         <node concept="Xl_RD" id="6zVU6_jm7Di" role="il5_5">
-          <property role="Xl_RC" value="Search Orders" />
-          <node concept="3RprTR" id="6XA$NCcXBkU" role="lGtFl">
-            <node concept="3RprXr" id="6XA$NCcXBkV" role="3Rpr6w">
-              <property role="3RprZj" value="Search Orders 0" />
-            </node>
-          </node>
+          <property role="Xl_RC" value="Cmd flow tests" />
         </node>
         <node concept="Xl_RD" id="16rmuCMPAu3" role="il5$o">
-          <property role="Xl_RC" value="launch" />
+          <property role="Xl_RC" value="flow tests" />
         </node>
       </node>
     </node>

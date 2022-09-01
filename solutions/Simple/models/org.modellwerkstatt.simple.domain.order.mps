@@ -1542,11 +1542,11 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="2jDJ2hA9MRD" role="37wK5m">
                 <node concept="Xl_RD" id="2jDJ2hA9MS_" role="3uHU7w">
-                  <property role="Xl_RC" value=" - - - - -" />
+                  <property role="Xl_RC" value="' - - - - -" />
                 </node>
                 <node concept="3cpWs3" id="2jDJ2hA9MEV" role="3uHU7B">
                   <node concept="Xl_RD" id="2jDJ2hA9Mb7" role="3uHU7B">
-                    <property role="Xl_RC" value="- - - - - Problms in " />
+                    <property role="Xl_RC" value="- - - - - Problms in '" />
                   </node>
                   <node concept="37vLTw" id="2jDJ2hA9MIL" role="3uHU7w">
                     <ref role="3cqZAo" node="2jDJ2hA9K7h" resolve="cmdInfo" />
