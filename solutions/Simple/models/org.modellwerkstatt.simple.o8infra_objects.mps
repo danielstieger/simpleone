@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)">
+<model ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -184,7 +184,7 @@
       <node concept="17QB3L" id="1SuqpWQMcha" role="1tU5fm" />
       <node concept="3Tm1VV" id="1SuqpWQMcAX" role="1B3o_S" />
       <node concept="Xl_RD" id="1SuqpWQMchR" role="33vP2m">
-        <property role="Xl_RC" value="0.9.1" />
+        <property role="Xl_RC" value="1" />
       </node>
     </node>
     <node concept="312cEg" id="3exXxRetpCn" role="jymVt">
@@ -309,7 +309,7 @@
             <property role="TrG5h" value="st" />
             <node concept="17QB3L" id="7MWNCzYu4pQ" role="1tU5fm" />
             <node concept="Xl_RD" id="7MWNCzYu4rf" role="33vP2m">
-              <property role="Xl_RC" value="2.0.0" />
+              <property role="Xl_RC" value="1" />
             </node>
           </node>
         </node>

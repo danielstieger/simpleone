@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)">
+<model ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.basis)" />
+    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -306,8 +306,8 @@
       </node>
       <node concept="2kzhL4" id="66oHjdjqLR6" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="6xifBbDF$zS" role="il5_5">
-          <property role="Xl_RC" value="Search" />
+        <node concept="Xl_RD" id="5YyqL3zmfhP" role="il5$o">
+          <property role="Xl_RC" value="search" />
         </node>
       </node>
     </node>
@@ -325,9 +325,6 @@
       </node>
       <node concept="2kzhL4" id="4FeXrhEDxOL" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="4FeXrhEDxOQ" role="il5_5">
-          <property role="Xl_RC" value="OK" />
-        </node>
         <node concept="Xl_RD" id="4FeXrhEDxP1" role="il5$o">
           <property role="Xl_RC" value="done" />
         </node>
@@ -394,9 +391,6 @@
       </node>
       <node concept="2kzhL4" id="5ol$NvKd9t" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
-        <node concept="Xl_RD" id="5ol$NvKd9u" role="il5_5">
-          <property role="Xl_RC" value="Msg" />
-        </node>
         <node concept="238Bvw" id="1E9WFYq4utp" role="238Brw" />
         <node concept="Xl_RD" id="6xifBbDUutu" role="il5$o">
           <property role="Xl_RC" value="cancel" />
@@ -498,7 +492,7 @@
       <node concept="2kzhL4" id="6xifBbDXGwT" role="2kzgdm">
         <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDXGwU" role="il5_5">
-          <property role="Xl_RC" value="EXcpt" />
+          <property role="Xl_RC" value="ex" />
         </node>
       </node>
     </node>
@@ -932,7 +926,7 @@
     <node concept="2CJf3v" id="7MWNCzYDeqS" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="7MWNCzYDeqU" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.basisUnit.SimpleRes_RICH" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJoq6" id="2n3p7A96F5O" role="2CGBMS">
@@ -1032,7 +1026,7 @@
     <node concept="2CJf3v" id="3bLKpg8Rj2z" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="3bLKpg8Rj2B" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.basisUnit.SimpleRes_RICH" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJf3v" id="1NjnH06l6J4" role="2CGBMS">
@@ -1076,7 +1070,7 @@
     <node concept="2CJf3v" id="4FeXrhENtJ1" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="4FeXrhENtJ5" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.basisUnit.SimpleRes_MDE" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_MDE" />
       </node>
     </node>
     <node concept="2CPvp3" id="6jihzUGVpcB" role="2CGBMS" />
@@ -1211,7 +1205,7 @@
       <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CJdiS">
         <property role="TrG5h" value="setting" />
         <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.simple.basis.TestSetting" />
+          <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
         </node>
       </node>
       <node concept="2CPvp3" id="7HkVpVc$j28" role="2CJdiS" />
@@ -1924,7 +1918,7 @@
     <node concept="2CJf3v" id="4l1zKLo5jkG" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="4l1zKLo5jkK" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.basisUnit.SimpleRes_MDE" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_MDE" />
       </node>
     </node>
     <node concept="2CJoq6" id="4l1zKLo5jkL" role="2CGBMS">

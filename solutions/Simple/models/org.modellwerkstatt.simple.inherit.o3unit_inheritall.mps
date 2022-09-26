@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.shared.unit.inheritUnit)">
+<model ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inherit.o3unit_inheritall)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
-    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)" />
+    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -168,7 +168,7 @@
       <concept id="2107333720514438478" name="org.modellwerkstatt.objectflow.structure.PageCmdTermHandler" flags="ng" index="2niumk">
         <child id="2107333720514438483" name="func" index="2nium9" />
       </concept>
-      <concept id="2107333720514438479" name="org.modellwerkstatt.objectflow.structure.CmdTermConceptFunction" flags="ig" index="2niuml" />
+      <concept id="2107333720514438479" name="org.modellwerkstatt.objectflow.structure.PageCmdTermConceptFunction" flags="ig" index="2niuml" />
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -234,7 +234,7 @@
       </concept>
       <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundObject" index="3gcvY6" />
-        <child id="2107333720514483658" name="childTermHandler" index="2nihkg" />
+        <child id="2107333720514483658" name="cmdTermHandler" index="2nihkg" />
         <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
@@ -292,6 +292,7 @@
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
+      <concept id="3899779351686566800" name="org.modellwerkstatt.dataux.structure.DateTimeDateOnlyDelegate" flags="ng" index="2TG9WS" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
       <concept id="3899779351686566805" name="org.modellwerkstatt.dataux.structure.StatusDelegate" flags="ng" index="2TG9WX" />
       <concept id="7834248083556639603" name="org.modellwerkstatt.dataux.structure.OneWeight" flags="ng" index="2U5nhG" />
@@ -1555,12 +1556,12 @@
             <ref role="3O0p26" node="5A$AnVDpmry" resolve="comment" />
           </node>
         </node>
-        <node concept="2TG9WT" id="2Jsbshh84cU" role="3OfFNq">
-          <node concept="PnLzW" id="2Jsbshh84cV" role="PoUSh">
-            <property role="PiFy3" value="20" />
-          </node>
+        <node concept="2TG9WS" id="RowY8VC1UU" role="3OfFNq">
           <node concept="3Oe$u_" id="2Jsbshh84cW" role="3Oe2NS">
             <ref role="3O0p26" node="5A$AnVDpmt$" resolve="changedAt" />
+          </node>
+          <node concept="PnLzW" id="2Jsbshh84cV" role="PoUSh">
+            <property role="PiFy3" value="20" />
           </node>
         </node>
         <node concept="2TG9WX" id="2Jsbshh84cX" role="3OfFNq">
@@ -1620,12 +1621,12 @@
             <ref role="3O0p26" node="5A$AnVDpmry" resolve="comment" />
           </node>
         </node>
-        <node concept="2TG9WT" id="2Jsbshh84bj" role="3OfFNq">
-          <node concept="PnLzW" id="2Jsbshh84bk" role="PoUSh">
-            <property role="PiFy3" value="16" />
-          </node>
+        <node concept="2TG9WS" id="RowY8VC1UW" role="3OfFNq">
           <node concept="3Oe$u_" id="2Jsbshh84bl" role="3Oe2NS">
             <ref role="3O0p26" node="5A$AnVDpmt$" resolve="changedAt" />
+          </node>
+          <node concept="PnLzW" id="2Jsbshh84bk" role="PoUSh">
+            <property role="PiFy3" value="16" />
           </node>
         </node>
         <node concept="2TG9WX" id="2Jsbshh84bm" role="3OfFNq">
@@ -1669,12 +1670,12 @@
             <ref role="3O0p26" node="5A$AnVDpmry" resolve="comment" />
           </node>
         </node>
-        <node concept="2TG9WT" id="2JsbshgStMN" role="3OfFNq">
-          <node concept="PnLzW" id="2JsbshgStMO" role="PoUSh">
-            <property role="PiFy3" value="25" />
-          </node>
+        <node concept="2TG9WS" id="RowY8VC1UY" role="3OfFNq">
           <node concept="3Oe$u_" id="2JsbshgStMP" role="3Oe2NS">
             <ref role="3O0p26" node="5A$AnVDpmt$" resolve="changedAt" />
+          </node>
+          <node concept="PnLzW" id="2JsbshgStMO" role="PoUSh">
+            <property role="PiFy3" value="25" />
           </node>
         </node>
         <node concept="2TG9WX" id="2JsbshgStMQ" role="3OfFNq">

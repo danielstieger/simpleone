@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b4dfd7c8-34bd-4a69-87a0-1b2a185b6c53(org.modellwerkstatt.simple.unit.taskUnit)">
+<model ref="r:b4dfd7c8-34bd-4a69-87a0-1b2a185b6c53(org.modellwerkstatt.simple.task.o3unit_taskhandling)">
   <persistence version="9" />
   <languages>
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
@@ -8,8 +8,8 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
   </languages>
   <imports>
-    <import index="h484" ref="r:7e78cbbf-c27a-4016-a16b-08ada345dea0(org.modellwerkstatt.simple.domain.task)" />
-    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.basisUnit)" />
+    <import index="h484" ref="r:7e78cbbf-c27a-4016-a16b-08ada345dea0(org.modellwerkstatt.simple.task.o7domain_task)" />
+    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
@@ -302,7 +302,7 @@
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" to="h484:3kFdJs03WW" resolve="Task" />
       <node concept="10qiFn" id="2MI0JB6CHoe" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="Ok" />
+        <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="CFT_OK_Hide" />
         <node concept="20qIzx" id="2MI0JB6CHsW" role="10ot2L">
           <node concept="3clFbS" id="2MI0JB6CHsX" role="2VODD2">
             <node concept="10Adxj" id="2MI0JB6CHt7" role="3cqZAp" />
@@ -582,7 +582,7 @@
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" to="h484:3kFdJs03WW" resolve="Task" />
       <node concept="10qiFn" id="6SMC$eDUYGD" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:2qcR1OSjf4S" resolve="OK" />
+        <ref role="2DFCCC" to="oyrz:2qcR1OSjf4S" resolve="CFT_OK" />
         <node concept="20qIzx" id="6SMC$eDUYHH" role="10ot2L">
           <node concept="3clFbS" id="6SMC$eDUYHI" role="2VODD2">
             <node concept="10Adxj" id="6SMC$eDUYI1" role="3cqZAp" />
