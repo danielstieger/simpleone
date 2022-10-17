@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inherit.o3unit_inheritall)">
+<model ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inherit.status.o3unit_inheritall)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -165,10 +165,6 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
-      <concept id="2107333720514438478" name="org.modellwerkstatt.objectflow.structure.PageCmdTermHandler" flags="ng" index="2niumk">
-        <child id="2107333720514438483" name="func" index="2nium9" />
-      </concept>
-      <concept id="2107333720514438479" name="org.modellwerkstatt.objectflow.structure.PageCmdTermConceptFunction" flags="ig" index="2niuml" />
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -234,12 +230,10 @@
       </concept>
       <concept id="7192042020163999174" name="org.modellwerkstatt.objectflow.structure.PageCrtl" flags="ng" index="3ugp7q">
         <reference id="4152417163565704942" name="boundObject" index="3gcvY6" />
-        <child id="2107333720514483658" name="cmdTermHandler" index="2nihkg" />
         <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
         <child id="3887124829264538806" name="pagePaneActionProviderLink" index="3063Jp" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
-        <child id="8322225022200000541" name="childTermConceptFunc" index="3YpOId" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
@@ -266,7 +260,6 @@
       </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
-      <concept id="8322225022199855721" name="org.modellwerkstatt.objectflow.structure.PageChildTermConceptFunc" flags="ig" index="3Yq87T" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
@@ -646,9 +639,6 @@
       <node concept="3063JU" id="5A$AnVDpwlb" role="3063Jp">
         <ref role="3063JT" node="5A$AnVDpxo3" resolve="Search List" />
       </node>
-      <node concept="3Yq87T" id="71rMyjTbEYO" role="3YpOId">
-        <node concept="3clFbS" id="71rMyjTbEYP" role="2VODD2" />
-      </node>
     </node>
     <node concept="20qIzx" id="5A$AnVDpwn8" role="3umfm7">
       <node concept="3clFbS" id="5A$AnVDpwn9" role="2VODD2">
@@ -784,11 +774,6 @@
     <node concept="3ugp7q" id="5A$AnVDpxId" role="3ug97V">
       <property role="TrG5h" value="Standard" />
       <ref role="3gcvY6" node="5A$AnVDpmnT" resolve="Document" />
-      <node concept="2niumk" id="71rMyjTqKY8" role="2nihkg">
-        <node concept="2niuml" id="71rMyjTqKY9" role="2nium9">
-          <node concept="3clFbS" id="71rMyjTqKYa" role="2VODD2" />
-        </node>
-      </node>
       <node concept="10qiFn" id="5A$AnVDpxQx" role="10qiF9">
         <ref role="2DFCCC" to="oyrz:3Rw9V4pLpzN" resolve="CFT_OK_Hide" />
         <node concept="20qIzx" id="5A$AnVDpxRU" role="10ot2L">
@@ -815,9 +800,6 @@
       </node>
       <node concept="3063JU" id="5A$AnVDpxIg" role="3063Jp">
         <ref role="3063JT" node="5A$AnVDpxMe" resolve="DocumentEditor" />
-      </node>
-      <node concept="3Yq87T" id="71rMyjSCuRV" role="3YpOId">
-        <node concept="3clFbS" id="71rMyjSCuRW" role="2VODD2" />
       </node>
       <node concept="JX2Gw" id="71rMyjTi8eG" role="JX2Go">
         <node concept="3clFbS" id="71rMyjTi8eH" role="2VODD2" />

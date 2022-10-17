@@ -216,7 +216,6 @@
       </concept>
       <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
-        <property id="1707086779732260970" name="val" index="2_138b" />
         <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
@@ -1712,7 +1711,6 @@
     </node>
     <node concept="20qIzx" id="1FVEJAIXGCU" role="10_T4l">
       <node concept="3clFbS" id="1FVEJAIXGCV" role="2VODD2">
-        <node concept="3clFbH" id="7ymmWYKCQhW" role="3cqZAp" />
         <node concept="lgBBG" id="1_PE6VjAo5O" role="3cqZAp">
           <node concept="lgADV" id="1_PE6VjAo5R" role="lgycv">
             <node concept="35AVbj" id="1_PE6VjAo5S" role="lgxf9">
@@ -2555,7 +2553,6 @@
           <property role="Xl_RC" value="LOAD" />
         </node>
         <node concept="2_1389" id="3DDVbNiOBhl" role="2_RhUc">
-          <property role="2_138b" value="#ff0000" />
           <node concept="276gdk" id="6QrtA9Mt96a" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt969" resolve="COLOR_8" />
           </node>

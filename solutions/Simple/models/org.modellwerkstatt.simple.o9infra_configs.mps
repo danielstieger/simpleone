@@ -77,6 +77,7 @@
         <property id="4862154259426722583" name="value" index="27cpiu" />
       </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
+        <reference id="5042172659551210608" name="extends" index="3Thu$x" />
         <child id="4862154259426820861" name="color" index="27c1lO" />
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
         <child id="3146313690715522546" name="platforms" index="2kDvpj" />
@@ -137,6 +138,9 @@
         <child id="4779674245205936416" name="scopes" index="2PKp_6" />
         <child id="3551693089249896602" name="identities" index="QIgUm" />
         <child id="4779674245164354289" name="staticRoles" index="2RjxEn" />
+      </concept>
+      <concept id="1540371382523894300" name="org.modellwerkstatt.objectflow.structure.IncludePlatform" flags="ng" index="1wSYm0">
+        <reference id="1540371382523894380" name="platform" index="1wSYnK" />
       </concept>
       <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
         <child id="6436022531931826628" name="translations" index="3Rpr6w" />
@@ -207,11 +211,12 @@
   </node>
   <node concept="il5tC" id="3Rw9V4pLpzc">
     <property role="TrG5h" value="SimpleRes" />
-    <node concept="2kDv1q" id="6A6XM2SxGWC" role="2kDvpj">
-      <property role="TrG5h" value="RICH" />
+    <ref role="3Thu$x" node="33mP2Sntq8S" resolve="FirmShared" />
+    <node concept="1wSYm0" id="33mP2SntEB$" role="2kDvpj">
+      <ref role="1wSYnK" node="bIRySeiObb" resolve="RICH" />
     </node>
-    <node concept="2kDv1q" id="6BKPvpCRbDr" role="2kDvpj">
-      <property role="TrG5h" value="MDE" />
+    <node concept="1wSYm0" id="33mP2SntEw5" role="2kDvpj">
+      <ref role="1wSYnK" node="bIRySeiObe" resolve="MDE" />
     </node>
     <node concept="il5_x" id="7dlwzTfFN2f" role="2kzhMJ">
       <property role="TrG5h" value="CFT_multiexe_cancel" />
@@ -269,7 +274,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="42aYeYNuQAv" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDMwhn" role="il5$o">
           <property role="Xl_RC" value="highlight_off" />
         </node>
@@ -287,7 +292,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="7MWNCzYw_M6" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="1TowlBn5YwI" role="il5$o">
           <property role="Xl_RC" value="search" />
         </node>
@@ -305,7 +310,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="66oHjdjqLR6" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="5YyqL3zmfhP" role="il5$o">
           <property role="Xl_RC" value="search" />
         </node>
@@ -324,7 +329,7 @@
         <node concept="238Bvw" id="1E9WFYpHMGf" role="238Brw" />
       </node>
       <node concept="2kzhL4" id="4FeXrhEDxOL" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="4FeXrhEDxP1" role="il5$o">
           <property role="Xl_RC" value="done" />
         </node>
@@ -357,7 +362,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="6xifBbDUrXR" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDUrXS" role="il5_5">
           <property role="Xl_RC" value="Reload" />
         </node>
@@ -375,7 +380,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="6xifBbDF$a1" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDF$bc" role="il5$o">
           <property role="Xl_RC" value="delete_outline" />
         </node>
@@ -390,7 +395,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="5ol$NvKd9t" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="238Bvw" id="1E9WFYq4utp" role="238Brw" />
         <node concept="Xl_RD" id="6xifBbDUutu" role="il5$o">
           <property role="Xl_RC" value="cancel" />
@@ -490,7 +495,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="6xifBbDXGwT" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDXGwU" role="il5_5">
           <property role="Xl_RC" value="ex" />
         </node>
@@ -516,7 +521,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="2w5UnVouM9R" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMaX" role="il5$o">
           <property role="Xl_RC" value="check_circle_outline" />
         </node>
@@ -534,7 +539,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="6xifBbDMwxE" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDMwxF" role="il5_5">
           <property role="Xl_RC" value="Edit" />
         </node>
@@ -552,7 +557,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="6xifBbDNt97" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDNtfE" role="il5$o">
           <property role="Xl_RC" value="add_box" />
         </node>
@@ -569,7 +574,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="6xifBbDNtYR" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDNtYS" role="il5_5">
           <property role="Xl_RC" value="Beleg reset" />
         </node>
@@ -586,7 +591,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="2w5UnVouMxZ" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMy0" role="il5_5">
           <property role="Xl_RC" value="Reset Order" />
         </node>
@@ -604,7 +609,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="2w5UnVouMz7" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMz8" role="il5_5">
           <property role="Xl_RC" value="Complete Order" />
         </node>
@@ -622,7 +627,7 @@
         </node>
       </node>
       <node concept="2kzhL4" id="2w5UnVouMBw" role="2kzgdm">
-        <ref role="2C2Acs" node="6BKPvpCRbDr" resolve="MDE" />
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMBy" role="il5$o">
           <property role="Xl_RC" value="scanner" />
         </node>
@@ -1088,7 +1093,7 @@
       <node concept="2CJ4$C" id="7uqK6azzPCy" role="2CJ4_l">
         <property role="TrG5h" value="TemplateName" />
         <node concept="Xl_RD" id="7uqK6azzPCz" role="2CaGCA">
-          <property role="Xl_RC" value="template_suivant" />
+          <property role="Xl_RC" value="template_suivant2" />
         </node>
       </node>
       <node concept="2CJ4$C" id="2P$1DRitFdf" role="2CJ4_l">
@@ -1169,6 +1174,12 @@
         <node concept="Xl_RD" id="382CQP52o$w" role="2DqwMv">
           <property role="Xl_RC" value="1" />
         </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="6I2imnXMEpa" role="2CGBMS">
+      <property role="TrG5h" value="userSrv" />
+      <node concept="Xl_RD" id="6I2imnXMEpb" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleUserServices" />
       </node>
     </node>
     <node concept="2CJf3v" id="382CQP52o$x" role="2CGBMS">
@@ -2377,6 +2388,30 @@
       <node concept="TZ5HA" id="2c1OwJS9HMs" role="TZ5H$">
         <node concept="1dT_AC" id="2c1OwJS9HMt" role="1dT_Ay">
           <property role="1dT_AB" value="Exceptions are not checked actively, since they are in no way different that guards." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="il5tC" id="33mP2Sntq8S">
+    <property role="TrG5h" value="FirmShared" />
+    <node concept="2kDv1q" id="bIRySeiObb" role="2kDvpj">
+      <property role="TrG5h" value="RICH" />
+    </node>
+    <node concept="2kDv1q" id="bIRySeiObe" role="2kDvpj">
+      <property role="TrG5h" value="MDE" />
+    </node>
+    <node concept="il5_x" id="33mP2Sntq8X" role="2kzhMJ">
+      <property role="TrG5h" value="BASIS_LABEL" />
+      <node concept="2kzhL4" id="33mP2Sntq8Y" role="2kzgdm">
+        <ref role="2C2Acs" node="bIRySeiObb" resolve="RICH" />
+        <node concept="Xl_RD" id="33mP2Sntq8Z" role="il5_5">
+          <property role="Xl_RC" value="FX8_BASIS" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="33mP2Snttsq" role="2kzgdm">
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
+        <node concept="Xl_RD" id="33mP2Snttsr" role="il5_5">
+          <property role="Xl_RC" value="MDE_BASIS" />
         </node>
       </node>
     </node>

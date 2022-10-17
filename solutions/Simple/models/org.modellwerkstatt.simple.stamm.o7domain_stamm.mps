@@ -125,11 +125,7 @@
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
-        <child id="6525155817177697693" name="lines" index="20vkWT" />
         <child id="1083620718216065081" name="singleLines" index="13z7HO" />
-      </concept>
-      <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
-        <property id="6525155817177697682" name="text" index="20vkWQ" />
       </concept>
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
@@ -215,9 +211,6 @@
         <property role="Xl_RC" value="Name" />
       </node>
       <node concept="20vkWO" id="6PQK_SYrIRk" role="3b_Q0">
-        <node concept="20vkWP" id="6PQK_SYrIRl" role="20vkWT">
-          <property role="20vkWQ" value="dfadf a" />
-        </node>
         <node concept="1PaTwC" id="7YG44tSvn5X" role="13z7HO">
           <node concept="3oM_SD" id="7YG44tSvn5Y" role="1PaTwD">
             <property role="3oM_SC" value="dfadf" />
@@ -247,9 +240,6 @@
         <property role="Xl_RC" value="Price" />
       </node>
       <node concept="20vkWO" id="6PQK_SYrIRP" role="3b_Q0">
-        <node concept="20vkWP" id="6PQK_SYrIRQ" role="20vkWT">
-          <property role="20vkWQ" value="fasd a" />
-        </node>
         <node concept="1PaTwC" id="7YG44tSvn5Z" role="13z7HO">
           <node concept="3oM_SD" id="7YG44tSvn60" role="1PaTwD">
             <property role="3oM_SC" value="fasd" />

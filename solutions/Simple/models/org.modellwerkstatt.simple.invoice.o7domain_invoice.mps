@@ -7,7 +7,6 @@
     <use id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="be5a2939-f26c-4fcb-b00e-829263e7fc90" name="org.modellwerkstatt.scribe" version="0" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -130,11 +129,7 @@
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
-        <child id="6525155817177697693" name="lines" index="20vkWT" />
         <child id="1083620718216065081" name="singleLines" index="13z7HO" />
-      </concept>
-      <concept id="6525155817177697681" name="org.modellwerkstatt.objectflow.structure.OFXDocumentationLine" flags="ng" index="20vkWP">
-        <property id="6525155817177697682" name="text" index="20vkWQ" />
       </concept>
       <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
         <property id="8614254524338490551" name="max" index="8tbpI" />
@@ -877,10 +872,6 @@
       </node>
     </node>
     <node concept="20vkWO" id="6WkQmwhlF$k" role="1qk9eX">
-      <node concept="20vkWP" id="6WkQmwhlF$l" role="20vkWT">
-        <property role="20vkWQ" value="Hier docu für Business Object" />
-      </node>
-      <node concept="20vkWP" id="6WkQmwhlFA1" role="20vkWT" />
       <node concept="1PaTwC" id="7YG44tSvn63" role="13z7HO">
         <node concept="3oM_SD" id="7YG44tSvn64" role="1PaTwD">
           <property role="3oM_SC" value="Hier" />
@@ -1031,9 +1022,6 @@
         </node>
       </node>
       <node concept="20vkWO" id="6WkQmwhnqlG" role="3b_Q0">
-        <node concept="20vkWP" id="6WkQmwhnqlH" role="20vkWT">
-          <property role="20vkWQ" value="Schlüssel" />
-        </node>
         <node concept="1PaTwC" id="7YG44tSvn65" role="13z7HO">
           <node concept="3oM_SD" id="7YG44tSvn66" role="1PaTwD">
             <property role="3oM_SC" value="Schlüssel" />
@@ -1077,13 +1065,6 @@
         <property role="Xl_RC" value="Date" />
       </node>
       <node concept="20vkWO" id="6WkQmwhnqmH" role="3b_Q0">
-        <node concept="20vkWP" id="6WkQmwhnqmI" role="20vkWT">
-          <property role="20vkWQ" value="Rechnungsdatum" />
-        </node>
-        <node concept="20vkWP" id="6WkQmwhnqnI" role="20vkWT">
-          <property role="20vkWQ" value="(ein - aus)" />
-        </node>
-        <node concept="20vkWP" id="6WkQmwhnqnP" role="20vkWT" />
         <node concept="1PaTwC" id="7YG44tSvn67" role="13z7HO">
           <node concept="3oM_SD" id="7YG44tSvn68" role="1PaTwD">
             <property role="3oM_SC" value="Rechnungsdatum" />

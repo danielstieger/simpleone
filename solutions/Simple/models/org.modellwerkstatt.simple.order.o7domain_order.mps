@@ -225,7 +225,6 @@
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
       </concept>
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
-        <property id="1707086779732260970" name="val" index="2_138b" />
         <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
@@ -1176,7 +1175,6 @@
         <property role="2XvgOS" value="C" />
         <node concept="2_5uyX" id="7h5_Fe2gwpX" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpZ" role="2_RhUc">
-          <property role="2_138b" value="#4BA1C6" />
           <node concept="276gdk" id="6QrtA9Mt95X" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt95W" resolve="COLOR_3" />
           </node>
@@ -1185,14 +1183,13 @@
           <property role="Xl_RC" value="created" />
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dY" role="3RLGe5">
-          <property role="Xl_RC" value="created" />
+          <property role="Xl_RC" value="crtd" />
         </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L0" role="2XvgO2">
         <property role="TrG5h" value="ordered" />
         <property role="2XvgOS" value="O" />
         <node concept="2_1389" id="7h5_Fe2gwq0" role="2_RhUc">
-          <property role="2_138b" value="#4FB973" />
           <node concept="276gdk" id="6QrtA9Mt95Z" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt95Y" resolve="COLOR_4" />
           </node>
@@ -1201,14 +1198,13 @@
           <property role="Xl_RC" value="ordered" />
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dO" role="3RLGe5">
-          <property role="Xl_RC" value="ordered" />
+          <property role="Xl_RC" value="ordrd" />
         </node>
       </node>
       <node concept="2XvgOc" id="AN_117c2L3" role="2XvgO2">
         <property role="TrG5h" value="completed" />
         <property role="2XvgOS" value="CO" />
         <node concept="2_1389" id="7h5_Fe2gwq1" role="2_RhUc">
-          <property role="2_138b" value="#6C3419" />
           <node concept="276gdk" id="6QrtA9Mt961" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt960" resolve="COLOR_5" />
           </node>
@@ -1217,7 +1213,7 @@
           <property role="Xl_RC" value="completed" />
         </node>
         <node concept="Xl_RD" id="5_hm6iII8dQ" role="3RLGe5">
-          <property role="Xl_RC" value="completed" />
+          <property role="Xl_RC" value="cmplt" />
         </node>
       </node>
       <node concept="1TNdZI" id="2kpuhi0Aa5k" role="1TMXFZ" />
@@ -3512,7 +3508,6 @@
         <property role="2XvgOS" value="A" />
         <node concept="2_5uyX" id="7h5_Fe2gwpS" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpU" role="2_RhUc">
-          <property role="2_138b" value="#E74C3C" />
           <node concept="276gdk" id="6QrtA9Mt962" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt95Q" resolve="COLOR_0" />
           </node>
@@ -3538,7 +3533,6 @@
         <property role="TrG5h" value="rejected" />
         <property role="2XvgOS" value="R" />
         <node concept="2_1389" id="7h5_Fe2gwpV" role="2_RhUc">
-          <property role="2_138b" value="#30B41D" />
           <node concept="276gdk" id="6QrtA9Mt963" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt95S" resolve="COLOR_1" />
           </node>
@@ -3564,7 +3558,6 @@
         <property role="TrG5h" value="unknown" />
         <property role="2XvgOS" value="U" />
         <node concept="2_1389" id="7h5_Fe2gwpW" role="2_RhUc">
-          <property role="2_138b" value="#2C3E50" />
           <node concept="276gdk" id="6QrtA9Mt964" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt95U" resolve="COLOR_2" />
           </node>

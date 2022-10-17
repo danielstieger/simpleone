@@ -105,7 +105,6 @@
         <reference id="4862154259428332766" name="theColor" index="276gdn" />
       </concept>
       <concept id="1707086779732260968" name="org.modellwerkstatt.objectflow.structure.ColorStatusElemOption" flags="ng" index="2_1389">
-        <property id="1707086779732260970" name="val" index="2_138b" />
         <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
@@ -153,7 +152,6 @@
         <property role="2XvgOS" value="E" />
         <node concept="2_5uyX" id="7h5_Fe2gwpI" role="2_RhUc" />
         <node concept="2_1389" id="7h5_Fe2gwpK" role="2_RhUc">
-          <property role="2_138b" value="#FF0000" />
           <node concept="276gdk" id="6QrtA9Mt966" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt965" resolve="COLOR_6" />
           </node>
@@ -169,7 +167,6 @@
         <property role="TrG5h" value="new" />
         <property role="2XvgOS" value="N" />
         <node concept="2_1389" id="7h5_Fe2gwpL" role="2_RhUc">
-          <property role="2_138b" value="#00FF00" />
           <node concept="276gdk" id="6QrtA9Mt968" role="276g70">
             <ref role="276gdn" to="oyrz:6QrtA9Mt967" resolve="COLOR_7" />
           </node>
