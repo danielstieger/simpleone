@@ -774,6 +774,14 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="4dQa7h5Jzjb" role="2kzhMJ">
+      <property role="TrG5h" value="SESSION_RO" />
+      <node concept="2kzhL4" id="4dQa7h5Jzjc" role="2kzgdm">
+        <node concept="Xl_RD" id="4dQa7h5Jzjd" role="il5_5">
+          <property role="Xl_RC" value="RO Session" />
+        </node>
+      </node>
+    </node>
     <node concept="27cpit" id="6QrtA9Mt95Q" role="27c1lO">
       <property role="27cpiu" value="#E74C3C" />
       <property role="TrG5h" value="COLOR_0" />

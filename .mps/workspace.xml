@@ -38,19 +38,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28c4ecba-6ea1-4cca-b332-768dba78c247" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.inherit.o3unit_inheritall.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.o3unit_invoicing.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.o3unit_invoicing.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.o7domain_invoice.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.o7domain_invoice.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.movement.o7domain_movement.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.movement.o7domain_movement.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o2test.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o2test.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o9infra_configs.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o9infra_configs.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o3unit_orderhandling.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o3unit_orderhandling.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o7domain_order.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o7domain_order.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.stamm.o7domain_stamm.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.stamm.o7domain_stamm.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.task.o7domain_task.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.task.o7domain_task.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,15 +347,15 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemId" value="Languages" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="org" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,32 +386,22 @@
               <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.o1deploy_simpleApp) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,10 +414,38 @@
               <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,6 +465,12 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SimpleOne" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -468,6 +480,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inherit" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inherit.status.o3unit_inheritall) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.inherit.status.o3unit_inheritall.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.o1deploy_simpleApp) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,57 +537,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inherit" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inherit.status.o3unit_inheritall) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.inherit.status.o3unit_inheritall.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
