@@ -17,11 +17,22 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="1335996842166371514" name="org.modellwerkstatt.objectflow.structure.OFXTestSuit" flags="ng" index="2WPaUQ">
@@ -37,6 +48,7 @@
       </concept>
       <concept id="6952410984685067935" name="org.modellwerkstatt.objectflow.structure.OFXTestMethod" flags="ng" index="3yPF9F" />
       <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
+        <property id="830334255848575723" name="logLevel" index="Rda9K" />
         <child id="2356914237085088917" name="exp" index="3VcgQn" />
       </concept>
     </language>
@@ -53,14 +65,36 @@
       <property role="TrG5h" value="Some Simple test here " />
       <node concept="3cqZAl" id="6I2imnXMDCB" role="3clF45" />
       <node concept="3clFbS" id="6I2imnXMDCC" role="3clF47">
-        <node concept="3clFbH" id="6I2imnXMDDd" role="3cqZAp" />
-        <node concept="3VdxhY" id="6I2imnXMDFl" role="3cqZAp">
-          <node concept="Xl_RD" id="6I2imnXMDFE" role="3VcgQn">
-            <property role="Xl_RC" value="Some real hard problem" />
+        <node concept="1gVbGN" id="7L6pyranI1F" role="3cqZAp">
+          <node concept="3clFbC" id="7L6pyranK5A" role="1gVkn0">
+            <node concept="3cmrfG" id="7L6pyranI1U" role="3uHU7B">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="3cmrfG" id="7L6pyranI_n" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
           </node>
         </node>
-        <node concept="38$l6q" id="6I2imnXMDDF" role="3cqZAp">
-          <node concept="Xl_RD" id="6I2imnXMDDZ" role="38$l6p">
+        <node concept="3clFbH" id="7L6pyranKpw" role="3cqZAp" />
+        <node concept="3VdxhY" id="6I2imnXMDFl" role="3cqZAp">
+          <node concept="Xl_RD" id="6I2imnXMDFE" role="3VcgQn">
+            <property role="Xl_RC" value="LOG ERROR" />
+          </node>
+        </node>
+        <node concept="3VdxhY" id="7L6pyr9KHbF" role="3cqZAp">
+          <property role="Rda9K" value="I5W9GWEMXY/INFO" />
+          <node concept="Xl_RD" id="7L6pyr9KHbG" role="3VcgQn">
+            <property role="Xl_RC" value="LOG INFO" />
+          </node>
+        </node>
+        <node concept="3VdxhY" id="7L6pyr9KHcH" role="3cqZAp">
+          <property role="Rda9K" value="I5W9GWEMXX/DEBUG" />
+          <node concept="Xl_RD" id="7L6pyr9KHcI" role="3VcgQn">
+            <property role="Xl_RC" value="LOG DEBUG" />
+          </node>
+        </node>
+        <node concept="38$l6q" id="7L6pyr9KHc3" role="3cqZAp">
+          <node concept="Xl_RD" id="7L6pyr9KHc4" role="38$l6p">
             <property role="Xl_RC" value="Hello World - Niveau 2" />
           </node>
         </node>

@@ -364,10 +364,6 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
-      <concept id="1225711141656" name="jetbrains.mps.baseLanguage.collections.structure.ListElementAccessExpression" flags="nn" index="1y4W85">
-        <child id="1225711182005" name="list" index="1y566C" />
-        <child id="1225711191269" name="index" index="1y58nS" />
-      </concept>
     </language>
   </registry>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
@@ -379,6 +375,7 @@
     <node concept="2$ntO6" id="2qrl3a2NyvY" role="2$nsuY">
       <node concept="33WYYh" id="2qrl3a2PL9H" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
+        <ref role="3uz5Vf" to="oyrz:3Rw9V4pLpzK" resolve="CFT_Search" />
         <node concept="3clFbT" id="4h62mqe9eDx" role="2_HrWp" />
       </node>
     </node>
@@ -595,7 +592,7 @@
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App_MDE_Order" />
-    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" to="oyrz:4l1zKLo5jkE" resolve="FX8_Lola_MDE" />
     <node concept="3ulXEM" id="4h8GofeW2LA" role="3ulXEG">
       <property role="TrG5h" value="values" />
       <node concept="_YKpA" id="4h8GofeW2LI" role="1tU5fm">
@@ -605,29 +602,12 @@
     <node concept="2$ntO6" id="7f4gcD$ZVIL" role="2$nsuY">
       <node concept="33WYYh" id="7f4gcD$ZVIM" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
+        <ref role="3uz5Vf" to="oyrz:3Rw9V4pLpzK" resolve="CFT_Search" />
       </node>
       <node concept="2XvMaL" id="5faagik40bV" role="2$ntZF">
         <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
         <node concept="2vefiz" id="wGbog3pXNT" role="h55Ek">
           <ref role="2vefiw" to="eqbi:AN_117c2L0" resolve="ordered" />
-        </node>
-      </node>
-      <node concept="3cpWs3" id="4h8GofeWBVd" role="2$ntWM">
-        <node concept="Xl_RD" id="4h8GofeWBVg" role="3uHU7w">
-          <property role="Xl_RC" value=")" />
-        </node>
-        <node concept="3cpWs3" id="4h8GofeWBkE" role="3uHU7B">
-          <node concept="Xl_RD" id="2f$GH$eeXv7" role="3uHU7B">
-            <property role="Xl_RC" value="Search for Orders\nOrders available (" />
-          </node>
-          <node concept="1y4W85" id="4h8GofeWBwi" role="3uHU7w">
-            <node concept="3cmrfG" id="4h8GofeWBxr" role="1y58nS">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="3urNR4" id="4h8GofeWBkT" role="1y566C">
-              <ref role="3cqZAo" node="4h8GofeW2LA" resolve="values" />
-            </node>
-          </node>
         </node>
       </node>
     </node>

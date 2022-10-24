@@ -92,7 +92,7 @@
         <child id="1440642197017487722" name="icon" index="il5$o" />
         <child id="1440642197017487671" name="text" index="il5_5" />
       </concept>
-      <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.Platform" flags="ng" index="2kDv1q" />
+      <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.PlatformDeclaration" flags="ng" index="2kDv1q" />
       <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.OFXConfig" flags="ng" index="2CG7Z0">
         <property id="3526396426252206723" name="lastUpdated" index="2320hu" />
         <child id="406105322043153886" name="dependencyResolution" index="20ptHX" />
@@ -139,7 +139,7 @@
         <child id="3551693089249896602" name="identities" index="QIgUm" />
         <child id="4779674245164354289" name="staticRoles" index="2RjxEn" />
       </concept>
-      <concept id="1540371382523894300" name="org.modellwerkstatt.objectflow.structure.IncludePlatform" flags="ng" index="1wSYm0">
+      <concept id="1540371382523894300" name="org.modellwerkstatt.objectflow.structure.PlatformExtended" flags="ng" index="1wSYm0">
         <reference id="1540371382523894380" name="platform" index="1wSYnK" />
       </concept>
       <concept id="6436022531931825683" name="org.modellwerkstatt.objectflow.structure.StringLiteralTransAttribut" flags="ng" index="3RprTR">
@@ -283,18 +283,20 @@
     <node concept="il5_x" id="3Rw9V4pLpzK" role="2kzhMJ">
       <property role="TrG5h" value="CFT_Search" />
       <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTx/F4" />
         <node concept="Xl_RD" id="3Rw9V4pLpzM" role="il5_5">
-          <property role="Xl_RC" value="Search" />
+          <property role="Xl_RC" value="Search Deflt." />
         </node>
         <node concept="Xl_RD" id="56t4EvFMzSk" role="il5$o">
-          <property role="Xl_RC" value="bongo" />
+          <property role="Xl_RC" value="search" />
         </node>
       </node>
       <node concept="2kzhL4" id="7MWNCzYw_M6" role="2kzgdm">
         <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="1TowlBn5YwI" role="il5$o">
           <property role="Xl_RC" value="search" />
+        </node>
+        <node concept="Xl_RD" id="4zNzuh_JUeM" role="il5_5">
+          <property role="Xl_RC" value="Search MDE" />
         </node>
       </node>
     </node>
@@ -399,6 +401,22 @@
         <node concept="238Bvw" id="1E9WFYq4utp" role="238Brw" />
         <node concept="Xl_RD" id="6xifBbDUutu" role="il5$o">
           <property role="Xl_RC" value="cancel" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="14y1BfO4Gco" role="2kzhMJ">
+      <property role="TrG5h" value="CFT_Warning" />
+      <node concept="2kzhL4" id="14y1BfO4Gcp" role="2kzgdm">
+        <property role="il5CD" value="1hImSMr5NTz/F6" />
+        <node concept="Xl_RD" id="14y1BfO4Gcq" role="il5_5">
+          <property role="Xl_RC" value="Warning" />
+        </node>
+      </node>
+      <node concept="2kzhL4" id="14y1BfO4Gcr" role="2kzgdm">
+        <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
+        <node concept="238Bvw" id="14y1BfO4Gcs" role="238Brw" />
+        <node concept="Xl_RD" id="14y1BfO4Gct" role="il5$o">
+          <property role="Xl_RC" value="warning" />
         </node>
       </node>
     </node>
@@ -1107,7 +1125,7 @@
       <node concept="2CJ4$C" id="2P$1DRitFdf" role="2CJ4_l">
         <property role="TrG5h" value="EventBusLocking" />
         <node concept="Xl_RD" id="2P$1DRitH5i" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="false" />
         </node>
       </node>
       <node concept="2CJ4$C" id="6tydhbZ7kVv" role="2CJ4_l">
@@ -1125,6 +1143,12 @@
       <node concept="2CJ4$C" id="6f52sUFHAr9" role="2CJ4_l">
         <property role="TrG5h" value="SilentExLogging" />
         <node concept="Xl_RD" id="6f52sUFHAra" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="7L6pyrbes93" role="2CJ4_l">
+        <property role="TrG5h" value="LogEventsToStdErr" />
+        <node concept="Xl_RD" id="7L6pyrbes94" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
@@ -1155,6 +1179,28 @@
     <property role="3GE5qa" value="configs" />
     <node concept="2CJ4_Q" id="7HkVpVc$te_" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    </node>
+    <node concept="2CJf3v" id="7L6pyr9KHQC" role="2CGBMS">
+      <property role="TrG5h" value="logConfig_" />
+      <node concept="Xl_RD" id="7L6pyr9KHQE" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JLogLevel" />
+      </node>
+      <node concept="2CJf1O" id="7L6pyr9KI86" role="2CJ4_l">
+        <node concept="Xl_RD" id="7L6pyr9KI87" role="2DqwMp">
+          <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+        </node>
+        <node concept="Xl_RD" id="7L6pyr9KI8C" role="2DqwMv">
+          <property role="Xl_RC" value="String" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="7L6pyr9KIe3" role="2CJ4_l">
+        <node concept="Xl_RD" id="7L6pyr9KIe4" role="2DqwMp">
+          <property role="Xl_RC" value="DEBUG" />
+        </node>
+        <node concept="Xl_RD" id="7L6pyr9KIe5" role="2DqwMv">
+          <property role="Xl_RC" value="String" />
+        </node>
+      </node>
     </node>
     <node concept="2CJf3v" id="382CQP52o$n" role="2CGBMS">
       <property role="TrG5h" value="hw" />

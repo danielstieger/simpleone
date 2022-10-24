@@ -679,6 +679,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="29mqFQz2YQe" role="3cqZAp" />
+        <node concept="3clFbH" id="R7t2v_CkjK" role="3cqZAp" />
         <node concept="3clFbF" id="5A$AnVDpx2U" role="3cqZAp">
           <node concept="37vLTI" id="5A$AnVDpx2W" role="3clFbG">
             <node concept="2ShNRf" id="5A$AnVDpwoO" role="37vLTx">
@@ -1767,6 +1768,26 @@
       </node>
       <node concept="3Tm6S6" id="4nH4LOF$H0t" role="1B3o_S" />
     </node>
+    <node concept="2vDG_T" id="4dQa7h5MID1" role="jymVt">
+      <property role="TrG5h" value="testOperationCall" />
+      <node concept="3clFbS" id="4dQa7h5MID4" role="3clF47">
+        <node concept="3clFbF" id="4dQa7h5MIGM" role="3cqZAp">
+          <node concept="1odsa" id="4dQa7h5MIGK" role="3clFbG">
+            <ref role="1ods_" node="5TC7JC3WprT" resolve="ProcDocProc" />
+            <ref role="37wK5l" node="4nH4LOF$H0h" resolve="closed" />
+            <node concept="2ShNRf" id="4dQa7h5NbM8" role="37wK5m">
+              <node concept="1pGfFk" id="4dQa7h5NcZm" role="2ShVmc">
+                <ref role="37wK5l" node="5A$AnVDpmwx" resolve="Document" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4dQa7h5MID6" role="3clF45" />
+      <node concept="3Tm1VV" id="4dQa7h5MID7" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="16Iv3epok6V" role="jymVt" />
+    <node concept="2tJIrI" id="16Iv3epok2T" role="jymVt" />
   </node>
 </model>
 
