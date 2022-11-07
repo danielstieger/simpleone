@@ -1016,6 +1016,12 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="2qPmNJiMsrp" role="2CJ4_l">
+        <property role="TrG5h" value="LogEventsToStdErr" />
+        <node concept="Xl_RD" id="2qPmNJiMsrq" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
