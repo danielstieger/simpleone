@@ -373,12 +373,6 @@
         <child id="4986415014450757612" name="formatString" index="icr7_" />
         <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
-      <concept id="6766874831773279453" name="org.modellwerkstatt.objectflow.structure.MergeInto" flags="ng" index="36y60j">
-        <property id="6258386918140903024" name="sessionIntegration" index="OpNZe" />
-        <property id="1534804193515702584" name="sourceObjType" index="1n135K" />
-        <child id="6766874831773279458" name="destination" index="36y60G" />
-        <child id="6766874831773279456" name="source" index="36y60I" />
-      </concept>
       <concept id="8697556949200791456" name="org.modellwerkstatt.objectflow.structure.CommandNoEscOption" flags="ng" index="3ap0Dm" />
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
         <child id="6057399400731215414" name="numberFormat" index="3bVav" />
@@ -758,103 +752,6 @@
     <node concept="3ugp7q" id="AN_117fcIc" role="3ug97V">
       <property role="TrG5h" value="ResultPage" />
       <ref role="3gcvY6" node="AN_117f5lp" resolve="OrderSearchView" />
-      <node concept="2niumk" id="4h62mqehiMO" role="2nihkg">
-        <property role="2m0tre" value="1OYKdEb2e2$/AnyCmdTerminated" />
-        <ref role="2zWoI2" to="eqbi:1Zhh97664rm" resolve="Order" />
-        <node concept="2niuml" id="4h62mqehiMP" role="2nium9">
-          <node concept="3clFbS" id="4h62mqehiMQ" role="2VODD2">
-            <node concept="3clFbH" id="fXqXCZHcRB" role="3cqZAp" />
-            <node concept="3cpWs8" id="1os2HcsiakG" role="3cqZAp">
-              <node concept="3cpWsn" id="1os2HcsiakH" role="3cpWs9">
-                <property role="TrG5h" value="orderFromOtherGO" />
-                <node concept="3uibUv" id="1os2HcsiakI" role="1tU5fm">
-                  <ref role="3uigEE" to="eqbi:1Zhh97664rm" resolve="Order" />
-                </node>
-                <node concept="2niuma" id="1os2Hcsiaoh" role="33vP2m" />
-              </node>
-            </node>
-            <node concept="3clFbH" id="1os2Hcsiayg" role="3cqZAp" />
-            <node concept="3clFbF" id="14y1BfOgsQ5" role="3cqZAp">
-              <node concept="2OqwBi" id="14y1BfOgsQ2" role="3clFbG">
-                <node concept="10M0yZ" id="14y1BfOgsQ3" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="14y1BfOgsQ4" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="14y1BfOgtgD" role="37wK5m">
-                    <node concept="2OqwBi" id="14y1BfOgtt9" role="3uHU7w">
-                      <node concept="37vLTw" id="14y1BfOgtkw" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1os2HcsiakH" resolve="orderFromOtherGO" />
-                      </node>
-                      <node concept="2S8uIT" id="14y1BfOgtw5" role="2OqNvi">
-                        <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="14y1BfOgsTd" role="3uHU7B">
-                      <property role="Xl_RC" value="Positions count: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="4h62mqeDMRh" role="3cqZAp">
-              <node concept="3cpWsn" id="4h62mqeDMRi" role="3cpWs9">
-                <property role="TrG5h" value="newOrder" />
-                <node concept="3uibUv" id="4h62mqeDMRj" role="1tU5fm">
-                  <ref role="3uigEE" to="eqbi:1Zhh97664rm" resolve="Order" />
-                </node>
-                <node concept="36y60j" id="4h62mqehj1E" role="33vP2m">
-                  <property role="1n135K" value="1lcI4x2i8$O/entity" />
-                  <property role="OpNZe" value="5PYG8oiUhXT/session_checkedout" />
-                  <node concept="37vLTw" id="1os2Hcsia$P" role="36y60I">
-                    <ref role="3cqZAo" node="1os2HcsiakH" resolve="orderFromOtherGO" />
-                  </node>
-                  <node concept="2OqwBi" id="4h62mqehj7v" role="36y60G">
-                    <node concept="3urNR4" id="4h62mqehj4c" role="2Oq$k0">
-                      <ref role="3cqZAo" node="AN_117f5tz" resolve="searchViewObject" />
-                    </node>
-                    <node concept="2S8uIT" id="4h62mqehjcz" role="2OqNvi">
-                      <ref role="2S8YL0" node="7i4jsoimSH0" resolve="orders" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="4h62mqeDN6h" role="3cqZAp" />
-            <node concept="3clFbF" id="14y1BfOgtIL" role="3cqZAp">
-              <node concept="2OqwBi" id="14y1BfOgtIM" role="3clFbG">
-                <node concept="10M0yZ" id="14y1BfOgtIN" role="2Oq$k0">
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                </node>
-                <node concept="liA8E" id="14y1BfOgtIO" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="14y1BfOgtIP" role="37wK5m">
-                    <node concept="2OqwBi" id="14y1BfOgtIQ" role="3uHU7w">
-                      <node concept="37vLTw" id="14y1BfOgtIR" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1os2HcsiakH" resolve="orderFromOtherGO" />
-                      </node>
-                      <node concept="2S8uIT" id="14y1BfOgtIS" role="2OqNvi">
-                        <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="14y1BfOgtIT" role="3uHU7B">
-                      <property role="Xl_RC" value="Positions count 2: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="14y1BfOgtzx" role="3cqZAp" />
-            <node concept="1mFxgN" id="4h62mqehjeM" role="3cqZAp">
-              <node concept="37vLTw" id="4h62mqeDQ48" role="1mFxgj">
-                <ref role="3cqZAo" node="4h62mqeDMRi" resolve="newOrder" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3063JU" id="2c1OwJT5vvv" role="3063Jp">
         <ref role="3063JT" node="2c1OwJT5qQt" resolve="THE List of Orders" />
         <node concept="1Wc70l" id="5YyqL3ziMdS" role="2CtmLH">
@@ -1284,7 +1181,6 @@
     <node concept="20qIzx" id="1jy7rUu1X$Q" role="10_T4l">
       <node concept="3clFbS" id="1jy7rUu1X$R" role="2VODD2" />
     </node>
-    <node concept="2YYyHn" id="4h62mqecPJW" role="3ap3dX" />
   </node>
   <node concept="3ugp7m" id="AN_117c3Kl">
     <property role="TrG5h" value="CF Edit Order" />
@@ -6801,6 +6697,19 @@
             </node>
           </node>
           <node concept="3clFbH" id="2c1OwJS9JeU" role="3cqZAp" />
+          <node concept="3clFbF" id="4$npG3_x887" role="3cqZAp">
+            <node concept="37vLTI" id="4$npG3_x8RE" role="3clFbG">
+              <node concept="10Nm6u" id="4$npG3_x8W4" role="37vLTx" />
+              <node concept="2OqwBi" id="4$npG3_x8u3" role="37vLTJ">
+                <node concept="3urNQE" id="4$npG3_x885" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
+                </node>
+                <node concept="2S8uIT" id="4$npG3_x8Bq" role="2OqNvi">
+                  <ref role="2S8YL0" to="eqbi:4u029Jv8vHX" resolve="orderDat" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="7RzRXa3H9fF" role="3cqZAp">
             <node concept="3urNQE" id="5TC7JC3Wpuo" role="3clFbG">
               <ref role="3cqZAo" node="5TC7JC3Wpug" resolve="orderprocParam" />
@@ -11407,6 +11316,7 @@
           <ref role="3O0p26" to="eqbi:4u029Jv8vHX" resolve="orderDat" />
         </node>
         <node concept="1fQJa5" id="5IEkTkmVpHw" role="PoUSh" />
+        <node concept="P9Rn5" id="4$npG3_x74O" role="PoUSh" />
       </node>
     </node>
   </node>
