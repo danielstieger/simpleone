@@ -7140,32 +7140,43 @@
     </node>
     <node concept="20qIzx" id="1ReQ$xd3NsA" role="3umfm7">
       <node concept="3clFbS" id="1ReQ$xd3NsB" role="2VODD2">
-        <node concept="3clFbJ" id="OpUSe0anMr" role="3cqZAp">
-          <node concept="3clFbS" id="OpUSe0anMt" role="3clFbx">
-            <node concept="1X3_iC" id="1jy7rUtwy62" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="lgBBG" id="OpUSe08m_B" role="8Wnug">
-                <node concept="lgADV" id="OpUSe08mDw" role="lgycv">
-                  <node concept="35AVbj" id="OpUSe08mDx" role="lgxf9">
-                    <node concept="ic4WF" id="OpUSe08mDy" role="icr7_">
-                      <property role="ic4Xk" value="Guard here in " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3eOVzh" id="OpUSe0aoms" role="3clFbw">
-            <node concept="3cmrfG" id="OpUSe0aomw" role="3uHU7w">
+        <node concept="mlg3r" id="2zMjYTDgfPS" role="3cqZAp">
+          <node concept="3eOSWO" id="2zMjYTDgghb" role="mlgNJ">
+            <node concept="3cmrfG" id="2zMjYTDgghf" role="3uHU7w">
               <property role="3cmrfH" value="10" />
             </node>
-            <node concept="3cmrfG" id="OpUSe0anMW" role="3uHU7B">
+            <node concept="3cmrfG" id="2zMjYTDgfQp" role="3uHU7B">
               <property role="3cmrfH" value="1" />
             </node>
           </node>
+          <node concept="lgADV" id="2zMjYTDgfPV" role="mlgNH">
+            <node concept="35AVbj" id="2zMjYTDgfPW" role="lgxf9">
+              <node concept="ic4WF" id="2zMjYTDgfPX" role="icr7_">
+                <property role="ic4Xk" value="This is a Warning!" />
+              </node>
+            </node>
+          </node>
+          <node concept="mp1e1" id="2zMjYTDggi6" role="mp0NM">
+            <ref role="mp1e0" to="28jr:51llZt5Ptbk" resolve="WARNING_HINT" />
+          </node>
         </node>
-        <node concept="3clFbH" id="5yru0E4lNHB" role="3cqZAp" />
+        <node concept="mlg3r" id="2zMjYTDw8O5" role="3cqZAp">
+          <node concept="3eOSWO" id="2zMjYTDw9h3" role="mlgNJ">
+            <node concept="3cmrfG" id="2zMjYTDw9h7" role="3uHU7w">
+              <property role="3cmrfH" value="10" />
+            </node>
+            <node concept="3cmrfG" id="2zMjYTDw8Pw" role="3uHU7B">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="lgADV" id="2zMjYTDw8O8" role="mlgNH">
+            <node concept="35AVbj" id="2zMjYTDw8O9" role="lgxf9">
+              <node concept="ic4WF" id="2zMjYTDw8Oa" role="icr7_">
+                <property role="ic4Xk" value="Und dies ist die Fehlermeldung aus dem Special Test Command!" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="10M0yZ" id="3XmXsOjqUv5" role="2DETGV">
