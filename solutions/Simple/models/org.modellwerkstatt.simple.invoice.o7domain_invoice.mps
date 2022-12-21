@@ -59,6 +59,10 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
         <reference id="5862977038373003188" name="property" index="338YkT" />
       </concept>
@@ -194,6 +198,7 @@
         <child id="774207833082779687" name="queryOperation" index="jxX7b" />
       </concept>
       <concept id="774207833082448725" name="org.modellwerkstatt.manmap.structure.OptimisticOption" flags="ng" index="jyGaT" />
+      <concept id="774207833082557430" name="org.modellwerkstatt.manmap.structure.NotnullOption" flags="ng" index="jyRCq" />
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
       <concept id="774207833082557394" name="org.modellwerkstatt.manmap.structure.AutoidOption" flags="ng" index="jyRCY">
         <child id="774207833082557396" name="sequenceName" index="jyRCS" />
@@ -843,6 +848,7 @@
       <node concept="Xl_RD" id="1FVEJAItPu1" role="2CNmdL">
         <property role="Xl_RC" value="Folder" />
       </node>
+      <node concept="jyRCq" id="4ztiY$CeR1V" role="0orDa" />
     </node>
     <node concept="1bOX9e" id="3dciNchUr12" role="TxmiU">
       <property role="2RkwnN" value="folderVirtualProp" />
@@ -871,6 +877,19 @@
         <property role="Xl_RC" value="Folder" />
       </node>
     </node>
+    <node concept="1bOX9e" id="2zJhn9ScFau" role="TxmiU">
+      <property role="2RkwnN" value="blobField" />
+      <node concept="3Tm1VV" id="2zJhn9ScFa$" role="1B3o_S" />
+      <node concept="2RoN1w" id="2zJhn9ScFa_" role="2RnVtd">
+        <node concept="3wEZqW" id="2zJhn9ScFaA" role="3wFrgM" />
+        <node concept="3xqBd$" id="2zJhn9ScFaB" role="3xrYvX">
+          <node concept="3Tm1VV" id="2zJhn9ScFaD" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10Q1$e" id="2zJhn9ScPrH" role="2RkE6I">
+        <node concept="10PrrI" id="2zJhn9ScPrI" role="10Q1$1" />
+      </node>
+    </node>
     <node concept="20vkWO" id="6WkQmwhlF$k" role="1qk9eX">
       <node concept="1PaTwC" id="7YG44tSvn63" role="13z7HO">
         <node concept="3oM_SD" id="7YG44tSvn64" role="1PaTwD">
@@ -897,7 +916,9 @@
     <node concept="3clFbW" id="1FVEJAItIur" role="jymVt">
       <node concept="3cqZAl" id="1FVEJAItIus" role="3clF45" />
       <node concept="3Tm1VV" id="1FVEJAItIut" role="1B3o_S" />
-      <node concept="3clFbS" id="1FVEJAItIuu" role="3clF47" />
+      <node concept="3clFbS" id="1FVEJAItIuu" role="3clF47">
+        <node concept="3clFbH" id="6yADK3KP4IT" role="3cqZAp" />
+      </node>
     </node>
     <node concept="2tJIrI" id="1FVEJAItJw4" role="jymVt" />
     <node concept="3clFb_" id="1FVEJAItJw_" role="jymVt">
@@ -1213,6 +1234,12 @@
           <property role="Xl_RC" value="TXT_CANCELTEXT" />
         </node>
       </node>
+      <node concept="12nEzJ" id="2zJhn9SdTss" role="3caO6$">
+        <ref role="12nL8z" node="2zJhn9ScFau" resolve="blobField" />
+        <node concept="Xl_RD" id="2zJhn9SdTsu" role="12k7lF">
+          <property role="Xl_RC" value="BLOB_FIELD" />
+        </node>
+      </node>
     </node>
     <node concept="12nEzA" id="1FVEJAItPqv" role="12nEwW">
       <property role="TrG5h" value="MapBInvoiceFolder" />
@@ -1296,6 +1323,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4BeZcGgyr$I" role="3cqZAp" />
         <node concept="3clFbF" id="4InK$iO3Lg4" role="3cqZAp">
           <node concept="jybIQ" id="4InK$iO3Lg3" role="3clFbG">
             <property role="1v8G3g" value="false" />

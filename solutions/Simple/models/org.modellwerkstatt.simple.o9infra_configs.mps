@@ -284,11 +284,12 @@
       <property role="TrG5h" value="CFT_Search" />
       <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
         <node concept="Xl_RD" id="3Rw9V4pLpzM" role="il5_5">
-          <property role="Xl_RC" value="Search Deflt." />
+          <property role="Xl_RC" value="Default Search" />
         </node>
         <node concept="Xl_RD" id="56t4EvFMzSk" role="il5$o">
           <property role="Xl_RC" value="search" />
         </node>
+        <node concept="238Bvw" id="2ddQOP85zui" role="238Brw" />
       </node>
       <node concept="2kzhL4" id="7MWNCzYw_M6" role="2kzgdm">
         <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
@@ -298,6 +299,7 @@
         <node concept="Xl_RD" id="4zNzuh_JUeM" role="il5_5">
           <property role="Xl_RC" value="Search MDE" />
         </node>
+        <node concept="238Bvw" id="2ddQOP85zuk" role="238Brw" />
       </node>
     </node>
     <node concept="il5_x" id="66oHjdjqLR2" role="2kzhMJ">
@@ -1019,7 +1021,7 @@
       <node concept="2CJ4$C" id="2qPmNJiMsrp" role="2CJ4_l">
         <property role="TrG5h" value="LogEventsToStdErr" />
         <node concept="Xl_RD" id="2qPmNJiMsrq" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
@@ -1865,6 +1867,12 @@
         <property role="TrG5h" value="_intTypeHandler" />
         <node concept="Xl_RD" id="21a32Cmm3S$" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMIntTypeHandler" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="1WnjocVL0MR" role="2CJdiS">
+        <property role="TrG5h" value="_byteArrayTypeHandler" />
+        <node concept="Xl_RD" id="1WnjocVL0MS" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMByteArrayTypeHandler" />
         </node>
       </node>
       <node concept="2CJf3v" id="21a32Cmm3S_" role="2CJdiS">

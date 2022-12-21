@@ -439,7 +439,7 @@
         <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
       <node concept="Xl_RD" id="3zmXKO4roDA" role="2CNmdL">
-        <property role="Xl_RC" value="+ 10%" />
+        <property role="Xl_RC" value="+10%" />
       </node>
       <node concept="Xl_RD" id="7TBDjKk863U" role="3bVav">
         <property role="Xl_RC" value="#0" />
