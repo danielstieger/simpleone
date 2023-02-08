@@ -123,7 +123,6 @@
       <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
         <reference id="4862154259428332766" name="theColor" index="276gdn" />
       </concept>
-      <concept id="3262649880239917894" name="org.modellwerkstatt.objectflow.structure.OppositeOption" flags="ng" index="2fr8A1" />
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
       </concept>
@@ -652,7 +651,6 @@
       <node concept="Xl_RD" id="5pd4yUTVVGi" role="2CNmdL">
         <property role="Xl_RC" value="Movement" />
       </node>
-      <node concept="2fr8A1" id="5pd4yUTVVHu" role="0orDa" />
     </node>
     <node concept="1bOX9e" id="AN_117bbdK" role="TxmiU">
       <property role="2RkwnN" value="ean" />

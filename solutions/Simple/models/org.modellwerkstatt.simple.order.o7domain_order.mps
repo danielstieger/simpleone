@@ -17,9 +17,7 @@
     <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)" />
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
-    <import index="rapu" ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5/java:org.springframework.jdbc(org.modellwerkstatt.simple/)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
-    <import index="flzs" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="8mad" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="jqqh" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.slf4j(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -201,10 +199,6 @@
       </concept>
       <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
         <reference id="4862154259428332766" name="theColor" index="276gdn" />
-      </concept>
-      <concept id="8614254524338490549" name="org.modellwerkstatt.objectflow.structure.LengthOption" flags="ng" index="8tbpG">
-        <property id="8614254524338490551" name="max" index="8tbpI" />
-        <property id="8614254524338490550" name="min" index="8tbpJ" />
       </concept>
       <concept id="3262649880239917894" name="org.modellwerkstatt.objectflow.structure.OppositeOption" flags="ng" index="2fr8A1" />
       <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
@@ -963,10 +957,6 @@
       </node>
       <node concept="Xl_RD" id="AN_117bq$j" role="2CNmdL">
         <property role="Xl_RC" value="Name" />
-      </node>
-      <node concept="8tbpG" id="73W0U3DUJMF" role="0orDa">
-        <property role="8tbpJ" value="5" />
-        <property role="8tbpI" value="10" />
       </node>
     </node>
     <node concept="1bOX9e" id="4u029Jv8vG8" role="TxmiU">
@@ -3982,6 +3972,10 @@
       </node>
       <node concept="2fr8A1" id="4A7QxK7jacd" role="0orDa" />
     </node>
+  </node>
+  <node concept="2EH5hC" id="2CJoOMY44p4">
+    <property role="TrG5h" value="xxxService" />
+    <node concept="3Tm1VV" id="2CJoOMY44p5" role="1B3o_S" />
   </node>
 </model>
 

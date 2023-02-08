@@ -81,7 +81,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -178,13 +177,12 @@
   </registry>
   <node concept="312cEu" id="1SuqpWQMcfd">
     <property role="TrG5h" value="TestSetting" />
-    <node concept="312cEg" id="1SuqpWQMcLr" role="jymVt">
+    <node concept="Wx3nA" id="4Ex3Fobkvwj" role="jymVt">
       <property role="TrG5h" value="VERSION" />
-      <property role="3TUv4t" value="false" />
       <node concept="17QB3L" id="1SuqpWQMcha" role="1tU5fm" />
       <node concept="3Tm1VV" id="1SuqpWQMcAX" role="1B3o_S" />
       <node concept="Xl_RD" id="1SuqpWQMchR" role="33vP2m">
-        <property role="Xl_RC" value="1" />
+        <property role="Xl_RC" value="0.9" />
       </node>
     </node>
     <node concept="312cEg" id="3exXxRetpCn" role="jymVt">
@@ -288,7 +286,7 @@
       <node concept="3clFbS" id="1SuqpWQMcjS" role="3clF47">
         <node concept="3cpWs6" id="1SuqpWQMcAe" role="3cqZAp">
           <node concept="Xl_RD" id="1SuqpWQMcAf" role="3cqZAk">
-            <property role="Xl_RC" value="ORDER App" />
+            <property role="Xl_RC" value="The order app" />
           </node>
         </node>
       </node>
@@ -304,15 +302,6 @@
       <node concept="3cqZAl" id="7MWNCzYu4nr" role="3clF45" />
       <node concept="3Tm1VV" id="7MWNCzYu4ns" role="1B3o_S" />
       <node concept="3clFbS" id="7MWNCzYu4nt" role="3clF47">
-        <node concept="3cpWs8" id="7MWNCzYu4pR" role="3cqZAp">
-          <node concept="3cpWsn" id="7MWNCzYu4pU" role="3cpWs9">
-            <property role="TrG5h" value="st" />
-            <node concept="17QB3L" id="7MWNCzYu4pQ" role="1tU5fm" />
-            <node concept="Xl_RD" id="7MWNCzYu4rf" role="33vP2m">
-              <property role="Xl_RC" value="1" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6gfAiFibKaZ" role="3cqZAp">
           <node concept="2OqwBi" id="6gfAiFibKaW" role="3clFbG">
             <node concept="10M0yZ" id="6gfAiFibKaX" role="2Oq$k0">
@@ -322,15 +311,11 @@
             <node concept="liA8E" id="6gfAiFibKaY" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="37vLTw" id="6gfAiFibKd6" role="37wK5m">
-                <ref role="3cqZAo" node="7MWNCzYu4pU" resolve="st" />
+                <ref role="3cqZAo" node="4Ex3Fobkvwj" resolve="VERSION" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1QzkuHx4frt" role="3cqZAp" />
-        <node concept="3clFbH" id="1QzkuHx4fsq" role="3cqZAp" />
-        <node concept="3clFbH" id="1QzkuHx4ftN" role="3cqZAp" />
-        <node concept="3clFbH" id="1QzkuHx4fvk" role="3cqZAp" />
       </node>
     </node>
     <node concept="2tJIrI" id="7MWNCzYu4n3" role="jymVt" />

@@ -1021,7 +1021,7 @@
       <node concept="2CJ4$C" id="2qPmNJiMsrp" role="2CJ4_l">
         <property role="TrG5h" value="LogEventsToStdErr" />
         <node concept="Xl_RD" id="2qPmNJiMsrq" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="false" />
         </node>
       </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
@@ -1134,12 +1134,6 @@
         <property role="TrG5h" value="ScrollAdjust" />
         <node concept="Xl_RD" id="6tydhbZ7kVw" role="2CaGCA">
           <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="6pxECILIwg4" role="2CJ4_l">
-        <property role="TrG5h" value="AuthenticatorName" />
-        <node concept="Xl_RD" id="6pxECILIwh0" role="2CaGCA">
-          <property role="Xl_RC" value="org.modellwerkstatt.h2forms.mdeauth.H2MpreisTrialFirstAuth" />
         </node>
       </node>
       <node concept="2CJ4$C" id="6f52sUFHAr9" role="2CJ4_l">
@@ -2479,6 +2473,40 @@
         <node concept="Xl_RD" id="33mP2Snttsr" role="il5_5">
           <property role="Xl_RC" value="MDE_BASIS" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="4Ex3Fobawvj">
+    <property role="TrG5h" value="TurkuConfig" />
+    <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJ4_Q" id="4Ex3Fobawvk" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    </node>
+    <node concept="2CJf3v" id="4Ex3Fobawvn" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="4Ex3Fobawvo" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
+      <property role="TrG5h" value="appFactory" />
+      <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.app.TurkuAppFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvu" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$sx7" resolve="FakeLockNBusNPrint" />
+    </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvw" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+    </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvx" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="4Ex3Fobawvy" role="20ptHX">
+      <node concept="Xl_RD" id="4Ex3Fobawvz" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
       </node>
     </node>
   </node>
