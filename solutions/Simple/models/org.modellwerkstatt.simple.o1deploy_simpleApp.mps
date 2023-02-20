@@ -265,6 +265,7 @@
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
       </concept>
+      <concept id="2497433976992505068" name="org.modellwerkstatt.dataux.structure.MenuSeparator" flags="ng" index="1U2rok" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -369,6 +370,18 @@
       </node>
       <node concept="Xl_RD" id="2het$DF8g7e" role="2$ntWM">
         <property role="Xl_RC" value="Edit Order Predecessor (3)" />
+      </node>
+    </node>
+    <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">
+      <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
+      <node concept="3clFbT" id="4GwKq5MIdZ4" role="2_HrWp" />
+    </node>
+    <node concept="1U2rok" id="4GwKq5MIe9Y" role="2N77jT" />
+    <node concept="33WYYh" id="4GwKq5MIe6a" role="2N77jT">
+      <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
+      <ref role="3uz5Vf" to="oyrz:6zVU6_jm7Dg" resolve="Tile_S1" />
+      <node concept="3clFbT" id="4GwKq5MIe76" role="2_HrWp">
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="fOGPe" id="1gJQ5nCsovY" role="2N77jT">

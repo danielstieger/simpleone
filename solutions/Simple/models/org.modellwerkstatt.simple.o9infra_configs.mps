@@ -310,7 +310,7 @@
           <property role="Xl_RC" value="Search" />
         </node>
         <node concept="Xl_RD" id="66oHjdjqLR5" role="il5$o">
-          <property role="Xl_RC" value="bongo" />
+          <property role="Xl_RC" value="search" />
         </node>
       </node>
       <node concept="2kzhL4" id="66oHjdjqLR6" role="2kzgdm">
@@ -661,8 +661,8 @@
         <node concept="Xl_RD" id="6zVU6_jm7Di" role="il5_5">
           <property role="Xl_RC" value="Cmd flow tests" />
         </node>
-        <node concept="Xl_RD" id="16rmuCMPAu3" role="il5$o">
-          <property role="Xl_RC" value="flow tests" />
+        <node concept="Xl_RD" id="4DM32_b7NdO" role="il5$o">
+          <property role="Xl_RC" value="launch" />
         </node>
       </node>
     </node>

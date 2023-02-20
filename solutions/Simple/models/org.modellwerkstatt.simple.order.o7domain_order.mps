@@ -288,21 +288,6 @@
       <concept id="8394088404405502420" name="org.modellwerkstatt.objectflow.structure.NotPersistedOption" flags="ng" index="1xFgGU" />
       <concept id="594565203027877250" name="org.modellwerkstatt.objectflow.structure.Session" flags="ng" index="3y28L$" />
       <concept id="6952410984685067935" name="org.modellwerkstatt.objectflow.structure.OFXTestMethod" flags="ng" index="3yPF9F" />
-      <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
-        <property id="569389511234497418" name="fromServer" index="1$4sGO" />
-        <property id="569389511234497416" name="minute" index="1$4sGQ" />
-        <property id="569389511234497417" name="second" index="1$4sGR" />
-        <property id="569389511234497414" name="day" index="1$4sGS" />
-        <property id="569389511234497415" name="hour" index="1$4sGT" />
-        <property id="569389511234497412" name="year" index="1$4sGU" />
-        <property id="569389511234497413" name="month" index="1$4sGV" />
-      </concept>
-      <concept id="569389511234497391" name="org.modellwerkstatt.objectflow.structure.DateLiteral" flags="ng" index="1$4sJh">
-        <property id="569389511234497410" name="day" index="1$4sGW" />
-        <property id="569389511234497411" name="fromServer" index="1$4sGX" />
-        <property id="569389511234497408" name="year" index="1$4sGY" />
-        <property id="569389511234497409" name="month" index="1$4sGZ" />
-      </concept>
       <concept id="59360650270057719" name="org.modellwerkstatt.objectflow.structure.OFXTestSuitNoExecOption" flags="ng" index="1Cak35">
         <reference id="59360650270057722" name="test" index="1Cak38" />
       </concept>
@@ -2381,23 +2366,18 @@
               </node>
               <node concept="GOFnK" id="3fPy_dHeA7z" role="GOFnN">
                 <ref role="1bDdzG" node="4u029Jv8vHX" resolve="orderDat" />
-                <node concept="1$4sJh" id="3fPy_dHeASH" role="1bDdzI">
-                  <property role="1$4sGW" value="0" />
-                  <property role="1$4sGZ" value="0" />
-                  <property role="1$4sGY" value="0" />
-                  <property role="1$4sGX" value="true" />
+                <node concept="2ShNRf" id="3p7Ks32Gc$o" role="1bDdzI">
+                  <node concept="1pGfFk" id="3p7Ks32GcTP" role="2ShVmc">
+                    <ref role="37wK5l" to="w08f:~LocalDate.&lt;init&gt;()" resolve="LocalDate" />
+                  </node>
                 </node>
               </node>
               <node concept="GOFnK" id="3fPy_dHeA7$" role="GOFnN">
                 <ref role="1bDdzG" node="7rv7nMWu_ew" resolve="dt" />
-                <node concept="1$4sJe" id="3fPy_dHeATP" role="1bDdzI">
-                  <property role="1$4sGS" value="2" />
-                  <property role="1$4sGV" value="9" />
-                  <property role="1$4sGU" value="1990" />
-                  <property role="1$4sGT" value="15" />
-                  <property role="1$4sGQ" value="0" />
-                  <property role="1$4sGR" value="0" />
-                  <property role="1$4sGO" value="true" />
+                <node concept="2ShNRf" id="3p7Ks32Gc4W" role="1bDdzI">
+                  <node concept="1pGfFk" id="3p7Ks32GclP" role="2ShVmc">
+                    <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
+                  </node>
                 </node>
               </node>
               <node concept="GOFnK" id="3fPy_dHeA7_" role="GOFnN">
@@ -2435,14 +2415,10 @@
                   </node>
                   <node concept="GOFnK" id="3fPy_dHeB1c" role="GOFnN">
                     <ref role="1bDdzG" node="AN_117bbec" resolve="timestamp" />
-                    <node concept="1$4sJe" id="3fPy_dHeFZH" role="1bDdzI">
-                      <property role="1$4sGS" value="0" />
-                      <property role="1$4sGV" value="0" />
-                      <property role="1$4sGU" value="0" />
-                      <property role="1$4sGT" value="0" />
-                      <property role="1$4sGQ" value="0" />
-                      <property role="1$4sGR" value="0" />
-                      <property role="1$4sGO" value="true" />
+                    <node concept="2ShNRf" id="3p7Ks32Gdi0" role="1bDdzI">
+                      <node concept="1pGfFk" id="3p7Ks32GdA_" role="2ShVmc">
+                        <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
+                      </node>
                     </node>
                   </node>
                   <node concept="GOFnK" id="3fPy_dHeB1f" role="GOFnN">
@@ -2487,14 +2463,10 @@
         </node>
         <node concept="3clFbF" id="4nH4LOF$GOL" role="3cqZAp">
           <node concept="37vLTI" id="4nH4LOF$GOM" role="3clFbG">
-            <node concept="1$4sJe" id="4nH4LOF$GON" role="37vLTx">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
+            <node concept="2ShNRf" id="3p7Ks32Gbzc" role="37vLTx">
+              <node concept="1pGfFk" id="3p7Ks32GbZq" role="2ShVmc">
+                <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
+              </node>
             </node>
             <node concept="37vLTw" id="4nH4LOF$GOO" role="37vLTJ">
               <ref role="3cqZAo" node="3cAl6M4vNxj" resolve="cachedDateTime" />
@@ -2841,7 +2813,7 @@
               <ref role="3cqZAo" node="4nH4LOF$GQV" resolve="i" />
             </node>
             <node concept="3cmrfG" id="4nH4LOF$GR0" role="3uHU7w">
-              <property role="3cmrfH" value="15" />
+              <property role="3cmrfH" value="150" />
             </node>
           </node>
           <node concept="3uNrnE" id="4nH4LOF$GR1" role="1Dwrff">
