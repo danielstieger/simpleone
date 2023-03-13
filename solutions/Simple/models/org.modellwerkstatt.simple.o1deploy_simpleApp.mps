@@ -424,6 +424,14 @@
         <property role="Xl_RC" value="Invoice" />
       </node>
     </node>
+    <node concept="fOGPe" id="3TCye$03b9G" role="2N77jT">
+      <node concept="Xl_RD" id="3TCye$03b9I" role="33Ov9O">
+        <property role="Xl_RC" value="Documents" />
+      </node>
+      <node concept="33WYYh" id="3TCye$03baL" role="fOGQ8">
+        <ref role="2_Hrw8" to="kpm6:3TCyezZZSYH" resolve="Selection Tester" />
+      </node>
+    </node>
     <node concept="3ulXEM" id="1SuqpWQMcXw" role="3ulXEG">
       <property role="TrG5h" value="thisIsAVeryLongVarName" />
       <node concept="17QB3L" id="1SuqpWQMcYs" role="1tU5fm" />

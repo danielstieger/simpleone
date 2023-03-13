@@ -196,6 +196,7 @@
       </concept>
       <concept id="774207833082448725" name="org.modellwerkstatt.manmap.structure.OptimisticOption" flags="ng" index="jyGaT" />
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
+      <concept id="774207833082557407" name="org.modellwerkstatt.manmap.structure.IndexOption" flags="ng" index="jyRCN" />
       <concept id="774207833082557394" name="org.modellwerkstatt.manmap.structure.AutoidOption" flags="ng" index="jyRCY">
         <child id="774207833082557396" name="sequenceName" index="jyRCS" />
       </concept>
@@ -1213,6 +1214,7 @@
         <node concept="Xl_RD" id="1oz7qwEwDoL" role="12k7lF">
           <property role="Xl_RC" value="S_STATE" />
         </node>
+        <node concept="jyRCN" id="14zK24TFpUx" role="jzqmW" />
       </node>
       <node concept="3rFogp" id="1FVEJAItPuY" role="3caO6$">
         <ref role="3rFog7" node="1FVEJAItPs0" resolve="folder" />
