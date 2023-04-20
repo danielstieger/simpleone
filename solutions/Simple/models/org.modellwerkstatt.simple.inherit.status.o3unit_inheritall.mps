@@ -65,18 +65,10 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
-      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
-        <child id="1081256993305" name="classType" index="2ZW6by" />
-        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
-        <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -1987,62 +1979,6 @@
     </node>
     <node concept="2tJIrI" id="16Iv3epok6V" role="jymVt" />
     <node concept="2tJIrI" id="16Iv3epok2T" role="jymVt" />
-  </node>
-  <node concept="312cEu" id="4pFxWGSlsye">
-    <property role="TrG5h" value="TEST" />
-    <node concept="2tJIrI" id="4pFxWGSlsyA" role="jymVt" />
-    <node concept="2YIFZL" id="4pFxWGSlsyT" role="jymVt">
-      <property role="TrG5h" value="main" />
-      <node concept="37vLTG" id="4pFxWGSlsyU" role="3clF46">
-        <property role="TrG5h" value="args" />
-        <node concept="10Q1$e" id="4pFxWGSlsyV" role="1tU5fm">
-          <node concept="17QB3L" id="4pFxWGSlsyW" role="10Q1$1" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="4pFxWGSlsyX" role="3clF45" />
-      <node concept="3Tm1VV" id="4pFxWGSlsyY" role="1B3o_S" />
-      <node concept="3clFbS" id="4pFxWGSlsyZ" role="3clF47">
-        <node concept="3cpWs8" id="4pFxWGSls_a" role="3cqZAp">
-          <node concept="3cpWsn" id="4pFxWGSls_d" role="3cpWs9">
-            <property role="TrG5h" value="myList" />
-            <node concept="_YKpA" id="4pFxWGSls_8" role="1tU5fm">
-              <node concept="3uibUv" id="4pFxWGSls_Y" role="_ZDj9">
-                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="4pFxWGSlR5o" role="33vP2m">
-              <node concept="Tc6Ow" id="4pFxWGSlRe4" role="2ShVmc">
-                <node concept="3uibUv" id="4pFxWGSlRV$" role="HW$YZ">
-                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4pFxWGSlsDn" role="3cqZAp" />
-        <node concept="3clFbF" id="4pFxWGSlsFg" role="3cqZAp">
-          <node concept="2OqwBi" id="4pFxWGSlsFd" role="3clFbG">
-            <node concept="10M0yZ" id="4pFxWGSlsFe" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="4pFxWGSlsFf" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(boolean)" resolve="println" />
-              <node concept="2ZW3vV" id="4pFxWGSltQa" role="37wK5m">
-                <node concept="3uibUv" id="4pFxWGSlAOC" role="2ZW6by">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                </node>
-                <node concept="37vLTw" id="4pFxWGSlsGZ" role="2ZW6bz">
-                  <ref role="3cqZAo" node="4pFxWGSls_d" resolve="myList" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4pFxWGSlsyF" role="jymVt" />
-    <node concept="3Tm1VV" id="4pFxWGSlsyf" role="1B3o_S" />
   </node>
   <node concept="3ugp7m" id="4pFxWGSvWdC">
     <property role="TrG5h" value="Experiment" />

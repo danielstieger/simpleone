@@ -360,7 +360,7 @@
     <node concept="il5_x" id="3Rw9V4pLpzZ" role="2kzhMJ">
       <property role="TrG5h" value="CFT_Reload" />
       <node concept="2kzhL4" id="3Rw9V4pLp$0" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTw/F3" />
+        <property role="il5CD" value="1hImSMr5NTv/F2" />
         <node concept="Xl_RD" id="3Rw9V4pLp$1" role="il5_5">
           <property role="Xl_RC" value="Reload" />
         </node>
@@ -441,7 +441,7 @@
     <node concept="il5_x" id="2qcR1OSjf2i" role="2kzhMJ">
       <property role="TrG5h" value="CFT_NEXT" />
       <node concept="2kzhL4" id="2qcR1OSjf2j" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NT2/DOWN" />
+        <property role="il5CD" value="1hImSMr5NTw/F3" />
         <node concept="Xl_RD" id="2qcR1OSjf2l" role="il5_5">
           <property role="Xl_RC" value="NEXT" />
         </node>
@@ -450,7 +450,7 @@
     <node concept="il5_x" id="2qcR1OSjf2Q" role="2kzhMJ">
       <property role="TrG5h" value="CFT_BACK" />
       <node concept="2kzhL4" id="2qcR1OSjf2R" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NT1/UP" />
+        <property role="il5CD" value="1hImSMr5NTx/F4" />
         <node concept="Xl_RD" id="2qcR1OSjf2T" role="il5_5">
           <property role="Xl_RC" value="BACK" />
         </node>
@@ -543,7 +543,7 @@
       <node concept="2kzhL4" id="2w5UnVouM9R" role="2kzgdm">
         <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMaX" role="il5$o">
-          <property role="Xl_RC" value="check_circle_outline" />
+          <property role="Xl_RC" value="auto_fix_" />
         </node>
         <node concept="Xl_RD" id="6xifBbDNu2w" role="il5_5">
           <property role="Xl_RC" value="Edit Order (RO)" />
@@ -1022,6 +1022,12 @@
         <property role="TrG5h" value="LogEventsToStdErr" />
         <node concept="Xl_RD" id="2qPmNJiMsrq" role="2CaGCA">
           <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="7nFq7WTYTe0" role="2CJ4_l">
+        <property role="TrG5h" value="CollectSelections" />
+        <node concept="Xl_RD" id="7nFq7WTYTe1" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
