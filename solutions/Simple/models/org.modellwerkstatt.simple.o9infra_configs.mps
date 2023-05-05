@@ -2036,7 +2036,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl2" role="2CGBMS">
-      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl3" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
