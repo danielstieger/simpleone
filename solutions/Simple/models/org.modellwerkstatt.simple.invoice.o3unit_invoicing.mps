@@ -1077,8 +1077,8 @@
         <ref role="Rm8GQ" to="oyrz:7dlwzTfDymw" resolve="OK" />
       </node>
     </node>
-    <node concept="3urNQE" id="5TC7JC3Wpxe" role="3vkzKj">
-      <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
+    <node concept="3urNR4" id="53DPdboddek" role="3vkzKj">
+      <ref role="3cqZAo" node="53DPdbodd2D" resolve="extInv" />
     </node>
     <node concept="3ugp7q" id="6XzXfke8yvP" role="3ug97V">
       <property role="TrG5h" value="MainPage" />
@@ -1299,6 +1299,20 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="53DPdbocSMK" role="3cqZAp">
+                <node concept="2OqwBi" id="53DPdbocSMH" role="3clFbG">
+                  <node concept="10M0yZ" id="53DPdbocSMI" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  </node>
+                  <node concept="liA8E" id="53DPdbocSMJ" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                    <node concept="Xl_RD" id="53DPdbocSPR" role="37wK5m">
+                      <property role="Xl_RC" value="&gt; Doing a checkout ... " />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1376,6 +1390,12 @@
       </node>
     </node>
     <node concept="2YYyHn" id="1jy7rUtNE6b" role="3ap3dX" />
+    <node concept="3ulXEM" id="53DPdbodd2D" role="3ulXEG">
+      <property role="TrG5h" value="extInv" />
+      <node concept="3uibUv" id="53DPdboddeb" role="1tU5fm">
+        <ref role="3uigEE" to="sdim:53DPdbodcQa" resolve="ExtInvoice" />
+      </node>
+    </node>
   </node>
   <node concept="3ugp7m" id="6XzXfke8xsE">
     <property role="TrG5h" value="Close Invoice" />

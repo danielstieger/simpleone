@@ -56,9 +56,8 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
-      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
-        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
         <reference id="5862977038373003188" name="property" index="338YkT" />
@@ -873,19 +872,6 @@
         <property role="Xl_RC" value="Folder" />
       </node>
     </node>
-    <node concept="1bOX9e" id="2zJhn9ScFau" role="TxmiU">
-      <property role="2RkwnN" value="blobField" />
-      <node concept="3Tm1VV" id="2zJhn9ScFa$" role="1B3o_S" />
-      <node concept="2RoN1w" id="2zJhn9ScFa_" role="2RnVtd">
-        <node concept="3wEZqW" id="2zJhn9ScFaA" role="3wFrgM" />
-        <node concept="3xqBd$" id="2zJhn9ScFaB" role="3xrYvX">
-          <node concept="3Tm1VV" id="2zJhn9ScFaD" role="3xqFEP" />
-        </node>
-      </node>
-      <node concept="10Q1$e" id="2zJhn9ScPrH" role="2RkE6I">
-        <node concept="10PrrI" id="2zJhn9ScPrI" role="10Q1$1" />
-      </node>
-    </node>
     <node concept="20vkWO" id="6WkQmwhlF$k" role="1qk9eX">
       <node concept="1PaTwC" id="7YG44tSvn63" role="13z7HO">
         <node concept="3oM_SD" id="7YG44tSvn64" role="1PaTwD">
@@ -1231,12 +1217,6 @@
           <property role="Xl_RC" value="TXT_CANCELTEXT" />
         </node>
       </node>
-      <node concept="12nEzJ" id="2zJhn9SdTss" role="3caO6$">
-        <ref role="12nL8z" node="2zJhn9ScFau" resolve="blobField" />
-        <node concept="Xl_RD" id="2zJhn9SdTsu" role="12k7lF">
-          <property role="Xl_RC" value="BLOB_FIELD" />
-        </node>
-      </node>
     </node>
     <node concept="12nEzA" id="1FVEJAItPqv" role="12nEwW">
       <property role="TrG5h" value="MapBInvoiceFolder" />
@@ -1498,30 +1478,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3dciNchMvC_" role="3cqZAp">
-          <node concept="2OqwBi" id="3dciNchMvCy" role="3clFbG">
-            <node concept="10M0yZ" id="3dciNchMvCz" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="3dciNchMvC$" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="3dciNchMw2W" role="37wK5m">
-                <node concept="2OqwBi" id="3dciNchMwnu" role="3uHU7w">
-                  <node concept="37vLTw" id="3dciNchMw4P" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1FVEJAItPNx" resolve="i" />
-                  </node>
-                  <node concept="WNRgn" id="3dciNchMws8" role="2OqNvi">
-                    <ref role="WNRgg" node="1FVEJAItPs0" resolve="folder" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3dciNchMvEk" role="3uHU7B">
-                  <property role="Xl_RC" value="&gt; Folder is " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1X3_iC" id="3dciNchQwHO" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -1723,6 +1679,18 @@
           <ref role="3uigEE" node="1FVEJAItIuo" resolve="InvoiceFolder" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="34Athd" id="53DPdbodcQa">
+    <property role="TrG5h" value="ExtInvoice" />
+    <node concept="3Tm1VV" id="53DPdbodcQc" role="1B3o_S" />
+    <node concept="3clFbW" id="53DPdbodcQd" role="jymVt">
+      <node concept="3cqZAl" id="53DPdbodcQe" role="3clF45" />
+      <node concept="3Tm1VV" id="53DPdbodcQf" role="1B3o_S" />
+      <node concept="3clFbS" id="53DPdbodcQg" role="3clF47" />
+    </node>
+    <node concept="3uibUv" id="53DPdbodcSo" role="1zkMxy">
+      <ref role="3uigEE" node="6XzXfke1alv" resolve="Invoice" />
     </node>
   </node>
 </model>
