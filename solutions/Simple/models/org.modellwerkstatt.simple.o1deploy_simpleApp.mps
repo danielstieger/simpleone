@@ -981,8 +981,7 @@
   </node>
   <node concept="2AUT8P" id="2B50FNWRyPd">
     <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" to="oyrz:382CQP52o$k" resolve="BatchConfigConsole" />
-    <node concept="MakZV" id="2rXgTRrQse9" role="2A_d42" />
+    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
     <node concept="1_k$Jf" id="1FVEJAIW7Kc" role="1_k$Iu">
       <property role="TrG5h" value="Create Invoices" />
       <node concept="3znxp0" id="1FVEJAIW7Kd" role="1_kBZ6">

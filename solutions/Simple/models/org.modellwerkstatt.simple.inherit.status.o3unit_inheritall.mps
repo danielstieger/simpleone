@@ -189,6 +189,7 @@
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
       <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
         <reference id="3875131616719438756" name="command" index="2_Hrw8" />
+        <child id="3875131616719439029" name="actualArgument" index="2_HrWp" />
       </concept>
       <concept id="2644858670013304258" name="org.modellwerkstatt.objectflow.structure.SimdToSessionOps" flags="ng" index="2BXi4K" />
       <concept id="2644858670013304253" name="org.modellwerkstatt.objectflow.structure.SimdApiMethod" flags="ng" index="2BXi5f" />
@@ -199,9 +200,6 @@
       <concept id="8086154250676608576" name="org.modellwerkstatt.objectflow.structure.SelectedObject" flags="ng" index="2IFXgM">
         <property id="659889286494844293" name="andDerived" index="1pH11a" />
         <reference id="8086154250676616105" name="object" index="2IFZ7r" />
-      </concept>
-      <concept id="8086154250676614081" name="org.modellwerkstatt.objectflow.structure.SelectedList" flags="ng" index="2IFZAN">
-        <reference id="8086154250676614082" name="object" index="2IFZAK" />
       </concept>
       <concept id="1879461712355203928" name="org.modellwerkstatt.objectflow.structure.PageScopeConceptFunc" flags="ig" index="JX2Gw" />
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
@@ -1606,6 +1604,14 @@
           </node>
           <node concept="33WYYh" id="4pFxWGSvW$t" role="fOGQ8">
             <ref role="2_Hrw8" node="4pFxWGSvWdC" resolve="Experiment" />
+            <node concept="2OqwBi" id="5hs6istoyBF" role="2_HrWp">
+              <node concept="2IFXgM" id="5hs6istoyz9" role="2Oq$k0">
+                <ref role="2IFZ7r" node="5A$AnVDpmnp" resolve="ADoc" />
+              </node>
+              <node concept="2S8uIT" id="5hs6istoyF9" role="2OqNvi">
+                <ref role="2S8YL0" node="5A$AnVDpmry" resolve="comment" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="PoUSf" id="2Jsbshh847c" role="PoUSn">
@@ -1983,18 +1989,8 @@
   <node concept="3ugp7m" id="4pFxWGSvWdC">
     <property role="TrG5h" value="Experiment" />
     <node concept="3ulXEN" id="4pFxWGSvWGH" role="3ulXEL">
-      <property role="TrG5h" value="listOfDocs" />
-      <node concept="_YKpA" id="4pFxWGSvXd3" role="1tU5fm">
-        <node concept="3uibUv" id="4pFxWGSvXnw" role="_ZDj9">
-          <ref role="3uigEE" node="5A$AnVDpmnp" resolve="ADoc" />
-        </node>
-      </node>
-      <node concept="2IFZAN" id="4pFxWGSvWKm" role="33vP2m">
-        <ref role="2IFZAK" node="5A$AnVDpmnp" resolve="ADoc" />
-      </node>
-    </node>
-    <node concept="3urNQE" id="4pFxWGSvXuZ" role="3vkzKj">
-      <ref role="3cqZAo" node="4pFxWGSvWGH" resolve="listOfDocs" />
+      <property role="TrG5h" value="adoc" />
+      <node concept="17QB3L" id="5hs6istoyJK" role="1tU5fm" />
     </node>
   </node>
   <node concept="3ugp7m" id="3TCyezZZSYH">
