@@ -20,8 +20,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
+    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
+    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -981,7 +982,7 @@
   </node>
   <node concept="2AUT8P" id="2B50FNWRyPd">
     <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" to="oyrz:382CQP52o$k" resolve="BatchConfigConsole" />
     <node concept="1_k$Jf" id="1FVEJAIW7Kc" role="1_k$Iu">
       <property role="TrG5h" value="Create Invoices" />
       <node concept="3znxp0" id="1FVEJAIW7Kd" role="1_kBZ6">
@@ -1129,6 +1130,7 @@
         </node>
       </node>
     </node>
+    <node concept="MakZV" id="2RoiPdb15Co" role="2A_d42" />
     <node concept="3lKVtU" id="7oLsFCHIe71" role="2A_d42">
       <property role="1QnCjn" value="0" />
       <property role="1QnCsU" value="*/5" />

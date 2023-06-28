@@ -31,7 +31,6 @@
     <import index="9amd" ref="r:69b5efb2-1631-4bc4-9ab1-36b1d57252c2(org.modellwerkstatt.dataux.tests.dynlock)" />
     <import index="18b" ref="r:897bfb69-0a8e-477a-9053-de701ae9e158(org.modellwerkstatt.objectflow.serdes)" />
     <import index="x5li" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.format(org.modellwerkstatt.manmap.runtime/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1189,14 +1188,10 @@
           </node>
         </node>
         <node concept="3clFbH" id="3V1gzeLUeS6" role="3cqZAp" />
-        <node concept="1X3_iC" id="2jDJ2hA700D" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="2vFotli9d7m" role="8Wnug">
-            <node concept="1odsa" id="2vFotli9d7k" role="3clFbG">
-              <ref role="1ods_" to="eqbi:50jY$Xk$JBJ" resolve="LogTestService" />
-              <ref role="37wK5l" to="eqbi:50jY$Xk$JN8" resolve="testVariousLoggingOptions" />
-            </node>
+        <node concept="3clFbF" id="2vFotli9d7m" role="3cqZAp">
+          <node concept="1odsa" id="2vFotli9d7k" role="3clFbG">
+            <ref role="1ods_" to="eqbi:50jY$Xk$JBJ" resolve="LogTestService" />
+            <ref role="37wK5l" to="eqbi:50jY$Xk$JN8" resolve="testVariousLoggingOptions" />
           </node>
         </node>
         <node concept="3clFbH" id="2vFotli9d0B" role="3cqZAp" />
@@ -13194,6 +13189,7 @@
         <node concept="3Oe$u_" id="5_fa4bCwnj0" role="3Oe2NS">
           <ref role="3O0p26" node="3JniOZDsNdw" resolve="text" />
         </node>
+        <node concept="Sd8ji" id="6qnpvaua67l" role="PoUSh" />
       </node>
       <node concept="2TG9WT" id="5_fa4bCwnj1" role="3OfFNq">
         <node concept="3Oe$u_" id="5_fa4bCwnj2" role="3Oe2NS">

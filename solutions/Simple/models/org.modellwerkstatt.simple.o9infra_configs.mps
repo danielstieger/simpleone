@@ -1041,7 +1041,7 @@
       <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1182,6 +1182,28 @@
     <node concept="2CJ4_Q" id="7HkVpVc$te_" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
     </node>
+    <node concept="2CJf3v" id="31b37U$RrPY" role="2CGBMS">
+      <property role="TrG5h" value="fileSetup" />
+      <node concept="2DlbD8" id="31b37U$RrQ$" role="2DlbIj">
+        <node concept="Xl_RD" id="31b37U$RrQ_" role="2DlbDb">
+          <property role="Xl_RC" value="factory-method" />
+        </node>
+        <node concept="Xl_RD" id="31b37U$RrQA" role="2DlbDP">
+          <property role="Xl_RC" value="configFile" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="31b37U$RrQ0" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JProperties" />
+      </node>
+      <node concept="2CJf1O" id="31b37U$RtTV" role="2CJ4_l">
+        <node concept="Xl_RD" id="31b37U$RtTW" role="2DqwMp">
+          <property role="Xl_RC" value="/Users/danielstieger/test.log" />
+        </node>
+        <node concept="Xl_RD" id="31b37U$RwDt" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+    </node>
     <node concept="2CJf3v" id="7L6pyr9KHQC" role="2CGBMS">
       <property role="TrG5h" value="logConfig_" />
       <node concept="Xl_RD" id="7L6pyr9KHQE" role="2CJf0U">
@@ -1251,7 +1273,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tqz" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="OraclePoolToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tsR" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1485,7 +1507,7 @@
     </node>
     <node concept="2CPvp3" id="7HkVpVc$u9g" role="2CGBMS" />
     <node concept="2CJoq6" id="7HkVpVc$jk8" role="2CGBMS">
-      <property role="TrG5h" value="SingleConToLola" />
+      <property role="TrG5h" value="OraclePoolToLola" />
       <node concept="2CJf3v" id="21a32Cmm3RO" role="2CJdiS">
         <property role="TrG5h" value="transactionDefinition" />
         <node concept="2CJ4$C" id="21a32Cmm3RP" role="2CJ4_l">
@@ -1590,6 +1612,105 @@
         </node>
       </node>
     </node>
+    <node concept="2CJoq6" id="1ynvgCDUt9q" role="2CGBMS">
+      <property role="TrG5h" value="SingleConToLola" />
+      <node concept="2CJf3v" id="1ynvgCDUt9r" role="2CJdiS">
+        <property role="TrG5h" value="transactionDefinition" />
+        <node concept="2CJ4$C" id="1ynvgCDUt9s" role="2CJ4_l">
+          <property role="TrG5h" value="propagationBehaviorName" />
+          <node concept="Xl_RD" id="1ynvgCDUt9t" role="2CaGCA">
+            <property role="Xl_RC" value="PROPAGATION_REQUIRES_NEW" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="1ynvgCDUt9u" role="2CJ4_l">
+          <property role="TrG5h" value="isolationLevelName" />
+          <node concept="Xl_RD" id="1ynvgCDUt9v" role="2CaGCA">
+            <property role="Xl_RC" value="ISOLATION_READ_COMMITTED" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="1ynvgCDUt9w" role="2CJ4_l">
+          <property role="TrG5h" value="timeout" />
+          <node concept="Xl_RD" id="1ynvgCDUt9x" role="2CaGCA">
+            <property role="Xl_RC" value="5000" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="1ynvgCDUt9y" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.transaction.support.DefaultTransactionDefinition" />
+        </node>
+      </node>
+      <node concept="2CPvp3" id="1ynvgCDUt9z" role="2CJdiS" />
+      <node concept="2CJf3v" id="1ynvgCDUt9$" role="2CJdiS">
+        <property role="TrG5h" value="transactionManager" />
+        <node concept="Xl_RD" id="1ynvgCDUt9_" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.datasource.DataSourceTransactionManager" />
+        </node>
+        <node concept="2CJ4$C" id="1ynvgCDUt9A" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="1ynvgCDUt9B" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="1ynvgCDUt9C" role="2CJdiS" />
+      <node concept="2CJf3v" id="1ynvgCDUt9D" role="2CJdiS">
+        <property role="TrG5h" value="jdbcTemplate" />
+        <node concept="Xl_RD" id="1ynvgCDUt9E" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.core.JdbcTemplate" />
+        </node>
+        <node concept="2CJ4$C" id="1ynvgCDUt9F" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="1ynvgCDUt9G" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CJf3v" id="5STQGl_lD6u" role="2CJdiS">
+        <property role="TrG5h" value="dataSource" />
+        <node concept="Xl_RD" id="5STQGl_lD6v" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.datasource.SingleConnectionDataSource" />
+        </node>
+        <node concept="2CJ4$C" id="5STQGl_lD6w" role="2CJ4_l">
+          <property role="TrG5h" value="driverClassName" />
+          <node concept="Xl_RD" id="5STQGl_lD6x" role="2CaGCA">
+            <property role="Xl_RC" value="oracle.jdbc.driver.OracleDriver" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="5STQGl_lD6y" role="2CJ4_l">
+          <property role="TrG5h" value="url" />
+          <node concept="Xl_RD" id="5STQGl_lD6z" role="2CaGCA">
+            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest.mpreis.co.at:1521/LOLA" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="5STQGl_lD6$" role="2CJ4_l">
+          <property role="TrG5h" value="username" />
+          <node concept="Xl_RD" id="5STQGl_lD6_" role="2CaGCA">
+            <property role="Xl_RC" value="reko" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="5STQGl_lD6A" role="2CJ4_l">
+          <property role="TrG5h" value="password" />
+          <node concept="Xl_RD" id="5STQGl_lD6B" role="2CaGCA">
+            <property role="Xl_RC" value="test" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="5STQGl_lD6C" role="2CJ4_l">
+          <property role="TrG5h" value="suppressClose" />
+          <node concept="Xl_RD" id="5STQGl_lD6D" role="2CaGCA">
+            <property role="Xl_RC" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="1ynvgCDUt9H" role="2CJdiS" />
+      <node concept="2CJf3v" id="1ynvgCDUt9X" role="2CJdiS">
+        <property role="TrG5h" value="oracleDesc" />
+        <node concept="Xl_RD" id="1ynvgCDUt9Y" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMOracleDescription" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CPvp3" id="1ynvgCDUt53" role="2CGBMS" />
     <node concept="2CJoq6" id="3$wB26axdqC" role="2CGBMS">
       <property role="TrG5h" value="SingleConMySQL" />
       <node concept="2CJf3v" id="6VW5G61T1gH" role="2CJdiS">
@@ -2039,7 +2160,7 @@
       <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl3" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="OraclePoolToLola" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl4" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
