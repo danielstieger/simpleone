@@ -2,10 +2,8 @@
 <model ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -1012,21 +1010,39 @@
     </node>
     <node concept="2CJf3v" id="1$$A7zNpxzH" role="2CGBMS">
       <property role="TrG5h" value="fxUiFactory" />
-      <node concept="2CJ4$C" id="2P$1DRitH63" role="2CJ4_l">
-        <property role="TrG5h" value="EventBusLocking" />
-        <node concept="Xl_RD" id="2P$1DRitH64" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2qPmNJiMsrp" role="2CJ4_l">
-        <property role="TrG5h" value="LogEventsToStdErr" />
-        <node concept="Xl_RD" id="2qPmNJiMsrq" role="2CaGCA">
+      <node concept="2CJ4$C" id="ngg7P7ec8s" role="2CJ4_l">
+        <property role="TrG5h" value="SilentExLogging" />
+        <node concept="Xl_RD" id="ngg7P7ecbc" role="2CaGCA">
           <property role="Xl_RC" value="false" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="7nFq7WTYTe0" role="2CJ4_l">
-        <property role="TrG5h" value="CollectSelections" />
-        <node concept="Xl_RD" id="7nFq7WTYTe1" role="2CaGCA">
+      <node concept="2CJ4$C" id="5DjGjTA5rOi" role="2CJ4_l">
+        <property role="TrG5h" value="skipLoggingTcnException" />
+        <node concept="Xl_RD" id="5DjGjTA5rTc" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5DjGjTA5rP2" role="2CJ4_l">
+        <property role="TrG5h" value="eventBusLocking" />
+        <node concept="Xl_RD" id="5DjGjTA5rPi" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="51K1Y2uyriM" role="2CJ4_l">
+        <property role="TrG5h" value="PortJ" />
+        <node concept="Xl_RD" id="51K1Y2uysaB" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="1ZGV_ETkNB" role="2CJ4_l">
+        <property role="TrG5h" value="mowareTrace" />
+        <node concept="Xl_RD" id="1ZGV_ETkPW" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="10YuSD0wCuu" role="2CJ4_l">
+        <property role="TrG5h" value="LogEventsToStdErr" />
+        <node concept="Xl_RD" id="10YuSD0wDfs" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
@@ -1182,28 +1198,6 @@
     <node concept="2CJ4_Q" id="7HkVpVc$te_" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
     </node>
-    <node concept="2CJf3v" id="31b37U$RrPY" role="2CGBMS">
-      <property role="TrG5h" value="fileSetup" />
-      <node concept="2DlbD8" id="31b37U$RrQ$" role="2DlbIj">
-        <node concept="Xl_RD" id="31b37U$RrQ_" role="2DlbDb">
-          <property role="Xl_RC" value="factory-method" />
-        </node>
-        <node concept="Xl_RD" id="31b37U$RrQA" role="2DlbDP">
-          <property role="Xl_RC" value="configFile" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="31b37U$RrQ0" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JProperties" />
-      </node>
-      <node concept="2CJf1O" id="31b37U$RtTV" role="2CJ4_l">
-        <node concept="Xl_RD" id="31b37U$RtTW" role="2DqwMp">
-          <property role="Xl_RC" value="/Users/danielstieger/test.log" />
-        </node>
-        <node concept="Xl_RD" id="31b37U$RwDt" role="2DqwMv">
-          <property role="Xl_RC" value="0" />
-        </node>
-      </node>
-    </node>
     <node concept="2CJf3v" id="7L6pyr9KHQC" role="2CGBMS">
       <property role="TrG5h" value="logConfig_" />
       <node concept="Xl_RD" id="7L6pyr9KHQE" role="2CJf0U">
@@ -1273,7 +1267,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tqz" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="OraclePoolToLola" />
+      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tsR" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1701,6 +1695,12 @@
             <property role="Xl_RC" value="true" />
           </node>
         </node>
+        <node concept="2CJ4$C" id="3atYQn9YYer" role="2CJ4_l">
+          <property role="TrG5h" value="autoCommit" />
+          <node concept="Xl_RD" id="3atYQn9YYeF" role="2CaGCA">
+            <property role="Xl_RC" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="2CPvp3" id="1ynvgCDUt9H" role="2CJdiS" />
       <node concept="2CJf3v" id="1ynvgCDUt9X" role="2CJdiS">
@@ -1935,6 +1935,12 @@
           <property role="TrG5h" value="password" />
           <node concept="Xl_RD" id="2RoKLt0pbfB" role="2CaGCA">
             <property role="Xl_RC" value="test" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="3atYQna09sJ" role="2CJ4_l">
+          <property role="TrG5h" value="defaultAutoCommit" />
+          <node concept="Xl_RD" id="3atYQna09sZ" role="2CaGCA">
+            <property role="Xl_RC" value="true" />
           </node>
         </node>
         <node concept="2DlbD8" id="2RoKLt0pbfC" role="2DlbIj">
