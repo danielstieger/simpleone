@@ -20,6 +20,7 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
     <import index="wi0k" ref="r:b403f58b-e975-4eea-8f66-3854e12f0101(org.modellwerkstatt.simple.o2test)" />
+    <import index="lpv8" ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.upload.o7unit_upload)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
   <registry>
@@ -397,6 +398,11 @@
         <property role="Xl_RC" value="Edit Order Predecessor (3)" />
       </node>
     </node>
+    <node concept="2$ntO6" id="17o2t3rMpgW" role="2$nsuY">
+      <node concept="33WYYh" id="17o2t3rMpgX" role="2$ntUL">
+        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
+      </node>
+    </node>
     <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
       <node concept="3clFbT" id="4GwKq5MIdZ4" role="2_HrWp" />
@@ -630,6 +636,11 @@
     <node concept="2$ntO6" id="53_cLlY7JoP" role="2$nsuY">
       <node concept="33WYYh" id="53_cLlY7JoQ" role="2$ntUL">
         <ref role="2_Hrw8" node="53_cLlY7I_p" resolve="MdeTestCmd" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="17o2t3rMpol" role="2$nsuY">
+      <node concept="33WYYh" id="17o2t3rMpom" role="2$ntUL">
+        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
