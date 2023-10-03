@@ -558,9 +558,13 @@
       <ref role="2_Hrw8" to="nm54:2MI0JB6CEnN" resolve="ViewTasksInList" />
     </node>
     <node concept="2MWAvL" id="5XruxTJPWEj" role="2A_d42">
-      <node concept="10M0yZ" id="4Ex3Fobkw0E" role="2MWAvM">
-        <ref role="3cqZAo" to="o7da:4Ex3Fobkvwj" resolve="VERSION" />
-        <ref role="1PxDUh" to="o7da:1SuqpWQMcfd" resolve="TestSetting" />
+      <node concept="2OqwBi" id="6UATHBJ3ENL" role="2MWAvM">
+        <node concept="3urNR4" id="6UATHBJ3EKM" role="2Oq$k0">
+          <ref role="3cqZAo" node="1SuqpWQMcuY" resolve="setting" />
+        </node>
+        <node concept="liA8E" id="6UATHBJ3ER0" role="2OqNvi">
+          <ref role="37wK5l" to="o7da:6UATHBJ3ElF" resolve="getAppVersion" />
+        </node>
       </node>
     </node>
     <node concept="2MZaQk" id="1SuqpWQMcTm" role="2A_d42">

@@ -119,7 +119,7 @@
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
-      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.BusinessObject" flags="ig" index="34Athd">
+      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.Entity" flags="ig" index="34Athd">
         <child id="4533072425307746563" name="status" index="2XvChp" />
       </concept>
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
@@ -323,6 +323,12 @@
       <node concept="2XvVpB" id="17o2t3rKePY" role="2RkE6I">
         <ref role="3$lB4D" node="17o2t3rKeLN" resolve="AlbumStatus" />
       </node>
+      <node concept="Xl_RD" id="17o2t3s3PAq" role="2CNmdP">
+        <property role="Xl_RC" value="Sta" />
+      </node>
+      <node concept="Xl_RD" id="17o2t3s3PBa" role="2CNmdL">
+        <property role="Xl_RC" value="Status" />
+      </node>
     </node>
   </node>
   <node concept="34Athd" id="17o2t3rKesJ">
@@ -446,7 +452,7 @@
     <node concept="12nEzA" id="17o2t3rKeRC" role="12nEwW">
       <property role="TrG5h" value="MapAlbumItem" />
       <ref role="12nOxz" node="17o2t3rKesJ" resolve="AlbumItem" />
-      <node concept="jyGaT" id="17o2t3rKeRD" role="jyGaQ" />
+      <node concept="jyGaT" id="3nTGeE7Tpn7" role="jyGaQ" />
       <node concept="Xl_RD" id="17o2t3rKeRF" role="12gAQd">
         <property role="Xl_RC" value="TABLE_AlbumItem" />
       </node>
@@ -632,6 +638,8 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4HG1ycw1TgK" role="3cqZAp" />
+        <node concept="3clFbH" id="4HG1ycw1TgT" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="17o2t3rKeTy" role="1B3o_S" />
       <node concept="37vLTG" id="17o2t3rKeTz" role="3clF46">

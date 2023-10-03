@@ -99,6 +99,9 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="1410680821326658964" name="org.modellwerkstatt.objectflow.structure.BPMetaReference" flags="ng" index="2dcwcJ">
+        <reference id="1410680821326658966" name="businessProperty" index="2dcwcH" />
+      </concept>
       <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
         <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
       </concept>
@@ -115,6 +118,9 @@
       <concept id="1881524139084590827" name="org.modellwerkstatt.objectflow.structure.PageConclusion" flags="ng" index="10qiFn">
         <reference id="8554054623635738995" name="label" index="2DFCCC" />
         <child id="1881524139085091981" name="function" index="10ot2L" />
+      </concept>
+      <concept id="1881524139085552758" name="org.modellwerkstatt.objectflow.structure.PageCommand" flags="ng" index="10Adxa">
+        <reference id="1881524139085552759" name="page" index="10Adxb" />
       </concept>
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
@@ -153,7 +159,16 @@
       <concept id="7192042020165155254" name="org.modellwerkstatt.objectflow.structure.ContainerParamReference" flags="ng" index="3urNQE" />
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
       <concept id="594565203027877250" name="org.modellwerkstatt.objectflow.structure.Session" flags="ng" index="3y28L$" />
-      <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
+      <concept id="569389511234497392" name="org.modellwerkstatt.objectflow.structure.DateTimeLiteral" flags="ng" index="1$4sJe">
+        <property id="569389511234497418" name="fromServer" index="1$4sGO" />
+        <property id="569389511234497416" name="minute" index="1$4sGQ" />
+        <property id="569389511234497417" name="second" index="1$4sGR" />
+        <property id="569389511234497414" name="day" index="1$4sGS" />
+        <property id="569389511234497415" name="hour" index="1$4sGT" />
+        <property id="569389511234497412" name="year" index="1$4sGU" />
+        <property id="569389511234497413" name="month" index="1$4sGV" />
+      </concept>
+      <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.DTO" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
       <concept id="774207833082573402" name="org.modellwerkstatt.manmap.structure.QueryFromMap" flags="ng" index="jybIQ">
@@ -188,6 +203,7 @@
       <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ng" index="PoUSo">
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
+      <concept id="7091146304639486764" name="org.modellwerkstatt.dataux.structure.WideDOption" flags="ng" index="Sd8ji" />
       <concept id="3899779351686566800" name="org.modellwerkstatt.dataux.structure.DateTimeDateOnlyDelegate" flags="ng" index="2TG9WS" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
       <concept id="3899779351686566805" name="org.modellwerkstatt.dataux.structure.StatusDelegate" flags="ng" index="2TG9WX" />
@@ -319,6 +335,46 @@
       <node concept="Xl_RD" id="17o2t3rKeVz" role="1K0AWC">
         <property role="Xl_RC" value="AlbumItem" />
       </node>
+      <node concept="10qiFn" id="3nTGeE8vNWZ" role="10qiF9">
+        <ref role="2DFCCC" to="oyrz:3Rw9V4pLp$8" resolve="DIS_A" />
+        <node concept="20qIzx" id="3nTGeE8vOby" role="10ot2L">
+          <node concept="3clFbS" id="3nTGeE8vObz" role="2VODD2">
+            <node concept="3clFbF" id="3nTGeE8vObR" role="3cqZAp">
+              <node concept="2OqwBi" id="3nTGeE8vOAo" role="3clFbG">
+                <node concept="2OqwBi" id="3nTGeE8vOfh" role="2Oq$k0">
+                  <node concept="3urNQE" id="3nTGeE8vObQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="17o2t3rKeV$" resolve="albumitem" />
+                  </node>
+                  <node concept="2dcwcJ" id="3nTGeE8vOEX" role="2OqNvi">
+                    <ref role="2dcwcH" to="agw3:17o2t3rKev_" resolve="fileName" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3nTGeE8vOK5" role="2OqNvi">
+                  <ref role="37wK5l" to="28jr:38DqI$$HF2J" resolve="setEnabled" />
+                  <node concept="3fqX7Q" id="3nTGeE8vPa$" role="37wK5m">
+                    <node concept="2OqwBi" id="3nTGeE8vPaA" role="3fr31v">
+                      <node concept="2OqwBi" id="3nTGeE8vPaB" role="2Oq$k0">
+                        <node concept="3urNQE" id="3nTGeE8vPaC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="17o2t3rKeV$" resolve="albumitem" />
+                        </node>
+                        <node concept="2dcwcJ" id="3nTGeE8vPaD" role="2OqNvi">
+                          <ref role="2dcwcH" to="agw3:17o2t3rKev_" resolve="fileName" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3nTGeE8vPaE" role="2OqNvi">
+                        <ref role="37wK5l" to="28jr:38DqI$$HLbK" resolve="getEnabled" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="10Adxa" id="3nTGeE8vPdE" role="3cqZAp">
+              <ref role="10Adxb" node="17o2t3rKeVv" resolve="EditPage" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="10qiFn" id="17o2t3rKeW5" role="10qiF9">
         <ref role="2DFCCC" to="oyrz:3dciNchuq1p" resolve="OK" />
         <node concept="20qIzx" id="17o2t3rKeW6" role="10ot2L">
@@ -335,6 +391,31 @@
       </node>
       <node concept="2IFXgM" id="17o2t3rKeVB" role="33vP2m">
         <ref role="2IFZ7r" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+      </node>
+    </node>
+    <node concept="20qIzx" id="3nTGeE8vTyw" role="3umfm7">
+      <node concept="3clFbS" id="3nTGeE8vTyx" role="2VODD2">
+        <node concept="3clFbF" id="3nTGeE8vTza" role="3cqZAp">
+          <node concept="37vLTI" id="3nTGeE8vTVM" role="3clFbG">
+            <node concept="1$4sJe" id="3nTGeE8vU3R" role="37vLTx">
+              <property role="1$4sGS" value="0" />
+              <property role="1$4sGV" value="0" />
+              <property role="1$4sGU" value="0" />
+              <property role="1$4sGT" value="0" />
+              <property role="1$4sGQ" value="0" />
+              <property role="1$4sGR" value="0" />
+              <property role="1$4sGO" value="true" />
+            </node>
+            <node concept="2OqwBi" id="3nTGeE8vTA9" role="37vLTJ">
+              <node concept="3urNQE" id="3nTGeE8vTz9" role="2Oq$k0">
+                <ref role="3cqZAo" node="17o2t3rKeV$" resolve="albumitem" />
+              </node>
+              <node concept="2S8uIT" id="3nTGeE8vTDV" role="2OqNvi">
+                <ref role="2S8YL0" to="agw3:17o2t3rKeyq" resolve="takenTimeStamp" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -356,6 +437,8 @@
         <node concept="3Oe$u_" id="17o2t3s1Xw3" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
         </node>
+        <node concept="Sd8ji" id="3nTGeEajIMU" role="PoUSh" />
+        <node concept="P9Rn5" id="3nTGeEajZLd" role="PoUSh" />
       </node>
       <node concept="2TG9WT" id="17o2t3rKeVZ" role="3OfFNq">
         <node concept="3Oe$u_" id="17o2t3rKeW0" role="3Oe2NS">

@@ -290,6 +290,18 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="6UATHBJ3ElF" role="jymVt">
+      <property role="TrG5h" value="getAppVersion" />
+      <node concept="17QB3L" id="6UATHBJ3ElG" role="3clF45" />
+      <node concept="3Tm1VV" id="6UATHBJ3ElH" role="1B3o_S" />
+      <node concept="3clFbS" id="6UATHBJ3ElI" role="3clF47">
+        <node concept="3cpWs6" id="6UATHBJ3ElJ" role="3cqZAp">
+          <node concept="37vLTw" id="6UATHBJ3EHo" role="3cqZAk">
+            <ref role="3cqZAo" node="4Ex3Fobkvwj" resolve="VERSION" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2YIFZL" id="7MWNCzYu4nn" role="jymVt">
       <property role="TrG5h" value="main" />
       <node concept="37vLTG" id="7MWNCzYu4no" role="3clF46">

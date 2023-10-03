@@ -951,8 +951,11 @@
     <property role="TrG5h" value="FX8_Lola" />
     <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="7HkVpVc$rXM" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="7MWNCzYDeqS" role="2CGBMS">
       <property role="TrG5h" value="platform" />
@@ -1075,8 +1078,11 @@
     <property role="TrG5h" value="VaadinConfig" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="7HkVpVc$uem" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="6UATHBJ4pfE" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UATHBJ4pfF" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="5$BCFrw7$Bw" role="2CGBMS">
       <property role="TrG5h" value="authentification" />
@@ -1125,8 +1131,11 @@
     <property role="TrG5h" value="MdeConfig" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="6jihzUGS4XY" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="6UATHBJ4pdD" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UATHBJ4pdE" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="4FeXrhENtJ1" role="2CGBMS">
       <property role="TrG5h" value="platform" />
@@ -1167,7 +1176,19 @@
       <node concept="2CJ4$C" id="7L6pyrbes93" role="2CJ4_l">
         <property role="TrG5h" value="LogEventsToStdErr" />
         <node concept="Xl_RD" id="7L6pyrbes94" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="7WLyHU5Ah5y" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationRetrieve" />
+        <node concept="Xl_RD" id="7WLyHU5Ah5z" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/picupload/static/upload/" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="7WLyHU5Ah5N" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationStore" />
+        <node concept="Xl_RD" id="7WLyHU5Ah5O" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/picupload/" />
         </node>
       </node>
     </node>
@@ -1195,8 +1216,11 @@
     <property role="TrG5h" value="BatchConfigConsole" />
     <property role="2320hu" value="2018-07-23T14:32:24.158+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="7HkVpVc$te_" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="6UATHBJ4p8j" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UATHBJ4p8k" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="7L6pyr9KHQC" role="2CGBMS">
       <property role="TrG5h" value="logConfig_" />
@@ -1283,16 +1307,6 @@
   <node concept="2CG7Z0" id="7HkVpVbYPHR">
     <property role="TrG5h" value="ConfigBase" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJoq6" id="7HkVpVc$j0D" role="2CGBMS">
-      <property role="TrG5h" value="SimpleAppBase" />
-      <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CJdiS">
-        <property role="TrG5h" value="setting" />
-        <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
-        </node>
-      </node>
-      <node concept="2CPvp3" id="7HkVpVc$j28" role="2CJdiS" />
-    </node>
     <node concept="2CJoq6" id="4WoSiUOZhGc" role="2CGBMS">
       <property role="TrG5h" value="FakeLockBus" />
       <node concept="2CJf3v" id="4WoSiUOZhUy" role="2CJdiS">
@@ -2039,8 +2053,11 @@
     <property role="TrG5h" value="BatchConfigTomcat" />
     <property role="2320hu" value="2018-07-23T14:41:00.987+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="7HkVpVc$tA9" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="6UATHBJ4pad" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UATHBJ4pae" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="4g_sjDPCT2D" role="2CGBMS">
       <property role="TrG5h" value="portjEnabled" />
@@ -2112,8 +2129,11 @@
     <property role="TrG5h" value="FX8_Lola_MDE" />
     <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="4l1zKLo5jkF" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="6UATHBJ4pbU" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UATHBJ4pbV" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="4l1zKLo5jkG" role="2CGBMS">
       <property role="TrG5h" value="platform" />
@@ -2613,8 +2633,11 @@
     <property role="TrG5h" value="TurkuConfig" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
-    <node concept="2CJ4_Q" id="4Ex3Fobawvk" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    <node concept="2CJf3v" id="6UATHBJ4peK" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UATHBJ4peL" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
     </node>
     <node concept="2CJf3v" id="4Ex3Fobawvn" role="2CGBMS">
       <property role="TrG5h" value="platform" />
@@ -2624,6 +2647,12 @@
     </node>
     <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
+      <node concept="2CJ4$C" id="6V7pU2jzKxO" role="2CJ4_l">
+        <property role="TrG5h" value="CheckDeployedVersion" />
+        <node concept="Xl_RD" id="6V7pU2jzKyr" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.app.TurkuAppFactory" />
       </node>
