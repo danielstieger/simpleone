@@ -2645,6 +2645,9 @@
         <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
       </node>
     </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvu" role="2CGBMS">
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    </node>
     <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
       <node concept="2CJ4$C" id="6V7pU2jzKxO" role="2CJ4_l">
@@ -2657,8 +2660,59 @@
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.app.TurkuAppFactory" />
       </node>
     </node>
-    <node concept="2CJ4_Q" id="4Ex3Fobawvu" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sx7" resolve="FakeLockNBusNPrint" />
+    <node concept="2CJf3v" id="3t4lCsItUsu" role="2CGBMS">
+      <property role="TrG5h" value="printFactory" />
+      <node concept="2CJf1O" id="3t4lCsItUyJ" role="2CJ4_l">
+        <node concept="Xl_RD" id="3t4lCsItUyK" role="2DqwMp">
+          <property role="Xl_RC" value="noTemplateClassLoaderHere" />
+        </node>
+        <node concept="Xl_RD" id="3t4lCsItUyL" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="3t4lCsItUyM" role="2CJ4_l">
+        <node concept="Xl_RD" id="3t4lCsItUyN" role="2DqwMp">
+          <property role="Xl_RC" value="/Users/danielstieger/migration/2020_3/simpleone/templates" />
+        </node>
+        <node concept="Xl_RD" id="3t4lCsItUyO" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="3t4lCsItUyP" role="2CJ4_l">
+        <node concept="Xl_RD" id="3t4lCsItUyQ" role="2DqwMp">
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/printTMP" />
+        </node>
+        <node concept="Xl_RD" id="3t4lCsItUyR" role="2DqwMv">
+          <property role="Xl_RC" value="2" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="3t4lCsItUyS" role="2CJ4_l">
+        <node concept="Xl_RD" id="3t4lCsItUyT" role="2DqwMp">
+          <property role="Xl_RC" value="http://localhost:8080/printTMP" />
+        </node>
+        <node concept="Xl_RD" id="3t4lCsItUyU" role="2DqwMv">
+          <property role="Xl_RC" value="3" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="3t4lCsItUyV" role="2CJ4_l">
+        <node concept="Xl_RD" id="3t4lCsItUyW" role="2DqwMp">
+          <property role="Xl_RC" value="true" />
+        </node>
+        <node concept="Xl_RD" id="3t4lCsItUyX" role="2DqwMv">
+          <property role="Xl_RC" value="4" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="3t4lCsItUyY" role="2CJ4_l">
+        <node concept="Xl_RD" id="3t4lCsItUyZ" role="2DqwMp">
+          <property role="Xl_RC" value="/Library/Fonts" />
+        </node>
+        <node concept="Xl_RD" id="3t4lCsItUz0" role="2DqwMv">
+          <property role="Xl_RC" value="5" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="3t4lCsItUsw" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.print.TurkuPrintFactory" />
+      </node>
     </node>
     <node concept="2CJ4_Q" id="4Ex3Fobawvw" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
