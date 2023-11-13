@@ -15420,6 +15420,11 @@
         </node>
       </node>
     </node>
+    <node concept="UTR7Y" id="23iAihq11Fs" role="UTRd0">
+      <node concept="276gdk" id="23iAihq11J9" role="26Uuoe">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNW" resolve="MenüWareneingang" />
+      </node>
+    </node>
   </node>
   <node concept="2mKXYI" id="6TNACHoTV2b">
     <property role="1Nb$_v" value="true" />
@@ -18646,6 +18651,11 @@
         <node concept="2Ma4Ex" id="2urJyGWZBxL" role="3Oe2NS">
           <ref role="2Ma4EA" to="eqbi:AN_117bq$J" resolve="store" />
         </node>
+      </node>
+    </node>
+    <node concept="UTR7Y" id="23iAihq10Sf" role="UTRd0">
+      <node concept="276gdk" id="23iAihq10U3" role="26Uuoe">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoO8" resolve="MenüBestellung" />
       </node>
     </node>
   </node>

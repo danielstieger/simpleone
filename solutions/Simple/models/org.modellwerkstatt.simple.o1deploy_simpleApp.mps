@@ -409,9 +409,6 @@
           <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
         </node>
       </node>
-      <node concept="276gdk" id="11_njaJsQYC" role="2$ntZF">
-        <ref role="276gdn" to="oyrz:1YLrbjkZoOy" resolve="MenüMHDKontrolle" />
-      </node>
       <node concept="Xl_RD" id="2het$DF8g7e" role="2$ntWM">
         <property role="Xl_RC" value="Edit Order Predecessor (3)" />
       </node>

@@ -167,6 +167,9 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
+        <reference id="4862154259428332766" name="theColor" index="276gdn" />
+      </concept>
       <concept id="2107333720514438480" name="org.modellwerkstatt.objectflow.structure.PageCmdTermConceptFuntionParamPushed" flags="ng" index="2niuma" />
       <concept id="2107333720514438478" name="org.modellwerkstatt.objectflow.structure.PageCmdTermHandler" flags="ng" index="2niumk">
         <reference id="5500938230623029678" name="classifier" index="2zWoI2" />
@@ -245,6 +248,7 @@
         <child id="1394557069846129412" name="finalCancelSelection" index="Wq_P0" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="8697556949200789131" name="options" index="3ap3dX" />
+        <child id="4873800708640209291" name="defaultColor" index="1bacTB" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalOkSelection" index="3vkzKj" />
@@ -837,6 +841,9 @@
       </node>
     </node>
     <node concept="2YYyHn" id="4pFxWGShMZP" role="3ap3dX" />
+    <node concept="276gdk" id="23iAihq27Jn" role="1bacTB">
+      <ref role="276gdn" to="oyrz:1YLrbjkZoO2" resolve="MenüWarenausgang" />
+    </node>
   </node>
   <node concept="3ugp7m" id="5A$AnVDpmPc">
     <property role="TrG5h" value="Create Document" />
