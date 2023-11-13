@@ -136,6 +136,9 @@
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
+      <concept id="4862154259428332765" name="org.modellwerkstatt.objectflow.structure.ColorReference" flags="ng" index="276gdk">
+        <reference id="4862154259428332766" name="theColor" index="276gdn" />
+      </concept>
       <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXVoidStatementList" flags="ig" index="2d2NRx" />
       <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
         <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
@@ -338,6 +341,9 @@
         <ref role="3uz5Vf" to="oyrz:3Rw9V4pLpzK" resolve="CFT_Search" />
         <node concept="3clFbT" id="4h62mqe9eDx" role="2_HrWp" />
       </node>
+      <node concept="276gdk" id="11_njaJsQUF" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoO8" resolve="MenüBestellung" />
+      </node>
     </node>
     <node concept="2$ntO6" id="4ezdYK9Xrp7" role="2$nsuY">
       <node concept="33WYYh" id="4ezdYK9Xrp8" role="2$ntUL">
@@ -347,11 +353,17 @@
           <property role="3clFbU" value="true" />
         </node>
       </node>
+      <node concept="276gdk" id="11_njaJsQUK" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNW" resolve="MenüWareneingang" />
+      </node>
     </node>
     <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
       <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
         <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
         <ref role="3uz5Vf" to="oyrz:6zVU6_jm7GQ" resolve="Tile_S2" />
+      </node>
+      <node concept="276gdk" id="11_njaJsQUP" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoO2" resolve="MenüWarenausgang" />
       </node>
     </node>
     <node concept="2$ntO6" id="2HibT1wOZJW" role="2$nsuY">
@@ -362,15 +374,24 @@
           <property role="3cmrfH" value="10" />
         </node>
       </node>
+      <node concept="276gdk" id="11_njaJsQUU" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNR" resolve="MenüAbschrift" />
+      </node>
     </node>
     <node concept="2$ntO6" id="29mqFQz5Rmd" role="2$nsuY">
       <node concept="33WYYh" id="29mqFQz5Rme" role="2$ntUL">
         <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
       </node>
+      <node concept="276gdk" id="11_njaJsQYm" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
+      </node>
     </node>
     <node concept="2$ntO6" id="65FLMuCL0fE" role="2$nsuY">
       <node concept="33WYYh" id="65FLMuCL0fF" role="2$ntUL">
         <ref role="2_Hrw8" to="nm54:6SMC$eDSOhg" resolve="Show Task Image" />
+      </node>
+      <node concept="276gdk" id="11_njaJsQYr" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNP" resolve="MenüBestandskontrolle" />
       </node>
     </node>
     <node concept="2$ntO6" id="2het$DF8g73" role="2$nsuY">
@@ -388,19 +409,11 @@
           <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
         </node>
       </node>
-      <node concept="2XvMaL" id="2het$DF8g79" role="2$ntZF">
-        <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-        <node concept="2vefiz" id="2het$DF8g7a" role="h55Ek">
-          <ref role="2vefiw" to="eqbi:AN_117c2L3" resolve="completed" />
-        </node>
+      <node concept="276gdk" id="11_njaJsQYC" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoOy" resolve="MenüMHDKontrolle" />
       </node>
       <node concept="Xl_RD" id="2het$DF8g7e" role="2$ntWM">
         <property role="Xl_RC" value="Edit Order Predecessor (3)" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="17o2t3rMpgW" role="2$nsuY">
-      <node concept="33WYYh" id="17o2t3rMpgX" role="2$ntUL">
-        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
       </node>
     </node>
     <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">
@@ -414,6 +427,9 @@
       <node concept="3clFbT" id="4GwKq5MIe76" role="2_HrWp">
         <property role="3clFbU" value="true" />
       </node>
+    </node>
+    <node concept="33WYYh" id="11_njaJsR4L" role="2N77jT">
+      <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
     </node>
     <node concept="fOGPe" id="1gJQ5nCsovY" role="2N77jT">
       <node concept="33WYYh" id="3wkdm3W8f8l" role="fOGQ8">
@@ -592,16 +608,16 @@
         <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
         <ref role="3uz5Vf" to="oyrz:3Rw9V4pLpzK" resolve="CFT_Search" />
       </node>
-      <node concept="2XvMaL" id="5faagik40bV" role="2$ntZF">
-        <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-        <node concept="2vefiz" id="wGbog3pXNT" role="h55Ek">
-          <ref role="2vefiw" to="eqbi:AN_117c2L0" resolve="ordered" />
-        </node>
+      <node concept="276gdk" id="11_njaJu6p2" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoO8" resolve="MenüBestellung" />
       </node>
     </node>
     <node concept="2$ntO6" id="6w_G7LX$o2m" role="2$nsuY">
       <node concept="33WYYh" id="6w_G7LX$o2n" role="2$ntUL">
         <ref role="2_Hrw8" to="ygz6:6XzXfke15oI" resolve="Search for Invoices" />
+      </node>
+      <node concept="276gdk" id="11_njaJu6p7" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNW" resolve="MenüWareneingang" />
       </node>
     </node>
     <node concept="2$ntO6" id="1TowlBnaJ3B" role="2$nsuY">
@@ -619,11 +635,8 @@
           <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
         </node>
       </node>
-      <node concept="2XvMaL" id="7xpVvRMyDjn" role="2$ntZF">
-        <ref role="2XvMaQ" to="eqbi:AN_117c2Ar" resolve="OrderStat" />
-        <node concept="2vefiz" id="wGbog3pXNW" role="h55Ek">
-          <ref role="2vefiw" to="eqbi:AN_117c2L3" resolve="completed" />
-        </node>
+      <node concept="276gdk" id="11_njaJu6pc" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoO2" resolve="MenüWarenausgang" />
       </node>
     </node>
     <node concept="2$ntO6" id="7Qjd9ayYie6" role="2$nsuY">
@@ -631,20 +644,32 @@
         <ref role="2_Hrw8" to="tsl4:3cAl6M4vge_" resolve="Reset Order" />
         <node concept="10Nm6u" id="7Qjd9ayYie8" role="2_HrWp" />
       </node>
+      <node concept="276gdk" id="11_njaJu6ph" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNR" resolve="MenüAbschrift" />
+      </node>
     </node>
     <node concept="2$ntO6" id="21clogiSxP3" role="2$nsuY">
       <node concept="33WYYh" id="21clogiSxP4" role="2$ntUL">
         <ref role="2_Hrw8" to="ygz6:21clogiSxQN" resolve="Open external link" />
+      </node>
+      <node concept="276gdk" id="11_njaJu6Dk" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
       </node>
     </node>
     <node concept="2$ntO6" id="53_cLlY7JoP" role="2$nsuY">
       <node concept="33WYYh" id="53_cLlY7JoQ" role="2$ntUL">
         <ref role="2_Hrw8" node="53_cLlY7I_p" resolve="MdeTestCmd" />
       </node>
+      <node concept="276gdk" id="11_njaJu6Dp" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoNP" resolve="MenüBestandskontrolle" />
+      </node>
     </node>
     <node concept="2$ntO6" id="17o2t3rMpol" role="2$nsuY">
       <node concept="33WYYh" id="17o2t3rMpom" role="2$ntUL">
         <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
+      </node>
+      <node concept="276gdk" id="11_njaJu6Du" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoOy" resolve="MenüMHDKontrolle" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">

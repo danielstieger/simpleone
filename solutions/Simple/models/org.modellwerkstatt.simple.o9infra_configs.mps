@@ -70,9 +70,13 @@
       <concept id="406105322043152820" name="org.modellwerkstatt.objectflow.structure.ComponentsScanning" flags="ng" index="20ptWn">
         <child id="406105322043152971" name="componentBaseName" index="20ptNC" />
       </concept>
+      <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
+        <child id="1083620718216065081" name="singleLines" index="13z7HO" />
+      </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
       <concept id="4862154259426722580" name="org.modellwerkstatt.objectflow.structure.Color" flags="ng" index="27cpit">
         <property id="4862154259426722583" name="value" index="27cpiu" />
+        <child id="7210100155594218679" name="docu" index="1H8vtj" />
       </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
         <reference id="5042172659551210608" name="extends" index="3Thu$x" />
@@ -166,6 +170,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -848,6 +860,130 @@
       <property role="27cpiu" value="#C51162" />
       <property role="TrG5h" value="COLOR_11" />
     </node>
+    <node concept="27cpit" id="1YLrbjkZoO8" role="27c1lO">
+      <property role="27cpiu" value="#C51162" />
+      <property role="TrG5h" value="MenüBestellung" />
+      <node concept="20vkWO" id="2ZSzVMEKEt6" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKEt7" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKEtc" role="1PaTwD">
+            <property role="3oM_SC" value="Pink" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoNR" role="27c1lO">
+      <property role="27cpiu" value="#E91E63" />
+      <property role="TrG5h" value="MenüAbschrift" />
+      <node concept="20vkWO" id="2ZSzVMEKDG4" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKDG5" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKDGa" role="1PaTwD">
+            <property role="3oM_SC" value="Red" />
+          </node>
+          <node concept="3oM_SD" id="2ZSzVMEKDGb" role="1PaTwD">
+            <property role="3oM_SC" value="700" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoOR" role="27c1lO">
+      <property role="27cpiu" value="#FF5722" />
+      <property role="TrG5h" value="MenüVerkauf" />
+      <node concept="20vkWO" id="2ZSzVMEKDN6" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKDN7" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKDNc" role="1PaTwD">
+            <property role="3oM_SC" value="Purple" />
+          </node>
+          <node concept="3oM_SD" id="2ZSzVMEKDNd" role="1PaTwD">
+            <property role="3oM_SC" value="700" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoOa" role="27c1lO">
+      <property role="27cpiu" value="#33691E" />
+      <property role="TrG5h" value="MenüUmbuchung" />
+      <node concept="20vkWO" id="2ZSzVMEKEm4" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKEm5" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKEma" role="1PaTwD">
+            <property role="3oM_SC" value="Lime" />
+          </node>
+          <node concept="3oM_SD" id="2ZSzVMEKEmb" role="1PaTwD">
+            <property role="3oM_SC" value="700" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoNW" role="27c1lO">
+      <property role="27cpiu" value="#00838F" />
+      <property role="TrG5h" value="MenüWareneingang" />
+      <node concept="20vkWO" id="2ZSzVMEKE10" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKE11" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKE16" role="1PaTwD">
+            <property role="3oM_SC" value="Teal" />
+          </node>
+          <node concept="3oM_SD" id="2ZSzVMEKE17" role="1PaTwD">
+            <property role="3oM_SC" value="700" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoNP" role="27c1lO">
+      <property role="27cpiu" value="#3F51B5" />
+      <property role="TrG5h" value="MenüBestandskontrolle" />
+      <node concept="20vkWO" id="2ZSzVMEKD_2" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKD_3" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKD_8" role="1PaTwD">
+            <property role="3oM_SC" value="Indigo" />
+          </node>
+          <node concept="3oM_SD" id="2ZSzVMEKD_9" role="1PaTwD">
+            <property role="3oM_SC" value="700" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoO2" role="27c1lO">
+      <property role="27cpiu" value="#F57F17" />
+      <property role="TrG5h" value="MenüWarenausgang" />
+      <node concept="20vkWO" id="2ZSzVMEKEf2" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKEf3" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKEf8" role="1PaTwD">
+            <property role="3oM_SC" value="Orange" />
+          </node>
+          <node concept="3oM_SD" id="2ZSzVMEKEf9" role="1PaTwD">
+            <property role="3oM_SC" value="700" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoOj" role="27c1lO">
+      <property role="27cpiu" value="#6D4C41" />
+      <property role="TrG5h" value="MenüArchiv" />
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoO6" role="27c1lO">
+      <property role="27cpiu" value="#607D8B" />
+      <property role="TrG5h" value="MenüProduktion" />
+      <node concept="20vkWO" id="2ZSzVMEKEM6" role="1H8vtj">
+        <node concept="1PaTwC" id="2ZSzVMEKEM7" role="13z7HO">
+          <node concept="3oM_SD" id="2ZSzVMEKEMc" role="1PaTwD">
+            <property role="3oM_SC" value="BlueGrey" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="27cpit" id="1YLrbjkZoOy" role="27c1lO">
+      <property role="27cpiu" value="#AD5D5D" />
+      <property role="TrG5h" value="MenüMHDKontrolle" />
+      <node concept="20vkWO" id="3fL4utlT02e" role="1H8vtj">
+        <node concept="1PaTwC" id="3fL4utlT02f" role="13z7HO">
+          <node concept="3oM_SD" id="3fL4utlT02g" role="1PaTwD">
+            <property role="3oM_SC" value="Muted" />
+          </node>
+          <node concept="3oM_SD" id="69fE96XfqFj" role="1PaTwD">
+            <property role="3oM_SC" value="Brick-Red" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />
@@ -1040,13 +1176,13 @@
       <node concept="2CJ4$C" id="1ZGV_ETkNB" role="2CJ4_l">
         <property role="TrG5h" value="mowareTrace" />
         <node concept="Xl_RD" id="1ZGV_ETkPW" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="false" />
         </node>
       </node>
       <node concept="2CJ4$C" id="10YuSD0wCuu" role="2CJ4_l">
         <property role="TrG5h" value="LogEventsToStdErr" />
         <node concept="Xl_RD" id="10YuSD0wDfs" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="false" />
         </node>
       </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">

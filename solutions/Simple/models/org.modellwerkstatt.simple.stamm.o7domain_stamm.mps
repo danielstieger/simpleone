@@ -133,7 +133,7 @@
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
-      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.BusinessObject" flags="ig" index="34Athd" />
+      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.Entity" flags="ig" index="34Athd" />
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
         <child id="3674496190757459099" name="propertyOption" index="0orDa" />
         <child id="6287236659904683502" name="documentation" index="3b_Q0" />
@@ -531,8 +531,8 @@
       <node concept="3Tm1VV" id="1$j4UTOTe8o" role="1B3o_S" />
     </node>
     <node concept="2vDG_T" id="4nH4LOF$GR5" role="jymVt">
-      <property role="TrG5h" value="createListOfStores" />
-      <node concept="3Tm1VV" id="4nH4LOF$GR6" role="1B3o_S" />
+      <property role="TrG5h" value="createCachedListOfStores" />
+      <node concept="3Tm1VV" id="3U4pDz9qrrX" role="1B3o_S" />
       <node concept="_YKpA" id="4nH4LOF$GR7" role="3clF45">
         <node concept="3uibUv" id="4nH4LOF$GR8" role="_ZDj9">
           <ref role="3uigEE" node="AN_117bpzI" resolve="Store" />
