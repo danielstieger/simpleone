@@ -137,6 +137,7 @@
       <concept id="7393934493398918410" name="org.modellwerkstatt.objectflow.structure.SuccessorCommandCall" flags="ng" index="1t46OP" />
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
+        <property id="96922280160231604" name="defaultHotkey" index="3uBtrS" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="7393934493399006223" name="successorCommand" index="1t4FgK" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
@@ -451,6 +452,7 @@
   <node concept="3ugp7m" id="17o2t3rKeW9">
     <property role="TrG5h" value="Open Album" />
     <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
+    <property role="3uBtrS" value="1hImSMr5NSG/X" />
     <node concept="3ulXEN" id="17o2t3rKeWs" role="3ulXEL">
       <property role="TrG5h" value="album" />
       <node concept="3uibUv" id="17o2t3rKeWt" role="1tU5fm">

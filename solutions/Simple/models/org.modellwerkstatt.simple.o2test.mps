@@ -11,9 +11,10 @@
     <import index="zj7m" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.sql(JDK/)" />
     <import index="mbv" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.springframework.jdbc.core(org.modellwerkstatt.manmap.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="n7c3" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.springframework.jdbc.support(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
+    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="n7c3" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.springframework.jdbc.support(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -100,9 +101,6 @@
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="6525155817176754757" name="org.modellwerkstatt.objectflow.structure.CommandVoidStatementList" flags="ig" index="20qIzx" />
-      <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
-        <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
-      </concept>
       <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
         <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
       </concept>
@@ -140,7 +138,9 @@
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="1881524139085993258" name="cancelConclusionStatements" index="10_T4m" />
+        <child id="7192042020164579739" name="commandInit" index="3umfm7" />
       </concept>
+      <concept id="594565203027877250" name="org.modellwerkstatt.objectflow.structure.Session" flags="ng" index="3y28L$" />
       <concept id="6952410984685067935" name="org.modellwerkstatt.objectflow.structure.OFXTestMethod" flags="ng" index="3yPF9F" />
       <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
         <property id="830334255848575723" name="logLevel" index="Rda9K" />
@@ -192,7 +192,7 @@
         </node>
         <node concept="2Tpcjw" id="3atYQn9VTa0" role="3cqZAp">
           <node concept="2_HltQ" id="3atYQn9VTa2" role="2TpcRq">
-            <ref role="2_Hrw8" node="3atYQn9VS4M" resolve="Test Transaction" />
+            <ref role="2_Hrw8" node="3atYQn9VS4M" resolve="Check User Service" />
           </node>
         </node>
         <node concept="3clFbH" id="3atYQn9VS5s" role="3cqZAp" />
@@ -227,20 +227,88 @@
     </node>
   </node>
   <node concept="3ugp7m" id="3atYQn9VS4M">
-    <property role="TrG5h" value="Test Transaction" />
+    <property role="TrG5h" value="Check User Service" />
     <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="20qIzx" id="3atYQn9VTaA" role="10_T4l">
       <node concept="3clFbS" id="3atYQn9VTaB" role="2VODD2">
-        <node concept="3clFbF" id="3atYQnaSL$_" role="3cqZAp">
-          <node concept="1odsa" id="3atYQnaSL$$" role="3clFbG">
-            <ref role="1ods_" node="3atYQna1dn6" resolve="ManualCommitRepo" />
-            <ref role="37wK5l" node="3atYQna1dnO" resolve="updateSomeThing" />
+        <node concept="3VdxhY" id="5SEWqX1yAA2" role="3cqZAp">
+          <node concept="3cpWs3" id="5SEWqX1yAYZ" role="3VcgQn">
+            <node concept="2OqwBi" id="5SEWqX1yB8b" role="3uHU7w">
+              <node concept="3y28L$" id="5SEWqX1yAZr" role="2Oq$k0" />
+              <node concept="liA8E" id="5SEWqX1yBcN" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5SEWqX1yAAB" role="3uHU7B">
+              <property role="Xl_RC" value="FINAL_OK_CONCLUSION Currently the userService is " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5SEWqX1yBgG" role="3cqZAp">
+          <node concept="2OqwBi" id="5SEWqX1yBgD" role="3clFbG">
+            <node concept="10M0yZ" id="5SEWqX1yBgE" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="5SEWqX1yBgF" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="5SEWqX1yBuE" role="37wK5m">
+                <node concept="2OqwBi" id="5SEWqX1yBuF" role="3uHU7w">
+                  <node concept="3y28L$" id="5SEWqX1yBuG" role="2Oq$k0" />
+                  <node concept="liA8E" id="5SEWqX1yBuH" role="2OqNvi">
+                    <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="5SEWqX1yBuI" role="3uHU7B">
+                  <property role="Xl_RC" value="FINAL_OK_CONCLUSION Currently the userService is " />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="20qIzx" id="3atYQn9Wxzq" role="10_T4m">
       <node concept="3clFbS" id="3atYQn9Wxzr" role="2VODD2" />
+    </node>
+    <node concept="20qIzx" id="5SEWqX1yBwQ" role="3umfm7">
+      <node concept="3clFbS" id="5SEWqX1yBwR" role="2VODD2">
+        <node concept="3VdxhY" id="5SEWqX1yBy3" role="3cqZAp">
+          <node concept="3cpWs3" id="5SEWqX1yBy4" role="3VcgQn">
+            <node concept="2OqwBi" id="5SEWqX1yBy5" role="3uHU7w">
+              <node concept="3y28L$" id="5SEWqX1yBy6" role="2Oq$k0" />
+              <node concept="liA8E" id="5SEWqX1yBy7" role="2OqNvi">
+                <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5SEWqX1yBy8" role="3uHU7B">
+              <property role="Xl_RC" value="Command INIT:   currently the userService is " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5SEWqX1yBy9" role="3cqZAp">
+          <node concept="2OqwBi" id="5SEWqX1yBya" role="3clFbG">
+            <node concept="10M0yZ" id="5SEWqX1yByb" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="5SEWqX1yByc" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="5SEWqX1yByd" role="37wK5m">
+                <node concept="2OqwBi" id="5SEWqX1yBye" role="3uHU7w">
+                  <node concept="3y28L$" id="5SEWqX1yByf" role="2Oq$k0" />
+                  <node concept="liA8E" id="5SEWqX1yByg" role="2OqNvi">
+                    <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="5SEWqX1yByh" role="3uHU7B">
+                  <property role="Xl_RC" value="Command INIT:   currently the userService is " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2EH5hC" id="3atYQn9Wgx1">

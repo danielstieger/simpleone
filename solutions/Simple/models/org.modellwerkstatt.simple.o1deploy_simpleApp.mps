@@ -413,6 +413,11 @@
         <property role="Xl_RC" value="Edit Order Predecessor (3)" />
       </node>
     </node>
+    <node concept="2$ntO6" id="2QgCBX_nJIZ" role="2$nsuY">
+      <node concept="33WYYh" id="2QgCBX_nJJ0" role="2$ntUL">
+        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
+      </node>
+    </node>
     <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
       <node concept="3clFbT" id="4GwKq5MIdZ4" role="2_HrWp" />
@@ -993,7 +998,7 @@
     <property role="TrG5h" value="InvoicingJob" />
     <ref role="2WPtWl" to="oyrz:382CQP52o$k" resolve="BatchConfigConsole" />
     <node concept="1_k$Jf" id="3atYQnaZ_Yc" role="1_k$Iu">
-      <property role="TrG5h" value="Close connection test" />
+      <property role="TrG5h" value="Check user service test" />
       <node concept="3znxp0" id="3atYQnaZ_Yd" role="1_kBZ6">
         <property role="TrG5h" value="inbox" />
         <node concept="3uibUv" id="3atYQnaZ_Zf" role="3znzZe">
@@ -1001,7 +1006,7 @@
         </node>
         <node concept="2Tpcjw" id="3atYQnaZ_Yf" role="3znwwn">
           <node concept="2_HltQ" id="3atYQnaZ_Yg" role="2TpcRq">
-            <ref role="2_Hrw8" to="wi0k:3atYQn9VS4M" resolve="Test Transaction" />
+            <ref role="2_Hrw8" to="wi0k:3atYQn9VS4M" resolve="Check User Service" />
           </node>
         </node>
       </node>
@@ -1179,7 +1184,7 @@
       <property role="1QnCj8" value="*" />
       <property role="1QnCj1" value="*" />
       <property role="1QnCj5" value="*" />
-      <ref role="2k5inG" node="3atYQnaZ_Yc" resolve="Close connection test" />
+      <ref role="2k5inG" node="3atYQnaZ_Yc" resolve="Check user service test" />
     </node>
     <node concept="3lKYF6" id="2B50FNWRzqs" role="2A_d42">
       <property role="1R4AEf" value="1" />
