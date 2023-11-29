@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
@@ -536,6 +537,28 @@
           </node>
         </node>
         <node concept="3clFbH" id="6DV0lXGiWIX" role="3cqZAp" />
+        <node concept="3clFbJ" id="2r16cr60Z3O" role="3cqZAp">
+          <node concept="3clFbS" id="2r16cr60Z3Q" role="3clFbx">
+            <node concept="3clFbF" id="2r16cr619$R" role="3cqZAp">
+              <node concept="2OqwBi" id="2r16cr619FH" role="3clFbG">
+                <node concept="2Rjrh3" id="2r16cr619$Q" role="2Oq$k0" />
+                <node concept="liA8E" id="2r16cr619QJ" role="2OqNvi">
+                  <ref role="37wK5l" to="w7gk:65KdKINRh5x" resolve="setProlongedUserSession" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2r16cr60Zt_" role="3clFbw">
+            <node concept="Xl_RD" id="2r16cr60Z9$" role="2Oq$k0">
+              <property role="Xl_RC" value="dan" />
+            </node>
+            <node concept="liA8E" id="2r16cr60ZAF" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="2MWqbU" id="2r16cr60ZCF" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2r16cr60PXO" role="3cqZAp" />
         <node concept="3clFbF" id="5XruxTJPWEL" role="3cqZAp">
           <node concept="2OqwBi" id="5XruxTJPWEM" role="3clFbG">
             <node concept="2Rjrh3" id="5XruxTJPWEN" role="2Oq$k0" />

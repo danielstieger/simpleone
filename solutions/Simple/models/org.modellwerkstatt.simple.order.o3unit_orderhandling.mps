@@ -487,6 +487,7 @@
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
         <child id="186921216802513051" name="options" index="UTRd0" />
       </concept>
+      <concept id="8644132897594670684" name="org.modellwerkstatt.dataux.structure.FoldDOption" flags="ng" index="n$XXe" />
       <concept id="7286591424802129332" name="org.modellwerkstatt.dataux.structure.ImportantDOption" flags="ng" index="vCyBZ" />
       <concept id="7361067020097118522" name="org.modellwerkstatt.dataux.structure.ForceNumericEditor" flags="ng" index="yBa9e" />
       <concept id="1364644845385628031" name="org.modellwerkstatt.dataux.structure.TableEditPreview" flags="ng" index="2BdKwY" />
@@ -567,6 +568,7 @@
       </concept>
       <concept id="7421151876966131824" name="org.modellwerkstatt.dataux.structure.TableSummaryLineFOptionParam" flags="ng" index="1cdL8w" />
       <concept id="6605183703250411792" name="org.modellwerkstatt.dataux.structure.PickerDOption" flags="ng" index="1fQJa5" />
+      <concept id="7314559125541274541" name="org.modellwerkstatt.dataux.structure.AlternativeDOption" flags="ng" index="1rY4HC" />
       <concept id="8995390878293522713" name="org.modellwerkstatt.dataux.structure.DummyDelegate" flags="ng" index="1wFRl1" />
       <concept id="8877083733913689871" name="org.modellwerkstatt.dataux.structure.SelectionSummaryLineFOptionParam" flags="ng" index="3MoQeg" />
       <concept id="8877083733914131493" name="org.modellwerkstatt.dataux.structure.HookFOption" flags="ng" index="3Mq22U">
@@ -20847,6 +20849,7 @@
         <node concept="PnLzW" id="3Bt5LPPqSq0" role="PoUSh">
           <property role="PiFy3" value="5" />
         </node>
+        <node concept="n$XXe" id="XzldN29$vW" role="PoUSh" />
         <node concept="3Oe$u_" id="3Bt5LPPqSq1" role="3Oe2NS">
           <ref role="3O0p26" to="eqbi:4u029Jv8vCO" resolve="id" />
         </node>
@@ -21058,6 +21061,25 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7P6AFD7Vft" role="3cqZAp">
+          <node concept="37vLTI" id="7P6AFD7Vq2" role="3clFbG">
+            <node concept="2OqwBi" id="7P6AFD7WgH" role="37vLTx">
+              <node concept="1odsa" id="7P6AFD7Vuo" role="2Oq$k0">
+                <ref role="1ods_" to="4njd:3$wB26aOozn" resolve="StoreInMemFactory" />
+                <ref role="37wK5l" to="4njd:4nH4LOF$GR5" resolve="createCachedListOfStores" />
+              </node>
+              <node concept="1yVyf7" id="7P6AFD7WB8" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7P6AFD7Viy" role="37vLTJ">
+              <node concept="3urNR4" id="7P6AFD7Vfr" role="2Oq$k0">
+                <ref role="3cqZAo" node="6m2yckYr5KS" resolve="order" />
+              </node>
+              <node concept="2S8uIT" id="7P6AFD7Vm9" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:AN_117bq$J" resolve="store" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="6m2yckYrcaK" role="3cqZAp" />
       </node>
     </node>
@@ -21076,13 +21098,11 @@
         </node>
         <node concept="P8lqc" id="6m2yckYrhXZ" role="P8nnQ">
           <node concept="3Oe$u_" id="6m2yckYrhY1" role="P8WsX">
-            <ref role="3O0p26" to="4njd:AN_117bpzX" resolve="id" />
-          </node>
-          <node concept="3Oe$u_" id="6m2yckYrhY2" role="P8WsX">
-            <ref role="3O0p26" to="4njd:AN_117bqvn" resolve="name" />
+            <ref role="3O0p26" to="4njd:41v_Ar3uDkT" resolve="textRepresentation" />
           </node>
         </node>
         <node concept="Pk6Vc" id="6m2yckYtY9Y" role="PoUSh" />
+        <node concept="1rY4HC" id="2oAe1tEGwvo" role="PoUSh" />
       </node>
     </node>
   </node>
