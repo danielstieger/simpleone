@@ -11997,6 +11997,11 @@
           <ref role="3O0p26" to="eqbi:2IUGN4P8g$C" resolve="status" />
         </node>
       </node>
+      <node concept="3Oe2In" id="2oCNns$vmRX" role="3OfFNq">
+        <node concept="3Oe$u_" id="2oCNns$vmRY" role="3Oe2NS">
+          <ref role="3O0p26" to="eqbi:AN_117bbe2" resolve="posValue" />
+        </node>
+      </node>
       <node concept="3Oe2Ik" id="7324YUt0KOQ" role="3OfFNq">
         <node concept="Pevqn" id="7324YUt0KPP" role="PoUSh" />
         <node concept="P9SqB" id="7324YUt0KQq" role="PoUSh">
@@ -12004,15 +12009,6 @@
         </node>
         <node concept="3Oe$u_" id="7324YUt0KOR" role="3Oe2NS">
           <ref role="3O0p26" to="eqbi:7324YUt0KcM" resolve="summarizingLongText" />
-        </node>
-      </node>
-      <node concept="3Oe2Ik" id="6Ocik2nMjbY" role="3OfFNq">
-        <node concept="Pevqn" id="6Ocik2nMjc0" role="PoUSh" />
-        <node concept="P9SqB" id="6Ocik2nMjc1" role="PoUSh">
-          <property role="P9SrG" value="4" />
-        </node>
-        <node concept="3Oe$u_" id="6Ocik2nMjkc" role="3Oe2NS">
-          <ref role="3O0p26" to="eqbi:6Ocik2nMjcX" resolve="summarizingLongText2" />
         </node>
       </node>
     </node>
@@ -20898,7 +20894,7 @@
     </node>
   </node>
   <node concept="3ugp7m" id="6m2yckYr5J2">
-    <property role="TrG5h" value="Order List UI Tests" />
+    <property role="TrG5h" value="Ref/Stat Ui Test" />
     <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEM" id="6m2yckYr5KS" role="3ulXEG">
       <property role="TrG5h" value="order" />
@@ -21093,6 +21089,18 @@
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" to="eqbi:1Zhh97664rm" resolve="Order" />
       <node concept="2U5nhG" id="6m2yckYrhXE" role="2TFpq_" />
+      <node concept="3Oe2Ik" id="2oCNns$s6q7" role="3OfFNq">
+        <node concept="3Oe$u_" id="2oCNns$s6q8" role="3Oe2NS">
+          <ref role="3O0p26" to="eqbi:AN_117bqyN" resolve="name" />
+        </node>
+        <node concept="Pevqn" id="2oCNns$s6q$" role="PoUSh" />
+      </node>
+      <node concept="3Oe2In" id="2oCNns$s6rb" role="3OfFNq">
+        <node concept="3Oe$u_" id="2oCNns$s6rc" role="3Oe2NS">
+          <ref role="3O0p26" to="eqbi:4u029Jv8vG8" resolve="totalValue" />
+        </node>
+        <node concept="Pevqn" id="2oCNns$s6rI" role="PoUSh" />
+      </node>
       <node concept="2TG9WW" id="6m2yckYrhXW" role="3OfFNq">
         <node concept="3Oe$u_" id="6m2yckYrhXY" role="3Oe2NS">
           <ref role="3O0p26" to="eqbi:AN_117bq$J" resolve="store" />

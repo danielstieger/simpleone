@@ -2339,7 +2339,7 @@
             </node>
             <node concept="1odsa" id="3$wB26aOtWP" role="33vP2m">
               <ref role="1ods_" to="4njd:3$wB26aOozn" resolve="StoreInMemFactory" />
-              <ref role="37wK5l" to="4njd:4nH4LOF$GR5" resolve="createListOfStores" />
+              <ref role="37wK5l" to="4njd:4nH4LOF$GR5" resolve="createCachedListOfStores" />
             </node>
           </node>
         </node>
@@ -2860,7 +2860,7 @@
               </node>
             </node>
             <node concept="1odsa" id="4A7QxK79NEK" role="33vP2m">
-              <ref role="37wK5l" to="4njd:4nH4LOF$GR5" resolve="createListOfStores" />
+              <ref role="37wK5l" to="4njd:4nH4LOF$GR5" resolve="createCachedListOfStores" />
               <ref role="1ods_" to="4njd:3$wB26aOozn" resolve="StoreInMemFactory" />
             </node>
           </node>
@@ -3624,6 +3624,11 @@
     </node>
     <node concept="1bOX9e" id="AN_117bbe2" role="TxmiU">
       <property role="2RkwnN" value="posValue" />
+      <node concept="WfFEq" id="2oCNns$uf9l" role="0orDa">
+        <property role="WfFEx" value="0.0bd" />
+        <property role="WfFEw" value="1000.0bd" />
+        <property role="1BDm0K" value="1" />
+      </node>
       <node concept="3Tm1VV" id="AN_117bbe3" role="1B3o_S" />
       <node concept="2RoN1w" id="AN_117bbe4" role="2RnVtd">
         <node concept="3wEZqW" id="AN_117bbe5" role="3wFrgM" />

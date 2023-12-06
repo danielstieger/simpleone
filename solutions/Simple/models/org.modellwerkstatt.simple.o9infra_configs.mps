@@ -641,12 +641,12 @@
       <node concept="2kzhL4" id="2w5UnVouMz7" role="2kzgdm">
         <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="2w5UnVouMz8" role="il5_5">
-          <property role="Xl_RC" value="Complete Order" />
-        </node>
-        <node concept="Xl_RD" id="2w5UnVouMz_" role="il5$o">
           <property role="Xl_RC" value="done" />
         </node>
         <node concept="238Bvw" id="1E9WFYq4uEj" role="238Brw" />
+        <node concept="Xl_RD" id="2oCNns$vnwu" role="il5$o">
+          <property role="Xl_RC" value="done" />
+        </node>
       </node>
     </node>
     <node concept="il5_x" id="2w5UnVouMBt" role="2kzhMJ">
