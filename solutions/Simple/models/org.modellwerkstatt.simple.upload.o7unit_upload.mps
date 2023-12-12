@@ -200,9 +200,18 @@
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
       </concept>
       <concept id="465568541577412058" name="org.modellwerkstatt.dataux.structure.OptionalDOption" flags="ng" index="P9Rn5" />
+      <concept id="465568541577416376" name="org.modellwerkstatt.dataux.structure.NumOfLinesDOption" flags="ng" index="P9SqB">
+        <property id="465568541577416435" name="lines" index="P9SrG" />
+      </concept>
       <concept id="465568541577313928" name="org.modellwerkstatt.dataux.structure.DisabledDOption" flags="ng" index="Pevqn" />
       <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ng" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
+      </concept>
+      <concept id="465568541574303019" name="org.modellwerkstatt.dataux.structure.OverwriteFormatDOption" flags="ng" index="Pl0kO">
+        <child id="465568541574303048" name="expression" index="Pl0ln" />
+      </concept>
+      <concept id="465568541574300535" name="org.modellwerkstatt.dataux.structure.OverwriteLabelDOption" flags="ng" index="Pl0HC">
+        <child id="465568541574300538" name="expression" index="Pl0H_" />
       </concept>
       <concept id="465568541574762723" name="org.modellwerkstatt.dataux.structure.WidthDOption" flags="ng" index="PnLzW">
         <property id="465568541576048796" name="percent" index="PiFy3" />
@@ -218,6 +227,7 @@
       <concept id="7091146304639486764" name="org.modellwerkstatt.dataux.structure.WideDOption" flags="ng" index="Sd8ji" />
       <concept id="3899779351686566800" name="org.modellwerkstatt.dataux.structure.DateTimeDateOnlyDelegate" flags="ng" index="2TG9WS" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
+      <concept id="3899779351686566803" name="org.modellwerkstatt.dataux.structure.ImageDelegate" flags="ng" index="2TG9WV" />
       <concept id="3899779351686566805" name="org.modellwerkstatt.dataux.structure.StatusDelegate" flags="ng" index="2TG9WX" />
       <concept id="7834248083556639603" name="org.modellwerkstatt.dataux.structure.OneWeight" flags="ng" index="2U5nhG" />
       <concept id="7834248083556639590" name="org.modellwerkstatt.dataux.structure.MinWeight" flags="ng" index="2U5nhT" />
@@ -905,6 +915,30 @@
   </node>
   <node concept="3ugp7m" id="3P_LmWszsWC">
     <property role="TrG5h" value="Show AlbumItem" />
+    <node concept="3ugp7q" id="3P_LmWszuve" role="3ug97V">
+      <property role="TrG5h" value="Page_0" />
+      <ref role="3gcvY6" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+      <node concept="10qiFn" id="3P_LmWszuzm" role="10qiF9">
+        <ref role="2DFCCC" to="oyrz:3dciNchuq1p" resolve="OK" />
+        <node concept="20qIzx" id="3P_LmWszuzU" role="10ot2L">
+          <node concept="3clFbS" id="3P_LmWszuzV" role="2VODD2">
+            <node concept="10Adxj" id="3P_LmWszu$K" role="3cqZAp" />
+          </node>
+        </node>
+      </node>
+      <node concept="20qEzJ" id="3P_LmWszuvf" role="10qiF$">
+        <node concept="3clFbS" id="3P_LmWszuvg" role="2VODD2">
+          <node concept="3clFbF" id="3P_LmWszuwK" role="3cqZAp">
+            <node concept="3urNQE" id="3P_LmWszuwJ" role="3clFbG">
+              <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3063JU" id="3P_LmWszuvh" role="3063Jp">
+        <ref role="3063JT" node="6SMC$eDSOhD" resolve="ImagePP" />
+      </node>
+    </node>
     <node concept="3ulXEN" id="3P_LmWszt8J" role="3ulXEL">
       <property role="TrG5h" value="albumitem" />
       <node concept="3uibUv" id="3P_LmWszt8K" role="1tU5fm">
@@ -912,6 +946,67 @@
       </node>
       <node concept="2IFXgM" id="3P_LmWszt8L" role="33vP2m">
         <ref role="2IFZ7r" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+      </node>
+    </node>
+  </node>
+  <node concept="2mKXYI" id="6SMC$eDSOhD">
+    <property role="1Nb$_v" value="true" />
+    <property role="TrG5h" value="ImagePP" />
+    <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+    <node concept="2U5qGN" id="3EFS_eyyz2h" role="21u2x1">
+      <property role="TrG5h" value="#" />
+      <node concept="2U5nhG" id="3EFS_eyyz6o" role="2U5niL" />
+      <node concept="2U5nhG" id="3EFS_eyyz2i" role="2U5niJ" />
+      <node concept="2U5nhG" id="2df4HcRObvJ" role="2U5niJ" />
+      <node concept="2U5qGO" id="3EFS_eyyz3v" role="21u2wS">
+        <property role="TrG5h" value="#" />
+        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+        <node concept="2U5nhG" id="3EFS_eyyz3$" role="2TFpq_" />
+        <node concept="2TG9WV" id="3EFS_eyyz3F" role="3OfFNq">
+          <node concept="3Oe$u_" id="3EFS_eyyz3I" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
+          </node>
+          <node concept="Pl0kO" id="5p0Do9zTGn0" role="PoUSh">
+            <node concept="Xl_RD" id="5p0Do9zTGn1" role="Pl0ln">
+              <property role="Xl_RC" value="800,800" />
+            </node>
+          </node>
+        </node>
+        <node concept="PoU6y" id="3EFS_eyyz3J" role="PoUSn" />
+      </node>
+      <node concept="2U5qGO" id="65FLMuCzn0d" role="21u2wS">
+        <property role="TrG5h" value="#" />
+        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+        <node concept="3Oe2IN" id="65FLMuCP6TY" role="3OfFNq">
+          <node concept="Pl0HC" id="65FLMuCP6Y5" role="PoUSh">
+            <node concept="Xl_RD" id="65FLMuCP6Y7" role="Pl0H_">
+              <property role="Xl_RC" value="ID des Bildes" />
+            </node>
+          </node>
+          <node concept="3Oe$u_" id="65FLMuCP6U1" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="65FLMuCTcwh" role="3OfFNq">
+          <node concept="3Oe$u_" id="65FLMuCTcwi" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
+          </node>
+          <node concept="Pl0HC" id="65FLMuCTcwH" role="PoUSh">
+            <node concept="Xl_RD" id="65FLMuCTcwI" role="Pl0H_">
+              <property role="Xl_RC" value="Pfad zum Bild" />
+            </node>
+          </node>
+          <node concept="P9SqB" id="2df4HcRPxOG" role="PoUSh">
+            <property role="P9SrG" value="10" />
+          </node>
+        </node>
+        <node concept="2TG9WT" id="3P_LmWszuuJ" role="3OfFNq">
+          <node concept="3Oe$u_" id="3P_LmWszuuM" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:17o2t3rKeyq" resolve="takenTimeStamp" />
+          </node>
+        </node>
+        <node concept="2U5nhG" id="2df4HcRObwD" role="2TFpq_" />
+        <node concept="PoU6y" id="4gA8nKcMMQk" role="PoUSn" />
       </node>
     </node>
   </node>

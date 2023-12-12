@@ -15,7 +15,6 @@
     <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)" />
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.o7domain_order)" />
-    <import index="nm54" ref="r:b4dfd7c8-34bd-4a69-87a0-1b2a185b6c53(org.modellwerkstatt.simple.task.o3unit_taskhandling)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
@@ -269,7 +268,6 @@
         <child id="4920377772573251431" name="tileInit" index="2aJ6r$" />
         <child id="2781909770750563212" name="tiles" index="2$nsuY" />
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
-        <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
         <child id="4243878476893838311" name="helpMenu" index="1BMTcq" />
       </concept>
@@ -387,14 +385,6 @@
         <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
       </node>
     </node>
-    <node concept="2$ntO6" id="65FLMuCL0fE" role="2$nsuY">
-      <node concept="33WYYh" id="65FLMuCL0fF" role="2$ntUL">
-        <ref role="2_Hrw8" to="nm54:6SMC$eDSOhg" resolve="Show Task Image" />
-      </node>
-      <node concept="276gdk" id="11_njaJsQYr" role="2$ntZF">
-        <ref role="276gdn" to="oyrz:1YLrbjkZoNP" resolve="MenüBestandskontrolle" />
-      </node>
-    </node>
     <node concept="2$ntO6" id="2het$DF8g73" role="2$nsuY">
       <node concept="33WYYh" id="2het$DF8g74" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
@@ -421,7 +411,7 @@
     </node>
     <node concept="2$ntO6" id="6m2yckYsPLk" role="2$nsuY">
       <node concept="33WYYh" id="6m2yckYsPLl" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Order List UI Tests" />
+        <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
       </node>
     </node>
     <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">
@@ -600,9 +590,6 @@
         </node>
       </node>
     </node>
-    <node concept="33WYYh" id="2MI0JB6CHQr" role="2N77jL">
-      <ref role="2_Hrw8" to="nm54:2MI0JB6CEnN" resolve="ViewTasksInList" />
-    </node>
     <node concept="2MWAvL" id="5XruxTJPWEj" role="2A_d42">
       <node concept="2OqwBi" id="6UATHBJ3ENL" role="2MWAvM">
         <node concept="3urNR4" id="6UATHBJ3EKM" role="2Oq$k0">
@@ -704,7 +691,7 @@
     </node>
     <node concept="2$ntO6" id="6m2yckYuv6Z" role="2$nsuY">
       <node concept="33WYYh" id="6m2yckYuv70" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Order List UI Tests" />
+        <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
