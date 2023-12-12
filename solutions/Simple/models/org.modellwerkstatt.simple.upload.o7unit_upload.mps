@@ -8,6 +8,8 @@
     <import index="agw3" ref="r:8f88ce36-1bf8-4081-bf13-597289e5d9c6(org.modellwerkstatt.simple.upload.o3domain_upload)" />
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -41,6 +43,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -69,6 +74,7 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -83,6 +89,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1202065242027" name="jetbrains.mps.baseLanguage.structure.DefaultGetAccessor" flags="ng" index="3wEZqW" />
       <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
@@ -204,6 +214,7 @@
       <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ng" index="PoUSo">
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
+      <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
       <concept id="7091146304639486764" name="org.modellwerkstatt.dataux.structure.WideDOption" flags="ng" index="Sd8ji" />
       <concept id="3899779351686566800" name="org.modellwerkstatt.dataux.structure.DateTimeDateOnlyDelegate" flags="ng" index="2TG9WS" />
       <concept id="3899779351686566801" name="org.modellwerkstatt.dataux.structure.DateTimeDelegate" flags="ng" index="2TG9WT" />
@@ -318,6 +329,7 @@
   </node>
   <node concept="3ugp7m" id="17o2t3rKeVu">
     <property role="TrG5h" value="Edit AlbumItem" />
+    <property role="3uBtrS" value="1hImSMr5NSX/ENTER" />
     <node concept="3ugp7q" id="17o2t3rKeVv" role="3ug97V">
       <property role="TrG5h" value="EditPage" />
       <ref role="3gcvY6" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
@@ -380,6 +392,35 @@
         <ref role="2DFCCC" to="oyrz:3dciNchuq1p" resolve="OK" />
         <node concept="20qIzx" id="17o2t3rKeW6" role="10ot2L">
           <node concept="3clFbS" id="17o2t3rKeW7" role="2VODD2">
+            <node concept="3clFbF" id="20dKJvQ1tPr" role="3cqZAp">
+              <node concept="2OqwBi" id="20dKJvQ1tPo" role="3clFbG">
+                <node concept="10M0yZ" id="20dKJvQ1tPp" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="20dKJvQ1tPq" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="3cpWs3" id="20dKJvQ1uQv" role="37wK5m">
+                    <node concept="Xl_RD" id="20dKJvQ1uQM" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                    <node concept="3cpWs3" id="20dKJvQ1ugf" role="3uHU7B">
+                      <node concept="Xl_RD" id="20dKJvQ1tQD" role="3uHU7B">
+                        <property role="Xl_RC" value="File path is '" />
+                      </node>
+                      <node concept="2OqwBi" id="20dKJvQ1urk" role="3uHU7w">
+                        <node concept="3urNQE" id="20dKJvQ1ujE" role="2Oq$k0">
+                          <ref role="3cqZAo" node="17o2t3rKeV$" resolve="albumitem" />
+                        </node>
+                        <node concept="2S8uIT" id="20dKJvQ1uwK" role="2OqNvi">
+                          <ref role="2S8YL0" to="agw3:17o2t3rKev_" resolve="fileName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="10Adxj" id="17o2t3rKeW8" role="3cqZAp" />
           </node>
         </node>
@@ -439,7 +480,7 @@
           <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
         </node>
         <node concept="Sd8ji" id="3nTGeEajIMU" role="PoUSh" />
-        <node concept="P9Rn5" id="3nTGeEajZLd" role="PoUSh" />
+        <node concept="P9Rn5" id="3P_LmWszsCF" role="PoUSh" />
       </node>
       <node concept="2TG9WT" id="17o2t3rKeVZ" role="3OfFNq">
         <node concept="3Oe$u_" id="17o2t3rKeW0" role="3Oe2NS">
@@ -593,6 +634,7 @@
             <property role="Xl_RC" value="AlbumItem" />
           </node>
         </node>
+        <node concept="PoWA$" id="20dKJvPZTl6" role="PoUSn" />
         <node concept="3Oe2IN" id="17o2t3rKeXi" role="3OfFNq">
           <node concept="PnLzW" id="17o2t3rKeXj" role="PoUSh">
             <property role="PiFy3" value="33" />
@@ -620,6 +662,9 @@
         <node concept="fOGPe" id="17o2t3rKeXz" role="fOGQ8">
           <node concept="33WYYh" id="17o2t3rKeX$" role="fOGQ8">
             <ref role="2_Hrw8" node="17o2t3rKeVu" resolve="Edit AlbumItem" />
+          </node>
+          <node concept="33WYYh" id="3P_LmWszsW4" role="fOGQ8">
+            <ref role="2_Hrw8" node="3P_LmWszsWC" resolve="Show AlbumItem" />
           </node>
         </node>
       </node>
@@ -855,6 +900,18 @@
     <node concept="fOGPe" id="17o2t3rKeZR" role="fOGQ8">
       <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
         <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
+      </node>
+    </node>
+  </node>
+  <node concept="3ugp7m" id="3P_LmWszsWC">
+    <property role="TrG5h" value="Show AlbumItem" />
+    <node concept="3ulXEN" id="3P_LmWszt8J" role="3ulXEL">
+      <property role="TrG5h" value="albumitem" />
+      <node concept="3uibUv" id="3P_LmWszt8K" role="1tU5fm">
+        <ref role="3uigEE" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+      </node>
+      <node concept="2IFXgM" id="3P_LmWszt8L" role="33vP2m">
+        <ref role="2IFZ7r" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
       </node>
     </node>
   </node>
