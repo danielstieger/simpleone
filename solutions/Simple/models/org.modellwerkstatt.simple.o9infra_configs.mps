@@ -2795,13 +2795,13 @@
       <node concept="2CJ4$C" id="3P_LmWs_zhE" role="2CJ4_l">
         <property role="TrG5h" value="UploadLocationRetrieve" />
         <node concept="Xl_RD" id="3P_LmWs_zhF" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/picupload" />
+          <property role="Xl_RC" value="http://192.168.0.73:8080/static" />
         </node>
       </node>
       <node concept="2CJ4$C" id="3P_LmWs_zhG" role="2CJ4_l">
         <property role="TrG5h" value="UploadFsLocationStore" />
         <node concept="Xl_RD" id="3P_LmWs_zhH" role="2CaGCA">
-          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/picupload" />
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
         </node>
       </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">

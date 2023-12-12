@@ -902,14 +902,12 @@
         </node>
       </node>
       <node concept="fOGPe" id="17o2t3rKeZT" role="fOGQ8">
+        <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
+          <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
+        </node>
         <node concept="33WYYh" id="17o2t3rKeZU" role="fOGQ8">
           <ref role="2_Hrw8" node="17o2t3rKeW9" resolve="Open Album" />
         </node>
-      </node>
-    </node>
-    <node concept="fOGPe" id="17o2t3rKeZR" role="fOGQ8">
-      <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
-        <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
       </node>
     </node>
   </node>
