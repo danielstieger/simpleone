@@ -483,6 +483,7 @@
       <property role="TrG5h" value="#" />
       <node concept="2U5nhG" id="1p9ACItUpzG" role="2U5niJ" />
       <node concept="2U5nhG" id="1p9ACIu0dD8" role="2U5niJ" />
+      <node concept="2U5nhG" id="1p9ACIu2ICb" role="2U5niJ" />
       <node concept="2U5qGO" id="1p9ACItUpzI" role="21u2wS">
         <property role="TrG5h" value="#" />
         <ref role="1Tjo7l" to="4njd:3cAl6M4nWUn" resolve="Article" />
@@ -661,6 +662,103 @@
           </node>
         </node>
         <node concept="PoU6y" id="1p9ACIu0dNm" role="PoUSn" />
+      </node>
+      <node concept="2U5qGO" id="1p9ACIu2IuF" role="21u2wS">
+        <property role="TrG5h" value="#" />
+        <ref role="1Tjo7l" to="4njd:3cAl6M4nWUn" resolve="Article" />
+        <node concept="2U5nhG" id="1p9ACIu2IuG" role="2TFpq_" />
+        <node concept="PoUSf" id="1p9ACIu2IuH" role="PoUSn">
+          <node concept="Xl_RD" id="1p9ACIu2IuI" role="PoUSc">
+            <property role="Xl_RC" value="Preis Daten" />
+          </node>
+        </node>
+        <node concept="3Oe2In" id="1p9ACIu2IuJ" role="3OfFNq">
+          <node concept="3O0p8O" id="1p9ACIu2IuK" role="3Oe2NS">
+            <node concept="3Oe$u_" id="1p9ACIu2IuL" role="3O0p8X">
+              <ref role="3O0p26" to="4njd:3cAl6M4nWUG" resolve="price" />
+            </node>
+            <node concept="2THnN3" id="1p9ACIu2IuM" role="3O0p8V">
+              <ref role="2THnOx" to="o7da:18291WBBwPe" resolve="val" />
+            </node>
+          </node>
+          <node concept="Pl0HC" id="1p9ACIu2IuN" role="PoUSh">
+            <node concept="Xl_RD" id="1p9ACIu2IuO" role="Pl0H_">
+              <property role="Xl_RC" value="Wert" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="1p9ACIu2IuP" role="3OfFNq">
+          <node concept="3O0p8O" id="1p9ACIu2IuQ" role="3Oe2NS">
+            <node concept="3Oe$u_" id="1p9ACIu2IuR" role="3O0p8X">
+              <ref role="3O0p26" to="4njd:3cAl6M4nWUG" resolve="price" />
+            </node>
+            <node concept="2THnN3" id="1p9ACIu2IuS" role="3O0p8V">
+              <ref role="2THnOx" to="o7da:18291WBBwQz" resolve="currency" />
+            </node>
+          </node>
+          <node concept="Pl0HC" id="1p9ACIu2IuT" role="PoUSh">
+            <node concept="Xl_RD" id="1p9ACIu2IuU" role="Pl0H_">
+              <property role="Xl_RC" value="Währung" />
+            </node>
+          </node>
+        </node>
+        <node concept="2TG9WX" id="1p9ACIu2IuV" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2IuW" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTK$9" resolve="verkaufsFaehig" />
+          </node>
+        </node>
+        <node concept="2TG9WX" id="1p9ACIu2IuX" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2IuY" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTKJW" resolve="stundenPreise" />
+          </node>
+        </node>
+        <node concept="2TG9WX" id="1p9ACIu2IuZ" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2Iv0" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTLuV" resolve="rabattFaehig" />
+          </node>
+        </node>
+        <node concept="2TG9WX" id="1p9ACIu2Iv1" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2Iv2" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTMiD" resolve="kostenArtikel" />
+          </node>
+        </node>
+        <node concept="PoU6y" id="1p9ACIu2Iv3" role="PoUSn" />
+      </node>
+      <node concept="2U5qGO" id="1p9ACIu2I$1" role="21u2wS">
+        <property role="TrG5h" value="#" />
+        <ref role="1Tjo7l" to="4njd:3cAl6M4nWUn" resolve="Article" />
+        <node concept="2U5nhG" id="1p9ACIu2I$2" role="2TFpq_" />
+        <node concept="PoUSf" id="1p9ACIu2I$3" role="PoUSn">
+          <node concept="Xl_RD" id="1p9ACIu2I$4" role="PoUSc">
+            <property role="Xl_RC" value="Basis Daten" />
+          </node>
+        </node>
+        <node concept="3Oe2IN" id="1p9ACIu2I$5" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2I$6" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:3cAl6M4nWUp" resolve="id" />
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="1p9ACIu2I$7" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2I$8" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:3cAl6M4nWUz" resolve="name" />
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="1p9ACIu2I$9" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2I$a" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTL6$" resolve="artikelNameFuerKassa" />
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="1p9ACIu2I$b" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2I$c" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTLm9" resolve="bontext2" />
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="1p9ACIu2I$d" role="3OfFNq">
+          <node concept="3Oe$u_" id="1p9ACIu2I$e" role="3Oe2NS">
+            <ref role="3O0p26" to="4njd:1p9ACItTLCd" resolve="tastenText" />
+          </node>
+        </node>
+        <node concept="PoU6y" id="1p9ACIu2I$f" role="PoUSn" />
       </node>
       <node concept="2U5nhT" id="1p9ACItUp$H" role="2U5niL" />
       <node concept="2U5nhT" id="1p9ACIu0dDj" role="2U5niL" />
