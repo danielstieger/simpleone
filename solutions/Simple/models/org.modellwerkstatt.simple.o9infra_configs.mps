@@ -1318,13 +1318,19 @@
       <node concept="2CJ4$C" id="7WLyHU5Ah5y" role="2CJ4_l">
         <property role="TrG5h" value="UploadLocationRetrieve" />
         <node concept="Xl_RD" id="7WLyHU5Ah5z" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/picupload/static/upload/" />
+          <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="6Pmr75YGg80" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationStore" />
+        <node concept="Xl_RD" id="6Pmr75YGg81" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/MDEApp/picupload/" />
         </node>
       </node>
       <node concept="2CJ4$C" id="7WLyHU5Ah5N" role="2CJ4_l">
-        <property role="TrG5h" value="UploadLocationStore" />
+        <property role="TrG5h" value="UploadFsLocationStore" />
         <node concept="Xl_RD" id="7WLyHU5Ah5O" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/picupload/" />
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
         </node>
       </node>
     </node>
@@ -2870,6 +2876,115 @@
     </node>
     <node concept="20ptWn" id="4Ex3Fobawvy" role="20ptHX">
       <node concept="Xl_RD" id="4Ex3Fobawvz" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="2xhQv04HOhZ">
+    <property role="TrG5h" value="MdeConfigWithH2Upload" />
+    <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="2xhQv04HOi0" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="2xhQv04HOi1" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="2xhQv04HOi2" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="2xhQv04HOi3" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_MDE" />
+      </node>
+    </node>
+    <node concept="2CPvp3" id="2xhQv04HOi4" role="2CGBMS" />
+    <node concept="2CJf3v" id="2xhQv04HOi5" role="2CGBMS">
+      <property role="TrG5h" value="uiFactory" />
+      <node concept="Xl_RD" id="2xhQv04HOi6" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.h2forms.pebble.PAppFactory" />
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOi7" role="2CJ4_l">
+        <property role="TrG5h" value="SkipLoggingTcnException" />
+        <node concept="Xl_RD" id="2xhQv04HOi8" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOi9" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="2xhQv04HOia" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOib" role="2CJ4_l">
+        <property role="TrG5h" value="ScrollAdjust" />
+        <node concept="Xl_RD" id="2xhQv04HOic" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOid" role="2CJ4_l">
+        <property role="TrG5h" value="SilentExLogging" />
+        <node concept="Xl_RD" id="2xhQv04HOie" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOif" role="2CJ4_l">
+        <property role="TrG5h" value="LogEventsToStdErr" />
+        <node concept="Xl_RD" id="2xhQv04HOig" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOih" role="2CJ4_l">
+        <property role="TrG5h" value="PortJ" />
+        <node concept="Xl_RD" id="2xhQv04HOii" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOij" role="2CJ4_l">
+        <property role="TrG5h" value="AppTrace" />
+        <node concept="Xl_RD" id="2xhQv04HOik" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOil" role="2CJ4_l">
+        <property role="TrG5h" value="MowareTrace" />
+        <node concept="Xl_RD" id="2xhQv04HOim" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOin" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationRetrieve" />
+        <node concept="Xl_RD" id="2xhQv04HOio" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOip" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationStore" />
+        <node concept="Xl_RD" id="2xhQv04HOiq" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/MDEApp/picupload/" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2xhQv04HOir" role="2CJ4_l">
+        <property role="TrG5h" value="UploadFsLocationStore" />
+        <node concept="Xl_RD" id="2xhQv04HOis" role="2CaGCA">
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CPvp3" id="2xhQv04HOit" role="2CGBMS" />
+    <node concept="2CJ4_Q" id="2xhQv04HOiu" role="2CGBMS">
+      <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
+    </node>
+    <node concept="2CJ4_Q" id="2xhQv04HOiv" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
+    </node>
+    <node concept="2CJ4_Q" id="2xhQv04HOiw" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+    </node>
+    <node concept="2CJ4_Q" id="2xhQv04HOix" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="2CPvp3" id="2xhQv04HOiy" role="2CGBMS" />
+    <node concept="20ptWn" id="2xhQv04HOiz" role="20ptHX">
+      <node concept="Xl_RD" id="2xhQv04HOi$" role="20ptNC">
         <property role="Xl_RC" value="org.modellwerkstatt.simple" />
       </node>
     </node>

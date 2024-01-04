@@ -66,6 +66,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -926,6 +927,67 @@
       </node>
       <node concept="20qEzJ" id="3P_LmWszuvf" role="10qiF$">
         <node concept="3clFbS" id="3P_LmWszuvg" role="2VODD2">
+          <node concept="3clFbF" id="3UQOpsm4h2_" role="3cqZAp">
+            <node concept="37vLTI" id="3UQOpsm4hnV" role="3clFbG">
+              <node concept="Xl_RD" id="3UQOpsm4hoy" role="37vLTx">
+                <property role="Xl_RC" value="weihnachten1.jpg" />
+              </node>
+              <node concept="2OqwBi" id="3UQOpsm4h7b" role="37vLTJ">
+                <node concept="3urNQE" id="3UQOpsm4h2z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+                </node>
+                <node concept="2S8uIT" id="3UQOpsm4hdi" role="2OqNvi">
+                  <ref role="2S8YL0" to="agw3:17o2t3rKev_" resolve="fileName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3UQOpsm4hy4" role="3cqZAp">
+            <node concept="37vLTI" id="3UQOpsm4i7M" role="3clFbG">
+              <node concept="Xl_RD" id="3UQOpsm4i9H" role="37vLTx">
+                <property role="Xl_RC" value="weihnachten2.jpg" />
+              </node>
+              <node concept="2OqwBi" id="3UQOpsm4h_H" role="37vLTJ">
+                <node concept="3urNQE" id="3UQOpsm4hy2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+                </node>
+                <node concept="2S8uIT" id="3UQOpsm4hX9" role="2OqNvi">
+                  <ref role="2S8YL0" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3UQOpsm4ieu" role="3cqZAp">
+            <node concept="37vLTI" id="3UQOpsm4ix3" role="3clFbG">
+              <node concept="Xl_RD" id="3UQOpsm4ixM" role="37vLTx">
+                <property role="Xl_RC" value="Frohe Weihnachten - dir und deiner Familie!" />
+              </node>
+              <node concept="2OqwBi" id="3UQOpsm4iie" role="37vLTJ">
+                <node concept="3urNQE" id="3UQOpsm4ies" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+                </node>
+                <node concept="2S8uIT" id="3UQOpsm4ilm" role="2OqNvi">
+                  <ref role="2S8YL0" to="agw3:3UQOpsm4hJ0" resolve="text" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3UQOpsm4iLi" role="3cqZAp">
+            <node concept="37vLTI" id="3UQOpsm4jaK" role="3clFbG">
+              <node concept="Xl_RD" id="3UQOpsm4jd5" role="37vLTx">
+                <property role="Xl_RC" value="Schöne Grüße, Daniel" />
+              </node>
+              <node concept="2OqwBi" id="3UQOpsm4iQw" role="37vLTJ">
+                <node concept="3urNQE" id="3UQOpsm4iLg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+                </node>
+                <node concept="2S8uIT" id="3UQOpsm4iUW" role="2OqNvi">
+                  <ref role="2S8YL0" to="agw3:3UQOpsm4jnK" resolve="text2" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3UQOpsm4j9B" role="3cqZAp" />
           <node concept="3clFbF" id="3P_LmWszuwK" role="3cqZAp">
             <node concept="3urNQE" id="3P_LmWszuwJ" role="3clFbG">
               <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
@@ -935,6 +997,9 @@
       </node>
       <node concept="3063JU" id="3P_LmWszuvh" role="3063Jp">
         <ref role="3063JT" node="6SMC$eDSOhD" resolve="ImagePP" />
+      </node>
+      <node concept="Xl_RD" id="5_Fm8hm2w85" role="1K0AWC">
+        <property role="Xl_RC" value="Weihnachtsgrüsse aus Vorarlberg" />
       </node>
     </node>
     <node concept="3ulXEN" id="3P_LmWszt8J" role="3ulXEL">
@@ -954,6 +1019,7 @@
     <node concept="2U5qGN" id="3EFS_eyyz2h" role="21u2x1">
       <property role="TrG5h" value="#" />
       <node concept="2U5nhG" id="3EFS_eyyz6o" role="2U5niL" />
+      <node concept="2U5nhG" id="3UQOpsm4jJ5" role="2U5niL" />
       <node concept="2U5nhG" id="3EFS_eyyz2i" role="2U5niJ" />
       <node concept="2U5nhG" id="2df4HcRObvJ" role="2U5niJ" />
       <node concept="2U5qGO" id="3EFS_eyyz3v" role="21u2wS">
@@ -966,7 +1032,7 @@
           </node>
           <node concept="Pl0kO" id="5p0Do9zTGn0" role="PoUSh">
             <node concept="Xl_RD" id="5p0Do9zTGn1" role="Pl0ln">
-              <property role="Xl_RC" value="800,800" />
+              <property role="Xl_RC" value="400, 0" />
             </node>
           </node>
         </node>
@@ -978,7 +1044,7 @@
         <node concept="3Oe2IN" id="65FLMuCP6TY" role="3OfFNq">
           <node concept="Pl0HC" id="65FLMuCP6Y5" role="PoUSh">
             <node concept="Xl_RD" id="65FLMuCP6Y7" role="Pl0H_">
-              <property role="Xl_RC" value="ID des Bildes" />
+              <property role="Xl_RC" value="Weihnachts ID" />
             </node>
           </node>
           <node concept="3Oe$u_" id="65FLMuCP6U1" role="3Oe2NS">
@@ -987,24 +1053,64 @@
         </node>
         <node concept="3Oe2Ik" id="65FLMuCTcwh" role="3OfFNq">
           <node concept="3Oe$u_" id="65FLMuCTcwi" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
+            <ref role="3O0p26" to="agw3:3UQOpsm4hJ0" resolve="text" />
           </node>
           <node concept="Pl0HC" id="65FLMuCTcwH" role="PoUSh">
             <node concept="Xl_RD" id="65FLMuCTcwI" role="Pl0H_">
-              <property role="Xl_RC" value="Pfad zum Bild" />
+              <property role="Xl_RC" value="Weihnachts Botschaft" />
             </node>
           </node>
           <node concept="P9SqB" id="2df4HcRPxOG" role="PoUSh">
             <property role="P9SrG" value="10" />
           </node>
         </node>
-        <node concept="2TG9WT" id="3P_LmWszuuJ" role="3OfFNq">
-          <node concept="3Oe$u_" id="3P_LmWszuuM" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:17o2t3rKeyq" resolve="takenTimeStamp" />
-          </node>
-        </node>
         <node concept="2U5nhG" id="2df4HcRObwD" role="2TFpq_" />
         <node concept="PoU6y" id="4gA8nKcMMQk" role="PoUSn" />
+      </node>
+      <node concept="2U5qGO" id="3UQOpsm4jJI" role="21u2wS">
+        <property role="TrG5h" value="#" />
+        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+        <node concept="3Oe2IN" id="3UQOpsm4jJJ" role="3OfFNq">
+          <node concept="Pl0HC" id="3UQOpsm4jJK" role="PoUSh">
+            <node concept="Xl_RD" id="3UQOpsm4jJL" role="Pl0H_">
+              <property role="Xl_RC" value="Weihnachts ID" />
+            </node>
+          </node>
+          <node concept="3Oe$u_" id="3UQOpsm4jJM" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
+          </node>
+        </node>
+        <node concept="3Oe2Ik" id="3UQOpsm4jJN" role="3OfFNq">
+          <node concept="3Oe$u_" id="3UQOpsm4jJO" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:3UQOpsm4jnK" resolve="text2" />
+          </node>
+          <node concept="Pl0HC" id="3UQOpsm4jJP" role="PoUSh">
+            <node concept="Xl_RD" id="3UQOpsm4jJQ" role="Pl0H_">
+              <property role="Xl_RC" value="Weihnachts Botschaft" />
+            </node>
+          </node>
+          <node concept="P9SqB" id="3UQOpsm4jJR" role="PoUSh">
+            <property role="P9SrG" value="10" />
+          </node>
+        </node>
+        <node concept="2U5nhG" id="3UQOpsm4jJU" role="2TFpq_" />
+        <node concept="PoU6y" id="3UQOpsm4jJV" role="PoUSn" />
+      </node>
+      <node concept="2U5qGO" id="3UQOpsm4jJB" role="21u2wS">
+        <property role="TrG5h" value="#" />
+        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+        <node concept="2U5nhG" id="3UQOpsm4jJC" role="2TFpq_" />
+        <node concept="2TG9WV" id="3UQOpsm4jJD" role="3OfFNq">
+          <node concept="3Oe$u_" id="3UQOpsm4jJE" role="3Oe2NS">
+            <ref role="3O0p26" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
+          </node>
+          <node concept="Pl0kO" id="3UQOpsm4jJF" role="PoUSh">
+            <node concept="Xl_RD" id="3UQOpsm4jJG" role="Pl0ln">
+              <property role="Xl_RC" value="0, 400" />
+            </node>
+          </node>
+        </node>
+        <node concept="PoU6y" id="3UQOpsm4jJH" role="PoUSn" />
       </node>
     </node>
   </node>

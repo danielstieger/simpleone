@@ -93,6 +93,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
+        <child id="1083620718216065081" name="singleLines" index="13z7HO" />
+      </concept>
       <concept id="3262649880239917894" name="org.modellwerkstatt.objectflow.structure.OppositeOption" flags="ng" index="2fr8A1" />
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
@@ -124,6 +127,7 @@
       </concept>
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
         <child id="3674496190757459099" name="propertyOption" index="0orDa" />
+        <child id="6287236659904683502" name="documentation" index="3b_Q0" />
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
@@ -200,6 +204,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -392,6 +404,78 @@
       </node>
       <node concept="Xl_RD" id="17o2t3rKexO" role="2CNmdL">
         <property role="Xl_RC" value="Picture" />
+      </node>
+    </node>
+    <node concept="1bOX9e" id="3UQOpsm4hE3" role="TxmiU">
+      <property role="2RkwnN" value="fileName2" />
+      <node concept="3Tm1VV" id="3UQOpsm4hE9" role="1B3o_S" />
+      <node concept="2RoN1w" id="3UQOpsm4hEa" role="2RnVtd">
+        <node concept="3wEZqW" id="3UQOpsm4hEb" role="3wFrgM" />
+        <node concept="3xqBd$" id="3UQOpsm4hEc" role="3xrYvX">
+          <node concept="3Tm1VV" id="3UQOpsm4hEe" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="3UQOpsm4hFQ" role="2RkE6I" />
+      <node concept="Xl_RD" id="3UQOpsm4hMQ" role="2CNmdP">
+        <property role="Xl_RC" value="Pic2" />
+      </node>
+      <node concept="Xl_RD" id="3UQOpsm4hMR" role="2CNmdL">
+        <property role="Xl_RC" value="Pic2" />
+      </node>
+      <node concept="20vkWO" id="3UQOpsm4hMS" role="3b_Q0">
+        <node concept="1PaTwC" id="3UQOpsm4hMT" role="13z7HO">
+          <node concept="3oM_SD" id="3UQOpsm4hMU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1bOX9e" id="3UQOpsm4hJ0" role="TxmiU">
+      <property role="2RkwnN" value="text" />
+      <node concept="3Tm1VV" id="3UQOpsm4hJ1" role="1B3o_S" />
+      <node concept="2RoN1w" id="3UQOpsm4hJ2" role="2RnVtd">
+        <node concept="3wEZqW" id="3UQOpsm4hJ3" role="3wFrgM" />
+        <node concept="3xqBd$" id="3UQOpsm4hJ4" role="3xrYvX">
+          <node concept="3Tm1VV" id="3UQOpsm4hJ5" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="3UQOpsm4hJ6" role="2RkE6I" />
+      <node concept="Xl_RD" id="3UQOpsm4hLJ" role="2CNmdP">
+        <property role="Xl_RC" value="Text" />
+      </node>
+      <node concept="Xl_RD" id="3UQOpsm4hLK" role="2CNmdL">
+        <property role="Xl_RC" value="Text" />
+      </node>
+      <node concept="20vkWO" id="3UQOpsm4hLL" role="3b_Q0">
+        <node concept="1PaTwC" id="3UQOpsm4hLM" role="13z7HO">
+          <node concept="3oM_SD" id="3UQOpsm4hLN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1bOX9e" id="3UQOpsm4jnK" role="TxmiU">
+      <property role="2RkwnN" value="text2" />
+      <node concept="3Tm1VV" id="3UQOpsm4jnL" role="1B3o_S" />
+      <node concept="2RoN1w" id="3UQOpsm4jnM" role="2RnVtd">
+        <node concept="3wEZqW" id="3UQOpsm4jnN" role="3wFrgM" />
+        <node concept="3xqBd$" id="3UQOpsm4jnO" role="3xrYvX">
+          <node concept="3Tm1VV" id="3UQOpsm4jnP" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="3UQOpsm4jnQ" role="2RkE6I" />
+      <node concept="Xl_RD" id="3UQOpsm4jnR" role="2CNmdP">
+        <property role="Xl_RC" value="Text" />
+      </node>
+      <node concept="Xl_RD" id="3UQOpsm4jnS" role="2CNmdL">
+        <property role="Xl_RC" value="Text" />
+      </node>
+      <node concept="20vkWO" id="3UQOpsm4jnT" role="3b_Q0">
+        <node concept="1PaTwC" id="3UQOpsm4jnU" role="13z7HO">
+          <node concept="3oM_SD" id="3UQOpsm4jnV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1bOX9e" id="17o2t3rKeyq" role="TxmiU">

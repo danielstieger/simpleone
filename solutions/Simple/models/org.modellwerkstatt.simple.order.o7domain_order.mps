@@ -2671,7 +2671,7 @@
                     <property role="3cmrfH" value="50" />
                   </node>
                   <node concept="3cmrfG" id="4nH4LOF$GQ4" role="37wK5m">
-                    <property role="3cmrfH" value="100" />
+                    <property role="3cmrfH" value="30" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GQ5" role="37vLTJ">
@@ -2815,7 +2815,7 @@
               <ref role="3cqZAo" node="4nH4LOF$GQV" resolve="i" />
             </node>
             <node concept="3cmrfG" id="4nH4LOF$GR0" role="3uHU7w">
-              <property role="3cmrfH" value="100" />
+              <property role="3cmrfH" value="200" />
             </node>
           </node>
           <node concept="3uNrnE" id="4nH4LOF$GR1" role="1Dwrff">

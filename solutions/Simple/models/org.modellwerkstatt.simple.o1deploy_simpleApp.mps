@@ -416,7 +416,7 @@
     </node>
     <node concept="2$ntO6" id="1p9ACItUFgA" role="2$nsuY">
       <node concept="33WYYh" id="1p9ACItUFgB" role="2$ntUL">
-        <ref role="2_Hrw8" to="ptpb:1p9ACItUpyZ" resolve="Edit article" />
+        <ref role="2_Hrw8" to="ptpb:1p9ACItUpyZ" resolve="Open Article" />
       </node>
     </node>
     <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">

@@ -501,7 +501,9 @@
       <concept id="465568541577797267" name="org.modellwerkstatt.dataux.structure.RefDelegateScopeProps" flags="ng" index="P8lqc">
         <child id="465568541577695010" name="paths" index="P8WsX" />
       </concept>
-      <concept id="465568541577412058" name="org.modellwerkstatt.dataux.structure.OptionalDOption" flags="ng" index="P9Rn5" />
+      <concept id="465568541577412058" name="org.modellwerkstatt.dataux.structure.OptionalDOption" flags="ng" index="P9Rn5">
+        <child id="6624392343692574091" name="text" index="1DsAKQ" />
+      </concept>
       <concept id="465568541577416376" name="org.modellwerkstatt.dataux.structure.NumOfLinesDOption" flags="ng" index="P9SqB">
         <property id="465568541577416435" name="lines" index="P9SrG" />
       </concept>
@@ -13370,6 +13372,11 @@
           <ref role="3O0p26" node="AN_117f5oM" resolve="status" />
         </node>
         <node concept="1rY4HC" id="wKUrrJ3o1W" role="PoUSh" />
+        <node concept="P9Rn5" id="5JI$rONhrUc" role="PoUSh">
+          <node concept="Xl_RD" id="5JI$rONhs3j" role="1DsAKQ">
+            <property role="Xl_RC" value="alle" />
+          </node>
+        </node>
       </node>
       <node concept="3Oe2Ik" id="5_fa4bCwniZ" role="3OfFNq">
         <node concept="3Oe$u_" id="5_fa4bCwnj0" role="3Oe2NS">
@@ -21125,6 +21132,11 @@
         </node>
         <node concept="1rY4HC" id="5ENc$5xh7eC" role="PoUSh" />
         <node concept="Pk6Vc" id="5ENc$5xi8Da" role="PoUSh" />
+        <node concept="P9Rn5" id="5JI$rONiKas" role="PoUSh">
+          <node concept="Xl_RD" id="5JI$rONiKaI" role="1DsAKQ">
+            <property role="Xl_RC" value="alles" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
