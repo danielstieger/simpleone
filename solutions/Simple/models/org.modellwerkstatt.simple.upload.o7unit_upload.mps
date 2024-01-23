@@ -578,7 +578,7 @@
         <ref role="3063JT" node="17o2t3rKeWM" resolve="PPAlbumMain" />
       </node>
       <node concept="10qiFn" id="17o2t3rKeXB" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3dciNchuq2M" resolve="SAVE_CLOSE" />
+        <ref role="2DFCCC" to="oyrz:6XA$NCcU$N8" resolve="CFT_SaveNClose" />
         <node concept="20qIzx" id="17o2t3rKeXC" role="10ot2L">
           <node concept="3clFbS" id="17o2t3rKeXD" role="2VODD2">
             <node concept="10Adxj" id="17o2t3rKeXE" role="3cqZAp" />

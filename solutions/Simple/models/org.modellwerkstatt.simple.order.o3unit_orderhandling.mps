@@ -913,7 +913,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="3l4K2g6Yf3C" role="3cqZAp" />
           <node concept="3clFbF" id="5T7F9S91R7o" role="3cqZAp">
             <node concept="37vLTI" id="5T7F9S91Rft" role="3clFbG">
               <node concept="3urNR4" id="5T7F9S91Rl2" role="37vLTx">
@@ -8864,19 +8863,6 @@
       </node>
       <node concept="20qEzJ" id="U8r3Yq8LNm" role="10qiF$">
         <node concept="3clFbS" id="U8r3Yq8LNn" role="2VODD2">
-          <node concept="1mFxgN" id="5KfzM7LTX46" role="3cqZAp">
-            <node concept="2OqwBi" id="5KfzM7LTXCH" role="1mFxgj">
-              <node concept="2OqwBi" id="5KfzM7LTX9c" role="2Oq$k0">
-                <node concept="3urNQE" id="5KfzM7LTX52" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5TC7JC3WpvL" resolve="orderprocParam" />
-                </node>
-                <node concept="2S8uIT" id="5KfzM7LTXe2" role="2OqNvi">
-                  <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-                </node>
-              </node>
-              <node concept="1yVyf7" id="5KfzM7LTY0o" role="2OqNvi" />
-            </node>
-          </node>
           <node concept="3clFbF" id="U8r3Yq8LNo" role="3cqZAp">
             <node concept="3urNQE" id="5TC7JC3WpvR" role="3clFbG">
               <ref role="3cqZAo" node="5TC7JC3WpvL" resolve="orderprocParam" />
@@ -17748,7 +17734,7 @@
                     <node concept="liA8E" id="7IcK5LmworA" role="2OqNvi">
                       <ref role="37wK5l" to="28jr:7IcK5LnO6fO" resolve="setValidationError" />
                       <node concept="Xl_RD" id="7IcK5LmworB" role="37wK5m">
-                        <property role="Xl_RC" value="Positionswert muss größer als 100 sein." />
+                        <property role="Xl_RC" value="Positionswert muss kleiner als 100 sein." />
                       </node>
                     </node>
                   </node>
@@ -17773,13 +17759,13 @@
                         </node>
                       </node>
                       <node concept="ic4WF" id="7IcK5LmworL" role="icr7_">
-                        <property role="ic4Xk" value="Positionswert muss für Position %s größer als 100 sein, jetzt %bd" />
+                        <property role="ic4Xk" value="Positionswert muss für Position %s kleiner als 100 sein, jetzt %bd" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3eOVzh" id="7IcK5LmworM" role="3clFbw">
+              <node concept="3eOSWO" id="5Gik3L6dGGv" role="3clFbw">
                 <node concept="2OqwBi" id="7IcK5LmworN" role="3uHU7B">
                   <node concept="3urNR4" id="7IcK5LmwyTk" role="2Oq$k0">
                     <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
@@ -17944,94 +17930,94 @@
         <node concept="20qIzx" id="7IcK5Lmwouw" role="10ot2L">
           <node concept="3clFbS" id="7IcK5Lmwoux" role="2VODD2">
             <node concept="3clFbH" id="7IcK5LmwouA" role="3cqZAp" />
-            <node concept="3SKdUt" id="7IcK5LmwzIR" role="3cqZAp">
-              <node concept="1PaTwC" id="7IcK5LmwzIS" role="1aUNEU">
-                <node concept="3oM_SD" id="7IcK5LmwzIT" role="1PaTwD">
+            <node concept="3SKdUt" id="5Gik3L6dH4F" role="3cqZAp">
+              <node concept="1PaTwC" id="5Gik3L6dH4G" role="1aUNEU">
+                <node concept="3oM_SD" id="5Gik3L6dH4H" role="1PaTwD">
                   <property role="3oM_SC" value="clear" />
                 </node>
-                <node concept="3oM_SD" id="7IcK5LmwzIU" role="1PaTwD">
+                <node concept="3oM_SD" id="5Gik3L6dH4I" role="1PaTwD">
                   <property role="3oM_SC" value="red" />
                 </node>
-                <node concept="3oM_SD" id="7IcK5LmwzIV" role="1PaTwD">
+                <node concept="3oM_SD" id="5Gik3L6dH4J" role="1PaTwD">
                   <property role="3oM_SC" value="error" />
                 </node>
-                <node concept="3oM_SD" id="7IcK5LmwzIW" role="1PaTwD">
+                <node concept="3oM_SD" id="5Gik3L6dH4K" role="1PaTwD">
                   <property role="3oM_SC" value="marker" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7IcK5LpRfH0" role="3cqZAp">
-              <node concept="2OqwBi" id="7IcK5LpRfH1" role="3clFbG">
-                <node concept="2OqwBi" id="7IcK5LpRfH2" role="2Oq$k0">
-                  <node concept="3urNR4" id="7IcK5LpRfH3" role="2Oq$k0">
+            <node concept="3clFbF" id="5Gik3L6dH4L" role="3cqZAp">
+              <node concept="2OqwBi" id="5Gik3L6dH4M" role="3clFbG">
+                <node concept="2OqwBi" id="5Gik3L6dH4N" role="2Oq$k0">
+                  <node concept="3urNR4" id="5Gik3L6dH4O" role="2Oq$k0">
                     <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                   </node>
-                  <node concept="2dcwcJ" id="7IcK5LpRfH4" role="2OqNvi">
+                  <node concept="2dcwcJ" id="5Gik3L6dH4P" role="2OqNvi">
                     <ref role="2dcwcH" to="eqbi:AN_117bbe2" resolve="posValue" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7IcK5LpRfH5" role="2OqNvi">
+                <node concept="liA8E" id="5Gik3L6dH4Q" role="2OqNvi">
                   <ref role="37wK5l" to="28jr:7IcK5LnO6fO" resolve="setValidationError" />
-                  <node concept="10Nm6u" id="7IcK5LpRvz8" role="37wK5m" />
+                  <node concept="10Nm6u" id="5Gik3L6dH4R" role="37wK5m" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="7IcK5LmwzJ4" role="3cqZAp">
-              <node concept="3clFbS" id="7IcK5LmwzJ5" role="3clFbx">
-                <node concept="3clFbF" id="7IcK5LmwzJ6" role="3cqZAp">
-                  <node concept="2OqwBi" id="7IcK5LmwzJ7" role="3clFbG">
-                    <node concept="2OqwBi" id="7IcK5LmwzJ8" role="2Oq$k0">
-                      <node concept="3urNR4" id="7IcK5LmwzJ9" role="2Oq$k0">
+            <node concept="3clFbJ" id="5Gik3L6dH4S" role="3cqZAp">
+              <node concept="3clFbS" id="5Gik3L6dH4T" role="3clFbx">
+                <node concept="3clFbF" id="5Gik3L6dH4U" role="3cqZAp">
+                  <node concept="2OqwBi" id="5Gik3L6dH4V" role="3clFbG">
+                    <node concept="2OqwBi" id="5Gik3L6dH4W" role="2Oq$k0">
+                      <node concept="3urNR4" id="5Gik3L6dH4X" role="2Oq$k0">
                         <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                       </node>
-                      <node concept="2dcwcJ" id="7IcK5LmwzJa" role="2OqNvi">
+                      <node concept="2dcwcJ" id="5Gik3L6dH4Y" role="2OqNvi">
                         <ref role="2dcwcH" to="eqbi:AN_117bbe2" resolve="posValue" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7IcK5LmwzJb" role="2OqNvi">
+                    <node concept="liA8E" id="5Gik3L6dH4Z" role="2OqNvi">
                       <ref role="37wK5l" to="28jr:7IcK5LnO6fO" resolve="setValidationError" />
-                      <node concept="Xl_RD" id="7IcK5LmwzJc" role="37wK5m">
-                        <property role="Xl_RC" value="Positionswert muss größer als 100 sein." />
+                      <node concept="Xl_RD" id="5Gik3L6dH50" role="37wK5m">
+                        <property role="Xl_RC" value="Positionswert muss kleiner als 100 sein." />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="mlg3r" id="7IcK5LmwzJd" role="3cqZAp">
-                  <node concept="lgADV" id="7IcK5LmwzJe" role="mlgNH">
-                    <node concept="35AVbj" id="7IcK5LmwzJf" role="lgxf9">
-                      <node concept="2OqwBi" id="7IcK5LmwzJg" role="35Gt3$">
-                        <node concept="3urNR4" id="7IcK5LmwzJh" role="2Oq$k0">
+                <node concept="mlg3r" id="5Gik3L6dH51" role="3cqZAp">
+                  <node concept="lgADV" id="5Gik3L6dH52" role="mlgNH">
+                    <node concept="35AVbj" id="5Gik3L6dH53" role="lgxf9">
+                      <node concept="2OqwBi" id="5Gik3L6dH54" role="35Gt3$">
+                        <node concept="3urNR4" id="5Gik3L6dH55" role="2Oq$k0">
                           <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                         </node>
-                        <node concept="2S8uIT" id="7IcK5LmwzJi" role="2OqNvi">
+                        <node concept="2S8uIT" id="5Gik3L6dH56" role="2OqNvi">
                           <ref role="2S8YL0" to="eqbi:AN_117bbdT" resolve="name" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="7IcK5LmwzJj" role="35Gt3$">
-                        <node concept="3urNR4" id="7IcK5LmwzJk" role="2Oq$k0">
+                      <node concept="2OqwBi" id="5Gik3L6dH57" role="35Gt3$">
+                        <node concept="3urNR4" id="5Gik3L6dH58" role="2Oq$k0">
                           <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                         </node>
-                        <node concept="2S8uIT" id="7IcK5LmwzJl" role="2OqNvi">
+                        <node concept="2S8uIT" id="5Gik3L6dH59" role="2OqNvi">
                           <ref role="2S8YL0" to="eqbi:AN_117bbe2" resolve="posValue" />
                         </node>
                       </node>
-                      <node concept="ic4WF" id="7IcK5LmwzJm" role="icr7_">
-                        <property role="ic4Xk" value="Positionswert muss für Position %s größer als 100 sein, jetzt %bd" />
+                      <node concept="ic4WF" id="5Gik3L6dH5a" role="icr7_">
+                        <property role="ic4Xk" value="Positionswert muss für Position %s kleiner als 100 sein, jetzt %bd" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3eOVzh" id="7IcK5LmwzJn" role="3clFbw">
-                <node concept="2OqwBi" id="7IcK5LmwzJo" role="3uHU7B">
-                  <node concept="3urNR4" id="7IcK5LmwzJp" role="2Oq$k0">
+              <node concept="3eOSWO" id="5Gik3L6dH5b" role="3clFbw">
+                <node concept="2OqwBi" id="5Gik3L6dH5c" role="3uHU7B">
+                  <node concept="3urNR4" id="5Gik3L6dH5d" role="2Oq$k0">
                     <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                   </node>
-                  <node concept="2S8uIT" id="7IcK5LmwzJq" role="2OqNvi">
+                  <node concept="2S8uIT" id="5Gik3L6dH5e" role="2OqNvi">
                     <ref role="2S8YL0" to="eqbi:AN_117bbe2" resolve="posValue" />
                   </node>
                 </node>
-                <node concept="1mgVXT" id="7IcK5LmwzJr" role="3uHU7w">
+                <node concept="1mgVXT" id="5Gik3L6dH5f" role="3uHU7w">
                   <property role="1mgVXS" value="100.0bd" />
                 </node>
               </node>
@@ -18145,94 +18131,94 @@
         <ref role="2DFCCC" to="oyrz:2qcR1OSjf2i" resolve="CFT_NEXT" />
         <node concept="20qIzx" id="7IcK5Lmwov$" role="10ot2L">
           <node concept="3clFbS" id="7IcK5Lmwov_" role="2VODD2">
-            <node concept="3SKdUt" id="7IcK5LmwAqX" role="3cqZAp">
-              <node concept="1PaTwC" id="7IcK5LmwAqY" role="1aUNEU">
-                <node concept="3oM_SD" id="7IcK5LmwAqZ" role="1PaTwD">
+            <node concept="3SKdUt" id="5Gik3L6dHGg" role="3cqZAp">
+              <node concept="1PaTwC" id="5Gik3L6dHGh" role="1aUNEU">
+                <node concept="3oM_SD" id="5Gik3L6dHGi" role="1PaTwD">
                   <property role="3oM_SC" value="clear" />
                 </node>
-                <node concept="3oM_SD" id="7IcK5LmwAr0" role="1PaTwD">
+                <node concept="3oM_SD" id="5Gik3L6dHGj" role="1PaTwD">
                   <property role="3oM_SC" value="red" />
                 </node>
-                <node concept="3oM_SD" id="7IcK5LmwAr1" role="1PaTwD">
+                <node concept="3oM_SD" id="5Gik3L6dHGk" role="1PaTwD">
                   <property role="3oM_SC" value="error" />
                 </node>
-                <node concept="3oM_SD" id="7IcK5LmwAr2" role="1PaTwD">
+                <node concept="3oM_SD" id="5Gik3L6dHGl" role="1PaTwD">
                   <property role="3oM_SC" value="marker" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7IcK5LmwAr3" role="3cqZAp">
-              <node concept="2OqwBi" id="7IcK5LmwAr4" role="3clFbG">
-                <node concept="2OqwBi" id="7IcK5LmwAr5" role="2Oq$k0">
-                  <node concept="3urNR4" id="7IcK5LmwAr6" role="2Oq$k0">
+            <node concept="3clFbF" id="5Gik3L6dHGm" role="3cqZAp">
+              <node concept="2OqwBi" id="5Gik3L6dHGn" role="3clFbG">
+                <node concept="2OqwBi" id="5Gik3L6dHGo" role="2Oq$k0">
+                  <node concept="3urNR4" id="5Gik3L6dHGp" role="2Oq$k0">
                     <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                   </node>
-                  <node concept="2dcwcJ" id="7IcK5LmwAr7" role="2OqNvi">
+                  <node concept="2dcwcJ" id="5Gik3L6dHGq" role="2OqNvi">
                     <ref role="2dcwcH" to="eqbi:AN_117bbe2" resolve="posValue" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7IcK5LmwAr8" role="2OqNvi">
+                <node concept="liA8E" id="5Gik3L6dHGr" role="2OqNvi">
                   <ref role="37wK5l" to="28jr:7IcK5LnO6fO" resolve="setValidationError" />
-                  <node concept="10Nm6u" id="7IcK5LpRvvM" role="37wK5m" />
+                  <node concept="10Nm6u" id="5Gik3L6dHGs" role="37wK5m" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="7IcK5LmwAra" role="3cqZAp">
-              <node concept="3clFbS" id="7IcK5LmwArb" role="3clFbx">
-                <node concept="3clFbF" id="7IcK5LmwArc" role="3cqZAp">
-                  <node concept="2OqwBi" id="7IcK5LmwArd" role="3clFbG">
-                    <node concept="2OqwBi" id="7IcK5LmwAre" role="2Oq$k0">
-                      <node concept="3urNR4" id="7IcK5LmwArf" role="2Oq$k0">
+            <node concept="3clFbJ" id="5Gik3L6dHGt" role="3cqZAp">
+              <node concept="3clFbS" id="5Gik3L6dHGu" role="3clFbx">
+                <node concept="3clFbF" id="5Gik3L6dHGv" role="3cqZAp">
+                  <node concept="2OqwBi" id="5Gik3L6dHGw" role="3clFbG">
+                    <node concept="2OqwBi" id="5Gik3L6dHGx" role="2Oq$k0">
+                      <node concept="3urNR4" id="5Gik3L6dHGy" role="2Oq$k0">
                         <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                       </node>
-                      <node concept="2dcwcJ" id="7IcK5LmwArg" role="2OqNvi">
+                      <node concept="2dcwcJ" id="5Gik3L6dHGz" role="2OqNvi">
                         <ref role="2dcwcH" to="eqbi:AN_117bbe2" resolve="posValue" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7IcK5LmwArh" role="2OqNvi">
+                    <node concept="liA8E" id="5Gik3L6dHG$" role="2OqNvi">
                       <ref role="37wK5l" to="28jr:7IcK5LnO6fO" resolve="setValidationError" />
-                      <node concept="Xl_RD" id="7IcK5LmwAri" role="37wK5m">
-                        <property role="Xl_RC" value="Positionswert muss größer als 100 sein." />
+                      <node concept="Xl_RD" id="5Gik3L6dHG_" role="37wK5m">
+                        <property role="Xl_RC" value="Positionswert muss kleiner als 100 sein." />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="mlg3r" id="7IcK5LmwArj" role="3cqZAp">
-                  <node concept="lgADV" id="7IcK5LmwArk" role="mlgNH">
-                    <node concept="35AVbj" id="7IcK5LmwArl" role="lgxf9">
-                      <node concept="2OqwBi" id="7IcK5LmwArm" role="35Gt3$">
-                        <node concept="3urNR4" id="7IcK5LmwArn" role="2Oq$k0">
+                <node concept="mlg3r" id="5Gik3L6dHGA" role="3cqZAp">
+                  <node concept="lgADV" id="5Gik3L6dHGB" role="mlgNH">
+                    <node concept="35AVbj" id="5Gik3L6dHGC" role="lgxf9">
+                      <node concept="2OqwBi" id="5Gik3L6dHGD" role="35Gt3$">
+                        <node concept="3urNR4" id="5Gik3L6dHGE" role="2Oq$k0">
                           <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                         </node>
-                        <node concept="2S8uIT" id="7IcK5LmwAro" role="2OqNvi">
+                        <node concept="2S8uIT" id="5Gik3L6dHGF" role="2OqNvi">
                           <ref role="2S8YL0" to="eqbi:AN_117bbdT" resolve="name" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="7IcK5LmwArp" role="35Gt3$">
-                        <node concept="3urNR4" id="7IcK5LmwArq" role="2Oq$k0">
+                      <node concept="2OqwBi" id="5Gik3L6dHGG" role="35Gt3$">
+                        <node concept="3urNR4" id="5Gik3L6dHGH" role="2Oq$k0">
                           <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                         </node>
-                        <node concept="2S8uIT" id="7IcK5LmwArr" role="2OqNvi">
+                        <node concept="2S8uIT" id="5Gik3L6dHGI" role="2OqNvi">
                           <ref role="2S8YL0" to="eqbi:AN_117bbe2" resolve="posValue" />
                         </node>
                       </node>
-                      <node concept="ic4WF" id="7IcK5LmwArs" role="icr7_">
-                        <property role="ic4Xk" value="Positionswert muss für Position %s größer als 100 sein, jetzt %bd" />
+                      <node concept="ic4WF" id="5Gik3L6dHGJ" role="icr7_">
+                        <property role="ic4Xk" value="Positionswert muss für Position %s kleiner als 100 sein, jetzt %bd" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3eOVzh" id="7IcK5LmwArt" role="3clFbw">
-                <node concept="2OqwBi" id="7IcK5LmwAru" role="3uHU7B">
-                  <node concept="3urNR4" id="7IcK5LmwArv" role="2Oq$k0">
+              <node concept="3eOSWO" id="5Gik3L6dHGK" role="3clFbw">
+                <node concept="2OqwBi" id="5Gik3L6dHGL" role="3uHU7B">
+                  <node concept="3urNR4" id="5Gik3L6dHGM" role="2Oq$k0">
                     <ref role="3cqZAo" node="5Cyya9$rUBM" resolve="currentPos" />
                   </node>
-                  <node concept="2S8uIT" id="7IcK5LmwArw" role="2OqNvi">
+                  <node concept="2S8uIT" id="5Gik3L6dHGN" role="2OqNvi">
                     <ref role="2S8YL0" to="eqbi:AN_117bbe2" resolve="posValue" />
                   </node>
                 </node>
-                <node concept="1mgVXT" id="7IcK5LmwArx" role="3uHU7w">
+                <node concept="1mgVXT" id="5Gik3L6dHGO" role="3uHU7w">
                   <property role="1mgVXS" value="100.0bd" />
                 </node>
               </node>
@@ -19185,6 +19171,7 @@
           <node concept="3Oe$u_" id="7IcK5LneMzZ" role="3Oe2NS">
             <ref role="3O0p26" to="eqbi:AN_117bbdT" resolve="name" />
           </node>
+          <node concept="Pevqn" id="7JMWRR8yZJI" role="PoUSh" />
         </node>
         <node concept="2TG9WX" id="7IcK5LneM$2" role="3OfFNq">
           <node concept="3Oe$u_" id="7IcK5LneM$3" role="3Oe2NS">

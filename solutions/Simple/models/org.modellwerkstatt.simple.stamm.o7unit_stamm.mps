@@ -638,7 +638,7 @@
         </node>
       </node>
       <node concept="10qiFn" id="1p9ACItUp$I" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3dciNchuq2M" resolve="SAVE_CLOSE" />
+        <ref role="2DFCCC" to="oyrz:6XA$NCcU$N8" resolve="CFT_SaveNClose" />
         <node concept="20qIzx" id="1p9ACItUp$J" role="10ot2L">
           <node concept="3clFbS" id="1p9ACItUp$K" role="2VODD2">
             <node concept="10Adxj" id="1p9ACItUp$L" role="3cqZAp" />
@@ -945,11 +945,6 @@
           <ref role="1Tjo7l" to="4njd:3cAl6M4nWUn" resolve="Article" />
           <node concept="1wFRl1" id="1_bxO0AGsKV" role="3OfFNq" />
           <node concept="2U5nhG" id="1_bxO0AGsIq" role="2TFpq_" />
-          <node concept="PoUSf" id="1_bxO0AGsIt" role="PoUSn">
-            <node concept="Xl_RD" id="1_bxO0AGsIr" role="PoUSc">
-              <property role="Xl_RC" value="Article" />
-            </node>
-          </node>
         </node>
         <node concept="2mKV1J" id="3ull2ZuuItl" role="21u2wS">
           <property role="TrG5h" value="#" />
