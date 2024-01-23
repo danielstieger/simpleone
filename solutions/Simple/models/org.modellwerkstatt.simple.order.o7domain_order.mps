@@ -275,6 +275,9 @@
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
+      <concept id="2338955645597912844" name="org.modellwerkstatt.objectflow.structure.OptionalAsStatusDeclOption" flags="ng" index="1hdUN8">
+        <child id="2338955645597912846" name="string" index="1hdUNa" />
+      </concept>
       <concept id="836579671456120410" name="org.modellwerkstatt.objectflow.structure.EqualPropertyReference" flags="ng" index="1kU5Ut">
         <reference id="836579671456120411" name="property" index="1kU5Us" />
       </concept>
@@ -1196,6 +1199,9 @@
         </node>
       </node>
       <node concept="1TNdZI" id="2kpuhi0Aa5k" role="1TMXFZ" />
+      <node concept="1hdUN8" id="21PCWhM1nuu" role="1TMXFZ">
+        <node concept="Xl_RD" id="21PCWhM1nwV" role="1hdUNa" />
+      </node>
     </node>
     <node concept="1bOX9e" id="6WkQmwhUpfW" role="TxmiU">
       <property role="2RkwnN" value="money" />
@@ -2166,7 +2172,7 @@
                     <ref role="3cqZAo" node="4nH4LOF$GOj" resolve="i" />
                   </node>
                   <node concept="3cmrfG" id="4nH4LOF$GNO" role="37wK5m">
-                    <property role="3cmrfH" value="200" />
+                    <property role="3cmrfH" value="10" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GNP" role="37vLTJ">
@@ -2671,7 +2677,7 @@
                     <property role="3cmrfH" value="50" />
                   </node>
                   <node concept="3cmrfG" id="4nH4LOF$GQ4" role="37wK5m">
-                    <property role="3cmrfH" value="30" />
+                    <property role="3cmrfH" value="20" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4nH4LOF$GQ5" role="37vLTJ">
@@ -2815,7 +2821,7 @@
               <ref role="3cqZAo" node="4nH4LOF$GQV" resolve="i" />
             </node>
             <node concept="3cmrfG" id="4nH4LOF$GR0" role="3uHU7w">
-              <property role="3cmrfH" value="200" />
+              <property role="3cmrfH" value="30" />
             </node>
           </node>
           <node concept="3uNrnE" id="4nH4LOF$GR1" role="1Dwrff">
