@@ -285,7 +285,7 @@
       <node concept="3clFbS" id="1SuqpWQMcjS" role="3clF47">
         <node concept="3cpWs6" id="1SuqpWQMcAe" role="3cqZAp">
           <node concept="Xl_RD" id="1SuqpWQMcAf" role="3cqZAk">
-            <property role="Xl_RC" value="The order app" />
+            <property role="Xl_RC" value="The Order App" />
           </node>
         </node>
       </node>

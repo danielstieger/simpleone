@@ -127,6 +127,7 @@
       </concept>
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
+        <property id="96922280160231604" name="defaultHotkey" index="3uBtrS" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="4873800708640209291" name="defaultColor" index="1bacTB" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
@@ -451,6 +452,7 @@
   <node concept="3ugp7m" id="1p9ACItUpyZ">
     <property role="TrG5h" value="Open Article" />
     <property role="19I623" value="701$ZaZsahE/GRAPH_OWNER_CMD_MODAL" />
+    <property role="3uBtrS" value="1hImSMr5NSG/X" />
     <node concept="3ulXEN" id="1p9ACItUpzi" role="3ulXEL">
       <property role="TrG5h" value="article" />
       <node concept="3uibUv" id="1p9ACItUpzj" role="1tU5fm">

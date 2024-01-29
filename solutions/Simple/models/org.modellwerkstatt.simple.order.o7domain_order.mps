@@ -3756,14 +3756,14 @@
             <node concept="3clFbF" id="7324YUt0Kh7" role="3cqZAp">
               <node concept="3cpWs3" id="7324YUt0KB7" role="3clFbG">
                 <node concept="Xl_RD" id="7324YUt0KD8" role="3uHU7w">
-                  <property role="Xl_RC" value="\n hello: world\n are you: okay?" />
+                  <property role="Xl_RC" value="\nDifferent properties of this position.\nAnother line to display stuff." />
                 </node>
                 <node concept="3cpWs3" id="7324YUt0Ku8" role="3uHU7B">
                   <node concept="3cpWs3" id="7324YUt0KqA" role="3uHU7B">
                     <node concept="2OqwBi" id="7324YUt0KnB" role="3uHU7B">
                       <node concept="Xjq3P" id="7324YUt0Kms" role="2Oq$k0" />
                       <node concept="2S8uIT" id="7324YUt0KoI" role="2OqNvi">
-                        <ref role="2S8YL0" node="AN_117bbdT" resolve="name" />
+                        <ref role="2S8YL0" node="AN_117bbdA" resolve="id" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="7324YUt0KrY" role="3uHU7w">
@@ -3773,7 +3773,7 @@
                   <node concept="2OqwBi" id="7324YUt0Kws" role="3uHU7w">
                     <node concept="Xjq3P" id="7324YUt0KuE" role="2Oq$k0" />
                     <node concept="2S8uIT" id="7324YUt0Kyq" role="2OqNvi">
-                      <ref role="2S8YL0" node="AN_117bbdA" resolve="id" />
+                      <ref role="2S8YL0" node="AN_117bbdT" resolve="name" />
                     </node>
                   </node>
                 </node>
