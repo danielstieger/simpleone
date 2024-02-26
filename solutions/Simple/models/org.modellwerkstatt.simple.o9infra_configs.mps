@@ -2773,6 +2773,44 @@
     <property role="TrG5h" value="TurkuConfig" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="6tD2NjQNmJd" role="2CGBMS">
+      <property role="TrG5h" value="ldapService" />
+      <node concept="Xl_RD" id="6tD2NjQNmJe" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoLdapService" />
+      </node>
+      <node concept="2CJf1O" id="6tD2NjQNmJf" role="2CJ4_l">
+        <node concept="Xl_RD" id="6tD2NjQNmJg" role="2DqwMp">
+          <property role="Xl_RC" value="ldap://mpreis.co.at:389" />
+        </node>
+        <node concept="Xl_RD" id="6tD2NjQNmJh" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6tD2NjQNmJi" role="2CJ4_l">
+        <node concept="Xl_RD" id="6tD2NjQNmJj" role="2DqwMp">
+          <property role="Xl_RC" value="CN=NP_moware-auth,OU=04SPEZIAL,OU=01RESOURCE,DC=mpreis,DC=co,DC=at" />
+        </node>
+        <node concept="Xl_RD" id="6tD2NjQNmJk" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6tD2NjQNmJl" role="2CJ4_l">
+        <node concept="Xl_RD" id="6tD2NjQNmJm" role="2DqwMp">
+          <property role="Xl_RC" value="-secret-" />
+        </node>
+        <node concept="Xl_RD" id="6tD2NjQNmJn" role="2DqwMv">
+          <property role="Xl_RC" value="2" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6tD2NjQNmJo" role="2CJ4_l">
+        <node concept="Xl_RD" id="6tD2NjQNmJp" role="2DqwMp">
+          <property role="Xl_RC" value="OU=10USER,DC=mpreis,DC=co,DC=at" />
+        </node>
+        <node concept="Xl_RD" id="6tD2NjQNmJq" role="2DqwMv">
+          <property role="Xl_RC" value="3" />
+        </node>
+      </node>
+    </node>
     <node concept="2CJf3v" id="6UATHBJ4peK" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4peL" role="2CJf0U">
