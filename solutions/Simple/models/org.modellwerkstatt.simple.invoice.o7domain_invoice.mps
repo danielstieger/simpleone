@@ -158,7 +158,7 @@
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
-      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.BusinessObject" flags="ig" index="34Athd">
+      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.Entity" flags="ig" index="34Athd">
         <child id="4533072425307746563" name="status" index="2XvChp" />
         <child id="5847590543402877731" name="documentation2" index="1qk9eX" />
       </concept>
@@ -201,6 +201,9 @@
       <concept id="4421815423107469588" name="org.modellwerkstatt.manmap.structure.RepositoryInstanceMethodDeclaration" flags="ig" index="DXQ2B">
         <property id="8796175910513646269" name="repoMethodType" index="2a4t7v" />
       </concept>
+      <concept id="8510097166251501634" name="org.modellwerkstatt.manmap.structure.UpdateFormSql" flags="ng" index="2KoPwa">
+        <child id="8510097166251501837" name="sqlString" index="2KoP_5" />
+      </concept>
       <concept id="7925018510953791520" name="org.modellwerkstatt.manmap.structure.ModifiedAtFieldOption" flags="ng" index="2Mc99S" />
       <concept id="8172309840348950202" name="org.modellwerkstatt.manmap.structure.INeedsClassMapper" flags="ng" index="P14SU">
         <reference id="8172309840348950203" name="entityMapping" index="P14SV" />
@@ -238,6 +241,9 @@
       <concept id="1974135804380344167" name="org.modellwerkstatt.manmap.structure.MappingReference" flags="ng" index="3_7ulE">
         <reference id="5159282717680535116" name="fieldMapping" index="2OG787" />
         <reference id="1974135804380645439" name="mappingSource" index="3_688M" />
+      </concept>
+      <concept id="7955334847797738396" name="org.modellwerkstatt.manmap.structure.SqlString" flags="ng" index="1Q8zPT">
+        <child id="9195385294704421835" name="newText" index="2KarBZ" />
       </concept>
       <concept id="7754962537266810665" name="org.modellwerkstatt.manmap.structure.MappedFieldRef" flags="ng" index="1VRMpY">
         <reference id="7754962537266810667" name="refMapping" index="1VRMpW" />
@@ -1324,7 +1330,43 @@
       <node concept="3cqZAl" id="6vtMBTnC$ka" role="3clF45" />
       <node concept="3clFbS" id="6vtMBTnC$kc" role="3clF47" />
     </node>
-    <node concept="2tJIrI" id="6QrtA9Mt96s" role="jymVt" />
+    <node concept="DXQ2B" id="3P1jWkzRdSe" role="jymVt">
+      <property role="TrG5h" value="tryCloseDbLink" />
+      <property role="2a4t7v" value="3PtsrckEx4q/CHECKIN" />
+      <node concept="3cqZAl" id="3P1jWkzRdSg" role="3clF45" />
+      <node concept="3Tm1VV" id="3P1jWkzRdSh" role="1B3o_S" />
+      <node concept="3clFbS" id="3P1jWkzRdSi" role="3clF47">
+        <node concept="3clFbH" id="3P1jWkzRlCR" role="3cqZAp" />
+        <node concept="3clFbF" id="3P1jWkzRdWF" role="3cqZAp">
+          <node concept="2KoPwa" id="3P1jWkzRdWC" role="3clFbG">
+            <node concept="1Q8zPT" id="3P1jWkzRdWD" role="2KoP_5">
+              <node concept="1PaTwC" id="3P1jWkzRdWE" role="2KarBZ">
+                <node concept="3oM_SD" id="3P1jWkzRdWZ" role="1PaTwD">
+                  <property role="3oM_SC" value="SOME" />
+                </node>
+                <node concept="3oM_SD" id="3P1jWkzRdX1" role="1PaTwD">
+                  <property role="3oM_SC" value="UPDATE" />
+                </node>
+                <node concept="3oM_SD" id="3P1jWkzRdX4" role="1PaTwD">
+                  <property role="3oM_SC" value="STATEMENT" />
+                </node>
+                <node concept="3oM_SD" id="3P1jWkzRdX8" role="1PaTwD">
+                  <property role="3oM_SC" value="HERE" />
+                </node>
+                <node concept="3oM_SD" id="3P1jWkzRdXd" role="1PaTwD">
+                  <property role="3oM_SC" value=".." />
+                </node>
+                <node concept="3oM_SD" id="3P1jWkzRdXj" role="1PaTwD">
+                  <property role="3oM_SC" value="tghanks" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3P1jWkzRlCz" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3P1jWkzRdOo" role="jymVt" />
     <node concept="DXQ2B" id="6QrtA9Mt96t" role="jymVt">
       <property role="TrG5h" value="findInvoice" />
       <node concept="3Tm1VV" id="1FVEJAItXUy" role="1B3o_S" />

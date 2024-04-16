@@ -255,7 +255,7 @@
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
-      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.BusinessObject" flags="ig" index="34Athd">
+      <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.Entity" flags="ig" index="34Athd">
         <child id="4533072425307746563" name="status" index="2XvChp" />
       </concept>
       <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
@@ -2714,7 +2714,7 @@
             <node concept="liA8E" id="21clogiSzvQ" role="2OqNvi">
               <ref role="37wK5l" to="28jr:3ooJmL_sXPC" resolve="openUrl" />
               <node concept="Xl_RD" id="21clogiSzxb" role="37wK5m">
-                <property role="Xl_RC" value="/MDEApp/logout" />
+                <property role="Xl_RC" value="https://www.vol.at" />
               </node>
             </node>
           </node>

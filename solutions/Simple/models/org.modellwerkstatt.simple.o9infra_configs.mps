@@ -73,6 +73,9 @@
       <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
         <child id="1083620718216065081" name="singleLines" index="13z7HO" />
       </concept>
+      <concept id="2249448843585835214" name="org.modellwerkstatt.objectflow.structure.OFXConfigPlainText" flags="ng" index="1rRk0">
+        <property id="2249448843585835215" name="text" index="1rRk1" />
+      </concept>
       <concept id="1912326421526316383" name="org.modellwerkstatt.objectflow.structure.HideOnDisabledLabelSpacOpt" flags="ng" index="238Bvw" />
       <concept id="4862154259426722580" name="org.modellwerkstatt.objectflow.structure.Color" flags="ng" index="27cpit">
         <property id="4862154259426722583" name="value" index="27cpiu" />
@@ -1111,7 +1114,7 @@
             <property role="Xl_RC" value="String" />
           </node>
           <node concept="Xl_RD" id="2n3p7A96Fa6" role="2DqwMp">
-            <property role="Xl_RC" value="TRACE" />
+            <property role="Xl_RC" value="ERROR" />
           </node>
         </node>
       </node>
@@ -1133,7 +1136,7 @@
             <property role="Xl_RC" value="String" />
           </node>
           <node concept="Xl_RD" id="6hZYQSVjTKv" role="2DqwMp">
-            <property role="Xl_RC" value="TRACE" />
+            <property role="Xl_RC" value="ERROR" />
           </node>
         </node>
       </node>
@@ -1144,7 +1147,7 @@
       <node concept="2CJ4$C" id="ngg7P7ec8s" role="2CJ4_l">
         <property role="TrG5h" value="SilentExLogging" />
         <node concept="Xl_RD" id="ngg7P7ecbc" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="2CJ4$C" id="5DjGjTA5rOi" role="2CJ4_l">
@@ -1191,7 +1194,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$rWF" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
       <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
@@ -1319,16 +1322,28 @@
           <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="6Pmr75YGg80" role="2CJ4_l">
-        <property role="TrG5h" value="UploadLocationStore" />
-        <node concept="Xl_RD" id="6Pmr75YGg81" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/MDEApp/picupload/" />
-        </node>
-      </node>
       <node concept="2CJ4$C" id="7WLyHU5Ah5N" role="2CJ4_l">
         <property role="TrG5h" value="UploadFsLocationStore" />
         <node concept="Xl_RD" id="7WLyHU5Ah5O" role="2CaGCA">
           <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="GWkwFkilRe" role="2CJ4_l">
+        <property role="TrG5h" value="CamDesiredHeight" />
+        <node concept="Xl_RD" id="GWkwFkimKi" role="2CaGCA">
+          <property role="Xl_RC" value="400" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="GWkwFkilR$" role="2CJ4_l">
+        <property role="TrG5h" value="CamDesiredWidth" />
+        <node concept="Xl_RD" id="GWkwFkimKs" role="2CaGCA">
+          <property role="Xl_RC" value="200" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="GWkwFkilRU" role="2CJ4_l">
+        <property role="TrG5h" value="CamUseSystemViewfinder" />
+        <node concept="Xl_RD" id="GWkwFkinCv" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
     </node>
@@ -1337,7 +1352,7 @@
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTR" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
       <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
@@ -2076,7 +2091,7 @@
         <node concept="2CJ4$C" id="2RoKLt0pbfy" role="2CJ4_l">
           <property role="TrG5h" value="initialSize" />
           <node concept="Xl_RD" id="2RoKLt0pbfz" role="2CaGCA">
-            <property role="Xl_RC" value="2" />
+            <property role="Xl_RC" value="5" />
           </node>
         </node>
         <node concept="2CJ4$C" id="2RoKLt0pbf$" role="2CJ4_l">
@@ -2115,9 +2130,16 @@
           <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMOracleDescription" />
         </node>
       </node>
+      <node concept="2CPvp3" id="1WRDsSumd10" role="2CJdiS" />
     </node>
     <node concept="2CPvp3" id="7HkVpVc$sgG" role="2CGBMS" />
     <node concept="2CPvp3" id="7HkVpVc$siY" role="2CGBMS" />
+    <node concept="2CJoq6" id="19ZFnT89Pch" role="2CGBMS">
+      <property role="TrG5h" value="ExportTomcatPoolToJmx" />
+      <node concept="1rRk0" id="1WRDsSuvafM" role="2CJdiS">
+        <property role="1rRk1" value="&lt;bean id=&quot;jmxExporter&quot; class=&quot;org.springframework.jmx.export.MBeanExporter&quot; lazy-init=&quot;false&quot;&gt; &lt;property name=&quot;beans&quot;&gt; &lt;map&gt; &lt;entry key=&quot;bean:name=DataSource&quot; value=&quot;#{dataSource.getPool().getJmxPool()}&quot;/&gt; &lt;/map&gt; &lt;/property&gt; &lt;/bean&gt;" />
+      </node>
+    </node>
     <node concept="2CJoq6" id="21a32Cmm3Sq" role="2CGBMS">
       <property role="TrG5h" value="MoWare_BasicInfrastructure" />
       <node concept="2CJf3v" id="21a32Cmm3Sr" role="2CJdiS">
@@ -2852,8 +2874,14 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="6IpHXSTy0Nw" role="2CJ4_l">
+        <property role="TrG5h" value="SingleAppInstanceMode" />
+        <node concept="Xl_RD" id="6IpHXSTy0NI" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.app.TurkuAppFactory" />
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
       </node>
     </node>
     <node concept="2CJf3v" id="3t4lCsItUsu" role="2CGBMS">
@@ -2918,115 +2946,6 @@
     </node>
     <node concept="20ptWn" id="4Ex3Fobawvy" role="20ptHX">
       <node concept="Xl_RD" id="4Ex3Fobawvz" role="20ptNC">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
-      </node>
-    </node>
-  </node>
-  <node concept="2CG7Z0" id="2xhQv04HOhZ">
-    <property role="TrG5h" value="MdeConfigWithH2Upload" />
-    <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
-    <property role="3GE5qa" value="configs" />
-    <node concept="2CJf3v" id="2xhQv04HOi0" role="2CGBMS">
-      <property role="TrG5h" value="setting" />
-      <node concept="Xl_RD" id="2xhQv04HOi1" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
-      </node>
-    </node>
-    <node concept="2CJf3v" id="2xhQv04HOi2" role="2CGBMS">
-      <property role="TrG5h" value="platform" />
-      <node concept="Xl_RD" id="2xhQv04HOi3" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_MDE" />
-      </node>
-    </node>
-    <node concept="2CPvp3" id="2xhQv04HOi4" role="2CGBMS" />
-    <node concept="2CJf3v" id="2xhQv04HOi5" role="2CGBMS">
-      <property role="TrG5h" value="uiFactory" />
-      <node concept="Xl_RD" id="2xhQv04HOi6" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.h2forms.pebble.PAppFactory" />
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOi7" role="2CJ4_l">
-        <property role="TrG5h" value="SkipLoggingTcnException" />
-        <node concept="Xl_RD" id="2xhQv04HOi8" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOi9" role="2CJ4_l">
-        <property role="TrG5h" value="EventBusLocking" />
-        <node concept="Xl_RD" id="2xhQv04HOia" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOib" role="2CJ4_l">
-        <property role="TrG5h" value="ScrollAdjust" />
-        <node concept="Xl_RD" id="2xhQv04HOic" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOid" role="2CJ4_l">
-        <property role="TrG5h" value="SilentExLogging" />
-        <node concept="Xl_RD" id="2xhQv04HOie" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOif" role="2CJ4_l">
-        <property role="TrG5h" value="LogEventsToStdErr" />
-        <node concept="Xl_RD" id="2xhQv04HOig" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOih" role="2CJ4_l">
-        <property role="TrG5h" value="PortJ" />
-        <node concept="Xl_RD" id="2xhQv04HOii" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOij" role="2CJ4_l">
-        <property role="TrG5h" value="AppTrace" />
-        <node concept="Xl_RD" id="2xhQv04HOik" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOil" role="2CJ4_l">
-        <property role="TrG5h" value="MowareTrace" />
-        <node concept="Xl_RD" id="2xhQv04HOim" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOin" role="2CJ4_l">
-        <property role="TrG5h" value="UploadLocationRetrieve" />
-        <node concept="Xl_RD" id="2xhQv04HOio" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOip" role="2CJ4_l">
-        <property role="TrG5h" value="UploadLocationStore" />
-        <node concept="Xl_RD" id="2xhQv04HOiq" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/MDEApp/picupload/" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="2xhQv04HOir" role="2CJ4_l">
-        <property role="TrG5h" value="UploadFsLocationStore" />
-        <node concept="Xl_RD" id="2xhQv04HOis" role="2CaGCA">
-          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
-        </node>
-      </node>
-    </node>
-    <node concept="2CPvp3" id="2xhQv04HOit" role="2CGBMS" />
-    <node concept="2CJ4_Q" id="2xhQv04HOiu" role="2CGBMS">
-      <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
-    </node>
-    <node concept="2CJ4_Q" id="2xhQv04HOiv" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
-    </node>
-    <node concept="2CJ4_Q" id="2xhQv04HOiw" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
-    </node>
-    <node concept="2CJ4_Q" id="2xhQv04HOix" role="2CGBMS">
-      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
-    </node>
-    <node concept="2CPvp3" id="2xhQv04HOiy" role="2CGBMS" />
-    <node concept="20ptWn" id="2xhQv04HOiz" role="20ptHX">
-      <node concept="Xl_RD" id="2xhQv04HOi$" role="20ptNC">
         <property role="Xl_RC" value="org.modellwerkstatt.simple" />
       </node>
     </node>
