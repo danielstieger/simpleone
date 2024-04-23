@@ -2798,7 +2798,7 @@
     <node concept="2CJf3v" id="6tD2NjQNmJd" role="2CGBMS">
       <property role="TrG5h" value="ldapService" />
       <node concept="Xl_RD" id="6tD2NjQNmJe" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoLdapService" />
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.FakeMoLdapService" />
       </node>
       <node concept="2CJf1O" id="6tD2NjQNmJf" role="2CJ4_l">
         <node concept="Xl_RD" id="6tD2NjQNmJg" role="2DqwMp">
@@ -2877,6 +2877,12 @@
       <node concept="2CJ4$C" id="6IpHXSTy0Nw" role="2CJ4_l">
         <property role="TrG5h" value="SingleAppInstanceMode" />
         <node concept="Xl_RD" id="6IpHXSTy0NI" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="3mOf56UVtiz" role="2CJ4_l">
+        <property role="TrG5h" value="AutoParDeploymentForwardGracefully" />
+        <node concept="Xl_RD" id="3mOf56UVtiN" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
