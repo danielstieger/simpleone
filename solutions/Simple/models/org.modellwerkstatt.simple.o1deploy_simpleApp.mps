@@ -489,6 +489,9 @@
       <node concept="33WYYh" id="3TCye$03baL" role="fOGQ8">
         <ref role="2_Hrw8" to="kpm6:3TCyezZZSYH" resolve="Selection Tester" />
       </node>
+      <node concept="33WYYh" id="6HDDiVEqCn7" role="fOGQ8">
+        <ref role="2_Hrw8" to="kpm6:6HDDiVEqCas" resolve="Derived Selection Experiment" />
+      </node>
     </node>
     <node concept="3ulXEM" id="1SuqpWQMcXw" role="3ulXEG">
       <property role="TrG5h" value="thisIsAVeryLongVarName" />
