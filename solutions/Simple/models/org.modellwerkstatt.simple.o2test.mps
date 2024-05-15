@@ -2,6 +2,7 @@
 <model ref="r:b403f58b-e975-4eea-8f66-3854e12f0101(org.modellwerkstatt.simple.o2test)">
   <persistence version="9" />
   <languages>
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>

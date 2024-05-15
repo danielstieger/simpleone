@@ -1031,7 +1031,7 @@
   </node>
   <node concept="2AUT8P" id="2B50FNWRyPd">
     <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" to="oyrz:382CQP52o$k" resolve="BatchConfigConsole" />
+    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
     <node concept="1_k$Jf" id="3atYQnaZ_Yc" role="1_k$Iu">
       <property role="TrG5h" value="Check user service test" />
       <node concept="3znxp0" id="3atYQnaZ_Yd" role="1_kBZ6">
@@ -1193,7 +1193,6 @@
         </node>
       </node>
     </node>
-    <node concept="MakZV" id="2RoiPdb15Co" role="2A_d42" />
     <node concept="3lKVtU" id="7oLsFCHIe71" role="2A_d42">
       <property role="1QnCjn" value="0" />
       <property role="1QnCsU" value="*/5" />

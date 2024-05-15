@@ -7053,6 +7053,32 @@
               </node>
             </node>
             <node concept="3clFbH" id="7PFRNOPxEoZ" role="3cqZAp" />
+            <node concept="lgBBG" id="4aJ3Mjcawkn" role="3cqZAp">
+              <node concept="3y3z36" id="4aJ3MjcawwS" role="lgAf5">
+                <node concept="Rm8GO" id="4aJ3Mjcaw$2" role="3uHU7w">
+                  <ref role="Rm8GQ" to="oyrz:4aJ3MjcalUO" resolve="CASE52_SUCGO_GUARD_FINAL_OK_GE" />
+                  <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+                </node>
+                <node concept="3urNQE" id="4aJ3Mjcawls" role="3uHU7B">
+                  <ref role="3cqZAo" node="3xGERTNpEMe" resolve="spec" />
+                </node>
+              </node>
+              <node concept="lgADV" id="4aJ3Mjcawkq" role="lgycv">
+                <node concept="35AVbj" id="4aJ3Mjcaxra" role="lgxf9">
+                  <node concept="3cpWs3" id="4aJ3Mjcaxrb" role="35Gt3$">
+                    <node concept="3urNQE" id="4aJ3Mjcaxrc" role="3uHU7w">
+                      <ref role="3cqZAo" node="3xGERTNpEMe" resolve="spec" />
+                    </node>
+                    <node concept="Xl_RD" id="4aJ3Mjcaxrd" role="3uHU7B">
+                      <property role="Xl_RC" value="" />
+                    </node>
+                  </node>
+                  <node concept="ic4WF" id="4aJ3Mjcaxre" role="icr7_">
+                    <property role="ic4Xk" value="%s guard in cmd conc ok" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="10Adxj" id="701$ZaZlu8U" role="3cqZAp" />
           </node>
         </node>
@@ -14535,6 +14561,25 @@
             <node concept="3clFbT" id="2c1OwJT5m6J" role="2_HrWp" />
             <node concept="Rm8GO" id="2c1OwJT5pDz" role="2_HrWp">
               <ref role="Rm8GQ" to="oyrz:2c1OwJT59U5" resolve="CASE51_SUCGO_GUARD_SUC_FINAL_OK_INPRE" />
+              <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+            </node>
+          </node>
+          <node concept="33WYYh" id="4aJ3MjcbKCJ" role="fOGQ8">
+            <ref role="2_Hrw8" node="1TowlBnaICA" resolve="CF EditOrder Predecessor" />
+            <node concept="2IFXgM" id="4aJ3MjcbKCK" role="2_HrWp">
+              <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+            </node>
+            <node concept="2OqwBi" id="4aJ3MjcbKCL" role="2_HrWp">
+              <node concept="2IFXgM" id="4aJ3MjcbKCM" role="2Oq$k0">
+                <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
+              </node>
+              <node concept="2S8uIT" id="4aJ3MjcbKCN" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:4u029Jv8vCO" resolve="id" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="4aJ3MjcbKCO" role="2_HrWp" />
+            <node concept="Rm8GO" id="4aJ3MjcbKEH" role="2_HrWp">
+              <ref role="Rm8GQ" to="oyrz:4aJ3MjcalUO" resolve="CASE52_SUCGO_GUARD_FINAL_OK_GE" />
               <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
             </node>
           </node>
