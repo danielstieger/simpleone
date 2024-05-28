@@ -1189,6 +1189,12 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="3pIDnvfjD97" role="2CJ4_l">
+        <property role="TrG5h" value="CheckAlsoPredecessorDuplication" />
+        <node concept="Xl_RD" id="3pIDnvfjD98" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
       </node>
@@ -2890,6 +2896,12 @@
       <node concept="2CJ4$C" id="3mOf56UVtiz" role="2CJ4_l">
         <property role="TrG5h" value="AutoParDeploymentForwardGracefully" />
         <node concept="Xl_RD" id="3mOf56UVtiN" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="84ZKdf_V3x" role="2CJ4_l">
+        <property role="TrG5h" value="CheckAlsoPredecessorDuplication" />
+        <node concept="Xl_RD" id="84ZKdf_V3y" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
