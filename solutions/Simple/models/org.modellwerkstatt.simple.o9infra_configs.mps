@@ -807,6 +807,15 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="7YWowTUhxHw" role="2kzhMJ">
+      <property role="TrG5h" value="SHOW_DOCUMENTATION" />
+      <node concept="2kzhL4" id="7YWowTUhxHx" role="2kzgdm">
+        <node concept="Xl_RD" id="7YWowTUhxHy" role="il5_5">
+          <property role="Xl_RC" value="Show documentation" />
+        </node>
+        <node concept="238Bvw" id="7YWowTUhxL1" role="238Brw" />
+      </node>
+    </node>
     <node concept="27cpit" id="6QrtA9Mt95Q" role="27c1lO">
       <property role="27cpiu" value="#E74C3C" />
       <property role="TrG5h" value="COLOR_0" />
