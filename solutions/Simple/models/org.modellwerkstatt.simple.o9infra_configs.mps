@@ -816,6 +816,24 @@
         <node concept="238Bvw" id="7YWowTUhxL1" role="238Brw" />
       </node>
     </node>
+    <node concept="il5_x" id="5R_43Wzruo3" role="2kzhMJ">
+      <property role="TrG5h" value="REF_STAT_UITEST_HOD" />
+      <node concept="2kzhL4" id="5R_43Wzruo4" role="2kzgdm">
+        <node concept="Xl_RD" id="5R_43Wzruo5" role="il5_5">
+          <property role="Xl_RC" value="Ref/Statt UI Test" />
+        </node>
+        <node concept="238Bvw" id="5R_43WzruGK" role="238Brw" />
+      </node>
+    </node>
+    <node concept="il5_x" id="5UVCPc2igCd" role="2kzhMJ">
+      <property role="TrG5h" value="RESET_ORDER_HOD" />
+      <node concept="2kzhL4" id="5UVCPc2igCe" role="2kzgdm">
+        <node concept="Xl_RD" id="5UVCPc2igCf" role="il5_5">
+          <property role="Xl_RC" value="Reset Order" />
+        </node>
+        <node concept="238Bvw" id="5UVCPc2igCg" role="238Brw" />
+      </node>
+    </node>
     <node concept="27cpit" id="6QrtA9Mt95Q" role="27c1lO">
       <property role="27cpiu" value="#E74C3C" />
       <property role="TrG5h" value="COLOR_0" />
@@ -1206,7 +1224,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1455,7 +1473,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tqz" role="2CGBMS">
-      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tsR" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -2015,7 +2033,9 @@
         </node>
         <node concept="2CJ4$C" id="1YSLAaB7g8A" role="2CJ4_l">
           <property role="TrG5h" value="password" />
-          <node concept="Xl_RD" id="1YSLAaB7g8B" role="2CaGCA" />
+          <node concept="Xl_RD" id="1YSLAaB7g8B" role="2CaGCA">
+            <property role="Xl_RC" value="dan" />
+          </node>
         </node>
       </node>
       <node concept="2CPvp3" id="1YSLAaB7g4m" role="2CJdiS" />
@@ -2140,6 +2160,113 @@
         </node>
       </node>
       <node concept="2CPvp3" id="1WRDsSumd10" role="2CJdiS" />
+    </node>
+    <node concept="2CJoq6" id="46E_y$eDwGF" role="2CGBMS">
+      <property role="TrG5h" value="TomcatToMySql" />
+      <node concept="2CJf3v" id="46E_y$eDwGG" role="2CJdiS">
+        <property role="TrG5h" value="transactionDefinition" />
+        <node concept="2CJ4$C" id="46E_y$eDwGH" role="2CJ4_l">
+          <property role="TrG5h" value="propagationBehaviorName" />
+          <node concept="Xl_RD" id="46E_y$eDwGI" role="2CaGCA">
+            <property role="Xl_RC" value="PROPAGATION_REQUIRES_NEW" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwGJ" role="2CJ4_l">
+          <property role="TrG5h" value="isolationLevelName" />
+          <node concept="Xl_RD" id="46E_y$eDwGK" role="2CaGCA">
+            <property role="Xl_RC" value="ISOLATION_READ_COMMITTED" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwGL" role="2CJ4_l">
+          <property role="TrG5h" value="timeout" />
+          <node concept="Xl_RD" id="46E_y$eDwGM" role="2CaGCA">
+            <property role="Xl_RC" value="5000" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="46E_y$eDwGN" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.transaction.support.DefaultTransactionDefinition" />
+        </node>
+      </node>
+      <node concept="2CPvp3" id="46E_y$eDwGO" role="2CJdiS" />
+      <node concept="2CJf3v" id="46E_y$eDwGP" role="2CJdiS">
+        <property role="TrG5h" value="transactionManager" />
+        <node concept="Xl_RD" id="46E_y$eDwGQ" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.datasource.DataSourceTransactionManager" />
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwGR" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="46E_y$eDwGS" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="46E_y$eDwGT" role="2CJdiS" />
+      <node concept="2CJf3v" id="46E_y$eDwGU" role="2CJdiS">
+        <property role="TrG5h" value="jdbcTemplate" />
+        <node concept="Xl_RD" id="46E_y$eDwGV" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.core.JdbcTemplate" />
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwGW" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="46E_y$eDwGX" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="46E_y$eDwGY" role="2CJdiS" />
+      <node concept="2CJf3v" id="46E_y$eDwGZ" role="2CJdiS">
+        <property role="TrG5h" value="dataSource" />
+        <node concept="2CJ4$C" id="46E_y$eDwH0" role="2CJ4_l">
+          <property role="TrG5h" value="driverClassName" />
+          <node concept="Xl_RD" id="46E_y$eDwH1" role="2CaGCA">
+            <property role="Xl_RC" value="com.mysql.cj.jdbc.Driver" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwNa" role="2CJ4_l">
+          <property role="TrG5h" value="url" />
+          <node concept="Xl_RD" id="46E_y$eDwNb" role="2CaGCA">
+            <property role="Xl_RC" value="jdbc:mysql://localhost/test?useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwNc" role="2CJ4_l">
+          <property role="TrG5h" value="username" />
+          <node concept="Xl_RD" id="46E_y$eDwNd" role="2CaGCA">
+            <property role="Xl_RC" value="root" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwNe" role="2CJ4_l">
+          <property role="TrG5h" value="password" />
+          <node concept="Xl_RD" id="46E_y$eDwNf" role="2CaGCA">
+            <property role="Xl_RC" value="dan" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="46E_y$eDwO3" role="2CJ4_l">
+          <property role="TrG5h" value="initialSize" />
+          <node concept="Xl_RD" id="46E_y$eDwO4" role="2CaGCA">
+            <property role="Xl_RC" value="10" />
+          </node>
+        </node>
+        <node concept="2DlbD8" id="46E_y$eDwHc" role="2DlbIj">
+          <node concept="Xl_RD" id="46E_y$eDwHd" role="2DlbDb">
+            <property role="Xl_RC" value="destroy-method" />
+          </node>
+          <node concept="Xl_RD" id="46E_y$eDwHe" role="2DlbDP">
+            <property role="Xl_RC" value="close" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="46E_y$eDwHf" role="2CJf0U">
+          <property role="Xl_RC" value="org.apache.tomcat.jdbc.pool.DataSource" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="46E_y$eEKnL" role="2CJdiS">
+        <property role="TrG5h" value="databaseDescription" />
+        <node concept="Xl_RD" id="46E_y$eEKnM" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMMySqlDescription" />
+        </node>
+      </node>
+      <node concept="2CPvp3" id="46E_y$eDwHi" role="2CJdiS" />
     </node>
     <node concept="2CPvp3" id="7HkVpVc$sgG" role="2CGBMS" />
     <node concept="2CPvp3" id="7HkVpVc$siY" role="2CGBMS" />
@@ -2285,7 +2412,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tAn" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tAo" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -2860,6 +2987,9 @@
     </node>
     <node concept="2CJ4_Q" id="4Ex3Fobawvu" role="2CGBMS">
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJoq6" id="69doFuFuhVu" role="2CGBMS">
+      <property role="TrG5h" value="SingleAppInstanceMode" />
     </node>
     <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />

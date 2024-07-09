@@ -278,6 +278,7 @@
         <child id="4920377772573251431" name="tileInit" index="2aJ6r$" />
         <child id="2781909770750563212" name="tiles" index="2$nsuY" />
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
+        <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
         <child id="4243878476893838311" name="helpMenu" index="1BMTcq" />
       </concept>
@@ -302,6 +303,9 @@
       </concept>
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
+      </concept>
+      <concept id="3009814936672462914" name="org.modellwerkstatt.dataux.structure.OptDelayPair" flags="ng" index="3lKYFY">
+        <property id="8940448732926697606" name="delayInSec" index="1QJjD7" />
       </concept>
       <concept id="2497433976992505068" name="org.modellwerkstatt.dataux.structure.MenuSeparator" flags="ng" index="1U2rok" />
     </language>
@@ -341,6 +345,9 @@
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App_Desktop_Order" />
     <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <node concept="33WYYh" id="46E_y$ewGwF" role="2N77jL">
+      <ref role="2_Hrw8" to="ygz6:46E_y$ew8h4" resolve="Test - Create 160000 Items" />
+    </node>
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
       <ref role="3uz5Vf" to="oyrz:7YWowTUhxHw" resolve="SHOW_DOCUMENTATION" />
@@ -420,12 +427,22 @@
     <node concept="2$ntO6" id="6m2yckYsPLk" role="2$nsuY">
       <node concept="33WYYh" id="6m2yckYsPLl" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
+        <ref role="3uz5Vf" to="oyrz:5R_43Wzruo3" resolve="REF_STAT_UITEST_HOD" />
       </node>
     </node>
     <node concept="2$ntO6" id="1p9ACItUFgA" role="2$nsuY">
       <node concept="33WYYh" id="1p9ACItUFgB" role="2$ntUL">
         <ref role="2_Hrw8" to="ptpb:1p9ACItUpyZ" resolve="Open Article" />
       </node>
+    </node>
+    <node concept="2$ntO6" id="6lIZ7mBTMY9" role="2$nsuY">
+      <node concept="33WYYh" id="6lIZ7mBTMYa" role="2$ntUL">
+        <ref role="2_Hrw8" to="ygz6:6lIZ7mBTnUG" resolve="Single Invoice Test" />
+      </node>
+    </node>
+    <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
+      <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
+      <ref role="3uz5Vf" to="oyrz:5R_43Wzruo3" resolve="REF_STAT_UITEST_HOD" />
     </node>
     <node concept="33WYYh" id="4GwKq5MIdXH" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
@@ -1018,202 +1035,18 @@
   </node>
   <node concept="2AUT8P" id="2B50FNWRyPd">
     <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
-    <node concept="1_k$Jf" id="3atYQnaZ_Yc" role="1_k$Iu">
-      <property role="TrG5h" value="Check user service test" />
-      <node concept="3znxp0" id="3atYQnaZ_Yd" role="1_kBZ6">
-        <property role="TrG5h" value="inbox" />
-        <node concept="3uibUv" id="3atYQnaZ_Zf" role="3znzZe">
-          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
-        </node>
-        <node concept="2Tpcjw" id="3atYQnaZ_Yf" role="3znwwn">
-          <node concept="2_HltQ" id="3atYQnaZ_Yg" role="2TpcRq">
-            <ref role="2_Hrw8" to="wi0k:3atYQn9VS4M" resolve="Check User Service" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1_k$Jf" id="1FVEJAIW7Kc" role="1_k$Iu">
-      <property role="TrG5h" value="Create Invoices" />
-      <node concept="3znxp0" id="1FVEJAIW7Kd" role="1_kBZ6">
-        <property role="TrG5h" value="inbox" />
-        <node concept="3uibUv" id="1FVEJAIW7Vi" role="3znzZe">
-          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
-        </node>
-        <node concept="2Tpcjw" id="1FVEJAIW7Kf" role="3znwwn">
-          <node concept="3zdtvw" id="1FVEJAIW7W7" role="2TpcRr">
-            <property role="TrG5h" value="invoiceSearchFilter" />
-            <ref role="3zdv75" to="ygz6:6XzXfke18sN" resolve="FilterSpecification" />
-            <ref role="3zdv76" to="ygz6:6XzXfke1a81" />
-            <node concept="3zdqQj" id="1FVEJAIW_Vf" role="3zdlsu">
-              <node concept="3clFbS" id="1FVEJAIW_Vg" role="2VODD2">
-                <node concept="3clFbF" id="1FVEJAIWAay" role="3cqZAp">
-                  <node concept="37vLTI" id="1FVEJAIWAda" role="3clFbG">
-                    <node concept="2XvMaL" id="1FVEJAIWAeD" role="37vLTx">
-                      <ref role="2XvMaQ" to="ygz6:1FVEJAIuas5" resolve="SearchOpt" />
-                      <node concept="2vefiz" id="2rXgTRs8RNR" role="h55Ek">
-                        <ref role="2vefiw" to="ygz6:1FVEJAIuass" resolve="create" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="1FVEJAIWAb1" role="37vLTJ">
-                      <node concept="3zknl8" id="1FVEJAIWAaw" role="2Oq$k0">
-                        <ref role="3zkmF1" node="1FVEJAIW7W7" resolve="invoiceSearchFilter" />
-                      </node>
-                      <node concept="2S8uIT" id="1FVEJAIWAc8" role="2OqNvi">
-                        <ref role="2S8YL0" to="ygz6:1FVEJAIuas$" resolve="searchOpt" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="1FVEJAIW_VX" role="3cqZAp">
-                  <node concept="37vLTI" id="1FVEJAIW_Yr" role="3clFbG">
-                    <node concept="2OqwBi" id="1FVEJAIW_Wk" role="37vLTJ">
-                      <node concept="3zknl8" id="1FVEJAIW_VW" role="2Oq$k0">
-                        <ref role="3zkmF1" node="1FVEJAIW7W7" resolve="invoiceSearchFilter" />
-                      </node>
-                      <node concept="2S8uIT" id="1FVEJAIW_Xk" role="2OqNvi">
-                        <ref role="2S8YL0" to="ygz6:6XzXfke19Nv" resolve="state" />
-                      </node>
-                    </node>
-                    <node concept="2XvMaL" id="1FVEJAIWA8A" role="37vLTx">
-                      <ref role="2XvMaQ" to="sdim:6XzXfke7pgu" resolve="ProcessingState" />
-                      <node concept="2vefiz" id="wGbog3pXNZ" role="h55Ek">
-                        <ref role="2vefiw" to="sdim:6XzXfke7pis" resolve="processed" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3zdtvw" id="1FVEJAIWAin" role="2TpcRr">
-            <property role="TrG5h" value="invoiceSearchFilter" />
-            <ref role="3zdv75" to="ygz6:6XzXfke18p9" resolve="SearchResult" />
-            <node concept="3zdqQj" id="1FVEJAIWAiN" role="3zdlsu">
-              <node concept="3clFbS" id="1FVEJAIWAiO" role="2VODD2">
-                <node concept="3SKdUt" id="1FVEJAIXona" role="3cqZAp">
-                  <node concept="1PaTwC" id="38_UPIIR3Ns" role="1aUNEU">
-                    <node concept="3oM_SD" id="38_UPIIR3Nt" role="1PaTwD">
-                      <property role="3oM_SC" value="trigger" />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3Nu" role="1PaTwD">
-                      <property role="3oM_SC" value="single" />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3Nv" role="1PaTwD">
-                      <property role="3oM_SC" value="run.." />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3Nw" role="1PaTwD">
-                      <property role="3oM_SC" value="if" />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3Nx" role="1PaTwD">
-                      <property role="3oM_SC" value="there" />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3Ny" role="1PaTwD">
-                      <property role="3oM_SC" value="is" />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3Nz" role="1PaTwD">
-                      <property role="3oM_SC" value="a" />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3N$" role="1PaTwD">
-                      <property role="3oM_SC" value="item." />
-                    </node>
-                    <node concept="3oM_SD" id="38_UPIIR3N_" role="1PaTwD">
-                      <property role="3oM_SC" value="n" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2rXgTRs8RQm" role="3cqZAp">
-                  <node concept="2OqwBi" id="2rXgTRs8Sfo" role="3clFbG">
-                    <node concept="3zknl8" id="2rXgTRs8RQk" role="2Oq$k0">
-                      <ref role="3zkmF1" node="1FVEJAIW7Kd" resolve="inbox" />
-                    </node>
-                    <node concept="X8dFx" id="2rXgTRs8SxA" role="2OqNvi">
-                      <node concept="2OqwBi" id="2rXgTRs8Tu4" role="25WWJ7">
-                        <node concept="3zknl8" id="2rXgTRs8SYL" role="2Oq$k0">
-                          <ref role="3zkmF1" node="1FVEJAIWAin" resolve="invoiceSearchFilter" />
-                        </node>
-                        <node concept="2S8uIT" id="2rXgTRs8THd" role="2OqNvi">
-                          <ref role="2S8YL0" to="ygz6:6XzXfke1ajR" resolve="items" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2_HltQ" id="1FVEJAIW7Kg" role="2TpcRq">
-            <ref role="2_Hrw8" to="ygz6:6XzXfke15oI" resolve="Search for Invoices" />
-          </node>
-        </node>
-      </node>
-      <node concept="3znyvg" id="1FVEJAIWBn4" role="1_kBZ7">
-        <property role="TrG5h" value="inboxElement" />
-        <node concept="1sQxEM" id="1FVEJAIWBn5" role="3znymz">
-          <node concept="2Tpcjw" id="1FVEJAIWBn6" role="1sQxCg">
-            <node concept="2_HltQ" id="1FVEJAIWBn7" role="2TpcRq">
-              <ref role="2_Hrw8" to="ygz6:1FVEJAIXFWL" resolve="Create InvoiceFolder from Single Invoice" />
-              <node concept="3zknl8" id="1FVEJAIXVXg" role="2_HrWp">
-                <ref role="3zkmF1" node="1FVEJAIWBn4" resolve="inboxElement" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1_k$Jf" id="4InK$iO3KBB" role="1_k$Iu">
-      <property role="TrG5h" value="Book open Orders" />
-      <node concept="3znxp0" id="4InK$iO3KBC" role="1_kBZ6">
-        <property role="TrG5h" value="inbox" />
-        <node concept="3uibUv" id="4InK$iO3KDW" role="3znzZe">
-          <ref role="3uigEE" to="sdim:1FVEJAItIuo" resolve="InvoiceFolder" />
-        </node>
-        <node concept="2Tpcjw" id="4InK$iO3KBE" role="3znwwn">
-          <node concept="3zdtvw" id="4InK$iO3Y19" role="2TpcRr">
-            <property role="TrG5h" value="invoiceFolder" />
-            <ref role="3zdv75" to="ygz6:4InK$iO3L_a" resolve="Page_0" />
-            <ref role="3zdv76" to="ygz6:4InK$iO3LCY" resolve="Done" />
-          </node>
-          <node concept="2_HltQ" id="4InK$iO3KBF" role="2TpcRq">
-            <ref role="2_Hrw8" to="ygz6:4InK$iO3KE1" resolve="Mark InvoiceFolders with current date" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3lKVtU" id="7oLsFCHIe71" role="2A_d42">
-      <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="*/5" />
-      <property role="1QnCsW" value="12" />
-      <property role="1QnCj8" value="*" />
-      <property role="1QnCj1" value="*" />
-      <property role="1QnCj5" value="*" />
-      <ref role="2k5inG" node="1FVEJAIW7Kc" resolve="Create Invoices" />
-    </node>
-    <node concept="3lKVtU" id="7oLsFCHIe7s" role="2A_d42">
-      <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="*/5" />
-      <property role="1QnCsW" value="12" />
-      <property role="1QnCj8" value="*" />
-      <property role="1QnCj1" value="*" />
-      <property role="1QnCj5" value="*" />
-      <ref role="2k5inG" node="4InK$iO3KBB" resolve="Book open Orders" />
-    </node>
-    <node concept="3lKVtU" id="3atYQnaZ_Zi" role="2A_d42">
-      <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="*/2" />
-      <property role="1QnCsW" value="*" />
-      <property role="1QnCj8" value="*" />
-      <property role="1QnCj1" value="*" />
-      <property role="1QnCj5" value="*" />
-      <ref role="2k5inG" node="3atYQnaZ_Yc" resolve="Check user service test" />
+    <ref role="2WPtWl" to="oyrz:3tgwmmDjmur" resolve="BatchConfigTomcat" />
+    <node concept="3lKYFY" id="46E_y$ew8eG" role="2A_d42">
+      <property role="1QJjD7" value="300" />
+      <ref role="2k5inG" node="46E_y$ew8gR" resolve="Massive Inbox Filling" />
     </node>
     <node concept="3lKYF6" id="2B50FNWRzqs" role="2A_d42">
-      <property role="1R4AEf" value="1" />
-      <ref role="2k5inG" node="1FVEJAIW7Kc" resolve="Create Invoices" />
+      <property role="1R4AEf" value="7" />
+      <ref role="2k5inG" node="46E_y$ew8gR" resolve="Massive Inbox Filling" />
     </node>
     <node concept="2MWAvL" id="2B50FNWRyPp" role="2A_d42">
       <node concept="Xl_RD" id="2B50FNWRyU5" role="2MWAvM">
-        <property role="Xl_RC" value="1.1.0" />
+        <property role="Xl_RC" value="2" />
       </node>
     </node>
     <node concept="2MZaQk" id="2B50FNWRyPr" role="2A_d42">
@@ -1221,6 +1054,7 @@
         <property role="Xl_RC" value="Invoicing Test Job" />
       </node>
     </node>
+    <node concept="MakZV" id="46E_y$eApyN" role="2A_d42" />
     <node concept="2MWq9S" id="2B50FNWRyPt" role="2AUypC">
       <node concept="3clFbS" id="2B50FNWRyPu" role="2VODD2">
         <node concept="3VdxhY" id="19EO7JP84Dr" role="3cqZAp">
@@ -1332,6 +1166,58 @@
     </node>
     <node concept="2d2NRx" id="19EO7JP6t1S" role="2AUypL">
       <node concept="3clFbS" id="19EO7JP6t1T" role="2VODD2" />
+    </node>
+    <node concept="1_k$Jf" id="46E_y$ew8gR" role="1_k$Iu">
+      <property role="TrG5h" value="Massive Inbox Filling" />
+      <node concept="3znxp0" id="46E_y$ew8gS" role="1_kBZ6">
+        <property role="TrG5h" value="inbox" />
+        <node concept="3uibUv" id="46E_y$ew8h1" role="3znzZe">
+          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
+        </node>
+        <node concept="2Tpcjw" id="46E_y$ew8gU" role="3znwwn">
+          <node concept="3zdtvw" id="46E_y$ex$$f" role="2TpcRr">
+            <property role="TrG5h" value="invoiceSearchFilter" />
+            <ref role="3zdv75" to="ygz6:46E_y$ew8ia" resolve="Page_0" />
+            <node concept="3zdqQj" id="46E_y$ex$$i" role="3zdlsu">
+              <node concept="3clFbS" id="46E_y$ex$$j" role="2VODD2">
+                <node concept="3clFbF" id="46E_y$ex$$v" role="3cqZAp">
+                  <node concept="2OqwBi" id="46E_y$ex$Xb" role="3clFbG">
+                    <node concept="3zknl8" id="46E_y$ex$$u" role="2Oq$k0">
+                      <ref role="3zkmF1" node="46E_y$ew8gS" resolve="inbox" />
+                    </node>
+                    <node concept="X8dFx" id="46E_y$ex_jI" role="2OqNvi">
+                      <node concept="2OqwBi" id="46E_y$exArF" role="25WWJ7">
+                        <node concept="3zknl8" id="46E_y$exA9$" role="2Oq$k0">
+                          <ref role="3zkmF1" node="46E_y$ex$$f" resolve="invoiceSearchFilter" />
+                        </node>
+                        <node concept="2S8uIT" id="46E_y$exAy7" role="2OqNvi">
+                          <ref role="2S8YL0" to="ygz6:6XzXfke1ajR" resolve="items" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2_HltQ" id="46E_y$ew8gV" role="2TpcRq">
+            <ref role="2_Hrw8" to="ygz6:46E_y$ew8h4" resolve="Test - Create 160000 Items" />
+          </node>
+        </node>
+      </node>
+      <node concept="3znyvg" id="46E_y$exzpz" role="1_kBZ7">
+        <property role="TrG5h" value="inboxElement" />
+        <node concept="1sQxEM" id="46E_y$exzp$" role="3znymz">
+          <node concept="2Tpcjw" id="46E_y$exzp_" role="1sQxCg">
+            <node concept="2_HltQ" id="46E_y$exzpA" role="2TpcRq">
+              <ref role="2_Hrw8" to="ygz6:46E_y$ew8hd" resolve="Test - Quick Invoice Edit" />
+              <node concept="3zknl8" id="46E_y$exzrl" role="2_HrWp">
+                <ref role="3zkmF1" node="46E_y$exzpz" resolve="inboxElement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2AUT8P" id="4H3LB8AgRA_">
@@ -1726,6 +1612,324 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="n9qNMHVtMe" role="1B3o_S" />
+  </node>
+  <node concept="2AUT8P" id="46E_y$ew7E0">
+    <property role="TrG5h" value="InvoicingJob_Originial" />
+    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <node concept="1_k$Jf" id="46E_y$ew7E1" role="1_k$Iu">
+      <property role="TrG5h" value="Check user service test" />
+      <node concept="3znxp0" id="46E_y$ew7E2" role="1_kBZ6">
+        <property role="TrG5h" value="inbox" />
+        <node concept="3uibUv" id="46E_y$ew7E3" role="3znzZe">
+          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
+        </node>
+        <node concept="2Tpcjw" id="46E_y$ew7E4" role="3znwwn">
+          <node concept="2_HltQ" id="46E_y$ew7E5" role="2TpcRq">
+            <ref role="2_Hrw8" to="wi0k:3atYQn9VS4M" resolve="Check User Service" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_k$Jf" id="46E_y$ew7E6" role="1_k$Iu">
+      <property role="TrG5h" value="Create Invoices" />
+      <node concept="3znxp0" id="46E_y$ew7E7" role="1_kBZ6">
+        <property role="TrG5h" value="inbox" />
+        <node concept="3uibUv" id="46E_y$ew7E8" role="3znzZe">
+          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
+        </node>
+        <node concept="2Tpcjw" id="46E_y$ew7E9" role="3znwwn">
+          <node concept="3zdtvw" id="46E_y$ew7Ea" role="2TpcRr">
+            <property role="TrG5h" value="invoiceSearchFilter" />
+            <ref role="3zdv75" to="ygz6:6XzXfke18sN" resolve="FilterSpecification" />
+            <ref role="3zdv76" to="ygz6:6XzXfke1a81" />
+            <node concept="3zdqQj" id="46E_y$ew7Eb" role="3zdlsu">
+              <node concept="3clFbS" id="46E_y$ew7Ec" role="2VODD2">
+                <node concept="3clFbF" id="46E_y$ew7Ed" role="3cqZAp">
+                  <node concept="37vLTI" id="46E_y$ew7Ee" role="3clFbG">
+                    <node concept="2XvMaL" id="46E_y$ew7Ef" role="37vLTx">
+                      <ref role="2XvMaQ" to="ygz6:1FVEJAIuas5" resolve="SearchOpt" />
+                      <node concept="2vefiz" id="46E_y$ew7Eg" role="h55Ek">
+                        <ref role="2vefiw" to="ygz6:1FVEJAIuass" resolve="create" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="46E_y$ew7Eh" role="37vLTJ">
+                      <node concept="3zknl8" id="46E_y$ew7Ei" role="2Oq$k0">
+                        <ref role="3zkmF1" node="46E_y$ew7Ea" resolve="invoiceSearchFilter" />
+                      </node>
+                      <node concept="2S8uIT" id="46E_y$ew7Ej" role="2OqNvi">
+                        <ref role="2S8YL0" to="ygz6:1FVEJAIuas$" resolve="searchOpt" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="46E_y$ew7Ek" role="3cqZAp">
+                  <node concept="37vLTI" id="46E_y$ew7El" role="3clFbG">
+                    <node concept="2OqwBi" id="46E_y$ew7Em" role="37vLTJ">
+                      <node concept="3zknl8" id="46E_y$ew7En" role="2Oq$k0">
+                        <ref role="3zkmF1" node="46E_y$ew7Ea" resolve="invoiceSearchFilter" />
+                      </node>
+                      <node concept="2S8uIT" id="46E_y$ew7Eo" role="2OqNvi">
+                        <ref role="2S8YL0" to="ygz6:6XzXfke19Nv" resolve="state" />
+                      </node>
+                    </node>
+                    <node concept="2XvMaL" id="46E_y$ew7Ep" role="37vLTx">
+                      <ref role="2XvMaQ" to="sdim:6XzXfke7pgu" resolve="ProcessingState" />
+                      <node concept="2vefiz" id="46E_y$ew7Eq" role="h55Ek">
+                        <ref role="2vefiw" to="sdim:6XzXfke7pis" resolve="processed" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3zdtvw" id="46E_y$ew7Er" role="2TpcRr">
+            <property role="TrG5h" value="invoiceSearchFilter" />
+            <ref role="3zdv75" to="ygz6:6XzXfke18p9" resolve="SearchResult" />
+            <node concept="3zdqQj" id="46E_y$ew7Es" role="3zdlsu">
+              <node concept="3clFbS" id="46E_y$ew7Et" role="2VODD2">
+                <node concept="3SKdUt" id="46E_y$ew7Eu" role="3cqZAp">
+                  <node concept="1PaTwC" id="46E_y$ew7Ev" role="1aUNEU">
+                    <node concept="3oM_SD" id="46E_y$ew7Ew" role="1PaTwD">
+                      <property role="3oM_SC" value="trigger" />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7Ex" role="1PaTwD">
+                      <property role="3oM_SC" value="single" />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7Ey" role="1PaTwD">
+                      <property role="3oM_SC" value="run.." />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7Ez" role="1PaTwD">
+                      <property role="3oM_SC" value="if" />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7E$" role="1PaTwD">
+                      <property role="3oM_SC" value="there" />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7E_" role="1PaTwD">
+                      <property role="3oM_SC" value="is" />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7EA" role="1PaTwD">
+                      <property role="3oM_SC" value="a" />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7EB" role="1PaTwD">
+                      <property role="3oM_SC" value="item." />
+                    </node>
+                    <node concept="3oM_SD" id="46E_y$ew7EC" role="1PaTwD">
+                      <property role="3oM_SC" value="n" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="46E_y$ew7ED" role="3cqZAp">
+                  <node concept="2OqwBi" id="46E_y$ew7EE" role="3clFbG">
+                    <node concept="3zknl8" id="46E_y$ew7EF" role="2Oq$k0">
+                      <ref role="3zkmF1" node="46E_y$ew7E7" resolve="inbox" />
+                    </node>
+                    <node concept="X8dFx" id="46E_y$ew7EG" role="2OqNvi">
+                      <node concept="2OqwBi" id="46E_y$ew7EH" role="25WWJ7">
+                        <node concept="3zknl8" id="46E_y$ew7EI" role="2Oq$k0">
+                          <ref role="3zkmF1" node="46E_y$ew7Er" resolve="invoiceSearchFilter" />
+                        </node>
+                        <node concept="2S8uIT" id="46E_y$ew7EJ" role="2OqNvi">
+                          <ref role="2S8YL0" to="ygz6:6XzXfke1ajR" resolve="items" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2_HltQ" id="46E_y$ew7EK" role="2TpcRq">
+            <ref role="2_Hrw8" to="ygz6:6XzXfke15oI" resolve="Search for Invoices" />
+          </node>
+        </node>
+      </node>
+      <node concept="3znyvg" id="46E_y$ew7EL" role="1_kBZ7">
+        <property role="TrG5h" value="inboxElement" />
+        <node concept="1sQxEM" id="46E_y$ew7EM" role="3znymz">
+          <node concept="2Tpcjw" id="46E_y$ew7EN" role="1sQxCg">
+            <node concept="2_HltQ" id="46E_y$ew7EO" role="2TpcRq">
+              <ref role="2_Hrw8" to="ygz6:1FVEJAIXFWL" resolve="Create InvoiceFolder from Single Invoice" />
+              <node concept="3zknl8" id="46E_y$ew7EP" role="2_HrWp">
+                <ref role="3zkmF1" node="46E_y$ew7EL" resolve="inboxElement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_k$Jf" id="46E_y$ew7EQ" role="1_k$Iu">
+      <property role="TrG5h" value="Book open Orders" />
+      <node concept="3znxp0" id="46E_y$ew7ER" role="1_kBZ6">
+        <property role="TrG5h" value="inbox" />
+        <node concept="3uibUv" id="46E_y$ew7ES" role="3znzZe">
+          <ref role="3uigEE" to="sdim:1FVEJAItIuo" resolve="InvoiceFolder" />
+        </node>
+        <node concept="2Tpcjw" id="46E_y$ew7ET" role="3znwwn">
+          <node concept="3zdtvw" id="46E_y$ew7EU" role="2TpcRr">
+            <property role="TrG5h" value="invoiceFolder" />
+            <ref role="3zdv75" to="ygz6:4InK$iO3L_a" resolve="Page_0" />
+            <ref role="3zdv76" to="ygz6:4InK$iO3LCY" />
+          </node>
+          <node concept="2_HltQ" id="46E_y$ew7EV" role="2TpcRq">
+            <ref role="2_Hrw8" to="ygz6:4InK$iO3KE1" resolve="Mark InvoiceFolders with current date" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3lKVtU" id="46E_y$ew7EW" role="2A_d42">
+      <property role="1QnCjn" value="0" />
+      <property role="1QnCsU" value="*/5" />
+      <property role="1QnCsW" value="12" />
+      <property role="1QnCj8" value="*" />
+      <property role="1QnCj1" value="*" />
+      <property role="1QnCj5" value="*" />
+      <ref role="2k5inG" node="46E_y$ew7E6" resolve="Create Invoices" />
+    </node>
+    <node concept="3lKVtU" id="46E_y$ew7EX" role="2A_d42">
+      <property role="1QnCjn" value="0" />
+      <property role="1QnCsU" value="*/5" />
+      <property role="1QnCsW" value="12" />
+      <property role="1QnCj8" value="*" />
+      <property role="1QnCj1" value="*" />
+      <property role="1QnCj5" value="*" />
+      <ref role="2k5inG" node="46E_y$ew7EQ" resolve="Book open Orders" />
+    </node>
+    <node concept="3lKVtU" id="46E_y$ew7EY" role="2A_d42">
+      <property role="1QnCjn" value="0" />
+      <property role="1QnCsU" value="*/2" />
+      <property role="1QnCsW" value="*" />
+      <property role="1QnCj8" value="*" />
+      <property role="1QnCj1" value="*" />
+      <property role="1QnCj5" value="*" />
+      <ref role="2k5inG" node="46E_y$ew7E1" resolve="Check user service test" />
+    </node>
+    <node concept="3lKYF6" id="46E_y$ew7EZ" role="2A_d42">
+      <property role="1R4AEf" value="1" />
+      <ref role="2k5inG" node="46E_y$ew7E6" resolve="Create Invoices" />
+    </node>
+    <node concept="2MWAvL" id="46E_y$ew7F0" role="2A_d42">
+      <node concept="Xl_RD" id="46E_y$ew7F1" role="2MWAvM">
+        <property role="Xl_RC" value="1.1.0" />
+      </node>
+    </node>
+    <node concept="2MZaQk" id="46E_y$ew7F2" role="2A_d42">
+      <node concept="Xl_RD" id="46E_y$ew7F3" role="2MZaQn">
+        <property role="Xl_RC" value="Invoicing Test Job" />
+      </node>
+    </node>
+    <node concept="2MWq9S" id="46E_y$ew7F4" role="2AUypC">
+      <node concept="3clFbS" id="46E_y$ew7F5" role="2VODD2">
+        <node concept="3VdxhY" id="46E_y$ew7F6" role="3cqZAp">
+          <property role="Rda9K" value="I5W9GWEMXX/DEBUG" />
+          <node concept="Xl_RD" id="46E_y$ew7F7" role="3VcgQn">
+            <property role="Xl_RC" value="JOB started." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="46E_y$ew7F8" role="3cqZAp">
+          <node concept="3clFbT" id="46E_y$ew7F9" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3w4e_Z" id="46E_y$ew7Fa" role="3w9mMS">
+      <property role="TrG5h" value="BatchJobStrategy" />
+      <node concept="3w4bLU" id="46E_y$ew7Fb" role="3w4b7O">
+        <node concept="Xl_RD" id="46E_y$ew7Fc" role="3w4aRE">
+          <property role="Xl_RC" value=".*MoWare Command Test.*" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fd" role="3w4aYS">
+          <property role="Xl_RC" value=".*Exception.*" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7Fe" role="3w4b7O">
+        <node concept="Xl_RD" id="46E_y$ew7Ff" role="3w4aYS">
+          <property role="Xl_RC" value=".*IllegalStateException.*" />
+        </node>
+        <node concept="1Kg0UH" id="46E_y$ew7Fg" role="1K988c">
+          <property role="1Kg0YU" value="120" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7Fh" role="3w4b7O">
+        <node concept="1Kg0UH" id="46E_y$ew7Fi" role="1K988c">
+          <property role="1Kg0YU" value="180" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fj" role="3w4aYS">
+          <property role="Xl_RC" value=".*Exception.*" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fk" role="3w4aRE">
+          <property role="Xl_RC" value=".*Delay.*" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7Fl" role="3w4b7O">
+        <node concept="1K980o" id="46E_y$ew7Fm" role="1K988c" />
+        <node concept="Xl_RD" id="46E_y$ew7Fn" role="3w4aYS">
+          <property role="Xl_RC" value=".*Exception.*" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fo" role="3w4aRE">
+          <property role="Xl_RC" value=".*Clear.*" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7Fp" role="3w4b7O">
+        <node concept="1Kg0UH" id="46E_y$ew7Fq" role="1K988c">
+          <property role="1Kg0YU" value="1234" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fr" role="3w4aYS">
+          <property role="Xl_RC" value=".*Exception.*" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fs" role="3w4aRE">
+          <property role="Xl_RC" value=".*ORA1234.*" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7Ft" role="3w4b7O">
+        <node concept="Xl_RD" id="46E_y$ew7Fu" role="3w4aYS">
+          <property role="Xl_RC" value="java.lang.RuntimeException" />
+        </node>
+        <node concept="Xl_RD" id="46E_y$ew7Fv" role="3w4aRE">
+          <property role="Xl_RC" value="ORA 2017" />
+        </node>
+        <node concept="1K982g" id="46E_y$ew7Fw" role="1K988c" />
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7Fx" role="3w4b7O">
+        <node concept="Xl_RD" id="46E_y$ew7Fy" role="3w4aYS">
+          <property role="Xl_RC" value=".*OFXCommandCancelException.*" />
+        </node>
+        <node concept="1Kg0UH" id="46E_y$ew7Fz" role="1K988c">
+          <property role="1Kg0YU" value="1" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7F$" role="3w4b7O">
+        <node concept="Xl_RD" id="46E_y$ew7F_" role="3w4aYS">
+          <property role="Xl_RC" value=".*IllegalStateException.*" />
+        </node>
+        <node concept="1Kg0UH" id="46E_y$ew7FA" role="1K988c">
+          <property role="1Kg0YU" value="120" />
+        </node>
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7FB" role="3w4b7O">
+        <node concept="Xl_RD" id="46E_y$ew7FC" role="3w4aYS">
+          <property role="Xl_RC" value=".*Null.*" />
+        </node>
+        <node concept="1Kg0UH" id="46E_y$ew7FD" role="1K988c">
+          <property role="1Kg0YU" value="90" />
+        </node>
+      </node>
+      <node concept="3watgV" id="46E_y$ew7FE" role="3w4b7O">
+        <ref role="3watgY" node="7bWGJuRJZrx" resolve="mpreis_basis_ex_start" />
+      </node>
+      <node concept="3w4bLU" id="46E_y$ew7FF" role="3w4b7O">
+        <node concept="1Kg0UH" id="46E_y$ew7FG" role="1K988c">
+          <property role="1Kg0YU" value="6000" />
+        </node>
+      </node>
+    </node>
+    <node concept="2d2NRx" id="46E_y$ew7FH" role="2AUypV">
+      <node concept="3clFbS" id="46E_y$ew7FI" role="2VODD2" />
+    </node>
+    <node concept="2d2NRx" id="46E_y$ew7FJ" role="2AUypL">
+      <node concept="3clFbS" id="46E_y$ew7FK" role="2VODD2" />
+    </node>
   </node>
 </model>
 
