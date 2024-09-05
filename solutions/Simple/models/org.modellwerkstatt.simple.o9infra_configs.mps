@@ -1139,7 +1139,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="1$$A7zM8Bg6">
-    <property role="TrG5h" value="FX8_Lola" />
+    <property role="TrG5h" value="FX8_MySql" />
     <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CGBMS">
@@ -1257,7 +1257,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1406,6 +1406,12 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="2hMVJtQB9_L" role="2CJ4_l">
+        <property role="TrG5h" value="OptimKeyboard" />
+        <node concept="Xl_RD" id="2hMVJtQB9_M" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
     </node>
     <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
@@ -1415,7 +1421,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTT" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -2457,7 +2463,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4l1zKLo5jkE">
-    <property role="TrG5h" value="FX8_Lola_MDE" />
+    <property role="TrG5h" value="FX8_MDE_local" />
     <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6UATHBJ4pbU" role="2CGBMS">
@@ -2517,7 +2523,7 @@
       <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl3" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="OraclePoolToLola" />
+      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl4" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -3059,6 +3065,12 @@
       <node concept="2CJ4$C" id="84ZKdf_V3x" role="2CJ4_l">
         <property role="TrG5h" value="CheckAlsoPredecessorDuplication" />
         <node concept="Xl_RD" id="84ZKdf_V3y" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="kuSiAeUJ_N" role="2CJ4_l">
+        <property role="TrG5h" value="SingleAppInstanceMode" />
+        <node concept="Xl_RD" id="kuSiAeUJ_O" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>

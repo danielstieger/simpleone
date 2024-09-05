@@ -10,12 +10,18 @@
       <sourceRoot location="spring-beans-5.2.9.RELEASE.jar" />
       <sourceRoot location="spring-jdbc-5.2.9.RELEASE.jar" />
     </modelRoot>
+    <modelRoot contentPath="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons" type="java_classes">
+      <sourceRoot location="mysql-connector-java-8.0.11.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
+  <stubModelEntries>
+    <stubModelEntry path="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

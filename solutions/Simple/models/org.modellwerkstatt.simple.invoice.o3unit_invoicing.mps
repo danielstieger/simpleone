@@ -1295,18 +1295,27 @@
           </node>
           <node concept="9aQIb" id="1FVEJAItPhP" role="9aQIa">
             <node concept="3clFbS" id="1FVEJAItPhQ" role="9aQI4">
+              <node concept="3cpWs8" id="t_N2Rqv$hX" role="3cqZAp">
+                <node concept="3cpWsn" id="t_N2Rqv$i0" role="3cpWs9">
+                  <property role="TrG5h" value="id" />
+                  <node concept="10Oyi0" id="t_N2Rqv$hV" role="1tU5fm" />
+                  <node concept="2OqwBi" id="t_N2Rqv$u5" role="33vP2m">
+                    <node concept="3urNQE" id="t_N2Rqv$oG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
+                    </node>
+                    <node concept="2S8uIT" id="t_N2Rqv$xI" role="2OqNvi">
+                      <ref role="2S8YL0" to="sdim:6XzXfke1aoC" resolve="id" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="1FVEJAItPje" role="3cqZAp">
                 <node concept="37vLTI" id="1FVEJAItPjE" role="3clFbG">
                   <node concept="1odsa" id="1FVEJAItPk9" role="37vLTx">
                     <ref role="1ods_" to="sdim:6QrtA9Mt96m" resolve="InvoiceRepo" />
                     <ref role="37wK5l" to="sdim:6QrtA9Mt96x" resolve="checkoutInv" />
-                    <node concept="2OqwBi" id="1FVEJAItQJf" role="37wK5m">
-                      <node concept="3urNQE" id="5TC7JC3Wpxk" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
-                      </node>
-                      <node concept="2S8uIT" id="1FVEJAItQKn" role="2OqNvi">
-                        <ref role="2S8YL0" to="sdim:6XzXfke1aoC" resolve="id" />
-                      </node>
+                    <node concept="37vLTw" id="t_N2Rqv$ye" role="37wK5m">
+                      <ref role="3cqZAo" node="t_N2Rqv$i0" resolve="id" />
                     </node>
                   </node>
                   <node concept="3urNQE" id="5TC7JC3Wpxl" role="37vLTJ">
@@ -1314,16 +1323,20 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="53DPdbocSMK" role="3cqZAp">
-                <node concept="2OqwBi" id="53DPdbocSMH" role="3clFbG">
-                  <node concept="10M0yZ" id="53DPdbocSMI" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+              <node concept="mlg3r" id="t_N2Rqud6C" role="3cqZAp">
+                <node concept="3y3z36" id="t_N2RqudiA" role="mlgNJ">
+                  <node concept="10Nm6u" id="t_N2RqudkH" role="3uHU7w" />
+                  <node concept="3urNQE" id="t_N2Rqudey" role="3uHU7B">
+                    <ref role="3cqZAo" node="5TC7JC3Wpxc" resolve="invoiceprocParam" />
                   </node>
-                  <node concept="liA8E" id="53DPdbocSMJ" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="Xl_RD" id="53DPdbocSPR" role="37wK5m">
-                      <property role="Xl_RC" value="&gt; Doing a checkout ... " />
+                </node>
+                <node concept="lgADV" id="t_N2Rqud6F" role="mlgNH">
+                  <node concept="35AVbj" id="t_N2Rqud6G" role="lgxf9">
+                    <node concept="37vLTw" id="t_N2Rqv$AX" role="35Gt3$">
+                      <ref role="3cqZAo" node="t_N2Rqv$i0" resolve="id" />
+                    </node>
+                    <node concept="ic4WF" id="t_N2Rqud6H" role="icr7_">
+                      <property role="ic4Xk" value="Invoice can not be null after checkout. The id is %d" />
                     </node>
                   </node>
                 </node>
@@ -2734,6 +2747,7 @@
   <node concept="3ugp7m" id="6lIZ7mBTnUG">
     <property role="TrG5h" value="Single Invoice Test" />
     <property role="19I623" value="701$ZaZsahE/GRAPH_OWNER_CMD_MODAL" />
+    <node concept="3clFbT" id="2fd8mcgYPxB" role="e0yQD" />
     <node concept="3ugp7q" id="6lIZ7mBTM$7" role="3ug97V">
       <property role="TrG5h" value="Page_0" />
       <ref role="3gcvY6" to="sdim:6XzXfke1alv" resolve="Invoice" />

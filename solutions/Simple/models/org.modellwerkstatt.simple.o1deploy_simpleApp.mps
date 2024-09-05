@@ -344,7 +344,7 @@
   </registry>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App_Desktop_Order" />
-    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_MySql" />
     <node concept="33WYYh" id="46E_y$ewGwF" role="2N77jL">
       <ref role="2_Hrw8" to="ygz6:46E_y$ew8h4" resolve="Test - Create 160000 Items" />
     </node>
@@ -434,9 +434,9 @@
         <ref role="2_Hrw8" to="ptpb:1p9ACItUpyZ" resolve="Open Article" />
       </node>
     </node>
-    <node concept="2$ntO6" id="6lIZ7mBTMY9" role="2$nsuY">
-      <node concept="33WYYh" id="6lIZ7mBTMYa" role="2$ntUL">
-        <ref role="2_Hrw8" to="ygz6:6lIZ7mBTnUG" resolve="Single Invoice Test" />
+    <node concept="2$ntO6" id="CpxjlTFCMm" role="2$nsuY">
+      <node concept="33WYYh" id="CpxjlTFCMn" role="2$ntUL">
+        <ref role="2_Hrw8" to="tsl4:CpxjlTF_kr" resolve="New Order Wizzard" />
       </node>
     </node>
     <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
@@ -665,7 +665,7 @@
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App_MDE_Order" />
-    <ref role="2WPtWl" to="oyrz:4l1zKLo5jkE" resolve="FX8_Lola_MDE" />
+    <ref role="2WPtWl" to="oyrz:4l1zKLo5jkE" resolve="FX8_MDE_local" />
     <node concept="3ulXEM" id="4h8GofeW2LA" role="3ulXEG">
       <property role="TrG5h" value="values" />
       <node concept="_YKpA" id="4h8GofeW2LI" role="1tU5fm">
@@ -745,6 +745,11 @@
       <node concept="33WYYh" id="6m2yckYuv70" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
         <ref role="3uz5Vf" to="oyrz:5R_43Wzruo3" resolve="HOD_REF_STAT_UITEST" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="CpxjlTIC9a" role="2$nsuY">
+      <node concept="33WYYh" id="CpxjlTIC9b" role="2$ntUL">
+        <ref role="2_Hrw8" to="tsl4:CpxjlTF_kr" resolve="New Order Wizzard" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
@@ -1649,7 +1654,7 @@
   </node>
   <node concept="2AUT8P" id="46E_y$ew7E0">
     <property role="TrG5h" value="InvoicingJob_Originial" />
-    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_MySql" />
     <node concept="1_k$Jf" id="46E_y$ew7E1" role="1_k$Iu">
       <property role="TrG5h" value="Check user service test" />
       <node concept="3znxp0" id="46E_y$ew7E2" role="1_kBZ6">
