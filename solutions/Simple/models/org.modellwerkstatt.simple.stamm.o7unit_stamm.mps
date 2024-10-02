@@ -110,6 +110,9 @@
         <reference id="8086154250676616105" name="object" index="2IFZ7r" />
       </concept>
       <concept id="1879461712355203928" name="org.modellwerkstatt.objectflow.structure.PageScopeConceptFunc" flags="ig" index="JX2Gw" />
+      <concept id="5184976167871705024" name="org.modellwerkstatt.objectflow.structure.CommandUrlOption" flags="ng" index="TbPeq">
+        <child id="5184976167871723018" name="url" index="Ta8Dg" />
+      </concept>
       <concept id="3887124829264538773" name="org.modellwerkstatt.objectflow.structure.PagePaneActionProviderLink" flags="ng" index="3063JU">
         <reference id="3887124829264538774" name="actionProviderPagePane" index="3063JT" />
       </concept>
@@ -129,6 +132,7 @@
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
         <property id="96922280160231604" name="defaultHotkey" index="3uBtrS" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
+        <child id="8697556949200789131" name="options" index="3ap3dX" />
         <child id="4873800708640209291" name="defaultColor" index="1bacTB" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
@@ -674,6 +678,11 @@
     </node>
     <node concept="276gdk" id="5d$USb$LWTQ" role="1bacTB">
       <ref role="276gdn" to="oyrz:6QrtA9Mt95Q" resolve="COLOR_0" />
+    </node>
+    <node concept="TbPeq" id="3UAPsO1Vu6F" role="3ap3dX">
+      <node concept="Xl_RD" id="3UAPsO1Vu7j" role="Ta8Dg">
+        <property role="Xl_RC" value="modal" />
+      </node>
     </node>
   </node>
   <node concept="2mKXYI" id="1p9ACItUpzC">

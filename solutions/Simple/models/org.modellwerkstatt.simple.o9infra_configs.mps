@@ -867,6 +867,14 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="MhXWWf9bDG" role="2kzhMJ">
+      <property role="TrG5h" value="PRINT" />
+      <node concept="2kzhL4" id="MhXWWf9bDH" role="2kzgdm">
+        <node concept="Xl_RD" id="MhXWWf9bDI" role="il5_5">
+          <property role="Xl_RC" value="Print" />
+        </node>
+      </node>
+    </node>
     <node concept="27cpit" id="6QrtA9Mt95Q" role="27c1lO">
       <property role="27cpiu" value="#E74C3C" />
       <property role="TrG5h" value="COLOR_0" />
@@ -3029,6 +3037,48 @@
     </node>
     <node concept="2CJoq6" id="69doFuFuhVu" role="2CGBMS">
       <property role="TrG5h" value="SingleAppInstanceMode" />
+    </node>
+    <node concept="2CJf3v" id="6wCZ$SInsxC" role="2CGBMS">
+      <property role="TrG5h" value="oAuth2Goole" />
+      <node concept="Xl_RD" id="6wCZ$SInsxE" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.GoogleOAuth2" />
+      </node>
+      <node concept="2CJf1O" id="6wCZ$SInsyR" role="2CJ4_l">
+        <node concept="Xl_RD" id="6wCZ$SInsyS" role="2DqwMp">
+          <property role="Xl_RC" value="938810109726-3lo3a5ebkq8u8lqli5prjq3609bkkn6h.apps.googleusercontent.com" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6wCZ$SInszO" role="2CJ4_l">
+        <node concept="Xl_RD" id="6wCZ$SInszP" role="2DqwMp">
+          <property role="Xl_RC" value="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" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6wCZ$SInszU" role="2CJ4_l">
+        <node concept="Xl_RD" id="6wCZ$SInszV" role="2DqwMp">
+          <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="6wCZ$SInuV8" role="2CGBMS">
+      <property role="TrG5h" value="oAuth2LinkedIn" />
+      <node concept="2CJf1O" id="6wCZ$SInuWo" role="2CJ4_l">
+        <node concept="Xl_RD" id="6wCZ$SInuWq" role="2DqwMp">
+          <property role="Xl_RC" value="77r8hkllgbcu3d" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6wCZ$SInuWx" role="2CJ4_l">
+        <node concept="Xl_RD" id="6wCZ$SInuWy" role="2DqwMp">
+          <property role="Xl_RC" value="WPL_AP1.uGS6jrttbQde7uDQ.JEKajQ==" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="6wCZ$SInuWE" role="2CJ4_l">
+        <node concept="Xl_RD" id="6wCZ$SInuWF" role="2DqwMp">
+          <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="6wCZ$SInuVa" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.LinkedinOAuth2" />
+      </node>
     </node>
     <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
