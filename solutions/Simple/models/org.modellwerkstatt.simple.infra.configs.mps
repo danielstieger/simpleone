@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)">
+<model ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)">
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)" />
+    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -297,7 +297,7 @@
       <property role="TrG5h" value="CFT_Search" />
       <node concept="2kzhL4" id="3Rw9V4pLpzL" role="2kzgdm">
         <node concept="Xl_RD" id="3Rw9V4pLpzM" role="il5_5">
-          <property role="Xl_RC" value="Default Search" />
+          <property role="Xl_RC" value="Search for orders" />
         </node>
         <node concept="Xl_RD" id="56t4EvFMzSk" role="il5$o">
           <property role="Xl_RC" value="search" />
@@ -456,7 +456,7 @@
       <node concept="2kzhL4" id="2qcR1OSjf2j" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTx/F4" />
         <node concept="Xl_RD" id="2qcR1OSjf2l" role="il5_5">
-          <property role="Xl_RC" value="NEXT" />
+          <property role="Xl_RC" value="Next &gt;" />
         </node>
       </node>
     </node>
@@ -465,7 +465,7 @@
       <node concept="2kzhL4" id="2qcR1OSjf2R" role="2kzgdm">
         <property role="il5CD" value="1hImSMr5NTw/F3" />
         <node concept="Xl_RD" id="2qcR1OSjf2T" role="il5_5">
-          <property role="Xl_RC" value="BACK" />
+          <property role="Xl_RC" value="&lt; Back" />
         </node>
       </node>
     </node>
@@ -484,15 +484,6 @@
         <property role="il5CD" value="1hImSMr5NTw/F3" />
         <node concept="Xl_RD" id="3Rw9V4pLpzY" role="il5_5">
           <property role="Xl_RC" value="Value Edit" />
-        </node>
-      </node>
-    </node>
-    <node concept="il5_x" id="3Rw9V4pLp$2" role="2kzhMJ">
-      <property role="TrG5h" value="Next" />
-      <node concept="2kzhL4" id="3Rw9V4pLp$3" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NTx/F4" />
-        <node concept="Xl_RD" id="3Rw9V4pLp$4" role="il5_5">
-          <property role="Xl_RC" value="Next" />
         </node>
       </node>
     </node>
@@ -773,14 +764,6 @@
         </node>
       </node>
     </node>
-    <node concept="il5_x" id="3dciNchuq5s" role="2kzhMJ">
-      <property role="TrG5h" value="BACK" />
-      <node concept="2kzhL4" id="3dciNchuq5t" role="2kzgdm">
-        <node concept="Xl_RD" id="3dciNchuq5v" role="il5_5">
-          <property role="Xl_RC" value="BACK" />
-        </node>
-      </node>
-    </node>
     <node concept="il5_x" id="7IcK5LneMUH" role="2kzhMJ">
       <property role="TrG5h" value="EDIT" />
       <node concept="2kzhL4" id="7IcK5LneMUI" role="2kzgdm">
@@ -871,7 +854,10 @@
       <property role="TrG5h" value="PRINT" />
       <node concept="2kzhL4" id="MhXWWf9bDH" role="2kzgdm">
         <node concept="Xl_RD" id="MhXWWf9bDI" role="il5_5">
-          <property role="Xl_RC" value="Print" />
+          <property role="Xl_RC" value="Print Order" />
+        </node>
+        <node concept="Xl_RD" id="4EUPwPcippY" role="il5$o">
+          <property role="Xl_RC" value="print" />
         </node>
       </node>
     </node>
@@ -1047,6 +1033,30 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="1CbI5W12gpG" role="2kzhMJ">
+      <property role="TrG5h" value="SAVE_CLOSE" />
+      <node concept="2kzhL4" id="1CbI5W12gpH" role="2kzgdm">
+        <node concept="Xl_RD" id="1CbI5W12gpJ" role="il5_5">
+          <property role="Xl_RC" value="SAVE_CLOSE" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="6G$_N5GfDSa" role="2kzhMJ">
+      <property role="TrG5h" value="Illegal" />
+      <node concept="2kzhL4" id="6G$_N5GfDSb" role="2kzgdm">
+        <node concept="Xl_RD" id="6G$_N5GfDSc" role="il5_5">
+          <property role="Xl_RC" value="Mark Illegal" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="4EUPwPceny4" role="2kzhMJ">
+      <property role="TrG5h" value="Demo" />
+      <node concept="2kzhL4" id="4EUPwPceny5" role="2kzgdm">
+        <node concept="Xl_RD" id="4EUPwPceny6" role="il5_5">
+          <property role="Xl_RC" value="Demo" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />
@@ -1153,13 +1163,13 @@
     <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="7MWNCzYDeqS" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="7MWNCzYDeqU" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJoq6" id="2n3p7A96F5O" role="2CGBMS">
@@ -1265,7 +1275,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
+      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1286,7 +1296,7 @@
     <node concept="2CJf3v" id="6UATHBJ4pfE" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4pfF" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="5$BCFrw7$Bw" role="2CGBMS">
@@ -1298,7 +1308,7 @@
     <node concept="2CJf3v" id="3bLKpg8Rj2z" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="3bLKpg8Rj2B" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJf3v" id="1NjnH06l6J4" role="2CGBMS">
@@ -1339,13 +1349,13 @@
     <node concept="2CJf3v" id="6UATHBJ4pdD" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4pdE" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="4FeXrhENtJ1" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="4FeXrhENtJ5" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_MDE" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_MDE" />
       </node>
     </node>
     <node concept="2CPvp3" id="6jihzUGVpcB" role="2CGBMS" />
@@ -1429,7 +1439,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
-      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTT" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1448,7 +1458,7 @@
     <node concept="2CJf3v" id="6UATHBJ4p8j" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4p8k" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="7L6pyr9KHQC" role="2CGBMS">
@@ -2401,7 +2411,7 @@
     <node concept="2CJf3v" id="6UATHBJ4pad" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4pae" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="4g_sjDPCT2D" role="2CGBMS">
@@ -2477,13 +2487,13 @@
     <node concept="2CJf3v" id="6UATHBJ4pbU" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4pbV" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="4l1zKLo5jkG" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="4l1zKLo5jkK" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_MDE" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_MDE" />
       </node>
     </node>
     <node concept="2CJoq6" id="4l1zKLo5jkL" role="2CGBMS">
@@ -3023,13 +3033,13 @@
     <node concept="2CJf3v" id="6UATHBJ4peK" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="6UATHBJ4peL" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o8infra_objects.TestSetting" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
       </node>
     </node>
     <node concept="2CJf3v" id="4Ex3Fobawvn" role="2CGBMS">
       <property role="TrG5h" value="platform" />
       <node concept="Xl_RD" id="4Ex3Fobawvo" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.o9infra_configs.SimpleRes_RICH" />
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
       </node>
     </node>
     <node concept="2CJ4_Q" id="4Ex3Fobawvu" role="2CGBMS">
@@ -3055,6 +3065,27 @@
       </node>
       <node concept="2CJf1O" id="6wCZ$SInszU" role="2CJ4_l">
         <node concept="Xl_RD" id="6wCZ$SInszV" role="2DqwMp">
+          <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="5zMNc6uk2$D" role="2CGBMS">
+      <property role="TrG5h" value="entraOAuth" />
+      <node concept="Xl_RD" id="5zMNc6uk2$E" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.EntraIdOAuth2" />
+      </node>
+      <node concept="2CJf1O" id="5zMNc6uk2$F" role="2CJ4_l">
+        <node concept="Xl_RD" id="5zMNc6uk2$G" role="2DqwMp">
+          <property role="Xl_RC" value="eb800ee9-9c45-48de-91ef-6653d84855f9" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="5zMNc6uk2$H" role="2CJ4_l">
+        <node concept="Xl_RD" id="5zMNc6uk2$I" role="2DqwMp">
+          <property role="Xl_RC" value="pUA8Q~FaU~pEJbGe2qBpyoen0xGhYHOlLwoqyaZ5" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="5zMNc6uk2$J" role="2CJ4_l">
+        <node concept="Xl_RD" id="5zMNc6uk2$K" role="2DqwMp">
           <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
         </node>
       </node>
@@ -3103,7 +3134,7 @@
       <node concept="2CJ4$C" id="5KfzM7M1eu$" role="2CJ4_l">
         <property role="TrG5h" value="ScrollAdjust" />
         <node concept="Xl_RD" id="5KfzM7M1eu_" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="false" />
         </node>
       </node>
       <node concept="2CJ4$C" id="3mOf56UVtiz" role="2CJ4_l">
@@ -3190,6 +3221,243 @@
     </node>
     <node concept="20ptWn" id="4Ex3Fobawvy" role="20ptHX">
       <node concept="Xl_RD" id="4Ex3Fobawvz" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="4yMqt77ruDK">
+    <property role="TrG5h" value="TurkuConfigMT" />
+    <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="4yMqt77ruDL" role="2CGBMS">
+      <property role="TrG5h" value="ldapService" />
+      <node concept="Xl_RD" id="4yMqt77ruDM" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.FakeMoLdapService" />
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruDN" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruDO" role="2DqwMp">
+          <property role="Xl_RC" value="ldap://mpreis.co.at:389" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruDP" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruDQ" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruDR" role="2DqwMp">
+          <property role="Xl_RC" value="CN=NP_moware-auth,OU=04SPEZIAL,OU=01RESOURCE,DC=mpreis,DC=co,DC=at" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruDS" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruDT" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruDU" role="2DqwMp">
+          <property role="Xl_RC" value="-secret-" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruDV" role="2DqwMv">
+          <property role="Xl_RC" value="2" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruDW" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruDX" role="2DqwMp">
+          <property role="Xl_RC" value="OU=10USER,DC=mpreis,DC=co,DC=at" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruDY" role="2DqwMv">
+          <property role="Xl_RC" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruDZ" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="4yMqt77ruE0" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruE1" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="4yMqt77ruE2" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="4yMqt77ruE3" role="2CGBMS">
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJoq6" id="4yMqt77ruE4" role="2CGBMS">
+      <property role="TrG5h" value="SingleAppInstanceMode" />
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruE5" role="2CGBMS">
+      <property role="TrG5h" value="oAuth2Goole" />
+      <node concept="Xl_RD" id="4yMqt77ruE6" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.GoogleOAuth2" />
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruE7" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruE8" role="2DqwMp">
+          <property role="Xl_RC" value="938810109726-3lo3a5ebkq8u8lqli5prjq3609bkkn6h.apps.googleusercontent.com" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruE9" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEa" role="2DqwMp">
+          <property role="Xl_RC" value="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" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEb" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEc" role="2DqwMp">
+          <property role="Xl_RC" value="https://modwerk-test.mpreis.co.at:8443/simpleone/login" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruEd" role="2CGBMS">
+      <property role="TrG5h" value="entraOAuth" />
+      <node concept="Xl_RD" id="4yMqt77ruEe" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.EntraIdOAuth2" />
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEf" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEg" role="2DqwMp">
+          <property role="Xl_RC" value="eb800ee9-9c45-48de-91ef-6653d84855f9" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEh" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEi" role="2DqwMp">
+          <property role="Xl_RC" value="pUA8Q~FaU~pEJbGe2qBpyoen0xGhYHOlLwoqyaZ5" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEj" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEk" role="2DqwMp">
+          <property role="Xl_RC" value="https://modwerk-test.mpreis.co.at:8443/simpleone/login" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruEl" role="2CGBMS">
+      <property role="TrG5h" value="oAuth2LinkedIn" />
+      <node concept="2CJf1O" id="4yMqt77ruEm" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEn" role="2DqwMp">
+          <property role="Xl_RC" value="77r8hkllgbcu3d" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEo" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEp" role="2DqwMp">
+          <property role="Xl_RC" value="WPL_AP1.uGS6jrttbQde7uDQ.JEKajQ==" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEq" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEr" role="2DqwMp">
+          <property role="Xl_RC" value="https://modwerk-test.mpreis.co.at:8443/simpleone/login" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4yMqt77ruEs" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.LinkedinOAuth2" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruEt" role="2CGBMS">
+      <property role="TrG5h" value="appFactory" />
+      <node concept="2CJ4$C" id="4yMqt77ruEu" role="2CJ4_l">
+        <property role="TrG5h" value="CheckDeployedVersion" />
+        <node concept="Xl_RD" id="4yMqt77ruEv" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4yMqt77ruEw" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationRetrieve" />
+        <node concept="Xl_RD" id="4yMqt77ruEx" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/static" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4yMqt77ruEy" role="2CJ4_l">
+        <property role="TrG5h" value="UploadFsLocationStore" />
+        <node concept="Xl_RD" id="4yMqt77ruEz" role="2CaGCA">
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4yMqt77ruE$" role="2CJ4_l">
+        <property role="TrG5h" value="ScrollAdjust" />
+        <node concept="Xl_RD" id="4yMqt77ruE_" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4yMqt77ruEA" role="2CJ4_l">
+        <property role="TrG5h" value="AutoParDeploymentForwardGracefully" />
+        <node concept="Xl_RD" id="4yMqt77ruEB" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4yMqt77ruEC" role="2CJ4_l">
+        <property role="TrG5h" value="CheckAlsoPredecessorDuplication" />
+        <node concept="Xl_RD" id="4yMqt77ruED" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4yMqt77ruEE" role="2CJ4_l">
+        <property role="TrG5h" value="SingleAppInstanceMode" />
+        <node concept="Xl_RD" id="4yMqt77ruEF" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4yMqt77ruEG" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4yMqt77ruEH" role="2CGBMS">
+      <property role="TrG5h" value="printFactory" />
+      <node concept="2CJf1O" id="4yMqt77ruEI" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEJ" role="2DqwMp">
+          <property role="Xl_RC" value="noTemplateClassLoaderHere" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruEK" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEL" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEM" role="2DqwMp">
+          <property role="Xl_RC" value="/Users/danielstieger/migration/2020_3/simpleone/templates" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruEN" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEO" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEP" role="2DqwMp">
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/printTMP" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruEQ" role="2DqwMv">
+          <property role="Xl_RC" value="2" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruER" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruES" role="2DqwMp">
+          <property role="Xl_RC" value="http://localhost:8080/printTMP" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruET" role="2DqwMv">
+          <property role="Xl_RC" value="3" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEU" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEV" role="2DqwMp">
+          <property role="Xl_RC" value="true" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruEW" role="2DqwMv">
+          <property role="Xl_RC" value="4" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="4yMqt77ruEX" role="2CJ4_l">
+        <node concept="Xl_RD" id="4yMqt77ruEY" role="2DqwMp">
+          <property role="Xl_RC" value="/Library/Fonts" />
+        </node>
+        <node concept="Xl_RD" id="4yMqt77ruEZ" role="2DqwMv">
+          <property role="Xl_RC" value="5" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4yMqt77ruF0" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.print.TurkuPrintFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="4yMqt77ruF1" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+    </node>
+    <node concept="2CJ4_Q" id="4yMqt77ruF2" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="4yMqt77ruF3" role="20ptHX">
+      <node concept="Xl_RD" id="4yMqt77ruF4" role="20ptNC">
         <property role="Xl_RC" value="org.modellwerkstatt.simple" />
       </node>
     </node>

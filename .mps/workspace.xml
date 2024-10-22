@@ -38,12 +38,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28c4ecba-6ea1-4cca-b332-768dba78c247" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.articlesearch.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.coupon.domainCoupon.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.coupon.unitCoupon.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.coupon.unitCouponDsaCustomer.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.coupon.unitDsaCustomer.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o9infra_configs.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o9infra_configs.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o3unit_orderhandling.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o3unit_orderhandling.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o7domain_order.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o7domain_order.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.stamm.o7unit_stamm.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.stamm.o7unit_stamm.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.inherit.status.o3unit_inheritall.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.inherit.unitDoc.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.o3unit_invoicing.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.domainInvoice.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.o7domain_invoice.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.invoice.unitInvoice.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.movement.o3unit_movments.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.movement.domainMovement.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.movement.o7domain_movement.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.movement.unitMovement.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.app.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o2test.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o8infra_objects.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.infra.objects.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.o9infra_configs.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.infra.configs.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o3unit_orderhandling.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.unitOrderHandling.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.o7domain_order.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.order.domainOrder.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.stamm.o7domain_stamm.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.master.domainMaster.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.stamm.o7unit_stamm.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.master.unitMaster.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.statusTest.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.upload.o3domain_upload.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.upload.domainUpload.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.upload.o7unit_upload.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/models/org.modellwerkstatt.simple.demo.upload.unitUpload.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Simple/org.modellwerkstatt.simple.msd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +80,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="93bc01c3-61fc-4d72-a49f-0ae133286fa6/r:7f2d58f3-abac-4d78-af51-5a70cd8e94da(TempModule93bc01c3-61fc-4d72-a49f-0ae133286fa6/ConsoleModel_2570653719138)">
+            <model ref="29f76b62-1e61-4d4f-b0a7-60c92a4c4f19/r:70c8f052-df16-4566-aadc-8b7f71f2fc1e(TempModule29f76b62-1e61-4d4f-b0a7-60c92a4c4f19/ConsoleModel_3672014690196)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -83,11 +100,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="MhXWWf8tpS">
-                <node concept="3balQm" id="MhXWWf8tpT" role="aymYE" />
-                <node concept="2Clz$F" id="MhXWWf8tpU" role="aymYO" />
-                <node concept="2_V_lH" id="MhXWWf8tpV" role="1PhJh3">
-                  <ref role="2_V_lI" node="MhXWWf8tpU" resolve="CommandHolder" />
+              <node concept="aymSD" id="4EUPwPc7Atc">
+                <node concept="3balQm" id="4EUPwPc7Atd" role="aymYE" />
+                <node concept="2Clz$F" id="4EUPwPc7Ate" role="aymYO" />
+                <node concept="2_V_lH" id="4EUPwPc7Atf" role="1PhJh3">
+                  <ref role="2_V_lI" node="4EUPwPc7Ate" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -166,6 +183,14 @@
   <component name="NodeEditorSearchHistory">
     <option name="searches">
       <list>
+        <option value="getText" />
+        <option value="provideH" />
+        <option value="nothingOr" />
+        <option value="traverseOrIssueUpdateConc" />
+        <option value="traverseOrIss" />
+        <option value="traverse" />
+        <option value="install" />
+        <option value="internal_" />
         <option value="shutdow" />
         <option value="optimKey" />
         <option value="SMR" />
@@ -188,14 +213,6 @@
         <option value="clean" />
         <option value="InitCmdEvent" />
         <option value="actionHBox" />
-        <option value="showTile" />
-        <option value="Event" />
-        <option value="userLogged" />
-        <option value="getApp" />
-        <option value="userEnv" />
-        <option value="runningTabCommandContainers" />
-        <option value="promptWindowCommandC" />
-        <option value="closeWindowAn" />
       </list>
     </option>
   </component>
@@ -278,7 +295,6 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="Scope" />
       <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
@@ -296,7 +312,263 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="86b5ca77-71d4-452d-8c64-76f13a80aab6" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.infra.configs.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objectflow" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5a857198-951d-4874-b213-66fc66e0ee10" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="89962b41-edd2-410d-b9b2-c525c5d553eb" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manmap" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="37fdf88a-1025-4d01-864a-0bf987f72e6f" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manmap" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.infra.configs.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="86b5ca77-71d4-452d-8c64-76f13a80aab6" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:ff532864-1e8f-409b-8790-35952b90f6d6(org.modellwerkstatt.fx8forms.windows) in IdeaFile[path: /Users/danielstieger/migration/2020_3/moware/fx8forms/solutions/org.modellwerkstatt.fx8forms/models/org/modellwerkstatt/fx8forms/windows.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,7 +592,119 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.o1deploy_simpleApp) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps]" />
+              <option name="myItemId" value="infra" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.infra.objects.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="89962b41-edd2-410d-b9b2-c525c5d553eb" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.app) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.app.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="64adc67c-5fcf-45f5-82db-6a6771963d93(org.modellwerkstatt.dataux)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:1f97d4af-95e4-4353-b2e9-86b0f0e8d221(org.modellwerkstatt.dataux.plugin) in IdeaFile[path: /Users/danielstieger/migration/2020_3/moware/dataux/languages/org.modellwerkstatt.dataux/models/plugin.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="86b5ca77-71d4-452d-8c64-76f13a80aab6" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,36 +736,6 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -394,21 +748,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="89962b41-edd2-410d-b9b2-c525c5d553eb" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
+              <option name="myItemId" value="objectflow" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,7 +766,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="movement" />
+              <option name="myItemId" value="master" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,11 +776,15 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
+              <option name="myItemId" value="Solutions" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataux" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,37 +808,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
+              <option name="myItemId" value="Modules Pool" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.o7domain_order) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.order.o7domain_order.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleOne" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
+              <option name="myItemId" value="Solutions" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,6 +823,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Solutions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="86b5ca77-71d4-452d-8c64-76f13a80aab6" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,21 +843,10 @@
               <option name="myItemId" value="f6ea4529-b826-49cb-a717-2ac43f8ba5f5" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.o1deploy_simpleApp) in IdeaFile[path: /Users/danielstieger/migration/2020_3/simpleone/solutions/Simple/models/org.modellwerkstatt.simple.o1deploy_simpleApp.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6871219927627844241" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -623,11 +938,11 @@
         <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Node M3 Object Infrastructure" type="Java Application" factoryName="Java" temporary="true">
+    <configuration name="Node App_MDE_Order" type="Java Application" factoryName="Java" temporary="true">
       <myNode>
         <MyState>
-          <option name="myNodePointer" value="r:1e9d9498-1123-47e6-b3ad-2a4dd175afe5(org.modellwerkstatt.objectflow.tests.manmap.Tests)/7371049987059394817" />
-          <option name="myNodeText" value="org.modellwerkstatt.objectflow.tests.manmap.Tests.M3 Object Infrastructure" />
+          <option name="myNodePointer" value="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.o1deploy_simpleApp)/6871219927627844301" />
+          <option name="myNodeText" value="org.modellwerkstatt.simple.o1deploy_simpleApp.App_MDE_Order" />
         </MyState>
       </myNode>
       <myRunParameters>
@@ -721,7 +1036,7 @@
     </configuration>
     <list>
       <item itemvalue="Java Application.Node App_Desktop_Order" />
-      <item itemvalue="Java Application.Node M3 Object Infrastructure" />
+      <item itemvalue="Java Application.Node App_MDE_Order" />
       <item itemvalue="Java Application.Node Query and Operators (no session)" />
       <item itemvalue="Java Application.Node SomeTests" />
       <item itemvalue="Java Application.Node XmlSerialization" />
@@ -732,7 +1047,7 @@
         <item itemvalue="Java Application.Node XmlSerialization" />
         <item itemvalue="Java Application.Node SomeTests" />
         <item itemvalue="Java Application.Node Query and Operators (no session)" />
-        <item itemvalue="Java Application.Node M3 Object Infrastructure" />
+        <item itemvalue="Java Application.Node App_MDE_Order" />
       </list>
     </recent_temporary>
   </component>
@@ -765,11 +1080,23 @@
           <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
             <generated_finder class_name="jetbrains.mps.lang.structure.findUsages.NodeUsages_Finder" />
           </child>
+          <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
+            <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.ExactMethodUsages_Finder" />
+          </child>
+          <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
+            <generated_finder class_name="jetbrains.mps.lang.core.findUsages.NodeAndDescendantsUsages_Finder" />
+          </child>
+          <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
+            <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.BaseMethod_Finder" />
+          </child>
+          <child rpn="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode">
+            <generated_finder class_name="jetbrains.mps.baseLanguage.findUsages.AllMethodUsages_Finder" />
+          </child>
         </result_provider>
         <query>
-          <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
+          <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.GlobalScope" />
           <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
-            <node ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)/1615367784792892677" title="Print Order" />
+            <node ref="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/3360162681693304911" title="sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" />
           </holder>
         </query>
         <usage_view>
@@ -785,17 +1112,21 @@
                 <child caption="Searched nodes" excluded="false" isresult="false" results_section="false" category="Searched nodes" category_kind="Category">
                   <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
                   <role name="category:Category" />
-                  <child caption="org.modellwerkstatt.simple" excluded="false" isresult="false" results_section="false" module_ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5(org.modellwerkstatt.simple)">
+                  <child caption="org.modellwerkstatt.dataux.runtime" excluded="false" isresult="false" results_section="false" module_ref="bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)">
                     <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
                     <role name="module" />
-                    <child caption="org.modellwerkstatt.simple.order.o3unit_orderhandling" excluded="false" isresult="false" results_section="false">
+                    <child caption="org.modellwerkstatt.dataux.runtime.delegates" excluded="false" isresult="false" results_section="false">
                       <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
                       <role name="model" />
-                      <child caption="Print Order" info="" excluded="false" isresult="true" results_section="false" nodePtr="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)/1615367784792892677" isRoot="true">
+                      <child caption="ReferenceDelegate" info="" excluded="false" isresult="false" results_section="false" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205977970568" isRoot="true">
                         <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
-                        <role name="target" />
+                        <role name="root" />
+                        <child caption="sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: member in: ReferenceDelegate)" excluded="false" isresult="true" results_section="false" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/3360162681693304911">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
                       </child>
-                      <model uid="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)" />
+                      <model uid="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)" />
                     </child>
                   </child>
                 </child>
@@ -806,21 +1137,148 @@
                 <child caption="Node Usages" excluded="false" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
                   <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
                   <role name="category:Category" />
-                  <child caption="org.modellwerkstatt.simple" excluded="false" isresult="false" results_section="true" module_ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5(org.modellwerkstatt.simple)">
+                  <child caption="org.modellwerkstatt.dataux.runtime" excluded="false" isresult="false" results_section="true" module_ref="bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)">
                     <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
                     <role name="module" />
-                    <child caption="org.modellwerkstatt.simple.order.o3unit_orderhandling" excluded="false" isresult="false" results_section="true">
+                    <child caption="org.modellwerkstatt.dataux.runtime.delegates" excluded="false" isresult="false" results_section="true">
                       <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
                       <role name="model" />
-                      <child caption="Single Order Main AppTab Pane" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)/6871219927627843921" isRoot="true">
+                      <child caption="ReferenceDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205977970568" isRoot="true">
                         <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
                         <role name="root" />
-                        <child caption="Action" info="(role: menuItems in: Submenu)" excluded="false" isresult="true" results_section="true" nodePtr="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)/1615367784793216790">
+                        <child caption="setReferenceItems(list&lt;@ReferenceDelegate.T&gt;):void" info="(role: member in: ReferenceDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205978243988">
                           <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
-                          <role name="target" />
+                          <role name="root to target" />
+                          <child caption="sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: rightExpression in: ||)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1773434543594750143">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
                         </child>
                       </child>
-                      <model uid="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)" />
+                      <child caption="StatusDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236311" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setValue(IOFXStatusElement):void" info="(role: member in: StatusDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236363">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="ReferenceDelegate.sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: expression in: !)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/3360162681693334900">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <model uid="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)" />
+                    </child>
+                  </child>
+                </child>
+                <child caption="Exact Method Usages" excluded="false" isresult="false" results_section="true" category="Exact Method Usages" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="org.modellwerkstatt.dataux.runtime" excluded="false" isresult="false" results_section="true" module_ref="bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="org.modellwerkstatt.dataux.runtime.delegates" excluded="false" isresult="false" results_section="true">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="ReferenceDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205977970568" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setReferenceItems(list&lt;@ReferenceDelegate.T&gt;):void" info="(role: member in: ReferenceDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205978243988">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: rightExpression in: ||)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1773434543594750143">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <child caption="StatusDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236311" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setValue(IOFXStatusElement):void" info="(role: member in: StatusDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236363">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="ReferenceDelegate.sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: expression in: !)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/3360162681693334900">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <model uid="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)" />
+                    </child>
+                  </child>
+                </child>
+                <child caption="Node Descendants Usages" excluded="false" isresult="false" results_section="true" category="Node Descendants Usages" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="org.modellwerkstatt.dataux.runtime" excluded="false" isresult="false" results_section="true" module_ref="bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="org.modellwerkstatt.dataux.runtime.delegates" excluded="false" isresult="false" results_section="true">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="ReferenceDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205977970568" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setReferenceItems(list&lt;@ReferenceDelegate.T&gt;):void" info="(role: member in: ReferenceDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205978243988">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: rightExpression in: ||)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1773434543594750143">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <child caption="StatusDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236311" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setValue(IOFXStatusElement):void" info="(role: member in: StatusDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236363">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="ReferenceDelegate.sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: expression in: !)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/3360162681693334900">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <model uid="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)" />
+                    </child>
+                  </child>
+                </child>
+                <child caption="Overriden And Implemented methods" excluded="false" isresult="false" results_section="true" category="Overriden And Implemented methods" category_kind="Category">
+                  <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" />
+                  <role name="category:Category" />
+                  <child caption="org.modellwerkstatt.dataux.runtime" excluded="false" isresult="false" results_section="true" module_ref="bd230cc8-9f23-4d08-88ae-92ff30662c34(org.modellwerkstatt.dataux.runtime)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="org.modellwerkstatt.dataux.runtime.delegates" excluded="false" isresult="false" results_section="true">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="ReferenceDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205977970568" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setReferenceItems(list&lt;@ReferenceDelegate.T&gt;):void" info="(role: member in: ReferenceDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/2282005205978243988">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: rightExpression in: ||)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1773434543594750143">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <child caption="StatusDelegate" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236311" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="setValue(IOFXStatusElement):void" info="(role: member in: StatusDelegate)" excluded="false" isresult="false" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/1516279545100236363">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="ReferenceDelegate.sameContent(List&lt;@sameContent.T&gt;,List&lt;@sameContent.T&gt;):boolean" info="(role: expression in: !)" excluded="false" isresult="true" results_section="true" nodePtr="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)/3360162681693334900">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <model uid="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)" />
                     </child>
                   </child>
                 </child>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.o7domain_order)">
+<model ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.domainOrder)">
   <persistence version="9" />
   <languages>
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
@@ -7,12 +7,12 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="4njd" ref="r:ab371df4-c540-459a-b54a-ba2897c2136f(org.modellwerkstatt.simple.stamm.o7domain_stamm)" />
+    <import index="4njd" ref="r:ab371df4-c540-459a-b54a-ba2897c2136f(org.modellwerkstatt.simple.master.domainMaster)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
-    <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)" />
-    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)" />
-    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
+    <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.unitOrderHandling)" />
+    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
+    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
     <import index="8mad" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="jqqh" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.slf4j(org.modellwerkstatt.objectflow.runtime/)" />
@@ -2816,7 +2816,7 @@
                     <node concept="1uHKPH" id="4nH4LOF$GQ2" role="2OqNvi" />
                   </node>
                   <node concept="3cmrfG" id="4nH4LOF$GQ3" role="37wK5m">
-                    <property role="3cmrfH" value="50" />
+                    <property role="3cmrfH" value="5" />
                   </node>
                   <node concept="3cmrfG" id="4nH4LOF$GQ4" role="37wK5m">
                     <property role="3cmrfH" value="300" />
@@ -2963,7 +2963,7 @@
               <ref role="3cqZAo" node="4nH4LOF$GQV" resolve="i" />
             </node>
             <node concept="3cmrfG" id="4nH4LOF$GR0" role="3uHU7w">
-              <property role="3cmrfH" value="50" />
+              <property role="3cmrfH" value="200" />
             </node>
           </node>
           <node concept="3uNrnE" id="4nH4LOF$GR1" role="1Dwrff">

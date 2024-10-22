@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.o1deploy_simpleApp)">
+<model ref="r:579ac6f7-5136-4b5d-93d4-60d7664141bd(org.modellwerkstatt.simple.app)">
   <persistence version="9" />
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -8,19 +8,22 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="kpm6" ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.inherit.status.o3unit_inheritall)" />
-    <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.invoice.o7domain_invoice)" />
-    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
-    <import index="ygz6" ref="r:a45417bc-e0f5-409d-9810-db4068333b13(org.modellwerkstatt.simple.invoice.o3unit_invoicing)" />
-    <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.o3unit_orderhandling)" />
-    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.o8infra_objects)" />
-    <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.o7domain_order)" />
+    <import index="kpm6" ref="r:5014ffe5-9c74-4ef1-aee1-0ca2918b4118(org.modellwerkstatt.simple.demo.inherit.unitDoc)" />
+    <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.invoice.unitInvoice)" />
+    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)" />
+    <import index="ygz6" ref="r:a45417bc-e0f5-409d-9810-db4068333b13(org.modellwerkstatt.simple.invoice.domainInvoice)" />
+    <import index="tsl4" ref="r:9a5d071c-824e-4204-b68c-cfe03dc3bd00(org.modellwerkstatt.simple.order.unitOrderHandling)" />
+    <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
+    <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.domainOrder)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
-    <import index="wi0k" ref="r:b403f58b-e975-4eea-8f66-3854e12f0101(org.modellwerkstatt.simple.o2test)" />
-    <import index="lpv8" ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.upload.o7unit_upload)" />
-    <import index="ptpb" ref="r:8856bdf7-c2d8-4f9b-965a-6c48931660bb(org.modellwerkstatt.simple.stamm.o7unit_stamm)" />
+    <import index="lpv8" ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.demo.upload.unitUpload)" />
+    <import index="ptpb" ref="r:8856bdf7-c2d8-4f9b-965a-6c48931660bb(org.modellwerkstatt.simple.master.unitMaster)" />
+    <import index="7xnn" ref="r:337ec7bc-8271-4be0-abed-93edea78d392(org.modellwerkstatt.simple.demo.coupon.unitCoupon)" />
+    <import index="85zu" ref="r:a74f29cd-745d-4f2c-9190-be84ab4eea3f(org.modellwerkstatt.simple.demo.coupon.unitDsaCustomer)" />
+    <import index="8rns" ref="r:a4293e0e-69e5-460c-96d8-fa7e9b19dd74(org.modellwerkstatt.simple.demo.coupon.unitCouponDsaCustomer)" />
+    <import index="23qg" ref="r:1730cdea-7907-47f1-aabb-50b7862283c4(org.modellwerkstatt.simple.demo.articlesearch)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
   <registry>
@@ -439,6 +442,16 @@
         <ref role="2_Hrw8" to="tsl4:CpxjlTF_kr" resolve="New Order Wizzard" />
       </node>
     </node>
+    <node concept="2$ntO6" id="6quizra0Rmo" role="2$nsuY">
+      <node concept="33WYYh" id="6quizra0Rmp" role="2$ntUL">
+        <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="1CbI5W13Xa6" role="2$nsuY">
+      <node concept="33WYYh" id="1CbI5W13Xa7" role="2$ntUL">
+        <ref role="2_Hrw8" to="8rns:6G$_N5G93w3" resolve="Search CouponDsaCustomer" />
+      </node>
+    </node>
     <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
       <ref role="3uz5Vf" to="oyrz:5R_43Wzruo3" resolve="HOD_REF_STAT_UITEST" />
@@ -533,11 +546,15 @@
           </node>
         </node>
         <node concept="3clFbH" id="6DV0lXGiWIX" role="3cqZAp" />
-        <node concept="3clFbF" id="5cGoCjWfe0K" role="3cqZAp">
-          <node concept="2OqwBi" id="5cGoCjWfecv" role="3clFbG">
-            <node concept="2Rjrh3" id="5cGoCjWfe0J" role="2Oq$k0" />
-            <node concept="liA8E" id="5cGoCjWfekh" role="2OqNvi">
-              <ref role="37wK5l" to="w7gk:65KdKINRh5x" resolve="setCompactMode" />
+        <node concept="1X3_iC" id="nrXdhkHUUZ" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5cGoCjWfe0K" role="8Wnug">
+            <node concept="2OqwBi" id="5cGoCjWfecv" role="3clFbG">
+              <node concept="2Rjrh3" id="5cGoCjWfe0J" role="2Oq$k0" />
+              <node concept="liA8E" id="5cGoCjWfekh" role="2OqNvi">
+                <ref role="37wK5l" to="w7gk:65KdKINRh5x" resolve="setCompactMode" />
+              </node>
             </node>
           </node>
         </node>
@@ -770,6 +787,11 @@
     <node concept="2$ntO6" id="CpxjlTIC9a" role="2$nsuY">
       <node concept="33WYYh" id="CpxjlTIC9b" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:CpxjlTF_kr" resolve="New Order Wizzard" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="1iiFDFlQW5r" role="2$nsuY">
+      <node concept="33WYYh" id="1iiFDFlQW5s" role="2$ntUL">
+        <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
@@ -1675,20 +1697,6 @@
   <node concept="2AUT8P" id="46E_y$ew7E0">
     <property role="TrG5h" value="InvoicingJob_Originial" />
     <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_MySql" />
-    <node concept="1_k$Jf" id="46E_y$ew7E1" role="1_k$Iu">
-      <property role="TrG5h" value="Check user service test" />
-      <node concept="3znxp0" id="46E_y$ew7E2" role="1_kBZ6">
-        <property role="TrG5h" value="inbox" />
-        <node concept="3uibUv" id="46E_y$ew7E3" role="3znzZe">
-          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
-        </node>
-        <node concept="2Tpcjw" id="46E_y$ew7E4" role="3znwwn">
-          <node concept="2_HltQ" id="46E_y$ew7E5" role="2TpcRq">
-            <ref role="2_Hrw8" to="wi0k:3atYQn9VS4M" resolve="Check User Service" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1_k$Jf" id="46E_y$ew7E6" role="1_k$Iu">
       <property role="TrG5h" value="Create Invoices" />
       <node concept="3znxp0" id="46E_y$ew7E7" role="1_kBZ6">
@@ -1853,15 +1861,6 @@
       <property role="1QnCj1" value="*" />
       <property role="1QnCj5" value="*" />
       <ref role="2k5inG" node="46E_y$ew7EQ" resolve="Book open Orders" />
-    </node>
-    <node concept="3lKVtU" id="46E_y$ew7EY" role="2A_d42">
-      <property role="1QnCjn" value="0" />
-      <property role="1QnCsU" value="*/2" />
-      <property role="1QnCsW" value="*" />
-      <property role="1QnCj8" value="*" />
-      <property role="1QnCj1" value="*" />
-      <property role="1QnCj5" value="*" />
-      <ref role="2k5inG" node="46E_y$ew7E1" resolve="Check user service test" />
     </node>
     <node concept="3lKYF6" id="46E_y$ew7EZ" role="2A_d42">
       <property role="1R4AEf" value="1" />

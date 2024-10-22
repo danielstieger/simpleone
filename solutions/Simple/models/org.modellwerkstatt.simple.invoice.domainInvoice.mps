@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a45417bc-e0f5-409d-9810-db4068333b13(org.modellwerkstatt.simple.invoice.o3unit_invoicing)">
+<model ref="r:a45417bc-e0f5-409d-9810-db4068333b13(org.modellwerkstatt.simple.invoice.domainInvoice)">
   <persistence version="9" />
   <languages>
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
-    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.o9infra_configs)" />
-    <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.invoice.o7domain_invoice)" />
+    <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)" />
+    <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.invoice.unitInvoice)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
     <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="dr5r" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
-    <import index="wi0k" ref="r:b403f58b-e975-4eea-8f66-3854e12f0101(org.modellwerkstatt.simple.o2test)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -448,7 +447,7 @@
         <ref role="3063JT" node="6XzXfke1ae4" resolve="SearchInvoices" />
       </node>
       <node concept="10qiFn" id="6XzXfke1a81" role="10qiF9">
-        <ref role="2DFCCC" to="oyrz:3Rw9V4pLp$2" resolve="Next" />
+        <ref role="2DFCCC" to="oyrz:2qcR1OSjf2i" resolve="CFT_NEXT" />
         <node concept="20qIzx" id="6XzXfke1aa2" role="10ot2L">
           <node concept="3clFbS" id="6XzXfke1aa3" role="2VODD2">
             <node concept="3SKdUt" id="6XzXfke1aTI" role="3cqZAp">
@@ -908,16 +907,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6QuBvexqKIJ" role="3cqZAp" />
-        <node concept="1X3_iC" id="3atYQna2rlI" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3atYQn9XUUf" role="8Wnug">
-            <node concept="1odsa" id="3atYQn9XUUd" role="3clFbG">
-              <ref role="1ods_" to="wi0k:3atYQn9Wgx1" resolve="TestConnService" />
-              <ref role="37wK5l" to="wi0k:3atYQn9WgzX" resolve="testMe" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="3atYQna1kg3" role="3cqZAp" />
         <node concept="3clFbF" id="6XzXfke19To" role="3cqZAp">
           <node concept="37vLTI" id="6XzXfke19U2" role="3clFbG">
