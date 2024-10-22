@@ -13138,7 +13138,7 @@
     <node concept="1cd6SK" id="58kyrO89USQ" role="PoUSn">
       <node concept="3cpWs3" id="58kyrO89USR" role="1cd6XG">
         <node concept="Xl_RD" id="58kyrO89USS" role="3uHU7B">
-          <property role="Xl_RC" value="TOTAL: " />
+          <property role="Xl_RC" value="Total: " />
         </node>
         <node concept="2OqwBi" id="58kyrO89UST" role="3uHU7w">
           <node concept="2OqwBi" id="58kyrO89USU" role="2Oq$k0">
@@ -13194,7 +13194,7 @@
     <node concept="P6Lob" id="4EUPwPcnky8" role="PoUSn">
       <node concept="3cpWs3" id="4EUPwPcnkWI" role="P6QPN">
         <node concept="Xl_RD" id="4EUPwPcnkWJ" role="3uHU7B">
-          <property role="Xl_RC" value="TOTAL: " />
+          <property role="Xl_RC" value="Selected: " />
         </node>
         <node concept="2OqwBi" id="4EUPwPcnkWK" role="3uHU7w">
           <node concept="2OqwBi" id="4EUPwPcnkWL" role="2Oq$k0">

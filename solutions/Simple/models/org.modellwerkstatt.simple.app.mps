@@ -379,9 +379,6 @@
     <node concept="33WYYh" id="4EUPwPcoWZG" role="2N77jL">
       <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
     </node>
-    <node concept="33WYYh" id="4EUPwPcoX2t" role="2N77jL">
-      <ref role="2_Hrw8" to="8rns:6G$_N5G93w3" resolve="Search CouponDsaCustomer" />
-    </node>
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
       <ref role="3uz5Vf" to="oyrz:7YWowTUhxHw" resolve="SHOW_DOCUMENTATION" />
@@ -432,6 +429,11 @@
       </node>
       <node concept="276gdk" id="11_njaJsQYm" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="4EUPwPczoRw" role="2$nsuY">
+      <node concept="33WYYh" id="4EUPwPczoRx" role="2$ntUL">
+        <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
     <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
