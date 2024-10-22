@@ -8,6 +8,7 @@
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
+    <import index="3k04" ref="r:8bd3fb72-7342-4dcc-9b15-570e150fc9b4(org.modellwerkstatt.simple.infra.secretConfig)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3048,68 +3049,9 @@
     <node concept="2CJoq6" id="69doFuFuhVu" role="2CGBMS">
       <property role="TrG5h" value="SingleAppInstanceMode" />
     </node>
-    <node concept="2CJf3v" id="6wCZ$SInsxC" role="2CGBMS">
-      <property role="TrG5h" value="oAuth2Goole" />
-      <node concept="Xl_RD" id="6wCZ$SInsxE" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.GoogleOAuth2" />
-      </node>
-      <node concept="2CJf1O" id="6wCZ$SInsyR" role="2CJ4_l">
-        <node concept="Xl_RD" id="6wCZ$SInsyS" role="2DqwMp">
-          <property role="Xl_RC" value="938810109726-3lo3a5ebkq8u8lqli5prjq3609bkkn6h.apps.googleusercontent.com" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="6wCZ$SInszO" role="2CJ4_l">
-        <node concept="Xl_RD" id="6wCZ$SInszP" role="2DqwMp">
-          <property role="Xl_RC" value="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" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="6wCZ$SInszU" role="2CJ4_l">
-        <node concept="Xl_RD" id="6wCZ$SInszV" role="2DqwMp">
-          <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
-        </node>
-      </node>
-    </node>
-    <node concept="2CJf3v" id="5zMNc6uk2$D" role="2CGBMS">
-      <property role="TrG5h" value="entraOAuth" />
-      <node concept="Xl_RD" id="5zMNc6uk2$E" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.EntraIdOAuth2" />
-      </node>
-      <node concept="2CJf1O" id="5zMNc6uk2$F" role="2CJ4_l">
-        <node concept="Xl_RD" id="5zMNc6uk2$G" role="2DqwMp">
-          <property role="Xl_RC" value="eb800ee9-9c45-48de-91ef-6653d84855f9" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="5zMNc6uk2$H" role="2CJ4_l">
-        <node concept="Xl_RD" id="5zMNc6uk2$I" role="2DqwMp">
-          <property role="Xl_RC" value="pUA8Q~FaU~pEJbGe2qBpyoen0xGhYHOlLwoqyaZ5" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="5zMNc6uk2$J" role="2CJ4_l">
-        <node concept="Xl_RD" id="5zMNc6uk2$K" role="2DqwMp">
-          <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
-        </node>
-      </node>
-    </node>
-    <node concept="2CJf3v" id="6wCZ$SInuV8" role="2CGBMS">
-      <property role="TrG5h" value="oAuth2LinkedIn" />
-      <node concept="2CJf1O" id="6wCZ$SInuWo" role="2CJ4_l">
-        <node concept="Xl_RD" id="6wCZ$SInuWq" role="2DqwMp">
-          <property role="Xl_RC" value="77r8hkllgbcu3d" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="6wCZ$SInuWx" role="2CJ4_l">
-        <node concept="Xl_RD" id="6wCZ$SInuWy" role="2DqwMp">
-          <property role="Xl_RC" value="WPL_AP1.uGS6jrttbQde7uDQ.JEKajQ==" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="6wCZ$SInuWE" role="2CJ4_l">
-        <node concept="Xl_RD" id="6wCZ$SInuWF" role="2DqwMp">
-          <property role="Xl_RC" value="http://localhost:8080/simpleone/login" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="6wCZ$SInuVa" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.LinkedinOAuth2" />
-      </node>
+    <node concept="2CPvp3" id="4EUPwPcxPvD" role="2CGBMS" />
+    <node concept="2CJ4_Q" id="4EUPwPcxPCw" role="2CGBMS">
+      <ref role="2CJ4_N" to="3k04:4EUPwPcxPA3" resolve="AppSecretsLocal" />
     </node>
     <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
@@ -3285,68 +3227,8 @@
     <node concept="2CJoq6" id="4yMqt77ruE4" role="2CGBMS">
       <property role="TrG5h" value="SingleAppInstanceMode" />
     </node>
-    <node concept="2CJf3v" id="4yMqt77ruE5" role="2CGBMS">
-      <property role="TrG5h" value="oAuth2Goole" />
-      <node concept="Xl_RD" id="4yMqt77ruE6" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.GoogleOAuth2" />
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruE7" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruE8" role="2DqwMp">
-          <property role="Xl_RC" value="938810109726-3lo3a5ebkq8u8lqli5prjq3609bkkn6h.apps.googleusercontent.com" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruE9" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEa" role="2DqwMp">
-          <property role="Xl_RC" value="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" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruEb" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEc" role="2DqwMp">
-          <property role="Xl_RC" value="https://modwerk-test.mpreis.co.at:8443/simpleone/login" />
-        </node>
-      </node>
-    </node>
-    <node concept="2CJf3v" id="4yMqt77ruEd" role="2CGBMS">
-      <property role="TrG5h" value="entraOAuth" />
-      <node concept="Xl_RD" id="4yMqt77ruEe" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.EntraIdOAuth2" />
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruEf" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEg" role="2DqwMp">
-          <property role="Xl_RC" value="eb800ee9-9c45-48de-91ef-6653d84855f9" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruEh" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEi" role="2DqwMp">
-          <property role="Xl_RC" value="pUA8Q~FaU~pEJbGe2qBpyoen0xGhYHOlLwoqyaZ5" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruEj" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEk" role="2DqwMp">
-          <property role="Xl_RC" value="https://modwerk-test.mpreis.co.at:8443/simpleone/login" />
-        </node>
-      </node>
-    </node>
-    <node concept="2CJf3v" id="4yMqt77ruEl" role="2CGBMS">
-      <property role="TrG5h" value="oAuth2LinkedIn" />
-      <node concept="2CJf1O" id="4yMqt77ruEm" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEn" role="2DqwMp">
-          <property role="Xl_RC" value="77r8hkllgbcu3d" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruEo" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEp" role="2DqwMp">
-          <property role="Xl_RC" value="WPL_AP1.uGS6jrttbQde7uDQ.JEKajQ==" />
-        </node>
-      </node>
-      <node concept="2CJf1O" id="4yMqt77ruEq" role="2CJ4_l">
-        <node concept="Xl_RD" id="4yMqt77ruEr" role="2DqwMp">
-          <property role="Xl_RC" value="https://modwerk-test.mpreis.co.at:8443/simpleone/login" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="4yMqt77ruEs" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.auth.LinkedinOAuth2" />
-      </node>
+    <node concept="2CJ4_Q" id="4EUPwPcxPHt" role="2CGBMS">
+      <ref role="2CJ4_N" to="3k04:4EUPwPcxPA2" resolve="AppSecretsModwerkTest" />
     </node>
     <node concept="2CJf3v" id="4yMqt77ruEt" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />

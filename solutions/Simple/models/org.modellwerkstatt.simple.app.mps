@@ -261,7 +261,6 @@
       </concept>
       <concept id="2781909770750560564" name="org.modellwerkstatt.dataux.structure.AppTile" flags="ng" index="2$ntO6">
         <child id="2781909770750560899" name="action" index="2$ntUL" />
-        <child id="2781909770750561024" name="tileLabel" index="2$ntWM" />
         <child id="2781909770750561241" name="tileColor" index="2$ntZF" />
       </concept>
       <concept id="3226612376922221452" name="org.modellwerkstatt.dataux.structure.IModule" flags="ng" index="2A_d5g">
@@ -348,8 +347,40 @@
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App_Desktop_Order" />
     <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_MySql" />
+    <node concept="33WYYh" id="4EUPwPcoXdV" role="2N77jL">
+      <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
+      <node concept="10Nm6u" id="2het$DF8g75" role="2_HrWp" />
+      <node concept="3cmrfG" id="2het$DF8g76" role="2_HrWp">
+        <property role="3cmrfH" value="3" />
+      </node>
+      <node concept="3clFbT" id="2het$DF8g77" role="2_HrWp">
+        <property role="3clFbU" value="false" />
+      </node>
+      <node concept="Rm8GO" id="2jDJ2hE3e0j" role="2_HrWp">
+        <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
+        <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
+      </node>
+    </node>
     <node concept="33WYYh" id="46E_y$ewGwF" role="2N77jL">
       <ref role="2_Hrw8" to="ygz6:46E_y$ew8h4" resolve="Test - Create 160000 Items" />
+    </node>
+    <node concept="33WYYh" id="4EUPwPcoWKC" role="2N77jL">
+      <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
+    </node>
+    <node concept="33WYYh" id="4EUPwPcoWOZ" role="2N77jL">
+      <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
+    </node>
+    <node concept="33WYYh" id="4EUPwPcoWRE" role="2N77jL">
+      <ref role="2_Hrw8" to="ptpb:1p9ACItUpyZ" resolve="Open Article" />
+    </node>
+    <node concept="33WYYh" id="4EUPwPcoWWX" role="2N77jL">
+      <ref role="2_Hrw8" to="tsl4:CpxjlTF_kr" resolve="New Order Wizzard" />
+    </node>
+    <node concept="33WYYh" id="4EUPwPcoWZG" role="2N77jL">
+      <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
+    </node>
+    <node concept="33WYYh" id="4EUPwPcoX2t" role="2N77jL">
+      <ref role="2_Hrw8" to="8rns:6G$_N5G93w3" resolve="Search CouponDsaCustomer" />
     </node>
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
@@ -401,55 +432,6 @@
       </node>
       <node concept="276gdk" id="11_njaJsQYm" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="2het$DF8g73" role="2$nsuY">
-      <node concept="33WYYh" id="2het$DF8g74" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
-        <node concept="10Nm6u" id="2het$DF8g75" role="2_HrWp" />
-        <node concept="3cmrfG" id="2het$DF8g76" role="2_HrWp">
-          <property role="3cmrfH" value="3" />
-        </node>
-        <node concept="3clFbT" id="2het$DF8g77" role="2_HrWp">
-          <property role="3clFbU" value="false" />
-        </node>
-        <node concept="Rm8GO" id="2jDJ2hE3e0j" role="2_HrWp">
-          <ref role="Rm8GQ" to="oyrz:2jDJ2hE2ok2" resolve="NOTHING" />
-          <ref role="1Px2BO" to="oyrz:2jDJ2hE2j_s" resolve="UI_SPEC" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="2het$DF8g7e" role="2$ntWM">
-        <property role="Xl_RC" value="Edit Order Predecessor (3)" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="2QgCBX_nJIZ" role="2$nsuY">
-      <node concept="33WYYh" id="2QgCBX_nJJ0" role="2$ntUL">
-        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="6m2yckYsPLk" role="2$nsuY">
-      <node concept="33WYYh" id="6m2yckYsPLl" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="1p9ACItUFgA" role="2$nsuY">
-      <node concept="33WYYh" id="1p9ACItUFgB" role="2$ntUL">
-        <ref role="2_Hrw8" to="ptpb:1p9ACItUpyZ" resolve="Open Article" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="CpxjlTFCMm" role="2$nsuY">
-      <node concept="33WYYh" id="CpxjlTFCMn" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:CpxjlTF_kr" resolve="New Order Wizzard" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="6quizra0Rmo" role="2$nsuY">
-      <node concept="33WYYh" id="6quizra0Rmp" role="2$ntUL">
-        <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="1CbI5W13Xa6" role="2$nsuY">
-      <node concept="33WYYh" id="1CbI5W13Xa7" role="2$ntUL">
-        <ref role="2_Hrw8" to="8rns:6G$_N5G93w3" resolve="Search CouponDsaCustomer" />
       </node>
     </node>
     <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
