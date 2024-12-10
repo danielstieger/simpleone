@@ -20,8 +20,6 @@
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
     <import index="lpv8" ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.demo.upload.unitUpload)" />
     <import index="ptpb" ref="r:8856bdf7-c2d8-4f9b-965a-6c48931660bb(org.modellwerkstatt.simple.master.unitMaster)" />
-    <import index="7xnn" ref="r:337ec7bc-8271-4be0-abed-93edea78d392(org.modellwerkstatt.simple.demo.coupon.unitCoupon)" />
-    <import index="85zu" ref="r:a74f29cd-745d-4f2c-9190-be84ab4eea3f(org.modellwerkstatt.simple.demo.coupon.unitDsaCustomer)" />
     <import index="8rns" ref="r:a4293e0e-69e5-460c-96d8-fa7e9b19dd74(org.modellwerkstatt.simple.demo.coupon.unitCouponDsaCustomer)" />
     <import index="23qg" ref="r:1730cdea-7907-47f1-aabb-50b7862283c4(org.modellwerkstatt.simple.demo.articlesearch)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
@@ -306,9 +304,6 @@
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
       </concept>
-      <concept id="3009814936672462914" name="org.modellwerkstatt.dataux.structure.OptDelayPair" flags="ng" index="3lKYFY">
-        <property id="8940448732926697606" name="delayInSec" index="1QJjD7" />
-      </concept>
       <concept id="2497433976992505068" name="org.modellwerkstatt.dataux.structure.MenuSeparator" flags="ng" index="1U2rok" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -436,6 +431,11 @@
         <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
+    <node concept="2$ntO6" id="6b88ASn2nZA" role="2$nsuY">
+      <node concept="33WYYh" id="6b88ASn2nZB" role="2$ntUL">
+        <ref role="2_Hrw8" to="8rns:6G$_N5G93w3" resolve="Search CouponDsaCustomer" />
+      </node>
+    </node>
     <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
       <ref role="3uz5Vf" to="oyrz:5R_43Wzruo3" resolve="HOD_REF_STAT_UITEST" />
@@ -524,7 +524,7 @@
           <node concept="3cpWsn" id="5XruxTJPWEm" role="3cpWs9">
             <property role="TrG5h" value="login" />
             <node concept="10P_77" id="5XruxTJPWEn" role="1tU5fm" />
-            <node concept="3clFbT" id="1537yzT1yiW" role="33vP2m">
+            <node concept="3clFbT" id="3D7Yc5aZyOv" role="33vP2m">
               <property role="3clFbU" value="true" />
             </node>
           </node>
@@ -567,7 +567,7 @@
           </node>
           <node concept="2OqwBi" id="2r16cr60Zt_" role="3clFbw">
             <node concept="Xl_RD" id="2r16cr60Z9$" role="2Oq$k0">
-              <property role="Xl_RC" value="dan" />
+              <property role="Xl_RC" value="ext-daniel.stieger@mpreis.at" />
             </node>
             <node concept="liA8E" id="2r16cr60ZAF" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
@@ -615,6 +615,29 @@
                     <property role="3clFbU" value="true" />
                   </node>
                   <node concept="37vLTw" id="3Qb4YAEjYjs" role="37vLTJ">
+                    <ref role="3cqZAo" node="5XruxTJPWEm" resolve="login" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="3muS_FXqBPJ" role="3eNLev">
+            <node concept="2OqwBi" id="3muS_FXqCwe" role="3eO9$A">
+              <node concept="Xl_RD" id="3muS_FXqCcW" role="2Oq$k0">
+                <property role="Xl_RC" value="8080" />
+              </node>
+              <node concept="liA8E" id="3muS_FXqCFy" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2MWqbU" id="3muS_FXqCIW" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="3muS_FXqBPL" role="3eOfB_">
+              <node concept="3clFbF" id="3muS_FXqCMm" role="3cqZAp">
+                <node concept="37vLTI" id="3muS_FXqD44" role="3clFbG">
+                  <node concept="3clFbT" id="3muS_FXqD6K" role="37vLTx">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="37vLTw" id="3muS_FXqCMl" role="37vLTJ">
                     <ref role="3cqZAo" node="5XruxTJPWEm" resolve="login" />
                   </node>
                 </node>
@@ -890,7 +913,7 @@
     </node>
     <node concept="2MWAvL" id="2WdiRyr8sLg" role="2A_d42">
       <node concept="Xl_RD" id="2WdiRyr8tK4" role="2MWAvM">
-        <property role="Xl_RC" value="2" />
+        <property role="Xl_RC" value="3" />
       </node>
     </node>
     <node concept="2MZaQk" id="5kphc59RIUz" role="2A_d42">
@@ -1095,193 +1118,6 @@
           <property role="1Kg0YU" value="300" />
         </node>
         <node concept="1K983k" id="1Z999TK48mh" role="1K988c" />
-      </node>
-    </node>
-  </node>
-  <node concept="2AUT8P" id="2B50FNWRyPd">
-    <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" to="oyrz:3tgwmmDjmur" resolve="BatchConfigTomcat" />
-    <node concept="3lKYFY" id="46E_y$ew8eG" role="2A_d42">
-      <property role="1QJjD7" value="300" />
-      <ref role="2k5inG" node="46E_y$ew8gR" resolve="Massive Inbox Filling" />
-    </node>
-    <node concept="3lKYF6" id="2B50FNWRzqs" role="2A_d42">
-      <property role="1R4AEf" value="7" />
-      <ref role="2k5inG" node="46E_y$ew8gR" resolve="Massive Inbox Filling" />
-    </node>
-    <node concept="2MWAvL" id="2B50FNWRyPp" role="2A_d42">
-      <node concept="Xl_RD" id="2B50FNWRyU5" role="2MWAvM">
-        <property role="Xl_RC" value="2" />
-      </node>
-    </node>
-    <node concept="2MZaQk" id="2B50FNWRyPr" role="2A_d42">
-      <node concept="Xl_RD" id="2B50FNWRyUj" role="2MZaQn">
-        <property role="Xl_RC" value="Invoicing Test Job" />
-      </node>
-    </node>
-    <node concept="MakZV" id="46E_y$eApyN" role="2A_d42" />
-    <node concept="2MWq9S" id="2B50FNWRyPt" role="2AUypC">
-      <node concept="3clFbS" id="2B50FNWRyPu" role="2VODD2">
-        <node concept="3VdxhY" id="19EO7JP84Dr" role="3cqZAp">
-          <property role="Rda9K" value="I5W9GWEMXX/DEBUG" />
-          <node concept="Xl_RD" id="19EO7JP84HD" role="3VcgQn">
-            <property role="Xl_RC" value="JOB started." />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2B50FNWRyRu" role="3cqZAp">
-          <node concept="3clFbT" id="2B50FNWRyRt" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3w4e_Z" id="3U0QWzuEgZ$" role="3w9mMS">
-      <property role="TrG5h" value="BatchJobStrategy" />
-      <node concept="3w4bLU" id="1_PE6VjAoEZ" role="3w4b7O">
-        <node concept="Xl_RD" id="1_PE6VjAoGp" role="3w4aRE">
-          <property role="Xl_RC" value=".*MoWare Command Test.*" />
-        </node>
-        <node concept="Xl_RD" id="1_PE6VjAwzC" role="3w4aYS">
-          <property role="Xl_RC" value=".*Exception.*" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="7Kr$v2f_hpa" role="3w4b7O">
-        <node concept="Xl_RD" id="7Kr$v2f_hpG" role="3w4aYS">
-          <property role="Xl_RC" value=".*IllegalStateException.*" />
-        </node>
-        <node concept="1Kg0UH" id="7Kr$v2fJMgv" role="1K988c">
-          <property role="1Kg0YU" value="120" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="1Z999TKwJZF" role="3w4b7O">
-        <node concept="1Kg0UH" id="1Z999TKwQ_P" role="1K988c">
-          <property role="1Kg0YU" value="180" />
-        </node>
-        <node concept="Xl_RD" id="1Z999TKwJZZ" role="3w4aYS">
-          <property role="Xl_RC" value=".*Exception.*" />
-        </node>
-        <node concept="Xl_RD" id="1Z999TKwK0g" role="3w4aRE">
-          <property role="Xl_RC" value=".*Delay.*" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="1Z999TKwQ_Z" role="3w4b7O">
-        <node concept="1K980o" id="1Z999TKwQAG" role="1K988c" />
-        <node concept="Xl_RD" id="1Z999TKwQA2" role="3w4aYS">
-          <property role="Xl_RC" value=".*Exception.*" />
-        </node>
-        <node concept="Xl_RD" id="1Z999TKwQA3" role="3w4aRE">
-          <property role="Xl_RC" value=".*Clear.*" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="1QzkuHx1RoH" role="3w4b7O">
-        <node concept="1Kg0UH" id="1QzkuHx1RrC" role="1K988c">
-          <property role="1Kg0YU" value="1234" />
-        </node>
-        <node concept="Xl_RD" id="1QzkuHx1Rph" role="3w4aYS">
-          <property role="Xl_RC" value=".*Exception.*" />
-        </node>
-        <node concept="Xl_RD" id="1QzkuHx1Rqa" role="3w4aRE">
-          <property role="Xl_RC" value=".*ORA1234.*" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="3U0QWzuFWKH" role="3w4b7O">
-        <node concept="Xl_RD" id="3U0QWzuFWKI" role="3w4aYS">
-          <property role="Xl_RC" value="java.lang.RuntimeException" />
-        </node>
-        <node concept="Xl_RD" id="3U0QWzuFWLe" role="3w4aRE">
-          <property role="Xl_RC" value="ORA 2017" />
-        </node>
-        <node concept="1K982g" id="1Z999TK48mq" role="1K988c" />
-      </node>
-      <node concept="3w4bLU" id="3exXxRexgds" role="3w4b7O">
-        <node concept="Xl_RD" id="3exXxRexgdt" role="3w4aYS">
-          <property role="Xl_RC" value=".*OFXCommandCancelException.*" />
-        </node>
-        <node concept="1Kg0UH" id="1Z999TK48mp" role="1K988c">
-          <property role="1Kg0YU" value="1" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="1FVEJAITMEm" role="3w4b7O">
-        <node concept="Xl_RD" id="1FVEJAITMEX" role="3w4aYS">
-          <property role="Xl_RC" value=".*IllegalStateException.*" />
-        </node>
-        <node concept="1Kg0UH" id="1Z999TK48mi" role="1K988c">
-          <property role="1Kg0YU" value="120" />
-        </node>
-      </node>
-      <node concept="3w4bLU" id="3l87qE_moOs" role="3w4b7O">
-        <node concept="Xl_RD" id="3l87qE_moOT" role="3w4aYS">
-          <property role="Xl_RC" value=".*Null.*" />
-        </node>
-        <node concept="1Kg0UH" id="1_PE6Vjza0E" role="1K988c">
-          <property role="1Kg0YU" value="90" />
-        </node>
-      </node>
-      <node concept="3watgV" id="7bWGJuS34dr" role="3w4b7O">
-        <ref role="3watgY" node="7bWGJuRJZrx" resolve="mpreis_basis_ex_start" />
-      </node>
-      <node concept="3w4bLU" id="5ua0Zhl$WsR" role="3w4b7O">
-        <node concept="1Kg0UH" id="5ua0Zhl$XQl" role="1K988c">
-          <property role="1Kg0YU" value="6000" />
-        </node>
-      </node>
-    </node>
-    <node concept="2d2NRx" id="19EO7JP6t0K" role="2AUypV">
-      <node concept="3clFbS" id="19EO7JP6t0L" role="2VODD2" />
-    </node>
-    <node concept="2d2NRx" id="19EO7JP6t1S" role="2AUypL">
-      <node concept="3clFbS" id="19EO7JP6t1T" role="2VODD2" />
-    </node>
-    <node concept="1_k$Jf" id="46E_y$ew8gR" role="1_k$Iu">
-      <property role="TrG5h" value="Massive Inbox Filling" />
-      <node concept="3znxp0" id="46E_y$ew8gS" role="1_kBZ6">
-        <property role="TrG5h" value="inbox" />
-        <node concept="3uibUv" id="46E_y$ew8h1" role="3znzZe">
-          <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
-        </node>
-        <node concept="2Tpcjw" id="46E_y$ew8gU" role="3znwwn">
-          <node concept="3zdtvw" id="46E_y$ex$$f" role="2TpcRr">
-            <property role="TrG5h" value="invoiceSearchFilter" />
-            <ref role="3zdv75" to="ygz6:46E_y$ew8ia" resolve="Page_0" />
-            <node concept="3zdqQj" id="46E_y$ex$$i" role="3zdlsu">
-              <node concept="3clFbS" id="46E_y$ex$$j" role="2VODD2">
-                <node concept="3clFbF" id="46E_y$ex$$v" role="3cqZAp">
-                  <node concept="2OqwBi" id="46E_y$ex$Xb" role="3clFbG">
-                    <node concept="3zknl8" id="46E_y$ex$$u" role="2Oq$k0">
-                      <ref role="3zkmF1" node="46E_y$ew8gS" resolve="inbox" />
-                    </node>
-                    <node concept="X8dFx" id="46E_y$ex_jI" role="2OqNvi">
-                      <node concept="2OqwBi" id="46E_y$exArF" role="25WWJ7">
-                        <node concept="3zknl8" id="46E_y$exA9$" role="2Oq$k0">
-                          <ref role="3zkmF1" node="46E_y$ex$$f" resolve="invoiceSearchFilter" />
-                        </node>
-                        <node concept="2S8uIT" id="46E_y$exAy7" role="2OqNvi">
-                          <ref role="2S8YL0" to="ygz6:6XzXfke1ajR" resolve="items" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2_HltQ" id="46E_y$ew8gV" role="2TpcRq">
-            <ref role="2_Hrw8" to="ygz6:46E_y$ew8h4" resolve="Test - Create 160000 Items" />
-          </node>
-        </node>
-      </node>
-      <node concept="3znyvg" id="46E_y$exzpz" role="1_kBZ7">
-        <property role="TrG5h" value="inboxElement" />
-        <node concept="1sQxEM" id="46E_y$exzp$" role="3znymz">
-          <node concept="2Tpcjw" id="46E_y$exzp_" role="1sQxCg">
-            <node concept="2_HltQ" id="46E_y$exzpA" role="2TpcRq">
-              <ref role="2_Hrw8" to="ygz6:46E_y$ew8hd" resolve="Test - Quick Invoice Edit" />
-              <node concept="3zknl8" id="46E_y$exzrl" role="2_HrWp">
-                <ref role="3zkmF1" node="46E_y$exzpz" resolve="inboxElement" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
@@ -1679,7 +1515,7 @@
     <node concept="3Tm1VV" id="n9qNMHVtMe" role="1B3o_S" />
   </node>
   <node concept="2AUT8P" id="46E_y$ew7E0">
-    <property role="TrG5h" value="InvoicingJob_Originial" />
+    <property role="TrG5h" value="InvoicingJob" />
     <ref role="2WPtWl" to="oyrz:1$$A7zM8Bg6" resolve="FX8_MySql" />
     <node concept="1_k$Jf" id="46E_y$ew7E6" role="1_k$Iu">
       <property role="TrG5h" value="Create Invoices" />

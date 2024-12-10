@@ -504,7 +504,7 @@
   <node concept="3ugp7m" id="17o2t3rKeW9">
     <property role="TrG5h" value="Open Album" />
     <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
-    <property role="3uBtrS" value="1hImSMr5NSG/X" />
+    <property role="3uBtrS" value="1hImSMr5NSX/ENTER" />
     <node concept="3ulXEN" id="17o2t3rKeWs" role="3ulXEL">
       <property role="TrG5h" value="album" />
       <node concept="3uibUv" id="17o2t3rKeWt" role="1tU5fm">
@@ -874,6 +874,11 @@
     <property role="TrG5h" value="PPSearch AlbumResult" />
     <property role="1Nb$_v" value="true" />
     <ref role="1Tjo7l" node="17o2t3rKeXZ" resolve="SearchAlbumFilter" />
+    <node concept="fOGPe" id="17o2t3rKeZT" role="fOGQ8">
+      <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
+        <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
+      </node>
+    </node>
     <node concept="2U5qGQ" id="17o2t3rKeZD" role="21u2x1">
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" node="17o2t3rKeXZ" resolve="SearchAlbumFilter" />
@@ -902,10 +907,7 @@
           <ref role="3O0p26" to="agw3:17o2t3rKeKl" resolve="status" />
         </node>
       </node>
-      <node concept="fOGPe" id="17o2t3rKeZT" role="fOGQ8">
-        <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
-          <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
-        </node>
+      <node concept="fOGPe" id="3D7Yc5aZD_p" role="fOGQ8">
         <node concept="33WYYh" id="17o2t3rKeZU" role="fOGQ8">
           <ref role="2_Hrw8" node="17o2t3rKeW9" resolve="Open Album" />
         </node>

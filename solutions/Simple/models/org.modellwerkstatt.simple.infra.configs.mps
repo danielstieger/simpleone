@@ -1276,7 +1276,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
+      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1344,7 +1344,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
-    <property role="TrG5h" value="MdeConfig" />
+    <property role="TrG5h" value="MdeConfigMT" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6UATHBJ4pdD" role="2CGBMS">
@@ -1392,19 +1392,19 @@
       <node concept="2CJ4$C" id="7L6pyrbes93" role="2CJ4_l">
         <property role="TrG5h" value="LogEventsToStdErr" />
         <node concept="Xl_RD" id="7L6pyrbes94" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
+          <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="2CJ4$C" id="7WLyHU5Ah5y" role="2CJ4_l">
         <property role="TrG5h" value="UploadLocationRetrieve" />
         <node concept="Xl_RD" id="7WLyHU5Ah5z" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
+          <property role="Xl_RC" value="http://10.1.1.143:8080/static/" />
         </node>
       </node>
       <node concept="2CJ4$C" id="7WLyHU5Ah5N" role="2CJ4_l">
         <property role="TrG5h" value="UploadFsLocationStore" />
         <node concept="Xl_RD" id="7WLyHU5Ah5O" role="2CaGCA">
-          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
+          <property role="Xl_RC" value="/home/daniels/green/webapps/ROOT/static" />
         </node>
       </node>
       <node concept="2CJ4$C" id="GWkwFkilRe" role="2CJ4_l">
@@ -2470,7 +2470,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tAn" role="2CGBMS">
-      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$tAo" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -3227,9 +3227,6 @@
     <node concept="2CJoq6" id="4yMqt77ruE4" role="2CGBMS">
       <property role="TrG5h" value="SingleAppInstanceMode" />
     </node>
-    <node concept="2CJ4_Q" id="4EUPwPcxPHt" role="2CGBMS">
-      <ref role="2CJ4_N" to="3k04:4EUPwPcxPA2" resolve="AppSecretsModwerkTest" />
-    </node>
     <node concept="2CJf3v" id="4yMqt77ruEt" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
       <node concept="2CJ4$C" id="4yMqt77ruEu" role="2CJ4_l">
@@ -3340,6 +3337,151 @@
     </node>
     <node concept="20ptWn" id="4yMqt77ruF3" role="20ptHX">
       <node concept="Xl_RD" id="4yMqt77ruF4" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="5zzuqmEuRuZ">
+    <property role="TrG5h" value="MdeConfig" />
+    <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="5zzuqmEuRv0" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="5zzuqmEuRv1" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="5zzuqmEuRv2" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="5zzuqmEuRv3" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_MDE" />
+      </node>
+    </node>
+    <node concept="2CPvp3" id="5zzuqmEuRv4" role="2CGBMS" />
+    <node concept="2CJf3v" id="5zzuqmEuRv5" role="2CGBMS">
+      <property role="TrG5h" value="uiFactory" />
+      <node concept="Xl_RD" id="5zzuqmEuRv6" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.h2forms.pebble.PAppFactory" />
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRv7" role="2CJ4_l">
+        <property role="TrG5h" value="SkipLoggingTcnException" />
+        <node concept="Xl_RD" id="5zzuqmEuRv8" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRv9" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="5zzuqmEuRva" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvb" role="2CJ4_l">
+        <property role="TrG5h" value="ScrollAdjust" />
+        <node concept="Xl_RD" id="5zzuqmEuRvc" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvd" role="2CJ4_l">
+        <property role="TrG5h" value="SilentExLogging" />
+        <node concept="Xl_RD" id="5zzuqmEuRve" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvf" role="2CJ4_l">
+        <property role="TrG5h" value="LogEventsToStdErr" />
+        <node concept="Xl_RD" id="5zzuqmEuRvg" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvh" role="2CJ4_l">
+        <property role="TrG5h" value="UploadLocationRetrieve" />
+        <node concept="Xl_RD" id="5zzuqmEuRvi" role="2CaGCA">
+          <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvj" role="2CJ4_l">
+        <property role="TrG5h" value="UploadFsLocationStore" />
+        <node concept="Xl_RD" id="5zzuqmEuRvk" role="2CaGCA">
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvl" role="2CJ4_l">
+        <property role="TrG5h" value="CamDesiredHeight" />
+        <node concept="Xl_RD" id="5zzuqmEuRvm" role="2CaGCA">
+          <property role="Xl_RC" value="400" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvn" role="2CJ4_l">
+        <property role="TrG5h" value="CamDesiredWidth" />
+        <node concept="Xl_RD" id="5zzuqmEuRvo" role="2CaGCA">
+          <property role="Xl_RC" value="200" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvp" role="2CJ4_l">
+        <property role="TrG5h" value="CamUseSystemViewfinder" />
+        <node concept="Xl_RD" id="5zzuqmEuRvq" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="5zzuqmEuRvr" role="2CJ4_l">
+        <property role="TrG5h" value="OptimKeyboard" />
+        <node concept="Xl_RD" id="5zzuqmEuRvs" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CPvp3" id="5zzuqmEuRvt" role="2CGBMS" />
+    <node concept="2CJ4_Q" id="5zzuqmEuRvu" role="2CGBMS">
+      <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
+    </node>
+    <node concept="2CJ4_Q" id="5zzuqmEuRvv" role="2CGBMS">
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJ4_Q" id="5zzuqmEuRvw" role="2CGBMS">
+      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
+    </node>
+    <node concept="2CJ4_Q" id="5zzuqmEuRvx" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="2CPvp3" id="5zzuqmEuRvy" role="2CGBMS" />
+    <node concept="20ptWn" id="5zzuqmEuRvz" role="20ptHX">
+      <node concept="Xl_RD" id="5zzuqmEuRv$" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
+  <node concept="2CG7Z0" id="6UWxg$P2MfL">
+    <property role="TrG5h" value="ApiConfig" />
+    <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="6UWxg$P2MfM" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="6UWxg$P2MfN" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="6UWxg$P2MfO" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="6UWxg$P2MfP" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_MDE" />
+      </node>
+    </node>
+    <node concept="2CPvp3" id="6UWxg$P2MfQ" role="2CGBMS" />
+    <node concept="2CJf3v" id="6UWxg$P2MfR" role="2CGBMS">
+      <property role="TrG5h" value="uiFactory" />
+      <node concept="Xl_RD" id="6UWxg$P2MfS" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleAppFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="6UWxg$P2Mgi" role="2CGBMS">
+      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
+    </node>
+    <node concept="2CJ4_Q" id="6UWxg$P2Mgj" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="2CPvp3" id="6UWxg$P2Mgk" role="2CGBMS" />
+    <node concept="20ptWn" id="6UWxg$P2Mgl" role="20ptHX">
+      <node concept="Xl_RD" id="6UWxg$P2Mgm" role="20ptNC">
         <property role="Xl_RC" value="org.modellwerkstatt.simple" />
       </node>
     </node>

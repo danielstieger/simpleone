@@ -10,7 +10,6 @@
   <imports>
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
-    <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" />
@@ -25,8 +24,6 @@
     <import index="sdim" ref="r:01eaad39-f252-4614-8b72-d5d1c6843c92(org.modellwerkstatt.simple.invoice.unitInvoice)" />
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.domainOrder)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
-    <import index="wvlo" ref="r:5fa46c85-bd47-4c0b-8a07-c68ea9dc95fc(org.modellwerkstatt.dataux.runtime.services)" />
-    <import index="9amd" ref="r:69b5efb2-1631-4bc4-9ab1-36b1d57252c2(org.modellwerkstatt.dataux.tests.dynlock)" />
     <import index="18b" ref="r:897bfb69-0a8e-477a-9053-de701ae9e158(org.modellwerkstatt.objectflow.serdes)" />
     <import index="x5li" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.format(org.modellwerkstatt.manmap.runtime/)" />
   </imports>
@@ -1147,8 +1144,8 @@
         <node concept="3clFbF" id="3cAl6M4oX1d" role="3cqZAp">
           <node concept="37vLTI" id="3cAl6M4oX5Y" role="3clFbG">
             <node concept="1odsa" id="3cAl6M4oX6U" role="37vLTx">
-              <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-              <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+              <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+              <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
               <node concept="Xl_RD" id="7p7jLwWNEtm" role="37wK5m">
                 <property role="Xl_RC" value="Some order" />
               </node>
@@ -2306,8 +2303,8 @@
                   </node>
                   <node concept="2OqwBi" id="3vh$MbmYapw" role="37vLTx">
                     <node concept="1odsa" id="3vh$MbmYapx" role="2Oq$k0">
-                      <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                      <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                      <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                      <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                     </node>
                     <node concept="1z4cxt" id="3vh$MbmYapy" role="2OqNvi">
                       <node concept="1bVj0M" id="3vh$MbmYapz" role="23t8la">
@@ -2377,8 +2374,8 @@
                   </node>
                   <node concept="2OqwBi" id="3cAl6M4qbY2" role="37vLTx">
                     <node concept="1odsa" id="3cAl6M4qbQm" role="2Oq$k0">
-                      <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                      <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                      <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                      <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                       <node concept="Xl_RD" id="7p7jLwWNAPV" role="37wK5m">
                         <property role="Xl_RC" value="Edit Order" />
                       </node>
@@ -6151,8 +6148,8 @@
           <node concept="37vLTI" id="3cAl6M4wnQp" role="3clFbG">
             <node concept="2OqwBi" id="3cAl6M4wnQq" role="37vLTx">
               <node concept="1odsa" id="3cAl6M4wnQr" role="2Oq$k0">
-                <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                 <node concept="Xl_RD" id="7p7jLwWNBRQ" role="37wK5m">
                   <property role="Xl_RC" value="Complex Edit Order" />
                 </node>
@@ -8320,8 +8317,8 @@
           <node concept="37vLTI" id="4ysbFF_SZ16" role="3clFbG">
             <node concept="2OqwBi" id="4ysbFF_SZ17" role="37vLTx">
               <node concept="1odsa" id="4ysbFF_SZ18" role="2Oq$k0">
-                <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                 <node concept="Xl_RD" id="7p7jLwWNCpW" role="37wK5m">
                   <property role="Xl_RC" value="Edit Order + Param" />
                 </node>
@@ -9063,8 +9060,8 @@
                   <ref role="3cqZAo" node="3UAPsO1WWoS" resolve="allOrders" />
                 </node>
                 <node concept="1odsa" id="2fd8mcgWGye" role="37vLTx">
-                  <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                  <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                  <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                  <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                   <node concept="Xl_RD" id="7p7jLwWNDS1" role="37wK5m">
                     <property role="Xl_RC" value="Main Doc" />
                   </node>
@@ -10633,8 +10630,8 @@
           <node concept="37vLTI" id="3wkdm3W8eJv" role="3clFbG">
             <node concept="2OqwBi" id="3wkdm3W8eJw" role="37vLTx">
               <node concept="1odsa" id="3wkdm3W8eJx" role="2Oq$k0">
-                <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                 <node concept="Xl_RD" id="7p7jLwWNCRF" role="37wK5m">
                   <property role="Xl_RC" value="MD Edit" />
                 </node>
@@ -19045,8 +19042,8 @@
                   </node>
                   <node concept="2OqwBi" id="Vvu817zHMX" role="37vLTx">
                     <node concept="1odsa" id="Vvu817zHMY" role="2Oq$k0">
-                      <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderTestFactory" />
-                      <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfOrders" />
+                      <ref role="1ods_" to="eqbi:3cAl6M4o1sg" resolve="OrderInMemFactory" />
+                      <ref role="37wK5l" to="eqbi:4nH4LOF$GOv" resolve="createListOfNewOrders" />
                       <node concept="Xl_RD" id="7p7jLwWN_g7" role="37wK5m">
                         <property role="Xl_RC" value="Edit Order NS" />
                       </node>
@@ -20989,6 +20986,61 @@
               </node>
               <node concept="2S8uIT" id="CpxjlTF_yC" role="2OqNvi">
                 <ref role="2S8YL0" to="eqbi:AN_117bqyN" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7XK$WhMsXoJ" role="3cqZAp">
+          <node concept="37vLTI" id="7XK$WhMsXJg" role="3clFbG">
+            <node concept="1$4sJe" id="7XK$WhMsXRn" role="37vLTx">
+              <property role="1$4sGS" value="0" />
+              <property role="1$4sGV" value="0" />
+              <property role="1$4sGU" value="0" />
+              <property role="1$4sGT" value="0" />
+              <property role="1$4sGQ" value="0" />
+              <property role="1$4sGR" value="0" />
+              <property role="1$4sGO" value="true" />
+            </node>
+            <node concept="2OqwBi" id="7XK$WhMsXrT" role="37vLTJ">
+              <node concept="3urNQE" id="7XK$WhMsXoH" role="2Oq$k0">
+                <ref role="3cqZAo" node="CpxjlTF_ks" resolve="orderprocParam" />
+              </node>
+              <node concept="2S8uIT" id="7XK$WhMsXv9" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:7rv7nMWu_ew" resolve="dt" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7XK$WhMsXS_" role="3cqZAp">
+          <node concept="37vLTI" id="7XK$WhMsY4O" role="3clFbG">
+            <node concept="2OqwBi" id="7XK$WhMsYLu" role="37vLTx">
+              <node concept="1odsa" id="7XK$WhMsYa7" role="2Oq$k0">
+                <ref role="1ods_" to="4njd:3$wB26aOozn" resolve="StoreInMemFactory" />
+                <ref role="37wK5l" to="4njd:4nH4LOF$GR5" resolve="createCachedListOfStores" />
+              </node>
+              <node concept="1uHKPH" id="7XK$WhMsZ5n" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7XK$WhMsXVP" role="37vLTJ">
+              <node concept="3urNQE" id="7XK$WhMsXSz" role="2Oq$k0">
+                <ref role="3cqZAo" node="CpxjlTF_ks" resolve="orderprocParam" />
+              </node>
+              <node concept="2S8uIT" id="7XK$WhMsXZ6" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:AN_117bq$J" resolve="store" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7XK$WhMtyem" role="3cqZAp">
+          <node concept="37vLTI" id="7XK$WhMtyDA" role="3clFbG">
+            <node concept="1mgVXT" id="7XK$WhMtzKp" role="37vLTx">
+              <property role="1mgVXS" value="11.0bd" />
+            </node>
+            <node concept="2OqwBi" id="7XK$WhMtylu" role="37vLTJ">
+              <node concept="3urNQE" id="7XK$WhMtyek" role="2Oq$k0">
+                <ref role="3cqZAo" node="CpxjlTF_ks" resolve="orderprocParam" />
+              </node>
+              <node concept="2S8uIT" id="7XK$WhMtysP" role="2OqNvi">
+                <ref role="2S8YL0" to="eqbi:4u029Jv8vG8" resolve="totalValue" />
               </node>
             </node>
           </node>

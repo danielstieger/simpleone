@@ -182,6 +182,9 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -210,7 +213,9 @@
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
-      <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
+      <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T">
+        <child id="1141552953265942898" name="options" index="3gomOI" />
+      </concept>
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
       </concept>
@@ -222,6 +227,7 @@
         <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
+      <concept id="2644858670013304253" name="org.modellwerkstatt.objectflow.structure.SimdApiMethod" flags="ng" index="2BXi5f" />
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="6135709767654760054" name="org.modellwerkstatt.objectflow.structure.SimpleBuilderElement" flags="ng" index="GOFnK" />
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
@@ -309,6 +315,7 @@
         <property id="830334255848575723" name="logLevel" index="Rda9K" />
         <child id="2356914237085088917" name="exp" index="3VcgQn" />
       </concept>
+      <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.DTO" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
@@ -332,6 +339,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1882,7 +1897,7 @@
     <node concept="2tJIrI" id="2jDJ2hA9v28" role="jymVt" />
   </node>
   <node concept="2EH5hC" id="3cAl6M4o1sg">
-    <property role="TrG5h" value="OrderTestFactory" />
+    <property role="TrG5h" value="OrderInMemFactory" />
     <node concept="312cEg" id="3cAl6M4vNxj" role="jymVt">
       <property role="TrG5h" value="cachedDateTime" />
       <node concept="3Tm6S6" id="3cAl6M4vNxk" role="1B3o_S" />
@@ -2454,7 +2469,7 @@
       <node concept="3Tm6S6" id="4nH4LOF$GOu" role="1B3o_S" />
     </node>
     <node concept="2vDG_T" id="4nH4LOF$GOv" role="jymVt">
-      <property role="TrG5h" value="createListOfOrders" />
+      <property role="TrG5h" value="createListOfNewOrders" />
       <node concept="37vLTG" id="7p7jLwWMMeM" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="7p7jLwWMMIL" role="1tU5fm" />
@@ -2963,7 +2978,7 @@
               <ref role="3cqZAo" node="4nH4LOF$GQV" resolve="i" />
             </node>
             <node concept="3cmrfG" id="4nH4LOF$GR0" role="3uHU7w">
-              <property role="3cmrfH" value="200" />
+              <property role="3cmrfH" value="100" />
             </node>
           </node>
           <node concept="3uNrnE" id="4nH4LOF$GR1" role="1Dwrff">
@@ -2983,7 +2998,7 @@
     <node concept="2tJIrI" id="6f52sUFC799" role="jymVt" />
     <node concept="2tJIrI" id="6f52sUFC7hv" role="jymVt" />
     <node concept="2vDG_T" id="4A7QxK79I6N" role="jymVt">
-      <property role="TrG5h" value="createOrder" />
+      <property role="TrG5h" value="createNewOrders" />
       <node concept="37vLTG" id="4A7QxK79Jmy" role="3clF46">
         <property role="TrG5h" value="baseName" />
         <node concept="17QB3L" id="4A7QxK79Jus" role="1tU5fm" />
@@ -3244,8 +3259,8 @@
               <ref role="3uigEE" node="1Zhh97664rm" resolve="Order" />
             </node>
             <node concept="1odsa" id="7Nm35wtTljO" role="33vP2m">
-              <ref role="1ods_" node="3cAl6M4o1sg" resolve="OrderTestFactory" />
-              <ref role="37wK5l" node="4A7QxK79I6N" resolve="createOrder" />
+              <ref role="1ods_" node="3cAl6M4o1sg" resolve="OrderInMemFactory" />
+              <ref role="37wK5l" node="4A7QxK79I6N" resolve="createNewOrders" />
               <node concept="Xl_RD" id="7Nm35wtTllW" role="37wK5m">
                 <property role="Xl_RC" value="test wolfi contains" />
               </node>
@@ -4100,6 +4115,132 @@
   <node concept="2EH5hC" id="2CJoOMY44p4">
     <property role="TrG5h" value="xxxService" />
     <node concept="3Tm1VV" id="2CJoOMY44p5" role="1B3o_S" />
+  </node>
+  <node concept="1YeyE5" id="3tU9H2B0M8K">
+    <property role="TrG5h" value="Customer" />
+    <node concept="3Tm1VV" id="3tU9H2B0M8M" role="1B3o_S" />
+    <node concept="3clFbW" id="3tU9H2B0M8N" role="jymVt">
+      <node concept="3cqZAl" id="3tU9H2B0M8O" role="3clF45" />
+      <node concept="3Tm1VV" id="3tU9H2B0M8P" role="1B3o_S" />
+      <node concept="3clFbS" id="3tU9H2B0M8Q" role="3clF47" />
+    </node>
+    <node concept="1bOX9e" id="3tU9H2B0Ma6" role="TxmiU">
+      <property role="2RkwnN" value="id" />
+      <node concept="3Tm1VV" id="3tU9H2B0Mac" role="1B3o_S" />
+      <node concept="2RoN1w" id="3tU9H2B0Mad" role="2RnVtd">
+        <node concept="3wEZqW" id="3tU9H2B0Mae" role="3wFrgM" />
+        <node concept="3xqBd$" id="3tU9H2B0Maf" role="3xrYvX">
+          <node concept="3Tm1VV" id="3tU9H2B0Mah" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10Oyi0" id="3tU9H2B0MaY" role="2RkE6I" />
+    </node>
+    <node concept="1bOX9e" id="3tU9H2B0M8R" role="TxmiU">
+      <property role="2RkwnN" value="name" />
+      <property role="TrG5h" value="name" />
+      <node concept="3Tm1VV" id="3tU9H2B0M8X" role="1B3o_S" />
+      <node concept="2RoN1w" id="3tU9H2B0M8Y" role="2RnVtd">
+        <node concept="3wEZqW" id="3tU9H2B0M8Z" role="3wFrgM" />
+        <node concept="3xqBd$" id="3tU9H2B0M90" role="3xrYvX">
+          <node concept="3Tm1VV" id="3tU9H2B0M92" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="3tU9H2B0M93" role="2CNmdP">
+        <property role="Xl_RC" value="name" />
+      </node>
+      <node concept="Xl_RD" id="3tU9H2B0M94" role="2CNmdL">
+        <property role="Xl_RC" value="Name" />
+      </node>
+      <node concept="17QB3L" id="3tU9H2B0M95" role="2RkE6I" />
+    </node>
+  </node>
+  <node concept="2EH5hC" id="3tU9H2B0Oa4">
+    <property role="TrG5h" value="CustomService" />
+    <node concept="2tJIrI" id="3tU9H2B0Oas" role="jymVt" />
+    <node concept="2vDG_T" id="3tU9H2B0OaP" role="jymVt">
+      <property role="TrG5h" value="createCustomer" />
+      <node concept="37vLTG" id="3tU9H2B0OcL" role="3clF46">
+        <property role="TrG5h" value="customer" />
+        <node concept="3uibUv" id="3tU9H2B0Od9" role="1tU5fm">
+          <ref role="3uigEE" node="3tU9H2B0M8K" resolve="Customer" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3tU9H2B0OaS" role="3clF47">
+        <node concept="3clFbH" id="3tU9H2B0OaT" role="3cqZAp" />
+        <node concept="mlg3r" id="3tU9H2B0OeM" role="3cqZAp">
+          <node concept="3eOVzh" id="4Oh$wBRC4TY" role="mlgNJ">
+            <node concept="3cmrfG" id="4Oh$wBRC4uy" role="3uHU7B">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="3cmrfG" id="4Oh$wBRC5x5" role="3uHU7w">
+              <property role="3cmrfH" value="10" />
+            </node>
+          </node>
+          <node concept="lgADV" id="3tU9H2B0OeP" role="mlgNH">
+            <node concept="35AVbj" id="3tU9H2B0OeQ" role="lgxf9">
+              <node concept="ic4WF" id="3tU9H2B0OeR" role="icr7_">
+                <property role="ic4Xk" value="Customer has to be in state not existend" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3tU9H2B0Oe2" role="3cqZAp" />
+        <node concept="3SKdUt" id="3tU9H2B0Oo3" role="3cqZAp">
+          <node concept="1PaTwC" id="3tU9H2B0Oo4" role="1aUNEU">
+            <node concept="3oM_SD" id="3tU9H2B0Oo5" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3tU9H2B0Oot" role="1PaTwD">
+              <property role="3oM_SC" value="customer" />
+            </node>
+            <node concept="3oM_SD" id="3tU9H2B0OoC" role="1PaTwD">
+              <property role="3oM_SC" value="erzeugen" />
+            </node>
+            <node concept="3oM_SD" id="3tU9H2B0OoO" role="1PaTwD">
+              <property role="3oM_SC" value="etx." />
+            </node>
+            <node concept="3oM_SD" id="3tU9H2B0Op1" role="1PaTwD">
+              <property role="3oM_SC" value="etc" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3tU9H2B0OnB" role="3cqZAp" />
+        <node concept="3clFbH" id="3tU9H2B0Opf" role="3cqZAp" />
+        <node concept="3clFbF" id="3tU9H2B0Oq0" role="3cqZAp">
+          <node concept="1odsa" id="3tU9H2B0OpY" role="3clFbG">
+            <ref role="1ods_" node="3tU9H2B0Oa4" resolve="CustomService" />
+            <ref role="37wK5l" node="3tU9H2B0OaP" resolve="createCustomer" />
+            <node concept="2ShNRf" id="3tU9H2B0Ork" role="37wK5m">
+              <node concept="1pGfFk" id="3tU9H2B0QBr" role="2ShVmc">
+                <ref role="37wK5l" node="3tU9H2B0M8N" resolve="Customer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3tU9H2B0Ocs" role="3clF45" />
+      <node concept="3Tm1VV" id="3tU9H2B0OaV" role="1B3o_S" />
+      <node concept="2BXi5f" id="3tU9H2B0Oee" role="3gomOI" />
+    </node>
+    <node concept="2vDG_T" id="3tU9H2B0R0S" role="jymVt">
+      <property role="TrG5h" value="couponEinloesen" />
+      <node concept="3clFbS" id="3tU9H2B0R0V" role="3clF47">
+        <node concept="3SKdUt" id="3tU9H2B0R3E" role="3cqZAp">
+          <node concept="1PaTwC" id="3tU9H2B0R3F" role="1aUNEU">
+            <node concept="3oM_SD" id="3tU9H2B0R3G" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3tU9H2B0R4y" role="1PaTwD">
+              <property role="3oM_SC" value="redeemCoupon." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3tU9H2B0R3n" role="3cqZAp" />
+      </node>
+      <node concept="3cqZAl" id="3tU9H2B0R0X" role="3clF45" />
+      <node concept="3Tm1VV" id="3tU9H2B0R0Y" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="3tU9H2B0Oa5" role="1B3o_S" />
   </node>
 </model>
 
