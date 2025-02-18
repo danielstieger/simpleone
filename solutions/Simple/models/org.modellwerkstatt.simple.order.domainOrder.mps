@@ -213,9 +213,7 @@
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
-      <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T">
-        <child id="1141552953265942898" name="options" index="3gomOI" />
-      </concept>
+      <concept id="7919209473506305655" name="org.modellwerkstatt.objectflow.structure.ServiceInstanceMethodDeclaration" flags="ig" index="2vDG_T" />
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
       </concept>
@@ -227,7 +225,6 @@
         <child id="4862154259428333129" name="colorRef" index="276g70" />
       </concept>
       <concept id="1707086779731223260" name="org.modellwerkstatt.objectflow.structure.OnCreationStatusElemOption" flags="ng" index="2_5uyX" />
-      <concept id="2644858670013304253" name="org.modellwerkstatt.objectflow.structure.SimdApiMethod" flags="ng" index="2BXi5f" />
       <concept id="4517030675489743647" name="org.modellwerkstatt.objectflow.structure.Service" flags="ig" index="2EH5hC" />
       <concept id="6135709767654760054" name="org.modellwerkstatt.objectflow.structure.SimpleBuilderElement" flags="ng" index="GOFnK" />
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
@@ -280,9 +277,6 @@
         <child id="6057399400731215414" name="numberFormat" index="3bVav" />
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
-      </concept>
-      <concept id="2338955645597912844" name="org.modellwerkstatt.objectflow.structure.OptionalAsStatusDeclOption" flags="ng" index="1hdUN8">
-        <child id="2338955645597912846" name="string" index="1hdUNa" />
       </concept>
       <concept id="9127051365898173147" name="org.modellwerkstatt.objectflow.structure.OnStatementCase" flags="ng" index="1hGRo7">
         <child id="9127051365898173148" name="statementList" index="1hGRo0" />
@@ -1050,6 +1044,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2KvWbHaZb6g" role="jymVt" />
     <node concept="1bOX9e" id="4u029Jv8vCO" role="TxmiU">
       <property role="2RkwnN" value="id" />
       <node concept="3Tm1VV" id="4u029Jv8vCU" role="1B3o_S" />
@@ -1347,9 +1342,6 @@
         </node>
       </node>
       <node concept="1TNdZI" id="2kpuhi0Aa5k" role="1TMXFZ" />
-      <node concept="1hdUN8" id="21PCWhM1nuu" role="1TMXFZ">
-        <node concept="Xl_RD" id="21PCWhM1nwV" role="1hdUNa" />
-      </node>
     </node>
     <node concept="1bOX9e" id="6WkQmwhUpfW" role="TxmiU">
       <property role="2RkwnN" value="money" />
@@ -4220,7 +4212,6 @@
       </node>
       <node concept="10P_77" id="3tU9H2B0Ocs" role="3clF45" />
       <node concept="3Tm1VV" id="3tU9H2B0OaV" role="1B3o_S" />
-      <node concept="2BXi5f" id="3tU9H2B0Oee" role="3gomOI" />
     </node>
     <node concept="2vDG_T" id="3tU9H2B0R0S" role="jymVt">
       <property role="TrG5h" value="couponEinloesen" />

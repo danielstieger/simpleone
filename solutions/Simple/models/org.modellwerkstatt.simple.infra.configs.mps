@@ -558,7 +558,7 @@
     <node concept="il5_x" id="6xifBbDMwrN" role="2kzhMJ">
       <property role="TrG5h" value="Edit_Order_Stadard" />
       <node concept="2kzhL4" id="6xifBbDMwrO" role="2kzgdm">
-        <property role="il5CD" value="1hImSMr5NSX/ENTER" />
+        <property role="il5CD" value="1hImSMr5NSr/E" />
         <node concept="Xl_RD" id="6xifBbDMwrP" role="il5_5">
           <property role="Xl_RC" value="Edit Order" />
         </node>
@@ -1344,7 +1344,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
-    <property role="TrG5h" value="MdeConfigMT" />
+    <property role="TrG5h" value="MdeConfigDBTEST" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6UATHBJ4pdD" role="2CGBMS">
@@ -3224,9 +3224,6 @@
     <node concept="2CJ4_Q" id="4yMqt77ruE3" role="2CGBMS">
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
-    <node concept="2CJoq6" id="4yMqt77ruE4" role="2CGBMS">
-      <property role="TrG5h" value="SingleAppInstanceMode" />
-    </node>
     <node concept="2CJf3v" id="4yMqt77ruEt" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
       <node concept="2CJ4$C" id="4yMqt77ruEu" role="2CJ4_l">
@@ -3259,16 +3256,10 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="4yMqt77ruEC" role="2CJ4_l">
-        <property role="TrG5h" value="CheckAlsoPredecessorDuplication" />
-        <node concept="Xl_RD" id="4yMqt77ruED" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
       <node concept="2CJ4$C" id="4yMqt77ruEE" role="2CJ4_l">
-        <property role="TrG5h" value="SingleAppInstanceMode" />
+        <property role="TrG5h" value="TurkuAppImplClassFqName" />
         <node concept="Xl_RD" id="4yMqt77ruEF" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
+          <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.sdi.BrowserTab" />
         </node>
       </node>
       <node concept="Xl_RD" id="4yMqt77ruEG" role="2CJf0U">
@@ -3469,6 +3460,12 @@
     <node concept="2CPvp3" id="6UWxg$P2MfQ" role="2CGBMS" />
     <node concept="2CJf3v" id="6UWxg$P2MfR" role="2CGBMS">
       <property role="TrG5h" value="uiFactory" />
+      <node concept="2CJ4$C" id="M2Wb48HycO" role="2CJ4_l">
+        <property role="TrG5h" value="PortJ" />
+        <node concept="Xl_RD" id="M2Wb48HycU" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="6UWxg$P2MfS" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleAppFactory" />
       </node>
