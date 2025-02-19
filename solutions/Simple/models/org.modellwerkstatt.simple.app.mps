@@ -117,7 +117,6 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
-      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -149,7 +148,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
-      <concept id="6525155817176754757" name="org.modellwerkstatt.objectflow.structure.CommandVoidStatementList" flags="ig" index="20qIzx" />
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
         <reference id="7926373352206300596" name="runtimeHandledObject" index="1ods_" />
       </concept>
@@ -157,16 +155,6 @@
         <reference id="4862154259428332766" name="theColor" index="276gdn" />
       </concept>
       <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXVoidStatementList" flags="ig" index="2d2NRx" />
-      <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
-        <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
-      </concept>
-      <concept id="5788629615582330252" name="org.modellwerkstatt.objectflow.structure.ProblemMessage" flags="ng" index="lgADV">
-        <child id="5788629615582331966" name="problem" index="lgxf9" />
-      </concept>
-      <concept id="5788629615597606700" name="org.modellwerkstatt.objectflow.structure.Precondition" flags="ng" index="mlg3r">
-        <child id="5788629615597607706" name="problemdesc" index="mlgNH" />
-        <child id="5788629615597607704" name="condition" index="mlgNJ" />
-      </concept>
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -187,24 +175,13 @@
       <concept id="3887124829263120988" name="org.modellwerkstatt.objectflow.structure.Action" flags="ng" index="309pON">
         <reference id="96922280161183875" name="customLabel" index="3uz5Vf" />
       </concept>
-      <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
-        <child id="4986415014450757612" name="formatString" index="icr7_" />
-        <child id="3585259589780682365" name="arguments" index="35Gt3$" />
-      </concept>
       <concept id="2334746899962967389" name="org.modellwerkstatt.objectflow.structure.OFXConsumerCmdCallContext" flags="ng" index="1sQxEM">
         <child id="2334746899962967551" name="runCommand" index="1sQxCg" />
       </concept>
-      <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
-        <property id="7912134052599426179" name="newCommandType" index="19I623" />
-        <child id="7192042020164579739" name="commandInit" index="3umfm7" />
-      </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
-      <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
       <concept id="7192042020164640426" name="org.modellwerkstatt.objectflow.structure.Container" flags="ng" index="3ulXEQ">
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
-        <child id="7192042020164640429" name="parameter" index="3ulXEL" />
       </concept>
-      <concept id="7192042020165155254" name="org.modellwerkstatt.objectflow.structure.ContainerParamReference" flags="ng" index="3urNQE" />
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
       <concept id="4503841283144443826" name="org.modellwerkstatt.objectflow.structure.OFXStrategyForException" flags="ng" index="3w4bLU">
         <child id="4503841283144447522" name="messagePartMatch" index="3w4aRE" />
@@ -760,7 +737,7 @@
     </node>
     <node concept="1Fkigk" id="28Js1FcB8Xj" role="1FmHgs">
       <node concept="2_HltQ" id="28Js1FcB8Xk" role="1Fzc2M">
-        <ref role="2_Hrw8" to="tsl4:28Js1Fcvuxi" resolve="Startup Command" />
+        <ref role="2_Hrw8" to="tsl4:28Js1Fcvuxi" resolve="MDE Startup Command" />
         <node concept="3cmrfG" id="28Js1Fd2NqF" role="2_HrWp">
           <property role="3cmrfH" value="3" />
         </node>
@@ -824,14 +801,6 @@
       </node>
       <node concept="276gdk" id="11_njaJu6Dk" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="53_cLlY7JoP" role="2$nsuY">
-      <node concept="33WYYh" id="53_cLlY7JoQ" role="2$ntUL">
-        <ref role="2_Hrw8" node="53_cLlY7I_p" resolve="MdeTestCmd" />
-      </node>
-      <node concept="276gdk" id="11_njaJu6Dp" role="2$ntZF">
-        <ref role="276gdn" to="oyrz:1YLrbjkZoNP" resolve="MenüBestandskontrolle" />
       </node>
     </node>
     <node concept="2$ntO6" id="17o2t3rMpol" role="2$nsuY">
@@ -981,8 +950,9 @@
       </node>
     </node>
     <node concept="2MWAvL" id="2WdiRyr8sLg" role="2A_d42">
-      <node concept="Xl_RD" id="2WdiRyr8tK4" role="2MWAvM">
-        <property role="Xl_RC" value="3" />
+      <node concept="10M0yZ" id="4kA4APOBGVG" role="2MWAvM">
+        <ref role="3cqZAo" to="o7da:4Ex3Fobkvwj" resolve="VERSION" />
+        <ref role="1PxDUh" to="o7da:1SuqpWQMcfd" resolve="TestSetting" />
       </node>
     </node>
     <node concept="2MZaQk" id="5kphc59RIUz" role="2A_d42">
@@ -1235,8 +1205,9 @@
       </node>
     </node>
     <node concept="2MWAvL" id="4H3LB8AgRAL" role="2A_d42">
-      <node concept="Xl_RD" id="4H3LB8AgRCQ" role="2MWAvM">
-        <property role="Xl_RC" value="1.0" />
+      <node concept="10M0yZ" id="4kA4APOBHcE" role="2MWAvM">
+        <ref role="3cqZAo" to="o7da:4Ex3Fobkvwj" resolve="VERSION" />
+        <ref role="1PxDUh" to="o7da:1SuqpWQMcfd" resolve="TestSetting" />
       </node>
     </node>
     <node concept="2MZaQk" id="4H3LB8AgRAN" role="2A_d42">
@@ -1249,41 +1220,6 @@
         <node concept="3clFbF" id="4H3LB8AgRDL" role="3cqZAp">
           <node concept="3clFbT" id="4H3LB8AgRDK" role="3clFbG">
             <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3ugp7m" id="53_cLlY7I_p">
-    <property role="TrG5h" value="MdeTestCmd" />
-    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
-    <node concept="3ulXEN" id="2KvWbHb20UJ" role="3ulXEL">
-      <property role="TrG5h" value="param" />
-      <node concept="17QB3L" id="2KvWbHb20UY" role="1tU5fm" />
-      <node concept="Xl_RD" id="2KvWbHb20V7" role="33vP2m">
-        <property role="Xl_RC" value="" />
-      </node>
-    </node>
-    <node concept="20qIzx" id="53_cLlY7IAa" role="3umfm7">
-      <node concept="3clFbS" id="53_cLlY7IAb" role="2VODD2">
-        <node concept="mlg3r" id="53_cLlY7IAA" role="3cqZAp">
-          <node concept="3eOSWO" id="53_cLlY7J1S" role="mlgNJ">
-            <node concept="3cmrfG" id="53_cLlY7J1W" role="3uHU7w">
-              <property role="3cmrfH" value="10" />
-            </node>
-            <node concept="3cmrfG" id="53_cLlY7IB6" role="3uHU7B">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-          <node concept="lgADV" id="53_cLlY7IAC" role="mlgNH">
-            <node concept="35AVbj" id="53_cLlY7IAD" role="lgxf9">
-              <node concept="3urNQE" id="2KvWbHb20Yu" role="35Gt3$">
-                <ref role="3cqZAo" node="2KvWbHb20UJ" resolve="param" />
-              </node>
-              <node concept="ic4WF" id="53_cLlY7IAE" role="icr7_">
-                <property role="ic4Xk" value="Meldung - der param war '%s'" />
-              </node>
-            </node>
           </node>
         </node>
       </node>
@@ -1694,8 +1630,9 @@
       <ref role="2k5inG" node="46E_y$ew7E6" resolve="Create Invoices" />
     </node>
     <node concept="2MWAvL" id="46E_y$ew7F0" role="2A_d42">
-      <node concept="Xl_RD" id="46E_y$ew7F1" role="2MWAvM">
-        <property role="Xl_RC" value="1.1.0" />
+      <node concept="10M0yZ" id="4kA4APOBHqp" role="2MWAvM">
+        <ref role="1PxDUh" to="o7da:1SuqpWQMcfd" resolve="TestSetting" />
+        <ref role="3cqZAo" to="o7da:4Ex3Fobkvwj" resolve="VERSION" />
       </node>
     </node>
     <node concept="2MZaQk" id="46E_y$ew7F2" role="2A_d42">
