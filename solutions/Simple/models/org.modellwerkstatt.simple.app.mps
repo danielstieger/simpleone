@@ -453,6 +453,11 @@
         <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
+    <node concept="2$ntO6" id="7ztTxh03xqP" role="2$nsuY">
+      <node concept="33WYYh" id="7ztTxh03xqQ" role="2$ntUL">
+        <ref role="2_Hrw8" to="tsl4:4kA4APNISj1" resolve="MDE GO Command" />
+      </node>
+    </node>
     <node concept="33WYYh" id="5R_43WzvgM9" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:6m2yckYr5J2" resolve="Ref/Stat Ui Test" />
       <ref role="3uz5Vf" to="oyrz:5R_43Wzruo3" resolve="HOD_REF_STAT_UITEST" />
@@ -827,6 +832,11 @@
         <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
+    <node concept="2$ntO6" id="7ztTxh04feA" role="2$nsuY">
+      <node concept="33WYYh" id="7ztTxh04feB" role="2$ntUL">
+        <ref role="2_Hrw8" to="tsl4:4kA4APNISj1" resolve="MDE GO Command" />
+      </node>
+    </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
       <node concept="3clFbS" id="5XruxTJPWFg" role="2VODD2">
         <node concept="3clFbH" id="49BXeSdQYWe" role="3cqZAp" />
@@ -1050,7 +1060,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4dQ7$MA1aKP" role="3cqZAp" />
         <node concept="3clFbF" id="4h8Goff2ILn" role="3cqZAp">
           <node concept="37vLTI" id="4h8Goff2IR5" role="3clFbG">
             <node concept="1odsa" id="4h8GoffRRRy" role="37vLTx">
@@ -1091,6 +1100,14 @@
     </node>
     <node concept="33WYYh" id="2a0RfU1slPe" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
+    </node>
+    <node concept="1Fkigk" id="7KLcNZkHrmN" role="1FmHgs">
+      <node concept="2_HltQ" id="7KLcNZkHrmO" role="1Fzc2M">
+        <ref role="2_Hrw8" to="tsl4:28Js1Fcvuxi" resolve="MDE Startup Command" />
+        <node concept="3cmrfG" id="7KLcNZkIHxs" role="2_HrWp">
+          <property role="3cmrfH" value="5" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2AUT8P" id="2B50FNWLyE8">

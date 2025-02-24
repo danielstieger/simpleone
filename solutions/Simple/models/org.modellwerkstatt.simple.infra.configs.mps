@@ -3432,12 +3432,6 @@
           <property role="Xl_RC" value="false" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="7ztTxgZE_Ac" role="2CJ4_l">
-        <property role="TrG5h" value="AuthenticatorName" />
-        <node concept="Xl_RD" id="7ztTxgZE_Ad" role="2CaGCA">
-          <property role="Xl_RC" value="org.modellwerkstatt.h2forms.mdeauth.H2MpreisTrialFirstAuth" />
-        </node>
-      </node>
     </node>
     <node concept="2CPvp3" id="5zzuqmEuRvt" role="2CGBMS" />
     <node concept="2CJ4_Q" id="5zzuqmEuRvu" role="2CGBMS">
