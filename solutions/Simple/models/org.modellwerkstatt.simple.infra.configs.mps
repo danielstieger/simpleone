@@ -400,7 +400,7 @@
       <node concept="2kzhL4" id="6xifBbDF$a1" role="2kzgdm">
         <ref role="2C2Acs" node="bIRySeiObe" resolve="MDE" />
         <node concept="Xl_RD" id="6xifBbDF$bc" role="il5$o">
-          <property role="Xl_RC" value="delete_outline" />
+          <property role="Xl_RC" value="message" />
         </node>
       </node>
     </node>
@@ -1058,6 +1058,22 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="7IUYreGG0Wl" role="2kzhMJ">
+      <property role="TrG5h" value="NEXT" />
+      <node concept="2kzhL4" id="7IUYreGG0Wm" role="2kzgdm">
+        <node concept="Xl_RD" id="7IUYreGG0Wo" role="il5_5">
+          <property role="Xl_RC" value="NEXT" />
+        </node>
+      </node>
+    </node>
+    <node concept="il5_x" id="7IUYreGG0Xm" role="2kzhMJ">
+      <property role="TrG5h" value="BACK" />
+      <node concept="2kzhL4" id="7IUYreGG0Xn" role="2kzgdm">
+        <node concept="Xl_RD" id="7IUYreGG0Xp" role="il5_5">
+          <property role="Xl_RC" value="BACK" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />
@@ -1158,7 +1174,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="1$$A7zM8Bg6">
-    <property role="TrG5h" value="FX8_MySql" />
+    <property role="TrG5h" value="FX8_Lola" />
     <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CGBMS">
@@ -1276,7 +1292,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
-      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
+      <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1Z" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -1344,7 +1360,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
-    <property role="TrG5h" value="MdeConfigDBTEST" />
+    <property role="TrG5h" value="MdeConfig" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6UATHBJ4pdD" role="2CGBMS">
@@ -1395,27 +1411,27 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="7WLyHU5Ah5y" role="2CJ4_l">
+      <node concept="2CJ4$C" id="3QYERnILe$3" role="2CJ4_l">
         <property role="TrG5h" value="UploadLocationRetrieve" />
-        <node concept="Xl_RD" id="7WLyHU5Ah5z" role="2CaGCA">
-          <property role="Xl_RC" value="http://10.1.1.143:8080/static/" />
+        <node concept="Xl_RD" id="3QYERnILe$4" role="2CaGCA">
+          <property role="Xl_RC" value="/static/" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="7WLyHU5Ah5N" role="2CJ4_l">
+      <node concept="2CJ4$C" id="3QYERnILe$5" role="2CJ4_l">
         <property role="TrG5h" value="UploadFsLocationStore" />
-        <node concept="Xl_RD" id="7WLyHU5Ah5O" role="2CaGCA">
-          <property role="Xl_RC" value="/home/daniels/green/webapps/ROOT/static" />
+        <node concept="Xl_RD" id="3QYERnILe$6" role="2CaGCA">
+          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="GWkwFkilRe" role="2CJ4_l">
+      <node concept="2CJ4$C" id="3QYERnILe$7" role="2CJ4_l">
         <property role="TrG5h" value="CamDesiredHeight" />
-        <node concept="Xl_RD" id="GWkwFkimKi" role="2CaGCA">
+        <node concept="Xl_RD" id="3QYERnILe$8" role="2CaGCA">
           <property role="Xl_RC" value="400" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="GWkwFkilR$" role="2CJ4_l">
+      <node concept="2CJ4$C" id="3QYERnILe$9" role="2CJ4_l">
         <property role="TrG5h" value="CamDesiredWidth" />
-        <node concept="Xl_RD" id="GWkwFkimKs" role="2CaGCA">
+        <node concept="Xl_RD" id="3QYERnILe$a" role="2CaGCA">
           <property role="Xl_RC" value="200" />
         </node>
       </node>
@@ -1440,7 +1456,7 @@
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTT" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
@@ -2285,19 +2301,19 @@
         <node concept="2CJ4$C" id="46E_y$eDwNa" role="2CJ4_l">
           <property role="TrG5h" value="url" />
           <node concept="Xl_RD" id="46E_y$eDwNb" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:mysql://localhost/test?useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC" />
+            <property role="Xl_RC" value="jdbc:mysql://192.168.0.73/test?useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC" />
           </node>
         </node>
         <node concept="2CJ4$C" id="46E_y$eDwNc" role="2CJ4_l">
           <property role="TrG5h" value="username" />
           <node concept="Xl_RD" id="46E_y$eDwNd" role="2CaGCA">
-            <property role="Xl_RC" value="root" />
+            <property role="Xl_RC" value="monty" />
           </node>
         </node>
         <node concept="2CJ4$C" id="46E_y$eDwNe" role="2CJ4_l">
           <property role="TrG5h" value="password" />
           <node concept="Xl_RD" id="46E_y$eDwNf" role="2CaGCA">
-            <property role="Xl_RC" value="dan" />
+            <property role="Xl_RC" value="monty_pass" />
           </node>
         </node>
         <node concept="2CJ4$C" id="46E_y$eDwO3" role="2CJ4_l">
@@ -2990,7 +3006,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4Ex3Fobawvj">
-    <property role="TrG5h" value="TurkuConfig" />
+    <property role="TrG5h" value="TurkuConfigLOCAL" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6tD2NjQNmJd" role="2CGBMS">
@@ -3091,12 +3107,6 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="kuSiAeUJ_N" role="2CJ4_l">
-        <property role="TrG5h" value="SingleAppInstanceMode" />
-        <node concept="Xl_RD" id="kuSiAeUJ_O" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
       </node>
@@ -3168,7 +3178,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4yMqt77ruDK">
-    <property role="TrG5h" value="TurkuConfigMT" />
+    <property role="TrG5h" value="TurkuConfig" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="4yMqt77ruDL" role="2CGBMS">
@@ -3221,8 +3231,27 @@
         <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
       </node>
     </node>
-    <node concept="2CJ4_Q" id="4yMqt77ruE3" role="2CGBMS">
-      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    <node concept="2CJf3v" id="2TcbFOjNh$J" role="2CGBMS">
+      <property role="TrG5h" value="eventBus" />
+      <node concept="Xl_RD" id="2TcbFOjNh$K" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoOptionalEventBus" />
+      </node>
+      <node concept="2CJf1O" id="2TcbFOjNh$L" role="2CJ4_l">
+        <node concept="Xl_RD" id="2TcbFOjNh$M" role="2DqwMp">
+          <property role="Xl_RC" value="jcentrix.mpreis.co.at" />
+        </node>
+        <node concept="Xl_RD" id="2TcbFOjNh$N" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="2TcbFOjNh$O" role="2CJ4_l">
+        <node concept="Xl_RD" id="2TcbFOjNh$P" role="2DqwMp">
+          <property role="Xl_RC" value="8089" />
+        </node>
+        <node concept="Xl_RD" id="2TcbFOjNh$Q" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
     </node>
     <node concept="2CJf3v" id="4yMqt77ruEt" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
@@ -3254,12 +3283,6 @@
         <property role="TrG5h" value="AutoParDeploymentForwardGracefully" />
         <node concept="Xl_RD" id="4yMqt77ruEB" role="2CaGCA">
           <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="4yMqt77ruEE" role="2CJ4_l">
-        <property role="TrG5h" value="TurkuAppImplClassFqName" />
-        <node concept="Xl_RD" id="4yMqt77ruEF" role="2CaGCA">
-          <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.sdi.BrowserTab" />
         </node>
       </node>
       <node concept="Xl_RD" id="4yMqt77ruEG" role="2CJf0U">
@@ -3333,7 +3356,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="5zzuqmEuRuZ">
-    <property role="TrG5h" value="MdeConfig" />
+    <property role="TrG5h" value="MdeConfigDBTEST" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="5zzuqmEuRv0" role="2CGBMS">
@@ -3379,15 +3402,21 @@
         </node>
       </node>
       <node concept="2CJ4$C" id="5zzuqmEuRvf" role="2CJ4_l">
-        <property role="TrG5h" value="LogEventsToStdErr" />
+        <property role="TrG5h" value="PortJ" />
         <node concept="Xl_RD" id="5zzuqmEuRvg" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="3Obg$lXHEFe" role="2CJ4_l">
+        <property role="TrG5h" value="MowareTrace" />
+        <node concept="Xl_RD" id="3Obg$lXHEFf" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="2CJ4$C" id="5zzuqmEuRvh" role="2CJ4_l">
         <property role="TrG5h" value="UploadLocationRetrieve" />
         <node concept="Xl_RD" id="5zzuqmEuRvi" role="2CaGCA">
-          <property role="Xl_RC" value="http://192.168.0.73:8080/static/" />
+          <property role="Xl_RC" value="/static/" />
         </node>
       </node>
       <node concept="2CJ4$C" id="5zzuqmEuRvj" role="2CJ4_l">
@@ -3437,11 +3466,30 @@
     <node concept="2CJ4_Q" id="5zzuqmEuRvu" role="2CGBMS">
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
-    <node concept="2CJ4_Q" id="5zzuqmEuRvv" role="2CGBMS">
-      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    <node concept="2CJf3v" id="5STQGl_lD83" role="2CGBMS">
+      <property role="TrG5h" value="eventBus" />
+      <node concept="Xl_RD" id="5STQGl_lD84" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoOptionalEventBus" />
+      </node>
+      <node concept="2CJf1O" id="5STQGl_lD85" role="2CJ4_l">
+        <node concept="Xl_RD" id="5STQGl_lD86" role="2DqwMp">
+          <property role="Xl_RC" value="jcentrix.mpreis.co.at" />
+        </node>
+        <node concept="Xl_RD" id="5STQGl_lD87" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="5STQGl_lD88" role="2CJ4_l">
+        <node concept="Xl_RD" id="5STQGl_lD89" role="2DqwMp">
+          <property role="Xl_RC" value="8089" />
+        </node>
+        <node concept="Xl_RD" id="5STQGl_lD8a" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
     </node>
     <node concept="2CJ4_Q" id="5zzuqmEuRvw" role="2CGBMS">
-      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
     </node>
     <node concept="2CJ4_Q" id="5zzuqmEuRvx" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />

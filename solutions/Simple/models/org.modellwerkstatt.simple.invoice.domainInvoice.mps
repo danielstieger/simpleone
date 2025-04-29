@@ -227,6 +227,9 @@
         <reference id="8086154250676616105" name="object" index="2IFZ7r" />
       </concept>
       <concept id="1879461712355203928" name="org.modellwerkstatt.objectflow.structure.PageScopeConceptFunc" flags="ig" index="JX2Gw" />
+      <concept id="5184976167871705024" name="org.modellwerkstatt.objectflow.structure.CommandUrlOption" flags="ng" index="TbPeq">
+        <child id="5184976167871723018" name="url" index="Ta8Dg" />
+      </concept>
       <concept id="4533072425307715670" name="org.modellwerkstatt.objectflow.structure.StatusElement" flags="ng" index="2XvgOc">
         <property id="4533072425307715682" name="value" index="2XvgOS" />
         <child id="1707086779727598829" name="options" index="2_RhUc" />
@@ -1057,6 +1060,11 @@
     </node>
     <node concept="20qIzx" id="OpUSe2eO5K" role="10_T4l">
       <node concept="3clFbS" id="OpUSe2eO5L" role="2VODD2" />
+    </node>
+    <node concept="TbPeq" id="7ZMK9Xa9fVk" role="3ap3dX">
+      <node concept="Xl_RD" id="7ZMK9Xa9fW9" role="Ta8Dg">
+        <property role="Xl_RC" value="invoices" />
+      </node>
     </node>
   </node>
   <node concept="3ugp7m" id="6XzXfke8x43">
