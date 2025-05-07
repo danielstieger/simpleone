@@ -1447,6 +1447,18 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="4kA4APOD7hI" role="2CJ4_l">
+        <property role="TrG5h" value="AutoParDeploymentForwardGracefully" />
+        <node concept="Xl_RD" id="4kA4APOD7hJ" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="4kA4APONKUW" role="2CJ4_l">
+        <property role="TrG5h" value="CheckDeployedVersion" />
+        <node concept="Xl_RD" id="4kA4APONKUX" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
@@ -3006,7 +3018,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4Ex3Fobawvj">
-    <property role="TrG5h" value="TurkuConfigLOCAL" />
+    <property role="TrG5h" value="TurkuConfigLocal" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6tD2NjQNmJd" role="2CGBMS">
@@ -3449,18 +3461,6 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="4kA4APOD7hI" role="2CJ4_l">
-        <property role="TrG5h" value="AutoParDeploymentForwardGracefully" />
-        <node concept="Xl_RD" id="4kA4APOD7hJ" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="4kA4APONKUW" role="2CJ4_l">
-        <property role="TrG5h" value="CheckDeployedVersion" />
-        <node concept="Xl_RD" id="4kA4APONKUX" role="2CaGCA">
-          <property role="Xl_RC" value="false" />
-        </node>
-      </node>
     </node>
     <node concept="2CPvp3" id="5zzuqmEuRvt" role="2CGBMS" />
     <node concept="2CJ4_Q" id="5zzuqmEuRvu" role="2CGBMS">
@@ -3531,7 +3531,7 @@
       </node>
     </node>
     <node concept="2CJ4_Q" id="6UWxg$P2Mgi" role="2CGBMS">
-      <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
     </node>
     <node concept="2CJ4_Q" id="6UWxg$P2Mgj" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />

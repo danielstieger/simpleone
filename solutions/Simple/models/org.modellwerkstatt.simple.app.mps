@@ -180,6 +180,10 @@
       <concept id="2334746899962967389" name="org.modellwerkstatt.objectflow.structure.OFXConsumerCmdCallContext" flags="ng" index="1sQxEM">
         <child id="2334746899962967551" name="runCommand" index="1sQxCg" />
       </concept>
+      <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
+        <property id="1001479520354727786" name="newWindowTitleType" index="1ptSWV" />
+        <child id="4222064144042812753" name="andIsEnabledNew" index="e0yQD" />
+      </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640426" name="org.modellwerkstatt.objectflow.structure.Container" flags="ng" index="3ulXEQ">
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
@@ -239,21 +243,6 @@
       </concept>
     </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
-      <concept id="4050398188324041134" name="org.modellwerkstatt.dataux.structure.ApiDescription" flags="ng" index="5Llov">
-        <property id="4050398188324652721" name="externalName" index="5NY40" />
-        <property id="4050398188324652646" name="majorVersion" index="5NY7n" />
-        <child id="4050398188327638092" name="endpoints" index="64BfX" />
-        <child id="7979398914377719990" name="options" index="1q8UmZ" />
-      </concept>
-      <concept id="4050398188327617005" name="org.modellwerkstatt.dataux.structure.ApiOperation" flags="ng" index="64Eps">
-        <child id="6609645250153170505" name="response" index="2L06Gs" />
-        <child id="4234437205438052566" name="container" index="R5Cry" />
-      </concept>
-      <concept id="4050398188327614962" name="org.modellwerkstatt.dataux.structure.ApiEndpoint" flags="ng" index="64HT3">
-        <child id="4050398188327617081" name="operations" index="64Em8" />
-        <child id="6609645250142104685" name="serdes" index="2LEO4S" />
-        <child id="4234437205449535841" name="general" index="OhWXl" />
-      </concept>
       <concept id="4920377772573248079" name="org.modellwerkstatt.dataux.structure.TileInitFunction" flags="ig" index="2aJ7Jc" />
       <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe">
         <child id="3887124829268092187" name="label" index="33Ov9O" />
@@ -269,23 +258,12 @@
         <reference id="1335996842166433049" name="configuration" index="2WPtWl" />
         <child id="3226612376922221534" name="options" index="2A_d42" />
       </concept>
-      <concept id="7595707347872160092" name="org.modellwerkstatt.dataux.structure.ApiGlobalVarDeclarationStatement" flags="ng" index="2APWra">
-        <child id="7595707347872160389" name="apiVar" index="2APWkj" />
-      </concept>
       <concept id="3226612376919648489" name="org.modellwerkstatt.dataux.structure.BatchJobModule" flags="ng" index="2AUT8P">
         <child id="3226612376919678132" name="authFunction" index="2AUypC" />
         <child id="3226612376919678125" name="onShutdown" index="2AUypL" />
         <child id="3226612376919678119" name="onStartup" index="2AUypV" />
         <child id="4503841283145840496" name="exceptionStrategy" index="3w9mMS" />
         <child id="830315156970378402" name="pairs" index="1_k$Iu" />
-      </concept>
-      <concept id="6609645250165214509" name="org.modellwerkstatt.dataux.structure.ApiOperationResponse" flags="ng" index="2KM21S">
-        <property id="306254586835227875" name="fldName" index="2nptKf" />
-        <child id="306254586835227872" name="value" index="2nptKc" />
-        <child id="5680397130376446158" name="type" index="1tU5fn" />
-      </concept>
-      <concept id="6609645250142093666" name="org.modellwerkstatt.dataux.structure.ApiMwJsonEndpoint" flags="ng" index="2LEQKR">
-        <child id="4021376053636147098" name="defSerdesOpt" index="36W6IG" />
       </concept>
       <concept id="754349571275928331" name="org.modellwerkstatt.dataux.structure.OptRunInConsole" flags="ng" index="MakZV" />
       <concept id="7784207101901652180" name="org.modellwerkstatt.dataux.structure.AppUiModule" flags="ng" index="2MVcZ9">
@@ -296,6 +274,7 @@
         <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
         <child id="4243878476893838311" name="helpMenu" index="1BMTcq" />
+        <child id="4399874686856833707" name="onStartupCmd" index="1FmHgs" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
@@ -304,12 +283,6 @@
       <concept id="7784207101902693001" name="org.modellwerkstatt.dataux.structure.OptOfficialAppName" flags="ng" index="2MZaQk">
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
-      <concept id="4234437205441760825" name="org.modellwerkstatt.dataux.structure.ApiVariableReference" flags="ng" index="ONB0d" />
-      <concept id="4234437205438029759" name="org.modellwerkstatt.dataux.structure.ApiImplContainer" flags="ng" index="R5Q6b">
-        <child id="4234437205438029760" name="paramsVar" index="R5Q7O" />
-        <child id="4234437205438029774" name="body" index="R5Q7U" />
-      </concept>
-      <concept id="4234437205438027568" name="org.modellwerkstatt.dataux.structure.ApiVariable" flags="ng" index="R5Q$4" />
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
       <concept id="3009814936672478387" name="org.modellwerkstatt.dataux.structure.IPairModuleOption" flags="ng" index="3lKyof">
         <reference id="5929750062570639791" name="pair" index="2k5inG" />
@@ -324,6 +297,9 @@
       </concept>
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
+      </concept>
+      <concept id="4399874686857403043" name="org.modellwerkstatt.dataux.structure.StartupCommandCall" flags="ng" index="1Fkigk">
+        <child id="4399874686859853317" name="commandCall" index="1Fzc2M" />
       </concept>
       <concept id="2497433976992505068" name="org.modellwerkstatt.dataux.structure.MenuSeparator" flags="ng" index="1U2rok" />
     </language>
@@ -509,6 +485,27 @@
     </node>
     <node concept="33WYYh" id="11_njaJsR4L" role="2N77jT">
       <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
+    </node>
+    <node concept="fOGPe" id="2ALAMOe2ujp" role="2N77jT">
+      <node concept="Xl_RD" id="2ALAMOe2ujr" role="33Ov9O">
+        <property role="Xl_RC" value="TEST" />
+      </node>
+      <node concept="33WYYh" id="2ALAMOe2zGk" role="fOGQ8">
+        <ref role="2_Hrw8" node="2ALAMOe2zDf" resolve="HideOnDisabled Cmd" />
+        <ref role="3uz5Vf" to="oyrz:5UVCPc2igCd" resolve="HOD_RESET_ORDER" />
+      </node>
+      <node concept="33WYYh" id="2ALAMOe2zN4" role="fOGQ8">
+        <ref role="2_Hrw8" node="2ALAMOe2zDf" resolve="HideOnDisabled Cmd" />
+        <ref role="3uz5Vf" to="oyrz:5UVCPc2igCd" resolve="HOD_RESET_ORDER" />
+      </node>
+      <node concept="33WYYh" id="2ALAMOe2zN7" role="fOGQ8">
+        <ref role="2_Hrw8" node="2ALAMOe2zDf" resolve="HideOnDisabled Cmd" />
+        <ref role="3uz5Vf" to="oyrz:5UVCPc2igCd" resolve="HOD_RESET_ORDER" />
+      </node>
+      <node concept="33WYYh" id="2ALAMOe2zNb" role="fOGQ8">
+        <ref role="2_Hrw8" node="2ALAMOe2zDf" resolve="HideOnDisabled Cmd" />
+        <ref role="3uz5Vf" to="oyrz:5UVCPc2igCd" resolve="HOD_RESET_ORDER" />
+      </node>
     </node>
     <node concept="fOGPe" id="1gJQ5nCsovY" role="2N77jT">
       <node concept="33WYYh" id="3wkdm3W8f8l" role="fOGQ8">
@@ -778,6 +775,11 @@
         </node>
       </node>
     </node>
+    <node concept="1Fkigk" id="2ALAMOe4kYB" role="1FmHgs">
+      <node concept="2_HltQ" id="2ALAMOe4kYC" role="1Fzc2M">
+        <ref role="2_Hrw8" to="tsl4:28Js1Fcvuxi" resolve="MDE Startup Command" />
+      </node>
+    </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App_MDE_Order" />
@@ -878,7 +880,7 @@
           <node concept="3cpWsn" id="1v6GfusbRT7" role="3cpWs9">
             <property role="TrG5h" value="user" />
             <node concept="17QB3L" id="1v6GfusbRT2" role="1tU5fm" />
-            <node concept="Xl_RD" id="1v6GfusbRXU" role="33vP2m">
+            <node concept="Xl_RD" id="3iaIn_bcl2O" role="33vP2m">
               <property role="Xl_RC" value="daniels" />
             </node>
           </node>
@@ -986,8 +988,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7LI3eqpleYY" role="3cqZAp">
-          <node concept="3clFbT" id="49BXeScGsPg" role="3clFbG">
+        <node concept="3clFbF" id="3iaIn_bckYR" role="3cqZAp">
+          <node concept="3clFbT" id="3iaIn_bckYQ" role="3clFbG">
             <property role="3clFbU" value="true" />
           </node>
         </node>
@@ -1796,86 +1798,10 @@
       <node concept="3clFbS" id="46E_y$ew7FK" role="2VODD2" />
     </node>
   </node>
-  <node concept="5Llov" id="6_DnTreLCUY">
-    <property role="TrG5h" value="MyTest" />
-    <property role="5NY40" value="mytest" />
-    <property role="5NY7n" value="1" />
-    <node concept="2MWAvL" id="6_DnTreLCUZ" role="1q8UmZ">
-      <node concept="Xl_RD" id="6_DnTreLCVm" role="2MWAvM">
-        <property role="Xl_RC" value="1" />
-      </node>
-    </node>
-    <node concept="64HT3" id="6_DnTreLCV1" role="64BfX">
-      <property role="TrG5h" value="Endpoint1" />
-      <node concept="2LEQKR" id="6_DnTreLCV2" role="2LEO4S">
-        <node concept="10M0yZ" id="6_DnTreLCVN" role="36W6IG">
-          <ref role="3cqZAo" to="18b:3wl_P2NF_Mk" resolve="CONV_DEFAULT_EN" />
-          <ref role="1PxDUh" to="18b:6qNJO0Imc8R" resolve="CONV" />
-        </node>
-      </node>
-      <node concept="64Eps" id="6_DnTreLCV4" role="64Em8">
-        <property role="TrG5h" value="op1" />
-        <node concept="2KM21S" id="6_DnTrgFcrl" role="2L06Gs">
-          <property role="2nptKf" value="i" />
-          <node concept="10Oyi0" id="6_DnTrgFcrr" role="1tU5fn" />
-          <node concept="ONB0d" id="3$IQDVzyGHL" role="2nptKc">
-            <ref role="3cqZAo" node="6_DnTrhow7Q" resolve="i" />
-          </node>
-        </node>
-        <node concept="R5Q6b" id="6_DnTreLCV5" role="R5Cry">
-          <node concept="R5Q$4" id="6_DnTrhAl47" role="R5Q7O">
-            <property role="TrG5h" value="myParam" />
-            <node concept="10Oyi0" id="6_DnTrhAl4V" role="1tU5fm" />
-            <node concept="3cmrfG" id="6_DnTrhR3IC" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6_DnTreLCV7" role="R5Q7U">
-            <node concept="3clFbH" id="6_DnTrhA2vq" role="3cqZAp" />
-            <node concept="3clFbH" id="6_DnTrhMcq$" role="3cqZAp" />
-            <node concept="2APWra" id="6_DnTrhow7O" role="3cqZAp">
-              <node concept="R5Q$4" id="6_DnTrhow7Q" role="2APWkj">
-                <property role="TrG5h" value="i" />
-                <node concept="10Oyi0" id="6_DnTrhow7Z" role="1tU5fm" />
-                <node concept="3cmrfG" id="3$IQDVA064Q" role="33vP2m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="3$IQDVzyMKU" role="3cqZAp">
-              <node concept="2OqwBi" id="3$IQDVzyMKR" role="3clFbG">
-                <node concept="10M0yZ" id="3$IQDVzyMKS" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                </node>
-                <node concept="liA8E" id="3$IQDVzyMKT" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="3cpWs3" id="3$IQDVzyN7U" role="37wK5m">
-                    <node concept="ONB0d" id="3$IQDVzyN7X" role="3uHU7w">
-                      <ref role="3cqZAo" node="6_DnTrhow7Q" resolve="i" />
-                    </node>
-                    <node concept="Xl_RD" id="3$IQDVzyML$" role="3uHU7B">
-                      <property role="Xl_RC" value="" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="R5Q6b" id="6_DnTrflc_D" role="OhWXl">
-        <node concept="R5Q$4" id="6_DnTrhvi9b" role="R5Q7O">
-          <property role="TrG5h" value="pram" />
-          <node concept="10Oyi0" id="6_DnTrhvi9h" role="1tU5fm" />
-        </node>
-        <node concept="3clFbS" id="6_DnTrflc_E" role="R5Q7U">
-          <node concept="3clFbH" id="6_DnTrfILgp" role="3cqZAp" />
-          <node concept="3clFbH" id="6_DnTrfIMWa" role="3cqZAp" />
-          <node concept="3clFbH" id="6_DnTrfFj2w" role="3cqZAp" />
-        </node>
-      </node>
-    </node>
+  <node concept="3ugp7m" id="2ALAMOe2zDf">
+    <property role="1ptSWV" value="R_Y55k$Btz/OVERWRITE_FORCED" />
+    <property role="TrG5h" value="HideOnDisabled Cmd" />
+    <node concept="3clFbT" id="2ALAMOe2zDU" role="e0yQD" />
   </node>
 </model>
 
