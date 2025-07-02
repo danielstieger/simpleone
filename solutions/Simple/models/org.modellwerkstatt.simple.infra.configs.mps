@@ -1460,12 +1460,43 @@
         </node>
       </node>
     </node>
+    <node concept="2CJf3v" id="1NSMOpDXlKg" role="2CGBMS">
+      <property role="TrG5h" value="lic" />
+      <node concept="2CJ4$C" id="h6mu9XgfUS" role="2CJ4_l">
+        <property role="TrG5h" value="StrichLicenseKey" />
+        <node concept="Xl_RD" id="h6mu9XgfVo" role="2CaGCA">
+          <property role="Xl_RC" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjMDVhZWMxYS01NjE2LTQzZmEtOTI2Zi01ZWE1ZWJjZGZiMmQiLCJpc3MiOiJzdHJpY2guaW8iLCJhdWQiOlsiaHR0cHM6Ly93d3cubW9kZWxsd2Vya3N0YXR0Lm9yZy9zdHJpY2gvIl0sImlhdCI6MTc1MDE2MjQ5MCwibmJmIjoxNzUwMTYyNDkwLCJjYXBhYmlsaXRpZXMiOnt9LCJ2ZXJzaW9uIjoxfQ.BXjnHw_j3y3g8TZBYevpEFMbQ-o_8z4A8q7J6_taMk4" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="1NSMOpDXlKi" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.h2forms.core.H2Licenses" />
+      </node>
+    </node>
     <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
-    <node concept="2CJ4_Q" id="6jihzUGVfTR" role="2CGBMS">
-      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    <node concept="2CJf3v" id="h6mu9XfpXY" role="2CGBMS">
+      <property role="TrG5h" value="eventBus" />
+      <node concept="Xl_RD" id="h6mu9XfpXZ" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoOptionalEventBus" />
+      </node>
+      <node concept="2CJf1O" id="h6mu9XfpY0" role="2CJ4_l">
+        <node concept="Xl_RD" id="h6mu9XfpY1" role="2DqwMp">
+          <property role="Xl_RC" value="jcentrix.mpreis.co.at" />
+        </node>
+        <node concept="Xl_RD" id="h6mu9XfpY2" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="h6mu9XfpY3" role="2CJ4_l">
+        <node concept="Xl_RD" id="h6mu9XfpY4" role="2DqwMp">
+          <property role="Xl_RC" value="8089" />
+        </node>
+        <node concept="Xl_RD" id="h6mu9XfpY5" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTS" role="2CGBMS">
       <ref role="2CJ4_N" node="46E_y$eDwGF" resolve="TomcatToMySql" />
@@ -2567,7 +2598,7 @@
       <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl2" role="2CGBMS">
-      <ref role="2CJ4_N" node="7HkVpVbYPJd" resolve="LocalLockBus" />
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
     <node concept="2CJ4_Q" id="4l1zKLo5jl3" role="2CGBMS">
       <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
@@ -3018,7 +3049,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4Ex3Fobawvj">
-    <property role="TrG5h" value="TurkuConfigLocal" />
+    <property role="TrG5h" value="TurkuConfig" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6tD2NjQNmJd" role="2CGBMS">
@@ -3078,9 +3109,6 @@
       <property role="TrG5h" value="SingleAppInstanceMode" />
     </node>
     <node concept="2CPvp3" id="4EUPwPcxPvD" role="2CGBMS" />
-    <node concept="2CJ4_Q" id="4EUPwPcxPCw" role="2CGBMS">
-      <ref role="2CJ4_N" to="3k04:4EUPwPcxPA3" resolve="AppSecretsLocal" />
-    </node>
     <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
       <property role="TrG5h" value="appFactory" />
       <node concept="2CJ4$C" id="6V7pU2jzKxO" role="2CJ4_l">
@@ -3190,7 +3218,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4yMqt77ruDK">
-    <property role="TrG5h" value="TurkuConfig" />
+    <property role="TrG5h" value="TurkuConfigLOLA" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="4yMqt77ruDL" role="2CGBMS">
