@@ -3607,5 +3607,77 @@
       </node>
     </node>
   </node>
+  <node concept="2CG7Z0" id="63DPwXetYzb">
+    <property role="TrG5h" value="FX8_local" />
+    <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="63DPwXetYzc" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="63DPwXetYzd" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="63DPwXetYze" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="63DPwXetYzf" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
+      </node>
+    </node>
+    <node concept="2CJoq6" id="63DPwXetYzg" role="2CGBMS">
+      <property role="TrG5h" value="SetupLog4j_4_Console___Set_Level_Simple" />
+      <node concept="2CJf3v" id="63DPwXetYzh" role="2CJdiS">
+        <property role="TrG5h" value="logConfig_1" />
+        <node concept="Xl_RD" id="63DPwXetYzi" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JLogLevel" />
+        </node>
+        <node concept="2CJf1O" id="63DPwXetYzj" role="2CJ4_l">
+          <node concept="Xl_RD" id="63DPwXetYzk" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="63DPwXetYzl" role="2DqwMp">
+            <property role="Xl_RC" value="Simple" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="63DPwXetYzm" role="2CJ4_l">
+          <node concept="Xl_RD" id="63DPwXetYzn" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="63DPwXetYzo" role="2DqwMp">
+            <property role="Xl_RC" value="INFO" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="63DPwXetYzp" role="2CJdiS" />
+    </node>
+    <node concept="2CJf3v" id="63DPwXetYzq" role="2CGBMS">
+      <property role="TrG5h" value="fxUiFactory" />
+      <node concept="2CJ4$C" id="63DPwXetYzr" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="63DPwXetYzs" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="63DPwXetYzt" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="63DPwXetYzu" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
+    </node>
+    <node concept="2CJ4_Q" id="63DPwXetYzv" role="2CGBMS">
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJ4_Q" id="63DPwXetYzw" role="2CGBMS">
+      <ref role="2CJ4_N" node="3$wB26axdqC" resolve="SingleConMySQL" />
+    </node>
+    <node concept="2CJ4_Q" id="63DPwXetYzx" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="63DPwXetYzy" role="20ptHX">
+      <node concept="Xl_RD" id="63DPwXetYzz" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
 </model>
 

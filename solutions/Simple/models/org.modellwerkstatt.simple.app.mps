@@ -322,7 +322,7 @@
   </registry>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App_Desktop_Order" />
-    <ref role="2WPtWl" to="oyrz:4l1zKLo5jkE" resolve="FX8_MDE_local" />
+    <ref role="2WPtWl" to="oyrz:63DPwXetYzb" resolve="FX8_local" />
     <node concept="33WYYh" id="4EUPwPcoXdV" role="2N77jL">
       <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
       <node concept="10Nm6u" id="2het$DF8g75" role="2_HrWp" />
