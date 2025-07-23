@@ -20,9 +20,8 @@
     <import index="lpv8" ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.demo.upload.unitUpload)" />
     <import index="ptpb" ref="r:8856bdf7-c2d8-4f9b-965a-6c48931660bb(org.modellwerkstatt.simple.master.unitMaster)" />
     <import index="23qg" ref="r:1730cdea-7907-47f1-aabb-50b7862283c4(org.modellwerkstatt.simple.demo.articlesearch)" />
-    <import index="18b" ref="r:897bfb69-0a8e-477a-9053-de701ae9e158(org.modellwerkstatt.objectflow.serdes)" />
-    <import index="pwqp" ref="r:d352bde1-e880-4a41-b00a-e96cb8794bcd(org.modellwerkstatt.simple.dbl.sometest)" />
-    <import index="7656" ref="r:54ccb704-5a25-4ee7-ae0e-6d7b0adeb542(org.modellwerkstatt.simple.temp.unit)" />
+    <import index="pwqp" ref="r:d352bde1-e880-4a41-b00a-e96cb8794bcd(org.modellwerkstatt.simple.dbl.sometest)" implicit="true" />
+    <import index="7656" ref="r:54ccb704-5a25-4ee7-ae0e-6d7b0adeb542(org.modellwerkstatt.simple.temp.unit)" implicit="true" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
   <registry>
@@ -291,6 +290,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
+        <property id="779128492853934523" name="cellId" index="1K8rM7" />
+        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -794,11 +797,6 @@
         </node>
       </node>
     </node>
-    <node concept="1Fkigk" id="2ALAMOe4kYB" role="1FmHgs">
-      <node concept="2_HltQ" id="2ALAMOe4kYC" role="1Fzc2M">
-        <ref role="2_Hrw8" to="tsl4:28Js1Fcvuxi" resolve="MDE Startup Command" />
-      </node>
-    </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App_MDE_Order" />
@@ -906,6 +904,11 @@
         </node>
       </node>
     </node>
+    <node concept="2$ntO6" id="L19YOC9g3_" role="2$nsuY">
+      <node concept="33WYYh" id="L19YOC9g3A" role="2$ntUL">
+        <ref role="2_Hrw8" to="tsl4:7P$uL5PDZM2" resolve="Update Conclusion" />
+      </node>
+    </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
       <node concept="3clFbS" id="5XruxTJPWFg" role="2VODD2">
         <node concept="3cpWs8" id="4W0T8adqedc" role="3cqZAp">
@@ -914,6 +917,10 @@
             <node concept="10P_77" id="4W0T8adqeda" role="1tU5fm" />
             <node concept="3clFbT" id="1wTKWXAwEHh" role="33vP2m">
               <property role="3clFbU" value="true" />
+              <node concept="1KehLL" id="5nwh8JtjFtf" role="lGtFl">
+                <property role="1K8rM7" value="property_value" />
+                <property role="1Kfyot" value="Fg1jLUVyTf/left" />
+              </node>
             </node>
           </node>
         </node>
@@ -955,6 +962,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="68GTeeuEcD1" role="3cqZAp" />
+        <node concept="3clFbH" id="5n57HTvhcn0" role="3cqZAp" />
         <node concept="3clFbJ" id="4W0T8adqdYv" role="3cqZAp">
           <node concept="3clFbS" id="4W0T8adqdYw" role="3clFbx">
             <node concept="3clFbF" id="4W0T8adqdYx" role="3cqZAp">

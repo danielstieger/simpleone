@@ -68,6 +68,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -960,6 +961,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="3iLtcI74zrO" role="3cqZAp" />
               </node>
               <node concept="3eOSWO" id="h6mu9WPPKJ" role="3clFbw">
                 <node concept="3urNR4" id="h6mu9WPOPN" role="3uHU7B">
@@ -992,6 +994,43 @@
                   <node concept="2S8uIT" id="h6mu9WPNJQ" role="2OqNvi">
                     <ref role="2S8YL0" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3iLtcI74zsK" role="3cqZAp">
+              <node concept="3clFbS" id="3iLtcI74zsM" role="3clFbx">
+                <node concept="3clFbF" id="3iLtcI74$1Q" role="3cqZAp">
+                  <node concept="37vLTI" id="3iLtcI74$iL" role="3clFbG">
+                    <node concept="3cpWs3" id="3iLtcI74$zC" role="37vLTx">
+                      <node concept="2OqwBi" id="3iLtcI74$HS" role="3uHU7w">
+                        <node concept="3urNQE" id="3iLtcI74$DC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+                        </node>
+                        <node concept="2S8uIT" id="3iLtcI74$R1" role="2OqNvi">
+                          <ref role="2S8YL0" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="3iLtcI74$oU" role="3uHU7B">
+                        <property role="Xl_RC" value="http://" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3iLtcI74$4P" role="37vLTJ">
+                      <node concept="3urNQE" id="3iLtcI74$1O" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
+                      </node>
+                      <node concept="2S8uIT" id="3iLtcI74$8$" role="2OqNvi">
+                        <ref role="2S8YL0" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="3iLtcI74$0U" role="3clFbw">
+                <node concept="3cmrfG" id="3iLtcI74$1o" role="3uHU7w">
+                  <property role="3cmrfH" value="3" />
+                </node>
+                <node concept="3urNR4" id="3iLtcI74zt_" role="3uHU7B">
+                  <ref role="3cqZAo" node="h6mu9WPOky" resolve="i" />
                 </node>
               </node>
             </node>
