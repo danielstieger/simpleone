@@ -1074,6 +1074,14 @@
         </node>
       </node>
     </node>
+    <node concept="il5_x" id="63DPwXeqNM0" role="2kzhMJ">
+      <property role="TrG5h" value="FIX_ME" />
+      <node concept="2kzhL4" id="63DPwXeqNPV" role="2kzgdm">
+        <node concept="Xl_RD" id="63DPwXeqNPW" role="il5_5">
+          <property role="Xl_RC" value="Fix" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="Qs71p" id="7dlwzTfDykH">
     <property role="TrG5h" value="Do" />
@@ -2973,6 +2981,34 @@
     </node>
     <node concept="QsSxf" id="KHAAyQ8STh" role="Qtgdg">
       <property role="TrG5h" value="CASE102_CMD_TERM_EXCEPTION" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeqpvg" role="Qtgdg">
+      <property role="TrG5h" value="CASE110_PRECOND_CMD_GO_INIT" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeqUb9" role="Qtgdg">
+      <property role="TrG5h" value="CASE111_PRECOND_CMD_GO_INIT_WRN" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeq_oG" role="Qtgdg">
+      <property role="TrG5h" value="CASE112_PRECOND_CMD_GO_CHILDTERM" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeqBGB" role="Qtgdg">
+      <property role="TrG5h" value="CASE113_PRECOND_CMD_GO_CONC" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeqGq8" role="Qtgdg">
+      <property role="TrG5h" value="CASE114_PRECOND_CMD_GO_CONC_WRN" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeqE2r" role="Qtgdg">
+      <property role="TrG5h" value="CASE115_PRECOND_CMD_GO_FINAL_OK" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="63DPwXeqI2e" role="Qtgdg">
+      <property role="TrG5h" value="CASE116_PRECOND_CMD_GE_WRONG" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="2jDJ2hE2j_t" role="1B3o_S" />
