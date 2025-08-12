@@ -24,6 +24,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -48,6 +51,9 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -121,6 +127,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -128,6 +135,7 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="7926373352206300571" name="org.modellwerkstatt.objectflow.structure.OperationCall" flags="ng" index="1odsa">
@@ -1480,88 +1488,166 @@
       <node concept="3clFbS" id="n9qNMHVvey" role="3clF47">
         <node concept="3cpWs8" id="h6mu9WNKjB" role="3cqZAp">
           <node concept="3cpWsn" id="h6mu9WNKjE" role="3cpWs9">
-            <property role="TrG5h" value="exText" />
+            <property role="TrG5h" value="exceptionText" />
             <node concept="17QB3L" id="h6mu9WNKjA" role="1tU5fm" />
-            <node concept="Xl_RD" id="h6mu9WNKqV" role="33vP2m">
-              <property role="Xl_RC" value="java.lang.RuntimeException: org.springframework.dao.DeadlockLoserDataAccessException: PreparedStatementCallback; SQL [MERGE INTO sku_stati d USING ( SELECT ss.filial_id AS filial_id, ss.artikel_id AS artikel_id, sb.last_lief AS last_lief, sb.last_kunde AS last_kunde, CASE WHEN sb.mge_peh IS NULL THEN 0 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk = 11 AND sb.mge_peh &lt; -0.2 THEN -1 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk != 11 AND sb.mge_peh &lt; -2 THEN -1 WHEN art.peh_vk = 11 AND sb.mge_peh &lt; -0.1 THEN -1 WHEN art.peh_vk != 11 AND sb.mge_peh &lt; 0 THEN -1 WHEN sb.mge_peh &gt; 0 THEN 1 ELSE 0 END sta_best FROM fwws.sku_stati ss JOIN fwws.v_artikel_filiale art on ss.artikel_id = art.artikel_id and ss.filial_id = art.filial_id LEFT OUTER JOIN fwws.sku_bestand_v sb on sb.filial_id = ss.filial_id AND sb.artikel_id = ss.artikel_id WHERE ss.filial_id = :FILIAL_ID )s ON (d.filial_id = s.filial_id and d.artikel_id = s.artikel_id) WHEN MATCHED THEN UPDATE SET d.last_lief = s.last_lief, d.last_kunde = s.last_kunde, d.sta_best = s.sta_best ]; ORA-00060: deadlock detected while waiting for resource ; nested exception is java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource at at.mlab.erp.wws.domain.skuBestand.SkuStatusRepo.sqlQuery_453b1s_a0b0j(SkuStatusRepo.java:232) at at.mlab.erp.wws.domain.skuBestand.SkuStatusRepo.statiAktualisieren(SkuStatusRepo.java:51) at at.mlab.erp.routinen.unit.tagesAbschluss.Bestandszusammenfassung_in_SkuStati_aktualisieren$2.execute(Bestandszusammenfassung_in_SkuStati_aktualisieren.java:79) at org.modellwerkstatt.objectflow.runtime.OFXSimpleManMapSession.startTransactionAndFlush(OFXSimpleManMapSession.java:170) at org.modellwerkstatt.objectflow.runtime.OFXCommand.doFinalOkConclusion(OFXCommand.java:279) at org.modellwerkstatt.objectflow.runtime.OFXCommand.initCommand(OFXCommand.java:189) at org.modellwerkstatt.objectflow.runtime.OFXRunCmdContainer.run(OFXRunCmdContainer.java:64) at at.mlab.erp.app.job.jTagesAbschluss$__initializer__$1$13.process(jTagesAbschluss.java:539) at at.mlab.erp.app.job.jTagesAbschluss$__initializer__$1$13.process(jTagesAbschluss.java:1) at org.modellwerkstatt.objectflow.batchjob.OFXConsumerRunnable.run(OFXConsumerRunnable.java:80) at java.base/java.lang.Thread.run(Thread.java:834) Suppressed: org.modellwerkstatt.manmap.runtime.MMAdditionalInfoException: MapUPDATE in statiAktualisieren() led to an exception: MERGE INTO sku_stati d USING ( SELECT ss.filial_id AS filial_id, ss.artikel_id AS artikel_id, sb.last_lief AS last_lief, sb.last_kunde AS last_kunde, CASE WHEN sb.mge_peh IS NULL THEN 0 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk = 11 AND sb.mge_peh &lt; -0.2 THEN -1 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk != 11 AND sb.mge_peh &lt; -2 THEN -1 WHEN art.peh_vk = 11 AND sb.mge_peh &lt; -0.1 THEN -1 WHEN art.peh_vk != 11 AND sb.mge_peh &lt; 0 THEN -1 WHEN sb.mge_peh &gt; 0 THEN 1 ELSE 0 END sta_best FROM fwws.sku_stati ss JOIN fwws.v_artikel_filiale art on ss.artikel_id = art.artikel_id and ss.filial_id = art.filial_id LEFT OUTER JOIN fwws.sku_bestand_v sb on sb.filial_id = ss.filial_id AND sb.artikel_id = ss.artikel_id WHERE ss.filial_id = :FILIAL_ID )s ON (d.filial_id = s.filial_id and d.artikel_id = s.artikel_id) WHEN MATCHED THEN UPDATE SET d.last_lief = s.last_lief, d.last_kunde = s.last_kunde, d.sta_best = s.sta_best Parameters: 1: 3323 at at.mlab.erp.wws.domain.skuBestand.SkuStatusRepo.sqlQuery_453b1s_a0b0j(SkuStatusRepo.java:233) ... 10 more Caused by: org.springframework.dao.DeadlockLoserDataAccessException: PreparedStatementCallback; SQL [MERGE INTO sku_stati d USING ( SELECT ss.filial_id AS filial_id, ss.artikel_id AS artikel_id, sb.last_lief AS last_lief, sb.last_kunde AS last_kunde, CASE WHEN sb.mge_peh IS NULL THEN 0 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk = 11 AND sb.mge_peh &lt; -0.2 THEN -1 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk != 11 AND sb.mge_peh &lt; -2 THEN -1 WHEN art.peh_vk = 11 AND sb.mge_peh &lt; -0.1 THEN -1 WHEN art.peh_vk != 11 AND sb.mge_peh &lt; 0 THEN -1 WHEN sb.mge_peh &gt; 0 THEN 1 ELSE 0 END sta_best FROM fwws.sku_stati ss JOIN fwws.v_artikel_filiale art on ss.artikel_id = art.artikel_id and ss.filial_id = art.filial_id LEFT OUTER JOIN fwws.sku_bestand_v sb on sb.filial_id = ss.filial_id AND sb.artikel_id = ss.artikel_id WHERE ss.filial_id = :FILIAL_ID )s ON (d.filial_id = s.filial_id and d.artikel_id = s.artikel_id) WHEN MATCHED THEN UPDATE SET d.last_lief = s.last_lief, d.last_kunde = s.last_kunde, d.sta_best = s.sta_best ]; ORA-00060: deadlock detected while waiting for resource ; nested exception is java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:271) at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) at at.mlab.erp.wws.domain.skuBestand.SkuStatusRepo.sqlQuery_453b1s_a0b0j(SkuStatusRepo.java:212) ... 10 more Caused by: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052) at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537) at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255) at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610) at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253) at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86) at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:928) at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1136) at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640) at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384) at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:3730) at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3710) at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1061) at jdk.internal.reflect.GeneratedMethodAccessor260.invoke(Unknown Source) at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.base/java.lang.reflect.Method.invoke(Method.java:566) at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114) at com.sun.proxy.$Proxy44.executeUpdate(Unknown Source) at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:965) at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651) ... 13 more Caused by: Error : 60, Position : 1047, Sql = MERGE INTO sku_stati d USING ( SELECT ss.filial_id AS filial_id, ss.artikel_id AS artikel_id, sb.last_lief AS last_lief, sb.last_kunde AS last_kunde, CASE WHEN sb.mge_peh IS NULL THEN 0 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk = 11 AND sb.mge_peh &lt; -0.2 THEN -1 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk != 11 AND sb.mge_peh &lt; -2 THEN -1 WHEN art.peh_vk = 11 AND sb.mge_peh &lt; -0.1 THEN -1 WHEN art.peh_vk != 11 AND sb.mge_peh &lt; 0 THEN -1 WHEN sb.mge_peh &gt; 0 THEN 1 ELSE 0 END sta_best FROM fwws.sku_stati ss JOIN fwws.v_artikel_filiale art on ss.artikel_id = art.artikel_id and ss.filial_id = art.filial_id LEFT OUTER JOIN fwws.sku_bestand_v sb on sb.filial_id = ss.filial_id AND sb.artikel_id = ss.artikel_id WHERE ss.filial_id = :FILIAL_ID )s ON (d.filial_id = s.filial_id and d.artikel_id = s.artikel_id) WHEN MATCHED THEN UPDATE SET d.last_lief = s.last_lief, d.last_kunde = s.last_kunde, d.sta_best = s.sta_best , OriginalSql = MERGE INTO sku_stati d USING ( SELECT ss.filial_id AS filial_id, ss.artikel_id AS artikel_id, sb.last_lief AS last_lief, sb.last_kunde AS last_kunde, CASE WHEN sb.mge_peh IS NULL THEN 0 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk = 11 AND sb.mge_peh &lt; -0.2 THEN -1 WHEN GREATEST(NVL(sb.last_lief,sysdate-50), NVL(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 AND art.peh_vk != 11 AND sb.mge_peh &lt; -2 THEN -1 WHEN art.peh_vk = 11 AND sb.mge_peh &lt; -0.1 THEN -1 WHEN art.peh_vk != 11 AND sb.mge_peh &lt; 0 THEN -1 WHEN sb.mge_peh &gt; 0 THEN 1 ELSE 0 END sta_best FROM fwws.sku_stati ss JOIN fwws.v_artikel_filiale art on ss.artikel_id = art.artikel_id and ss.filial_id = art.filial_id LEFT OUTER JOIN fwws.sku_bestand_v sb on sb.filial_id = ss.filial_id AND sb.artikel_id = ss.artikel_id WHERE ss.filial_id = :FILIAL_ID )s ON (d.filial_id = s.filial_id and d.artikel_id = s.artikel_id) WHEN MATCHED THEN UPDATE SET d.last_lief = s.last_lief, d.last_kunde = s.last_kunde, d.sta_best = s.sta_best , Error Msg = ORA-00060: deadlock detected while waiting for resource at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ... 34 more" />
+            <node concept="Xl_RD" id="35B2N8V4fmM" role="33vP2m">
+              <property role="Xl_RC" value="org.springframework.dao.deadlockloserdataaccessexception: preparedstatementcallback; sql [merge into sku_stati d using ( select ss.filial_id as filial_id, ss.artikel_id as artikel_id, sb.last_lief as last_lief, sb.last_kunde as last_kunde, case when sb.mge_peh is null then 0 when greatest(nvl(sb.last_lief,sysdate-50), nvl(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 and art.peh_vk = 11 and sb.mge_peh &lt; -0.2 then -1 when greatest(nvl(sb.last_lief,sysdate-50), nvl(sb.last_kunde,sysdate-50)) &gt; trunc(sysdate) - 30 and art.peh_vk != 11 and sb.mge_peh &lt; -2 then -1 when art.peh_vk = 11 and sb.mge_peh &lt; -0.1 then -1 when art.peh_vk != 11 and sb.mge_peh &lt; 0 then -1 when sb.mge_peh &gt; 0 then 1 else 0 end sta_best from fwws.sku_stati ss join fwws.v_artikel_filiale art on ss.artikel_id = art.artikel_id and ss.filial_id = art.filial_id left outer join fwws.sku_bestand_v sb on sb.filial_id = ss.filial_id and sb.artikel_id = ss.artikel_id where ss.filial_id = :filial_id )s on (d.filial_id = s.filial_id and d.artikel_id = s.artikel_id) when matched then update set d.last_lief = s.last_lief, d.last_kunde = s.last_kunde, d.sta_best = s.sta_best ]; ora-00060: deadlock detected while waiting for resource\n\n; nested exception is java.sql.sqlexception: ora-00060: deadlock detected while waiting for resource\n" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="h6mu9WNKtd" role="3cqZAp" />
-        <node concept="3clFbF" id="h6mu9WNKvv" role="3cqZAp">
-          <node concept="2OqwBi" id="h6mu9WNKvs" role="3clFbG">
-            <node concept="10M0yZ" id="h6mu9WNKvt" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+        <node concept="3cpWs8" id="35B2N8V4g$D" role="3cqZAp">
+          <node concept="3cpWsn" id="35B2N8V4g$G" role="3cpWs9">
+            <property role="TrG5h" value="exceptionName" />
+            <node concept="17QB3L" id="35B2N8V4g$B" role="1tU5fm" />
+            <node concept="Xl_RD" id="35B2N8V4igz" role="33vP2m">
+              <property role="Xl_RC" value="java.lang.RuntimeException" />
             </node>
-            <node concept="liA8E" id="h6mu9WNKvu" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="3cpWs3" id="h6mu9WNLl0" role="37wK5m">
-                <node concept="2OqwBi" id="h6mu9WNLAF" role="3uHU7w">
-                  <node concept="2OqwBi" id="h6mu9WP0Y8" role="2Oq$k0">
-                    <node concept="37vLTw" id="h6mu9WNLoy" role="2Oq$k0">
-                      <ref role="3cqZAo" node="h6mu9WNKjE" resolve="exText" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="35B2N8V4g2G" role="3cqZAp" />
+        <node concept="3clFbJ" id="7bWGJuS3pwn" role="3cqZAp">
+          <node concept="3clFbS" id="7bWGJuS3pwp" role="3clFbx">
+            <node concept="9aQIb" id="5dKi1fAK04I" role="3cqZAp">
+              <node concept="3clFbS" id="5dKi1fAK04K" role="9aQI4">
+                <node concept="3clFbF" id="35B2N8V4uPz" role="3cqZAp">
+                  <node concept="2OqwBi" id="35B2N8V4uPw" role="3clFbG">
+                    <node concept="10M0yZ" id="35B2N8V4uPx" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                     </node>
-                    <node concept="liA8E" id="h6mu9WP165" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="h6mu9WNLL5" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                    <node concept="2OqwBi" id="h6mu9WP0iM" role="37wK5m">
-                      <node concept="Xl_RD" id="h6mu9WNLLj" role="2Oq$k0">
-                        <property role="Xl_RC" value=".*ORA-00060.*" />
-                      </node>
-                      <node concept="liA8E" id="h6mu9WP0_e" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
+                    <node concept="liA8E" id="35B2N8V4uPy" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                      <node concept="Xl_RD" id="35B2N8V4uTV" role="37wK5m">
+                        <property role="Xl_RC" value="THE EXCEPTION MATCHES." />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="Xl_RD" id="h6mu9WNKvP" role="3uHU7B">
-                  <property role="Xl_RC" value="&gt; " />
+                <node concept="3clFbF" id="35B2N8V6i2P" role="3cqZAp">
+                  <node concept="37vLTI" id="35B2N8V6irg" role="3clFbG">
+                    <node concept="2YIFZM" id="35B2N8V6iEk" role="37vLTx">
+                      <ref role="37wK5l" to="28jr:35B2N8V65hw" resolve="removeNL" />
+                      <ref role="1Pybhc" to="28jr:7sK_OLreJFv" resolve="MoVersion" />
+                      <node concept="37vLTw" id="35B2N8V6iGC" role="37wK5m">
+                        <ref role="3cqZAo" node="h6mu9WNKjE" resolve="exceptionText" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="35B2N8V6i2N" role="37vLTJ">
+                      <ref role="3cqZAo" node="h6mu9WNKjE" resolve="exceptionText" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="35B2N8V6iIV" role="3cqZAp" />
+                <node concept="3cpWs8" id="5dKi1fAJYFH" role="3cqZAp">
+                  <node concept="3cpWsn" id="5dKi1fAJYFK" role="3cpWs9">
+                    <property role="TrG5h" value="matchingText" />
+                    <node concept="17QB3L" id="5dKi1fAJYFF" role="1tU5fm" />
+                    <node concept="Xl_RD" id="35B2N8V4njr" role="33vP2m">
+                      <property role="Xl_RC" value=".*ORA-00060.*" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="5dKi1fAK2Ks" role="3cqZAp">
+                  <node concept="3clFbS" id="5dKi1fAK2Ku" role="3clFbx">
+                    <node concept="3clFbF" id="5dKi1fAK36c" role="3cqZAp">
+                      <node concept="37vLTI" id="5dKi1fAK39I" role="3clFbG">
+                        <node concept="2OqwBi" id="5dKi1fAK3it" role="37vLTx">
+                          <node concept="37vLTw" id="5dKi1fAK3fg" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5dKi1fAJYFK" resolve="matchingText" />
+                          </node>
+                          <node concept="liA8E" id="5dKi1fAK3xB" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="5dKi1fAK36a" role="37vLTJ">
+                          <ref role="3cqZAo" node="5dKi1fAJYFK" resolve="matchingText" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="5iGz_mZL0lZ" role="3cqZAp" />
+                    <node concept="3clFbJ" id="7bWGJuS3qt6" role="3cqZAp">
+                      <node concept="3clFbS" id="7bWGJuS3qt8" role="3clFbx">
+                        <node concept="3clFbF" id="35B2N8V4nX8" role="3cqZAp">
+                          <node concept="2OqwBi" id="35B2N8V4nX5" role="3clFbG">
+                            <node concept="10M0yZ" id="35B2N8V4nX6" role="2Oq$k0">
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                            </node>
+                            <node concept="liA8E" id="35B2N8V4nX7" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                              <node concept="Xl_RD" id="35B2N8V4o0e" role="37wK5m">
+                                <property role="Xl_RC" value="THIS IS A MATCH!" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="7bWGJuS3qHA" role="3clFbw">
+                        <node concept="37vLTw" id="7bWGJuS3qBs" role="2Oq$k0">
+                          <ref role="3cqZAo" node="h6mu9WNKjE" resolve="exceptionText" />
+                        </node>
+                        <node concept="liA8E" id="7bWGJuS3qPg" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                          <node concept="37vLTw" id="5dKi1fAK6AN" role="37wK5m">
+                            <ref role="3cqZAo" node="5dKi1fAJYFK" resolve="matchingText" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="35B2N8V4XzW" role="3cqZAp">
+                      <node concept="2OqwBi" id="35B2N8V4XzT" role="3clFbG">
+                        <node concept="10M0yZ" id="35B2N8V4XzU" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                        </node>
+                        <node concept="liA8E" id="35B2N8V4XzV" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                          <node concept="3cpWs3" id="35B2N8V4Y6v" role="37wK5m">
+                            <node concept="2OqwBi" id="35B2N8V4YeF" role="3uHU7w">
+                              <node concept="37vLTw" id="35B2N8V4Y9G" role="2Oq$k0">
+                                <ref role="3cqZAo" node="h6mu9WNKjE" resolve="exceptionText" />
+                              </node>
+                              <node concept="liA8E" id="35B2N8V4Ypx" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                                <node concept="37vLTw" id="35B2N8V4YBc" role="37wK5m">
+                                  <ref role="3cqZAo" node="5dKi1fAJYFK" resolve="matchingText" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="35B2N8V4XCo" role="3uHU7B">
+                              <property role="Xl_RC" value="&gt; " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="5iGz_mZKWKG" role="3clFbw">
+                    <node concept="3y3z36" id="5iGz_mZKWTj" role="3uHU7w">
+                      <node concept="10Nm6u" id="5iGz_mZKWUk" role="3uHU7w" />
+                      <node concept="37vLTw" id="5iGz_mZKWP$" role="3uHU7B">
+                        <ref role="3cqZAo" node="h6mu9WNKjE" resolve="exceptionText" />
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="5dKi1fAK2XW" role="3uHU7B">
+                      <node concept="37vLTw" id="5dKi1fAK2RH" role="3uHU7B">
+                        <ref role="3cqZAo" node="5dKi1fAJYFK" resolve="matchingText" />
+                      </node>
+                      <node concept="10Nm6u" id="5dKi1fAK2ZL" role="3uHU7w" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3cpWs8" id="h6mu9WRxiY" role="3cqZAp">
-          <node concept="3cpWsn" id="h6mu9WRxj1" role="3cpWs9">
-            <property role="TrG5h" value="t2" />
-            <node concept="17QB3L" id="h6mu9WRxiW" role="1tU5fm" />
-            <node concept="Xl_RD" id="h6mu9WRxyd" role="33vP2m">
-              <property role="Xl_RC" value="hello world" />
+          <node concept="2OqwBi" id="7bWGJuS3pWA" role="3clFbw">
+            <node concept="37vLTw" id="7bWGJuS3pLD" role="2Oq$k0">
+              <ref role="3cqZAo" node="35B2N8V4g$G" resolve="exceptionName" />
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="h6mu9WRxMZ" role="3cqZAp">
-          <node concept="2OqwBi" id="h6mu9WRxMW" role="3clFbG">
-            <node concept="10M0yZ" id="h6mu9WRxMX" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="h6mu9WRxMY" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(boolean)" resolve="println" />
-              <node concept="2OqwBi" id="h6mu9WRzT4" role="37wK5m">
-                <node concept="2OqwBi" id="h6mu9WRzap" role="2Oq$k0">
-                  <node concept="37vLTw" id="h6mu9WRyJr" role="2Oq$k0">
-                    <ref role="3cqZAo" node="h6mu9WRxj1" resolve="t2" />
-                  </node>
-                  <node concept="liA8E" id="h6mu9WRzxd" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="h6mu9WR$fY" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                  <node concept="2OqwBi" id="h6mu9WRAr6" role="37wK5m">
-                    <node concept="Xl_RD" id="h6mu9WR$T7" role="2Oq$k0">
-                      <property role="Xl_RC" value=".*" />
-                    </node>
-                    <node concept="liA8E" id="h6mu9WRB84" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="liA8E" id="7bWGJuS3qd0" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+              <node concept="Xl_RD" id="7bWGJuS3qkw" role="37wK5m">
+                <property role="Xl_RC" value=".*" />
               </node>
             </node>
           </node>

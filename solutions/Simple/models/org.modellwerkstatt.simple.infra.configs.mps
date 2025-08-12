@@ -1468,19 +1468,9 @@
         </node>
       </node>
     </node>
-    <node concept="2CJf3v" id="1NSMOpDXlKg" role="2CGBMS">
-      <property role="TrG5h" value="lic" />
-      <node concept="2CJ4$C" id="h6mu9XgfUS" role="2CJ4_l">
-        <property role="TrG5h" value="StrichLicenseKey" />
-        <node concept="Xl_RD" id="2jzJWX6A13f" role="2CaGCA">
-          <property role="Xl_RC" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3OWI3MzFmNi04MWFjLTQ0YWMtYTk5OS0wZmVlZDc0NmE0OTUiLCJpc3MiOiJzdHJpY2guaW8iLCJhdWQiOlsiaHR0cHM6Ly93d3cubW9kZWxsd2Vya3N0YXR0Lm9yZy9zdHJpY2gvIl0sImlhdCI6MTc1MzE4MzEwMywibmJmIjoxNzUzMTgzMTAzLCJjYXBhYmlsaXRpZXMiOnt9LCJ2ZXJzaW9uIjoxfQ.JBVizYPivQPyUIhxdob1DE5h60q4RxzXg8E-Ke3qIGg" />
-        </node>
-      </node>
-      <node concept="Xl_RD" id="1NSMOpDXlKi" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.h2forms.core.H2Licenses" />
-      </node>
+    <node concept="2CJ4_Q" id="61sBfAPl1An" role="2CGBMS">
+      <ref role="2CJ4_N" to="3k04:61sBfAPl1Af" resolve="StrichLicense" />
     </node>
-    <node concept="2CPvp3" id="6jihzUGVpfJ" role="2CGBMS" />
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
     </node>
