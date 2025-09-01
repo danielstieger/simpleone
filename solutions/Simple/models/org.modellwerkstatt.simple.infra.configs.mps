@@ -1389,6 +1389,24 @@
       <node concept="Xl_RD" id="49EzYiePzEa" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.h2forms.pebble.PAppFactory" />
       </node>
+      <node concept="2CJ4$C" id="pYAIrZyhwr" role="2CJ4_l">
+        <property role="TrG5h" value="PortJLocal" />
+        <node concept="Xl_RD" id="pYAIrZyiO0" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="pYAIrZFaRP" role="2CJ4_l">
+        <property role="TrG5h" value="MowareTrace" />
+        <node concept="Xl_RD" id="pYAIrZFaRQ" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="pYAIrZFaSk" role="2CJ4_l">
+        <property role="TrG5h" value="AppTrace" />
+        <node concept="Xl_RD" id="pYAIrZFaSl" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="2CJ4$C" id="1LWMBWz8Gfz" role="2CJ4_l">
         <property role="TrG5h" value="SkipLoggingTcnException" />
         <node concept="Xl_RD" id="1LWMBWz8Gmx" role="2CaGCA">
@@ -1411,12 +1429,6 @@
         <property role="TrG5h" value="SilentExLogging" />
         <node concept="Xl_RD" id="6f52sUFHAra" role="2CaGCA">
           <property role="Xl_RC" value="false" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="7L6pyrbes93" role="2CJ4_l">
-        <property role="TrG5h" value="LogEventsToStdErr" />
-        <node concept="Xl_RD" id="7L6pyrbes94" role="2CaGCA">
-          <property role="Xl_RC" value="true" />
         </node>
       </node>
       <node concept="2CJ4$C" id="3QYERnILe$3" role="2CJ4_l">

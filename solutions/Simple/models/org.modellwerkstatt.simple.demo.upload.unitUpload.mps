@@ -1449,13 +1449,11 @@
     <node concept="2U5qGO" id="1wTKWXAylfw" role="21u2x1">
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-      <node concept="PoU6y" id="7q7OtF7jwg4" role="PoUSn" />
       <node concept="2U5nhG" id="1wTKWXAylfy" role="2TFpq_" />
       <node concept="3Oe2IN" id="1wTKWXAylfB" role="3OfFNq">
         <node concept="3Oe$u_" id="1wTKWXAylfC" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
         </node>
-        <node concept="Pevqn" id="7q7OtF7jp13" role="PoUSh" />
       </node>
       <node concept="2TG9WV" id="1wTKWXAyn4T" role="3OfFNq">
         <node concept="3Oe$u_" id="1wTKWXAyn4W" role="3Oe2NS">
@@ -1467,7 +1465,7 @@
         <node concept="3Oe$u_" id="1wTKWXAylfP" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:3UQOpsm4hJ0" resolve="text" />
         </node>
-        <node concept="Pevqn" id="7q7OtF7jp1c" role="PoUSh" />
+        <node concept="Pevqn" id="150jcWDvD1y" role="PoUSh" />
       </node>
       <node concept="2TG9WT" id="1wTKWXAylfS" role="3OfFNq">
         <node concept="3Oe$u_" id="1wTKWXAylfT" role="3Oe2NS">
