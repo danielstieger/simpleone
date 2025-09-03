@@ -90,7 +90,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -110,7 +110,7 @@
       <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
         <child id="1202077744034" name="visibility" index="3xqFEP" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -145,7 +145,7 @@
         <reference id="1881524139085552759" name="page" index="10Adxb" />
       </concept>
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
-      <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
+      <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ngI" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
       <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
@@ -200,13 +200,13 @@
       </concept>
       <concept id="4421815423107469587" name="org.modellwerkstatt.manmap.structure.Repository" flags="ig" index="DXQ2w" />
       <concept id="4421815423107469588" name="org.modellwerkstatt.manmap.structure.RepositoryInstanceMethodDeclaration" flags="ig" index="DXQ2B" />
-      <concept id="8172309840348950202" name="org.modellwerkstatt.manmap.structure.INeedsClassMapper" flags="ng" index="P14SU">
+      <concept id="8172309840348950202" name="org.modellwerkstatt.manmap.structure.INeedsClassMapper" flags="ngI" index="P14SU">
         <reference id="8172309840348950203" name="entityMapping" index="P14SV" />
       </concept>
     </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
       <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe" />
-      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ng" index="fOGQ9">
+      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ngI" index="fOGQ9">
         <child id="1750699687529771423" name="menuItems" index="fOGQ8" />
       </concept>
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
@@ -217,7 +217,7 @@
         <property id="465568541577416435" name="lines" index="P9SrG" />
       </concept>
       <concept id="465568541577313928" name="org.modellwerkstatt.dataux.structure.DisabledDOption" flags="ng" index="Pevqn" />
-      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ng" index="PhlgW">
+      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ngI" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
       </concept>
       <concept id="465568541574303019" name="org.modellwerkstatt.dataux.structure.OverwriteFormatDOption" flags="ng" index="Pl0kO">
@@ -233,7 +233,7 @@
       <concept id="465568541573490192" name="org.modellwerkstatt.dataux.structure.LabelFOption" flags="ng" index="PoUSf">
         <child id="465568541573490195" name="expression" index="PoUSc" />
       </concept>
-      <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ng" index="PoUSo">
+      <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ngI" index="PoUSo">
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
@@ -255,10 +255,10 @@
       <concept id="7834248083556629545" name="org.modellwerkstatt.dataux.structure.Table" flags="ng" index="2U5qGQ" />
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
       <concept id="1285788486258659127" name="org.modellwerkstatt.dataux.structure.UploadDelegate" flags="ng" index="3ap0rB" />
-      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ng" index="1Nb$$x">
+      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ngI" index="1Nb$$x">
         <property id="5337297293525625539" name="isNamed" index="1Nb$_v" />
       </concept>
-      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ng" index="1Nkgcq">
+      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ngI" index="1Nkgcq">
         <reference id="8798915378417862464" name="boundProperty" index="1Tjo6F" />
         <reference id="8798915378417862462" name="boundClassifier" index="1Tjo7l" />
       </concept>
@@ -270,12 +270,12 @@
       <concept id="1469414169489626296" name="org.modellwerkstatt.dataux.structure.BaseDelegate" flags="ng" index="3OfFNu">
         <child id="1469414169489720478" name="boundTo" index="3Oe2NS" />
       </concept>
-      <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ng" index="3OfFNv">
+      <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ngI" index="3OfFNv">
         <child id="465568541573490190" name="option" index="PoUSh" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1449,13 +1449,11 @@
     <node concept="2U5qGO" id="1wTKWXAylfw" role="21u2x1">
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-      <node concept="PoU6y" id="7q7OtF7jwg4" role="PoUSn" />
       <node concept="2U5nhG" id="1wTKWXAylfy" role="2TFpq_" />
       <node concept="3Oe2IN" id="1wTKWXAylfB" role="3OfFNq">
         <node concept="3Oe$u_" id="1wTKWXAylfC" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
         </node>
-        <node concept="Pevqn" id="7q7OtF7jp13" role="PoUSh" />
       </node>
       <node concept="2TG9WV" id="1wTKWXAyn4T" role="3OfFNq">
         <node concept="3Oe$u_" id="1wTKWXAyn4W" role="3Oe2NS">
@@ -1467,7 +1465,7 @@
         <node concept="3Oe$u_" id="1wTKWXAylfP" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:3UQOpsm4hJ0" resolve="text" />
         </node>
-        <node concept="Pevqn" id="7q7OtF7jp1c" role="PoUSh" />
+        <node concept="Pevqn" id="150jcWDvD1y" role="PoUSh" />
       </node>
       <node concept="2TG9WT" id="1wTKWXAylfS" role="3OfFNq">
         <node concept="3Oe$u_" id="1wTKWXAylfT" role="3Oe2NS">

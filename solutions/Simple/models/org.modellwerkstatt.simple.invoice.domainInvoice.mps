@@ -140,7 +140,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -162,7 +162,7 @@
         <child id="1202077744034" name="visibility" index="3xqFEP" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -274,7 +274,7 @@
         <reference id="1881524139085552759" name="page" index="10Adxb" />
       </concept>
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
-      <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ng" index="13YVsI">
+      <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ngI" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
       <concept id="1372017518093514468" name="org.modellwerkstatt.objectflow.structure.Entity" flags="ig" index="34Athd">
@@ -284,7 +284,7 @@
         <child id="4986415014450757612" name="formatString" index="icr7_" />
         <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
-      <concept id="3860064244070526091" name="org.modellwerkstatt.objectflow.structure.IBuilderElement" flags="ng" index="1b$LXL">
+      <concept id="3860064244070526091" name="org.modellwerkstatt.objectflow.structure.IBuilderElement" flags="ngI" index="1b$LXL">
         <reference id="3860064244073851670" name="property" index="1bDdzG" />
         <child id="3860064244073851668" name="expression" index="1bDdzI" />
       </concept>
@@ -348,6 +348,7 @@
       <concept id="774207833082557389" name="org.modellwerkstatt.manmap.structure.KeyOption" flags="ng" index="jyRCx" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -355,7 +356,7 @@
     </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
       <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe" />
-      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ng" index="fOGQ9">
+      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ngI" index="fOGQ9">
         <child id="1750699687529771423" name="menuItems" index="fOGQ8" />
       </concept>
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
@@ -366,13 +367,13 @@
         <child id="2354161481540541392" name="result" index="zyzaP" />
       </concept>
       <concept id="465568541577313928" name="org.modellwerkstatt.dataux.structure.DisabledDOption" flags="ng" index="Pevqn" />
-      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ng" index="PhlgW">
+      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ngI" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
       </concept>
       <concept id="465568541574762723" name="org.modellwerkstatt.dataux.structure.WidthDOption" flags="ng" index="PnLzW">
         <property id="465568541576048796" name="percent" index="PiFy3" />
       </concept>
-      <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ng" index="PoUSo">
+      <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ngI" index="PoUSo">
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
@@ -386,10 +387,10 @@
       <concept id="7834248083556629545" name="org.modellwerkstatt.dataux.structure.Table" flags="ng" index="2U5qGQ" />
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
       <concept id="8877083733913689871" name="org.modellwerkstatt.dataux.structure.SelectionSummaryLineFOptionParam" flags="ng" index="3MoQeg" />
-      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ng" index="1Nb$$x">
+      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ngI" index="1Nb$$x">
         <property id="5337297293525625539" name="isNamed" index="1Nb$_v" />
       </concept>
-      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ng" index="1Nkgcq">
+      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ngI" index="1Nkgcq">
         <reference id="8798915378417862464" name="boundProperty" index="1Tjo6F" />
         <reference id="8798915378417862462" name="boundClassifier" index="1Tjo7l" />
       </concept>
@@ -402,7 +403,7 @@
       <concept id="1469414169489626296" name="org.modellwerkstatt.dataux.structure.BaseDelegate" flags="ng" index="3OfFNu">
         <child id="1469414169489720478" name="boundTo" index="3Oe2NS" />
       </concept>
-      <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ng" index="3OfFNv">
+      <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ngI" index="3OfFNv">
         <child id="465568541573490190" name="option" index="PoUSh" />
       </concept>
     </language>
@@ -410,7 +411,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -445,7 +446,6 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
@@ -2068,7 +2068,7 @@
                       </node>
                       <node concept="2OqwBi" id="1FVEJAIXJ$H" role="37vLTJ">
                         <node concept="37vLTw" id="1FVEJAIXJyB" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1FVEJAIXJwC" resolve="it" />
+                          <ref role="3cqZAo" node="2rUhhId$eta" resolve="it" />
                         </node>
                         <node concept="2S8uIT" id="1FVEJAIXJB2" role="2OqNvi">
                           <ref role="2S8YL0" to="sdim:1FVEJAItPs0" resolve="folder" />
@@ -2088,15 +2088,15 @@
                       </node>
                       <node concept="TSZUe" id="1FVEJAIXKdi" role="2OqNvi">
                         <node concept="37vLTw" id="1FVEJAIXKr5" role="25WWJ7">
-                          <ref role="3cqZAo" node="1FVEJAIXJwC" resolve="it" />
+                          <ref role="3cqZAo" node="2rUhhId$eta" resolve="it" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="1FVEJAIXJwC" role="1bW2Oz">
+                <node concept="gl6BB" id="2rUhhId$eta" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="1FVEJAIXJwD" role="1tU5fm" />
+                  <node concept="2jxLKc" id="2rUhhId$etb" role="1tU5fm" />
                 </node>
               </node>
             </node>
@@ -2207,7 +2207,7 @@
                       </node>
                       <node concept="2OqwBi" id="4InK$iO3M5A" role="37vLTJ">
                         <node concept="37vLTw" id="4InK$iO3M3c" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4InK$iO3M10" resolve="it" />
+                          <ref role="3cqZAo" node="2rUhhId$etc" resolve="it" />
                         </node>
                         <node concept="2S8uIT" id="4InK$iO3M88" role="2OqNvi">
                           <ref role="2S8YL0" to="sdim:1FVEJAItXyX" resolve="cancelText" />
@@ -2220,14 +2220,14 @@
                       <ref role="1ods_" to="sdim:6QrtA9Mt96m" resolve="InvoiceRepo" />
                       <ref role="37wK5l" to="sdim:6QrtA9Mt96B" resolve="checkInInvoiceFolder" />
                       <node concept="37vLTw" id="4InK$iO3MFq" role="37wK5m">
-                        <ref role="3cqZAo" node="4InK$iO3M10" resolve="it" />
+                        <ref role="3cqZAo" node="2rUhhId$etc" resolve="it" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="4InK$iO3M10" role="1bW2Oz">
+                <node concept="gl6BB" id="2rUhhId$etc" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="4InK$iO3M11" role="1tU5fm" />
+                  <node concept="2jxLKc" id="2rUhhId$etd" role="1tU5fm" />
                 </node>
               </node>
             </node>
