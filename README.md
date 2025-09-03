@@ -1,5 +1,5 @@
-# SimpleOne
-Simple Application written with moware Java RAD toolchain
+# SimpleOne for moware 17
+Simple Application written with moware werkbank java low code environment.
 
 
 This is an application modelled with [modellwerkstatt.org Moware](http://modellwerkstatt.org/moware.html), a [plugin](https://github.com/danielstieger/moware35) written for 
