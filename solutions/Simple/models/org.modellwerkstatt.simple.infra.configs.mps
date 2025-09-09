@@ -3681,5 +3681,214 @@
       </node>
     </node>
   </node>
+  <node concept="2CG7Z0" id="4rYaR4HO_$$">
+    <property role="TrG5h" value="FX8_Duck" />
+    <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJf3v" id="4rYaR4HO_$_" role="2CGBMS">
+      <property role="TrG5h" value="setting" />
+      <node concept="Xl_RD" id="4rYaR4HO_$A" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4rYaR4HO_$B" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="4rYaR4HO_$C" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_RICH" />
+      </node>
+    </node>
+    <node concept="2CJoq6" id="4rYaR4HO_$D" role="2CGBMS">
+      <property role="TrG5h" value="SetupLog4j_4_Console___Set_Level_Simple" />
+      <node concept="2CJf3v" id="4rYaR4HO_$E" role="2CJdiS">
+        <property role="TrG5h" value="logConfig_1" />
+        <node concept="Xl_RD" id="4rYaR4HO_$F" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JLogLevel" />
+        </node>
+        <node concept="2CJf1O" id="4rYaR4HO_$G" role="2CJ4_l">
+          <node concept="Xl_RD" id="4rYaR4HO_$H" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="4rYaR4HO_$I" role="2DqwMp">
+            <property role="Xl_RC" value="Simple" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="4rYaR4HO_$J" role="2CJ4_l">
+          <node concept="Xl_RD" id="4rYaR4HO_$K" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="4rYaR4HO_$L" role="2DqwMp">
+            <property role="Xl_RC" value="INFO" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="4rYaR4HO_$M" role="2CJdiS" />
+    </node>
+    <node concept="2CJf3v" id="4rYaR4HO_$N" role="2CGBMS">
+      <property role="TrG5h" value="fxUiFactory" />
+      <node concept="2CJ4$C" id="4rYaR4HO_$O" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="4rYaR4HO_$P" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="Xl_RD" id="4rYaR4HO_$Q" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="4rYaR4HO_$R" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
+    </node>
+    <node concept="2CJ4_Q" id="4rYaR4HO_$S" role="2CGBMS">
+      <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJoq6" id="4rYaR4HOLzk" role="2CGBMS">
+      <property role="TrG5h" value="SingleConMySQL" />
+      <node concept="2CJf3v" id="4rYaR4HOLzl" role="2CJdiS">
+        <property role="TrG5h" value="germanLocal" />
+        <node concept="2CJf1O" id="4rYaR4HOLzm" role="2CJ4_l">
+          <node concept="Xl_RD" id="4rYaR4HOLzn" role="2DqwMp">
+            <property role="Xl_RC" value="de" />
+          </node>
+          <node concept="Xl_RD" id="4rYaR4HOLzo" role="2DqwMv">
+            <property role="Xl_RC" value="0" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="4rYaR4HOLzp" role="2CJ4_l">
+          <node concept="Xl_RD" id="4rYaR4HOLzq" role="2DqwMp">
+            <property role="Xl_RC" value="DE" />
+          </node>
+          <node concept="Xl_RD" id="4rYaR4HOLzr" role="2DqwMv">
+            <property role="Xl_RC" value="1" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="4rYaR4HOLzs" role="2CJf0U">
+          <property role="Xl_RC" value="java.util.Locale" />
+        </node>
+      </node>
+      <node concept="2CPvp3" id="4rYaR4HOLzt" role="2CJdiS" />
+      <node concept="2CJf3v" id="4rYaR4HOLzu" role="2CJdiS">
+        <property role="TrG5h" value="setLocalHere" />
+        <node concept="Xl_RD" id="4rYaR4HOLzv" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.beans.factory.config.MethodInvokingFactoryBean" />
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzw" role="2CJ4_l">
+          <property role="TrG5h" value="targetClass" />
+          <node concept="Xl_RD" id="4rYaR4HOLzx" role="2CaGCA">
+            <property role="Xl_RC" value="java.util.Locale" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzy" role="2CJ4_l">
+          <property role="TrG5h" value="targetMethod" />
+          <node concept="Xl_RD" id="4rYaR4HOLzz" role="2CaGCA">
+            <property role="Xl_RC" value="setDefault" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLz$" role="2CJ4_l">
+          <property role="TrG5h" value="arguments" />
+          <property role="2DlMY1" value="true" />
+          <node concept="Xl_RD" id="4rYaR4HOLz_" role="2CaGCA">
+            <property role="Xl_RC" value="germanLocal" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="4rYaR4HOLzA" role="2CJdiS" />
+      <node concept="2CJf3v" id="4rYaR4HOLzB" role="2CJdiS">
+        <property role="TrG5h" value="transactionDefinition" />
+        <node concept="2CJ4$C" id="4rYaR4HOLzC" role="2CJ4_l">
+          <property role="TrG5h" value="propagationBehaviorName" />
+          <node concept="Xl_RD" id="4rYaR4HOLzD" role="2CaGCA">
+            <property role="Xl_RC" value="PROPAGATION_REQUIRES_NEW" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzE" role="2CJ4_l">
+          <property role="TrG5h" value="isolationLevelName" />
+          <node concept="Xl_RD" id="4rYaR4HOLzF" role="2CaGCA">
+            <property role="Xl_RC" value="ISOLATION_READ_COMMITTED" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzG" role="2CJ4_l">
+          <property role="TrG5h" value="timeout" />
+          <node concept="Xl_RD" id="4rYaR4HOLzH" role="2CaGCA">
+            <property role="Xl_RC" value="5000" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="4rYaR4HOLzI" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.transaction.support.DefaultTransactionDefinition" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="4rYaR4HOLzJ" role="2CJdiS">
+        <property role="TrG5h" value="jdbcTemplate" />
+        <node concept="Xl_RD" id="4rYaR4HOLzK" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.core.JdbcTemplate" />
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzL" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="4rYaR4HOLzM" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CJf3v" id="4rYaR4HOLzN" role="2CJdiS">
+        <property role="TrG5h" value="transactionManager" />
+        <node concept="Xl_RD" id="4rYaR4HOLzO" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.datasource.DataSourceTransactionManager" />
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzP" role="2CJ4_l">
+          <property role="2DlMY1" value="true" />
+          <property role="TrG5h" value="dataSource" />
+          <node concept="Xl_RD" id="4rYaR4HOLzQ" role="2CaGCA">
+            <property role="Xl_RC" value="dataSource" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CJf3v" id="4rYaR4HOLzR" role="2CJdiS">
+        <property role="TrG5h" value="dataSource" />
+        <node concept="Xl_RD" id="4rYaR4HOLzS" role="2CJf0U">
+          <property role="Xl_RC" value="org.springframework.jdbc.datasource.DriverManagerDataSource" />
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzT" role="2CJ4_l">
+          <property role="TrG5h" value="driverClassName" />
+          <node concept="Xl_RD" id="4rYaR4HOLzU" role="2CaGCA">
+            <property role="Xl_RC" value="org.duckdb.DuckDBDriver" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzV" role="2CJ4_l">
+          <property role="TrG5h" value="url" />
+          <node concept="Xl_RD" id="4rYaR4HOLzW" role="2CaGCA">
+            <property role="Xl_RC" value="jdbc:duckdb:/Users/danielstieger/my_database" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzX" role="2CJ4_l">
+          <property role="TrG5h" value="username" />
+          <node concept="Xl_RD" id="4rYaR4HOLzY" role="2CaGCA">
+            <property role="Xl_RC" value="root" />
+          </node>
+        </node>
+        <node concept="2CJ4$C" id="4rYaR4HOLzZ" role="2CJ4_l">
+          <property role="TrG5h" value="password" />
+          <node concept="Xl_RD" id="4rYaR4HOL$0" role="2CaGCA">
+            <property role="Xl_RC" value="dan" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CPvp3" id="4rYaR4HOL$1" role="2CJdiS" />
+      <node concept="2CJf3v" id="4rYaR4HOL$2" role="2CJdiS">
+        <property role="TrG5h" value="databaseDescription" />
+        <node concept="Xl_RD" id="4rYaR4HOL$3" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.manmap.runtime.MMMySqlDescription" />
+        </node>
+      </node>
+    </node>
+    <node concept="2CPvp3" id="4rYaR4HOLzj" role="2CGBMS" />
+    <node concept="2CJ4_Q" id="4rYaR4HO_$U" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="4rYaR4HO_$V" role="20ptHX">
+      <node concept="Xl_RD" id="4rYaR4HO_$W" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
+      </node>
+    </node>
+  </node>
 </model>
 

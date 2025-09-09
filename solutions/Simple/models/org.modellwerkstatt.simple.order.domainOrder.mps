@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
@@ -584,7 +585,22 @@
           </node>
         </node>
         <node concept="3clFbH" id="37RHpCzBJZm" role="3cqZAp" />
-        <node concept="3clFbH" id="4BeZcGgvJV2" role="3cqZAp" />
+        <node concept="3clFbF" id="1adIRAz$siU" role="3cqZAp">
+          <node concept="1odsa" id="1adIRAz$siS" role="3clFbG">
+            <property role="3Ac4sI" value="true" />
+            <ref role="1ods_" node="2qrl3a2N$Ad" resolve="TS" />
+            <ref role="37wK5l" node="37RHpCyW1gS" resolve="verbuchen" />
+            <node concept="37vLTw" id="1adIRAz$trt" role="37wK5m">
+              <ref role="3cqZAo" node="4nH4LOF$GIT" resolve="aOrder" />
+            </node>
+            <node concept="37vLTw" id="1adIRAz$t_9" role="37wK5m">
+              <ref role="3cqZAo" node="4nH4LOF$GJ2" resolve="KONTO_BANK" />
+            </node>
+            <node concept="37vLTw" id="1adIRAzNz9E" role="37wK5m">
+              <ref role="3cqZAo" node="4nH4LOF$GJ6" resolve="KONTO_DAN" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="37RHpC$4Pyk" role="3cqZAp" />
         <node concept="3clFbF" id="4nH4LOF$GJc" role="3cqZAp">
           <node concept="1odsa" id="4nH4LOF$GJd" role="3clFbG">
