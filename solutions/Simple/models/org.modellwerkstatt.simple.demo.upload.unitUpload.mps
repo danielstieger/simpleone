@@ -7,6 +7,9 @@
   <imports>
     <import index="agw3" ref="r:8f88ce36-1bf8-4081-bf13-597289e5d9c6(org.modellwerkstatt.simple.demo.upload.domainUpload)" />
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)" />
+    <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
+    <import index="mbv" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.springframework.jdbc.core(org.modellwerkstatt.manmap.runtime/)" />
+    <import index="s7u9" ref="f6ea4529-b826-49cb-a717-2ac43f8ba5f5/java:org.springframework.jdbc.datasource(org.modellwerkstatt.simple/)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -50,7 +53,11 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -880,6 +887,29 @@
           <ref role="3uigEE" node="17o2t3rKeXZ" resolve="SearchAlbumFilter" />
         </node>
       </node>
+    </node>
+    <node concept="DXQ2B" id="4rYaR4HUh$g" role="jymVt">
+      <property role="TrG5h" value="adjustJdbcTemplate" />
+      <node concept="3cqZAl" id="4rYaR4HUh$i" role="3clF45" />
+      <node concept="3Tm1VV" id="4rYaR4HUh$j" role="1B3o_S" />
+      <node concept="3clFbS" id="4rYaR4HUh$k" role="3clF47">
+        <node concept="3clFbF" id="4rYaR4HUhHE" role="3cqZAp">
+          <node concept="37vLTI" id="4rYaR4HUi7V" role="3clFbG">
+            <node concept="2ShNRf" id="4rYaR4HUidn" role="37vLTx">
+              <node concept="1pGfFk" id="4rYaR4HUicA" role="2ShVmc">
+                <ref role="37wK5l" to="mbv:~JdbcTemplate.&lt;init&gt;(javax.sql.DataSource)" resolve="JdbcTemplate" />
+                <node concept="10Nm6u" id="4rYaR4HUin9" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4rYaR4HUhHD" role="37vLTJ">
+              <ref role="3cqZAo" to="w7gk:6LKPMZJk3TT" resolve="__jdbcTemplate" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="4rYaR4HUhql" role="1zkMxy">
+      <ref role="3uigEE" to="w7gk:3p$I2HGi_Z1" resolve="MMRepository" />
     </node>
   </node>
   <node concept="2mKXYI" id="17o2t3rKeZB">
