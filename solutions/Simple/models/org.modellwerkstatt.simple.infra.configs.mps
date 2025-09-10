@@ -8,7 +8,6 @@
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
-    <import index="3k04" ref="r:8bd3fb72-7342-4dcc-9b15-570e150fc9b4(org.modellwerkstatt.simple.infra.secretConfig)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1299,6 +1298,12 @@
     <node concept="2CJ4_Q" id="7HkVpVc$rWF" role="2CGBMS">
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
     </node>
+    <node concept="2CJf3v" id="2tMj3TiDA_o" role="2CGBMS">
+      <property role="TrG5h" value="duckTester" />
+      <node concept="Xl_RD" id="2tMj3TiDA_q" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.simple.invoice.domainInvoice.DuckTester" />
+      </node>
+    </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
       <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
     </node>
@@ -1479,9 +1484,6 @@
           <property role="Xl_RC" value="false" />
         </node>
       </node>
-    </node>
-    <node concept="2CJ4_Q" id="61sBfAPl1An" role="2CGBMS">
-      <ref role="2CJ4_N" to="3k04:61sBfAPl1Af" resolve="StrichLicense" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
