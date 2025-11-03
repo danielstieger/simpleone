@@ -85,6 +85,9 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1221565133444" name="isFinal" index="1EXbeo" />
+      </concept>
       <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
         <reference id="5862977038373003188" name="property" index="338YkT" />
       </concept>
@@ -267,6 +270,7 @@
       </concept>
       <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
         <child id="4986415014450757612" name="formatString" index="icr7_" />
+        <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
       <concept id="3860064244065287790" name="org.modellwerkstatt.objectflow.structure.ListBuilderElement" flags="ng" index="188KQk" />
       <concept id="3860064244070526091" name="org.modellwerkstatt.objectflow.structure.IBuilderElement" flags="ngI" index="1b$LXL">
@@ -1537,9 +1541,53 @@
   </node>
   <node concept="2EH5hC" id="50jY$Xk$JBJ">
     <property role="TrG5h" value="LogTestService" />
+    <property role="1EXbeo" value="true" />
     <node concept="2tJIrI" id="50jY$Xk$JBK" role="jymVt" />
-    <node concept="2tJIrI" id="50jY$Xk$JBL" role="jymVt" />
+    <node concept="312cEg" id="LsVp8NVARv" role="jymVt">
+      <property role="TrG5h" value="loginCnt" />
+      <node concept="3Tm6S6" id="LsVp8NVARw" role="1B3o_S" />
+      <node concept="10Oyi0" id="LsVp8NVCkG" role="1tU5fm" />
+      <node concept="3cmrfG" id="LsVp8NVCAB" role="33vP2m">
+        <property role="3cmrfH" value="0" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="LsVp8NVCDc" role="jymVt" />
     <node concept="2tJIrI" id="50jY$Xk$JBM" role="jymVt" />
+    <node concept="2vDG_T" id="LsVp8NVQFa" role="jymVt">
+      <property role="TrG5h" value="checkLoginCounts" />
+      <node concept="3clFbS" id="LsVp8NVQFd" role="3clF47">
+        <node concept="3clFbF" id="LsVp8NW4d6" role="3cqZAp">
+          <node concept="3uNrnE" id="LsVp8NWaZF" role="3clFbG">
+            <node concept="37vLTw" id="LsVp8NWaZH" role="2$L3a6">
+              <ref role="3cqZAo" node="LsVp8NVARv" resolve="loginCnt" />
+            </node>
+          </node>
+        </node>
+        <node concept="mlg3r" id="LsVp8NV7Nu" role="3cqZAp">
+          <node concept="3eOVzh" id="LsVp8NV9cw" role="mlgNJ">
+            <node concept="3cmrfG" id="LsVp8NV9c$" role="3uHU7w">
+              <property role="3cmrfH" value="3" />
+            </node>
+            <node concept="37vLTw" id="LsVp8NW0qe" role="3uHU7B">
+              <ref role="3cqZAo" node="LsVp8NVARv" resolve="loginCnt" />
+            </node>
+          </node>
+          <node concept="lgADV" id="LsVp8NV7Nx" role="mlgNH">
+            <node concept="35AVbj" id="LsVp8NV7Ny" role="lgxf9">
+              <node concept="37vLTw" id="LsVp8NWcp7" role="35Gt3$">
+                <ref role="3cqZAo" node="LsVp8NVARv" resolve="loginCnt" />
+              </node>
+              <node concept="ic4WF" id="LsVp8NV7Nz" role="icr7_">
+                <property role="ic4Xk" value="Sie können sich nicht mehr anmelden, der cnt is %d" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="LsVp8NVQFf" role="3clF45" />
+      <node concept="3Tm1VV" id="LsVp8NWfYp" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="LsVp8NVGDj" role="jymVt" />
     <node concept="2vDG_T" id="50jY$Xk$JN8" role="jymVt">
       <property role="TrG5h" value="testVariousLoggingOptions" />
       <node concept="3clFbS" id="50jY$Xk$JNb" role="3clF47">
@@ -1550,7 +1598,7 @@
             <node concept="3VsKOn" id="2vFotlimePE" role="37wK5m">
               <ref role="3VsUkX" node="50jY$Xk$JBJ" resolve="LogTestService" />
             </node>
-            <node concept="Rm8GO" id="2vFotlimf28" role="37wK5m">
+            <node concept="Rm8GO" id="7_k5fO1ibDo" role="37wK5m">
               <ref role="Rm8GQ" to="28jr:2dTopMvfBbN" resolve="TRACE" />
               <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
             </node>
@@ -1577,7 +1625,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2vFotlipq81" role="2OqNvi">
-              <ref role="37wK5l" to="8mad:~Logger.trace(java.lang.CharSequence)" resolve="trace" />
+              <ref role="37wK5l" to="8mad:~Logger.error(java.lang.CharSequence)" resolve="error" />
               <node concept="Xl_RD" id="2vFotlipq8j" role="37wK5m">
                 <property role="Xl_RC" value="This is a TRACE message directly via log4j2 LogManager." />
               </node>
@@ -1592,9 +1640,9 @@
             <node concept="Xl_RD" id="6hZYQSVk7Xe" role="37wK5m">
               <property role="Xl_RC" value="org.test" />
             </node>
-            <node concept="Rm8GO" id="6hZYQSVk82L" role="37wK5m">
-              <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
+            <node concept="Rm8GO" id="7_k5fO1iiXY" role="37wK5m">
               <ref role="Rm8GQ" to="28jr:2dTopMvfBbN" resolve="TRACE" />
+              <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
             </node>
             <node concept="Xl_RD" id="6hZYQSVk82M" role="37wK5m">
               <property role="Xl_RC" value="This is a log via OFXLogger on TRACE level for ORG.TEST." />
@@ -1613,14 +1661,14 @@
               </node>
             </node>
             <node concept="liA8E" id="6hZYQSVnu6A" role="2OqNvi">
-              <ref role="37wK5l" to="jqqh:~Logger.info(java.lang.String)" resolve="info" />
+              <ref role="37wK5l" to="jqqh:~Logger.error(java.lang.String)" resolve="error" />
               <node concept="Xl_RD" id="6hZYQSVnu9R" role="37wK5m">
                 <property role="Xl_RC" value="This is a log message via slf4j on level INFO" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4zX5jmVJO1U" role="3cqZAp" />
+        <node concept="3clFbH" id="6k3dA2oPbX3" role="3cqZAp" />
         <node concept="3clFbF" id="4zX5jmVJOfI" role="3cqZAp">
           <node concept="2YIFZM" id="4zX5jmVJOm6" role="3clFbG">
             <ref role="37wK5l" to="28jr:4FgSVMqlSRi" resolve="log" />

@@ -52,11 +52,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <child id="1165602531693" name="superclass" index="1zkMxy" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -800,7 +796,7 @@
         <ref role="3063JT" node="17o2t3rKeZB" resolve="PPSearch AlbumResult" />
       </node>
       <node concept="Xl_RD" id="17o2t3rQEWG" role="1K0AWC">
-        <property role="Xl_RC" value="Album Results" />
+        <property role="Xl_RC" value="Album Results XX" />
       </node>
     </node>
   </node>
@@ -887,43 +883,23 @@
         </node>
       </node>
     </node>
-    <node concept="DXQ2B" id="4rYaR4HUh$g" role="jymVt">
-      <property role="TrG5h" value="adjustJdbcTemplate" />
-      <node concept="3cqZAl" id="4rYaR4HUh$i" role="3clF45" />
-      <node concept="3Tm1VV" id="4rYaR4HUh$j" role="1B3o_S" />
-      <node concept="3clFbS" id="4rYaR4HUh$k" role="3clF47">
-        <node concept="3clFbF" id="4rYaR4HUhHE" role="3cqZAp">
-          <node concept="37vLTI" id="4rYaR4HUi7V" role="3clFbG">
-            <node concept="2ShNRf" id="4rYaR4HUidn" role="37vLTx">
-              <node concept="1pGfFk" id="4rYaR4HUicA" role="2ShVmc">
-                <ref role="37wK5l" to="mbv:~JdbcTemplate.&lt;init&gt;(javax.sql.DataSource)" resolve="JdbcTemplate" />
-                <node concept="10Nm6u" id="4rYaR4HUin9" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="4rYaR4HUhHD" role="37vLTJ">
-              <ref role="3cqZAo" to="w7gk:6LKPMZJk3TT" resolve="__jdbcTemplate" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3uibUv" id="4rYaR4HUhql" role="1zkMxy">
-      <ref role="3uigEE" to="w7gk:3p$I2HGi_Z1" resolve="MMRepository" />
-    </node>
   </node>
   <node concept="2mKXYI" id="17o2t3rKeZB">
     <property role="TrG5h" value="PPSearch AlbumResult" />
     <property role="1Nb$_v" value="true" />
     <ref role="1Tjo7l" node="17o2t3rKeXZ" resolve="SearchAlbumFilter" />
-    <node concept="fOGPe" id="17o2t3rKeZT" role="fOGQ8">
-      <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
-        <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
-      </node>
-    </node>
     <node concept="2U5qGQ" id="17o2t3rKeZD" role="21u2x1">
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" node="17o2t3rKeXZ" resolve="SearchAlbumFilter" />
       <ref role="1Tjo6F" node="17o2t3rKeYl" resolve="results" />
+      <node concept="fOGPe" id="17o2t3rKeZT" role="fOGQ8">
+        <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
+          <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
+        </node>
+        <node concept="33WYYh" id="17o2t3rKeZU" role="fOGQ8">
+          <ref role="2_Hrw8" node="17o2t3rKeW9" resolve="Open Album" />
+        </node>
+      </node>
       <node concept="3Oe2IN" id="17o2t3rKeZI" role="3OfFNq">
         <node concept="PnLzW" id="17o2t3rKeZJ" role="PoUSh">
           <property role="PiFy3" value="20" />
@@ -946,11 +922,6 @@
         </node>
         <node concept="3Oe$u_" id="17o2t3rKeZQ" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:17o2t3rKeKl" resolve="status" />
-        </node>
-      </node>
-      <node concept="fOGPe" id="3D7Yc5aZD_p" role="fOGQ8">
-        <node concept="33WYYh" id="17o2t3rKeZU" role="fOGQ8">
-          <ref role="2_Hrw8" node="17o2t3rKeW9" resolve="Open Album" />
         </node>
       </node>
     </node>

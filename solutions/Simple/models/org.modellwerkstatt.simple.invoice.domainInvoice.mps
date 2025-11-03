@@ -383,6 +383,7 @@
         <property id="8796175910513646269" name="repoMethodType" index="2a4t7v" />
       </concept>
       <concept id="8510097166251501634" name="org.modellwerkstatt.manmap.structure.UpdateFormSql" flags="ng" index="2KoPwa">
+        <property id="8510097166251501827" name="debugMe" index="2KoP_b" />
         <child id="8510097166251501837" name="sqlString" index="2KoP_5" />
         <child id="8510097166251501838" name="arguments" index="2KoP_6" />
       </concept>
@@ -872,24 +873,32 @@
                 </node>
                 <node concept="3eNFk2" id="2tMj3TiE$Gq" role="3eNLev">
                   <node concept="3clFbS" id="2tMj3TiE$Gr" role="3eOfB_">
-                    <node concept="3clFbH" id="2tMj3TiEAs7" role="3cqZAp" />
-                    <node concept="3clFbF" id="2tMj3TiE$Gs" role="3cqZAp">
-                      <node concept="37vLTI" id="2tMj3TiE$Gt" role="3clFbG">
-                        <node concept="1odsa" id="2tMj3TiE$Gu" role="37vLTx">
-                          <ref role="1ods_" node="1541gipk8Hy" resolve="DuckTester" />
-                          <ref role="37wK5l" node="1541gipkAK4" resolve="queryForInvoices" />
+                    <node concept="3SKdUt" id="4aZt24aQuxf" role="3cqZAp">
+                      <node concept="1PaTwC" id="4aZt24aQuxg" role="1aUNEU">
+                        <node concept="3oM_SD" id="4aZt24aQuxh" role="1PaTwD">
+                          <property role="3oM_SC" value="" />
                         </node>
-                        <node concept="2OqwBi" id="2tMj3TiE$G_" role="37vLTJ">
-                          <node concept="3urNR4" id="2tMj3TiE$GA" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6XzXfke19QZ" resolve="filter" />
-                          </node>
-                          <node concept="2S8uIT" id="2tMj3TiE$GB" role="2OqNvi">
-                            <ref role="2S8YL0" node="6XzXfke1ajR" resolve="items" />
-                          </node>
+                        <node concept="3oM_SD" id="4aZt24aQuxm" role="1PaTwD">
+                          <property role="3oM_SC" value="load" />
+                        </node>
+                        <node concept="3oM_SD" id="4aZt24aQuBW" role="1PaTwD">
+                          <property role="3oM_SC" value="from" />
+                        </node>
+                        <node concept="3oM_SD" id="4aZt24aQuCr" role="1PaTwD">
+                          <property role="3oM_SC" value="duck" />
+                        </node>
+                        <node concept="3oM_SD" id="4aZt24aQuEy" role="1PaTwD">
+                          <property role="3oM_SC" value="not" />
+                        </node>
+                        <node concept="3oM_SD" id="4aZt24aQuF3" role="1PaTwD">
+                          <property role="3oM_SC" value="implemented." />
+                        </node>
+                        <node concept="3oM_SD" id="4aZt24aQuG0" role="1PaTwD">
+                          <property role="3oM_SC" value="" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="2tMj3TiEAHq" role="3cqZAp" />
+                    <node concept="3clFbH" id="4aZt24aQuGo" role="3cqZAp" />
                   </node>
                   <node concept="3clFbC" id="2tMj3TiE_On" role="3eO9$A">
                     <node concept="2XvMaL" id="2tMj3TiE_VV" role="3uHU7w">
@@ -1029,7 +1038,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6QuBvexqKIJ" role="3cqZAp" />
-        <node concept="3clFbH" id="3atYQna1kg3" role="3cqZAp" />
         <node concept="3clFbF" id="6XzXfke19To" role="3cqZAp">
           <node concept="37vLTI" id="6XzXfke19U2" role="3clFbG">
             <node concept="2ShNRf" id="6XzXfke19UE" role="37vLTx">
@@ -3915,6 +3923,7 @@
             <node concept="3clFbH" id="1541gipkE0M" role="3cqZAp" />
             <node concept="3clFbF" id="1541gipkE79" role="3cqZAp">
               <node concept="2KoPwa" id="1541gipkE75" role="3clFbG">
+                <property role="2KoP_b" value="true" />
                 <node concept="1Q8zPT" id="1541gipkE77" role="2KoP_5">
                   <node concept="1PaTwC" id="1541gipkE78" role="2KarBZ">
                     <node concept="3oM_SD" id="1541gipkEpu" role="1PaTwD">

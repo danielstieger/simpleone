@@ -100,6 +100,7 @@
       <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.PlatformDeclaration" flags="ng" index="2kDv1q" />
       <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.OFXConfig" flags="ng" index="2CG7Z0">
         <property id="3526396426252206723" name="lastUpdated" index="2320hu" />
+        <property id="2033526727823112088" name="checkModuleWide" index="3L43Tg" />
         <child id="406105322043153886" name="dependencyResolution" index="20ptHX" />
         <child id="478945708906902061" name="elements" index="2CGBMS" />
       </concept>
@@ -217,6 +218,15 @@
       <node concept="3Tm1VV" id="5ol$NvDtPW" role="1B3o_S" />
       <node concept="Xl_RD" id="5ol$NvDtPX" role="33vP2m">
         <property role="Xl_RC" value="ok_white" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1KSyszI0HRw" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="SEARCHORDERS_URL_TEST" />
+      <node concept="17QB3L" id="1KSyszI0HRx" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1KSyszI0HRy" role="1B3o_S" />
+      <node concept="Xl_RD" id="1KSyszI0HRz" role="33vP2m">
+        <property role="Xl_RC" value="searchorders" />
       </node>
     </node>
     <node concept="2tJIrI" id="5ol$NvDtPz" role="jymVt" />
@@ -1184,6 +1194,7 @@
     <property role="TrG5h" value="FX8_Lola" />
     <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
     <property role="3GE5qa" value="configs" />
+    <property role="3L43Tg" value="true" />
     <node concept="2CJf3v" id="1SuqpWQMcoX" role="2CGBMS">
       <property role="TrG5h" value="setting" />
       <node concept="Xl_RD" id="1SuqpWQMcoZ" role="2CJf0U">
@@ -1297,12 +1308,6 @@
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$rWF" role="2CGBMS">
       <ref role="2CJ4_N" node="4WoSiUOZhGc" resolve="FakeLockBus" />
-    </node>
-    <node concept="2CJf3v" id="2tMj3TiDA_o" role="2CGBMS">
-      <property role="TrG5h" value="duckTester" />
-      <node concept="Xl_RD" id="2tMj3TiDA_q" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple.invoice.domainInvoice.DuckTester" />
-      </node>
     </node>
     <node concept="2CJ4_Q" id="7HkVpVc$s1p" role="2CGBMS">
       <ref role="2CJ4_N" node="1ynvgCDUt9q" resolve="SingleConToLola" />
@@ -1715,7 +1720,7 @@
         </node>
         <node concept="2CJf1O" id="5E5qL$GwFso" role="2CJ4_l">
           <node concept="Xl_RD" id="5E5qL$GwFsp" role="2DqwMp">
-            <property role="Xl_RC" value="/Users/danielstieger/migration/2023_3/simpleone/templates" />
+            <property role="Xl_RC" value="/Users/danielstieger/migration/2024_1/simpleone/templates" />
           </node>
           <node concept="Xl_RD" id="5E5qL$GwFsq" role="2DqwMv">
             <property role="Xl_RC" value="1" />
@@ -3089,7 +3094,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4Ex3Fobawvj">
-    <property role="TrG5h" value="TurkuConfig" />
+    <property role="TrG5h" value="TurkuConfigLocal" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6tD2NjQNmJd" role="2CGBMS">
@@ -3187,6 +3192,24 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="1G_wsKIpOk2" role="2CJ4_l">
+        <property role="TrG5h" value="PortJLocal" />
+        <node concept="Xl_RD" id="1G_wsKIq1Kg" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="1G_wsKIq1Mi" role="2CJ4_l">
+        <property role="TrG5h" value="MowareTrace" />
+        <node concept="Xl_RD" id="1G_wsKIq4Ah" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="1G_wsKIq4AZ" role="2CJ4_l">
+        <property role="TrG5h" value="AppTrace" />
+        <node concept="Xl_RD" id="1G_wsKIq4B0" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
       </node>
@@ -3203,7 +3226,7 @@
       </node>
       <node concept="2CJf1O" id="3t4lCsItUyM" role="2CJ4_l">
         <node concept="Xl_RD" id="3t4lCsItUyN" role="2DqwMp">
-          <property role="Xl_RC" value="/Users/danielstieger/migration/2023_3/simpleone/templates" />
+          <property role="Xl_RC" value="/Users/danielstieger/migration/2024_1/simpleone/templates" />
         </node>
         <node concept="Xl_RD" id="3t4lCsItUyO" role="2DqwMv">
           <property role="Xl_RC" value="1" />
@@ -3258,7 +3281,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="4yMqt77ruDK">
-    <property role="TrG5h" value="TurkuConfigLOLA" />
+    <property role="TrG5h" value="TurkuConfig" />
     <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="4yMqt77ruDL" role="2CGBMS">
@@ -3365,6 +3388,30 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="2FJftHOP9Ns" role="2CJ4_l">
+        <property role="TrG5h" value="PortJLocal" />
+        <node concept="Xl_RD" id="2FJftHOP9Nt" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2FJftHOP9Nu" role="2CJ4_l">
+        <property role="TrG5h" value="MowareTrace" />
+        <node concept="Xl_RD" id="2FJftHOP9Nv" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2FJftHOP9Nw" role="2CJ4_l">
+        <property role="TrG5h" value="AppTrace" />
+        <node concept="Xl_RD" id="2FJftHOP9Nx" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="1u7h$9u4u2a" role="2CJ4_l">
+        <property role="TrG5h" value="EventBusLocking" />
+        <node concept="Xl_RD" id="1u7h$9u4u2b" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="4yMqt77ruEG" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
       </node>
@@ -3381,7 +3428,7 @@
       </node>
       <node concept="2CJf1O" id="4yMqt77ruEL" role="2CJ4_l">
         <node concept="Xl_RD" id="4yMqt77ruEM" role="2DqwMp">
-          <property role="Xl_RC" value="/Users/danielstieger/migration/2023_3/simpleone/templates" />
+          <property role="Xl_RC" value="/Users/danielstieger/migration/2024_1/simpleone/templates" />
         </node>
         <node concept="Xl_RD" id="4yMqt77ruEN" role="2DqwMv">
           <property role="Xl_RC" value="1" />
