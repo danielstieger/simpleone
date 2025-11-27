@@ -1390,12 +1390,6 @@
         <property role="WfFEv" value="0" />
         <property role="WfFEu" value="1000" />
       </node>
-      <node concept="Xl_RD" id="1WnjocVNYRp" role="2CNmdP">
-        <property role="Xl_RC" value="tin" />
-      </node>
-      <node concept="Xl_RD" id="1WnjocVNYT_" role="2CNmdL">
-        <property role="Xl_RC" value="Test Int" />
-      </node>
     </node>
   </node>
   <node concept="2EH5hC" id="77KX0PDuRx1">
