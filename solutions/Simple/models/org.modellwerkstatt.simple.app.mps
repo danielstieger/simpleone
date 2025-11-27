@@ -894,11 +894,6 @@
         </node>
       </node>
     </node>
-    <node concept="1Fkigk" id="6XG7PiUN4dE" role="1FmHgs">
-      <node concept="2_HltQ" id="6XG7PiUN4dF" role="1Fzc2M">
-        <ref role="2_Hrw8" to="tsl4:28Js1Fcvuxi" resolve="MDE Startup Command" />
-      </node>
-    </node>
   </node>
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App_MDE_Order" />
