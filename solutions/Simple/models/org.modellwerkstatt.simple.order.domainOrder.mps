@@ -85,9 +85,6 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <property id="1221565133444" name="isFinal" index="1EXbeo" />
-      </concept>
       <concept id="5862977038373003187" name="jetbrains.mps.baseLanguage.structure.LocalPropertyReference" flags="nn" index="338YkY">
         <reference id="5862977038373003188" name="property" index="338YkT" />
       </concept>
@@ -156,6 +153,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -1535,7 +1533,7 @@
   </node>
   <node concept="2EH5hC" id="50jY$Xk$JBJ">
     <property role="TrG5h" value="LogTestService" />
-    <property role="1EXbeo" value="true" />
+    <property role="2bfB8j" value="true" />
     <node concept="2tJIrI" id="50jY$Xk$JBK" role="jymVt" />
     <node concept="312cEg" id="LsVp8NVARv" role="jymVt">
       <property role="TrG5h" value="loginCnt" />
@@ -1698,7 +1696,7 @@
       <node concept="3cqZAl" id="50jY$Xk$JNh" role="3clF45" />
       <node concept="3Tm1VV" id="2vFotli9dfR" role="1B3o_S" />
     </node>
-    <node concept="3Tm6S6" id="50jY$Xk$JBN" role="1B3o_S" />
+    <node concept="3Tm1VV" id="1UtqBUulHu4" role="1B3o_S" />
     <node concept="2vDG_T" id="4nH4LOF$GSs" role="jymVt">
       <property role="TrG5h" value="doFlag" />
       <node concept="3Tm1VV" id="4nH4LOF$GSt" role="1B3o_S" />

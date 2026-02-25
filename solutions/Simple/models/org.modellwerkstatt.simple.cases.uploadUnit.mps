@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.demo.upload.unitUpload)">
+<model ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.cases.uploadUnit)">
   <persistence version="9" />
   <languages>
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
-    <import index="agw3" ref="r:8f88ce36-1bf8-4081-bf13-597289e5d9c6(org.modellwerkstatt.simple.demo.upload.domainUpload)" />
+    <import index="agw3" ref="r:8f88ce36-1bf8-4081-bf13-597289e5d9c6(org.modellwerkstatt.simple.cases.uploadDomain)" />
     <import index="oyrz" ref="r:4f5b5fa9-6fc0-45cc-bdf4-b2d4433b7dbe(org.modellwerkstatt.simple.infra.configs)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="mbv" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.springframework.jdbc.core(org.modellwerkstatt.manmap.runtime/)" />

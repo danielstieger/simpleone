@@ -19,10 +19,14 @@
     <modelRoot contentPath="${JavaWare35}/simpleone/jars" type="java_classes">
       <sourceRoot location="duckdb_jdbc-1.3.2.1.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/../../jars" type="java_classes">
+      <sourceRoot location="fop-hyph.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/../../jars/fop-hyph.jar" />
       <library location="${JavaWare35}/simpleone/jars/duckdb_jdbc-1.3.2.1.jar" />
       <library location="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
     </facet>

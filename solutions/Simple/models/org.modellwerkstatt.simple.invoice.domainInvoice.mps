@@ -370,7 +370,6 @@
       </concept>
       <concept id="4706474809433529865" name="org.modellwerkstatt.objectflow.structure.AllowNullStatusDeclOption" flags="ng" index="1TNdZI" />
       <concept id="2356914237085017468" name="org.modellwerkstatt.objectflow.structure.LogStatement" flags="ng" index="3VdxhY">
-        <property id="830334255848575723" name="logLevel" index="Rda9K" />
         <child id="1327102270983266048" name="props" index="3wY8XV" />
         <child id="2356914237085088917" name="exp" index="3VcgQn" />
       </concept>
@@ -1912,29 +1911,33 @@
           </node>
         </node>
         <node concept="3clFbH" id="37j3FAMs8iw" role="3cqZAp" />
-        <node concept="3clFbJ" id="7Kr$v2f_eUx" role="3cqZAp">
-          <node concept="3clFbS" id="7Kr$v2f_eUz" role="3clFbx">
-            <node concept="YS8fn" id="7Kr$v2f_fFY" role="3cqZAp">
-              <node concept="2ShNRf" id="7Kr$v2f_fGs" role="YScLw">
-                <node concept="1pGfFk" id="7Kr$v2f_h3j" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
-                  <node concept="Xl_RD" id="7Kr$v2f_hdw" role="37wK5m">
-                    <property role="Xl_RC" value="ISE DAN" />
+        <node concept="1X3_iC" id="6y1glFwkSnR" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbJ" id="7Kr$v2f_eUx" role="8Wnug">
+            <node concept="3clFbS" id="7Kr$v2f_eUz" role="3clFbx">
+              <node concept="YS8fn" id="7Kr$v2f_fFY" role="3cqZAp">
+                <node concept="2ShNRf" id="7Kr$v2f_fGs" role="YScLw">
+                  <node concept="1pGfFk" id="7Kr$v2f_h3j" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                    <node concept="Xl_RD" id="7Kr$v2f_hdw" role="37wK5m">
+                      <property role="Xl_RC" value="ISE DAN" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3clFbC" id="7Kr$v2f_fE7" role="3clFbw">
-            <node concept="3cmrfG" id="7Kr$v2f_fFl" role="3uHU7w">
-              <property role="3cmrfH" value="17" />
-            </node>
-            <node concept="2OqwBi" id="7Kr$v2f_f2m" role="3uHU7B">
-              <node concept="3urNQE" id="7Kr$v2f_eXj" role="2Oq$k0">
-                <ref role="3cqZAo" node="5TC7JC3WpxP" resolve="invoiceprocParam" />
+            <node concept="3clFbC" id="7Kr$v2f_fE7" role="3clFbw">
+              <node concept="3cmrfG" id="7Kr$v2f_fFl" role="3uHU7w">
+                <property role="3cmrfH" value="17" />
               </node>
-              <node concept="2S8uIT" id="7Kr$v2f_f5H" role="2OqNvi">
-                <ref role="2S8YL0" to="sdim:6XzXfke1aoC" resolve="id" />
+              <node concept="2OqwBi" id="7Kr$v2f_f2m" role="3uHU7B">
+                <node concept="3urNQE" id="7Kr$v2f_eXj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5TC7JC3WpxP" resolve="invoiceprocParam" />
+                </node>
+                <node concept="2S8uIT" id="7Kr$v2f_f5H" role="2OqNvi">
+                  <ref role="2S8YL0" to="sdim:6XzXfke1aoC" resolve="id" />
+                </node>
               </node>
             </node>
           </node>
@@ -2846,42 +2849,6 @@
       <node concept="_YKpA" id="6XzXfke1akW" role="2RkE6I">
         <node concept="3uibUv" id="6XzXfke1avS" role="_ZDj9">
           <ref role="3uigEE" to="sdim:6XzXfke1alv" resolve="Invoice" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3ugp7m" id="21clogiSxQN">
-    <property role="TrG5h" value="Open external link" />
-    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
-    <node concept="20qIzx" id="21clogiSxR$" role="3umfm7">
-      <node concept="3clFbS" id="21clogiSxR_" role="2VODD2">
-        <node concept="3VdxhY" id="21clogiSz4z" role="3cqZAp">
-          <property role="Rda9K" value="I5W9GWEMXX/DEBUG" />
-          <node concept="Xl_RD" id="21clogiSz4R" role="3VcgQn">
-            <property role="Xl_RC" value="eMIG application test log on log level DEBUG (daniel test)" />
-          </node>
-        </node>
-        <node concept="3VdxhY" id="21clogiSz7I" role="3cqZAp">
-          <node concept="Xl_RD" id="21clogiSz7J" role="3VcgQn">
-            <property role="Xl_RC" value="eMIG application test log on log level ERROR (daniel test)" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="21clogiSz8F" role="3cqZAp" />
-        <node concept="3clFbF" id="21clogiSz9k" role="3cqZAp">
-          <node concept="2OqwBi" id="21clogiSzm4" role="3clFbG">
-            <node concept="2OqwBi" id="21clogiSzdL" role="2Oq$k0">
-              <node concept="3y28L$" id="21clogiSz9i" role="2Oq$k0" />
-              <node concept="liA8E" id="21clogiSzrJ" role="2OqNvi">
-                <ref role="37wK5l" to="28jr:4d3Pnf44_kV" resolve="getUserServices" />
-              </node>
-            </node>
-            <node concept="liA8E" id="21clogiSzvQ" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:3ooJmL_sXPC" resolve="openUrl" />
-              <node concept="Xl_RD" id="21clogiSzxb" role="37wK5m">
-                <property role="Xl_RC" value="https://www.vol.at" />
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>

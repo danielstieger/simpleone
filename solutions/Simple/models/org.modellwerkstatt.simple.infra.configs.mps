@@ -1520,7 +1520,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="49EzYiePzDh">
-    <property role="TrG5h" value="MdeConfigLocal" />
+    <property role="TrG5h" value="MdeConfig" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="6UATHBJ4pdD" role="2CGBMS">
@@ -2304,7 +2304,7 @@
         <node concept="2CJ4$C" id="1YSLAaB7g8$" role="2CJ4_l">
           <property role="TrG5h" value="username" />
           <node concept="Xl_RD" id="1YSLAaB7g8_" role="2CaGCA">
-            <property role="Xl_RC" value="root" />
+            <property role="Xl_RC" value="dan" />
           </node>
         </node>
         <node concept="2CJ4$C" id="1YSLAaB7g8A" role="2CJ4_l">
@@ -2503,19 +2503,19 @@
         <node concept="2CJ4$C" id="46E_y$eDwNa" role="2CJ4_l">
           <property role="TrG5h" value="url" />
           <node concept="Xl_RD" id="46E_y$eDwNb" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:mysql://192.168.0.73/test?useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC" />
+            <property role="Xl_RC" value="jdbc:mysql://localhost/test?useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC" />
           </node>
         </node>
         <node concept="2CJ4$C" id="46E_y$eDwNc" role="2CJ4_l">
           <property role="TrG5h" value="username" />
           <node concept="Xl_RD" id="46E_y$eDwNd" role="2CaGCA">
-            <property role="Xl_RC" value="monty" />
+            <property role="Xl_RC" value="dan" />
           </node>
         </node>
         <node concept="2CJ4$C" id="46E_y$eDwNe" role="2CJ4_l">
           <property role="TrG5h" value="password" />
           <node concept="Xl_RD" id="46E_y$eDwNf" role="2CaGCA">
-            <property role="Xl_RC" value="monty_pass" />
+            <property role="Xl_RC" value="dan" />
           </node>
         </node>
         <node concept="2CJ4$C" id="46E_y$eDwO3" role="2CJ4_l">
@@ -3352,6 +3352,12 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="7B$4iO7NN6G" role="2CJ4_l">
+        <property role="TrG5h" value="DecimalDelegateInsensibleThousand" />
+        <node concept="Xl_RD" id="7B$4iO7NN6H" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
       </node>
@@ -3625,7 +3631,7 @@
     </node>
   </node>
   <node concept="2CG7Z0" id="5zzuqmEuRuZ">
-    <property role="TrG5h" value="MdeConfig" />
+    <property role="TrG5h" value="MdeConfigLola" />
     <property role="2320hu" value="2018-05-07T13:36:07.962+02:00" />
     <property role="3GE5qa" value="configs" />
     <node concept="2CJf3v" id="5zzuqmEuRv0" role="2CGBMS">
@@ -3847,6 +3853,24 @@
       <node concept="2CJ4$C" id="63DPwXetYzr" role="2CJ4_l">
         <property role="TrG5h" value="EventBusLocking" />
         <node concept="Xl_RD" id="63DPwXetYzs" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="6Qf1TD7ZxQk" role="2CJ4_l">
+        <property role="TrG5h" value="WarningOnlyImageDelegate" />
+        <node concept="Xl_RD" id="6Qf1TD7ZxRG" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="7B$4iO7N$C$" role="2CJ4_l">
+        <property role="TrG5h" value="DecimalDelegateInsensibleThousand" />
+        <node concept="Xl_RD" id="7B$4iO7NJrh" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="2HvqMzctiAj" role="2CJ4_l">
+        <property role="TrG5h" value="PortJLocal" />
+        <node concept="Xl_RD" id="2HvqMzcu41w" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>

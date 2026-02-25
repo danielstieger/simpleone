@@ -12,12 +12,19 @@
       </fo:layout-master-set>
       <fo:page-sequence master-reference="all">
         <fo:static-content flow-name="xsl-region-before" font-size="10pt">
-          <fo:block>XSLT Text Document Header: <xsl:value-of select="NAME"></xsl:value-of> </fo:block>
+          <fo:block>XSLT Text Document (hyphenate) Header: <xsl:value-of select="NAME"></xsl:value-of> </fo:block>
         </fo:static-content>
         <fo:static-content flow-name="xsl-region-after" font-size="10pt">
           <fo:block>XSLT Text Document Footer</fo:block>
         </fo:static-content>
+        
         <fo:flow flow-name="xsl-region-body" font-size="10pt">
+        <fo:block-container width="55mm" border="0.5pt solid #000" padding="3mm">
+  		<fo:block hyphenate="true" language="de" country="AT">
+    		Donaudampfschifffahrtsgesellschaftskapitän ...
+  		</fo:block>
+  		</fo:block-container>
+        
           <fo:block-container>
             <fo:block>
               <fo:block>
