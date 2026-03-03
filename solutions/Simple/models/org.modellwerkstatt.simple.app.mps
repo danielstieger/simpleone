@@ -339,6 +339,11 @@
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
       <ref role="3uz5Vf" to="oyrz:7YWowTUhxHw" resolve="SHOW_DOCUMENTATION" />
     </node>
+    <node concept="2$ntO6" id="6FiGcLi_n08" role="2$nsuY">
+      <node concept="33WYYh" id="6FiGcLi_n09" role="2$ntUL">
+        <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="View external" />
+      </node>
+    </node>
     <node concept="2$ntO6" id="2qrl3a2NyvY" role="2$nsuY">
       <node concept="33WYYh" id="2qrl3a2PL9H" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />

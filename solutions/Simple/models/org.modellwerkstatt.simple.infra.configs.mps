@@ -10,6 +10,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="3k04" ref="r:8bd3fb72-7342-4dcc-9b15-570e150fc9b4(org.modellwerkstatt.simple.infra.secretConfig)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1535,7 +1536,9 @@
         <property role="Xl_RC" value="org.modellwerkstatt.simple.infra.configs.SimpleRes_MDE" />
       </node>
     </node>
-    <node concept="2CPvp3" id="6jihzUGVpcB" role="2CGBMS" />
+    <node concept="2CJ4_Q" id="4eWlMSWt3eE" role="2CGBMS">
+      <ref role="2CJ4_N" to="3k04:61sBfAPl1Af" resolve="StrichLicense" />
+    </node>
     <node concept="2CJf3v" id="49EzYiePzE9" role="2CGBMS">
       <property role="TrG5h" value="uiFactory" />
       <node concept="Xl_RD" id="49EzYiePzEa" role="2CJf0U">

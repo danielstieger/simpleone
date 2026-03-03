@@ -70,6 +70,9 @@
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
       <concept id="6525155817176738379" name="org.modellwerkstatt.objectflow.structure.PageInitConceptFunc" flags="ig" index="20qEzJ" />
       <concept id="6525155817176754757" name="org.modellwerkstatt.objectflow.structure.CommandVoidStatementList" flags="ig" index="20qIzx" />
+      <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
+        <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
+      </concept>
       <concept id="6135709767654760054" name="org.modellwerkstatt.objectflow.structure.SimpleBuilderElement" flags="ng" index="GOFnK" />
       <concept id="6135709767654760052" name="org.modellwerkstatt.objectflow.structure.BuilderExpression" flags="ng" index="GOFnM">
         <child id="6135709767654760053" name="elements" index="GOFnN" />
@@ -80,6 +83,9 @@
       </concept>
       <concept id="4313579457188683399" name="org.modellwerkstatt.objectflow.structure.IOFXObject" flags="ngI" index="13YVsI">
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
+      </concept>
+      <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
+        <child id="4986415014450757612" name="formatString" index="icr7_" />
       </concept>
       <concept id="3860064244070526091" name="org.modellwerkstatt.objectflow.structure.IBuilderElement" flags="ngI" index="1b$LXL">
         <reference id="3860064244073851670" name="property" index="1bDdzG" />
@@ -114,11 +120,21 @@
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
       </concept>
+      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ngI" index="PhlgW">
+        <child id="1469414169489626300" name="delegates" index="3OfFNq" />
+      </concept>
       <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ngI" index="1Nb$$x">
         <property id="5337297293525625539" name="isNamed" index="1Nb$_v" />
       </concept>
       <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ngI" index="1Nkgcq">
         <reference id="8798915378417862462" name="boundClassifier" index="1Tjo7l" />
+      </concept>
+      <concept id="1469414169489720306" name="org.modellwerkstatt.dataux.structure.StringDelegate" flags="ng" index="3Oe2Ik" />
+      <concept id="1469414169489846211" name="org.modellwerkstatt.dataux.structure.LocalPropertyReference" flags="ng" index="3Oe$u_">
+        <reference id="1469414169490356448" name="property" index="3O0p26" />
+      </concept>
+      <concept id="1469414169489626296" name="org.modellwerkstatt.dataux.structure.BaseDelegate" flags="ng" index="3OfFNu">
+        <child id="1469414169489720478" name="boundTo" index="3Oe2NS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -161,9 +177,11 @@
                 <ref role="3uigEE" node="1utdRQwrTAl" />
               </node>
               <node concept="GOFnK" id="1utdRQws0y5" role="GOFnN">
-                <ref role="1bDdzG" node="1utdRQwrTAs" />
-                <node concept="Xl_RD" id="1utdRQws0$R" role="1bDdzI">
-                  <property role="Xl_RC" value="https://www.vol.at" />
+                <ref role="1bDdzG" node="1utdRQwrTAs" resolve="htmlContent" />
+                <node concept="35AVbj" id="pE2pAsf932" role="1bDdzI">
+                  <node concept="ic4WF" id="pE2pAsf933" role="icr7_">
+                    <property role="ic4Xk" value="&lt;iframe src=&quot;https://www.vol.at&quot; title=&quot;vol.at&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot; allowfullscreen&gt;&lt;/iframe&gt;" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -183,8 +201,13 @@
       <property role="TrG5h" value="#" />
       <property role="KAV$p" value="true" />
       <ref role="1Tjo7l" node="1utdRQwrTAl" />
+      <node concept="3Oe2Ik" id="pE2pAs39Pu" role="3OfFNq">
+        <node concept="3Oe$u_" id="pE2pAs39Qz" role="3Oe2NS">
+          <ref role="3O0p26" node="1utdRQwrTAs" resolve="name" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="1utdRQws1yT" role="3AZGGk">
-        <property role="Xl_RC" value="org.modellwerkstatt.h2forms.pebble.HtmlContainer" />
+        <property role="Xl_RC" value="org.modellwerkstatt.dataux.runtime.extensions.HtmlContent" />
       </node>
     </node>
   </node>
@@ -197,7 +220,7 @@
       <node concept="3clFbS" id="1utdRQwrTAr" role="3clF47" />
     </node>
     <node concept="1bOX9e" id="1utdRQwrTAs" role="TxmiU">
-      <property role="2RkwnN" value="name" />
+      <property role="2RkwnN" value="htmlContent" />
       <property role="TrG5h" value="name" />
       <node concept="3Tm1VV" id="1utdRQwrTAy" role="1B3o_S" />
       <node concept="2RoN1w" id="1utdRQwrTAz" role="2RnVtd">
@@ -207,10 +230,10 @@
         </node>
       </node>
       <node concept="Xl_RD" id="1utdRQwrTAC" role="2CNmdP">
-        <property role="Xl_RC" value="name" />
+        <property role="Xl_RC" value="content" />
       </node>
       <node concept="Xl_RD" id="1utdRQwrTAD" role="2CNmdL">
-        <property role="Xl_RC" value="Name" />
+        <property role="Xl_RC" value="content" />
       </node>
       <node concept="17QB3L" id="1utdRQwrTAE" role="2RkE6I" />
     </node>
