@@ -123,6 +123,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="6525155817177697680" name="org.modellwerkstatt.objectflow.structure.OFXDocumentation" flags="ng" index="20vkWO">
+        <child id="1083620718216065081" name="singleLines" index="13z7HO" />
+      </concept>
       <concept id="8009046666042261418" name="org.modellwerkstatt.objectflow.structure.ValueObject" flags="ig" index="xR6oC">
         <child id="8009046666042261535" name="equalProperties" index="xR1At" />
         <child id="8009046666042261536" name="status" index="xR1Ay" />
@@ -144,6 +147,7 @@
         <child id="3207218222495905601" name="businessProperties" index="TxmiU" />
       </concept>
       <concept id="8396343267227475961" name="org.modellwerkstatt.objectflow.structure.BusinessProperty" flags="ig" index="1bOX9e">
+        <child id="6287236659904683502" name="documentation" index="3b_Q0" />
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
@@ -352,6 +356,19 @@
       <node concept="3uibUv" id="3cAl6M4nX_D" role="2RkE6I">
         <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
+      <node concept="Xl_RD" id="3tYcMUmFB07" role="2CNmdP">
+        <property role="Xl_RC" value="Val" />
+      </node>
+      <node concept="Xl_RD" id="3tYcMUmFB08" role="2CNmdL">
+        <property role="Xl_RC" value="Val" />
+      </node>
+      <node concept="20vkWO" id="3tYcMUmFB09" role="3b_Q0">
+        <node concept="1PaTwC" id="3tYcMUmFB0a" role="13z7HO">
+          <node concept="3oM_SD" id="3tYcMUmFB0c" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1bOX9e" id="18291WBBwQz" role="TxmiU">
       <property role="2RkwnN" value="currency" />
@@ -363,6 +380,19 @@
         </node>
       </node>
       <node concept="17QB3L" id="18291WBBwR0" role="2RkE6I" />
+      <node concept="Xl_RD" id="3tYcMUmFB3W" role="2CNmdP">
+        <property role="Xl_RC" value="Currency" />
+      </node>
+      <node concept="Xl_RD" id="3tYcMUmFB3X" role="2CNmdL">
+        <property role="Xl_RC" value="Currency" />
+      </node>
+      <node concept="20vkWO" id="3tYcMUmFB3Y" role="3b_Q0">
+        <node concept="1PaTwC" id="3tYcMUmFB3Z" role="13z7HO">
+          <node concept="3oM_SD" id="3tYcMUmFB41" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFbW" id="18291WBBwUs" role="jymVt">
       <node concept="3cqZAl" id="18291WBBwUu" role="3clF45" />

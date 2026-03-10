@@ -3361,6 +3361,12 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
+      <node concept="2CJ4$C" id="24tSiJMu7Gp" role="2CJ4_l">
+        <property role="TrG5h" value="SingleAppInstanceMode" />
+        <node concept="Xl_RD" id="24tSiJMu7RP" role="2CaGCA">
+          <property role="Xl_RC" value="true" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
         <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.core.TurkuAppFactory" />
       </node>
