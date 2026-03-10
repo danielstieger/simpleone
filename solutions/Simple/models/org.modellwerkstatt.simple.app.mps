@@ -17,7 +17,7 @@
     <import index="eqbi" ref="r:4dbe446e-53c6-4fc9-b02d-f2f14abcf4e8(org.modellwerkstatt.simple.order.domainOrder)" />
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
     <import index="lpv8" ref="r:91d0a9a5-94fb-4914-b338-d3ac83789829(org.modellwerkstatt.simple.cases.uploadUnit)" />
-    <import index="ptpb" ref="r:8856bdf7-c2d8-4f9b-965a-6c48931660bb(org.modellwerkstatt.simple.master.unitMaster)" />
+    <import index="ptpb" ref="r:8856bdf7-c2d8-4f9b-965a-6c48931660bb(org.modellwerkstatt.simple.cases.articlePieChartUnit)" />
     <import index="23qg" ref="r:1730cdea-7907-47f1-aabb-50b7862283c4(org.modellwerkstatt.simple.cases.dynamicSearchUnit)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="1u6b" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.apache.commons.logging(org.modellwerkstatt.manmap.runtime/)" />
@@ -303,6 +303,9 @@
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App_Desktop_Order" />
     <ref role="2WPtWl" to="oyrz:63DPwXetYzb" resolve="FX8_local" />
+    <node concept="33WYYh" id="3tYcMUmIkqY" role="2N77jL">
+      <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="View external" />
+    </node>
     <node concept="33WYYh" id="4EUPwPcoXdV" role="2N77jL">
       <ref role="2_Hrw8" to="tsl4:1TowlBnaICA" resolve="CF EditOrder Predecessor" />
       <node concept="10Nm6u" id="2het$DF8g75" role="2_HrWp" />
@@ -338,11 +341,6 @@
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
       <ref role="3uz5Vf" to="oyrz:7YWowTUhxHw" resolve="SHOW_DOCUMENTATION" />
-    </node>
-    <node concept="2$ntO6" id="6FiGcLi_n08" role="2$nsuY">
-      <node concept="33WYYh" id="6FiGcLi_n09" role="2$ntUL">
-        <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="View external" />
-      </node>
     </node>
     <node concept="2$ntO6" id="2qrl3a2NyvY" role="2$nsuY">
       <node concept="33WYYh" id="2qrl3a2PL9H" role="2$ntUL">
@@ -927,14 +925,6 @@
         <ref role="276gdn" to="oyrz:1YLrbjkZoNR" resolve="MenüAbschrift" />
       </node>
     </node>
-    <node concept="2$ntO6" id="21clogiSxP3" role="2$nsuY">
-      <node concept="33WYYh" id="21clogiSxP4" role="2$ntUL">
-        <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="Open external link" />
-      </node>
-      <node concept="276gdk" id="11_njaJu6Dk" role="2$ntZF">
-        <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
-      </node>
-    </node>
     <node concept="2$ntO6" id="17o2t3rMpol" role="2$nsuY">
       <node concept="33WYYh" id="17o2t3rMpom" role="2$ntUL">
         <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
@@ -985,6 +975,11 @@
     <node concept="2$ntO6" id="L19YOC9g3_" role="2$nsuY">
       <node concept="33WYYh" id="L19YOC9g3A" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:7P$uL5PDZM2" resolve="Update Conclusion" />
+      </node>
+    </node>
+    <node concept="2$ntO6" id="3tYcMUmIlUl" role="2$nsuY">
+      <node concept="33WYYh" id="3tYcMUmIlUm" role="2$ntUL">
+        <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="View external" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
