@@ -67,7 +67,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -125,6 +124,9 @@
         <reference id="4862154259428332766" name="theColor" index="276gdn" />
       </concept>
       <concept id="8301412231057225617" name="org.modellwerkstatt.objectflow.structure.OFXVoidStatementList" flags="ig" index="2d2NRx" />
+      <concept id="4986415014450757922" name="org.modellwerkstatt.objectflow.structure.StringFormatString" flags="ng" index="ic4WF">
+        <property id="4986415014450757981" name="formatStringValue" index="ic4Xk" />
+      </concept>
       <concept id="7919209473516657581" name="org.modellwerkstatt.objectflow.structure.StatusElementReference" flags="ng" index="2vefiz">
         <reference id="7919209473516657582" name="statusElement" index="2vefiw" />
       </concept>
@@ -144,6 +146,10 @@
       </concept>
       <concept id="3887124829263120988" name="org.modellwerkstatt.objectflow.structure.Action" flags="ng" index="309pON">
         <reference id="96922280161183875" name="customLabel" index="3uz5Vf" />
+      </concept>
+      <concept id="3585259589779248202" name="org.modellwerkstatt.objectflow.structure.MultiString" flags="ng" index="35AVbj">
+        <child id="4986415014450757612" name="formatString" index="icr7_" />
+        <child id="3585259589780682365" name="arguments" index="35Gt3$" />
       </concept>
       <concept id="2334746899962967389" name="org.modellwerkstatt.objectflow.structure.OFXConsumerCmdCallContext" flags="ng" index="1sQxEM">
         <child id="2334746899962967551" name="runCommand" index="1sQxCg" />
@@ -216,6 +222,7 @@
       </concept>
       <concept id="2781909770750560564" name="org.modellwerkstatt.dataux.structure.AppTile" flags="ng" index="2$ntO6">
         <child id="2781909770750560899" name="action" index="2$ntUL" />
+        <child id="2781909770750561024" name="tileLabel" index="2$ntWM" />
         <child id="2781909770750561241" name="tileColor" index="2$ntZF" />
       </concept>
       <concept id="3226612376922221452" name="org.modellwerkstatt.dataux.structure.IModule" flags="ngI" index="2A_d5g">
@@ -298,6 +305,7 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
     </language>
   </registry>
   <node concept="2MVcZ9" id="5XruxTJPWEh">
@@ -354,6 +362,9 @@
           </node>
         </node>
       </node>
+      <node concept="276gdk" id="2bJDKzexjwj" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:6QrtA9Mt95Q" resolve="COLOR_0" />
+      </node>
     </node>
     <node concept="2$ntO6" id="4ezdYK9Xrp7" role="2$nsuY">
       <node concept="33WYYh" id="4ezdYK9Xrp8" role="2$ntUL">
@@ -371,15 +382,6 @@
       </node>
       <node concept="276gdk" id="11_njaJsQUK" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoNW" resolve="MenüWareneingang" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="5A$AnVDr_f0" role="2$nsuY">
-      <node concept="33WYYh" id="5A$AnVDr_f1" role="2$ntUL">
-        <ref role="2_Hrw8" to="kpm6:5A$AnVDpmNj" resolve="Search Documents" />
-        <ref role="3uz5Vf" to="oyrz:6zVU6_jm7GQ" resolve="Tile_S2" />
-      </node>
-      <node concept="276gdk" id="11_njaJsQUP" role="2$ntZF">
-        <ref role="276gdn" to="oyrz:1YLrbjkZoO2" resolve="MenüWarenausgang" />
       </node>
     </node>
     <node concept="2$ntO6" id="2HibT1wOZJW" role="2$nsuY">
@@ -400,11 +402,6 @@
       </node>
       <node concept="276gdk" id="11_njaJsQYm" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoOa" resolve="MenüUmbuchung" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="4EUPwPczoRw" role="2$nsuY">
-      <node concept="33WYYh" id="4EUPwPczoRx" role="2$ntUL">
-        <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
     <node concept="2$ntO6" id="7ztTxh03xqP" role="2$nsuY">
@@ -517,13 +514,6 @@
       </node>
       <node concept="33WYYh" id="6HDDiVEqCn7" role="fOGQ8">
         <ref role="2_Hrw8" to="kpm6:6HDDiVEqCas" resolve="Derived Selection Experiment" />
-      </node>
-    </node>
-    <node concept="3ulXEM" id="1SuqpWQMcXw" role="3ulXEG">
-      <property role="TrG5h" value="thisIsAVeryLongVarName" />
-      <node concept="17QB3L" id="1SuqpWQMcYs" role="1tU5fm" />
-      <node concept="Xl_RD" id="1SuqpWQMcZB" role="33vP2m">
-        <property role="Xl_RC" value="Dan" />
       </node>
     </node>
     <node concept="3ulXEM" id="1SuqpWQMcuY" role="23Ghgl">
@@ -899,6 +889,21 @@
       <node concept="276gdk" id="11_njaJu6p7" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoNW" resolve="MenüWareneingang" />
       </node>
+      <node concept="35AVbj" id="25FNPaQP0d2" role="2$ntWM">
+        <node concept="2OqwBi" id="25FNPaQP1fS" role="35Gt3$">
+          <node concept="3urNR4" id="25FNPaQP0zO" role="2Oq$k0">
+            <ref role="3cqZAo" node="4h8GofeW2LA" resolve="values" />
+          </node>
+          <node concept="34jXtK" id="25FNPaQP1Gv" role="2OqNvi">
+            <node concept="3cmrfG" id="25FNPaQP1Lx" role="25WWJ7">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="ic4WF" id="25FNPaQP0d4" role="icr7_">
+          <property role="ic4Xk" value="Invoices Search (%d)" />
+        </node>
+      </node>
     </node>
     <node concept="2$ntO6" id="1TowlBnaJ3B" role="2$nsuY">
       <node concept="33WYYh" id="1TowlBnaJ3C" role="2$ntUL">
@@ -1235,7 +1240,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4W0T8adqguy" role="3cqZAp" />
         <node concept="3clFbF" id="4W0T8adqgmW" role="3cqZAp">
           <node concept="37vLTw" id="4W0T8adqgmT" role="3clFbG">
             <ref role="3cqZAo" node="4W0T8adqedf" resolve="login" />
@@ -1520,7 +1524,7 @@
   </node>
   <node concept="2AUT8P" id="46E_y$ew7E0">
     <property role="TrG5h" value="InvoicingJob" />
-    <ref role="2WPtWl" to="oyrz:382CQP52o$k" resolve="BatchConfigConsole" />
+    <ref role="2WPtWl" to="oyrz:63DPwXetYzb" resolve="FX8_local" />
     <node concept="1_k$Jf" id="46E_y$ew7E6" role="1_k$Iu">
       <property role="TrG5h" value="Create Invoices" />
       <node concept="3znxp0" id="46E_y$ew7E7" role="1_kBZ6">
@@ -1701,7 +1705,6 @@
         <property role="Xl_RC" value="Invoicing Test Job" />
       </node>
     </node>
-    <node concept="MakZV" id="6y1glFwkx6h" role="2A_d42" />
     <node concept="2MWq9S" id="46E_y$ew7F4" role="2AUypC">
       <node concept="3clFbS" id="46E_y$ew7F5" role="2VODD2">
         <node concept="3VdxhY" id="46E_y$ew7F6" role="3cqZAp">

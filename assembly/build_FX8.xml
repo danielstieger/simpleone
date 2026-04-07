@@ -7,16 +7,18 @@
  daniel stieger, spring 2021, koblach
 
  
- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr11/Contents/Home
- export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+export JAVA_HOME=~/javaexe/jbr
+export PATH=$PATH:~/javaexe/ant/bin
+
  
 -->
 
 <project name="BuildFx8App" default="default">
 
-  <property name="mowarePluginHomeDir"      value="C:/javaexe/MoPluginFake/" />
-  <property name="mowareMpsHomeDir"         value="C:/javaexe/MPS_20192/" />
-  <property name="buildUserHome"            value="C:/" />
+  <property name="home"                     value="/home/rocketdan/" />
+  <property name="mowarePluginHomeDir"      value="${home}javaexe/MoPluginFake17/" />
+  <property name="mowareMpsHomeDir"         value="${home}javaexe/MPS2024_1/" />
+  <property name="buildUserHome"            value="${home}migration/2024_1/" />
       
   <!-- **** include files setup **************************************************************** -->
   <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
@@ -28,27 +30,60 @@
   <property name="appBuildVersion"      value="BUILD V0.0.0" />
   <property name="appName"              value="SimpleOneFx8" />
   <!-- App_Desktop_Order -->
-  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.simpleApp.App_Desktop_Order" />
-  <property name="appConfiguration"     value="org/modellwerkstatt/simple/basisUnit/FX8_Lola.xml" /> 
-  
-  <property name="solultionSimpleGen"    value="${buildUserHome}/javaware/simpleone/solutions/Simple/classes_gen" />
+  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.App_Desktop_Order" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/FX8_local.xml" /> 
+
+  <property name="solultionSimpleSource" value="${buildUserHome}/simpleone/solutions/Simple/source_gen" />
+  <property name="solultionSimpleGen"    value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
 
   <echo>
     Run by ${user.name} on Java Home : ${java.home}
     Building VERSION ${appBuildVersion} of ${appMainclass}
-	MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}
+	  MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}
   </echo>
 
 
 
   <!-- **** test to build fx8 app **************************************************************** -->
   <target name="default" depends="bmoware.mowarePluginAdoption, moware.fx8forms">
+    
+    <delete dir="${solultionSimpleGen}"/>
+    <mkdir dir="${solultionSimpleGen}"/>
+    
+    
+    <copy todir="work/WEB-INF/lib">
+	    <fileset dir="${mowarePluginHomeDir}/jars/addons/" includes="mysql*.jar" />   
+	    <fileset dir="${mowarePluginHomeDir}/jars/servletclient/" includes="servlet*.jar" />   
+	    
+    </copy>
+    
+    
+    <!-- Classpath fürs Kompilieren -->
+    <path id="compile-classpath">
+      <fileset dir="work/WEB-INF/lib">
+        <include name="*.jar"/>
+      </fileset>
+    </path>
+
+    <!-- source_gen -> classes_gen kompilieren -->
+    <javac
+        srcdir="${solultionSimpleSource}"
+        destdir="${solultionSimpleGen}"
+        includeantruntime="false"
+        debug="true"
+        encoding="UTF-8"
+        nowarn="true"
+        deprecation="false"
+        verbose="false">
+
+      <classpath refid="compile-classpath"/>
+    </javac>
+    
     <mkdir dir="work/WEB-INF/classes"/>
     <copy todir="work/WEB-INF/classes">
       <fileset dir="${solultionSimpleGen}" />
     </copy>
-    
-      
+          
     <mkdir dir="dist"/>  
     <!-- copy libs to dist/lib before calculating manifest path -->
     <copy todir="dist/lib">

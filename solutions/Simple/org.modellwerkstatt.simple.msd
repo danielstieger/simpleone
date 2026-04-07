@@ -4,29 +4,16 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/danielstieger/stuff/spring5/libs" type="java_classes">
-      <sourceRoot location="spring-context-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-core-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-beans-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-jdbc-5.2.9.RELEASE.jar" />
-    </modelRoot>
     <modelRoot contentPath="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons" type="java_classes">
       <sourceRoot location="mysql-connector-java-8.0.11.jar" />
     </modelRoot>
     <modelRoot contentPath="${JavaWare35}/simpleone/jars" type="java_classes">
       <sourceRoot path="${JavaWare35}/simpleone/jars/duckdb_jdbc-1.3.2.1.jar" />
     </modelRoot>
-    <modelRoot contentPath="${JavaWare35}/simpleone/jars" type="java_classes">
-      <sourceRoot location="duckdb_jdbc-1.3.2.1.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/../../jars" type="java_classes">
-      <sourceRoot location="fop-hyph.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/../../jars/fop-hyph.jar" />
       <library location="${JavaWare35}/simpleone/jars/duckdb_jdbc-1.3.2.1.jar" />
       <library location="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
     </facet>

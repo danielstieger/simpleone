@@ -122,6 +122,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -1125,14 +1128,8 @@
         </node>
       </node>
       <node concept="35AVbj" id="4EUPwPcecI$" role="1K0AWC">
-        <node concept="1$4sJh" id="4EUPwPcecMn" role="35Gt3$">
-          <property role="1$4sGW" value="0" />
-          <property role="1$4sGZ" value="0" />
-          <property role="1$4sGY" value="0" />
-          <property role="1$4sGX" value="true" />
-        </node>
         <node concept="ic4WF" id="4EUPwPcecI_" role="icr7_">
-          <property role="ic4Xk" value="Search for Orders • %sld" />
+          <property role="ic4Xk" value="Search for Orders" />
         </node>
       </node>
       <node concept="35AVbj" id="4EUPwPcemep" role="1qgaqN">
@@ -1235,21 +1232,18 @@
         </node>
         <node concept="3clFbF" id="7i6n1N7JhiK" role="3cqZAp">
           <node concept="37vLTI" id="7i6n1N7JhNZ" role="3clFbG">
-            <node concept="1$4sJe" id="7i6n1N7JhWs" role="37vLTx">
-              <property role="1$4sGS" value="0" />
-              <property role="1$4sGV" value="0" />
-              <property role="1$4sGU" value="0" />
-              <property role="1$4sGT" value="0" />
-              <property role="1$4sGQ" value="0" />
-              <property role="1$4sGR" value="0" />
-              <property role="1$4sGO" value="true" />
-            </node>
             <node concept="2OqwBi" id="7i6n1N7Jhpq" role="37vLTJ">
               <node concept="3urNR4" id="7i6n1N7JhiI" role="2Oq$k0">
                 <ref role="3cqZAo" node="AN_117f5tz" resolve="searchViewObject" />
               </node>
               <node concept="2S8uIT" id="7i6n1N7JhsV" role="2OqNvi">
                 <ref role="2S8YL0" node="2gdf8TJboq6" resolve="dateTime" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="3ERykhgCX6s" role="37vLTx">
+              <node concept="1pGfFk" id="3ERykhgCYWX" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="w08f:~DateTime.&lt;init&gt;()" resolve="DateTime" />
               </node>
             </node>
           </node>
@@ -12138,16 +12132,12 @@
         <node concept="3Oe$u_" id="2oCNns$vmRY" role="3Oe2NS">
           <ref role="3O0p26" to="eqbi:AN_117bbe2" resolve="posValue" />
         </node>
-        <node concept="Sd8ji" id="5LwbluSJwmE" role="PoUSh" />
       </node>
-      <node concept="3Oe2Ik" id="7324YUt0KOQ" role="3OfFNq">
-        <node concept="Pevqn" id="7324YUt0KPP" role="PoUSh" />
-        <node concept="P9SqB" id="7324YUt0KQq" role="PoUSh">
-          <property role="P9SrG" value="4" />
-        </node>
-        <node concept="3Oe$u_" id="7324YUt0KOR" role="3Oe2NS">
+      <node concept="3Oe2Ik" id="3ERykhgFFur" role="3OfFNq">
+        <node concept="3Oe$u_" id="3ERykhgFFvp" role="3Oe2NS">
           <ref role="3O0p26" to="eqbi:7324YUt0KcM" resolve="summarizingLongText" />
         </node>
+        <node concept="Pevqn" id="3ERykhgGxPD" role="PoUSh" />
       </node>
     </node>
   </node>
