@@ -26,6 +26,7 @@
     <import index="skjc" ref="r:53c98915-d6dd-481f-827a-f12c69a3d8de(org.modellwerkstatt.simple.cases.iframeUnit)" />
     <import index="hfh" ref="r:fef7e840-8725-4499-8b53-30074b53e7e3(org.modellwerkstatt.simple.cases.mixedUnit)" />
     <import index="58uq" ref="r:fc94febf-faa9-4bf5-afb6-373b78574d63(org.modellwerkstatt.simple.cases.minorBug)" />
+    <import index="qs07" ref="r:e5edbbf4-9823-4900-bef5-349396e4cf20(org.modellwerkstatt.simple.cases.batchjob)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" implicit="true" />
   </imports>
@@ -381,6 +382,14 @@
       </node>
       <node concept="33WYYh" id="1w4jCoCi8az" role="fOGQ8">
         <ref role="2_Hrw8" to="58uq:1w4jCoCi786" resolve="QuickTest" />
+      </node>
+    </node>
+    <node concept="fOGPe" id="3jWDuXJPL5j" role="2N77jL">
+      <node concept="Xl_RD" id="3jWDuXJPL5k" role="33Ov9O">
+        <property role="Xl_RC" value="Job 2026" />
+      </node>
+      <node concept="33WYYh" id="3jWDuXJPLxo" role="fOGQ8">
+        <ref role="2_Hrw8" to="qs07:3jWDuXJPHur" resolve="JobSearch Invoices" />
       </node>
     </node>
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
