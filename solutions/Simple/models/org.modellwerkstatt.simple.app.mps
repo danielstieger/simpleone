@@ -4,7 +4,6 @@
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
-    <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
@@ -22,7 +21,6 @@
     <import index="23qg" ref="r:1730cdea-7907-47f1-aabb-50b7862283c4(org.modellwerkstatt.simple.cases.dynamicSearchUnit)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
     <import index="1u6b" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.apache.commons.logging(org.modellwerkstatt.manmap.runtime/)" />
-    <import index="bq0h" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.fop(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="skjc" ref="r:53c98915-d6dd-481f-827a-f12c69a3d8de(org.modellwerkstatt.simple.cases.iframeUnit)" />
     <import index="hfh" ref="r:fef7e840-8725-4499-8b53-30074b53e7e3(org.modellwerkstatt.simple.cases.mixedUnit)" />
     <import index="58uq" ref="r:fc94febf-faa9-4bf5-afb6-373b78574d63(org.modellwerkstatt.simple.cases.minorBug)" />
@@ -266,7 +264,6 @@
         <child id="4503841283145840496" name="exceptionStrategy" index="3w9mMS" />
         <child id="830315156970378402" name="pairs" index="1_k$Iu" />
       </concept>
-      <concept id="754349571275928331" name="org.modellwerkstatt.dataux.structure.OptRunInConsole" flags="ng" index="MakZV" />
       <concept id="7784207101901652180" name="org.modellwerkstatt.dataux.structure.AppUiModule" flags="ng" index="2MVcZ9">
         <child id="4079546759073522236" name="configuredComponents" index="23Ghgl" />
         <child id="4920377772573251431" name="tileInit" index="2aJ6r$" />
@@ -275,6 +272,7 @@
         <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
         <child id="4243878476893838311" name="helpMenu" index="1BMTcq" />
+        <child id="4399874686856833707" name="onStartupCmd" index="1FmHgs" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
@@ -298,6 +296,9 @@
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
       </concept>
+      <concept id="4399874686857403043" name="org.modellwerkstatt.dataux.structure.StartupCommandCall" flags="ng" index="1Fkigk">
+        <child id="4399874686859853317" name="commandCall" index="1Fzc2M" />
+      </concept>
       <concept id="2497433976992505068" name="org.modellwerkstatt.dataux.structure.MenuSeparator" flags="ng" index="1U2rok" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -306,10 +307,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -390,6 +387,7 @@
       </node>
       <node concept="33WYYh" id="3jWDuXJPLxo" role="fOGQ8">
         <ref role="2_Hrw8" to="qs07:3jWDuXJPHur" resolve="JobSearch Invoices" />
+        <node concept="10Nm6u" id="5DiLbgjq2DK" role="2_HrWp" />
       </node>
     </node>
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
@@ -1000,15 +998,6 @@
         <ref role="2_Hrw8" to="23qg:6quizra0R8S" resolve="DynamicSearch" />
       </node>
     </node>
-    <node concept="2$ntO6" id="7ztTxh04feA" role="2$nsuY">
-      <node concept="33WYYh" id="7ztTxh04feB" role="2$ntUL">
-        <ref role="2_Hrw8" to="tsl4:4kA4APNISj1" resolve="MDE GO Command" />
-        <node concept="3cmrfG" id="ha_AOH9KM2" role="2_HrWp">
-          <property role="3cmrfH" value="1" />
-        </node>
-        <node concept="10Nm6u" id="ha_AOH9Lu8" role="2_HrWp" />
-      </node>
-    </node>
     <node concept="2$ntO6" id="1wTKWXAzWlC" role="2$nsuY">
       <node concept="33WYYh" id="1wTKWXAzWlD" role="2$ntUL">
         <ref role="2_Hrw8" to="lpv8:1wTKWXAyh4g" resolve="ImageTest" />
@@ -1039,13 +1028,7 @@
           <node concept="3cpWsn" id="4W0T8adqedf" role="3cpWs9">
             <property role="TrG5h" value="login" />
             <node concept="10P_77" id="4W0T8adqeda" role="1tU5fm" />
-            <node concept="3clFbT" id="1wTKWXAwEHh" role="33vP2m">
-              <property role="3clFbU" value="true" />
-              <node concept="1KehLL" id="5nwh8JtjFtf" role="lGtFl">
-                <property role="1K8rM7" value="property_value" />
-                <property role="1Kfyot" value="Fg1jLUVyTf/left" />
-              </node>
-            </node>
+            <node concept="3clFbT" id="5NwqpnL0OF9" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbH" id="4awK3eJHU4Q" role="3cqZAp" />
@@ -1435,6 +1418,11 @@
     <node concept="33WYYh" id="2a0RfU1slPe" role="2N77jT">
       <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
     </node>
+    <node concept="1Fkigk" id="4XaMNFHS5aQ" role="1FmHgs">
+      <node concept="2_HltQ" id="4XaMNFHS5aR" role="1Fzc2M">
+        <ref role="2_Hrw8" to="tsl4:4kA4APNISj1" resolve="MDE GO Command" />
+      </node>
+    </node>
   </node>
   <node concept="2AUT8P" id="2B50FNWLyE8">
     <property role="TrG5h" value="MPreisJobExStrat" />
@@ -1526,7 +1514,6 @@
         </node>
       </node>
     </node>
-    <node concept="MakZV" id="2rXgTRs6gGR" role="2A_d42" />
     <node concept="3lKVtU" id="4H3LB8AgRAG" role="2A_d42">
       <property role="1QnCjn" value="0" />
       <property role="1QnCsU" value="*/5" />

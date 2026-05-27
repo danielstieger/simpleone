@@ -1,4 +1,5 @@
-Wir passen eine Pane mit einem DelegateForm in 'org.modellwerkstatt.simple.order.unitOrderHandling.Order Pos Edit Form' an. Du findest die Java-Datei unter ./solutions/Simple/source_gen. Die Java-Datei ist anzupassen. 
+Wir passen eine Pane mit einem DelegateForm in 'org.modellwerkstatt.simple.order.unitOrderHandling.Order Pos Edit Form' an. 
+Du findest die Java-Datei unter ./solutions/Simple/source_gen. Die Java-Datei ist anzupassen. 
 
 Du findest die Dokumentation zur API unter ./docu
 
