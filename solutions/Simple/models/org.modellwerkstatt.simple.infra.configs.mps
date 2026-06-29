@@ -1491,15 +1491,6 @@
           <property role="Xl_RC" value="false" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="5NwqpnKYnuN" role="2CJ4_l">
-        <property role="TrG5h" value="AuthenticatorName" />
-        <node concept="Xl_RD" id="5NwqpnKYnvw" role="2CaGCA">
-          <property role="Xl_RC" value="org.modellwerkstatt.h2forms.mdeauth.H2MpreisLoginOAuth" />
-        </node>
-      </node>
-    </node>
-    <node concept="2CJ4_Q" id="5NwqpnKYyY7" role="2CGBMS">
-      <ref role="2CJ4_N" to="3k04:3SFZEot$iN0" resolve="AppSecretsGoogle" />
     </node>
     <node concept="2CJ4_Q" id="6jihzUGVfTQ" role="2CGBMS">
       <ref role="2CJ4_N" node="6jihzUGVgdw" resolve="PebblePrinting" />
@@ -3227,10 +3218,22 @@
           <property role="Xl_RC" value="true" />
         </node>
       </node>
-      <node concept="2CJ4$C" id="24tSiJMu7Gp" role="2CJ4_l">
-        <property role="TrG5h" value="SingleAppInstanceMode" />
-        <node concept="Xl_RD" id="24tSiJMu7RP" role="2CaGCA">
+      <node concept="2CJ4$C" id="RwHCmZJvtg" role="2CJ4_l">
+        <property role="TrG5h" value="UseMinimalDelegateFormLabelWidth" />
+        <node concept="Xl_RD" id="RwHCmZJvvc" role="2CaGCA">
           <property role="Xl_RC" value="true" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="20sf8ybfj5f" role="2CJ4_l">
+        <property role="TrG5h" value="HideTableSearchWhenBelow" />
+        <node concept="Xl_RD" id="20sf8ybfj94" role="2CaGCA">
+          <property role="Xl_RC" value="6" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="_AClDVSD09" role="2CJ4_l">
+        <property role="TrG5h" value="TableColumnGrowTo100" />
+        <node concept="Xl_RD" id="_AClDVSD3g" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
         </node>
       </node>
       <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">

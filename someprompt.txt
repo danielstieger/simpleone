@@ -1,10 +1,303 @@
-Wir passen eine Pane mit einem DelegateForm in 'org.modellwerkstatt.simple.order.unitOrderHandling.Order Pos Edit Form' an. 
-Du findest die Java-Datei unter ./solutions/Simple/source_gen. Die Java-Datei ist anzupassen. 
+AletschArena Smr 26
+START
+Language
+Deutsch
+English
+Français
+"<header class=""major""> <h2>Zufrieden? Gib uns ein schnelles Feedback. </h2> </header>
+<p> Lass uns gemeinsam über die Aletsch Arena nachdenken und beantworte uns ein paar Fragen. Deine Antworten helfen uns bei der Weiterentwicklung. Die Umfrage wird von Mountain-Management Consulting durchgeführt. (<a target=""_blank"" href=""https://m.mqcserver.com/heracles/langtranskey/hsys_dataprotection/de/"">Link Datenschutz</a>).</p>"
+"<blockquote style=""background: #aedef2"">Als Dankeschön verlosen wir unter den Teilnehmern:
 
-Du findest die Dokumentation zur API unter ./docu
+<ul><li><u>1. Preis:</u> 2 Übernachtungen für 2 Personen inklusive Frühstück im Boutique Hotel La Cabane auf der Bettmeralp, einlösbar im Sommer 2027
 
-Das "Order Pos Edit Form' soll
-- id, name, status, Zeitstempel und den posValue anzeigen,
-- alle Felder disabled, bis auf posValue
+</li><li><u>2. Preis:</u> 1 Gastro-Gutschein für die Gastro-Betriebe der Aletsch Bahnen im Wert von CHF 50.– (Alpenlodge Kühboden, Panorama-Restaurant Bettmerhorn, Bättmerhitta, Bättmerträff, Hotel Aletsch Mörel, Buvette Moosfluh, Restaurant Riederfurka), gesponsert von der Aletsch Bahnen AG
 
+</li><li><u>3.–5. Preis:</u> je <a href=""https://www.aletscharena.ch/planen-buchen/angebote-erlebnisse/angebot/aletsch-entdeckerpass"">1 Tages-Aletsch Entdeckerpass</a>, gesponsert von der Aletsch Bahnen AG</li></ul>
+</blockquote>"
+Welche Begriffe fallen dir spontan zur Marke "Aletsch Arena" ein?
+Assoziation 1
+Assoziation 2
+Assoziation 3
+Assoziation 4
+Assoziation 5
+Wann hast du uns das letzte Mal besucht? <i>(Falls in dieser Saison, bitte Anreisezeitraum angeben).</i>
+leider noch nie
+vor Sommer 25
+letzten Sommer 25
+I
+Welche Faktoren sind dir bei uns im Sommer wichtig? <u><i>(du kannst maximal 5 Faktoren wählen!)</i></u>
+Wanderangebot (Vielzahl / Pflege d. Wanderwege)
+Bike / Rad-Angebot (Streckennetz / Bikeparks)
+Kinderanimations-Programme am Berg und im Ort
+Vielzahl von geöffneten Beförderungsanlagen
+Unterkunft / Hotels
+Preis-Leistungs-Verhältnis
+Erreichbarkeit der Destination
+Natur hautnah erleben
+Veranstaltungen / Unterhaltungsangebot
+Gefühl willkommen zu sein / Gastfreundschaft
+Wellness-Angebot
+Genuss- / Kulinarisches Angebot
+Atmosphäre des Ortes / Authentizität
+Kulturelles Angebot
+Ruhe und Erholung
+II
+Wie zufrieden bist du im Sommer bei uns mit … <i>(Falls du das nicht bewerten kannst, wähle bitte k.A. für "keine Antwort" )</i>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+äußerst zufrieden
+nicht zufrieden
+III
+Wie wahrscheinlich ist es, dass du uns an Freunde / Bekannte weiterempfehlen wirst?
+äußerst wahrscheinlich
+sehr unwahrscheinlich
+Wurden deine Erwartungen bei uns erfüllt? Wie war dein Aufenthalt?
+weniger gut
+gut
+sehr gut
+voll begeistert
+Würdest du uns auch in der Nebensaison besuchen, also im Frühling (Mai bis Juni)?
+sicher nicht
+eher nicht
+weiß ich nicht genau
+wahrscheinlich
+ja, ganz sicher
+Wirst du innerhalb der nächsten 1 bis 3 Jahre im Sommer wiederkommen?
+Wirst du uns innerhalb der nächsten 1 bis 3 Jahre im Winter besuchen?
+Womit warst du bei deinem Aufenthalt am wenigsten zufrieden? Hat dich etwas enttäuscht?
+IIII
+Kennst du unser Coworking-Angebot auf der Riederalp?
+Nein, hatte ich bisher nicht gehört
+Ja, habe davon gehört, wusste aber nicht genau, worum es geht
+Ja, kenne ich
+Ja, habe ich auch schon genutzt
+Kennst du unsere Möglichkeit für Retreats?
+Könntest du dir vorstellen, mit deinem Team oder deiner Organisation einen Aufenthalt in der Aletsch Arena zu planen?
+Kennst du unseren Aletsch Bikepass?
+Wie bewertest du unseren Aletsch Bikepass?
+Weniger gut
+Mittelmäßig
+Gut
+Sehr gut
+Voll begeistert
+Kennst du unsere Bike Genuss Tour?
+Wie bewertest du unsere Bike Genuss Tour?
+Kennst du unseren Flowtrail Wurzenbord Pass?
+Wie bewertest du unseren Flowtrail Wurzenbord Pass?
+Kennst du unseren neuen Flowtrail Blausee Pass?
+Wie bewertest du unseren Flowtrail Blausee Pass?
+Kennst du unsere geführten Gletschertouren?
+Wie bewertest du unsere geführten Gletschertouren?
+Kennst du unseren Aletsch Entdeckerpass?
+Wie bewertest du unseren Aletsch Entdeckerpass?
+Wie hast du dich vor deinem Aufenthalt hauptsächlich über unsere Destination informiert?<u><i>(du kannst max. 5 Antworten wählen!)</i></u>
+Website der Destination
+KI-Plattform
+Suchmaschinen (z. B. Google)
+Soziale Medien
+Buchungsplattformen / Reiseportale
+Empfehlungen von Freunden oder Bekannten
+Gedruckte Prospekte oder Broschüren
+Ich habe mich vorab nicht informiert
+Oder gibt es eine andere wichtige Informationsquelle für dich? (kein Pflichtfeld)
+Wie möchtest du künftig bevorzugt über Angebote, Veranstaltungen und Aktivitäten informiert werden?
+Vorwiegend über digitale Kanäle
+Sowohl digital als auch über gedruckte Informationen
+Vorwiegend über gedruckte Informationen
+Keine Meinung - egal
+IIIII
+Wie intensiv betreibst/ suchst du im Sommer ...
+wandern
+nie
+manchmal
+oft
+sehr intensiv
+mountainbiken
+rennradfahren
+klettern / Klettersteig
+Trailrunning / Joggen
+schwimmen
+Relaxen (Ruhe & Erholung)
+Wellness
+Im Ort spazieren / shoppen
+Gut essen gehen
+Kulturelle Angebote
+Reist du mit Kindern an?
+Nein
+Ja
+Fehlen dir spezielle Familienangebote in der Aletsch Arena?
+nein
+ja, könnte man ausbauen
+ja, müsste man deutlich ausbauen
+Wie alt sind deine Kinder? (Mehrfachauswahl möglich)
+0–2 Jahre
+3–5 Jahre
+6–9 Jahre
+10–12 Jahre
+13–15 Jahre
+16–18 Jahre
+Über 18 Jahre
+Würdest du die Coworking-Angebote der Aletsch Arena nutzen oder in der Ferien-Residenz arbeiten (im Sommer oder Winter), wenn eine professionelle Kinderbetreuung vorhanden wäre?
+Welche Angebote fehlen dir im Sommer und Herbst? (kein Pflichtfeld)
+IIIIII
+Welche Attribute ordnest du uns im Sommer zu?
+vielfältig / abwechslungsreich
+sehr zutreffend
+nicht zutreffend
+erholsam / entspannend
+authentisch / echt
+qualitativ hochwertig
+umweltbewusst
+befreiend
+actionreich / lebendig
+familienfreundlich
+naturnah
+innovativ
+gut und schnell erreichbar
+einzigartig
+sportlich / aktiv
+exklusiv
+IIIIIII
+<b>Welche Themen sind für dieses Gebiet deiner Ansicht nach in Zukunft besonders wichtig?</b> <i>(Du kannst max. 5 wählen!)</i>
+Erweiterung des Wander-Angebotes
+Erweiterung des Bike-Angebotes
+Ausbau von alternativen Sportangeboten (Klettern, Klettersteige, etc.)
+Wetterunabhängigen Angeboten wie Indoor-Kletterhallen oder Kulturveranstaltungen
+Familienfreundliche Attraktionen und Abenteuerparks
+Verbindung von Sport mit Kultur (z. B. geführte Themenwanderungen)
+Möglichkeiten zum Schwimmen und Baden verbessern (Badesee, Schwimmbad, etc)
+Ausbau des Gesundheits- und Wellness-Angebotes
+Ausbau der kulturellen Angebote
+Entertainment-Angebot (Events, Festivals, Night-Show, Party)
+Erlebnisse zur persönlichen Weiterentwicklung / Reflexion
+Höchstgrenze für die Zahl von Gästen um das Wohlbefinden zu erhöhen
+Flexible, kurzfristige Buchungsmöglichkeiten (Hotel/Unterkunft ,Tickets, Parking,..)
+Effiziente Nutzung von Energie/Wasser – Minimierung des ökologischen Fussabdrucks
+Nachhaltige und umweltfreundliche Erlebnisse/Aktivitäten vor Ort
+Förderung umweltfreundlicher Mobilitätskonzepte (E-Bike-Verleih, Nahverkehrsangebote).
+Schaffung nachhaltiger Unterkünfte, Öko-Trails und mehr Naturschutzprojekte
+Echtzeitinformationen über Verhältnisse, Wetter, Wartezeiten oder Parkmöglichkeiten
+Spezielle Angebote für Kinder (inkl. Tagesbetreuung)
+Preisbewußte Angebote / günstige Package-Angebote
+IIIIIIIIII
+Bitte sag uns noch ...
+Bitte gib dein Alter an.
+12-19 Jahre
+20-34 Jahre
+35-49 Jahre
+50-64 Jahre
+65+
+Wie oft hast du uns schon im Sommer besucht?
+Einmal
+2 bis 5 Mal
+6 bis 10 Mal
+mehr als 10 Mal
+Wie oft hast du uns schon im Winter besucht?
+Noch nie
+Mit wem hast du uns besucht?
+mit meiner Familie
+allein
+mit Freunden
+ich wohne hier
+andere
+Ich bin / war
+Urlauber
+Tagesgast
+Zweitwohnungsbesitzer
+Einheimischer / Saisonkartenbesitzer
+Aus welchem Land kommst du?
+Schweiz
+Frankreich
+Italien
+Deutschland
+Österreich
+Polen
+Tschechien
+Belgien
+Luxemburg
+Niederlande
+Großbritannien
+Spanien
+Schweden
+Russland
+USA
+Kanada
+China
+Golfstaaten
+Brasilien
+anderes Land
+Aus welchem Kanton der Schweiz kommst du?
+Zürich
+Bern
+Luzern
+Uri
+Schwyz
+Obwalden
+Nidwalden
+Glarus
+Zug
+Freiburg
+Solothurn
+Basel-Stadt
+Basel-Landschaft
+Schaffhausen
+Appenzell Ausserrhoden
+Appenzell Innerrhoden
+St. Gallen
+Graubünden
+Aargau
+Thurgau
+Tessin
+Waadt
+Wallis
+Neuenburg
+Genf
+Jura
+Welche Medien nutzt du?
+Sonntagszeitung
+NZZ
+Tages-Anzeiger
+Blick.ch
+SRF 1
+watson.ch
+Facebook
+Instagram
+Tik tok
+YouTube
+LinkedIn
+Spotify
+Netflix
+National Geographic
+Die Zeit – Schweiz Ausgabe
+Welches Verkehrsmittel hast du für deine Anreise genutzt?
+Auto
+Bahn
+Flug / Mietauto
+Wie verbringst du deine Ferien in der Aletsch Arena?
+eher genussvoll
+eher leistungsorientiert
+Wie würdest du dein Buchungsverhalten einstufen?
+kurzfristig (innerhalb von 1-3 Wochen)
+mittelfristig (innert 3 Monate)
+langfristig (mehr als 3 Monate im Voraus)
+Folgst du uns auf den Sozialen Medien?
+ja
+Hast du unseren Newsletter bereits abonniert?
+Du möchtest ...
+Ja, ich möchte den Newsletter erhalten
+Ja, ich möchte am Gewinnspiel teilnehmen (Rechtsweg ausgeschlossen)
+Deine E-Mail-Adresse:
+Dein Vorname:
+Dein Nachname:
+ENDE
+"<h2> Danke, dass du teilgenommen hast.</h2>
 
+Du kannst diese Seite jetzt schliessen …"

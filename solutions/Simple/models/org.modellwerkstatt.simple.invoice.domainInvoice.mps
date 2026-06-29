@@ -10,6 +10,7 @@
     <import index="o7da" ref="r:a10b1683-170e-4c4e-838f-499010c53c13(org.modellwerkstatt.simple.infra.objects)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -92,6 +93,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -183,6 +187,7 @@
       <concept id="774207833082734171" name="org.modellwerkstatt.manmap.structure.WhereQuery" flags="ng" index="jxyYR">
         <child id="774207833082734172" name="filter" index="jxyYK" />
       </concept>
+      <concept id="774207833082820017" name="org.modellwerkstatt.manmap.structure.QuerySmartClosureParamDeclaration" flags="ig" index="jxRLt" />
       <concept id="774207833082573402" name="org.modellwerkstatt.manmap.structure.QueryFromMap" flags="ng" index="jybIQ">
         <property id="3572493221071471725" name="readOnly" index="HScZ5" />
         <property id="8660793628824932667" name="debugMe" index="1v8G3g" />
@@ -196,6 +201,9 @@
       </concept>
       <concept id="8915366638470090989" name="org.modellwerkstatt.manmap.structure.OptionalOperator" flags="ng" index="2zQmTl">
         <child id="8915366638470090994" name="expression" index="2zQmTa" />
+      </concept>
+      <concept id="2153030403787874161" name="org.modellwerkstatt.manmap.structure.RowMapperField" flags="ng" index="2_xkrf">
+        <child id="2153030403787874164" name="rowMapper" index="2_xkra" />
       </concept>
       <concept id="4421815423107469587" name="org.modellwerkstatt.manmap.structure.Repository" flags="ig" index="DXQ2w" />
       <concept id="4421815423107469588" name="org.modellwerkstatt.manmap.structure.RepositoryInstanceMethodDeclaration" flags="ig" index="DXQ2B">
@@ -213,6 +221,9 @@
       </concept>
       <concept id="6435836305144935126" name="org.modellwerkstatt.manmap.structure.GetQuery" flags="ng" index="TUlRj">
         <child id="6435836305144935143" name="argument" index="TUlRy" />
+      </concept>
+      <concept id="871579071901471997" name="org.modellwerkstatt.manmap.structure.IncludeMapping" flags="ng" index="12gALL">
+        <reference id="871579071901474029" name="mapping" index="12gAhx" />
       </concept>
       <concept id="871579071900331994" name="org.modellwerkstatt.manmap.structure.ListMapping" flags="ng" index="12kdtm">
         <reference id="871579071900331999" name="property" index="12kdtj" />
@@ -242,8 +253,18 @@
         <reference id="5159282717680535116" name="fieldMapping" index="2OG787" />
         <reference id="1974135804380645439" name="mappingSource" index="3_688M" />
       </concept>
+      <concept id="1810748140037527703" name="org.modellwerkstatt.manmap.structure.C2SqlWordVarReference" flags="ng" index="3DwW_1">
+        <reference id="1810748140039685408" name="varDecl" index="3DSHjQ" />
+      </concept>
       <concept id="7955334847797738396" name="org.modellwerkstatt.manmap.structure.SqlString" flags="ng" index="1Q8zPT">
         <child id="9195385294704421835" name="newText" index="2KarBZ" />
+      </concept>
+      <concept id="1810748140025176330" name="org.modellwerkstatt.manmap.structure.C2SqlBlock" flags="ng" index="3QLR3s">
+        <child id="5265354401584361519" name="mapping" index="FUZJ1" />
+        <child id="2252697316673436459" name="statements" index="Hy8HH" />
+      </concept>
+      <concept id="1810748140026040091" name="org.modellwerkstatt.manmap.structure.C2SqlText" flags="ng" index="3QODVd">
+        <child id="1810748140026040692" name="lines" index="3QOC2y" />
       </concept>
       <concept id="7754962537266810665" name="org.modellwerkstatt.manmap.structure.MappedFieldRef" flags="ng" index="1VRMpY">
         <reference id="7754962537266810667" name="refMapping" index="1VRMpW" />
@@ -1276,6 +1297,17 @@
         </node>
       </node>
     </node>
+    <node concept="12nEzA" id="5hLHMVot7E8" role="12nEwW">
+      <property role="TrG5h" value="MapInvoiceDELETE" />
+      <ref role="12nOxz" node="6XzXfke1alv" resolve="Invoice" />
+      <node concept="jyGaT" id="5hLHMVot7E9" role="jyGaQ" />
+      <node concept="Xl_RD" id="5hLHMVot7Ea" role="12gAQd">
+        <property role="Xl_RC" value="DELETE" />
+      </node>
+      <node concept="12gALL" id="5hLHMVot7K1" role="3caO6$">
+        <ref role="12gAhx" node="1oz7qwEwDod" resolve="MapBInvoice" />
+      </node>
+    </node>
   </node>
   <node concept="DXQ2w" id="6QrtA9Mt96m">
     <property role="TrG5h" value="InvoiceRepo" />
@@ -1728,6 +1760,111 @@
     <node concept="3uibUv" id="53DPdbodcSo" role="1zkMxy">
       <ref role="3uigEE" node="6XzXfke1alv" resolve="Invoice" />
     </node>
+  </node>
+  <node concept="DXQ2w" id="1$x4trJWR7j">
+    <property role="TrG5h" value="MyNewTestRepo" />
+    <node concept="2_xkrf" id="7FPtEDDw4w" role="jymVt">
+      <property role="TrG5h" value="myMapper" />
+      <node concept="1bVj0M" id="7FPtEDDw4y" role="2_xkra">
+        <node concept="3clFbS" id="7FPtEDDw4z" role="1bW5cS">
+          <node concept="3clFbF" id="7FPtEDDwSh" role="3cqZAp">
+            <node concept="2OqwBi" id="7FPtEDDwYY" role="3clFbG">
+              <node concept="37vLTw" id="7FPtEDDwSg" role="2Oq$k0">
+                <ref role="3cqZAo" node="7FPtEDDw4$" resolve="row" />
+              </node>
+              <node concept="liA8E" id="7FPtEDDx5p" role="2OqNvi">
+                <ref role="37wK5l" to="w7gk:3NdPOdNGJWi" resolve="getAsInteger" />
+                <node concept="3cmrfG" id="7FPtEDDx93" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="jxRLt" id="7FPtEDDw4$" role="1bW2Oz">
+          <property role="TrG5h" value="row" />
+          <node concept="2jxLKc" id="7FPtEDDw4_" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="DXQ2B" id="1$x4trJWRaK" role="jymVt">
+      <property role="TrG5h" value="myRepoMethod" />
+      <node concept="37vLTG" id="1$x4trKKUhQ" role="3clF46">
+        <property role="TrG5h" value="dan" />
+        <node concept="17QB3L" id="1$x4trKKUjk" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="1$x4trJWRkw" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="1$x4trJWRaN" role="1B3o_S" />
+      <node concept="3clFbS" id="1$x4trJWRaO" role="3clF47">
+        <node concept="3clFbH" id="4OBb2BRhJlb" role="3cqZAp" />
+        <node concept="3clFbH" id="3ygqTSW$ppX" role="3cqZAp" />
+        <node concept="3clFbF" id="MtRMws62is" role="3cqZAp">
+          <node concept="3QLR3s" id="MtRMws62ih" role="3clFbG">
+            <node concept="3clFbS" id="MtRMws62ij" role="Hy8HH">
+              <node concept="3clFbH" id="MtRMwsibRR" role="3cqZAp" />
+              <node concept="3QODVd" id="MtRMws62ik" role="3cqZAp">
+                <node concept="1PaTwC" id="MtRMwsiaZ2" role="3QOC2y">
+                  <node concept="3oM_SD" id="MtRMwsib0Q" role="1PaTwD">
+                    <property role="3oM_SC" value="SELECT" />
+                  </node>
+                  <node concept="3oM_SD" id="MtRMwsib0R" role="1PaTwD">
+                    <property role="3oM_SC" value="a,b,c" />
+                  </node>
+                  <node concept="3oM_SD" id="MtRMwsib0S" role="1PaTwD">
+                    <property role="3oM_SC" value="FROM" />
+                  </node>
+                  <node concept="3oM_SD" id="5LRe9BFd4S_" role="1PaTwD">
+                    <property role="3oM_SC" value="MYTABLE" />
+                  </node>
+                  <node concept="3oM_SD" id="5LRe9BFd4Vi" role="1PaTwD">
+                    <property role="3oM_SC" value="WHERE" />
+                  </node>
+                  <node concept="3oM_SD" id="5LRe9BFd5bi" role="1PaTwD">
+                    <property role="3oM_SC" value="id" />
+                  </node>
+                  <node concept="3oM_SD" id="5LRe9BFd5d8" role="1PaTwD">
+                    <property role="3oM_SC" value="=" />
+                  </node>
+                  <node concept="3DwW_1" id="5LRe9BFd5hs" role="1PaTwD">
+                    <ref role="3DSHjQ" node="1$x4trKKUhQ" resolve="dan" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="MtRMws62in" role="3cqZAp" />
+            </node>
+            <node concept="1bVj0M" id="MtRMws62io" role="FUZJ1">
+              <node concept="3clFbS" id="MtRMws62ip" role="1bW5cS">
+                <node concept="3clFbF" id="5LRe9BFd5Ub" role="3cqZAp">
+                  <node concept="2OqwBi" id="5LRe9BFd5ZL" role="3clFbG">
+                    <node concept="37vLTw" id="5LRe9BFd5Ua" role="2Oq$k0">
+                      <ref role="3cqZAo" node="MtRMws62iq" resolve="row" />
+                    </node>
+                    <node concept="liA8E" id="5LRe9BFd7Kf" role="2OqNvi">
+                      <ref role="37wK5l" to="w7gk:3NdPOdNGJXw" resolve="getAsString" />
+                      <node concept="3cmrfG" id="5LRe9BFd7NM" role="37wK5m">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="jxRLt" id="MtRMws62iq" role="1bW2Oz">
+                <property role="TrG5h" value="row" />
+                <node concept="2jxLKc" id="MtRMws62ir" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="MtRMws62dN" role="3cqZAp" />
+        <node concept="3clFbH" id="MtRMws62dO" role="3cqZAp" />
+        <node concept="3cpWs6" id="1$x4trJWRoz" role="3cqZAp">
+          <node concept="10Nm6u" id="nx_$Rf4vYw" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1$x4trJWR7k" role="1B3o_S" />
   </node>
 </model>
 

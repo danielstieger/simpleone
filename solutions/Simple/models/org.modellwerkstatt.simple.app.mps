@@ -25,6 +25,7 @@
     <import index="hfh" ref="r:fef7e840-8725-4499-8b53-30074b53e7e3(org.modellwerkstatt.simple.cases.mixedUnit)" />
     <import index="58uq" ref="r:fc94febf-faa9-4bf5-afb6-373b78574d63(org.modellwerkstatt.simple.cases.minorBug)" />
     <import index="qs07" ref="r:e5edbbf4-9823-4900-bef5-349396e4cf20(org.modellwerkstatt.simple.cases.batchjob)" />
+    <import index="tt3g" ref="r:02bb3597-6313-4a94-a287-76feb5459f71(org.modellwerkstatt.simple.cases.openLink)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" implicit="true" />
   </imports>
@@ -391,7 +392,7 @@
       </node>
     </node>
     <node concept="33WYYh" id="3F_ifPuhzpK" role="1BMTcq">
-      <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
+      <ref role="2_Hrw8" to="tt3g:2a0RfU1skUG" resolve="Show Documentation" />
       <ref role="3uz5Vf" to="oyrz:7YWowTUhxHw" resolve="SHOW_DOCUMENTATION" />
     </node>
     <node concept="2$ntO6" id="2qrl3a2NyvY" role="2$nsuY">
@@ -911,6 +912,9 @@
   <node concept="2MVcZ9" id="5XruxTJPWFd">
     <property role="TrG5h" value="App_MDE_Order" />
     <ref role="2WPtWl" to="oyrz:4l1zKLo5jkE" resolve="FX8_MDE_local" />
+    <node concept="33WYYh" id="MtRMwrPLvm" role="2N77jT">
+      <ref role="2_Hrw8" to="tt3g:MtRMwrNFtm" resolve="Open B-APP Orders" />
+    </node>
     <node concept="3ulXEM" id="4h8GofeW2LA" role="3ulXEG">
       <property role="TrG5h" value="values" />
       <node concept="_YKpA" id="4h8GofeW2LI" role="1tU5fm">
@@ -1019,7 +1023,7 @@
     </node>
     <node concept="2$ntO6" id="3tYcMUmIlUl" role="2$nsuY">
       <node concept="33WYYh" id="3tYcMUmIlUm" role="2$ntUL">
-        <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="View external" />
+        <ref role="2_Hrw8" to="tt3g:MtRMwrNFtm" resolve="Open B-APP Orders" />
       </node>
     </node>
     <node concept="2MWq9S" id="5XruxTJPWFe" role="2MZU0z">
@@ -1203,6 +1207,29 @@
               </node>
             </node>
           </node>
+          <node concept="3eNFk2" id="MtRMwrIDhR" role="3eNLev">
+            <node concept="2OqwBi" id="MtRMwrIFlQ" role="3eO9$A">
+              <node concept="Xl_RD" id="MtRMwrID$j" role="2Oq$k0">
+                <property role="Xl_RC" value="127.0.0.1" />
+              </node>
+              <node concept="liA8E" id="MtRMwrIFDX" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2MWqbU" id="MtRMwrIGfP" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="MtRMwrIDhT" role="3eOfB_">
+              <node concept="3clFbF" id="MtRMwrIGXB" role="3cqZAp">
+                <node concept="37vLTI" id="MtRMwrIHSC" role="3clFbG">
+                  <node concept="3clFbT" id="MtRMwrII0q" role="37vLTx">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="37vLTw" id="MtRMwrIGXA" role="37vLTJ">
+                    <ref role="3cqZAo" node="4W0T8adqedf" resolve="login" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3clFbH" id="4W0T8adqdZs" role="3cqZAp" />
         <node concept="3clFbF" id="4W0T8adqdZt" role="3cqZAp">
@@ -1284,7 +1311,7 @@
     </node>
     <node concept="2MZaQk" id="5kphc59RIUz" role="2A_d42">
       <node concept="Xl_RD" id="5kphc59RIUI" role="2MZaQn">
-        <property role="Xl_RC" value="MDE Order" />
+        <property role="Xl_RC" value="MDE APP" />
       </node>
     </node>
     <node concept="2aJ7Jc" id="4h8Goff1MWX" role="2aJ6r$">
@@ -1416,10 +1443,10 @@
       </node>
     </node>
     <node concept="33WYYh" id="2a0RfU1slPe" role="2N77jT">
-      <ref role="2_Hrw8" to="tsl4:2a0RfU1skUG" resolve="Show Documentation" />
+      <ref role="2_Hrw8" to="tt3g:2a0RfU1skUG" resolve="Show Documentation" />
     </node>
-    <node concept="1Fkigk" id="4XaMNFHS5aQ" role="1FmHgs">
-      <node concept="2_HltQ" id="4XaMNFHS5aR" role="1Fzc2M">
+    <node concept="1Fkigk" id="MtRMwrXHmG" role="1FmHgs">
+      <node concept="2_HltQ" id="MtRMwrXHmH" role="1Fzc2M">
         <ref role="2_Hrw8" to="tsl4:4kA4APNISj1" resolve="MDE GO Command" />
       </node>
     </node>
