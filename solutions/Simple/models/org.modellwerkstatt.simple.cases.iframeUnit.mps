@@ -95,6 +95,7 @@
       </concept>
       <concept id="7192042020163999178" name="org.modellwerkstatt.objectflow.structure.Command" flags="ng" index="3ugp7m">
         <property id="7912134052599426179" name="newCommandType" index="19I623" />
+        <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
       </concept>
@@ -189,6 +190,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="20qIzx" id="6M_p1yGIaH7" role="10_T4l">
+      <node concept="3clFbS" id="6M_p1yGIaH8" role="2VODD2">
+        <node concept="3clFbH" id="6M_p1yGIaLq" role="3cqZAp" />
       </node>
     </node>
   </node>

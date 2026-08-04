@@ -1452,24 +1452,18 @@
       <node concept="2CJ4$C" id="3QYERnILe$5" role="2CJ4_l">
         <property role="TrG5h" value="UploadFsLocationStore" />
         <node concept="Xl_RD" id="3QYERnILe$6" role="2CaGCA">
-          <property role="Xl_RC" value="/Users/danielstieger/stuff/green/webapps/ROOT/static" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="3QYERnILe$7" role="2CJ4_l">
-        <property role="TrG5h" value="CamDesiredHeight" />
-        <node concept="Xl_RD" id="3QYERnILe$8" role="2CaGCA">
-          <property role="Xl_RC" value="400" />
-        </node>
-      </node>
-      <node concept="2CJ4$C" id="3QYERnILe$9" role="2CJ4_l">
-        <property role="TrG5h" value="CamDesiredWidth" />
-        <node concept="Xl_RD" id="3QYERnILe$a" role="2CaGCA">
-          <property role="Xl_RC" value="200" />
+          <property role="Xl_RC" value="/home/rocketdan/stuff/green/webapps/ROOT/static" />
         </node>
       </node>
       <node concept="2CJ4$C" id="GWkwFkilRU" role="2CJ4_l">
         <property role="TrG5h" value="CamUseSystemViewfinder" />
         <node concept="Xl_RD" id="GWkwFkinCv" role="2CaGCA">
+          <property role="Xl_RC" value="false" />
+        </node>
+      </node>
+      <node concept="2CJ4$C" id="6dwpgMIZeT4" role="2CJ4_l">
+        <property role="TrG5h" value="CamNotZebraSpecific" />
+        <node concept="Xl_RD" id="6dwpgMIZeUq" role="2CaGCA">
           <property role="Xl_RC" value="true" />
         </node>
       </node>

@@ -274,7 +274,6 @@
         <child id="7784207101904780268" name="extrasMenu" index="2N77jL" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
         <child id="4243878476893838311" name="helpMenu" index="1BMTcq" />
-        <child id="4399874686856833707" name="onStartupCmd" index="1FmHgs" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
@@ -297,9 +296,6 @@
       </concept>
       <concept id="3009814936672462970" name="org.modellwerkstatt.dataux.structure.OptNumConsumersPair" flags="ng" index="3lKYF6">
         <property id="8940448732931993678" name="numConsumers" index="1R4AEf" />
-      </concept>
-      <concept id="4399874686857403043" name="org.modellwerkstatt.dataux.structure.StartupCommandCall" flags="ng" index="1Fkigk">
-        <child id="4399874686859853317" name="commandCall" index="1Fzc2M" />
       </concept>
       <concept id="2497433976992505068" name="org.modellwerkstatt.dataux.structure.MenuSeparator" flags="ng" index="1U2rok" />
     </language>
@@ -925,6 +921,14 @@
         <node concept="10Oyi0" id="4h8GofeW2Or" role="_ZDj9" />
       </node>
     </node>
+    <node concept="2$ntO6" id="17o2t3rMpol" role="2$nsuY">
+      <node concept="33WYYh" id="17o2t3rMpom" role="2$ntUL">
+        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
+      </node>
+      <node concept="276gdk" id="11_njaJu6Du" role="2$ntZF">
+        <ref role="276gdn" to="oyrz:1YLrbjkZoOy" resolve="MenüMHDKontrolle" />
+      </node>
+    </node>
     <node concept="2$ntO6" id="7f4gcD$ZVIL" role="2$nsuY">
       <node concept="33WYYh" id="7f4gcD$ZVIM" role="2$ntUL">
         <ref role="2_Hrw8" to="tsl4:4u029Jv8v68" resolve="Search Orders" />
@@ -980,14 +984,6 @@
       </node>
       <node concept="276gdk" id="11_njaJu6ph" role="2$ntZF">
         <ref role="276gdn" to="oyrz:1YLrbjkZoNR" resolve="MenüAbschrift" />
-      </node>
-    </node>
-    <node concept="2$ntO6" id="17o2t3rMpol" role="2$nsuY">
-      <node concept="33WYYh" id="17o2t3rMpom" role="2$ntUL">
-        <ref role="2_Hrw8" to="lpv8:17o2t3rKeXY" resolve="Search Album" />
-      </node>
-      <node concept="276gdk" id="11_njaJu6Du" role="2$ntZF">
-        <ref role="276gdn" to="oyrz:1YLrbjkZoOy" resolve="MenüMHDKontrolle" />
       </node>
     </node>
     <node concept="2$ntO6" id="6m2yckYuv6Z" role="2$nsuY">
@@ -1257,6 +1253,29 @@
               </node>
             </node>
           </node>
+          <node concept="3eNFk2" id="1d0eq9pJlqa" role="3eNLev">
+            <node concept="2OqwBi" id="1d0eq9pJnph" role="3eO9$A">
+              <node concept="2MWqbU" id="1d0eq9pJm5l" role="2Oq$k0" />
+              <node concept="liA8E" id="1d0eq9pJpmF" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                <node concept="Xl_RD" id="1d0eq9pJpxR" role="37wK5m">
+                  <property role="Xl_RC" value="192.168.0" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1d0eq9pJlqc" role="3eOfB_">
+              <node concept="3clFbF" id="1d0eq9pJq5i" role="3cqZAp">
+                <node concept="37vLTI" id="1d0eq9pJrqh" role="3clFbG">
+                  <node concept="3clFbT" id="1d0eq9pJrCl" role="37vLTx">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="37vLTw" id="1d0eq9pJq5h" role="37vLTJ">
+                    <ref role="3cqZAo" node="4W0T8adqedf" resolve="login" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3clFbH" id="4W0T8adqdZs" role="3cqZAp" />
         <node concept="3clFbF" id="4W0T8adqdZt" role="3cqZAp">
@@ -1471,11 +1490,6 @@
     </node>
     <node concept="33WYYh" id="2a0RfU1slPe" role="2N77jT">
       <ref role="2_Hrw8" to="tt3g:2a0RfU1skUG" resolve="Show Documentation" />
-    </node>
-    <node concept="1Fkigk" id="MtRMwrXHmG" role="1FmHgs">
-      <node concept="2_HltQ" id="MtRMwrXHmH" role="1Fzc2M">
-        <ref role="2_Hrw8" to="tsl4:4kA4APNISj1" resolve="MDE GO Command" />
-      </node>
     </node>
   </node>
   <node concept="2AUT8P" id="2B50FNWLyE8">

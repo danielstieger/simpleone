@@ -5368,7 +5368,7 @@
       <node concept="3uibUv" id="5TC7JC3Wptj" role="1tU5fm">
         <ref role="3uigEE" to="eqbi:1Zhh97664rm" resolve="Order" />
       </node>
-      <node concept="2IFXgM" id="5TC7JC3Wpto" role="33vP2m">
+      <node concept="2IFXgM" id="2xqQNsue_H9" role="33vP2m">
         <ref role="2IFZ7r" to="eqbi:1Zhh97664rm" resolve="Order" />
       </node>
     </node>
@@ -14727,9 +14727,6 @@
           <node concept="2TlDos" id="yVRSBcWNUb" role="fOGQ8">
             <ref role="3uz5Vf" to="oyrz:298IG9dBCW6" resolve="CFT_CMP_CompleteOrder" />
             <ref role="2_Hrw8" node="AN_117c3Kl" resolve="CF Edit Order" />
-            <node concept="2_HltQ" id="7h5_Fe2gwqE" role="3bnEHX">
-              <ref role="2_Hrw8" node="AN_117c3Qk" resolve="Complete Order" />
-            </node>
             <node concept="2dfVl4" id="2c1OwJToJ15" role="2dc_Y6">
               <ref role="2dfVpT" node="AN_117h9Yg" />
             </node>

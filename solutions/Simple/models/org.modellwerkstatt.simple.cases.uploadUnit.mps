@@ -492,24 +492,15 @@
       <property role="TrG5h" value="#" />
       <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
       <node concept="2U5nhG" id="17o2t3rKeVK" role="2TFpq_" />
-      <node concept="3Oe2IN" id="17o2t3rKeVO" role="3OfFNq">
-        <node concept="3Oe$u_" id="17o2t3rKeVP" role="3Oe2NS">
-          <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
-        </node>
-        <node concept="Pevqn" id="17o2t3rKeW2" role="PoUSh" />
-      </node>
       <node concept="3ap0rB" id="17o2t3s1Xvy" role="3OfFNq">
         <node concept="3Oe$u_" id="17o2t3s1Xw3" role="3Oe2NS">
           <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
         </node>
         <node concept="Sd8ji" id="3nTGeEajIMU" role="PoUSh" />
-        <node concept="P9Rn5" id="3P_LmWszsCF" role="PoUSh" />
-      </node>
-      <node concept="2TG9WT" id="17o2t3rKeVZ" role="3OfFNq">
-        <node concept="3Oe$u_" id="17o2t3rKeW0" role="3Oe2NS">
-          <ref role="3O0p26" to="agw3:17o2t3rKeyq" resolve="takenTimeStamp" />
+        <node concept="Pl0HC" id="2xqQNsuoGlm" role="PoUSh">
+          <node concept="Xl_RD" id="2xqQNsuoGlo" role="Pl0H_" />
         </node>
-        <node concept="P9Rn5" id="17o2t3rQK94" role="PoUSh" />
+        <node concept="P9Rn5" id="3P_LmWszsCF" role="PoUSh" />
       </node>
     </node>
   </node>
@@ -891,11 +882,11 @@
       <ref role="1Tjo7l" node="17o2t3rKeXZ" resolve="SearchAlbumFilter" />
       <ref role="1Tjo6F" node="17o2t3rKeYl" resolve="results" />
       <node concept="fOGPe" id="17o2t3rKeZT" role="fOGQ8">
-        <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
-          <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
-        </node>
         <node concept="33WYYh" id="17o2t3rKeZU" role="fOGQ8">
           <ref role="2_Hrw8" node="17o2t3rKeW9" resolve="Open Album" />
+        </node>
+        <node concept="33WYYh" id="17o2t3rKeZS" role="fOGQ8">
+          <ref role="2_Hrw8" node="17o2t3rKeXG" resolve="Create Album" />
         </node>
       </node>
       <node concept="3Oe2IN" id="17o2t3rKeZI" role="3OfFNq">
