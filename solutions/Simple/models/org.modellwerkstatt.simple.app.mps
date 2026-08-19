@@ -27,6 +27,7 @@
     <import index="qs07" ref="r:e5edbbf4-9823-4900-bef5-349396e4cf20(org.modellwerkstatt.simple.cases.batchjob)" />
     <import index="tt3g" ref="r:02bb3597-6313-4a94-a287-76feb5459f71(org.modellwerkstatt.simple.cases.openLink)" />
     <import index="vd6h" ref="r:6edc3dce-b730-463f-b83a-32ff28c78477(org.modellwerkstatt.simple.cases.hookOption)" />
+    <import index="c16p" ref="r:96a92222-3f81-41df-a931-03391cee32c5(org.modellwerkstatt.simple.cases.LineChart)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" implicit="true" />
   </imports>
@@ -336,6 +337,10 @@
   <node concept="2MVcZ9" id="5XruxTJPWEh">
     <property role="TrG5h" value="App_Desktop_Order" />
     <ref role="2WPtWl" to="oyrz:63DPwXetYzb" resolve="FX8_local" />
+    <node concept="33WYYh" id="3Ijwud6DOF6" role="2N77jL">
+      <ref role="2_Hrw8" to="c16p:3Ijwud6Dai1" resolve="Open Sensor" />
+      <node concept="10Nm6u" id="3Ijwud6DOYi" role="2_HrWp" />
+    </node>
     <node concept="33WYYh" id="3tYcMUmIkqY" role="2N77jL">
       <ref role="2_Hrw8" to="skjc:21clogiSxQN" resolve="View external" />
     </node>

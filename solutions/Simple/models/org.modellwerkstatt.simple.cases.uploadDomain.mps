@@ -753,7 +753,7 @@
     <property role="TrG5h" value="AlbumSrv" />
     <node concept="3Tm1VV" id="17o2t3rKeTt" role="1B3o_S" />
     <node concept="2vDG_T" id="17o2t3rKeTv" role="jymVt">
-      <property role="TrG5h" value="setopen" />
+      <property role="TrG5h" value="setOpen" />
       <node concept="3cqZAl" id="17o2t3rKeTw" role="3clF45" />
       <node concept="3clFbS" id="17o2t3rKeTx" role="3clF47">
         <node concept="3clFbF" id="17o2t3rKeTF" role="3cqZAp">
@@ -786,7 +786,7 @@
       </node>
     </node>
     <node concept="2vDG_T" id="17o2t3rKeTG" role="jymVt">
-      <property role="TrG5h" value="setclosed" />
+      <property role="TrG5h" value="setClosed" />
       <node concept="3cqZAl" id="17o2t3rKeTH" role="3clF45" />
       <node concept="3clFbS" id="17o2t3rKeTI" role="3clF47">
         <node concept="3clFbF" id="17o2t3rKeTS" role="3cqZAp">

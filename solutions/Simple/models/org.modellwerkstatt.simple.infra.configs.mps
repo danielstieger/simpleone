@@ -69,6 +69,7 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="406105322043153424" name="org.modellwerkstatt.objectflow.structure.GenTimeScanning" flags="ng" index="20ptEN" />
       <concept id="406105322043152820" name="org.modellwerkstatt.objectflow.structure.ComponentsScanning" flags="ng" index="20ptWn">
         <child id="406105322043152971" name="componentBaseName" index="20ptNC" />
       </concept>
@@ -3756,11 +3757,7 @@
     <node concept="2CJ4_Q" id="63DPwXetYzx" role="2CGBMS">
       <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
     </node>
-    <node concept="20ptWn" id="63DPwXetYzy" role="20ptHX">
-      <node concept="Xl_RD" id="63DPwXetYzz" role="20ptNC">
-        <property role="Xl_RC" value="org.modellwerkstatt.simple" />
-      </node>
-    </node>
+    <node concept="20ptEN" id="5we1Ti3rkqe" role="20ptHX" />
   </node>
 </model>
 
