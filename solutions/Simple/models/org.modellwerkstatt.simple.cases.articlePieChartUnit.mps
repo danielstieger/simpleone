@@ -1846,7 +1846,7 @@
             <node concept="TSZUe" id="1p9ACItTTSM" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTVVn" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTX6U" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTX9W" role="37wK5m">
                     <property role="3cmrfH" value="1" />
                   </node>
@@ -1866,7 +1866,7 @@
             <node concept="TSZUe" id="1p9ACItTXjP" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXjQ" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXjR" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXjS" role="37wK5m">
                     <property role="3cmrfH" value="2" />
                   </node>
@@ -1886,7 +1886,7 @@
             <node concept="TSZUe" id="1p9ACItTXpr" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXps" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXpt" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXpu" role="37wK5m">
                     <property role="3cmrfH" value="3" />
                   </node>
@@ -1906,7 +1906,7 @@
             <node concept="TSZUe" id="1p9ACItTXq1" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXq2" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXq3" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXq4" role="37wK5m">
                     <property role="3cmrfH" value="4" />
                   </node>
@@ -1926,7 +1926,7 @@
             <node concept="TSZUe" id="1p9ACItTXxh" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXxi" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXxj" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXxk" role="37wK5m">
                     <property role="3cmrfH" value="5" />
                   </node>
@@ -1946,7 +1946,7 @@
             <node concept="TSZUe" id="1p9ACItTXy7" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXy8" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXy9" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXya" role="37wK5m">
                     <property role="3cmrfH" value="6" />
                   </node>
@@ -1966,7 +1966,7 @@
             <node concept="TSZUe" id="1p9ACItTXz5" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXz6" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXz7" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXz8" role="37wK5m">
                     <property role="3cmrfH" value="7" />
                   </node>
@@ -1986,7 +1986,7 @@
             <node concept="TSZUe" id="1p9ACItTXK0" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItTXK1" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItTXK2" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItTXK3" role="37wK5m">
                     <property role="3cmrfH" value="8" />
                   </node>
@@ -2022,7 +2022,7 @@
             <node concept="TSZUe" id="1p9ACItU7q0" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU7q1" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU7q2" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU7q3" role="37wK5m">
                     <property role="3cmrfH" value="100" />
                   </node>
@@ -2042,7 +2042,7 @@
             <node concept="TSZUe" id="1p9ACItU8H5" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU8H6" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU8H7" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU8H8" role="37wK5m">
                     <property role="3cmrfH" value="101" />
                   </node>
@@ -2062,7 +2062,7 @@
             <node concept="TSZUe" id="1p9ACItU9bm" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9bn" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9bo" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9bp" role="37wK5m">
                     <property role="3cmrfH" value="102" />
                   </node>
@@ -2082,7 +2082,7 @@
             <node concept="TSZUe" id="1p9ACItU9d5" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9d6" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9d7" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9d8" role="37wK5m">
                     <property role="3cmrfH" value="103" />
                   </node>
@@ -2102,7 +2102,7 @@
             <node concept="TSZUe" id="1p9ACItU9eW" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9eX" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9eY" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9eZ" role="37wK5m">
                     <property role="3cmrfH" value="104" />
                   </node>
@@ -2122,7 +2122,7 @@
             <node concept="TSZUe" id="1p9ACItU9AL" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9AM" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9AN" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9AO" role="37wK5m">
                     <property role="3cmrfH" value="105" />
                   </node>
@@ -2142,7 +2142,7 @@
             <node concept="TSZUe" id="1p9ACItU9CS" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9CT" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9CU" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9CV" role="37wK5m">
                     <property role="3cmrfH" value="106" />
                   </node>
@@ -2162,7 +2162,7 @@
             <node concept="TSZUe" id="1p9ACItU9F7" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9F8" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9F9" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9Fa" role="37wK5m">
                     <property role="3cmrfH" value="107" />
                   </node>
@@ -2182,7 +2182,7 @@
             <node concept="TSZUe" id="1p9ACItU9Hu" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItU9Hv" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItU9Hw" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItU9Hx" role="37wK5m">
                     <property role="3cmrfH" value="108" />
                   </node>
@@ -2202,7 +2202,7 @@
             <node concept="TSZUe" id="1p9ACItUaat" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItUaau" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItUaav" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItUaaw" role="37wK5m">
                     <property role="3cmrfH" value="109" />
                   </node>
@@ -2222,7 +2222,7 @@
             <node concept="TSZUe" id="1p9ACItUad4" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItUad5" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItUad6" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItUad7" role="37wK5m">
                     <property role="3cmrfH" value="110" />
                   </node>
@@ -2242,7 +2242,7 @@
             <node concept="TSZUe" id="1p9ACItUcHb" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItUcHc" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItUcHd" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItUcHe" role="37wK5m">
                     <property role="3cmrfH" value="111" />
                   </node>
@@ -2262,7 +2262,7 @@
             <node concept="TSZUe" id="1p9ACItUA9s" role="2OqNvi">
               <node concept="2ShNRf" id="1p9ACItUA9t" role="25WWJ7">
                 <node concept="1pGfFk" id="1p9ACItUA9u" role="2ShVmc">
-                  <ref role="37wK5l" node="1p9ACItTUM7" />
+                  <ref role="37wK5l" node="1p9ACItTUM7" resolve="Warengruppe" />
                   <node concept="3cmrfG" id="1p9ACItUA9v" role="37wK5m">
                     <property role="3cmrfH" value="112" />
                   </node>
@@ -2320,7 +2320,7 @@
                           <ref role="3cqZAo" node="2rUhhId$etq" resolve="it" />
                         </node>
                         <node concept="2S8uIT" id="1p9ACItUgeS" role="2OqNvi">
-                          <ref role="2S8YL0" node="1p9ACItTMUL" />
+                          <ref role="2S8YL0" node="1p9ACItTMUL" resolve="inGruppe" />
                         </node>
                       </node>
                     </node>

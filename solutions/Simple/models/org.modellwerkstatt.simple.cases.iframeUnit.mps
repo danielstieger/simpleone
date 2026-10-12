@@ -147,7 +147,7 @@
     <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ugp7q" id="1utdRQws0H8" role="3ug97V">
       <property role="TrG5h" value="Page_0" />
-      <ref role="3gcvY6" node="1utdRQwrTAl" />
+      <ref role="3gcvY6" node="1utdRQwrTAl" resolve="ViewExternalDto" />
       <node concept="20qEzJ" id="1utdRQws0H9" role="10qiF$">
         <node concept="3clFbS" id="1utdRQws0Ha" role="2VODD2">
           <node concept="3clFbF" id="1utdRQws0K1" role="3cqZAp">
@@ -158,13 +158,13 @@
         </node>
       </node>
       <node concept="3063JU" id="1utdRQws0Hb" role="3063Jp">
-        <ref role="3063JT" node="1utdRQws1nk" />
+        <ref role="3063JT" node="1utdRQws1nk" resolve="View External PP" />
       </node>
     </node>
     <node concept="3ulXEM" id="1utdRQwrZtu" role="3ulXEG">
       <property role="TrG5h" value="dto" />
       <node concept="3uibUv" id="1utdRQws0f_" role="1tU5fm">
-        <ref role="3uigEE" node="1utdRQwrTAl" />
+        <ref role="3uigEE" node="1utdRQwrTAl" resolve="ViewExternalDto" />
       </node>
     </node>
     <node concept="20qIzx" id="21clogiSxR$" role="3umfm7">
@@ -174,7 +174,7 @@
           <node concept="37vLTI" id="1utdRQws0p5" role="3clFbG">
             <node concept="GOFnM" id="1utdRQws0sx" role="37vLTx">
               <node concept="3uibUv" id="1utdRQws0tR" role="115eGp">
-                <ref role="3uigEE" node="1utdRQwrTAl" />
+                <ref role="3uigEE" node="1utdRQwrTAl" resolve="ViewExternalDto" />
               </node>
               <node concept="GOFnK" id="1utdRQws0y5" role="GOFnN">
                 <ref role="1bDdzG" node="1utdRQwrTAs" resolve="htmlContent" />
@@ -201,14 +201,14 @@
   <node concept="2mKXYI" id="1utdRQws1nk">
     <property role="TrG5h" value="View External PP" />
     <property role="1Nb$_v" value="true" />
-    <ref role="1Tjo7l" node="1utdRQwrTAl" />
+    <ref role="1Tjo7l" node="1utdRQwrTAl" resolve="ViewExternalDto" />
     <node concept="2mKV1J" id="1utdRQws1rF" role="21u2x1">
       <property role="TrG5h" value="#" />
       <property role="KAV$p" value="true" />
-      <ref role="1Tjo7l" node="1utdRQwrTAl" />
+      <ref role="1Tjo7l" node="1utdRQwrTAl" resolve="ViewExternalDto" />
       <node concept="3Oe2Ik" id="pE2pAs39Pu" role="3OfFNq">
         <node concept="3Oe$u_" id="pE2pAs39Qz" role="3Oe2NS">
-          <ref role="3O0p26" node="1utdRQwrTAs" resolve="name" />
+          <ref role="3O0p26" node="1utdRQwrTAs" resolve="htmlContent" />
         </node>
       </node>
       <node concept="Xl_RD" id="1utdRQws1yT" role="3AZGGk">

@@ -1,4 +1,4 @@
-# SimpleOne for moware 17
+# SimpleOne for moware 25
 Simple Application written with moware werkbank java low code environment.
 
 

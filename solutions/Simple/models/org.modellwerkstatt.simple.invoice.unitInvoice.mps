@@ -880,7 +880,7 @@
                               <ref role="3cqZAo" node="6XzXfke19QZ" resolve="filter" />
                             </node>
                             <node concept="2S8uIT" id="2tMj3TiEAPV" role="2OqNvi">
-                              <ref role="2S8YL0" node="6XzXfke19Nv" />
+                              <ref role="2S8YL0" node="6XzXfke19Nv" resolve="state" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="2tMj3TiEAPW" role="37wK5m">
@@ -888,7 +888,7 @@
                               <ref role="3cqZAo" node="6XzXfke19QZ" resolve="filter" />
                             </node>
                             <node concept="2S8uIT" id="2tMj3TiEAPY" role="2OqNvi">
-                              <ref role="2S8YL0" node="6XzXfke18wx" />
+                              <ref role="2S8YL0" node="6XzXfke18wx" resolve="id" />
                             </node>
                           </node>
                         </node>
@@ -897,7 +897,7 @@
                             <ref role="3cqZAo" node="6XzXfke19QZ" resolve="filter" />
                           </node>
                           <node concept="2S8uIT" id="2tMj3TiEAQ1" role="2OqNvi">
-                            <ref role="2S8YL0" node="6XzXfke1ajR" />
+                            <ref role="2S8YL0" node="6XzXfke1ajR" resolve="items" />
                           </node>
                         </node>
                       </node>

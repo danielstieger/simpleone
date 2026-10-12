@@ -68,7 +68,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -86,7 +85,6 @@
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -213,15 +211,9 @@
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
       </concept>
       <concept id="465568541577412058" name="org.modellwerkstatt.dataux.structure.OptionalDOption" flags="ng" index="P9Rn5" />
-      <concept id="465568541577416376" name="org.modellwerkstatt.dataux.structure.NumOfLinesDOption" flags="ng" index="P9SqB">
-        <property id="465568541577416435" name="lines" index="P9SrG" />
-      </concept>
       <concept id="465568541577313928" name="org.modellwerkstatt.dataux.structure.DisabledDOption" flags="ng" index="Pevqn" />
       <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ngI" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
-      </concept>
-      <concept id="465568541574303019" name="org.modellwerkstatt.dataux.structure.OverwriteFormatDOption" flags="ng" index="Pl0kO">
-        <child id="465568541574303048" name="expression" index="Pl0ln" />
       </concept>
       <concept id="465568541574300535" name="org.modellwerkstatt.dataux.structure.OverwriteLabelDOption" flags="ng" index="Pl0HC">
         <child id="465568541574300538" name="expression" index="Pl0H_" />
@@ -952,7 +944,7 @@
                 </node>
                 <node concept="3clFbH" id="3iLtcI74zrO" role="3cqZAp" />
               </node>
-              <node concept="3eOSWO" id="h6mu9WPPKJ" role="3clFbw">
+              <node concept="2d3UOw" id="1nK1SpOsjGq" role="3clFbw">
                 <node concept="3urNR4" id="h6mu9WPOPN" role="3uHU7B">
                   <ref role="3cqZAo" node="h6mu9WPOky" resolve="i" />
                 </node>
@@ -986,43 +978,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="3iLtcI74zsK" role="3cqZAp">
-              <node concept="3clFbS" id="3iLtcI74zsM" role="3clFbx">
-                <node concept="3clFbF" id="3iLtcI74$1Q" role="3cqZAp">
-                  <node concept="37vLTI" id="3iLtcI74$iL" role="3clFbG">
-                    <node concept="3cpWs3" id="3iLtcI74$zC" role="37vLTx">
-                      <node concept="2OqwBi" id="3iLtcI74$HS" role="3uHU7w">
-                        <node concept="3urNQE" id="3iLtcI74$DC" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
-                        </node>
-                        <node concept="2S8uIT" id="3iLtcI74$R1" role="2OqNvi">
-                          <ref role="2S8YL0" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="3iLtcI74$oU" role="3uHU7B">
-                        <property role="Xl_RC" value="http://" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="3iLtcI74$4P" role="37vLTJ">
-                      <node concept="3urNQE" id="3iLtcI74$1O" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3P_LmWszt8J" resolve="albumitem" />
-                      </node>
-                      <node concept="2S8uIT" id="3iLtcI74$8$" role="2OqNvi">
-                        <ref role="2S8YL0" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbC" id="3iLtcI74$0U" role="3clFbw">
-                <node concept="3cmrfG" id="3iLtcI74$1o" role="3uHU7w">
-                  <property role="3cmrfH" value="3" />
-                </node>
-                <node concept="3urNR4" id="3iLtcI74zt_" role="3uHU7B">
-                  <ref role="3cqZAo" node="h6mu9WPOky" resolve="i" />
-                </node>
-              </node>
-            </node>
             <node concept="10Adxa" id="h6mu9WPR0Q" role="3cqZAp">
               <ref role="10Adxb" node="3P_LmWszuve" resolve="Page_0" />
             </node>
@@ -1050,7 +1005,7 @@
         <ref role="3063JT" node="6SMC$eDSOhD" resolve="ImagePP" />
       </node>
       <node concept="Xl_RD" id="5_Fm8hm2w85" role="1K0AWC">
-        <property role="Xl_RC" value="Weihnachtsgrüsse aus Vorarlberg" />
+        <property role="Xl_RC" value="Show album item" />
       </node>
     </node>
     <node concept="3ulXEN" id="3P_LmWszt8J" role="3ulXEL">
@@ -1151,102 +1106,22 @@
     <property role="1Nb$_v" value="true" />
     <property role="TrG5h" value="ImagePP" />
     <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-    <node concept="2U5qGN" id="3EFS_eyyz2h" role="21u2x1">
+    <node concept="2U5qGO" id="3EFS_eyyz3v" role="21u2x1">
       <property role="TrG5h" value="#" />
-      <node concept="2U5nhG" id="3EFS_eyyz6o" role="2U5niL" />
-      <node concept="2U5nhG" id="h6mu9WTsjF" role="2U5niL" />
-      <node concept="2U5nhG" id="3EFS_eyyz2i" role="2U5niJ" />
-      <node concept="2U5nhG" id="2df4HcRObvJ" role="2U5niJ" />
-      <node concept="2U5qGO" id="3EFS_eyyz3v" role="21u2wS">
-        <property role="TrG5h" value="#" />
-        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-        <node concept="2U5nhG" id="3EFS_eyyz3$" role="2TFpq_" />
-        <node concept="2TG9WV" id="3EFS_eyyz3F" role="3OfFNq">
-          <node concept="3Oe$u_" id="3EFS_eyyz3I" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
-          </node>
-          <node concept="Pl0kO" id="5p0Do9zTGn0" role="PoUSh">
-            <node concept="Xl_RD" id="5p0Do9zTGn1" role="Pl0ln">
-              <property role="Xl_RC" value="400, 0" />
-            </node>
-          </node>
+      <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
+      <node concept="2U5nhG" id="3EFS_eyyz3$" role="2TFpq_" />
+      <node concept="2TG9WV" id="3EFS_eyyz3F" role="3OfFNq">
+        <node concept="3Oe$u_" id="3EFS_eyyz3I" role="3Oe2NS">
+          <ref role="3O0p26" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
         </node>
-        <node concept="PoU6y" id="3EFS_eyyz3J" role="PoUSn" />
+        <node concept="Sd8ji" id="1nK1SpOskNR" role="PoUSh" />
       </node>
-      <node concept="2U5qGO" id="65FLMuCzn0d" role="21u2wS">
-        <property role="TrG5h" value="#" />
-        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-        <node concept="3Oe2IN" id="65FLMuCP6TY" role="3OfFNq">
-          <node concept="Pl0HC" id="65FLMuCP6Y5" role="PoUSh">
-            <node concept="Xl_RD" id="65FLMuCP6Y7" role="Pl0H_">
-              <property role="Xl_RC" value="Weihnachts ID" />
-            </node>
-          </node>
-          <node concept="3Oe$u_" id="65FLMuCP6U1" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
-          </node>
+      <node concept="3Oe2Ik" id="1nK1SpOskQe" role="3OfFNq">
+        <node concept="3Oe$u_" id="1nK1SpOskQf" role="3Oe2NS">
+          <ref role="3O0p26" to="agw3:17o2t3rKev_" resolve="fileName" />
         </node>
-        <node concept="3Oe2Ik" id="65FLMuCTcwh" role="3OfFNq">
-          <node concept="3Oe$u_" id="65FLMuCTcwi" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:3UQOpsm4hJ0" resolve="text" />
-          </node>
-          <node concept="Pl0HC" id="65FLMuCTcwH" role="PoUSh">
-            <node concept="Xl_RD" id="65FLMuCTcwI" role="Pl0H_">
-              <property role="Xl_RC" value="Weihnachts Botschaft" />
-            </node>
-          </node>
-          <node concept="P9SqB" id="2df4HcRPxOG" role="PoUSh">
-            <property role="P9SrG" value="10" />
-          </node>
-        </node>
-        <node concept="2U5nhG" id="2df4HcRObwD" role="2TFpq_" />
-        <node concept="PoU6y" id="4gA8nKcMMQk" role="PoUSn" />
       </node>
-      <node concept="2U5qGO" id="3UQOpsm4jJI" role="21u2wS">
-        <property role="TrG5h" value="#" />
-        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-        <node concept="3Oe2IN" id="3UQOpsm4jJJ" role="3OfFNq">
-          <node concept="Pl0HC" id="3UQOpsm4jJK" role="PoUSh">
-            <node concept="Xl_RD" id="3UQOpsm4jJL" role="Pl0H_">
-              <property role="Xl_RC" value="Weihnachts ID" />
-            </node>
-          </node>
-          <node concept="3Oe$u_" id="3UQOpsm4jJM" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:17o2t3rKesQ" resolve="id" />
-          </node>
-        </node>
-        <node concept="3Oe2Ik" id="3UQOpsm4jJN" role="3OfFNq">
-          <node concept="3Oe$u_" id="3UQOpsm4jJO" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:3UQOpsm4jnK" resolve="text2" />
-          </node>
-          <node concept="Pl0HC" id="3UQOpsm4jJP" role="PoUSh">
-            <node concept="Xl_RD" id="3UQOpsm4jJQ" role="Pl0H_">
-              <property role="Xl_RC" value="Weihnachts Botschaft" />
-            </node>
-          </node>
-          <node concept="P9SqB" id="3UQOpsm4jJR" role="PoUSh">
-            <property role="P9SrG" value="10" />
-          </node>
-        </node>
-        <node concept="2U5nhG" id="3UQOpsm4jJU" role="2TFpq_" />
-        <node concept="PoU6y" id="3UQOpsm4jJV" role="PoUSn" />
-      </node>
-      <node concept="2U5qGO" id="3UQOpsm4jJB" role="21u2wS">
-        <property role="TrG5h" value="#" />
-        <ref role="1Tjo7l" to="agw3:17o2t3rKesJ" resolve="AlbumItem" />
-        <node concept="2U5nhG" id="3UQOpsm4jJC" role="2TFpq_" />
-        <node concept="2TG9WV" id="3UQOpsm4jJD" role="3OfFNq">
-          <node concept="3Oe$u_" id="3UQOpsm4jJE" role="3Oe2NS">
-            <ref role="3O0p26" to="agw3:3UQOpsm4hE3" resolve="fileName2" />
-          </node>
-          <node concept="Pl0kO" id="3UQOpsm4jJF" role="PoUSh">
-            <node concept="Xl_RD" id="3UQOpsm4jJG" role="Pl0ln">
-              <property role="Xl_RC" value="400, 200" />
-            </node>
-          </node>
-        </node>
-        <node concept="PoU6y" id="3UQOpsm4jJH" role="PoUSn" />
-      </node>
+      <node concept="PoU6y" id="3EFS_eyyz3J" role="PoUSn" />
     </node>
   </node>
   <node concept="3ugp7m" id="1wTKWXAyh4g">

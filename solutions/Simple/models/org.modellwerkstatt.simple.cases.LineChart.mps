@@ -11,6 +11,7 @@
     <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" />
     <import index="w08f" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -572,7 +573,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="3Ijwud6D9jO" role="2RkE6I">
-        <ref role="3uigEE" to="w08f:~DateTime" />
+        <ref role="3uigEE" to="w08f:~DateTime" resolve="DateTime" />
       </node>
       <node concept="Xl_RD" id="3Ijwud6D9lF" role="2CNmdP">
         <property role="Xl_RC" value="DateTime" />
@@ -598,7 +599,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="3Ijwud6D9pe" role="2RkE6I">
-        <ref role="3uigEE" to="xlxw:~BigDecimal" />
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
       <node concept="Xl_RD" id="3Ijwud6D9pW" role="2CNmdP">
         <property role="Xl_RC" value="Min" />
@@ -743,6 +744,33 @@
         <node concept="3clFbH" id="3Ijwud6Dhp0" role="3cqZAp" />
         <node concept="1Dw8fO" id="3Ijwud6DhDt" role="3cqZAp">
           <node concept="3clFbS" id="3Ijwud6DhDv" role="2LFqv$">
+            <node concept="3clFbH" id="1nK1SpOrEdu" role="3cqZAp" />
+            <node concept="3cpWs8" id="1nK1SpOrF6l" role="3cqZAp">
+              <node concept="3cpWsn" id="1nK1SpOrF6m" role="3cpWs9">
+                <property role="TrG5h" value="jitter" />
+                <node concept="3uibUv" id="1nK1SpOrF6n" role="1tU5fm">
+                  <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                </node>
+                <node concept="2OqwBi" id="1nK1SpOrOMF" role="33vP2m">
+                  <node concept="2ShNRf" id="1nK1SpOrNBt" role="2Oq$k0">
+                    <node concept="1pGfFk" id="1nK1SpOrNBk" role="2ShVmc">
+                      <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(double)" resolve="BigDecimal" />
+                      <node concept="2YIFZM" id="1nK1SpOrHK7" role="37wK5m">
+                        <ref role="37wK5l" to="wyt6:~Math.random()" resolve="random" />
+                        <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1nK1SpOrP6j" role="2OqNvi">
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.multiply(java.math.BigDecimal)" resolve="multiply" />
+                    <node concept="37vLTw" id="1nK1SpOrPf6" role="37wK5m">
+                      <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1nK1SpOrENq" role="3cqZAp" />
             <node concept="3cpWs8" id="3Ijwud6Dl8K" role="3cqZAp">
               <node concept="3cpWsn" id="3Ijwud6Dl8L" role="3cpWs9">
                 <property role="TrG5h" value="wert" />
@@ -797,66 +825,81 @@
                   </node>
                   <node concept="GOFnK" id="3Ijwud6Dle7" role="GOFnN">
                     <ref role="1bDdzG" node="3Ijwud6D9mw" resolve="min" />
-                    <node concept="3cpWs3" id="5we1Ti3jnAH" role="1bDdzI">
-                      <node concept="37vLTw" id="5we1Ti3jnBM" role="3uHU7w">
-                        <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
+                    <node concept="3cpWs3" id="1nK1SpOrEEM" role="1bDdzI">
+                      <node concept="37vLTw" id="1nK1SpOrFps" role="3uHU7w">
+                        <ref role="3cqZAo" node="1nK1SpOrF6m" resolve="jitter" />
                       </node>
-                      <node concept="3cpWs3" id="3Ijwud6Dtt9" role="3uHU7B">
-                        <node concept="1mgVXT" id="3Ijwud6Dt6Z" role="3uHU7B">
-                          <property role="1mgVXS" value="10.00bd" />
-                        </node>
-                        <node concept="2ShNRf" id="3Ijwud6Dujn" role="3uHU7w">
-                          <node concept="1pGfFk" id="3Ijwud6Dw$0" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
-                            <node concept="37vLTw" id="3Ijwud6DwBe" role="37wK5m">
-                              <ref role="3cqZAo" node="3Ijwud6DhDw" resolve="i" />
+                      <node concept="3cpWs3" id="5we1Ti3jnAH" role="3uHU7B">
+                        <node concept="3cpWs3" id="3Ijwud6Dtt9" role="3uHU7B">
+                          <node concept="1mgVXT" id="3Ijwud6Dt6Z" role="3uHU7B">
+                            <property role="1mgVXS" value="10.00bd" />
+                          </node>
+                          <node concept="2ShNRf" id="3Ijwud6Dujn" role="3uHU7w">
+                            <node concept="1pGfFk" id="3Ijwud6Dw$0" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
+                              <node concept="37vLTw" id="3Ijwud6DwBe" role="37wK5m">
+                                <ref role="3cqZAo" node="3Ijwud6DhDw" resolve="i" />
+                              </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="37vLTw" id="5we1Ti3jnBM" role="3uHU7w">
+                          <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="GOFnK" id="3Ijwud6Dle8" role="GOFnN">
                     <ref role="1bDdzG" node="3Ijwud6D9ro" resolve="median" />
-                    <node concept="3cpWs3" id="5we1Ti3jo0T" role="1bDdzI">
-                      <node concept="37vLTw" id="5we1Ti3jo1s" role="3uHU7w">
-                        <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
+                    <node concept="3cpWs3" id="1nK1SpOrFv2" role="1bDdzI">
+                      <node concept="37vLTw" id="1nK1SpOrFyZ" role="3uHU7w">
+                        <ref role="3cqZAo" node="1nK1SpOrF6m" resolve="jitter" />
                       </node>
-                      <node concept="3cpWs3" id="3Ijwud6D$bW" role="3uHU7B">
-                        <node concept="1mgVXT" id="3Ijwud6D$bX" role="3uHU7B">
-                          <property role="1mgVXS" value="15.00bd" />
-                        </node>
-                        <node concept="2ShNRf" id="3Ijwud6D$bY" role="3uHU7w">
-                          <node concept="1pGfFk" id="3Ijwud6D$bZ" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
-                            <node concept="37vLTw" id="3Ijwud6D$c0" role="37wK5m">
-                              <ref role="3cqZAo" node="3Ijwud6DhDw" resolve="i" />
+                      <node concept="3cpWs3" id="5we1Ti3jo0T" role="3uHU7B">
+                        <node concept="3cpWs3" id="3Ijwud6D$bW" role="3uHU7B">
+                          <node concept="1mgVXT" id="3Ijwud6D$bX" role="3uHU7B">
+                            <property role="1mgVXS" value="15.00bd" />
+                          </node>
+                          <node concept="2ShNRf" id="3Ijwud6D$bY" role="3uHU7w">
+                            <node concept="1pGfFk" id="3Ijwud6D$bZ" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
+                              <node concept="37vLTw" id="3Ijwud6D$c0" role="37wK5m">
+                                <ref role="3cqZAo" node="3Ijwud6DhDw" resolve="i" />
+                              </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="37vLTw" id="5we1Ti3jo1s" role="3uHU7w">
+                          <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="GOFnK" id="3Ijwud6Dle9" role="GOFnN">
                     <ref role="1bDdzG" node="3Ijwud6D9sm" resolve="max" />
-                    <node concept="3cpWs3" id="5we1Ti3jo75" role="1bDdzI">
-                      <node concept="37vLTw" id="5we1Ti3jo7C" role="3uHU7w">
-                        <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
+                    <node concept="3cpWs3" id="1nK1SpOrFDd" role="1bDdzI">
+                      <node concept="37vLTw" id="1nK1SpOrFJD" role="3uHU7w">
+                        <ref role="3cqZAo" node="1nK1SpOrF6m" resolve="jitter" />
                       </node>
-                      <node concept="3cpWs3" id="3Ijwud6Dyf_" role="3uHU7B">
-                        <node concept="1mgVXT" id="3Ijwud6DyfA" role="3uHU7B">
-                          <property role="1mgVXS" value="20.00bd" />
-                        </node>
-                        <node concept="2ShNRf" id="3Ijwud6DyfB" role="3uHU7w">
-                          <node concept="1pGfFk" id="3Ijwud6DyfC" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
-                            <node concept="37vLTw" id="3Ijwud6DyfD" role="37wK5m">
-                              <ref role="3cqZAo" node="3Ijwud6DhDw" resolve="i" />
+                      <node concept="3cpWs3" id="5we1Ti3jo75" role="3uHU7B">
+                        <node concept="3cpWs3" id="3Ijwud6Dyf_" role="3uHU7B">
+                          <node concept="1mgVXT" id="3Ijwud6DyfA" role="3uHU7B">
+                            <property role="1mgVXS" value="20.00bd" />
+                          </node>
+                          <node concept="2ShNRf" id="3Ijwud6DyfB" role="3uHU7w">
+                            <node concept="1pGfFk" id="3Ijwud6DyfC" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(int)" resolve="BigDecimal" />
+                              <node concept="37vLTw" id="3Ijwud6DyfD" role="37wK5m">
+                                <ref role="3cqZAo" node="3Ijwud6DhDw" resolve="i" />
+                              </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="37vLTw" id="5we1Ti3jo7C" role="3uHU7w">
+                          <ref role="3cqZAo" node="5we1Ti3jmdX" resolve="base" />
                         </node>
                       </node>
                     </node>
@@ -1083,7 +1126,7 @@
   <node concept="3ugp7m" id="3Ijwud6Dai1">
     <property role="1ptSWV" value="R_Y55k$Btz/OVERWRITE_FORCED" />
     <property role="TrG5h" value="Open Sensor" />
-    <property role="19I623" value="6Rdz00$tuDj/SEARCH_CMD" />
+    <property role="19I623" value="6Rdz00$tuDr/GRAPH_OWNER_CMD" />
     <node concept="3ulXEN" id="3Ijwud6Dail" role="3ulXEL">
       <property role="TrG5h" value="sensor" />
       <node concept="3uibUv" id="3Ijwud6Daim" role="1tU5fm">
@@ -1204,7 +1247,7 @@
       <node concept="2U5qGQ" id="3Ijwud7k3_2" role="21u2wS">
         <property role="TrG5h" value="#" />
         <ref role="1Tjo7l" node="3Ijwud6D8Zf" resolve="Sensor" />
-        <ref role="1Tjo6F" node="3Ijwud6D9bV" />
+        <ref role="1Tjo6F" node="3Ijwud6D9bV" resolve="werte" />
         <node concept="33WYYh" id="3Ijwud7kR$t" role="fOGQ8">
           <ref role="2_Hrw8" node="3Ijwud6Dah7" resolve="Edit Messwert" />
           <node concept="2IFXgM" id="3Ijwud7kR_a" role="2_HrWp">
@@ -1221,7 +1264,7 @@
             <property role="PiFy3" value="16" />
           </node>
           <node concept="3Oe$u_" id="3Ijwud7k3A9" role="3Oe2NS">
-            <ref role="3O0p26" node="3Ijwud6D9hV" />
+            <ref role="3O0p26" node="3Ijwud6D9hV" resolve="dateTime" />
           </node>
         </node>
         <node concept="3Oe2IN" id="3Ijwud7k3_W" role="3OfFNq">
@@ -1313,6 +1356,15 @@
           </node>
           <node concept="Xl_RD" id="4AF9xfFa729" role="1WK3AT">
             <property role="Xl_RC" value="#0000ff" />
+          </node>
+        </node>
+        <node concept="1WK3AV" id="1nK1SpOrWuy" role="1WK568">
+          <node concept="10M0yZ" id="1nK1SpOs6wN" role="1WK3AU">
+            <ref role="3cqZAo" to="59k:1nK1SpOfXHK" resolve="LINECHART_STEP_LEFT" />
+            <ref role="1PxDUh" to="59k:5$n7YPbM9Xy" resolve="ExtCmpt" />
+          </node>
+          <node concept="Xl_RD" id="1nK1SpOrXCa" role="1WK3AT">
+            <property role="Xl_RC" value="x" />
           </node>
         </node>
         <node concept="2TG9WT" id="3Ijwud6G77u" role="3OfFNq">
@@ -1500,7 +1552,7 @@
           <node concept="37vLTI" id="5we1Ti3qE$h" role="3clFbG">
             <node concept="2OqwBi" id="5we1Ti3qEU9" role="37vLTx">
               <node concept="37vLTw" id="5we1Ti3qEZp" role="2Oq$k0">
-                <ref role="3cqZAo" node="5we1Ti3jKZd" resolve="newSensor" />
+                <ref role="3cqZAo" node="5we1Ti3jKZd" resolve="newSensorData" />
               </node>
               <node concept="2S8uIT" id="5we1Ti3qF4E" role="2OqNvi">
                 <ref role="2S8YL0" node="3Ijwud6D9bV" resolve="werte" />
