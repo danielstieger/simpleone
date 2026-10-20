@@ -1,0 +1,3 @@
+[submodule "moai"]
+	path = moai
+	url = https://github.com/danielstieger/moai.git
