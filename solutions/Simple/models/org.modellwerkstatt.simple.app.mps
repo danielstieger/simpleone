@@ -4,6 +4,7 @@
   <languages>
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
+    <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
     <devkit ref="b2950e54-da96-4c3b-868c-2b5e12af9605(org.modellwerkstatt.MoWareWerkbank)" />
   </languages>
   <imports>
@@ -28,6 +29,7 @@
     <import index="tt3g" ref="r:02bb3597-6313-4a94-a287-76feb5459f71(org.modellwerkstatt.simple.cases.openLink)" />
     <import index="vd6h" ref="r:6edc3dce-b730-463f-b83a-32ff28c78477(org.modellwerkstatt.simple.cases.hookOption)" />
     <import index="c16p" ref="r:96a92222-3f81-41df-a931-03391cee32c5(org.modellwerkstatt.simple.cases.LineChart)" />
+    <import index="d624" ref="r:91433cd3-6ac8-4e70-8efd-7c20767c336f(org.modellwerkstatt.simple.cases.queueCmd)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" implicit="true" />
   </imports>
@@ -378,6 +380,9 @@
     </node>
     <node concept="33WYYh" id="1d0eq9pAsVe" role="2N77jL">
       <ref role="2_Hrw8" to="vd6h:1d0eq9pAoWg" resolve="Open HookInfo" />
+    </node>
+    <node concept="33WYYh" id="2_MTWX1c9JU" role="2N77jL">
+      <ref role="2_Hrw8" to="d624:2_MTWX1c8rI" resolve="Bestellungen suchen (Queue)" />
     </node>
     <node concept="fOGPe" id="1w4jCoCi7YS" role="2N77jL">
       <node concept="Xl_RD" id="1w4jCoCi7YU" role="33Ov9O">
