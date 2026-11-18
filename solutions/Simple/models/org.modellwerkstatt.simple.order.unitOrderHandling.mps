@@ -669,7 +669,6 @@
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
-      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -5747,51 +5746,6 @@
         <node concept="3clFbH" id="7K21hvEaffL" role="3cqZAp" />
       </node>
     </node>
-    <node concept="2OqwBi" id="40OHFM6fgqy" role="3vkzKj">
-      <node concept="2OqwBi" id="40OHFM6fgkk" role="2Oq$k0">
-        <node concept="3urNQE" id="5TC7JC3Wpts" role="2Oq$k0">
-          <ref role="3cqZAo" node="5TC7JC3Wptq" resolve="orderprocParam" />
-        </node>
-        <node concept="2S8uIT" id="40OHFM6fglv" role="2OqNvi">
-          <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-        </node>
-      </node>
-      <node concept="1z4cxt" id="40OHFM6fhRV" role="2OqNvi">
-        <node concept="1bVj0M" id="40OHFM6fhRX" role="23t8la">
-          <node concept="3clFbS" id="40OHFM6fhRY" role="1bW5cS">
-            <node concept="3clFbF" id="40OHFM6fgAO" role="3cqZAp">
-              <node concept="3clFbC" id="40OHFM6fgVB" role="3clFbG">
-                <node concept="3cpWs3" id="40OHFM6fheu" role="3uHU7w">
-                  <node concept="3cmrfG" id="40OHFM6fhe$" role="3uHU7w">
-                    <property role="3cmrfH" value="1" />
-                  </node>
-                  <node concept="2OqwBi" id="40OHFM6fh2q" role="3uHU7B">
-                    <node concept="3urNQE" id="40OHFM6fh5Y" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4XOQNRZgrPU" resolve="pos" />
-                    </node>
-                    <node concept="2S8uIT" id="40OHFM6fh9j" role="2OqNvi">
-                      <ref role="2S8YL0" to="eqbi:AN_117bbdA" resolve="id" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="40OHFM6fgDq" role="3uHU7B">
-                  <node concept="37vLTw" id="40OHFM6fhZK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2rUhhId$eu6" resolve="it" />
-                  </node>
-                  <node concept="2S8uIT" id="40OHFM6fgG4" role="2OqNvi">
-                    <ref role="2S8YL0" to="eqbi:AN_117bbdA" resolve="id" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="gl6BB" id="2rUhhId$eu6" role="1bW2Oz">
-            <property role="TrG5h" value="it" />
-            <node concept="2jxLKc" id="2rUhhId$eu7" role="1tU5fm" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="20qIzx" id="jDMPdcybee" role="3umfm7">
       <node concept="3clFbS" id="jDMPdcybef" role="2VODD2">
         <node concept="mlg3r" id="7_EkKK15l6B" role="3cqZAp">
@@ -8158,28 +8112,6 @@
   <node concept="3ugp7m" id="1ReQ$xd3KdU">
     <property role="TrG5h" value="Special Test Command" />
     <property role="3uBtrS" value="1hImSMr5NSx/M" />
-    <node concept="2OqwBi" id="9HvieMVbic" role="Wq_P0">
-      <node concept="2OqwBi" id="9HvieMVbid" role="2Oq$k0">
-        <node concept="3urNQE" id="9HvieMVbie" role="2Oq$k0">
-          <ref role="3cqZAo" node="5TC7JC3Wpuv" resolve="orderprocParam" />
-        </node>
-        <node concept="2S8uIT" id="9HvieMVbif" role="2OqNvi">
-          <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-        </node>
-      </node>
-      <node concept="1yVyf7" id="9HvieMVbig" role="2OqNvi" />
-    </node>
-    <node concept="2OqwBi" id="9HvieMVaYA" role="3vkzKj">
-      <node concept="2OqwBi" id="9HvieMVaxD" role="2Oq$k0">
-        <node concept="3urNQE" id="9HvieMVau6" role="2Oq$k0">
-          <ref role="3cqZAo" node="5TC7JC3Wpuv" resolve="orderprocParam" />
-        </node>
-        <node concept="2S8uIT" id="9HvieMVa$L" role="2OqNvi">
-          <ref role="2S8YL0" to="eqbi:AN_117bqBd" resolve="pos" />
-        </node>
-      </node>
-      <node concept="1yVyf7" id="9HvieMVbgF" role="2OqNvi" />
-    </node>
     <node concept="3ulXEN" id="5TC7JC3Wpuv" role="3ulXEL">
       <property role="TrG5h" value="orderprocParam" />
       <node concept="3uibUv" id="5TC7JC3Wpuw" role="1tU5fm">
