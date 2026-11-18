@@ -1,54 +1,346 @@
-
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+  <!-- Order document. The print service joins the lines of this file without line breaks, -->
+  <!-- so text never continues on a following line; every text is inside its own element. -->
   <xsl:decimal-format name="european" decimal-separator="," grouping-separator="."></xsl:decimal-format>
+
+  <xsl:variable name="ink">#1f2933</xsl:variable>
+  <xsl:variable name="muted">#66727f</xsl:variable>
+  <xsl:variable name="accent">#1f4e79</xsl:variable>
+  <xsl:variable name="rule">#c9d1d9</xsl:variable>
+  <xsl:variable name="band">#f3f5f7</xsl:variable>
+
   <xsl:template match="OBJECT">
-    <fo:root>
+    <fo:root font-family="Helvetica, Arial, sans-serif">
+      <xsl:attribute name="color"><xsl:value-of select="$ink"></xsl:value-of></xsl:attribute>
       <fo:layout-master-set>
-        <fo:simple-page-master master-name="all" page-height="297mm" page-width="210mm" margin-top="15mm" margin-bottom="5mm" margin-left="25mm" margin-right="10mm">
-          <fo:region-body margin-top="30mm" margin-bottom="25mm"></fo:region-body>
-          <fo:region-before extent="100mm"></fo:region-before>
-          <fo:region-after extent="20mm"></fo:region-after>
+        <fo:simple-page-master master-name="first" page-height="297mm" page-width="210mm" margin-top="14mm" margin-bottom="10mm" margin-left="20mm" margin-right="16mm">
+          <fo:region-body margin-top="8mm" margin-bottom="14mm"></fo:region-body>
+          <fo:region-before region-name="head-first" extent="6mm"></fo:region-before>
+          <fo:region-after extent="9mm"></fo:region-after>
         </fo:simple-page-master>
+        <fo:simple-page-master master-name="rest" page-height="297mm" page-width="210mm" margin-top="14mm" margin-bottom="10mm" margin-left="20mm" margin-right="16mm">
+          <fo:region-body margin-top="14mm" margin-bottom="14mm"></fo:region-body>
+          <fo:region-before region-name="head-rest" extent="10mm"></fo:region-before>
+          <fo:region-after extent="9mm"></fo:region-after>
+        </fo:simple-page-master>
+        <fo:page-sequence-master master-name="all">
+          <fo:repeatable-page-master-alternatives>
+            <fo:conditional-page-master-reference master-reference="first" page-position="first"></fo:conditional-page-master-reference>
+            <fo:conditional-page-master-reference master-reference="rest" page-position="rest"></fo:conditional-page-master-reference>
+          </fo:repeatable-page-master-alternatives>
+        </fo:page-sequence-master>
       </fo:layout-master-set>
+
       <fo:page-sequence master-reference="all">
-        <fo:static-content flow-name="xsl-region-before" font-size="10pt">
-          <fo:block>XSLT Text Document (hyphenate) Header: <xsl:value-of select="NAME"></xsl:value-of> </fo:block>
+
+        <!-- first page: only a thin accent rule at the top -->
+        <fo:static-content flow-name="head-first">
+          <fo:block border-top-style="solid" border-top-width="1.6mm" font-size="1pt">
+            <xsl:attribute name="border-top-color"><xsl:value-of select="$accent"></xsl:value-of></xsl:attribute>
+            <fo:leader leader-length="0pt"></fo:leader>
+          </fo:block>
         </fo:static-content>
-        <fo:static-content flow-name="xsl-region-after" font-size="10pt">
-          <fo:block>XSLT Text Document Footer</fo:block>
+
+        <!-- following pages: running title -->
+        <fo:static-content flow-name="head-rest">
+          <fo:block font-size="8.5pt" text-align-last="justify" padding-bottom="1.5mm" border-bottom-style="solid" border-bottom-width="0.4pt">
+            <xsl:attribute name="border-bottom-color"><xsl:value-of select="$rule"></xsl:value-of></xsl:attribute>
+            <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+            <fo:inline font-weight="bold"><xsl:text>Order </xsl:text><xsl:value-of select="ID"></xsl:value-of></fo:inline>
+            <xsl:text>  ·  </xsl:text>
+            <xsl:value-of select="NAME"></xsl:value-of>
+            <fo:leader leader-pattern="space"></fo:leader>
+            <xsl:value-of select="STORE/NAME"></xsl:value-of>
+          </fo:block>
         </fo:static-content>
-        
-        <fo:flow flow-name="xsl-region-body" font-size="10pt">
-        <fo:block-container width="55mm" border="0.5pt solid #000" padding="3mm">
-  		<fo:block hyphenate="true" language="de" country="AT">
-    		Donaudampfschifffahrtsgesellschaftskapitän ...
-  		</fo:block>
-  		</fo:block-container>
-        
-          <fo:block-container>
-            <fo:block>
-              <fo:block>
-                <fo:instream-foreign-object>
-                  <barcode:barcode orientation="0" xmlns:barcode="http://barcode4j.krysalis.org/ns">
-                    <xsl:attribute name="message">
-                      <xsl:value-of select="ID"></xsl:value-of>
-                    </xsl:attribute>
-                    <barcode:code39>
-                      <barcode:height>15mm</barcode:height>
-                      <barcode:module-width>0.3mm</barcode:module-width>
-                      <barcode:wide-factor>3</barcode:wide-factor>
-                      <barcode:interchar-gap-width>3mw</barcode:interchar-gap-width>
-                    </barcode:code39>
-                  </barcode:barcode>
-                </fo:instream-foreign-object>
+
+        <!-- footer on every page -->
+        <fo:static-content flow-name="xsl-region-after">
+          <fo:block font-size="7.5pt" text-align-last="justify" padding-top="1.5mm" border-top-style="solid" border-top-width="0.4pt">
+            <xsl:attribute name="border-top-color"><xsl:value-of select="$rule"></xsl:value-of></xsl:attribute>
+            <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+            <xsl:text>Printed </xsl:text><xsl:value-of select="__TIMESTAMP"></xsl:value-of>
+            <xsl:text> by </xsl:text><xsl:value-of select="__USER"></xsl:value-of>
+            <fo:leader leader-pattern="space"></fo:leader>
+            <xsl:text>Page </xsl:text><fo:page-number></fo:page-number>
+            <xsl:text> of </xsl:text><fo:page-number-citation ref-id="endOfDoc"></fo:page-number-citation>
+          </fo:block>
+        </fo:static-content>
+
+        <fo:flow flow-name="xsl-region-body" font-size="9pt" line-height="1.35">
+
+          <!-- title block: document title left, barcode right -->
+          <fo:table table-layout="fixed" width="100%">
+            <fo:table-column column-width="proportional-column-width(1)"></fo:table-column>
+            <fo:table-column column-width="62mm"></fo:table-column>
+            <fo:table-body>
+              <fo:table-row>
+                <fo:table-cell display-align="after">
+                  <fo:block font-size="8pt" font-weight="bold" letter-spacing="0.6pt">
+                    <xsl:attribute name="color"><xsl:value-of select="$accent"></xsl:value-of></xsl:attribute>
+                    <xsl:text>ORDER</xsl:text>
+                  </fo:block>
+                  <fo:block font-size="22pt" font-weight="bold" line-height="1.15" space-before="0.5mm">
+                    <xsl:value-of select="NAME"></xsl:value-of>
+                  </fo:block>
+                  <fo:block font-size="10pt" space-before="0.8mm">
+                    <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+                    <xsl:text>No. </xsl:text><xsl:value-of select="ID"></xsl:value-of>
+                  </fo:block>
+                </fo:table-cell>
+                <fo:table-cell display-align="after" text-align="right">
+                  <fo:block line-height="1">
+                    <fo:instream-foreign-object>
+                      <barcode:barcode orientation="0" xmlns:barcode="http://barcode4j.krysalis.org/ns">
+                        <xsl:attribute name="message"><xsl:value-of select="ID"></xsl:value-of></xsl:attribute>
+                        <barcode:code39>
+                          <barcode:height>13mm</barcode:height>
+                          <barcode:module-width>0.3mm</barcode:module-width>
+                          <barcode:wide-factor>3</barcode:wide-factor>
+                          <barcode:interchar-gap-width>3mw</barcode:interchar-gap-width>
+                        </barcode:code39>
+                      </barcode:barcode>
+                    </fo:instream-foreign-object>
+                  </fo:block>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+
+          <!-- store on the left, order facts on the right -->
+          <fo:table table-layout="fixed" width="100%" space-before="9mm">
+            <fo:table-column column-width="proportional-column-width(1)"></fo:table-column>
+            <fo:table-column column-width="8mm"></fo:table-column>
+            <fo:table-column column-width="78mm"></fo:table-column>
+            <fo:table-body>
+              <fo:table-row>
+                <fo:table-cell>
+                  <xsl:call-template name="caption"><xsl:with-param name="text">Store</xsl:with-param></xsl:call-template>
+                  <xsl:choose>
+                    <xsl:when test="STORE/NAME != ''">
+                      <fo:block font-size="11pt" font-weight="bold" space-before="1mm"><xsl:value-of select="STORE/NAME"></xsl:value-of></fo:block>
+                      <fo:block><xsl:value-of select="STORE/ADDRESS"></xsl:value-of></fo:block>
+                      <fo:block>
+                        <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+                        <xsl:text>Store no. </xsl:text><xsl:value-of select="STORE/ID"></xsl:value-of>
+                      </fo:block>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <fo:block space-before="1mm">
+                        <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+                        <xsl:text>No store assigned</xsl:text>
+                      </fo:block>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </fo:table-cell>
+                <fo:table-cell><fo:block></fo:block></fo:table-cell>
+                <fo:table-cell>
+                  <xsl:call-template name="caption"><xsl:with-param name="text">Order details</xsl:with-param></xsl:call-template>
+                  <fo:table table-layout="fixed" width="100%" space-before="1mm">
+                    <fo:table-column column-width="30mm"></fo:table-column>
+                    <fo:table-column column-width="proportional-column-width(1)"></fo:table-column>
+                    <fo:table-body>
+                      <xsl:call-template name="fact">
+                        <xsl:with-param name="label">Order date</xsl:with-param>
+                        <xsl:with-param name="value"><xsl:call-template name="date"><xsl:with-param name="iso" select="ORDERDAT/@orderDat"></xsl:with-param></xsl:call-template></xsl:with-param>
+                      </xsl:call-template>
+                      <xsl:call-template name="fact">
+                        <xsl:with-param name="label">Scheduled</xsl:with-param>
+                        <xsl:with-param name="value"><xsl:call-template name="dateTime"><xsl:with-param name="iso" select="DT/@dt"></xsl:with-param></xsl:call-template></xsl:with-param>
+                      </xsl:call-template>
+                      <xsl:call-template name="fact">
+                        <xsl:with-param name="label">Status</xsl:with-param>
+                        <xsl:with-param name="value"><xsl:call-template name="orderStatus"></xsl:call-template></xsl:with-param>
+                      </xsl:call-template>
+                      <xsl:call-template name="fact">
+                        <xsl:with-param name="label">Positions</xsl:with-param>
+                        <xsl:with-param name="value"><xsl:value-of select="count(POSSET/POS)"></xsl:value-of></xsl:with-param>
+                      </xsl:call-template>
+                    </fo:table-body>
+                  </fo:table>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
+
+          <!-- order value, set apart -->
+          <fo:block space-before="8mm" padding="3mm" start-indent="3mm" end-indent="3mm" text-align-last="justify">
+            <xsl:attribute name="background-color"><xsl:value-of select="$band"></xsl:value-of></xsl:attribute>
+            <fo:inline font-size="8pt" font-weight="bold" letter-spacing="0.6pt">
+              <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+              <xsl:text>ORDER VALUE</xsl:text>
+            </fo:inline>
+            <fo:leader leader-pattern="space"></fo:leader>
+            <fo:inline font-size="15pt" font-weight="bold">
+              <xsl:call-template name="amount"><xsl:with-param name="number" select="TOTALVALUE/@totalValue"></xsl:with-param></xsl:call-template>
+            </fo:inline>
+          </fo:block>
+
+          <!-- positions -->
+          <fo:block space-before="8mm" keep-with-next.within-page="always">
+            <xsl:call-template name="caption"><xsl:with-param name="text">Positions</xsl:with-param></xsl:call-template>
+          </fo:block>
+
+          <xsl:choose>
+            <xsl:when test="POSSET/POS">
+              <fo:table table-layout="fixed" width="100%" space-before="1.5mm" font-size="8.5pt">
+                <fo:table-column column-width="10mm"></fo:table-column>
+                <fo:table-column column-width="16mm"></fo:table-column>
+                <fo:table-column column-width="24mm"></fo:table-column>
+                <fo:table-column column-width="proportional-column-width(1)"></fo:table-column>
+                <fo:table-column column-width="24mm"></fo:table-column>
+                <fo:table-column column-width="22mm"></fo:table-column>
+                <fo:table-column column-width="26mm"></fo:table-column>
+                <fo:table-header>
+                  <fo:table-row font-weight="bold" font-size="7.5pt">
+                    <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+                    <xsl:call-template name="th"><xsl:with-param name="text">#</xsl:with-param><xsl:with-param name="align">right</xsl:with-param></xsl:call-template>
+                    <xsl:call-template name="th"><xsl:with-param name="text">ID</xsl:with-param></xsl:call-template>
+                    <xsl:call-template name="th"><xsl:with-param name="text">EAN</xsl:with-param></xsl:call-template>
+                    <xsl:call-template name="th"><xsl:with-param name="text">NAME</xsl:with-param></xsl:call-template>
+                    <xsl:call-template name="th"><xsl:with-param name="text">DATE</xsl:with-param></xsl:call-template>
+                    <xsl:call-template name="th"><xsl:with-param name="text">STATUS</xsl:with-param></xsl:call-template>
+                    <xsl:call-template name="th"><xsl:with-param name="text">VALUE</xsl:with-param><xsl:with-param name="align">right</xsl:with-param></xsl:call-template>
+                  </fo:table-row>
+                </fo:table-header>
+                <fo:table-body>
+                  <xsl:for-each select="POSSET/POS">
+                    <fo:table-row keep-together.within-page="always">
+                      <xsl:if test="position() mod 2 = 0">
+                        <xsl:attribute name="background-color"><xsl:value-of select="$band"></xsl:value-of></xsl:attribute>
+                      </xsl:if>
+                      <fo:table-cell padding="1.1mm 1.5mm" text-align="right">
+                        <fo:block>
+                          <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+                          <xsl:value-of select="position()"></xsl:value-of>
+                        </fo:block>
+                      </fo:table-cell>
+                      <fo:table-cell padding="1.1mm 1.5mm"><fo:block><xsl:value-of select="ID"></xsl:value-of></fo:block></fo:table-cell>
+                      <fo:table-cell padding="1.1mm 1.5mm"><fo:block><xsl:value-of select="EAN"></xsl:value-of></fo:block></fo:table-cell>
+                      <fo:table-cell padding="1.1mm 1.5mm"><fo:block><xsl:value-of select="NAME"></xsl:value-of></fo:block></fo:table-cell>
+                      <fo:table-cell padding="1.1mm 1.5mm">
+                        <fo:block><xsl:call-template name="date"><xsl:with-param name="iso" select="TIMESTAMP/@timestamp"></xsl:with-param></xsl:call-template></fo:block>
+                      </fo:table-cell>
+                      <fo:table-cell padding="1.1mm 1.5mm"><fo:block><xsl:call-template name="posStatus"></xsl:call-template></fo:block></fo:table-cell>
+                      <fo:table-cell padding="1.1mm 1.5mm" text-align="right">
+                        <fo:block><xsl:call-template name="amount"><xsl:with-param name="number" select="POSVALUE/@posValue"></xsl:with-param></xsl:call-template></fo:block>
+                      </fo:table-cell>
+                    </fo:table-row>
+                  </xsl:for-each>
+                </fo:table-body>
+              </fo:table>
+
+              <!-- sum of the positions -->
+              <fo:block space-before="2mm" padding-top="2mm" text-align-last="justify" border-top-style="solid" border-top-width="0.8pt" keep-with-previous.within-page="always">
+                <xsl:attribute name="border-top-color"><xsl:value-of select="$ink"></xsl:value-of></xsl:attribute>
+                <fo:inline font-weight="bold"><xsl:text>Sum of positions</xsl:text></fo:inline>
+                <fo:leader leader-pattern="space"></fo:leader>
+                <fo:inline font-weight="bold" padding-right="1.5mm">
+                  <xsl:call-template name="amount"><xsl:with-param name="number" select="sum(POSSET/POS/POSVALUE/@posValue)"></xsl:with-param></xsl:call-template>
+                </fo:inline>
               </fo:block>
-            </fo:block>
-            <fo:block>BARCODE Here: <xsl:value-of select="NAME"></xsl:value-of> </fo:block>
-          </fo:block-container>
+            </xsl:when>
+            <xsl:otherwise>
+              <fo:block space-before="2mm">
+                <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+                <xsl:text>This order has no positions.</xsl:text>
+              </fo:block>
+            </xsl:otherwise>
+          </xsl:choose>
+
           <fo:block id="endOfDoc"></fo:block>
         </fo:flow>
-        
       </fo:page-sequence>
     </fo:root>
+  </xsl:template>
+
+  <!-- section caption -->
+  <xsl:template name="caption">
+    <xsl:param name="text"></xsl:param>
+    <fo:block font-size="7.5pt" font-weight="bold" letter-spacing="0.6pt" padding-bottom="1mm" border-bottom-style="solid" border-bottom-width="0.4pt">
+      <xsl:attribute name="color"><xsl:value-of select="$accent"></xsl:value-of></xsl:attribute>
+      <xsl:attribute name="border-bottom-color"><xsl:value-of select="$rule"></xsl:value-of></xsl:attribute>
+      <xsl:value-of select="translate($text, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"></xsl:value-of>
+    </fo:block>
+  </xsl:template>
+
+  <!-- one label / value line of the order details -->
+  <xsl:template name="fact">
+    <xsl:param name="label"></xsl:param>
+    <xsl:param name="value"></xsl:param>
+    <fo:table-row>
+      <fo:table-cell padding="0.4mm 0mm">
+        <fo:block>
+          <xsl:attribute name="color"><xsl:value-of select="$muted"></xsl:value-of></xsl:attribute>
+          <xsl:value-of select="$label"></xsl:value-of>
+        </fo:block>
+      </fo:table-cell>
+      <fo:table-cell padding="0.4mm 0mm">
+        <fo:block>
+          <xsl:choose>
+            <xsl:when test="normalize-space($value) != ''"><xsl:value-of select="$value"></xsl:value-of></xsl:when>
+            <xsl:otherwise><xsl:text>–</xsl:text></xsl:otherwise>
+          </xsl:choose>
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </xsl:template>
+
+  <!-- column heading of the positions table -->
+  <xsl:template name="th">
+    <xsl:param name="text"></xsl:param>
+    <xsl:param name="align">left</xsl:param>
+    <fo:table-cell padding="1.2mm 1.5mm" border-bottom-style="solid" border-bottom-width="0.8pt">
+      <xsl:attribute name="border-bottom-color"><xsl:value-of select="$ink"></xsl:value-of></xsl:attribute>
+      <xsl:attribute name="text-align"><xsl:value-of select="$align"></xsl:value-of></xsl:attribute>
+      <fo:block letter-spacing="0.5pt"><xsl:value-of select="$text"></xsl:value-of></fo:block>
+    </fo:table-cell>
+  </xsl:template>
+
+  <!-- 2026-11-04... to 04.11.2026 -->
+  <xsl:template name="date">
+    <xsl:param name="iso"></xsl:param>
+    <xsl:if test="string-length($iso) &gt;= 10">
+      <xsl:value-of select="concat(substring($iso, 9, 2), '.', substring($iso, 6, 2), '.', substring($iso, 1, 4))"></xsl:value-of>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- 2026-11-21T13:41:21 to 21.11.2026 13:41 -->
+  <xsl:template name="dateTime">
+    <xsl:param name="iso"></xsl:param>
+    <xsl:if test="string-length($iso) &gt;= 10">
+      <xsl:value-of select="concat(substring($iso, 9, 2), '.', substring($iso, 6, 2), '.', substring($iso, 1, 4))"></xsl:value-of>
+      <xsl:if test="string-length($iso) &gt;= 16">
+        <xsl:value-of select="concat(' ', substring($iso, 12, 5))"></xsl:value-of>
+      </xsl:if>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- amount with two decimals; a dash for a missing value -->
+  <xsl:template name="amount">
+    <xsl:param name="number"></xsl:param>
+    <xsl:choose>
+      <xsl:when test="string(number($number)) = 'NaN'"><xsl:text>–</xsl:text></xsl:when>
+      <xsl:otherwise><xsl:value-of select="format-number($number, '#.##0,00', 'european')"></xsl:value-of></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- status of the order: the readable text if the application supplies it, else the code -->
+  <xsl:template name="orderStatus">
+    <xsl:choose>
+      <xsl:when test="contains(STATUS2, ' ')"><xsl:value-of select="substring-after(STATUS2, ' ')"></xsl:value-of></xsl:when>
+      <xsl:when test="STATUS2 != ''"><xsl:value-of select="STATUS2"></xsl:value-of></xsl:when>
+      <xsl:otherwise><xsl:value-of select="STATUS"></xsl:value-of></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- status of a position -->
+  <xsl:template name="posStatus">
+    <xsl:choose>
+      <xsl:when test="STATUS = 'A'"><xsl:text>Accepted</xsl:text></xsl:when>
+      <xsl:when test="STATUS = 'R'"><xsl:text>Rejected</xsl:text></xsl:when>
+      <xsl:when test="STATUS = 'U'"><xsl:text>Unknown</xsl:text></xsl:when>
+      <xsl:otherwise><xsl:value-of select="STATUS"></xsl:value-of></xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 </xsl:stylesheet>
